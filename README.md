@@ -1,0 +1,1 @@
+This repo contains a personal wiki (see under "Wiki" tab) with tweaks, tips, tricks and whatnot about programming languages, Linux, Windows, Computer science theory, variouos programs and more that I reputed worth writing down.
