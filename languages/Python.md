@@ -15,7 +15,7 @@
 * `a[-3]` = Negative indexing, returns the third to last element of a list
 * `lastthree = slice(-3, None)` = Saving a slice in a variable
 
-###Decorators
+### Decorators
 
 Write a function like this:
 
@@ -32,7 +32,7 @@ and then pass to a function this way:
     def func():
 		# function code
 
-###Metaclasses
+### Metaclasses
 
 Syntax:
 
@@ -53,7 +53,7 @@ or it's possible to instantiate the metaclass directly when creating a class, li
     class MyClass(object):
           __metaclass__ = MyMetaClass
 
-###Set operations
+### Set operations
 
 various operations possible over sets. Examples:
 
@@ -67,37 +67,37 @@ various operations possible over sets. Examples:
 * `A ^ B` -> `set([1, 2, 4, 5, 6, 7])`
 
 
-##Modules
+## Modules
 
-###Bisect
+### Bisect
 
 * `bisect.insort(l, e)` = Insert `e` in list `l`, automatically sorting the list. For huge lists it should be quicker than using `.sorted()`
 
-###Calendar
+### Calendar
 
 * `class HTMLCalendar` = Format to html a calendar. After instantiating, use it like `i.formatmonth(2012,11)` to obtain the html code for november 2012
 * `python -m calendar 2013` = Outputs the calendar for the 2013. It can be customized to print in html or text format, with or without a css and by width, lines, spacing etc. (see `python -m calendar -h`)
 
-###Cgitb
+### Cgitb
 
 * `cgitb.enable()` = Enable a very verbose traceback. With argument `format="html"` the output is html
 
-###Collections
+### Collections
 
 * `class Counter` = A class to count the occurrences of a character or integer inside a list, dictionary or string. Returns a dictionary like `{'a': 3, 'b': 2, 'c': 2}`
 * `collections.deque` = A different kind of queue, where values can be pushed or popped from both sides and not only one like in normal queues
 * `collections.OrderedDict` = A dictionary that remembers the order in which values have been inserted and when iterated upon, returns value in that exact order. Consequently, 2 OrderedDict with the same values but in a different order will not be considered equals, whereas a 2 normal dictionaries would
 
-####Named tuples
+### Named tuples
 
 	Point = collections.namedtuple('Point', ['x', 'y'])
 	p = Point(x=1.0, y=2.0)
 
-###Dis
+### Dis
 
 * `dis.dis(code_object)` = Disassemble un code\_object
 
-###Itertools
+### Itertools
 
 Permutations
 
@@ -113,18 +113,18 @@ prints all the possible combinations
 
 etc.
 
-###Json
+### Json
 
 * `python -m json.tool < file.json` = Pretty JSON printer
 
-###Os.Path
+### Os.Path
 
 * `os.path.sep` = Variable containing the path separator of the current OS ('\' or '/')
 * `os.path.extsep` = Variable containing the filename/extension separator (usually, '.')
 * `os.path.curdir` = Variable containing the symbol of the current directory ('.' in Unix-like sytems)
 * `os.path.pardir` = Variable containing the representation of the parent directory ('..' in Unix-like systems)
 
-###Platform
+### Platform
 
 Module to obtain various informations on the system. For example:
 
@@ -134,26 +134,26 @@ Module to obtain various informations on the system. For example:
 * `platform.machine()` = The kind of hardware of the machine (like 'i386')
 * `platform.architecture()` = The architecture of the machine (nearly always nowadays, 32 or 64bit). Giving a file as argument, returns the architecture of it instead of the machine
 
-###Socket
+### Socket
 
 * `socket.gethostname()` = Returns the hostname
 * `socket.gethostbyname(host)` = Returns the IP of host
 * `socket.gethostbyname_ex(host)` = Returns all the IPs and aliases that belong to host
 
-###String
+### String
 
 * `string.capwords(s)` = Capitalize string `s`
 
-###Sys
+### Sys
 
 * `sys.getrefcount(object)` = Returns the number of times object is used. Includes a spurious copy created by `getrefcount` itself. Object can be a variable, a class or a function
 * `sys.getsizeof(object)` = Returns how much memory is occupying object. For classes, doesn't include also all the attributes
 * `sys.modules` = Contains the currently loaded modules (recursively)
 
-###Time
+### Time
 
 * `time.clock()` = Returns the cpu time, the number of clocks from the execution of the current program. Useful to measure performances because `clock()` doesn't increases during idle time but only when actually running
 
-###Timeit
+### Timeit
 
 * `python -m timeit '".".join(str(n) for n in range(100))'` = Quick measuring of speed of code snippets

@@ -1,4 +1,4 @@
-###Options to enable in the kernel
+### Options to enable in the kernel
 
 	Device Drivers -> Block devices -> Loopback Device Support (BLK_DEV_LOOP)
 	Device Drivers -> Block devices -> RAM disk support

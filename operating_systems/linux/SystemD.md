@@ -1,4 +1,4 @@
-###Systemd/Systemctl
+### Systemd/Systemctl
 
 + `systemd-cgls` = show full hierarchy of control groups
 + `systemd-cgtop` = the same of `systemd-cgls` but ordered by CPU, memory and disk I/O load
@@ -8,12 +8,12 @@
 + `systemctl --failed` = show failed units
 + `systemctl isolate runlevel3.target` = switch to run level 3. Run level 5 is named `graphical.target`
 
-###Journal
+### Journal
 
 + `journalctl -o verbose` = Enable verbose output for systemd's journal
 + `journalctl -e` = Jumps directly at the end of the log (in conjuction with less)
 
-###Various
+### Various
 
 + `hostnamectl` = get server hostname
 + `hostnamectl set-hostname abc` = set hostname to `abc`

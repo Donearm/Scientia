@@ -1,4 +1,4 @@
-#Functions
+# Functions
 
 namename prints the basename without extension  
 ext prints extension of a file, including "."  
@@ -17,9 +17,9 @@ ext prints extension of a file, including "."
 	  echo "${ext:-.}"
 	}
 
-#Commands
+# Commands
 
-##CTRL Key Bound
+## CTRL Key Bound
 
 * `Ctrl + _` =  undo
 * `Ctrl + @` = set mark
@@ -45,7 +45,7 @@ ext prints extension of a file, including "."
 * `Ctrl + y` = paste the text at top of the kill#ring
 * `Ctrl + z` = Suspend/ Stop the command
 
-##ALT Key Bound
+## ALT Key Bound
 
 * `Alt + ''<''` = Move to the first line in the history
 * `Alt + ''>''` = Move to the last line in the history
@@ -65,7 +65,7 @@ ext prints extension of a file, including "."
 * `Alt + u` = Make word uppercase
 * `Alt + backspace` = Delete backward from cursor
 
-##Meta Key Bound
+## Meta Key Bound
 
 Meta usually corresponds to the `Esc` key
 
@@ -78,7 +78,7 @@ Meta usually corresponds to the `Esc` key
 * `M + u` = uppercase current word
 * `M + y` = rotate the kill=ring
 
-##More Special Keybindings
+## More Special Keybindings
 
 Here "2T" means Press `TAB` twice
 
@@ -93,30 +93,30 @@ Here "2T" means Press `TAB` twice
 * `$ =2T` = Output like ls or dir
 * `Ctrl + v Ctrl + m` = Insert a newline control character
 
-#Scripts
+# Scripts
 
-##Remove the extensions from multiple files
+## Remove the extensions from multiple files
 
 	find -type f -name "name.ext" | while read i; do mv $i $i%.ext; done
 
-##Rot13 Encryption
+## Rot13 Encryption
 
 In a file:
 
 	cat "$@" | tr 'a-zA-Z' 'n-za-mN-Z-A-M'
 	exit 0
 
-##Rename multiple files
+## Rename multiple files
 
 	for files in $(ls .); do
 		  newname=`echo $files | sed 's/oldtext/newtext/g'`;
 		  mv $files $newname;
 	done
 
-#Syntax
+# Syntax
 
   
-####Various Bash syntax rules  
+#### Various Bash syntax rules  
   
 * `${#variable}` = Variable string length
 * ` variable=$(<file) ` = Save in variable the content of a file
@@ -135,7 +135,9 @@ In a file:
 * `^aaa^bbb` = Substitutes `aaa` with `bbb` in the last executed command on the terminal. Useful to rerun the same command but with different arguments
 * `echo ${PIPESTATUS[@]}` = Find out all the exit codes of the previously piped commands
   
-####Bash History  
+#### Bash History  
+
+How to use and navigate through Bash's history
   
 * `!!` = Rerun the last executed command
 * `!*` = Represent all the arguments of the last executed command
@@ -146,7 +148,7 @@ In a file:
 * `!cmd` = Rerun, with same arguments and parameters, last execution of `cmd`
 * `!!:gs/oldarguments/newarguments` = Rerun last executed command substituting `oldarguments` with `newarguments`
 
-####Bash Redirection
+#### Bash Redirection
 
 Partly copied/modified from [bash-redirections-cheat-sheet](https://github.com/pkrumins/bash-redirections-cheat-sheet)
 
@@ -170,6 +172,6 @@ Partly copied/modified from [bash-redirections-cheat-sheet](https://github.com/p
 * `cmd 3>&1 1>&2 2>&3` = swap stdout and stderr of cmd
 * `cmd > >(cmd1) 2> >(cmd2)` = send stdout of cmd to cmd1 and stderr of cmd to cmd2
 
-###Terminal Line Wrapping
+### Terminal Line Wrapping
 
 To prevent commands to overlap on the prompt, add a `\` before every `[` and `]` in your bash prompt (`$PS1`)

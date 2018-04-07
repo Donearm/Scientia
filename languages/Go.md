@@ -1,4 +1,4 @@
-###Commands
+### Commands
 
 * `go list all` = List all installed packages, standard library's included
 * `go list std` = List only packages from the standard library

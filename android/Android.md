@@ -25,7 +25,7 @@ to decrease dialing out delay
 
 help scrolling responsiveness
 
-###Save battery
+### Save battery
 	wifi.supplicant_scan_interval=180
 	pm.sleep_mode=1
 	ro.ril.disable.power.collapse=0
@@ -36,15 +36,15 @@ while
 
 disables debugging notify icon on statusbar
 
-###Increase overall touch responsiveness
+### Increase overall touch responsiveness
 	debug.performance.tuning=1
 	video.accelerate.hw=1
 
-###Raise photo and video recording quality
+### Raise photo and video recording quality
 	ro.media.dec.jpeg.memcap=8000000
 	ro.media.enc.hprof.vid.bps=8000000
 
-###3G signal tweaks
+### 3G signal tweaks
 	ro.ril.hsxpa=2
 	ro.ril.gprsclass=10 
 	ro.ril.hep=1
@@ -56,18 +56,18 @@ disables debugging notify icon on statusbar
 	ro.ril.htcmaskw1=14449
 	ro.ril.hsupa.category=5
 
-###Net Tcp speed tweaks
+### Net Tcp speed tweaks
 	net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
 	net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
 	net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
 	net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
 	net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
-###Disable blackscreen issue after call
+### Disable blackscreen issue after call
 	ro.lge.proximity.delay=25
 	mot.proximity.delay=25
 
-###Various
+### Various
 	ro.config.hwfeature_wakeupkey=0  
 	
 the phone will not wakeup from hitting the volume rocker

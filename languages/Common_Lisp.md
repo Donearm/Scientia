@@ -1,5 +1,4 @@
-
-##Syntax and various functions
+## Syntax and various functions
 
 	(format t "hello") 
 	

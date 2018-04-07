@@ -1,4 +1,4 @@
-###Windows Registry tweaks
+## Windows Registry tweaks
 
 * HKEY\_CURRENT\_USER\ControlPanel\Desktop
 	* MenuShowDelay = Delay in ms at the opening of menus. Default is 400
@@ -8,7 +8,7 @@
 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
 	* EnablePrefetcher = Enable prefetching of data on the hard disk. With 2, the default, only for Windows, with 3, for every applications
 
-###Make a Windows Xp Corporate version cd
+## Make a Windows Xp Corporate version cd
 
 What you need:
 
@@ -30,7 +30,7 @@ What you need:
 6. Remove the following 3 files from the directory: `/i386/nt5inf.ca_ /i386/eula.txt /i386/win9xupg/win95upg.inf`
 7. Now copy the remaining 8 files to the `"WXPPRO_EN` Directory you just created. (Overwrite all these files if asked) `/i386/dpcdll.dl_ /i386/oembios.bi_ /i386/oembios.ca_ /i386/oembios.da_ /i386/oembios.si_ /i386/pidgen.dll /i386/setupp.ini /i386/setupreg.hiv`
 
-###NERO BURNING ROM 5.5.7.2 Instructions.
+### NERO BURNING ROM 5.5.7.2 Instructions.
 
 Download the file NERO.REG and extract to the Nero Burning ROM 5.5.7.2 Program Directory then run the file, this registry entry is required to make the XP CD Bootable. Eliminates the "Cannot Find NTLDR" error at boot up.
 
@@ -81,7 +81,7 @@ Congratulations !! You should now have a nice new Bootable Copy of "WINDOWS XP P
 Label your New CD as required and put it back in the CD Drive - if it should come up with the Set Up Dialog the same as Original Windows CD. Press Exit.
 IMPORTANT: DO NOT select SETUP Yet!!!
 
-###SETUP MANAGER Instructions
+### SETUP MANAGER Instructions
 
 For a Complete Unattended Clean Install on a freshly formatted Hard Drive.
 
@@ -114,7 +114,7 @@ For a Complete Unattended Clean Install on a freshly formatted Hard Drive.
 	* Step 23 - Select Floppy Drive and Save File As "winnt.sif" - Save as type "Remote Boot File(*.sif)"
 	* Step 24 - Setup Manager will advise you when it is Complete and shows the files on your Floppy Drive. Files Saved are " WINNT.SIF " & " WINNT.BAT ".
 
-###WINNT.BAT Contents:
+### WINNT.BAT Contents:
 
 	@rem SetupMgrTag
 	@echo off
@@ -135,7 +135,7 @@ Don't Forget to Reset the BIOS to Boot From your CDROM first then HDD.
 Leave the Floppy Disk in the Drive before Booting with the Cracked #Windows XP Pro CD.  
 You can leave the CD in the Drive when it reboots after Setup, Just don't hit any keys at boot up.  
 
-###Windows Vista
+## Windows Vista
 
 enable login as Administrator. At command prompt:
 
@@ -145,11 +145,11 @@ the Administrator account will be enabled without the need of entering a passwor
 
 	net user administrator /active:no
 
-###Use a network printer from a Cups server
+## Use a network printer from a Cups server
 
 As Url use: `http://$ip_pc_with_cups:631/printers/printer_name`
 
-###Windows8
+## Windows8
 
 as W8 has the bad habit to set itself as the default element to boot under UEFI (and it probably does something similar under BIOS too) use
 

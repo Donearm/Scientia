@@ -1,13 +1,13 @@
-##Various kernel options
+## Various kernel options
 
-###Systemd
+### Systemd
 
 	net.ifnames=0
 
 turns off predictable name logic for network cards. Revert to the old `eth0`, 
 `eth1` etc.
 
-###Acpi/Apic options
+### Acpi/Apic options
 
 	no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override
 

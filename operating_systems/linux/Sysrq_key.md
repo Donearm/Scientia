@@ -1,4 +1,4 @@
-###How do I use the magic SysRq key?
+### How do I use the magic SysRq key?
 
 to enable it 
 
@@ -9,7 +9,7 @@ or edit `/etc/sysctl.conf` and add `kernel.sysrq = 1`
 On x86 - You press the key combo "ALT-SysRq-<command key\>".
  Note - Some keyboards may not have a key labeled *SysRq*. The *SysRq* key is also known as the _Print Screen_ key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with "press Alt", "press SysRq", "release Alt", "press <command key\>", release everything.
 
-####What are the 'command' keys?
+#### What are the 'command' keys?
 
 * `r`		= Turns off keyboard raw mode and sets it to XLATE.
 * `k`		= Secure Access Key (SAK) Kills all programs on the current virtual console. NOTE: See important comments below in SAK section.

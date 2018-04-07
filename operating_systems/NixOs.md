@@ -1,4 +1,4 @@
-###Various Commands
+### Various Commands
 
 `nixos-rebuild switch` = rebuild the system after having edited the configuration
 `nix-env -qaP package` = search for `package`

@@ -1,4 +1,4 @@
-###Various Commands
+### Various Commands
 
 * `cvsup` = Update ports tree
 * `make search key=program` = Search for `program` among the ports tree
@@ -25,7 +25,7 @@
 * `portsnap extract` = Extract the ports database in `/usr/ports`
 * `ipfstat` = General statistics of the firewall (ipfilter)
 
-###Useful Files
+### Useful Files
 
 * `/usr/src/sys/arch/conf/lint` = Contains kernel configuration options
 * `/etc/defaults/make.conf` = Options for make

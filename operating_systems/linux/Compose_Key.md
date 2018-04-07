@@ -1,4 +1,3 @@
-
 This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
 
 Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.

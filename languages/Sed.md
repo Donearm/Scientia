@@ -1,14 +1,14 @@
-###Edit a string in multiple files at once
+### Edit a string in multiple files at once
 
 `for f in $files; do grep $oldstring $f | sed 's/$oldstring/$newstring/g' $f > ${f}.new ; done`
 
 this actually outputs every edited files to a new file. To edit in place, use sed with `-i` and don't redirect the output
 
-###Update copyright date at the change of year
+### Update copyright date at the change of year
 
 `sed -i 's/2011\([, ] \)/2012\1/g'`
 
-###Various syntax
+### Various syntax
 
 * `s/pattern//2g` = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first
 * `'s/pattern/&/w file' < inputfile` = Save pattern from inputfile in file. Here `w` stands for write and the `&` represents the pattern itself

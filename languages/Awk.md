@@ -1,16 +1,16 @@
-###Print longest line value of a file
+###  Print longest line value of a file
 
 `expand some_file | awk '{if (x < length()) x = length() } END { print “Longest row is ” x }'`
 
-###Print only non-empty lines
+###  Print only non-empty lines
 
 `awk 'NF > 0' some_file`
 
-###Count lines
+###  Count lines
 
 `awk 'END {print NR}' some_file`
 
-###Awk as Grep
+### Awk as Grep
 
 `awk '{print $2}' some_file`
 
@@ -18,13 +18,13 @@ which is a quicker alternative to `cat some_file | awk '{print $2}'`
 
 To negate a pattern (print only lines that don't match), use `awk '$1 !~ /regexp/' some_file`
 
-###Strings substitution
+### Strings substitution
 
 `awk '{sub("from", "to"); print}'`
 
 substitutes "from" to "to". With `{gsub("from", "to"); print}` it substitutes all occurrences and not just the first. Both can be used with regexps, like `/regexp/', 'new_string'`
 
-###Comparison
+### Comparison
 
 `awk '$2 > 1'` 
 
@@ -42,17 +42,17 @@ equality
 
 matching (even a regexp)
 
-###Print only unique lines (like uniq)
+### Print only unique lines (like uniq)
 
 `awk '!a[$0]++' file`
 
-###Regexp matching
+### Regexp matching
 
 `awk '$0 ~ "[A-Za-z0-9]+" {print $1}'`
 
 print $1 only if $0 matches the regexp
 
-###Variables in Awk
+### Variables in Awk
 
 `awk -v var="bang" '{sub(var,"boom");print}'`
 
@@ -60,12 +60,12 @@ it also accepts shell variables with `-v var=$shell_variable`
 
 Environment variables can also be accessed with `awk '{print, $0,ENVIRON["x"]}' some_file`
 
-###Date in Awk
+### Date in Awk
 
 `awk '{print strftime("%d-%m-%y %H-%M-%S", systime());}'`
 
 `strftime` converts the output of `systime` from the Unix epoch to a more human-readable format. Pattern is the same as `date` command. `systime` can be omitted (it defaults to current time). Only in GNU awk.
 
-###Print only fields after the first 2
+### Print only fields after the first 2
 
 `awk '{$1=$2=""; print $0}'`
