@@ -1,5 +1,9 @@
 # Personal Wiki
 
+This is a clumsy-written, partly outdated, randomly-collected series of notes about Programming, Systemd Administration and similiar topics that over years I've found it useful. Sort of a personal reference, or wiki.
+
+## Topics' list
+
 + [Android :iphone:](android/Android.md)
 + [Css](frontend/Css.md)
 + Languages
