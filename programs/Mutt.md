@@ -1,12 +1,12 @@
-##General Commands
+## General Commands
 
 * `q(x)`	= exit the current menu (abort without saving) 
 * `^g`		= cancel current action 
 * `?`		= list all keybindings for the current menu 
 
-##Keybindings
+## Keybindings
 
-###The Message Index  (browsing through mailbox)
+### The Message Index  (browsing through mailbox)
 
 * `m`		= compose a new message 
 * `d(D)`	= delete the current message (matching a pattern) 
@@ -30,7 +30,7 @@
 * `^l`		= clear and redraw the screen 
 * `ALT k`	= mail a PGP public key to someone 
 
-###The Pager (reading an email)
+### The Pager (reading an email)
 
 * `<Return>`  = go down one line 
 * `<Space>(-)` = display the next page/message (previous) 
@@ -39,7 +39,7 @@
 * `\`		= toggle search pattern coloring 
 * `S(T)`	= skip beyond quoted text (toggle display of quoted text) 
  
-###Composer (setting the send options for an email)
+### Composer (setting the send options for an email)
  
 * `y(P)(w)` = send the message  (postpone)  (write to folder) 
 * `i`		= check spelling, if available 
@@ -57,11 +57,11 @@
 `^g` means CTRL and the g key. `ALT f` means ALT and the f key.								
 If you do not have an ALT key then use ESC then key. Do not type the brackets.								
 
-##Arguments
+## Arguments
 
 * `-H file` = Use a file as a model for a new message, taking both headers and body. Very useful for sending patches generated with `git format-patch`
 
-##Highlight according to a pattern
+## Highlight according to a pattern
 
 You can play with these for a start (probably want to get rid of
 `~x \@\`hostname\`` stuff):
@@ -86,7 +86,7 @@ Answered by myself  color index green default
 
 New concerning myself  color index red default
 
-##Tagging
+## Tagging
 
 TagPatterns
 
@@ -102,6 +102,6 @@ to mark messages in that time span
 
 to mark messages older than 1 day (use `d` for days, `w` for weeks, `m` for months and `y` for years)
 
-##See what charset is being used
+## See what charset is being used
 
 In mutt, type `:set &charset ?charset`

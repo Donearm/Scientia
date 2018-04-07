@@ -1,4 +1,4 @@
-###Mount Samba shares on Linux
+### Mount Samba shares on Linux
 
 	mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory
 
@@ -6,6 +6,6 @@ and add to fstab:
 
 	//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto
 
-##Configure network printer in Cups
+### Configure network printer in Cups
 
 with `lpinfo -v` can be listed all network protocols, with URIs, available on the local computer

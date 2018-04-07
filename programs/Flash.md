@@ -1,4 +1,4 @@
-###Enable hardware acceleration with the GPU
+### Enable hardware acceleration with the GPU
 
 Add:
 

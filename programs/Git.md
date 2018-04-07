@@ -55,12 +55,12 @@ A brief Git cheatsheet. Only the commands I found more useful (or that I repeate
 * `git remote set-url branch-name url` = Set url of remote `branch-name` to `url`. Adding `--push` also changes the remote url to push to for specified branch
 
 
-####Cherry picking a range of commits
+### Cherry picking a range of commits
 
 1. Create a new branch from the branch where are the commits you want to apply by specifying the last wanted commit: `git checkout -b newbranch SHA1_HASH_OF_COMMIT`
 2. Then rebase from the older wanted commit into master: `git rebase --onto master SHA1_HASH^`
 
-###Github
+### Github
 
 Sync with origin (the remote repository) after a local fork:
 

@@ -1,4 +1,4 @@
-###Commands
+### Commands
 
 * `ffmpeg -i file` = Show info about file
 * `ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3` = Extract only audio from file and encode it at 320kb/s as mp3

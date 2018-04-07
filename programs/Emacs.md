@@ -1,4 +1,4 @@
-##Movements
+## Movements
 
 * `C-v` = Move forward of a screenful
 * `M-v` = Move backwards of a screenful
@@ -23,7 +23,7 @@
 * `C-M-a` = Go at the beginning of current or previous function
 * `C-M-e` = Go at the end of current or previous function
 
-##Basic commands
+## Basic commands
 
 * `C-g` = Cancel the currently active command
 * `C-x u` = Undo last command
@@ -39,14 +39,14 @@
 * `C-h b` = Get all currently available key bindings grouped by modes
 * `C-x C-e` = Execute the code where the cursor is at (it needs to be ELisp)
 
-##Windows/Buffers
+## Windows/Buffers
 
 * `C-x 1` = Close all open windows but for the current
 * `C-x o` = Jump between windows
 * `C-u M-x shell` = Go to the buffer called *shell*
 * `C-x C-b` = Show buffer list
 
-##Editing
+## Editing
 
 * `C-d` = Delete character after to the cursor
 * `M-<Delete>` = Delete word before the cursor
@@ -77,13 +77,13 @@
 * `M-x replace-string` = Open the replace string mode, to replace a string with another
 * `M-x replace-regexp` = As above but allows the use of regexps
 
-##Files
+## Files
 
 * `C-x C-f` = Open a file
 * `C-x C-s` = Save a file
 * `C-x i`	= Insert the content of a file at the current position
 
-##Dired
+## Dired
 
 * `M-x dired` = Open dired, the Emacs file manager
 * `C-x C-q`	 = Enable the edit mode in dired, whereas editing file names can be made permanent with `C-x C-s` like it was a normal text buffer
@@ -100,14 +100,14 @@ when in dired mode these keys are available:
 * `% m` = Mark according to a regexp
 * `^` = Go to the parent directory
 
-##Shell
+## Shell
 
 * `M-x shell` = Open a shell
 * `M-x term` = Open a terminal
 * `M-x ansi-term` = Open a ANSI terminal
 * `M-x eshell` = Open the internal Emacs shell, in ELisp
 
-##Various
+## Various
 
 * `M-x compile` = Compile (with make)
 * `M-x gdb` = Launch gdb

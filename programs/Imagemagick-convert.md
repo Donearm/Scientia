@@ -1,4 +1,4 @@
-###Create an animated gif
+### Create an animated gif
 
 A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there's part of the image that isn't desired to end up in the gif, crop with `convert` thus:
 L'area prescelta si calcola a partire dal vertice in alto a sinistra dell'immagine. Per selezionare da dove partire con il taglio impostare così: `wwwXhhhx+nnn+nnn` dove nnn sta per l'altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso
@@ -11,19 +11,19 @@ where `www` is the width and `hhh` the height of the resulting image and `nn1` a
 
 will create an animated gif (final.gif) with a delay between frames of ms, a size of 80x80 (here the `!` means disregard aspect ratio and force resizing) and with optimized colours and transparency to reduce final size (+map)
 
-####Tweak brightness and contrast
+### Tweak brightness and contrast
 
 	convert -level blackpoint%,whitepoint%,gamma
 
 blackpoint and whitepoint are the limit over which the black and white pixel will be discarded, in a percentage. Therefore, removing the blackest and/or whitest pixels can reduce the overall contrast of the image. Gamma increases or decreases the overall brightness. Default value is 1.0, lower it to dim and increases it to brighten
 
-###Change main colour of an icon
+### Change main colour of an icon
 
 	convert \( icon.png -alpha extract \) -background "#ffffff" -alpha shape white-icon.png
 
 Convert an icon main colour, the foreground one, to white. Colours can be any of those listed at [Color Names](http://www.imagemagick.org/script/color.php)
 
-###Various
+### Various
 
 * `convert file.pdf img_%04d.png` = Convert all the images in a pdf in png, using 4 digits to enumerate the images
 * `convert -quality 0.75 -interlace None -type TrueColor -resample 96×96 -resize resolution img img.out` = Make an image ready to be used at boot (generally for Grub legacy)

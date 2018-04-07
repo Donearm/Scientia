@@ -1,4 +1,4 @@
-###Basic commands
+## Basic commands
 
 * `J` = Join next to current line
 * `u` = Undo
@@ -24,7 +24,7 @@
 * `m<a>` = Mark current position as <a\>
 * `:1,4up <newfile>` = Save file contents from line 1 through 4 into <newfile\>. Can be applied also to selections
 
-###Movements
+## Movements
 
 * `b` = Move back a word, going to the end of the previous one or at the beginning of the current one
 * `w` = Jump at the beginning of the next word
@@ -70,7 +70,7 @@
 * `{` = Go to the beginning of the previous or current paragraph or code block
 * `}` = Go to the end of the next or current paragraph or code block
 
-###Removal and Substitution
+## Removal and Substitution
 
 * `x` = Delete the character under the cursor
 * `X` = Delete the character before the cursor
@@ -105,7 +105,7 @@
 * `ci"` = Remove everything between the previous `"` and the next `"` and go in insert mode. It's not necessary to actually have the cursor between 2 `"`, it'll automatically move to the next occurrence
 * `di"` = As above but it only delete the text
 
-###Text formatting
+## Text formatting
 
 * `gUw` = Make a word all uppercase (starting from the cursor)
 * `guw` = Like above but lowercase
@@ -130,7 +130,7 @@
 * `:1,$j` = Join all lines from the first (1) to the last ($) in a single line
 * `:1G!Gsort` = Go to the first line (1G) and then sort the whole file
 
-###Windows
+## Windows
 
 * `:split file` = Open file in a new split window. Also `:new` to simply open an empty file
 * `:vsplit file` = As above but the split window will be vertical
@@ -141,7 +141,7 @@
 * `:qall!` = As above but don't save changes
 * `:windo` = Execute a command in all windows
 
-###Folding
+## Folding
 
 * `zf3j` = Fold 3 lines
 * `zfa(` = Fold from the parentheses "(" to the matching closing parentheses. Any symbol can be used. Cursor needs to be on the opening symbol
@@ -155,7 +155,7 @@
 * `zd` = Delete the fold under the cursor
 * `:set nofoldenable` = Delete all folds in current file
 
-###Searches
+## Searches
 
 * `/string` = Search string. Use `n` to jump between results
 * `:g/regexp/` = Show all lines matching regexp
@@ -164,7 +164,7 @@
 * `*` = Search word under the cursor forward in the file
 * `#` = Search word under the cursor backward in the file
 
-###Spell Checking
+## Spell Checking
 
 * `:set spell` = Enable spell checking. `:set nospell` to disable it
 * `:set spelllang=xx` = Set spell checking language to xx. Dictionary files have to be in /usr/share/vim/spell or ~/.vim/spell
@@ -176,7 +176,7 @@
 * `zW` = Add word under the cursor to a supplementary dictionary of wrong words, separated from the main one
 * `z=` = Show possible correction for the word under cursor
 
-###Buffers
+## Buffers
 
 * `:badd file` = Add file to the buffer list but don't open it
 * `:buffers` = Show all buffers
@@ -193,7 +193,7 @@
 * `:bmodified` = Go to the last modified buffer
 * `:bufdo` = Execute a command in all opened buffers
 
-###Registers
+## Registers
 
 * `:registers` = Show the contents of all registers
 * `"0` = The register containing the most recent yanked text but never deleted text
@@ -207,7 +207,7 @@
 * `"=expression<Enter>p" = The `=` register evaluates the `expression` and `p` paste it at the current cursor position. For instance, `"=5*5<Enter>p` will paste output 25
 * `:22put r` = Insert contents of register `r` at line 22. Without a number, defaults to the current line
 
-###Ctags
+## Ctags
 
 * `Ctrl+]` = Jump to the first occurrence Vim finds of the class/method/function/variable/whatever the cursor is at
 * `Ctrl+t` = Get back to where you were before jumping with `Ctrl+]`
@@ -216,7 +216,7 @@
 * `:ltag` = Load the tags in the location list window, that can be shown with `:lopen`
 * `Ctrl+x Ctrl+]` = Insert the first tag that starts with the characters before the cursor among tags and insert it in front of the cursor (in insert mode)
 
-###Various Commands
+## Various Commands
 
 * `:h holy-grail` = Show a general list of commands
 * `:set all` = Show the options
@@ -261,7 +261,7 @@
 * `ga` = Show the decimal, octal and hexadecimal index of the character under the cursor
 * `:au` = Show all the autocommands in effect
 
-###Macros
+## Macros
 
 Some macros I find useful
 
@@ -275,11 +275,11 @@ Some macros I find useful
 
 ##Tips
 
-###Change statusline colours
+### Change statusline colours
 
 Edit in the colour theme file the `hi Statusline` line. `ctermfg` is the foreground colour, `ctermbg` is the background. Use `:he cterm-colors` to see which colours can be used. Up until 256 colours, if the terminal supports it, can be used, see [here](http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim)
 
-###Regexp
+### Regexp
 
 Instead of backslashing special characters, it's possible to add `\v` at the 
 very beginning of a regexp so that everything that's not a letter, a number or 
@@ -293,6 +293,6 @@ doesn't need backslashing before parentheses, plus sign and curly brackets.
 Also, `\c` turns off case sensitivity. Its opposite is `\C`, forcing case 
 sensitivity on.
 
-###Identify corresponding opening/closing HTML tag
+### Identify corresponding opening/closing HTML tag
 
 Typing `v` + `a` + `t` will select everything inside the html tag where is the cursor. Subsequently `o` will jump between the opening and closing tag, `c` will change content and `y` will yank

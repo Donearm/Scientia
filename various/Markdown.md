@@ -1,4 +1,4 @@
-###How to make footnotes
+### How to make footnotes
 
 Use 
 

@@ -1,10 +1,10 @@
-###Various Commands
+### Various Commands
 
 * `convert -geometry 640×480 -colors 14 img img.xpm` = Convert an image in the format grub (legacy) accepts
 * `grub-set-default num` = Tells grub which os to boot next time
 * `elevator=scheduler` = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq)
 
-###Generate a standalone Grub bootloader for UEFI systems
+### Generate a standalone Grub bootloader for UEFI systems
 
 First, have or generate a `grub.cfg`. `grub-mkconfig` is the command. Then 
 create the path for it by `mkdir -p boot/grub/` and putting it there. Once done, 

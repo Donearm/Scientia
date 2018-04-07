@@ -1,4 +1,4 @@
-###Add trackers to a torrent
+### Add trackers to a torrent
 
 Select the torrent. Press `Ctrl+x` and insert this command:
 

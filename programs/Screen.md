@@ -1,4 +1,3 @@
-
 * `C-a :` = Go in command mode, where it's possible to insert commands as with Vi
 * `C-a n` & `C-a p` = Go to the next or previous window
 * `C-a S` = Open a new region in the current window

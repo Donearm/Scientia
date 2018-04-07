@@ -1,4 +1,4 @@
-###Useful URIs
+### Useful URIs
 
 `chrome:extension` = Opens the window to manage the installed extensions
 `chrome:flags` = Opens the experimental features and settings page

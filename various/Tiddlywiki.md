@@ -1,8 +1,8 @@
-###Tweaks and features of Tiddlywiki
+## Tweaks and features of Tiddlywiki
 
 [Tiddlywiki markup list](http://tiddlywiki.org/bags/tiddlywiki_public/tiddlers/TiddlyWiki%20Markup.html)
 
-###To use the file browser to insert a file into the wiki
+### To use the file browser to insert a file into the wiki
 
 This:
 
@@ -27,22 +27,22 @@ or this:
 	    </iframe>
     </html>
 
-###To show a text file with an iframe
+### To show a text file with an iframe
 
     <html><iframe src ="file:///C:\Users\Owner\Documents\testingtesting2.txt" width="50%" align="center" height="600"></iframe></html>
 
-###To insert an image
+### To insert an image
 
     <html><img src="path/to/image" width="50%" height="40%"></html>
 
-###To directly install a plugin
+### To directly install a plugin
 
 Copy the javascript code of the plugin in a new tiddler, titled as the plugin and tagged only as `systemConfig`. After a restart, it'll be loaded
 
-###Export tiddlers as pdf/ps
+### Export tiddlers as pdf/ps
 
 Simply use the "print to file" function of the browser. It'll export all the currently opened tiddlers
 
-###Show Tiddlywiki version number
+### Show Tiddlywiki version number
 
 Open a new tiddler, type `<<version>>` in it and close it. Its text will be the version number of the current tiddlywiki

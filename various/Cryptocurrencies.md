@@ -1,6 +1,6 @@
 [Litecoin API](https://litecoin.info/Litecoin_API)
 
-###Bitcoin/Litecoin API commands
+### Bitcoin/Litecoin API commands
 
 * `getaccountaddress ""` = Print BTC/LTC address
 * `backupwallet <location>` = Dump wallet to `location`

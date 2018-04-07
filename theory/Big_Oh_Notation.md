@@ -1,4 +1,4 @@
-###Basic definitions
+### Basic definitions
 
 * `O(1)` = constant: the operation doesn't depend on the size of its input
 * `O(n)` = linear: the run time complexity is proportionate to the size of `n`

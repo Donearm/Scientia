@@ -7,7 +7,7 @@ Keyboard shortcuts to save game state. It could be necessary to use F11 instead 
 * `F12 + Numpad 'n'`				# Quick save emulator state to slot 'n'.
 * `F12 + Right Shift + Numpad 'n'`	# Quick load emulator state from slot 'n'.
 
-####Make an empty floppy (a file .adf)
+### Make an empty floppy (a file .adf)
 
 To make a floppy DD image:
 

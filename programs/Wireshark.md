@@ -1,4 +1,4 @@
-###Sniff lan traffic
+### Sniff lan traffic
 
 * Install `dsniff` o any package that furnishes `arpspoof`
 * Enable IP forwarding with `echo 1 > /proc/sys/net/ipv4/ip_forward`

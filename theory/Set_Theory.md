@@ -1,4 +1,4 @@
-###Basics
+### Basics
 
 * `A ⊆ B` = `A` is a subset of `B`. All the members of `A` are also found in `B`
 * `A ∪ B` = Union. All the elements that are in `A`, `B` or both

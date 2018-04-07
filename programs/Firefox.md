@@ -1,19 +1,18 @@
-
 For most of these info, thanks to the very complete [Mozillazine](http://kb.mozillazine.org/Category:Preferences)
 
-###Useful URIs
+### Useful URIs
 
 * `about:buildconfig` = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented
 * `about:cache?device=memory` or `disk` = Show the list of all cache objects, on disk or in memory. From here it's possible to show or save every object
 
-###Pipelining
+### Pipelining
 
 Enabling of HTTP/1.1 pipelining
 
 * `network.http.pipelining` = Set it to true
 * `network.http.proxy.pipelining` = Set it to true
 
-###Various tweaks
+### Various tweaks
 
 * `nglayout.initialpaint.delay` = Determines time in milliseconds to wait before an initial reflow attempt during page rendering
 * `network.prefetch-next` = With false disable link prefetching, thus loading only the clicked upon elements of the page
@@ -35,12 +34,12 @@ Enabling of HTTP/1.1 pipelining
 * `browser.ctrlTab.previews` = Enables showing a snapshot of the page when browsing tabs with `Ctrl+Tab`. Default is false
 * `browser.tabs.animate` = With false, disable any animation when switching tabs, thus making the UI more responsive. Default is true
 
-###Tweak mouse wheel speed
+### Tweak mouse wheel speed
 
 * `mousewhell.withnokey.numlines` = The number of lines the page moves with one click of the scroll wheel. Default is 6
 * `mousewheel.withnokey.sysnumlines` = With false, make Firefox ignore the speed of the mouse wheel chosen by the OS. Default is true
 
-###AwesomeBar tweaks
+### AwesomeBar tweaks
 
 	places.frecency.linkVisitBonus 100
 	places.frecency.typedVisitBonus 2000
@@ -51,7 +50,7 @@ Enabling of HTTP/1.1 pipelining
 	places.frecency.tempRedirectVisitBonus 0
 	browser.urlbar.maxRichResults 12
 
-###Disable compatibility check for extensions
+### Disable compatibility check for extensions
 
 
 To force compatibility between a newer Firefox version and a not yet updated extension, add two booleans:
@@ -65,7 +64,7 @@ and set both to false. It could be needed to add another boolean, false too, lik
 
 where 3.6b is the installed Firefox version
 
-###Take a screenshot
+### Take a screenshot
 
 Open the Developer Toolbar (Shift+F2) and type
 
@@ -73,7 +72,7 @@ Open the Developer Toolbar (Shift+F2) and type
 
 a png file will be saved under `Downloads/` with the screenshot of the current page. If you want the full page, not just the visible part of it, you can add `--fullpage`
 
-###Keyboard shortcuts
+### Keyboard shortcuts
 
 * `Ctrl+Tab` = rotate forward among tabs
 * `Ctrl+Shft+Tab` = rotate to the previous tab

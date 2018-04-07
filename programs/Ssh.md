@@ -5,7 +5,7 @@
 * `ssh -t remote_host screen -r` = Attach a screen session on the remote host on the local one
 * `cat ~/.ssh/id_rsa.pub | ssh user@host "mkdir ~/.ssh; cat >>  ~/.ssh/authorized_keys"` = Copy own public key to user@host when `ssh-copy-id` isn't available 
 
-###Public Key authentication
+### Public Key authentication
 
 Dsa keys are the most recent format, Rsa ones are older
 
