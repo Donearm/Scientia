@@ -4,7 +4,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 
 ## Topics' list
 
-+ [Android :iphone:](android/Android.md)
++ [Android](android/Android.md) :iphone:
 + [Css](frontend/Css.md)
 + Languages
 	+ [Awk](languages/Awk.md)
@@ -25,7 +25,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 		+ [SysRq Key](operating_systems/linux/Sysrq_key.md)
 		+ [SystemD](operating_systems/linux/SystemD.md)
 		+ [X](operating_systems/linux/X.md)
-	+ [FreeBSD :imp:](operating_systems/FreeBSD.md)
+	+ [FreeBSD](operating_systems/FreeBSD.md) :imp:
 	+ [NixOs](operating_systems/NixOs.md)
 	+ [Windows](operating_systems/Windows.md)
 + Programs
