@@ -1,4 +1,4 @@
-Quick cheatsheet for MPlayer.
+Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.
 
 * `-afm dmo` = Sometimes useful to reproduce files with out of sync audio
 * `-ss HH:MM:SS` = Start playing at HH:MM:SS
