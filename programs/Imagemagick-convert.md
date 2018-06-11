@@ -32,3 +32,4 @@ Convert an icon main colour, the foreground one, to white. Colours can be any of
 * `convert image1 image2 +append finalimage` = Join `image1` and `image2` (a potentially infinite number images may be used) into `finalimage`, horizontally. Images should be of the same length or there'd be a background added to the shorter one for padding
 * `convert -flip image image.out` = Vertically mirror image to `image.out`. Using `-flop` instead mirrors horizontally
 * `identify -format "%w x %h %x x %y\n" image` = Print resolution and dpi of image
+* `convert image -fill '#000000' -opaque none image.out` = change background colour to `#000000`
