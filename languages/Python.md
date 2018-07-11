@@ -19,46 +19,58 @@
 
 Write a function like this:
 
-    def func1(func):
-           def wrapper():
-				# code to execute before func()
-                func()
-				# code to execute after func()
-           return wrapper
+```python
+def func1(func):
+	   def wrapper():
+			# code to execute before func()
+			func()
+			# code to execute after func()
+	   return wrapper
+```
 
 and then pass to a function this way:
 
-    @func1
-    def func():
-		# function code
+```python
+@func1
+def func():
+	# function code
+```
 
 ### Metaclasses
 
 Syntax:
 
-    ClassName = type(
-           'ClassName',
-           (object, ),
-           {'abc': def, 'esse': erre}
-    )
+```python
+ClassName = type(
+	   'ClassName',
+	   (object, ),
+	   {'abc': def, 'esse': erre}
+)
+```
 
 where `ClassName` is the name of the metaclass, `(object,)` is a tuple with all the classes to inherit and the following dictionary is the namespace of the metaclass. To refer to an instance of a metaclasse, use `cls` instead of `self`
 
 Then to instantiate a metaclass:
 
-    MyClass = ClassName('MyClass', (object, ), {})
+```python
+MyClass = ClassName('MyClass', (object, ), {})
+```
 
 or it's possible to instantiate the metaclass directly when creating a class, like:
 
-    class MyClass(object):
-          __metaclass__ = MyMetaClass
+```python
+class MyClass(object):
+	  __metaclass__ = MyMetaClass
+```
 
 ### Set operations
 
 various operations possible over sets. Examples:
 
-	A = {1, 2, 3, 3,}
-	B = {3, 4, 5, 6, 7}
+```python
+A = {1, 2, 3, 3,}
+B = {3, 4, 5, 6, 7}
+```
 
 * `A | B` -> `set([1, 2, 3, 4, 5, 6, 7])`
 * `A & B` -> `set([3])`
@@ -90,8 +102,10 @@ various operations possible over sets. Examples:
 
 ### Named tuples
 
-	Point = collections.namedtuple('Point', ['x', 'y'])
-	p = Point(x=1.0, y=2.0)
+```python
+Point = collections.namedtuple('Point', ['x', 'y'])
+p = Point(x=1.0, y=2.0)
+```
 
 ### Dis
 
@@ -101,8 +115,10 @@ various operations possible over sets. Examples:
 
 Permutations
 
-	for p in itertools.permutations([1, 2, 3, 4]):
-		print(''.join(str(x) for x in p))
+```python
+for p in itertools.permutations([1, 2, 3, 4]):
+	print(''.join(str(x) for x in p))
+```
 
 prints all the possible combinations
 	

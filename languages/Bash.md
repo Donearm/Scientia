@@ -3,6 +3,7 @@
 namename prints the basename without extension  
 ext prints extension of a file, including "."  
 
+```bash
 	function namename()
 	{
 	  local name=${1##*/}
@@ -16,6 +17,7 @@ ext prints extension of a file, including "."
 	  local ext=${name0:+${name#$name0}}
 	  echo "${ext:-.}"
 	}
+```
 
 # Commands
 
@@ -97,21 +99,27 @@ Here "2T" means Press `TAB` twice
 
 ## Remove the extensions from multiple files
 
-	find -type f -name "name.ext" | while read i; do mv $i $i%.ext; done
+```bash
+find -type f -name "name.ext" | while read i; do mv $i $i%.ext; done
+```
 
 ## Rot13 Encryption
 
 In a file:
 
-	cat "$@" | tr 'a-zA-Z' 'n-za-mN-Z-A-M'
-	exit 0
+```bash
+cat "$@" | tr 'a-zA-Z' 'n-za-mN-Z-A-M'
+exit 0
+```
 
 ## Rename multiple files
 
-	for files in $(ls .); do
-		  newname=`echo $files | sed 's/oldtext/newtext/g'`;
-		  mv $files $newname;
-	done
+```bash
+for files in $(ls .); do
+	  newname=`echo $files | sed 's/oldtext/newtext/g'`;
+	  mv $files $newname;
+done
+```
 
 # Syntax
 
