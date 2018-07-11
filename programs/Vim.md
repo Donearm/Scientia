@@ -286,7 +286,9 @@ very beginning of a regexp so that everything that's not a letter, a number or
 an underscore is taken to have a special meaning unless explicitly escaped. For 
 example:
 
-	:%s/\v^%(abc){1,3}(.+)$/\1/
+```vim
+:%s/\v^%(abc){1,3}(.+)$/\1/
+```
 
 doesn't need backslashing before parentheses, plus sign and curly brackets.
 
