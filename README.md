@@ -5,7 +5,9 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 ## Topics' list
 
 + [Android](android/Android.md) :iphone:
-+ [Css](frontend/Css.md)
++ Frontend
+	+ [jQuery](frontend/jQuery.md)
+	+ [Css](frontend/Css.md)
 + Languages
 	+ [Awk](languages/Awk.md)
 	+ [Bash](languages/Bash.md)
