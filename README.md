@@ -6,8 +6,9 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 
 + [Android](android/Android.md) :iphone:
 + Frontend
-	+ [jQuery](frontend/jQuery.md)
 	+ [Css](frontend/Css.md)
+	+ [D3](frontend/d3.md)
+	+ [jQuery](frontend/jQuery.md)
 + Languages
 	+ [Awk](languages/Awk.md)
 	+ [Bash](languages/Bash.md)
