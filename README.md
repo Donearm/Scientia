@@ -33,6 +33,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Windows](operating_systems/Windows.md)
 + Programs
 	+ [Chromium](programs/Chromium.md)
+	+ [Curl](programs/Curl.md)
 	+ [E-UAE](programs/E-Uae.md)
 	+ [Emacs](programs/Emacs.md)
 	+ [FFMpeg](programs/Ffmpeg.md)
