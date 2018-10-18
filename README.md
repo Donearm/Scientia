@@ -44,6 +44,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [GMail](programs/GMail.md)
 	+ [Gnome](programs/Gnome.md)
 	+ [Grub](programs/Grub.md)
+	+ [HTTrack](programs/HTTrack.md)
 	+ [Imagemagick Convert](programs/Imagemagick-convert.md)
 	+ [MPlayer](programs/MPlayer.md)
 	+ [Mutt](programs/Mutt.md)
