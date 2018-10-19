@@ -260,6 +260,7 @@
 * `:set noscrollbind` = Disable simultaneous scrolling of the diff buffers. Reenable it then with `:set scrollbind`
 * `ga` = Show the decimal, octal and hexadecimal index of the character under the cursor
 * `:au` = Show all the autocommands in effect
+* `:silent cmd` = adding `silent` before any command suppresses messages it may produce. Useful to not have to press <Enter> at startup to confirm enabling a plugin or a command
 
 ## Macros
 
