@@ -4,7 +4,7 @@ A brief Git cheatsheet. Only the commands I found more useful (or that I repeate
 * `git reset --hard SHA1_HASH` = Revert to the commit with `SHA1_HASH` and delete all subsequent commits
 * `git revert SHA1_HASH` = Like above but write a new commit that restore the repository as it was on `SHA1_HASH` commit. All the subsequent commits, that with `--hard` would have been lost, are still in the log and can be quickly reverted back to
 * `git log > Changelog` = Save the log as a simple changelog
-* `git log file` = Show all commits that modified `file`
+* `git log file` = Show all commits that modified `file`. Usually `file` is a full path but it is also possible to use wildcards, like `**/*.js`
 * `git log -Sstring -p` = Show all commits that match `string` and show also their changes (`-p`)
 * `git log -p --grep "perl_regexp"` = Show all commits whose message matches `perl_regexp`
 * `git merge somebranch` = Merge `somebranch` with current branch
@@ -31,6 +31,7 @@ A brief Git cheatsheet. Only the commands I found more useful (or that I repeate
 * `git filter-branch --index-filter 'git update-index --remove file' master` = Completely remove `file` from the history, from the branch master, in every commit it appears. It's like it never existed. To repeat for every branch in which the file was present
 * `git pull --rebase` = Pull from a remote branch but don't generate a commit message for the merge
 * `git show :/regexp` = Show last commit message matching `regexp`
+* `git show <commitid>:filename` = show the status of `filename` at `commitid`
 * `git remote rename aaa bbb` = Rename remote branch `aaa` to `bbb`
 * `git pull origin branch_remote:branch_local` = Pull a remote branch in the local one, creating the latter if it didn't already exist
 * `git merge --edit` = Edit the commit message when doing a merge
