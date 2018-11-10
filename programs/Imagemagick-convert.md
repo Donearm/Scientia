@@ -33,3 +33,4 @@ Convert an icon main colour, the foreground one, to white. Colours can be any of
 * `convert -flip image image.out` = Vertically mirror image to `image.out`. Using `-flop` instead mirrors horizontally
 * `identify -format "%w x %h %x x %y\n" image` = Print resolution and dpi of image
 * `convert image -fill '#000000' -opaque none image.out` = change background colour to `#000000`
+* `convert image -fill black -colorize 75% image.out` = make it more opaque the image, in this case by 75% and towards black, effectively rendering an image darker. Can be done towards any colour
