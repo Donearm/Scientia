@@ -9,3 +9,17 @@
 * `-t hh:mm:ss` o `-t number` = Stop processing at given time or after `number` of minutes
 * `ffmpeg -acodec copy -vcodec copy -ss hh:mm:ss -t hh:mm:ss -i file file_output` = Extract, without encoding, from file between the two time given
 * `ffmpeg -acodec flac -ab 192k -i input_file output_file` = Reencodes corrupted or out of sync flac files
+
+### Conversions
+
+#### H264
+
+	ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
+
+#### VP8
+
+	ffmpeg -i inputfile -vcodec libvpx -qmin 0 -qmax 50 -crf 10 -b:v 1M -acodec libvorbis outputfile.webm
+
+#### VP9
+
+	ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
