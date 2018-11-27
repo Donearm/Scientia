@@ -60,5 +60,6 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 + Various
 	+ [Cryptocurrencies](various/Cryptocurrencies.md)
 	+ [Markdown](various/Markdown.md)
+	+ [MongoDB](various/Mongodb.md)
 	+ [Samba and NFS](various/Samba_and_Nfs.md)
 	+ [Tiddlywiki](various/Tiddlywiki)
