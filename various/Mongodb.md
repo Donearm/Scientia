@@ -11,3 +11,7 @@
 * `db.users.find({ name: 'Mike' });` = find in `users` an user with name Mike.
 * `db.users.update({ name: 'Mike' }, { name: 'Viktor' });` = update user Mike with Viktor.
 * `db.users.remove();` = delete all entries in `users`.
+
+#### Importing csv files
+
+* `mongoimport --collection nameofcollection --type csv --headerline --db nameofdatabase file.csv` = import a csv file as a collection in MongoDB. If csv file has no headers, omit `--headerline`.
