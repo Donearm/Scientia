@@ -62,4 +62,5 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Markdown](various/Markdown.md)
 	+ [MongoDB](various/Mongodb.md)
 	+ [Samba and NFS](various/Samba_and_Nfs.md)
+	+ [SQLite](various/SQLite.md)
 	+ [Tiddlywiki](various/Tiddlywiki)
