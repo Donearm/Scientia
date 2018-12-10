@@ -23,3 +23,7 @@
 #### VP9
 
 	ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
+
+### Gif to VP8
+
+	ffmpeg -y -i input.gif -r 16 -c:v libvpx -quality good -cpu-used 0 -b:v 500K -crf 12 -pix_fmt yuv420p -movflags faststart outputfile.webm
