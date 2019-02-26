@@ -64,14 +64,6 @@ and set both to false. It could be needed to add another boolean, false too, lik
 
 where 3.6b is the installed Firefox version
 
-### Take a screenshot
-
-Open the Developer Toolbar (Shift+F2) and type
-
-	screenshot
-
-a png file will be saved under `Downloads/` with the screenshot of the current page. If you want the full page, not just the visible part of it, you can add `--fullpage`
-
 ### Keyboard shortcuts
 
 * `Ctrl+Tab` = rotate forward among tabs
