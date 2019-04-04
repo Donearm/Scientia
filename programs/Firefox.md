@@ -4,6 +4,7 @@ For most of these info, thanks to the very complete [Mozillazine](http://kb.mozi
 
 * `about:buildconfig` = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented
 * `about:cache?device=memory` or `disk` = Show the list of all cache objects, on disk or in memory. From here it's possible to show or save every object
+* `about:support` = Technical information for debugging Firefox, other than various links to other internal URIs
 
 ### Pipelining
 
