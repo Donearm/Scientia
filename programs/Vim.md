@@ -1,6 +1,7 @@
 ## Basic commands
 
 * `J` = Join next to current line
+* `:%j` = Join all lines (make the file all on a single line in practice)
 * `u` = Undo
 * `Ctrl+r` = Repeat last command (Redo)
 * `.` = Repeat last command (escluding Undo, Redo and command of the `:command` type)
