@@ -164,6 +164,7 @@
 * `q/` = Show last searches
 * `*` = Search word under the cursor forward in the file
 * `#` = Search word under the cursor backward in the file
+* `:%s/pattern//gn` = Count the occurrences of `pattern` in current buffer, without modifying anything
 
 ## Spell Checking
 
