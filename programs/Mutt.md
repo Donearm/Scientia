@@ -105,3 +105,17 @@ to mark messages older than 1 day (use `d` for days, `w` for weeks, `m` for mont
 ## See what charset is being used
 
 In mutt, type `:set &charset ?charset`
+
+## Macros
+
+```
+macro index,pager d "<save-message>=MAILBOX<enter><enter>" "Trash"
+```
+
+Move message in "MAILBOX", which should correspond to the trash one of the inbox. For GMail it would be "[Gmail]/Trash"
+
+```
+macro index A "WNK<save-message>=MAILBOX<enter>" "Archive"
+```
+
+Archive a message, marking it as read and moving to a generic inbox (for GMail it will be "[Gmail]/All Mail)
