@@ -5,8 +5,10 @@
 + `systemctl kill apache` = kill all processes associated with apache server
 + `systemctl daemon-reload` = reload a service configuration
 + `systemctl list-unit-files` = show a full list of installed unit along with their state
++ `systemctl list-timers --all` = show a full list of timers, enabled or not
 + `systemctl --failed` = show failed units
 + `systemctl isolate runlevel3.target` = switch to run level 3. Run level 5 is named `graphical.target`
++ `systemctl show --property=UnitPath` = show all paths SystemD checks for unit files
 
 ### Journal
 
