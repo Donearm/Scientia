@@ -96,6 +96,7 @@ A variegated collection of useful Linux commands, in no particular order
 * `grep -H regexp files` = Print filename of every files matching the regexp
 * `openssl x509 -noout -fingerprint -in cert.pem` = Print the SHA1 checksum of the certificate cert.pem
 * `openssl s_client -connect server -showcerts` = Show SSL info and certificates of server
+* `openssl s_client -host server -port portnumber -verify 1 -debug` = debug a secure connection with `server` on `portnumber`
 * `nm -D cmd` = Show all names, variables and functions, used by cmd
 * `cat /proc/pid/smaps` = Show loaded memory segments by the process with such `pid`
 * `genisoimage -r -J -o file.iso directory` = Make an iso, readable both on Windows and Linux, of the files in directory
