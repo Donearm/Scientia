@@ -11,6 +11,7 @@ A brief Git cheatsheet. Only the commands I found more useful (or that I repeate
 * `git checkout -b somebranch` = Create a new branch `somebranch` and copy the content of master in it
 * `git checkout .` = Cancel all changes not yet committed (but keep new files). Basically return the repository state to the last commit
 * `git cherry-pick SHA1_HASH` = Apply the changes in the commit corresponding to `SHA1_HASH`. Commit can be on another branch (and usually it is). For multiple commits, it's simpler to merge and then rebase
+* `git cherry-pick -X theirs SHA1_HASH` = Apply the changes in the commit corresponding to `SHA1_HASH`. In case of conflicts, prefer the commit's version to the current branch one. The reverse can be preferred with `-X ours` instead
 * `git stash` = Save changes in the stash and return the repository to a clean state. Later they can be recovered and applied with `git stash apply` and shown with `git stash show`. To have a list of all changes in the stash use `git stash list`
 * `git stash -p` = Interactively select which changes and files to stash
 * `git commit --amend` = Modify the last commit message
