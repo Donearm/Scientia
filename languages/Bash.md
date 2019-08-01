@@ -142,6 +142,7 @@ done
 * `shopt -s extglob` = Enables extended globs  
 * `^aaa^bbb` = Substitutes `aaa` with `bbb` in the last executed command on the terminal. Useful to rerun the same command but with different arguments
 * `echo ${PIPESTATUS[@]}` = Find out all the exit codes of the previously piped commands
+* `rm * !("filename")` = Remove all files in current directory but for `filename`. Wildcards can be used to specify the matching like `*.ext` or `filenames?` or `[!abcde]`
   
 #### Bash History  
 
