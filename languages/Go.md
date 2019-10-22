@@ -10,3 +10,8 @@
 * `go mod init` = creates a new module by initializing the `go.mod` file
 * `go list -m all` = prints the current module's dependencies
 * `go mod tidy` = removes unused dependencies
+
+### Test Coverage
+
+* `go test -cover` = prints the percentage of coverage of your unit tests
+* `go test -cover -coverprofile=c.out` = save the coverage results in the `c.out` file. With it it's possible to have a html view of the tests' coverage with `go tool cover -html=c.out -o coverage.html`
