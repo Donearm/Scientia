@@ -2,6 +2,7 @@
 
 + `docker image ls` = list all images
 + `docker image inspect $imageid` = show detailed info about `$imageid` image
++ `docker image build -t $imagename:$imagetag .` = build an image from a Dockerfile in the current directory, with `$imagename` as name and `$imagetag` as tag
 
 # Working with containers
 
