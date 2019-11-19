@@ -27,3 +27,8 @@
 + `docker network prune` = remove all unused networks
 + `docker network connect $networkname $containername` = connect a specific container to a specific network
 + `docker network disconnect $networkname $containername` = disconnect a container from a network
+
+# Working with volumes
+
++ `docker container run -it -v /some/local/directory/:/some/directory/within/the/container/ --name $containername $containerimage` = run a new container from `$containerimage`, creating a volume that will bind a local directory to a directory within the container. If either directories don't exist, it will be created. Files can be used instead of directories. Paths must be absolute
++ `docker container run -d --name $containername --mount type=bind,source=/some/local/directory/,target=/container/target/directory/ $imagename` = run a new container from `$imagename`, binding a local directory to a directory within the container
