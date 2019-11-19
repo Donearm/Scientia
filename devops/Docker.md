@@ -13,6 +13,7 @@
 + `docker container logs $containerid` = show logs of `$containerid` container
 + `docker container stats` = show used resources of all running containers
 + `docker container exec -it $containerid $command` = run `$command` in `$containerid` container
++ `docker container exec -u 0 -it $containerid $command` = as above, run `$command` in `$containerid` but be sure to be logged as root (user 0)
 + `docker container pause $containerid` = pause a container
 + `docker container unpause $containerid` = unpause a container
 + `docker container prune` = delete all stopped containers
