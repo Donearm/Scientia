@@ -17,7 +17,7 @@
 + `docker container top $containerid` = run `top` command on `$containerid` container
 + `docker container attach $containerid` = attach to a specific container
 + `docker container logs $containerid` = show logs of `$containerid` container
-+ `docker container stats` = show used resources of all running containers
++ `docker container stats` = show used resources of all running containers. With an optional `$containerid` given, it shows a live stream of the used resources of that specific container
 + `docker container exec -it $containerid $command` = run `$command` in `$containerid` container
 + `docker container exec -u 0 -it $containerid $command` = as above, run `$command` in `$containerid` but be sure to be logged as root (user 0)
 + `docker container pause $containerid` = pause a container
