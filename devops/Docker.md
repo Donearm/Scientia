@@ -5,6 +5,7 @@
 + `docker image build -t $imagename:$imagetag .` = build an image from a Dockerfile in the current directory, with `$imagename` as name and `$imagetag` as tag
 + `docker image build -t $imagename:$imagetag $githuburl:$branchname` = build an image from a Dockerfile residing on a Github repository at `$githuburl`, under branch `$branchname`
 + `docker image build -t $imagename:$imagetag - < $tarball` = build an image from a tarball containing all the sources and the Dockerfile for the image
++ `docker image push $hubname/$imagename:$imagetag` = push a local image to Docker Hub
 
 # Working with containers
 
