@@ -45,3 +45,10 @@
 
 + `docker system events --since '2h'` = show all events related to the local Docker daemon, that happened in the last 2 hours
 + `docker system events --filter type=volume --since '2h'` = as above but filters for events related to volumes only
+
+# Docker-compose
+
++ `docker-compose up -d` = start docker-compose daemon and run all containers, according to the docker-compose.yml. The file can be specified, if not in the current directory, with the `-f` flag
++ `docker-compose ps` = list containers created by docker-compose
++ `docker-compose stop` = stop docker-compose daemon, along with all its running containers
++ `docker-compose down` = as above but also deletes the containers
