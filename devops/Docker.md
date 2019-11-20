@@ -24,6 +24,7 @@
 + `docker container unpause $containerid` = unpause a container
 + `docker container prune` = delete all stopped containers
 + `docker container port $containerid` = show all mapped ports of `$containerid` container
++ `docker container ls -a -f status=exited` = show all local containers that have status as "exited"
 
 # Working with networks
 
@@ -39,3 +40,8 @@
 
 + `docker container run -it -v /some/local/directory/:/some/directory/within/the/container/ --name $containername $containerimage` = run a new container from `$containerimage`, creating a volume that will bind a local directory to a directory within the container. If either directories don't exist, it will be created. Files can be used instead of directories. Paths must be absolute
 + `docker container run -d --name $containername --mount type=bind,source=/some/local/directory/,target=/container/target/directory/ $imagename` = run a new container from `$imagename`, binding a local directory to a directory within the container
+
+# General commands
+
++ `docker system events --since '2h'` = show all events related to the local Docker daemon, that happened in the last 2 hours
++ `docker system events --filter type=volume --since '2h'` = as above but filters for events related to volumes only
