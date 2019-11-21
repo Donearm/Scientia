@@ -66,3 +66,5 @@
 + `docker swarm join-token $role` = print the token to join the swarm, from a manager, for a specific role (worker or manager)
 + `docker service create -d --name $servicename --replicas 2 $imagename` = create a service with 2 replicas from the image `$imagename`
 + `docker service scale $servicename=3` = scale the `$servicename` to 3 replicas
++ `docker service update --network-add $networkname $servicename` = add service `$servicename` to network `$networkname`
++ `docker service update --network-rm $networkname $servicename` = remove service `$servicename` from the network `$networkname`
