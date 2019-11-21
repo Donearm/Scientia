@@ -52,3 +52,17 @@
 + `docker-compose ps` = list containers created by docker-compose
 + `docker-compose stop` = stop docker-compose daemon, along with all its running containers
 + `docker-compose down` = as above but also deletes the containers
+
+# Docker Swarm
+
++ `docker swarm init --advertise-addr $ip` = initialize a new swarm manager (with `$ip` being the address of the node to act as manager)
++ `docker swarm join --token $token $managerip:$managerport` = join a node as a worker to the relative manager
++ `docker node ls` = show nodes in the swarm (only to be run from a manager)
++ `docker node inspect $hostname` = show detailed info about a node of the swarm. Also the IP address can be used instead of the hostname
++ `docker node promote $hostname` = promote a node worker to manager
++ `docker node demote $hostname` = demote a node manager to worker
++ `docker node rm $hostname` = remove a worker. A manager has to be demoted first before being able to remove it
++ `docker swarm leave` = remove a local worker from the swarm
++ `docker swarm join-token $role` = print the token to join the swarm, from a manager, for a specific role (worker or manager)
++ `docker service create -d --name $servicename --replicas 2 $imagename` = create a service with 2 replicas from the image `$imagename`
++ `docker service scale $servicename=3` = scale the `$servicename` to 3 replicas
