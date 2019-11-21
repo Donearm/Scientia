@@ -68,3 +68,6 @@
 + `docker service scale $servicename=3` = scale the `$servicename` to 3 replicas
 + `docker service update --network-add $networkname $servicename` = add service `$servicename` to network `$networkname`
 + `docker service update --network-rm $networkname $servicename` = remove service `$servicename` from the network `$networkname`
++ `docker stack deploy --compose-file docker-compose.yml $stackname` = deploy a stack with `$stackname` from the given docker-compose.yml file
++ `docker stack ls` = show stacks
++ `docker stack ps $stackname` = show detailed info about the stack `$stackname`
