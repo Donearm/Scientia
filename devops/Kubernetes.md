@@ -10,3 +10,4 @@
 + `kubectl describe node $nodename` = show detailed info about a specific node
 + `kubectl delete pod $podname` = delete a specific pod. With `node` works with nodes too
 + `kubectl exec $podname $command` = execute a command from within a specific pod in the cluster
++ `kubectl edit deployment $deploymentname -n $namespace` = edit on the fly a deployment from a specific namespace
