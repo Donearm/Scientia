@@ -55,7 +55,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Vim](programs/Vim.md)
 	+ [Wireshark](programs/Wireshark.md)
 + DevOps
-	+ [Docker](devops/Docker.md)
+	+ [Docker](devops/Docker.md) :whale:
 	+ [Kubernetes](devops/Kubernetes.md)
 + Theory
 	+ [Big Oh Notation](theory/Big_Oh_Notation.md)
