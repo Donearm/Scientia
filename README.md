@@ -56,6 +56,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Wireshark](programs/Wireshark.md)
 + DevOps
 	+ [Docker](devops/Docker.md)
+	+ [Kubernetes](devops/Kubernetes.md)
 + Theory
 	+ [Big Oh Notation](theory/Big_Oh_Notation.md)
 	+ [Data Structures](theory/Data_Structures.md)
