@@ -9,6 +9,7 @@
 + `systemctl --failed` = show failed units
 + `systemctl isolate runlevel3.target` = switch to run level 3. Run level 5 is named `graphical.target`
 + `systemctl show --property=UnitPath` = show all paths SystemD checks for unit files
++ `systemctl list-unit-files -t target` = list all unit files for the available target
 
 ### Journal
 
