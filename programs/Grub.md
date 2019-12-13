@@ -20,3 +20,7 @@ thus
 
 again, customize the label (`-L`) as you prefer. And that's it, reboot!
 
+# Grub2
+
++ `grub2-editenv list` = list kernel entries in the Grub2 local configuration
++ `grub2-mkconfig` = creates or updates a grub.cfg. On some systems it may be called `grub-mkconfig` or `update-grub`
