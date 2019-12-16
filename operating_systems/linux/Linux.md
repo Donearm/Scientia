@@ -125,4 +125,5 @@ A variegated collection of useful Linux commands, in no particular order
 * `curl -X POST -d "fname=Mark&lname=Babe" url` = Send a POST request to `url` with given parameters. It's also possible to send a JSON file containing the parameters using `-d @parameters.json` syntax
 * `du -s directory/` = show only the total sum of occupied space on disk of `directory`, and not every single file also
 * `find Maildir/ -type f | grep -vE ',[^,]*S[^,]*$'` = find all unread emails in the maildir (Maildir format)
+* `nl $file` = print the file with the lines' numbers next to each line. By default it skips empty lines, to include them add `-b a`.
 
