@@ -26,6 +26,7 @@
 + `docker container port $containerid` = show all mapped ports of `$containerid` container
 + `docker container ls -a -f status=exited` = show all local containers that have status as "exited"
 + `docker container run -d --name $containername --cpus="1" --memory=512M --memory-swap=1G $imagename` = start a container but limiting its resources to 1 CPU, 512Mb of memory and 1Gb of swap
++ `docker commit $containerid $image/$tag` = after making changes to a running container, save them to a new (or existing) image with the `$image/$tag` name
 
 # Working with networks
 
