@@ -126,4 +126,5 @@ A variegated collection of useful Linux commands, in no particular order
 * `du -s directory/` = show only the total sum of occupied space on disk of `directory`, and not every single file also
 * `find Maildir/ -type f | grep -vE ',[^,]*S[^,]*$'` = find all unread emails in the maildir (Maildir format)
 * `nl $file` = print the file with the lines' numbers next to each line. By default it skips empty lines, to include them add `-b a`.
-
+* `ip -s link show` = print all the network interfaces present on the system with additional statistics about them
+* `ip neighbour show` = show the ARP table
