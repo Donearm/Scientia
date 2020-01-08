@@ -8,6 +8,7 @@
 + `docker image push $hubname/$imagename:$imagetag` = push a local image to Docker Hub
 + `docker image save $imagename -o $tarfile.tar` = save an image to a tar file
 + `docker image load --input $tarfile.tar` = load an image from a tar file
++ `docker image tag $imageid $imagename:$imagetag` = name and tag an already built image of `$imageid`
 
 # Working with containers
 
