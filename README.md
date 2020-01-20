@@ -51,6 +51,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Rtorrent](programs/Rtorrent.md)
 	+ [Screen](programs/Screen.md)
 	+ [SSH](programs/Ssh.md)
+	+ [Tcpdump](programs/Tcpdump.md)
 	+ [URxvt](programs/URxvt.md)
 	+ [Vim](programs/Vim.md)
 	+ [Wireshark](programs/Wireshark.md)
