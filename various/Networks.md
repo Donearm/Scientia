@@ -19,3 +19,13 @@
 + **TIME-WAIT**: The local end-point waits for twice the maximum segment lifetime (MSL) to pass before going to `CLOSED` state
 
 ![TCP connection states](tcp-connection-states.png)
+
+## VLANs
+
+A virtual local area network is a logical subnetwork that groups different physical devices from various physical LANs.
+
+**Static VLANs** are physically attached to specific ports of a switch. They are also called then _port-based VLANs_. Any device attached to these ports will join the VLAN.
+
+**Dynamic VLANs** instead are defined by physical addresses (MACs) of the devices or network account names and are not physically based.
+
+VLANs follow the IEEE 802.1Q standard that consists of 32bits added to the standard Ethernet frame header.
