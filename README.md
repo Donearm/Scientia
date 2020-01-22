@@ -56,6 +56,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Vim](programs/Vim.md)
 	+ [Wireshark](programs/Wireshark.md)
 + DevOps
+	+ [AWS](devops/AWS.md)
 	+ [Docker](devops/Docker.md) :whale:
 	+ [Kubernetes](devops/Kubernetes.md)
 + Theory
