@@ -59,6 +59,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [AWS](devops/AWS.md)
 	+ [Docker](devops/Docker.md) :whale:
 	+ [Kubernetes](devops/Kubernetes.md)
+	+ [System Design](devops/System_Design.md)
 + Theory
 	+ [Big Oh Notation](theory/Big_Oh_Notation.md)
 	+ [Data Structures](theory/Data_Structures.md)
