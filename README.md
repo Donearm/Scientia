@@ -66,6 +66,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Set Theory](theory/Set_Theory.md)
 + Various
 	+ [Cryptocurrencies](various/Cryptocurrencies.md)
+	+ [Hardware](various/Hardware.md)
 	+ [Markdown](various/Markdown.md)
 	+ [MongoDB](various/Mongodb.md)
 	+ [Networks](various/Networks.md)
