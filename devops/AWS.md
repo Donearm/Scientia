@@ -3,6 +3,10 @@
 
 Amazon Machine Images. Images to choose from to launch an instance.
 
+## CloudFormation
+
+The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.
+
 ## CloudFront
 
 The CDN (Content Delivery Network) of AWS.
