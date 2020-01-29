@@ -20,6 +20,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Sed](languages/Sed.md)
 + Operating Systems
 	+ Linux :penguin:
+		+ [AppArmor](operating_systems/linux/AppArmor.md)
 		+ [Compose Key](operating_systems/linux/Compose_Key.md)
 		+ [Debian](operating_systems/linux/Debian.md)
 		+ [Framebuffer](operating_systems/linux/Framebuffer.md)
