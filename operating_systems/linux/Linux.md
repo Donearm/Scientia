@@ -129,3 +129,4 @@ A variegated collection of useful Linux commands, in no particular order
 * `ip -s link show` = print all the network interfaces present on the system with additional statistics about them
 * `ip neighbour show` = show the ARP table
 * `route add -host $ip reject` = reject all traffic to host with IP address of `$ip`
+* `ls -Z` = display SELinux context for the files

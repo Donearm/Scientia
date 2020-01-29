@@ -25,6 +25,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 		+ [Framebuffer](operating_systems/linux/Framebuffer.md)
 		+ [Kernel](operating_systems/linux/Kernel.md)
 		+ [Linux](operating_systems/linux/Linux.md)
+		+ [SELinux](operating_systems/linux/SELinux.md)
 		+ [SysRq Key](operating_systems/linux/Sysrq_key.md)
 		+ [SystemD](operating_systems/linux/SystemD.md)
 		+ [X](operating_systems/linux/X.md)
