@@ -10,6 +10,11 @@
 + `systemctl isolate runlevel3.target` = switch to run level 3. Run level 5 is named `graphical.target`
 + `systemctl show --property=UnitPath` = show all paths SystemD checks for unit files
 + `systemctl list-unit-files -t target` = list all unit files for the available target
+* `systemctl get-default` = show the current default system target
+* `systemctl set-default target` = set the default system target
+* `systemctl rescue` = start single-user rescue mode
+* `systemctl reload service` = reload the configuration files of `service`, without restarting the service itself
+* `systemctl mask service` = link the service unit file to /dev/null, practically disabling it, even if specifically started with `systemctl start`. It can be re-enabled with `systemctl unmask service` later
 
 ### Journal
 
