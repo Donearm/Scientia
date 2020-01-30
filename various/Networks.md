@@ -54,3 +54,9 @@ There are three types of DNS queries that may be sent to a DNS server: Recursive
 + **Recursive Query**: With a recursive name query, a DNS server is forced to respond to a DNS client request with either the requested resource record or an error message stating that the record or domain name does not exist. In this case, the DNS server will contact other DNS servers until it gets the information, or until the query fails.
 + **Iterative Query**: With an iterative name query, the DNS client allows the DNS server to respond with the best answer it can give (the answer will be based on its cache or zone data). That may be as a referral to a better DNS server or a pointer to another DNS server authoritative for a lower level of the domain namespace.
 + **Authoritative-Only Query**: the DNS server only answers those queries for which it stores the zones. Does not respond to recursive queries and cache query results.
+
+## VPN
+
+Operates at OSI Layer 3 level (application independent). When operating with IPSec, it uses two modes: **Transport** or **Tunnel**. In the first, data is encrypted but headers are not, while in the latter both are.
+
+When operating with SSL/TLS, it uses OSI Layer 7 (application dependent then) in two modes: **OpenVPN** (Certificate/password-based, TCP) or **Open Connect** (DTLS, UDP).
