@@ -130,3 +130,6 @@ A variegated collection of useful Linux commands, in no particular order
 * `ip neighbour show` = show the ARP table
 * `route add -host $ip reject` = reject all traffic to host with IP address of `$ip`
 * `ls -Z` = display SELinux context for the files
+* `last` = display a chronological list of users' accesses
+* `lastb` = display a chronological list of failed users' accesses ("bad logins")
+* `lastlog` = display the last accesses of each daemons and users
