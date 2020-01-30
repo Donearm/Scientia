@@ -20,6 +20,12 @@
 
 ![TCP connection states](tcp-connection-states.png)
 
+## Firewalls
+
++ **Stateless Firewalls**: also known as **packet filters**, operate on a port/protocol level
++ **Stateful Firewalls**: can group packets and can filter based on the state of them (__RELATED__, __ESTABLISHED__ and so on)
++ **Application Layer Firewalls**: operate at OSI Layer 7, can identify packet based on the application generating it, and filter according to per application rules
+
 ## VLANs
 
 A virtual local area network is a logical subnetwork that groups different physical devices from various physical LANs.
