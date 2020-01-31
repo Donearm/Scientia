@@ -55,6 +55,7 @@ A brief Git cheatsheet. Only the commands I found more useful (or that I repeate
 * `git show branch-name:filename.js` = Show `filename.js` as it currently is in `branch-name`
 * `git cherry-pick SHA1_HASH..SHA1_HASH` = Apply changes in after the first hash till, including, the second one. To also include changes from first hash use `SHA1_HASH^..SHA1_HASH` format
 * `git remote set-url branch-name url` = Set url of remote `branch-name` to `url`. Adding `--push` also changes the remote url to push to for specified branch
+* `git config --list --show-origin` = list all configuration settings for Git, both global and local, and where each is set
 
 
 ### Cherry picking a range of commits
