@@ -66,3 +66,9 @@ There are three types of DNS queries that may be sent to a DNS server: Recursive
 Operates at OSI Layer 3 level (application independent). When operating with IPSec, it uses two modes: **Transport** or **Tunnel**. In the first, data is encrypted but headers are not, while in the latter both are.
 
 When operating with SSL/TLS, it uses OSI Layer 7 (application dependent then) in two modes: **OpenVPN** (Certificate/password-based, TCP) or **Open Connect** (DTLS, UDP).
+
+## IP Addressing
+
+* **IPv4**: 32bit address, composed of 4 octets ranging from 0 to 255 (256 numbers then). Theoretically though as the last .0 is considered the network IP and the last .255 is the broadcast IP, thus neither can be assigned to actual devices
+* **IPv6**: 128bit address, composed of 8 hexadecimal numbers. The first half is considered the network part and the second the host part, derived by the MAC address of the device
+* **MAC**: 48bit address, composed of 6 octets. The first 3 may be OUI (Organizationally Unique Identifier), belonging to a specific organization, with the last 3 being local or NIC (Network Interface Specific)
