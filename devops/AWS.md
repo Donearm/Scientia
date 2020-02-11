@@ -2,6 +2,14 @@
 
 Amazon Machine Images. Images to choose from to launch an instance.
 
+## AWS CLI
+
+The command-line interface to AWS services.
+
+### Useful Commands
+
+* `aws configure` = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under `~/.aws/credentials` and `~/.aws/config`
+
 ## CloudFormation
 
 The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.
