@@ -1,4 +1,3 @@
-
 ## AMI
 
 Amazon Machine Images. Images to choose from to launch an instance.
@@ -30,6 +29,14 @@ Identity and Access Management manages the policies of permission of users and g
 ## KMS
 
 Amazon Key Management Service. Create and control encryption keys used to encrypt and decrypt data safely.
+
+## Lambda
+
+Run code without thinking about servers.
+
+### Useful Commands
+
+* `aws lambda update-function-code --function-name $functionname --zip-file fileb://function.zip` = update a Lambda function of `$functionname` with a provided zipfile. Useful to install an app along with its external requirements (libraries not present in the standard SDK)
 
 ## RDS
 
