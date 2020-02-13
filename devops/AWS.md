@@ -22,6 +22,10 @@ The CDN (Content Delivery Network) of AWS.
 
 Elastic Block Store. A block storage service designed to use with EC2, attached to a single instance.
 
+## ECS
+
+Elastic Container Service. A managed container orchestration service.
+
 ## EFS
 
 Elastic File System. A managed network file system that can be shared across multiple EC2 instances.
