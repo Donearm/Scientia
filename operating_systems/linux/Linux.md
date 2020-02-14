@@ -108,6 +108,7 @@ A variegated collection of useful Linux commands, in no particular order
 * `lspci -k` = Print a list of active hardware devices with the corresponding kernel module they need to work
 * `modprobe -c` = Display a complete module configuration, including defaults and directives in /etc/modules.conf (or /etc/modules-load.d/, depending on the Linux distribution)
 * `ip route show` = Display routing table
+* `ip route show table 255` = Display local addresses route table
 * `ip addr show` = Display IP and MAC addresses of every network interface
 * `arp` = Display the ARP cache
 * `msgcat --color=test` = Output various tests to check the appearance of colours on your terminal
