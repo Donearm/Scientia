@@ -23,6 +23,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 		+ [AppArmor](operating_systems/linux/AppArmor.md)
 		+ [Compose Key](operating_systems/linux/Compose_Key.md)
 		+ [Debian](operating_systems/linux/Debian.md)
+		+ [Firewall](operating_systems/linux/Firewall.md)
 		+ [Framebuffer](operating_systems/linux/Framebuffer.md)
 		+ [Kernel](operating_systems/linux/Kernel.md)
 		+ [Linux](operating_systems/linux/Linux.md)
