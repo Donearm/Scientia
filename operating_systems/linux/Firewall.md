@@ -45,3 +45,4 @@ All commands are temporary unless the `--permanent` switch is given.
 * `firewall-cmd --new-ipset=$ipsetname --type=hash:ip` = Create a new IPSet with name `$ipsetname`
 * `firewall-cmd --ipset=$ipsetname --add-entry=10.0.1.11` = Add IP 10.0.1.11 to the IPSet with name `$ipsetname`
 * `firewall-cmd --ipset=$ipsetname --get-entries` = Show members of IPSet `$ipsetname`
+* `firewall-cmd --zone=drop --add-source=$address` = Send all traffic coming from `$address` to the drop zone. Can be used also with an IPSet like `--add-source=ipset:$ipsetname`
