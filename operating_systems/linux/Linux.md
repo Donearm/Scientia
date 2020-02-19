@@ -109,6 +109,7 @@ A variegated collection of useful Linux commands, in no particular order
 * `modprobe -c` = Display a complete module configuration, including defaults and directives in /etc/modules.conf (or /etc/modules-load.d/, depending on the Linux distribution)
 * `ip route show` = Display routing table
 * `ip route show table 255` = Display local addresses route table
+* `ip route add prohibit 1.1.1.1` = Prohibit all access to the specified IP address
 * `ip addr show` = Display IP and MAC addresses of every network interface
 * `arp` = Display the ARP cache
 * `msgcat --color=test` = Output various tests to check the appearance of colours on your terminal
@@ -134,3 +135,4 @@ A variegated collection of useful Linux commands, in no particular order
 * `last` = display a chronological list of users' accesses
 * `lastb` = display a chronological list of failed users' accesses ("bad logins")
 * `lastlog` = display the last accesses of each daemons and users
+* `dig $domain +noall +answer` = Display the IP address of `$domain` with a TTL of how long the data is kept in local DNS cache
