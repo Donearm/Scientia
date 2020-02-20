@@ -46,3 +46,4 @@ All commands are temporary unless the `--permanent` switch is given.
 * `firewall-cmd --ipset=$ipsetname --add-entry=10.0.1.11` = Add IP 10.0.1.11 to the IPSet with name `$ipsetname`
 * `firewall-cmd --ipset=$ipsetname --get-entries` = Show members of IPSet `$ipsetname`
 * `firewall-cmd --zone=drop --add-source=$address` = Send all traffic coming from `$address` to the drop zone. Can be used also with an IPSet like `--add-source=ipset:$ipsetname`
+* `firewall-cmd --zone=webserver --add-forward-port=port=80:proto=tcp:toaddr=$address` = Example of port forwarding to a web server running at `$address`
