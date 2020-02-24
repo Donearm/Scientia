@@ -70,6 +70,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 + Various
 	+ [Cryptocurrencies](various/Cryptocurrencies.md)
 	+ [Hardware](various/Hardware.md)
+	+ [Load Balancing](various/Load_Balancing.md)
 	+ [Markdown](various/Markdown.md)
 	+ [MongoDB](various/Mongodb.md)
 	+ [Networks](various/Networks.md)
