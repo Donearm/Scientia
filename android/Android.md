@@ -79,3 +79,11 @@ force button lights on when the screen is on too
 	ro.mot.buttonlight.timeout=0  
 	
 disable boot animation for faster boot
+
+## Uninstall system app
+
+This may not work on all devices as some will just "disable" those apps, not showing them as an icon but still listing them among the installed apps, occupying disk space. But at least the process won't start and won't occupy memory and use battery time.
+
+* Connect to the device using `adb`
+* Check for the name of the package to uninstall with `pm list packages -f $packagename`
+* Uninstall it with `pm uninstall -k -user 0 $packagename`, where `$packagename` is the output of the previous command
