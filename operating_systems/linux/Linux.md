@@ -125,15 +125,15 @@ A variegated collection of useful Linux commands, in no particular order
 * `bsdtar xf zipfile` = Extract from a zip archive. It may work also with incomplete/corrupt ones or in general where `unzip` won't.
 * `find . -name "pattern" -ls | awk '{total += $7} END {print total}'` = Print the total size of files matching `pattern`
 * `curl -X POST -d "fname=Mark&lname=Babe" url` = Send a POST request to `url` with given parameters. It's also possible to send a JSON file containing the parameters using `-d @parameters.json` syntax
-* `du -s directory/` = show only the total sum of occupied space on disk of `directory`, and not every single file also
-* `find Maildir/ -type f | grep -vE ',[^,]*S[^,]*$'` = find all unread emails in the maildir (Maildir format)
-* `nl $file` = print the file with the lines' numbers next to each line. By default it skips empty lines, to include them add `-b a`.
-* `ip -s link show` = print all the network interfaces present on the system with additional statistics about them
-* `ip neighbour show` = show the ARP table
-* `route add -host $ip reject` = reject all traffic to host with IP address of `$ip`
-* `ls -Z` = display SELinux context for the files
-* `last` = display a chronological list of users' accesses
-* `lastb` = display a chronological list of failed users' accesses ("bad logins")
-* `lastlog` = display the last accesses of each daemons and users
+* `du -s directory/` = Show only the total sum of occupied space on disk of `directory`, and not every single file also
+* `find Maildir/ -type f | grep -vE ',[^,]*S[^,]*$'` = Find all unread emails in the maildir (Maildir format)
+* `nl $file` = Print the file with the lines' numbers next to each line. By default it skips empty lines, to include them add `-b a`.
+* `ip -s link show` = Print all the network interfaces present on the system with additional statistics about them
+* `ip neighbour show` = Show the ARP table
+* `route add -host $ip reject` = Reject all traffic to host with IP address of `$ip`
+* `ls -Z` = Display SELinux context for the files
+* `last` = Display a chronological list of users' accesses
+* `lastb` = Display a chronological list of failed users' accesses ("bad logins")
+* `lastlog` = Display the last accesses of each daemons and users
 * `dig $domain +noall +answer` = Display the IP address of `$domain` with a TTL of how long the data is kept in local DNS cache
 * `file -i $filename` = Show the mimetype and locale of `$filename`
