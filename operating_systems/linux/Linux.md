@@ -136,3 +136,4 @@ A variegated collection of useful Linux commands, in no particular order
 * `lastb` = display a chronological list of failed users' accesses ("bad logins")
 * `lastlog` = display the last accesses of each daemons and users
 * `dig $domain +noall +answer` = Display the IP address of `$domain` with a TTL of how long the data is kept in local DNS cache
+* `file -i $filename` = Show the mimetype and locale of `$filename`
