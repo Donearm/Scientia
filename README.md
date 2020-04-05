@@ -68,6 +68,7 @@ This is a clumsy-written, partly outdated, randomly-collected series of notes ab
 	+ [Data Structures](theory/Data_Structures.md)
 	+ [Set Theory](theory/Set_Theory.md)
 + Various
+	+ [Advertising and Marketing](various/Advertising_and_Marketing.md)
 	+ [Cryptocurrencies](various/Cryptocurrencies.md)
 	+ [Hardware](various/Hardware.md)
 	+ [Load Balancing](various/Load_Balancing.md)
