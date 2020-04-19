@@ -12,6 +12,7 @@ A variegated collection of useful Linux commands, in no particular order
 * `zip -J file.zip /directory/files` = Make a zip file of files stripping the directories tree (basically, put every file at the same level in the zip file)
 * `lsof -V -P` = Show all opened ports and the relative processes
 * `lsof (file|device)` = Show the processes using file|device
+* `lsof -i TCP:4000` = Check if a specific port is in use
 * `cdrecord dev=scsihost blank=fast` = Blank a CDRW in fast mode. Use "all" for the complete mode
 * `ss -s` = Print statistics about the network packets
 * `tcpdump -q` = Show packets that are being transferred over the network
