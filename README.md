@@ -11,6 +11,7 @@ These are meant for being quick answers to questions and doubts that may arise, 
 	+ [Css](frontend/Css.md)
 	+ [D3](frontend/d3.md)
 	+ [jQuery](frontend/jQuery.md)
+	+ [Npm](frontend/Npm.md)
 + Languages
 	+ [Awk](languages/Awk.md)
 	+ [Bash](languages/Bash.md)
