@@ -9,7 +9,9 @@ weight: 550
 
 to enable it 
 
-	echo "1" > /proc/sys/kernel/sysrq
+```bash
+echo "1" > /proc/sys/kernel/sysrq
+```
 
 or edit `/etc/sysctl.conf` and add `kernel.sysrq = 1`
 
@@ -34,4 +36,3 @@ On x86 - You press the key combo "ALT-SysRq-<command key\>".
 * `e`		= Send a SIGTERM to all processes, except for init.
 * `i`		= Send a SIGKILL to all processes, except for init.
 * `l`		= Send a SIGKILL to all processes, INCLUDING init. (Your system will be non-functional after this.)
-*
