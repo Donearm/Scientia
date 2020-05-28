@@ -8,6 +8,8 @@ theme = "hugo-theme-techdoc"
 hasCJKLanguage = true
 metaDataFormat = "yaml"
 
+publishDir = "docs"
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
