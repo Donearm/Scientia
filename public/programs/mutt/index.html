@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Mutt - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/programs/mutt/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Mutt" />
+<meta property="og:description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/programs/mutt/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Mutt"/>
+<meta name="twitter:description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i."/>
+<meta itemprop="name" content="Mutt">
+<meta itemprop="description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i.">
+
+<meta itemprop="wordCount" content="587">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Mutt</h1>
+<h2 id="general-commands">General Commands</h2>
+<ul>
+<li><code>q(x)</code>	= exit the current menu (abort without saving)</li>
+<li><code>^g</code>		= cancel current action</li>
+<li><code>?</code>		= list all keybindings for the current menu</li>
+</ul>
+<h2 id="keybindings">Keybindings</h2>
+<h3 id="the-message-index--browsing-through-mailbox">The Message Index  (browsing through mailbox)</h3>
+<ul>
+<li><code>m</code>		= compose a new message</li>
+<li><code>d(D)</code>	= delete the current message (matching a pattern)</li>
+<li><code>u(U)</code>	= undelete-message (matching a pattern)</li>
+<li><code>C(ALT C)</code> = copy the current message to another mailbox (decode first)</li>
+<li><code>s(ALT s)</code> = save-message (decode first)</li>
+<li><code>r(g)  (L)</code> = reply to sender (all recipients) (reply to mailing list)</li>
+<li><code>f(b)</code>	= forward message (bounce)</li>
+<li><code>/(ALT /)</code> = search  (search-reverse)</li>
+<li><code>c</code>		= change to a different mailbox/folder</li>
+<li><code>F(N)</code>	= mark as important (new)</li>
+<li><code>l</code>		= show messages matching a pattern</li>
+<li><code>o(O)</code>	= change the current sort method (reverse sort)</li>
+<li><code>t(ALT t)</code> = toggle the tag on a message (entire message thread)</li>
+<li><code>T(^t)</code>	= tag messages matching a pattern (untag)</li>
+<li><code>v</code>		= view-attachments</li>
+<li><code>&lt;Return&gt;</code> = display-message</li>
+<li><code>&lt;Tab&gt;</code>	= jump to the next new message</li>
+<li><code>@</code>		= show the author&rsquo;s full e-mail address</li>
+<li><code>$</code>		= save changes to mailbox</li>
+<li><code>^l</code>		= clear and redraw the screen</li>
+<li><code>ALT k</code>	= mail a PGP public key to someone</li>
+</ul>
+<h3 id="the-pager-reading-an-email">The Pager (reading an email)</h3>
+<ul>
+<li><code>&lt;Return&gt;</code>  = go down one line</li>
+<li><code>&lt;Space&gt;(-)</code> = display the next page/message (previous)</li>
+<li><code>^($)</code>	= jump to the top (bottom) of the message</li>
+<li><code>/(ALT /) (n)</code> = search for a regular expression (search backwards) (next match)</li>
+<li><code>\</code>		= toggle search pattern coloring</li>
+<li><code>S(T)</code>	= skip beyond quoted text (toggle display of quoted text)</li>
+</ul>
+<h3 id="composer-setting-the-send-options-for-an-email">Composer (setting the send options for an email)</h3>
+<ul>
+<li><code>y(P)(w)</code> = send the message  (postpone)  (write to folder)</li>
+<li><code>i</code>		= check spelling, if available</li>
+<li><code>a(A)(D)</code> = attach a file  (attach message)  (detach)</li>
+<li><code>d</code>	= edit description on attachment</li>
+<li><code>t(ALT f)</code> = edit the To field (From field)</li>
+<li><code>c(b)</code>	= edit the Cc field (Bcc field)</li>
+<li><code>s</code>	= edit the Subject</li>
+<li><code>r</code>	= edit the Reply-To field</li>
+<li><code>p</code>	= select PGP options</li>
+<li><code>ALT k</code> = attach a PGP public key</li>
+<li><code>^f</code> = wipe PGP passphrase from memory</li>
+<li><code>f</code>	= specify an &lsquo;Fcc&rsquo; mailbox i.e. sent folder</li>
+</ul>
+<p><code>^g</code> means CTRL and the g key. <code>ALT f</code> means ALT and the f key.							
+If you do not have an ALT key then use ESC then key. Do not type the brackets.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li><code>-H file</code> = Use a file as a model for a new message, taking both headers and body. Very useful for sending patches generated with <code>git format-patch</code></li>
+</ul>
+<h2 id="highlight-according-to-a-pattern">Highlight according to a pattern</h2>
+<p>You can play with these for a start (probably want to get rid of
+<code>~x \@\</code>hostname`` stuff):</p>
+<pre><code>~F
+</code></pre>
+<p>Flagged as !  color index cyan default</p>
+<pre><code> ~Q   (~Q ~x \@`hostname`)
+</code></pre>
+<p>Replied to  color index yellow default</p>
+<pre><code>~p   (~p ~x \@`hostname`)   (~x \@`hostname`)
+</code></pre>
+<p>Answers to my mails  color index magenta default</p>
+<pre><code>~P   (~P ~x \@`hostname`)
+</code></pre>
+<p>Answered by myself  color index green default</p>
+<pre><code>~N (~P ~p ~Q ~x \@`hostname`)
+</code></pre>
+<p>New concerning myself  color index red default</p>
+<h2 id="tagging">Tagging</h2>
+<p>TagPatterns</p>
+<pre><code>T ~m 1-700
+</code></pre>
+<p>to mark messages from 1 to 700</p>
+<pre><code>T ~d 01/1/2006-24/2/2006
+</code></pre>
+<p>to mark messages in that time span</p>
+<pre><code>T ~d &gt;1d
+</code></pre>
+<p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
+<h2 id="see-what-charset-is-being-used">See what charset is being used</h2>
+<p>In mutt, type <code>:set &amp;charset ?charset</code></p>
+<h2 id="macros">Macros</h2>
+<pre><code>macro index,pager d &quot;&lt;save-message&gt;=MAILBOX&lt;enter&gt;&lt;enter&gt;&quot; &quot;Trash&quot;
+</code></pre><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
+<pre><code>macro index A &quot;WNK&lt;save-message&gt;=MAILBOX&lt;enter&gt;&quot; &quot;Archive&quot;
+</code></pre><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/programs/Mutt.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/programs/mplayer/" title="MPlayer"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - MPlayer</a>
+<a class="nav nav-next" href="https://example.com/programs/rtorrent/" title="Rtorrent">Next - Rtorrent <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class="active"><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

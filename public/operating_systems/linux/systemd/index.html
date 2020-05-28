@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>SystemD - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/operating_systems/linux/systemd/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="SystemD" />
+<meta property="og:description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/operating_systems/linux/systemd/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="SystemD"/>
+<meta name="twitter:description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3."/>
+<meta itemprop="name" content="SystemD">
+<meta itemprop="description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.">
+
+<meta itemprop="wordCount" content="244">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>SystemD</h1>
+<h3 id="systemdsystemctl">Systemd/Systemctl</h3>
+<ul>
+<li><code>systemd-cgls</code> = show full hierarchy of control groups</li>
+<li><code>systemd-cgtop</code> = the same of <code>systemd-cgls</code> but ordered by CPU, memory and disk I/O load</li>
+<li><code>systemctl kill apache</code> = kill all processes associated with apache server</li>
+<li><code>systemctl daemon-reload</code> = reload a service configuration</li>
+<li><code>systemctl list-unit-files</code> = show a full list of installed unit along with their state</li>
+<li><code>systemctl list-timers --all</code> = show a full list of timers, enabled or not</li>
+<li><code>systemctl --failed</code> = show failed units</li>
+<li><code>systemctl isolate runlevel3.target</code> = switch to run level 3. Run level 5 is named <code>graphical.target</code></li>
+<li><code>systemctl show --property=UnitPath</code> = show all paths SystemD checks for unit files</li>
+<li><code>systemctl list-unit-files -t target</code> = list all unit files for the available target</li>
+</ul>
+<ul>
+<li><code>systemctl get-default</code> = show the current default system target</li>
+<li><code>systemctl set-default target</code> = set the default system target</li>
+<li><code>systemctl rescue</code> = start single-user rescue mode</li>
+<li><code>systemctl reload service</code> = reload the configuration files of <code>service</code>, without restarting the service itself</li>
+<li><code>systemctl mask service</code> = link the service unit file to /dev/null, practically disabling it, even if specifically started with <code>systemctl start</code>. It can be re-enabled with <code>systemctl unmask service</code> later</li>
+</ul>
+<h3 id="journal">Journal</h3>
+<ul>
+<li><code>journalctl -o verbose</code> = Enable verbose output for systemd&rsquo;s journal</li>
+<li><code>journalctl -e</code> = Jumps directly at the end of the log (in conjuction with less)</li>
+</ul>
+<h3 id="various">Various</h3>
+<ul>
+<li><code>hostnamectl</code> = get server hostname</li>
+<li><code>hostnamectl set-hostname abc</code> = set hostname to <code>abc</code></li>
+<li><code>localectl</code> = get current locale, both on virtual console and X11</li>
+<li><code>timedatctl</code> = get info about time and timezone</li>
+</ul>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/operating_systems/linux/SystemD.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/operating_systems/linux/sysrq_key/" title="Sysrq Key"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Sysrq Key</a>
+<a class="nav nav-next" href="https://example.com/operating_systems/linux/x/" title="Xorg">Next - Xorg <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class="active"><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

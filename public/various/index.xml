@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Various (I.T.) on Personal Wiki</title>
+    <link>https://example.com/various/</link>
+    <description>Recent content in Various (I.T.) on Personal Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://example.com/various/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advertising and Marketing</title>
+      <link>https://example.com/various/advertising_and_marketing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/advertising_and_marketing/</guid>
+      <description>Google Ads Google Search Network = search + Google Play + Google Shopping + Google Maps + search partners
+Google Display Ads Network = as above + partner sites with Adsense
+Match types  Broad Match = the default, matches misspellings, synonyms and related searches Broad Match Modifier = a + in front of a keyword. Matches only keywords and close varations of them Phrase Match = quotation marks (&amp;quot;) around a phrase.</description>
+    </item>
+    
+    <item>
+      <title>Cryptocurrencies</title>
+      <link>https://example.com/various/cryptocurrencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/cryptocurrencies/</guid>
+      <description>Litecoin API
+Bitcoin/Litecoin API commands  getaccountaddress &amp;quot;&amp;quot; = Print BTC/LTC address backupwallet &amp;lt;location&amp;gt; = Dump wallet to location encryptwallet &amp;lt;passphrase&amp;gt; = Encrypt the wallet with passphrase validateaddress &amp;lt;coin_address&amp;gt; = Print informations about coin_address walletpassphrasechange &amp;lt;oldpass&amp;gt; &amp;lt;newpass&amp;gt; = Change wallet password  </description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://example.com/various/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/hardware/</guid>
+      <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
+Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
+Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancing</title>
+      <link>https://example.com/various/load_balancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/load_balancing/</guid>
+      <description>Modes  Round Robin = requests are distributed sequentially. Least Connections = new requests are distributed to the node with currently the least requests. Source/IP Hash = the IP source of the request is used to determine the destination node.  </description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://example.com/various/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/markdown/</guid>
+      <description>How to make footnotes Use
+Text to be linked[^1] and then at the bottom of the file:
+[^1]: text or link </description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https://example.com/various/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/mongodb/</guid>
+      <description>Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike. db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; }); = update user Mike with Viktor.</description>
+    </item>
+    
+    <item>
+      <title>Networks</title>
+      <link>https://example.com/various/networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/networks/</guid>
+      <description>HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request.</description>
+    </item>
+    
+    <item>
+      <title>Samba and Nfs</title>
+      <link>https://example.com/various/samba_and_nfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/samba_and_nfs/</guid>
+      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory  and add to fstab:
+//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto  Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
+    </item>
+    
+    <item>
+      <title>SQLite</title>
+      <link>https://example.com/various/sqlite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/sqlite/</guid>
+      <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
+    </item>
+    
+    <item>
+      <title>Tiddlywiki</title>
+      <link>https://example.com/various/tiddlywiki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/various/tiddlywiki/</guid>
+      <description>Tweaks and features of Tiddlywiki Tiddlywiki markup list
+To use the file browser to insert a file into the wiki This:
+&amp;lt;html&amp;gt;&amp;lt;div align=&amp;quot;left&amp;quot;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;quot;whatFile()&amp;quot; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt;  or this:
+&amp;lt;html&amp;gt; &amp;lt;form target=&amp;quot;theFrameID&amp;quot;&amp;gt; &amp;lt;input type=file name=whichfile&amp;gt; &amp;lt;input type=button value=&amp;quot;View&amp;quot; onclick=&amp;quot;var frame=document.getElementById(this.form.target); this.form.action=&#39;file:///&#39;+this.form.whichfile.value; try { frame.style.display=&#39;block&#39;; this.form.done.disabled=false; this.form.submit(); } catch(e) { alert(e.description?e.description:e.toString()); }&amp;quot;&amp;gt; &amp;lt;input type=button name=done value=&amp;quot;Done&amp;quot; disabled onclick=&amp;quot;var frame=document.getElementById(this.form.target); frame.style.display=&#39;none&#39;; this.disabled=true;&amp;quot;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;theFrameID&amp;quot; id=&amp;quot;theFrameID&amp;quot; style=&amp;quot;display:none;background:#fff;width:100%;height:500px&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt; &amp;lt;/html&amp;gt;  To show a text file with an iframe &amp;lt;html&amp;gt;&amp;lt;iframe src =&amp;quot;file:///C:\Users\Owner\Documents\testingtesting2.</description>
+    </item>
+    
+  </channel>
+</rss>

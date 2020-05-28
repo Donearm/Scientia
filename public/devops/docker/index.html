@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Docker - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/devops/docker/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Docker" />
+<meta property="og:description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/devops/docker/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Docker"/>
+<meta name="twitter:description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile."/>
+<meta itemprop="name" content="Docker">
+<meta itemprop="description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.">
+
+<meta itemprop="wordCount" content="911">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Docker</h1>
+<h1 id="working-with-images">Working with images</h1>
+<ul>
+<li><code>docker image ls</code> = list all images</li>
+<li><code>docker image inspect $imageid</code> = show detailed info about <code>$imageid</code> image</li>
+<li><code>docker image build -t $imagename:$imagetag .</code> = build an image from a Dockerfile in the current directory, with <code>$imagename</code> as name and <code>$imagetag</code> as tag</li>
+<li><code>docker image build -t $imagename:$imagetag $githuburl:$branchname</code> = build an image from a Dockerfile residing on a Github repository at <code>$githuburl</code>, under branch <code>$branchname</code></li>
+<li><code>docker image build -t $imagename:$imagetag - &lt; $tarball</code> = build an image from a tarball containing all the sources and the Dockerfile for the image</li>
+<li><code>docker image push $hubname/$imagename:$imagetag</code> = push a local image to Docker Hub</li>
+<li><code>docker image save $imagename -o $tarfile.tar</code> = save an image to a tar file</li>
+<li><code>docker image load --input $tarfile.tar</code> = load an image from a tar file</li>
+<li><code>docker image tag $imageid $imagename:$imagetag</code> = name and tag an already built image of <code>$imageid</code></li>
+<li><code>docker run -it $imageid /bin/bash</code> = get a shell access (or any other command that should be present in it) to an image</li>
+</ul>
+<h1 id="working-with-containers">Working with containers</h1>
+<ul>
+<li><code>docker container ls</code> = list running containers</li>
+<li><code>docker container ls -a</code> = list all containers, running and stopped ones</li>
+<li><code>docker container inspect $containerid</code> = show detailed info about <code>$containerid</code> container</li>
+<li><code>docker container top $containerid</code> = run <code>top</code> command on <code>$containerid</code> container</li>
+<li><code>docker container attach $containerid</code> = attach to a specific container</li>
+<li><code>docker container logs $containerid</code> = show logs of <code>$containerid</code> container</li>
+<li><code>docker container stats</code> = show used resources of all running containers. With an optional <code>$containerid</code> given, it shows a live stream of the used resources of that specific container</li>
+<li><code>docker container exec -it $containerid $command</code> = run <code>$command</code> in <code>$containerid</code> container</li>
+<li><code>docker container exec -u 0 -it $containerid $command</code> = as above, run <code>$command</code> in <code>$containerid</code> but be sure to be logged as root (user 0)</li>
+<li><code>docker container pause $containerid</code> = pause a container</li>
+<li><code>docker container unpause $containerid</code> = unpause a container</li>
+<li><code>docker container prune</code> = delete all stopped containers</li>
+<li><code>docker container port $containerid</code> = show all mapped ports of <code>$containerid</code> container</li>
+<li><code>docker container ls -a -f status=exited</code> = show all local containers that have status as &ldquo;exited&rdquo;</li>
+<li><code>docker container run -d --name $containername --cpus=&quot;1&quot; --memory=512M --memory-swap=1G $imagename</code> = start a container but limiting its resources to 1 CPU, 512Mb of memory and 1Gb of swap</li>
+<li><code>docker commit $containerid $image/$tag</code> = after making changes to a running container, save them to a new (or existing) image with the <code>$image/$tag</code> name</li>
+</ul>
+<h1 id="working-with-networks">Working with networks</h1>
+<ul>
+<li><code>docker network ls</code> = list all networks</li>
+<li><code>docker network inspect $networkname</code> = show detailed info about <code>$networkname</code></li>
+<li><code>docker network create $networkname</code> = create a new network</li>
+<li><code>docker network rm $networkname</code> = delete a network</li>
+<li><code>docker network prune</code> = remove all unused networks</li>
+<li><code>docker network connect $networkname $containername</code> = connect a specific container to a specific network</li>
+<li><code>docker network disconnect $networkname $containername</code> = disconnect a container from a network</li>
+</ul>
+<h1 id="working-with-volumes">Working with volumes</h1>
+<ul>
+<li><code>docker container run -it -v /some/local/directory/:/some/directory/within/the/container/ --name $containername $containerimage</code> = run a new container from <code>$containerimage</code>, creating a volume that will bind a local directory to a directory within the container. If either directories don&rsquo;t exist, it will be created. Files can be used instead of directories. Paths must be absolute</li>
+<li><code>docker container run -d --name $containername --mount type=bind,source=/some/local/directory/,target=/container/target/directory/ $imagename</code> = run a new container from <code>$imagename</code>, binding a local directory to a directory within the container</li>
+</ul>
+<h1 id="general-commands">General commands</h1>
+<ul>
+<li><code>docker system events --since '2h'</code> = show all events related to the local Docker daemon, that happened in the last 2 hours</li>
+<li><code>docker system events --filter type=volume --since '2h'</code> = as above but filters for events related to volumes only</li>
+</ul>
+<h1 id="docker-compose">Docker-compose</h1>
+<ul>
+<li><code>docker-compose up -d</code> = start docker-compose daemon and run all containers, according to the docker-compose.yml. The file can be specified, if not in the current directory, with the <code>-f</code> flag</li>
+<li><code>docker-compose ps</code> = list containers created by docker-compose</li>
+<li><code>docker-compose stop</code> = stop docker-compose daemon, along with all its running containers</li>
+<li><code>docker-compose down</code> = as above but also deletes the containers</li>
+</ul>
+<h1 id="docker-swarm">Docker Swarm</h1>
+<ul>
+<li><code>docker swarm init --advertise-addr $ip</code> = initialize a new swarm manager (with <code>$ip</code> being the address of the node to act as manager)</li>
+<li><code>docker swarm join --token $token $managerip:$managerport</code> = join a node as a worker to the relative manager</li>
+<li><code>docker node ls</code> = show nodes in the swarm (only to be run from a manager)</li>
+<li><code>docker node inspect $hostname</code> = show detailed info about a node of the swarm. Also the IP address can be used instead of the hostname</li>
+<li><code>docker node promote $hostname</code> = promote a node worker to manager</li>
+<li><code>docker node demote $hostname</code> = demote a node manager to worker</li>
+<li><code>docker node rm $hostname</code> = remove a worker. A manager has to be demoted first before being able to remove it</li>
+<li><code>docker swarm leave</code> = remove a local worker from the swarm</li>
+<li><code>docker swarm join-token $role</code> = print the token to join the swarm, from a manager, for a specific role (worker or manager)</li>
+<li><code>docker service create -d --name $servicename --replicas 2 $imagename</code> = create a service with 2 replicas from the image <code>$imagename</code></li>
+<li><code>docker service scale $servicename=3</code> = scale the <code>$servicename</code> to 3 replicas</li>
+<li><code>docker service update --network-add $networkname $servicename</code> = add service <code>$servicename</code> to network <code>$networkname</code></li>
+<li><code>docker service update --network-rm $networkname $servicename</code> = remove service <code>$servicename</code> from the network <code>$networkname</code></li>
+<li><code>docker stack deploy --compose-file docker-compose.yml $stackname</code> = deploy a stack with <code>$stackname</code> from the given docker-compose.yml file</li>
+<li><code>docker stack ls</code> = show stacks</li>
+<li><code>docker stack ps $stackname</code> = show detailed info about the stack <code>$stackname</code></li>
+</ul>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/devops/Docker.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/devops/aws/" title="AWS"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - AWS</a>
+<a class="nav nav-next" href="https://example.com/devops/kubernetes/" title="Kubernetes">Next - Kubernetes <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class="active"><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

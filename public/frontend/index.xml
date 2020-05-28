@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frontend on Personal Wiki</title>
+    <link>https://example.com/frontend/</link>
+    <description>Recent content in Frontend on Personal Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://example.com/frontend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Css</title>
+      <link>https://example.com/frontend/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/frontend/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3</title>
+      <link>https://example.com/frontend/d3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/frontend/d3/</guid>
+      <description>Append an element directly to the body d3.select(&amp;#39;body&amp;#39;).append(&amp;#39;svg&amp;#39;) append() returns the appended element, not the body as in jQuery</description>
+    </item>
+    
+    <item>
+      <title>jQuery</title>
+      <link>https://example.com/frontend/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/frontend/jquery/</guid>
+      <description>Selectors $(&amp;#39;.foo&amp;#39;).addClass(&amp;#34;foobar&amp;#34;); $(&amp;#39;.foo&amp;#39;).removeClass(&amp;#34;foobar&amp;#34;); Attribute and Style manipulations $(&amp;#39;.foo&amp;#39;).attr(&amp;#34;new-attr&amp;#34;, &amp;#34;new-value&amp;#34;); $(&amp;#39;.foo&amp;#39;).css(&amp;#34;background&amp;#34;, &amp;#34;white&amp;#34;); Ajax $.getJSON(&amp;#39;http://resource.json&amp;#39;, doSomething); $.ajax({ url: &amp;#39;http://resource.txt&amp;#39;, dataType: &amp;#39;text&amp;#39;, type: &amp;#39;GET&amp;#39;, success: doSomething }); Append and Prepend nodes $(&amp;#39;.foo&amp;#39;).append(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); $(&amp;#39;.foo&amp;#39;).prepend(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); Listening to events $(&amp;#39;.foo&amp;#39;).on(&amp;#39;click&amp;#39;, clickHandler); Removing elements $(&amp;#39;.foo&amp;#39;).remove(); Content manipulation $(&amp;#39;.foo&amp;#39;).text(&amp;#39;Hello World!&amp;#39;); $(&amp;#39;.foo&amp;#39;).html(&amp;#39;&amp;lt;div class=&amp;#34;bar&amp;#34;&amp;gt;Hello&amp;lt;/div&amp;gt;&amp;#39;); inserting a new element after each li element
+$(&amp;#39;li&amp;#39;).after(&amp;#39;&amp;lt;li&amp;gt;Item&amp;lt;/li&amp;gt;&amp;#39;); obviously .before() works the opposite way. The .empty() function will completely remove all children of an element</description>
+    </item>
+    
+    <item>
+      <title>Npm</title>
+      <link>https://example.com/frontend/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/frontend/npm/</guid>
+      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
+    </item>
+    
+  </channel>
+</rss>

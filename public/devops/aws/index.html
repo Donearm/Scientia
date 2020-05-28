@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>AWS - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/devops/aws/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="AWS" />
+<meta property="og:description" content="AMI Amazon Machine Images. Images to choose from to launch an instance.
+AWS CLI The command-line interface to AWS services.
+Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/devops/aws/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="AWS"/>
+<meta name="twitter:description" content="AMI Amazon Machine Images. Images to choose from to launch an instance.
+AWS CLI The command-line interface to AWS services.
+Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically."/>
+<meta itemprop="name" content="AWS">
+<meta itemprop="description" content="AMI Amazon Machine Images. Images to choose from to launch an instance.
+AWS CLI The command-line interface to AWS services.
+Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.">
+
+<meta itemprop="wordCount" content="320">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>AWS</h1>
+<h2 id="ami">AMI</h2>
+<p>Amazon Machine Images. Images to choose from to launch an instance.</p>
+<h2 id="aws-cli">AWS CLI</h2>
+<p>The command-line interface to AWS services.</p>
+<h3 id="useful-commands">Useful Commands</h3>
+<ul>
+<li><code>aws configure</code> = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under <code>~/.aws/credentials</code> and <code>~/.aws/config</code></li>
+</ul>
+<h2 id="cloudformation">CloudFormation</h2>
+<p>The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</p>
+<h2 id="cloudfront">CloudFront</h2>
+<p>The CDN (Content Delivery Network) of AWS.</p>
+<h2 id="ebs">EBS</h2>
+<p>Elastic Block Store. A block storage service designed to use with EC2, attached to a single instance.</p>
+<h2 id="ecs">ECS</h2>
+<p>Elastic Container Service. A managed container orchestration service.</p>
+<h2 id="efs">EFS</h2>
+<p>Elastic File System. A managed network file system that can be shared across multiple EC2 instances.</p>
+<h2 id="elasticips">ElasticIPs</h2>
+<p>ElasticIPs are public IP addresses associated with a VPC. The difference with normal public IP addresses is if the instance associated with an ElasticIP goes down, the IP is maintained and associated to the new instance brought up to cover the failed one. This way no interruption of connection is caused by changing the IP address.</p>
+<h2 id="iam">IAM</h2>
+<p>Identity and Access Management manages the policies of permission of users and groups to access AWS resources. Basically, users and groups in a Linux installation.</p>
+<h2 id="kms">KMS</h2>
+<p>Amazon Key Management Service. Create and control encryption keys used to encrypt and decrypt data safely.</p>
+<h2 id="lambda">Lambda</h2>
+<p>Run code without thinking about servers.</p>
+<h3 id="useful-commands-1">Useful Commands</h3>
+<ul>
+<li><code>aws lambda update-function-code --function-name $functionname --zip-file fileb://function.zip</code> = update a Lambda function of <code>$functionname</code> with a provided zipfile. Useful to install an app along with its external requirements (libraries not present in the standard SDK)</li>
+</ul>
+<h2 id="rds">RDS</h2>
+<p>Amazon Relational Database Service.</p>
+<h2 id="route-53">Route 53</h2>
+<p>Amazon Domain Name System service.</p>
+<h2 id="sns">SNS</h2>
+<p>Amazon Simple Notification Service. A messaging system to send messages to multiple subscribers through a &ldquo;push&rdquo; mechanism.</p>
+<h2 id="vpc">VPC</h2>
+<p>Virtual Private Cloud. A virtual network.</p>
+<h2 id="waf">WAF</h2>
+<p>Web Application Firewall. A firewall that protects web applications.</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/devops/AWS.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/devops/" title="DevOps"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - DevOps</a>
+<a class="nav nav-next" href="https://example.com/devops/docker/" title="Docker">Next - Docker <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

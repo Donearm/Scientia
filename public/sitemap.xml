@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.com/android/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/android/android/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/devops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/devops/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/devops/docker/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/devops/kubernetes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/devops/system_design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/frontend/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/frontend/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/frontend/d3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/frontend/jquery/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/frontend/npm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/awk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/bash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/common_lisp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/go/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/lua/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/languages/sed/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/freebsd/freebsd_commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/apparmor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/compose_key/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/debian/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/firewall/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/framebuffer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/kernel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/linux_commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/selinux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/sysrq_key/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/systemd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/linux/x/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/nixos/nixos_commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/operating_systems/windows/windows_commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/chromium/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/curl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/e-uae/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/ffmpeg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/firefox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/flash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/gimp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/gmail/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/gnome/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/grub/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/httrack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/imagemagick-convert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/mplayer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/mutt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/rtorrent/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/screen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/ssh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/tcpdump/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/tmux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/urxvt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/vim/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/programs/wireshark/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/theory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/theory/big_oh_notation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/theory/data_structures/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/theory/set_theory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/advertising_and_marketing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/cryptocurrencies/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/hardware/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/load_balancing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/markdown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/networks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/samba_and_nfs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/sqlite/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/various/tiddlywiki/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+  </url>
+  
+</urlset>

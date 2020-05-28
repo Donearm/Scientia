@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Windows Commands - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/operating_systems/windows/windows_commands/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Windows Commands" />
+<meta property="og:description" content="Windows Registry tweaks  HKEY_CURRENT_USER\ControlPanel\Desktop  MenuShowDelay = Delay in ms at the opening of menus. Default is 400   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management  DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters  EnablePrefetcher = Enable prefetching of data on the hard disk." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/operating_systems/windows/windows_commands/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Windows Commands"/>
+<meta name="twitter:description" content="Windows Registry tweaks  HKEY_CURRENT_USER\ControlPanel\Desktop  MenuShowDelay = Delay in ms at the opening of menus. Default is 400   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management  DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters  EnablePrefetcher = Enable prefetching of data on the hard disk."/>
+<meta itemprop="name" content="Windows Commands">
+<meta itemprop="description" content="Windows Registry tweaks  HKEY_CURRENT_USER\ControlPanel\Desktop  MenuShowDelay = Delay in ms at the opening of menus. Default is 400   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management  DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters  EnablePrefetcher = Enable prefetching of data on the hard disk.">
+
+<meta itemprop="wordCount" content="1370">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Windows Commands</h1>
+<h2 id="windows-registry-tweaks">Windows Registry tweaks</h2>
+<ul>
+<li>HKEY_CURRENT_USER\ControlPanel\Desktop
+<ul>
+<li>MenuShowDelay = Delay in ms at the opening of menus. Default is 400</li>
+</ul>
+</li>
+<li>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management
+<ul>
+<li>DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0</li>
+<li>LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0</li>
+</ul>
+</li>
+<li>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
+<ul>
+<li>EnablePrefetcher = Enable prefetching of data on the hard disk. With 2, the default, only for Windows, with 3, for every applications</li>
+</ul>
+</li>
+</ul>
+<h2 id="make-a-windows-xp-corporate-version-cd">Make a Windows Xp Corporate version cd</h2>
+<p>What you need:</p>
+<ul>
+<li>1 X Original WINDOWS XP HOME EDITION CD</li>
+<li>1 X Blank CDR/RW Disc (So you can rewrite it if you stuff up of course)</li>
+<li>1 X Blank Formatted 3.5&rdquo; Floppy Disk.</li>
+<li><a href="http://www.nero.com">NERO Burning ROM 5.5.7.2</a></li>
+<li>NERO.REG file (Attached to this Post)</li>
+<li><a href="http://users.skynet.be/am032016/isobuster_all_lang_install.zip">Smart Projects - ISOBUSTER Version 0.99.8</a></li>
+<li>SETUPMGR.EXE (In Deploy.cab on Windows XP CD)</li>
+<li><a href="http://www.corpfiles.fsworld.co.uk/corpfiles.zip">CORPFILES.ZIP</a></li>
+<li>ISOBUSTER 0.99.8 Instructions</li>
+</ul>
+<ol>
+<li>Insert your Original WINDOWS XP CD into the CD Drive &amp; Start ISOBuster 0.99.8</li>
+<li>Select BOOTABLE CD and right click, extract to Hard Drive</li>
+<li>Select <code>WXHCCP_EN</code> Directory and right click, extract to Hard Drive.</li>
+<li>Rename Folder <code>WXHCCP_EN</code> to <code>WXPPRO_EN</code>.</li>
+<li>Download CORPFILES.ZIP &amp; extract to a Temp Folder (e.g. CD Burning\Corpfiles)</li>
+<li>Remove the following 3 files from the directory: <code>/i386/nt5inf.ca_ /i386/eula.txt /i386/win9xupg/win95upg.inf</code></li>
+<li>Now copy the remaining 8 files to the <code>&quot;WXPPRO_EN</code> Directory you just created. (Overwrite all these files if asked) <code>/i386/dpcdll.dl_ /i386/oembios.bi_ /i386/oembios.ca_ /i386/oembios.da_ /i386/oembios.si_ /i386/pidgen.dll /i386/setupp.ini /i386/setupreg.hiv</code></li>
+</ol>
+<h3 id="nero-burning-rom-5572-instructions">NERO BURNING ROM 5.5.7.2 Instructions.</h3>
+<p>Download the file NERO.REG and extract to the Nero Burning ROM 5.5.7.2 Program Directory then run the file, this registry entry is required to make the XP CD Bootable. Eliminates the &ldquo;Cannot Find NTLDR&rdquo; error at boot up.</p>
+<ol>
+<li>Start NERO BURNING ROM 5.5.6.4 and select New Compilation - CD BOOT</li>
+<li>Drag &amp; Drop all files from the <code>WXPPRO_EN</code> Directory in File Browser Pane to the Compilation Pane and save as <code>wxppro_en.nrb</code></li>
+<li>Select &ldquo;Recorder&rdquo; Menu and select your CD Writer from the list.</li>
+<li>Select &ldquo;Write CD&rdquo; from the File Menu.</li>
+<li>Select the INFO Tab - See that information page looks like this.</li>
+<li>Select BOOT Tab -
+In &ldquo;Source of boot image data&rdquo; section -
+Select &ldquo;Image File&rdquo; radio button and Click on Browse. Select &ldquo;all files&rdquo;.
+Go to the Directory where you extracted the &ldquo;Microsoft Corporation.img&rdquo; file to, and select it.
+Tick &ldquo;Enable Expert Settings ( for advanced users only)&rdquo; box.
+In &ldquo;Expert Settings&rdquo; Section -
+Select &ldquo;No Emulation&rdquo; from the list box.
+In the &ldquo;Boot Message&rdquo; Box type &ldquo;MICROSOFT CORPORATION&rdquo;
+In the &ldquo;Load segment of sectors (hex!)&rdquo; box type in &ldquo;07C0&rdquo;
+In the &ldquo;Number of loaded sectors&rdquo; box type in &ldquo;4&rdquo; (Must be 4)</li>
+<li>Select ISO Tab -
+In &ldquo;File-/Directorynames length&rdquo; Section - Select &ldquo;ISO Level 1(Max. of 11 = 8 + 3 chars)&rdquo;
+In &ldquo;Format&rdquo; Section select &ldquo;Mode 1&rdquo;
+In &ldquo;Character Set&rdquo; Section select &ldquo;ISO 9660&rdquo;
+Tick &ldquo;Joliet&rdquo; box.
+In &ldquo;Relax ISO Restrictions&rdquo; Section tick both boxes. -</li>
+<li>Select LABEL Tab -
+Make sure &ldquo;ISO 9660&rdquo; is selected
+In &ldquo;Volume Label&rdquo; - Type in <code>WXPPRO_EN</code> if not already there.
+Leave &ldquo;System Identifier&rdquo; &amp; &quot; Volume Set&rdquo; blank.
+In &ldquo;Publisher&rdquo; &amp; &ldquo;Data Preparer&rdquo; boxes type <code>MICROSOFT_CORPORATION</code> exactly as shown.
+Tick &ldquo;Also use the ISO 9660 text for Joliet&rdquo; box.</li>
+<li>Select DATES Tab - even though it is not that important
+Set &ldquo;Volume Creation&rdquo; date &amp; time to &ldquo;23/08/2001 - 12:00:00 PM&rdquo;
+Set &ldquo;Volume Modification&rdquo; date &amp; time to &ldquo;23/08/2001 - 12:00:00 PM&rdquo;
+Set &ldquo;Use this date&rdquo; date &amp; time to &ldquo;23/08/2001 - 12:00:00 PM&rdquo;
+Note: It&rsquo;s Just that these are the file dates on Original Windows XP CD!!!!!</li>
+<li>Select MISC Tab - Not Critical
+Check Both boxes in &ldquo;Caching&rdquo; Section
+Leave at &ldquo;64&rdquo; in &ldquo;KB&rdquo; box.</li>
+<li>Select BURN Tab -
+In the &ldquo;Action&rdquo; Section - Check boxes &ldquo;Write&rdquo; &amp; &ldquo;Finalize CD (No further writing possible)&rdquo;
+In the &ldquo;Write Speed&rdquo; box select a suitable Recording Speed - &ldquo;4x (600 KB/s)&rdquo; is a quite safe speed.
+In the &ldquo;Write Method&rdquo; box select &ldquo;Disc-At-Once&rdquo;
+In the &ldquo;Number of Copies&rdquo; box select as many as you want to copy.
+Leave &ldquo;Use Multiple Recorders&rdquo; &amp; &ldquo;Do a virus check before burning&rdquo; unchecked.</li>
+<li>Click on the WRITE Button and Burn Baby Burn.</li>
+</ol>
+<p>Congratulations !! You should now have a nice new Bootable Copy of &ldquo;WINDOWS XP PRO&rdquo;
+Label your New CD as required and put it back in the CD Drive - if it should come up with the Set Up Dialog the same as Original Windows CD. Press Exit.
+IMPORTANT: DO NOT select SETUP Yet!!!</p>
+<h3 id="setup-manager-instructions">SETUP MANAGER Instructions</h3>
+<p>For a Complete Unattended Clean Install on a freshly formatted Hard Drive.</p>
+<ol>
+<li>Format a 3.5&rdquo; Floppy Disk &amp; Label it &quot; Windows XP AutoInstall Disk&rdquo;. Put it in the Floppy Drive.</li>
+<li>Start &ldquo;Windows Explorer&rdquo; &amp; go to the CDROM Drive where your New Windows XP Pro CD is.</li>
+<li>Go to the &ldquo;SUPPORT\TOOLS&rdquo; Directory and extract all the files from the &ldquo;DEPLOY.CAB&rdquo; file into a new directory.</li>
+<li>Go to the new directory and run the SETUPMGR.EXE program and the Wizard will take you through each Step.
+<ul>
+<li>Step 1 - Select &ldquo;Create New Answer File&rdquo;.</li>
+<li>Step 2. - Select &ldquo;Windows Unattended Installation&rdquo;.</li>
+<li>Step 3 - Select &ldquo;Windows XP Professional&rdquo;.</li>
+<li>Step 4 - Select &ldquo;Fully Automatic&rdquo;.</li>
+<li>Step 5 - Select &ldquo;No, this Answer File will be used to install from a CD&rdquo;.</li>
+<li>Step 6 - Select &ldquo;I accept the terms of the Agreement&rdquo;.</li>
+<li>Step 7 - Enter your appropriate &ldquo;Name&rdquo; &amp; &ldquo;Organisation&rdquo; in boxes.</li>
+<li>Step 8 - Select your &ldquo;Display Setting&rdquo; to suit yourself from the dropdown lists.</li>
+<li>Step 9 - Select your appropriate &ldquo;Time Zone&rdquo; from the drop down list.</li>
+<li>Step 10 - Enter the Product Key: FCKGW-RHQQ2-YXRKT-8TG6W-2B7Q8. This is the Corporate Volume Licensing Key to eliminate Windows XP Activation</li>
+<li>Step 11 - Select &ldquo;Automatically Generates Computer Name&rdquo;</li>
+<li>Step 12 - Enter any appropriate &ldquo;Administrator Password&rdquo; or just leave blank.</li>
+<li>Step 13 - Select &ldquo;Typical Settings&rdquo; in Network Components.</li>
+<li>Step 14 - Leave as &ldquo;WORKGROUP&rdquo; in Workgroup or Domain.</li>
+<li>Step 15 - Select your Appropriate Country, Area Code &amp; Dial Type in Telephony</li>
+<li>Step 16 - Select &ldquo;Use the Default Regional Settings for the Windows Version you are using&rdquo; in Regional Settings</li>
+<li>Step 17 - Select any other language support as necessary in Languages.</li>
+<li>Step 18 - Select &ldquo;Use Default Internet Explorer Settings&rdquo; in Browser &amp; Shell Settings</li>
+<li>Step 19 - Select &ldquo;A Folder Named Windows&rdquo; in Installation Folder.</li>
+<li>Step 20 - Leave Install Printers blank.</li>
+<li>Step 21 - Leave Run Once blank.</li>
+<li>Step 22 - Leave Additional Commands blank.</li>
+<li>Step 23 - Select Floppy Drive and Save File As &ldquo;winnt.sif&rdquo; - Save as type &ldquo;Remote Boot File(*.sif)&rdquo;</li>
+<li>Step 24 - Setup Manager will advise you when it is Complete and shows the files on your Floppy Drive. Files Saved are &quot; WINNT.SIF &quot; &amp; &quot; WINNT.BAT &ldquo;.</li>
+</ul>
+</li>
+</ol>
+<h3 id="winntbat-contents">WINNT.BAT Contents:</h3>
+<pre><code>@rem SetupMgrTag
+@echo off
+rem
+rem This is a SAMPLE batch script generated by the Setup Manager Wizard.
+rem If this script is moved from the location where it was generated, it may
+have to be modified.
+rem
+set AnswerFile=.\winnt.sif
+set SetupFiles=I:\i386
+I:\i386\winnt32 /s:%SetupFiles% /unattend:%AnswerFile% /copysource:lang
+</code></pre>
+<p>NOTE: The Drive Letter &ldquo;I&rdquo; refers to the CDROM Drive Letter. Change this as necessary to suit your CDROM Drive Letter.</p>
+<p>Then save it and Write Protect the Disk.<br>
+Don&rsquo;t Forget to Reset the BIOS to Boot From your CDROM first then HDD.<br>
+Leave the Floppy Disk in the Drive before Booting with the Cracked #Windows XP Pro CD.<br>
+You can leave the CD in the Drive when it reboots after Setup, Just don&rsquo;t hit any keys at boot up.</p>
+<h2 id="windows-vista">Windows Vista</h2>
+<p>enable login as Administrator. At command prompt:</p>
+<pre><code>net user administrator /active:yes
+</code></pre>
+<p>the Administrator account will be enabled without the need of entering a password. To disable it again:</p>
+<pre><code>net user administrator /active:no
+</code></pre>
+<h2 id="use-a-network-printer-from-a-cups-server">Use a network printer from a Cups server</h2>
+<p>As Url use: <code>http://$ip_pc_with_cups:631/printers/printer_name</code></p>
+<h2 id="windows8">Windows8</h2>
+<p>as W8 has the bad habit to set itself as the default element to boot under UEFI (and it probably does something similar under BIOS too) use</p>
+<pre><code>bcdedit /set {bootmgr} path \EFI\arch\vmlinuz-arch.efi
+</code></pre>
+<p>to change it to Linux. Here both <code>{bootmgr}</code> and <code>path</code> are literals and <code>vmlinuz-arch.efi</code> is the actual path of the Archlinux kernel to load. As I haven&rsquo;t found yet a way to pass parameters, I prefer directing Windows to use rEFInd thus</p>
+<pre><code>bcdedit /set {bootmgr} path \EFI\refind\refind_x64.efi
+</code></pre>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/operating_systems/windows/Windows_Commands.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/operating_systems/nixos/nixos_commands/" title="NixOS"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - NixOS</a>
+<a class="nav nav-next" href="https://example.com/programs/" title="Programs">Next - Programs <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class="active"><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

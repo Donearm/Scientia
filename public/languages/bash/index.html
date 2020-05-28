@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Bash - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/languages/bash/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Bash" />
+<meta property="og:description" content="Functions namename prints the basename without extension
+ext prints extension of a file, including &ldquo;.&rdquo;
+function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/languages/bash/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Bash"/>
+<meta name="twitter:description" content="Functions namename prints the basename without extension
+ext prints extension of a file, including &ldquo;.&rdquo;
+function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?"/>
+<meta itemprop="name" content="Bash">
+<meta itemprop="description" content="Functions namename prints the basename without extension
+ext prints extension of a file, including &ldquo;.&rdquo;
+function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?">
+
+<meta itemprop="wordCount" content="1402">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Bash</h1>
+<h1 id="functions">Functions</h1>
+<p>namename prints the basename without extension<br>
+ext prints extension of a file, including &ldquo;.&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">	<span style="color:#66d9ef">function</span> namename<span style="color:#f92672">()</span>
+	<span style="color:#f92672">{</span>
+	  local name<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>1##*/<span style="color:#e6db74">}</span>
+	  local name0<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name%.*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+	  echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name0<span style="color:#66d9ef">:-</span>$name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">function</span> ext<span style="color:#f92672">()</span>
+	<span style="color:#f92672">{</span>
+	  local name<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>1##*/<span style="color:#e6db74">}</span>
+	  local name0<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name%.*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+	  local ext<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>name0:+<span style="color:#e6db74">${</span>name#$name0<span style="color:#e6db74">}}</span>
+	  echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ext<span style="color:#66d9ef">:-</span>.<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+	<span style="color:#f92672">}</span>
+</code></pre></div><h1 id="commands">Commands</h1>
+<h2 id="ctrl-key-bound">CTRL Key Bound</h2>
+<ul>
+<li><code>Ctrl + _</code> =  undo</li>
+<li><code>Ctrl + @</code> = set mark</li>
+<li><code>Ctrl + a</code> = Jump to the start of the line</li>
+<li><code>Ctrl + b</code> = Move back a char</li>
+<li><code>Ctrl + c</code> = Terminate the command</li>
+<li><code>Ctrl + d</code> = Delete character under the cursor</li>
+<li><code>Ctrl + e</code> = Jump to the end of the line</li>
+<li><code>Ctrl + f</code> = Move forward a char</li>
+<li><code>Ctrl + k</code> = Delete from cursor to EOL</li>
+<li><code>Ctrl + l</code> = Clear the screen</li>
+<li><code>Ctrl + n</code> = select the next command in history</li>
+<li><code>Ctrl + p</code> = select the previous command in history</li>
+<li><code>Ctrl + r</code> = Search the history backwards</li>
+<li><code>Ctrl + R</code> = Search the history backwards with multi occurrence</li>
+<li><code>Ctrl + t</code> = drag character before cursor over the one under the cursor</li>
+<li><code>Ctrl + u</code> = Delete backward from cursor</li>
+<li><code>Ctrl + v</code> = Insert next character verbatim</li>
+<li><code>Ctrl + w</code> = kill word before cursor</li>
+<li><code>Ctrl + x</code> = kill backward to the beginning of line</li>
+<li><code>Ctrl + xx</code> = Move between EOL and current cursor position</li>
+<li><code>Ctrl + x @</code> = Show possible hostname completions</li>
+<li><code>Ctrl + y</code> = paste the text at top of the kill#ring</li>
+<li><code>Ctrl + z</code> = Suspend/ Stop the command</li>
+</ul>
+<h2 id="alt-key-bound">ALT Key Bound</h2>
+<ul>
+<li><code>Alt + ''&lt;''</code> = Move to the first line in the history</li>
+<li><code>Alt + ''&gt;''</code> = Move to the last line in the history</li>
+<li><code>Alt + ?</code> = Show current completion list</li>
+<li><code>Alt + *</code> = Insert all possible completions</li>
+<li><code>Alt + /</code> = Attempt to complete filename</li>
+<li><code>Alt + .</code> = Yank last argument to previous command</li>
+<li><code>Alt + b</code> = Move backward</li>
+<li><code>Alt + c</code> = Capitalize the word</li>
+<li><code>Alt + d</code> = Delete word</li>
+<li><code>Alt + f</code> = Move forward</li>
+<li><code>Alt + l</code> = Make word lowercase</li>
+<li><code>Alt + n</code> = Search the history forwards non=incremental</li>
+<li><code>Alt + p</code> = Search the history backwards non=incremental</li>
+<li><code>Alt + r</code> = Recall command</li>
+<li><code>Alt + t</code> = Move words around</li>
+<li><code>Alt + u</code> = Make word uppercase</li>
+<li><code>Alt + backspace</code> = Delete backward from cursor</li>
+</ul>
+<h2 id="meta-key-bound">Meta Key Bound</h2>
+<p>Meta usually corresponds to the <code>Esc</code> key</p>
+<ul>
+<li><code>M + f</code> = move forward to the end of next word</li>
+<li><code>M + b</code> = move backward to the start of current or previous word</li>
+<li><code>M + c</code> = capitalize current word</li>
+<li><code>M + d</code> = kill current word</li>
+<li><code>M + l</code> = downcase current word</li>
+<li><code>M + t</code> = drag the word before cursor over the one under the cursor</li>
+<li><code>M + u</code> = uppercase current word</li>
+<li><code>M + y</code> = rotate the kill=ring</li>
+</ul>
+<h2 id="more-special-keybindings">More Special Keybindings</h2>
+<p>Here &ldquo;2T&rdquo; means Press <code>TAB</code> twice</p>
+<ul>
+<li><code>$ 2T</code> = All available commands(common)</li>
+<li><code>$ (string)2T</code> = All available commands starting with (string)</li>
+<li><code>$ /2T</code> = Entire directory structure including Hidden one</li>
+<li><code>$ 2T</code> = Only Sub Dirs inside including Hidden one</li>
+<li><code>$ *2T</code> = Only Sub Dirs inside without Hidden one</li>
+<li><code>$ ~2T</code> = All Present Users on system from &ldquo;/etc/passwd&rdquo;</li>
+<li><code>$ $2T</code> = All Sys variables</li>
+<li><code>$ @2T</code> = Entries from &ldquo;/etc/hosts&rdquo;</li>
+<li><code>$ =2T</code> = Output like ls or dir</li>
+<li><code>Ctrl + v Ctrl + m</code> = Insert a newline control character</li>
+</ul>
+<h1 id="scripts">Scripts</h1>
+<h2 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find -type f -name <span style="color:#e6db74">&#34;name.ext&#34;</span> | <span style="color:#66d9ef">while</span> read i; <span style="color:#66d9ef">do</span> mv $i $i%.ext; <span style="color:#66d9ef">done</span>
+</code></pre></div><h2 id="rot13-encryption">Rot13 Encryption</h2>
+<p>In a file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span> | tr <span style="color:#e6db74">&#39;a-zA-Z&#39;</span> <span style="color:#e6db74">&#39;n-za-mN-Z-A-M&#39;</span>
+exit <span style="color:#ae81ff">0</span>
+</code></pre></div><h2 id="rename-multiple-files">Rename multiple files</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> files in <span style="color:#66d9ef">$(</span>ls .<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span>
+	  newname<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $files | sed <span style="color:#e6db74">&#39;s/oldtext/newtext/g&#39;</span><span style="color:#e6db74">`</span>;
+	  mv $files $newname;
+<span style="color:#66d9ef">done</span>
+</code></pre></div><h1 id="syntax">Syntax</h1>
+<h4 id="various-bash-syntax-rules">Various Bash syntax rules</h4>
+<ul>
+<li><code>${#variable}</code> = Variable string length</li>
+<li><code>variable=$(&lt;file)</code> = Save in variable the content of a file</li>
+<li><code>: &gt; file</code> = Delete the content of file (like <code>cat /dev/null</code>). If it didn&rsquo;t exist, creates a new, empty one</li>
+<li><code>ls -l {b*, aa*, cc*}</code> = Multiple selection. Select all files matching the <code>b*</code>, <code>aa*</code> and <code>cc*</code> patterns in a single <code>ls</code> run</li>
+<li>mkdir -p <code>{aaa,bbb/ccc,def,parent{subdir1,subdir2,subdir3},ppp}</code> = Make whole tree of directories with the same multiple selection syntax as above</li>
+<li><code>cmd1 (&lt;cmd2) (&lt;cmd3) (&lt;cmd4)</code> = Send the stdout of the various commands to the preceding one, from right to left. For example: <code>sort (&lt;ls /bin) (&lt;ls /usr/bin) (&lt;ls /opt)</code>, which will send the list of files in those 3 directories to sort</li>
+<li><code>variable=${1:-123} </code> = Gives <code>variable</code> the value of the first parameter (<code>$1</code>). If this is empty, assign to it <code>123</code></li>
+<li><code>${variable##*.</code>} = Corresponds to everything there is in the variable after the period. Generally used with filenames to obtain just the extension</li>
+<li><code>${variable%%.*</code>} = Corresponds to everything there is in the variable before the period. Great to obtain filenames without the extension</li>
+<li><code>$RANDOM</code> = Gives back a semi-random number between 0 and 32767</li>
+<li><code>[[ string =~ pattern ]]</code> = Returns true if string matches pattern (according to ERE, Extended Regular Expressions). Only for bash &gt;=3.0</li>
+<li><code>&lt;&lt;-END</code> = Usually <code>&lt;&lt;END</code> sends the output as it is. With an added <code>-</code> it strips any tab (but still includes whitespaces)</li>
+<li><code>declare</code> = Declares various variables: with <code>-a</code>, an array, <code>-A</code> an associative array, <code>-i</code> an integer, <code>-l</code> a string with only lowercase characters, <code>-r</code> a read-only variable, <code>-u</code> a string with only uppercase characters</li>
+<li><code>shopt -s extglob</code> = Enables extended globs</li>
+<li><code>^aaa^bbb</code> = Substitutes <code>aaa</code> with <code>bbb</code> in the last executed command on the terminal. Useful to rerun the same command but with different arguments</li>
+<li><code>echo ${PIPESTATUS[@]}</code> = Find out all the exit codes of the previously piped commands</li>
+<li><code>rm * !(&quot;filename&quot;)</code> = Remove all files in current directory but for <code>filename</code>. Wildcards can be used to specify the matching like <code>*.ext</code> or <code>filenames?</code> or <code>[!abcde]</code></li>
+</ul>
+<h4 id="bash-history">Bash History</h4>
+<p>How to use and navigate through Bash&rsquo;s history</p>
+<ul>
+<li><code>!!</code> = Rerun the last executed command</li>
+<li><code>!*</code> = Represent all the arguments of the last executed command</li>
+<li><code>!$</code> = Corresponds to the very last argument of the last executed command</li>
+<li><code>!!:2-3</code> = Corresponds to the list of arguments going from the second to the third of the last executed command. It can also be used like <code>!!:2-$</code> to represent every argument from the second to the last.</li>
+<li><code>!n</code> = Run the command at line <code>n</code> in <code>bash_history</code></li>
+<li><code>!cmd:p</code> = Show the last time <code>cmd</code> was executed, with all its arguments and parameters</li>
+<li><code>!cmd</code> = Rerun, with same arguments and parameters, last execution of <code>cmd</code></li>
+<li><code>!!:gs/oldarguments/newarguments</code> = Rerun last executed command substituting <code>oldarguments</code> with <code>newarguments</code></li>
+</ul>
+<h4 id="bash-redirection">Bash Redirection</h4>
+<p>Partly copied/modified from <a href="https://github.com/pkrumins/bash-redirections-cheat-sheet">bash-redirections-cheat-sheet</a></p>
+<ul>
+<li><code>cmd &gt; file</code> = redirect stdout to file. Also <code>cmd 1&gt; file</code></li>
+<li><code>cmd 2&gt; file</code> = redirect stderr to file</li>
+<li><code>cmd &gt;&gt; file</code> = append stdout to file</li>
+<li><code>cmd &amp;&gt; file</code> = redirect stdout and stderr to file. Also <code>cmd &gt; file 2&gt;&amp;1</code></li>
+<li><code>cmd &lt;&lt;&lt; &quot;string&quot;</code> = redirect a single line of text to the stdin of <code>cmd</code></li>
+<li><code>exec 2&gt; file</code> = redirect stderr of all commands to a file forever</li>
+<li><code>exec 3&lt; file</code> = open a file for reading using a custom file descriptor</li>
+<li><code>exec 3&gt; file</code> = open a file for writing usint a custom file descriptor</li>
+<li><code>exec 3&lt;&gt; file</code> = open a file for reading and writing using a custom file descriptor</li>
+<li><code>exec 3&gt;&amp;-</code> = close a file descriptor</li>
+<li><code>exec 4&gt;&amp;3</code> = make file descriptor 4 to be a copy of 3. With <code>exec 4&gt;&amp;3-</code> also close 3</li>
+<li><code>echo &quot;abc&quot; &gt;&amp;3</code> = write to custom file descriptor 3</li>
+<li><code>cat &lt;&amp;3</code> = read from custom file descriptor 3</li>
+<li><code>(cmd1; cmd2) &gt; file</code> = redirecto stdout from multiple commands to a file (using a sub-shell). Or with <code>{ cmd1; cmd2 } &gt; file</code>, without using a sub-shell</li>
+<li><code>exec 3&lt;&gt; /dev/tcp/host/port</code> = open a tcp connection to host:port. With <code>/dev/udp/host/port</code> opens a udp connection</li>
+<li><code>cmd1 |&amp; cmd2</code> = redirect stdout and stderr of <code>cmd1</code> to stdin of <code>cmd2</code>. This is for bash 4.0+ only, for older versions use <code>cmd1 2&gt;&amp;1 | cmd2</code></li>
+<li><code>exec {filew}&gt; file</code> = open a file for writing using a named file descriptor called {filew}. Bash 4.1+ only</li>
+<li><code>cmd 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3</code> = swap stdout and stderr of cmd</li>
+<li><code>cmd &gt; &gt;(cmd1) 2&gt; &gt;(cmd2)</code> = send stdout of cmd to cmd1 and stderr of cmd to cmd2</li>
+</ul>
+<h3 id="terminal-line-wrapping">Terminal Line Wrapping</h3>
+<p>To prevent commands to overlap on the prompt, add a <code>\</code> before every <code>[</code> and <code>]</code> in your bash prompt (<code>$PS1</code>)</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/languages/Bash.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/languages/awk/" title="Awk"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Awk</a>
+<a class="nav nav-next" href="https://example.com/languages/c/" title="C">Next - C <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class="active"><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

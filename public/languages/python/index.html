@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Python - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/languages/python/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Python" />
+<meta property="og:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/languages/python/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Python"/>
+<meta name="twitter:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes."/>
+<meta itemprop="name" content="Python">
+<meta itemprop="description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes.">
+
+<meta itemprop="wordCount" content="973">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Python</h1>
+<ul>
+<li><code>class.__mro__</code> = Contains all the ancestors of the class, up till <code>object</code>, the Python base class</li>
+<li><code>_</code> = At Python prompt, it represents the last value. Mostly like <code>$?</code> in Bash</li>
+<li><code>__file__</code> = Contains the name of the file loaded (a module if importing or the filename of the script)</li>
+<li><code>locals()</code> = Returns a dictionary with the local namespace</li>
+<li><code>globals()</code> = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed</li>
+<li><code>enumerate()</code> = Returns a list&rsquo;s elements with numeric indexes. For example, <code>0, abc, 1, def</code> etc.</li>
+<li><code>[::2]</code> = Slice of a list, iterating every 2 elements. Works also by selecting a range (<code>[1:10:2]</code>)</li>
+<li><code>[::-1]</code> = Iterate over a list backward</li>
+<li><code>print(&quot;The {foo} is a {bar}&quot;.format(foo='answer', bar='42'))</code> = String substitution in print using an alphanumerical index</li>
+<li><code>first,*rest,last = (1,2,3,4,5,6,7)</code> = Assign first element of the tuple to <code>first</code>, the last to <code>last</code>, and all those in between to <code>rest</code>. Python 3 only</li>
+<li><code>first,second,*rest = 1,2,3,4,5,6</code> = Similarly to above, assign 1 to first, 2 to second and from 3 onward to rest. Rest will result in a list (<code>[3,4,5,6]</code>). Python 3 only</li>
+<li><code>__qualname__</code> = Attribute of classes and functions showing the &ldquo;path&rdquo; from the module top-level to their definition. Practically shows all the parents functions/classes of a function/class. Only in Python &gt;=3.3</li>
+<li><code>python -m pydoc -k keyword</code> = Search Python documentation for &ldquo;keyword&rdquo;</li>
+<li><code>python -m this</code> = The Zen of Python ;)</li>
+<li><code>a[-3]</code> = Negative indexing, returns the third to last element of a list</li>
+<li><code>lastthree = slice(-3, None)</code> = Saving a slice in a variable</li>
+</ul>
+<h3 id="decorators">Decorators</h3>
+<p>Write a function like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">func1</span>(func):
+	   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>():
+			<span style="color:#75715e"># code to execute before func()</span>
+			func()
+			<span style="color:#75715e"># code to execute after func()</span>
+	   <span style="color:#66d9ef">return</span> wrapper
+</code></pre></div><p>and then pass to a function this way:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@func1</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">func</span>():
+	<span style="color:#75715e"># function code</span>
+</code></pre></div><h3 id="metaclasses">Metaclasses</h3>
+<p>Syntax:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ClassName <span style="color:#f92672">=</span> type(
+	   <span style="color:#e6db74">&#39;ClassName&#39;</span>,
+	   (object, ),
+	   {<span style="color:#e6db74">&#39;abc&#39;</span>: def, <span style="color:#e6db74">&#39;esse&#39;</span>: erre}
+)
+</code></pre></div><p>where <code>ClassName</code> is the name of the metaclass, <code>(object,)</code> is a tuple with all the classes to inherit and the following dictionary is the namespace of the metaclass. To refer to an instance of a metaclasse, use <code>cls</code> instead of <code>self</code></p>
+<p>Then to instantiate a metaclass:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">MyClass <span style="color:#f92672">=</span> ClassName(<span style="color:#e6db74">&#39;MyClass&#39;</span>, (object, ), {})
+</code></pre></div><p>or it&rsquo;s possible to instantiate the metaclass directly when creating a class, like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>(object):
+	  __metaclass__ <span style="color:#f92672">=</span> MyMetaClass
+</code></pre></div><h3 id="set-operations">Set operations</h3>
+<p>various operations possible over sets. Examples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>,}
+B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>}
+</code></pre></div><ul>
+<li><code>A | B</code> -&gt; <code>set([1, 2, 3, 4, 5, 6, 7])</code></li>
+<li><code>A &amp; B</code> -&gt; <code>set([3])</code></li>
+<li><code>A - B</code> -&gt; <code>set([1, 2])</code></li>
+<li><code>B - A</code> -&gt; <code>set([4, 5, 6, 7])</code></li>
+<li><code>A ^ B</code> -&gt; <code>set([1, 2, 4, 5, 6, 7])</code></li>
+</ul>
+<h2 id="modules">Modules</h2>
+<h3 id="bisect">Bisect</h3>
+<ul>
+<li><code>bisect.insort(l, e)</code> = Insert <code>e</code> in list <code>l</code>, automatically sorting the list. For huge lists it should be quicker than using <code>.sorted()</code></li>
+</ul>
+<h3 id="calendar">Calendar</h3>
+<ul>
+<li><code>class HTMLCalendar</code> = Format to html a calendar. After instantiating, use it like <code>i.formatmonth(2012,11)</code> to obtain the html code for november 2012</li>
+<li><code>python -m calendar 2013</code> = Outputs the calendar for the 2013. It can be customized to print in html or text format, with or without a css and by width, lines, spacing etc. (see <code>python -m calendar -h</code>)</li>
+</ul>
+<h3 id="cgitb">Cgitb</h3>
+<ul>
+<li><code>cgitb.enable()</code> = Enable a very verbose traceback. With argument <code>format=&quot;html&quot;</code> the output is html</li>
+</ul>
+<h3 id="collections">Collections</h3>
+<ul>
+<li><code>class Counter</code> = A class to count the occurrences of a character or integer inside a list, dictionary or string. Returns a dictionary like <code>{'a': 3, 'b': 2, 'c': 2}</code></li>
+<li><code>collections.deque</code> = A different kind of queue, where values can be pushed or popped from both sides and not only one like in normal queues</li>
+<li><code>collections.OrderedDict</code> = A dictionary that remembers the order in which values have been inserted and when iterated upon, returns value in that exact order. Consequently, 2 OrderedDict with the same values but in a different order will not be considered equals, whereas a 2 normal dictionaries would</li>
+</ul>
+<h3 id="named-tuples">Named tuples</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Point <span style="color:#f92672">=</span> collections<span style="color:#f92672">.</span>namedtuple(<span style="color:#e6db74">&#39;Point&#39;</span>, [<span style="color:#e6db74">&#39;x&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>])
+p <span style="color:#f92672">=</span> Point(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">2.0</span>)
+</code></pre></div><h3 id="dis">Dis</h3>
+<ul>
+<li><code>dis.dis(code_object)</code> = Disassemble un code_object</li>
+</ul>
+<h3 id="itertools">Itertools</h3>
+<p>Permutations</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> itertools<span style="color:#f92672">.</span>permutations([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]):
+	<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(str(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> p))
+</code></pre></div><p>prints all the possible combinations</p>
+<pre><code>1234
+1243
+1324
+1342
+</code></pre>
+<p>etc.</p>
+<h3 id="json">Json</h3>
+<ul>
+<li><code>python -m json.tool &lt; file.json</code> = Pretty JSON printer</li>
+</ul>
+<h3 id="ospath">Os.Path</h3>
+<ul>
+<li><code>os.path.sep</code> = Variable containing the path separator of the current OS ('' or &lsquo;/')</li>
+<li><code>os.path.extsep</code> = Variable containing the filename/extension separator (usually, &lsquo;.')</li>
+<li><code>os.path.curdir</code> = Variable containing the symbol of the current directory ('.&rsquo; in Unix-like sytems)</li>
+<li><code>os.path.pardir</code> = Variable containing the representation of the parent directory ('..&rsquo; in Unix-like systems)</li>
+</ul>
+<h3 id="platform">Platform</h3>
+<p>Module to obtain various informations on the system. For example:</p>
+<ul>
+<li><code>platform.system()</code> = The OS name (like &ldquo;Linux&rdquo; or &ldquo;Windows&rdquo;)</li>
+<li><code>platform.node()</code> = The hostname</li>
+<li><code>platform.release()</code> = The release number of the OS (on Linux is usually the kernel version)</li>
+<li><code>platform.machine()</code> = The kind of hardware of the machine (like &lsquo;i386&rsquo;)</li>
+<li><code>platform.architecture()</code> = The architecture of the machine (nearly always nowadays, 32 or 64bit). Giving a file as argument, returns the architecture of it instead of the machine</li>
+</ul>
+<h3 id="socket">Socket</h3>
+<ul>
+<li><code>socket.gethostname()</code> = Returns the hostname</li>
+<li><code>socket.gethostbyname(host)</code> = Returns the IP of host</li>
+<li><code>socket.gethostbyname_ex(host)</code> = Returns all the IPs and aliases that belong to host</li>
+</ul>
+<h3 id="string">String</h3>
+<ul>
+<li><code>string.capwords(s)</code> = Capitalize string <code>s</code></li>
+</ul>
+<h3 id="sys">Sys</h3>
+<ul>
+<li><code>sys.getrefcount(object)</code> = Returns the number of times object is used. Includes a spurious copy created by <code>getrefcount</code> itself. Object can be a variable, a class or a function</li>
+<li><code>sys.getsizeof(object)</code> = Returns how much memory is occupying object. For classes, doesn&rsquo;t include also all the attributes</li>
+<li><code>sys.modules</code> = Contains the currently loaded modules (recursively)</li>
+</ul>
+<h3 id="time">Time</h3>
+<ul>
+<li><code>time.clock()</code> = Returns the cpu time, the number of clocks from the execution of the current program. Useful to measure performances because <code>clock()</code> doesn&rsquo;t increases during idle time but only when actually running</li>
+</ul>
+<h3 id="timeit">Timeit</h3>
+<ul>
+<li><code>python -m timeit '&quot;.&quot;.join(str(n) for n in range(100))'</code> = Quick measuring of speed of code snippets</li>
+</ul>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/languages/Python.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/languages/lua/" title="Lua"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Lua</a>
+<a class="nav nav-next" href="https://example.com/languages/sed/" title="Sed">Next - Sed <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class="active"><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

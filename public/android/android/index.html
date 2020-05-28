@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Android - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/android/android/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Android" />
+<meta property="og:description" content="In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1  to force launcher into memory
+ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+dalvik.vm.heapsize=48m  specifies the VM heapsize
+debug.sf.hw=1  to render UI with the GPU
+ro.telephony.call_ring.delay=0  to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness
+Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0  while
+persist.adb.notify=0  disables debugging notify icon on statusbar
+Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1  Raise photo and video recording quality ro." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/android/android/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Android"/>
+<meta name="twitter:description" content="In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1  to force launcher into memory
+ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+dalvik.vm.heapsize=48m  specifies the VM heapsize
+debug.sf.hw=1  to render UI with the GPU
+ro.telephony.call_ring.delay=0  to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness
+Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0  while
+persist.adb.notify=0  disables debugging notify icon on statusbar
+Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1  Raise photo and video recording quality ro."/>
+<meta itemprop="name" content="Android">
+<meta itemprop="description" content="In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1  to force launcher into memory
+ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+dalvik.vm.heapsize=48m  specifies the VM heapsize
+debug.sf.hw=1  to render UI with the GPU
+ro.telephony.call_ring.delay=0  to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness
+Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0  while
+persist.adb.notify=0  disables debugging notify icon on statusbar
+Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1  Raise photo and video recording quality ro.">
+
+<meta itemprop="wordCount" content="212">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Android</h1>
+<p>In <code>/system/build.prop</code> edit:</p>
+<pre><code>ro.~HOME_APP_ADJ=1  
+</code></pre>
+<p>to force launcher into memory</p>
+<pre><code>ro.media.enc.jpeg.quality=100  
+</code></pre>
+<p>to raise jpeg quality to 100%</p>
+<pre><code>dalvik.vm.heapsize=48m
+</code></pre>
+<p>specifies the VM heapsize</p>
+<pre><code>debug.sf.hw=1  
+</code></pre>
+<p>to render UI with the GPU</p>
+<pre><code>ro.telephony.call_ring.delay=0  
+</code></pre>
+<p>to decrease dialing out delay</p>
+<pre><code>windowsmgr.max_events_per_sec=150  
+</code></pre>
+<p>help scrolling responsiveness</p>
+<h3 id="save-battery">Save battery</h3>
+<pre><code>wifi.supplicant_scan_interval=180
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+</code></pre>
+<p>while</p>
+<pre><code>persist.adb.notify=0  
+</code></pre>
+<p>disables debugging notify icon on statusbar</p>
+<h3 id="increase-overall-touch-responsiveness">Increase overall touch responsiveness</h3>
+<pre><code>debug.performance.tuning=1
+video.accelerate.hw=1
+</code></pre>
+<h3 id="raise-photo-and-video-recording-quality">Raise photo and video recording quality</h3>
+<pre><code>ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+</code></pre>
+<h3 id="3g-signal-tweaks">3G signal tweaks</h3>
+<pre><code>ro.ril.hsxpa=2
+ro.ril.gprsclass=10 
+ro.ril.hep=1
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=10
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.hsupa.category=5
+</code></pre>
+<h3 id="net-tcp-speed-tweaks">Net Tcp speed tweaks</h3>
+<pre><code>net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+</code></pre>
+<h3 id="disable-blackscreen-issue-after-call">Disable blackscreen issue after call</h3>
+<pre><code>ro.lge.proximity.delay=25
+mot.proximity.delay=25
+</code></pre>
+<h3 id="various">Various</h3>
+<pre><code>ro.config.hwfeature_wakeupkey=0  
+</code></pre>
+<p>the phone will not wakeup from hitting the volume rocker</p>
+<pre><code>ro.mot.buttonlight.timeout=0
+</code></pre>
+<p>force button lights on when the screen is on too</p>
+<pre><code>ro.mot.buttonlight.timeout=0  
+</code></pre>
+<p>disable boot animation for faster boot</p>
+<h2 id="uninstall-system-app">Uninstall system app</h2>
+<p>This may not work on all devices as some will just &ldquo;disable&rdquo; those apps, not showing them as an icon but still listing them among the installed apps, occupying disk space. But at least the process won&rsquo;t start and won&rsquo;t occupy memory and use battery time.</p>
+<ul>
+<li>Connect to the device using <code>adb</code></li>
+<li>Check for the name of the package to uninstall with <code>pm list packages -f $packagename</code></li>
+<li>Uninstall it with <code>pm uninstall -k -user 0 $packagename</code>, where <code>$packagename</code> is the output of the previous command</li>
+</ul>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/android/Android.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/android/" title="Android"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Android</a>
+<a class="nav nav-next" href="https://example.com/devops/" title="DevOps">Next - DevOps <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/android/">Android<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

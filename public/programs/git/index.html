@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Git - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/programs/git/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Git" />
+<meta property="og:description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/programs/git/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Git"/>
+<meta name="twitter:description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file."/>
+<meta itemprop="name" content="Git">
+<meta itemprop="description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file.">
+
+<meta itemprop="wordCount" content="1309">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Git</h1>
+<p>A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )</p>
+<ul>
+<li><code>git mv oldfile newfile</code> = Move a file, or simply rename it</li>
+<li><code>git reset --hard SHA1_HASH</code> = Revert to the commit with <code>SHA1_HASH</code> and delete all subsequent commits</li>
+<li><code>git revert SHA1_HASH</code> = Like above but write a new commit that restore the repository as it was on <code>SHA1_HASH</code> commit. All the subsequent commits, that with <code>--hard</code> would have been lost, are still in the log and can be quickly reverted back to</li>
+<li><code>git log &gt; Changelog</code> = Save the log as a simple changelog</li>
+<li><code>git log file</code> = Show all commits that modified <code>file</code>. Usually <code>file</code> is a full path but it is also possible to use wildcards, like <code>**/*.js</code></li>
+<li><code>git log -Sstring -p</code> = Show all commits that match <code>string</code> and show also their changes (<code>-p</code>)</li>
+<li><code>git log -p --grep &quot;perl_regexp&quot;</code> = Show all commits whose message matches <code>perl_regexp</code></li>
+<li><code>git merge somebranch</code> = Merge <code>somebranch</code> with current branch</li>
+<li><code>git checkout -b somebranch</code> = Create a new branch <code>somebranch</code> and copy the content of master in it</li>
+<li><code>git checkout .</code> = Cancel all changes not yet committed (but keep new files). Basically return the repository state to the last commit</li>
+<li><code>git cherry-pick SHA1_HASH</code> = Apply the changes in the commit corresponding to <code>SHA1_HASH</code>. Commit can be on another branch (and usually it is). For multiple commits, it&rsquo;s simpler to merge and then rebase</li>
+<li><code>git cherry-pick -X theirs SHA1_HASH</code> = Apply the changes in the commit corresponding to <code>SHA1_HASH</code>. In case of conflicts, prefer the commit&rsquo;s version to the current branch one. The reverse can be preferred with <code>-X ours</code> instead</li>
+<li><code>git stash</code> = Save changes in the stash and return the repository to a clean state. Later they can be recovered and applied with <code>git stash apply</code> and shown with <code>git stash show</code>. To have a list of all changes in the stash use <code>git stash list</code></li>
+<li><code>git stash -p</code> = Interactively select which changes and files to stash</li>
+<li><code>git commit --amend</code> = Modify the last commit message</li>
+<li><code>git commit --amend -a</code> = Modify the last commit message and add also all new changes yet to be committed in it</li>
+<li><code>git rebase -i HEAD~3</code> = Permit to modify, delete or merge all the last 3 commits from the HEAD</li>
+<li><code>git blame file</code> = Show all the editing done in file and who did it</li>
+<li><code>git bundle create somefile HEAD</code> = Save the whole repository in <code>somefile</code>. To then import it back, use <code>git pull somefile</code></li>
+<li><code>git bundle create somefile HEAD ^COMMON_SHA1</code> = As above but only from <code>COMMON_SHA1</code> onward. This is useful when there&rsquo;s an older version of repository, offline, that needs to be just updated with the latest commits</li>
+<li><code>git format-patch START_COMMIT</code> = Create a patch that includes all changes from <code>START_COMMIT</code> till the HEAD. An email header is also generated, for quicker sending</li>
+<li><code>git format-patch START_COMMIT..END_COMMIT</code> = As above but consider only the commits between <code>START_COMMIT</code> and <code>END_COMMIT</code></li>
+<li><code>git diff START_COMMIT..END_COMMIT</code> = Create a patch of commits between <code>START_COMMIT</code> and <code>END_COMMIT</code>. Unlike <code>format-patch</code>, it&rsquo;s a plain patch ready to be used with <code>patch</code></li>
+<li><code>git diff --unified=10</code> = Show 10 lines before and after a change instead of the default 3</li>
+<li><code>git am &lt; patch</code>  = Apply patch to the repository</li>
+<li><code>git archive --format=tar --prefix=project-1.2.3/ -o outputfile HEAD</code> = Save a tarball (or a zip if format is <code>zip</code>) of the whole repository in <code>outputfile</code>, with the given prefix, in the current directory, as is in HEAD</li>
+<li><code>git add -p</code> = Allow to select which changes to include in the next commit</li>
+<li><code>git clean -x</code> = Remove untracked and explicitly ignored files. With also <code>n</code> does a dry run, without actually removing anything</li>
+<li><code>git reflog</code> = Show an extended log, including various operations like merges and checkouts, along with commits</li>
+<li><code>git filter-branch --index-filter 'git update-index --remove file' master</code> = Completely remove <code>file</code> from the history, from the branch master, in every commit it appears. It&rsquo;s like it never existed. To repeat for every branch in which the file was present</li>
+<li><code>git pull --rebase</code> = Pull from a remote branch but don&rsquo;t generate a commit message for the merge</li>
+<li><code>git show :/regexp</code> = Show last commit message matching <code>regexp</code></li>
+<li><code>git show &lt;commitid&gt;:filename</code> = show the status of <code>filename</code> at <code>commitid</code></li>
+<li><code>git remote rename aaa bbb</code> = Rename remote branch <code>aaa</code> to <code>bbb</code></li>
+<li><code>git pull origin branch_remote:branch_local</code> = Pull a remote branch in the local one, creating the latter if it didn&rsquo;t already exist</li>
+<li><code>git merge --edit</code> = Edit the commit message when doing a merge</li>
+<li><code>git merge --squash branch</code> = Merge from branch in the current one, squashing all commits messages from when it diverged. After this, use <code>git commit</code> to record a single commit of changes</li>
+<li><code>git diff --word-diff</code> = Highlights word changes, inline, instead of whole lines</li>
+<li><code>git status -sb</code> = A more concise output for status</li>
+<li><code>git checkout -t origin/feature</code> = Creates and checks out the local &ldquo;feature&rdquo; branch that tracks the remote &ldquo;origin/feature&rdquo;</li>
+<li><code>git name-rev --name-only COMMIT_SHA1</code> = Prints where the <code>COMMIT_SHA1</code> is in the history, relative to a tag. It can output things like <code>master~2</code> (commit is 2 commits before latest in master branch) or <code>tags/v2.3~6</code> (commit is 6 tags before the one with tag 2.3)</li>
+<li><code>git branch -a --contains COMMIT_SHA1</code> = Shows all branches, and also remotes with <code>-a</code>, that have the given commit in their histories</li>
+<li><code>git show :/fix</code> = Shows the last commit that contains the word &ldquo;fix&rdquo;. Also supports regexp, like <code>:/^Test</code></li>
+<li><code>git log --diff-filter=D --summary</code> = Show files, with the corresponding commits, that have been deleted</li>
+<li><code>git show commit:file</code> = Show the full file as it was at commit</li>
+<li><code>git log -p --author=name</code> = Show all commits whose author matches <code>name</code> (it may be a partial name or a regexp)</li>
+<li><code>git log -p master ^origin/master</code> = Show a diff of what is new in <code>master</code> compared to <code>origin/master</code>. It is also possible to use multiple arguments, like <code>git log -p master ^origin/master ^upstream/master</code></li>
+<li><code>git update-index --assume-unchanged file</code> = Assume <code>file</code> is unchanged even if it&rsquo;s not, excluding it from being committed. Re-enable the modifications then with <code>git update-index --no-assume-unchanged file</code></li>
+<li><code>git ls-files</code> = List all files tracked in the repo</li>
+<li><code>git push origin --delete branchname</code> = Delete the remote <code>branchname</code></li>
+<li><code>git cherry -v --abbrev testing master</code> = Show a list of commits present in master but not in testing</li>
+<li><code>git clone --depth 1</code> = Clone only 1 revision in a repo&rsquo;s history. To save space, mostly, or to send a quick patch or if you are only interested in the latest state of the project. A repository thus created can&rsquo;t be cloned, fetched or pushed from or into it.</li>
+<li><code>git show branch-name:filename.js</code> = Show <code>filename.js</code> as it currently is in <code>branch-name</code></li>
+<li><code>git cherry-pick SHA1_HASH..SHA1_HASH</code> = Apply changes in after the first hash till, including, the second one. To also include changes from first hash use <code>SHA1_HASH^..SHA1_HASH</code> format</li>
+<li><code>git remote set-url branch-name url</code> = Set url of remote <code>branch-name</code> to <code>url</code>. Adding <code>--push</code> also changes the remote url to push to for specified branch</li>
+<li><code>git config --list --show-origin</code> = list all configuration settings for Git, both global and local, and where each is set</li>
+</ul>
+<h3 id="cherry-picking-a-range-of-commits">Cherry picking a range of commits</h3>
+<ol>
+<li>Create a new branch from the branch where are the commits you want to apply by specifying the last wanted commit: <code>git checkout -b newbranch SHA1_HASH_OF_COMMIT</code></li>
+<li>Then rebase from the older wanted commit into master: <code>git rebase --onto master SHA1_HASH^</code></li>
+</ol>
+<h3 id="github">Github</h3>
+<p>Sync with origin (the remote repository) after a local fork:</p>
+<ol>
+<li>Create a local branch to be linked with the master of origin: <code>git checkout -b origin/master</code></li>
+<li>Add the origin repository as a remote: <code>git remote add origin git://github.com/username/repo.git</code></li>
+<li>Pull: <code>git pull origin remote</code></li>
+<li>Checkout into local master: <code>git checkout master</code></li>
+<li>Merge origin master in local master: <code>git merge origin/master</code></li>
+</ol>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/programs/Git.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/programs/gimp/" title="Gimp"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Gimp</a>
+<a class="nav nav-next" href="https://example.com/programs/gmail/" title="GMail">Next - GMail <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class="active"><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Data Structures - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/theory/data_structures/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Data Structures" />
+<meta property="og:description" content="Linked List Versions:
+ Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/theory/data_structures/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Data Structures"/>
+<meta name="twitter:description" content="Linked List Versions:
+ Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions."/>
+<meta itemprop="name" content="Data Structures">
+<meta itemprop="description" content="Linked List Versions:
+ Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions.">
+
+<meta itemprop="wordCount" content="2534">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Data Structures</h1>
+<h1 id="linked-list">Linked List</h1>
+<p>Versions:</p>
+<ul>
+<li>Singly Linked List
+<ul>
+<li>a singly linked list contains nodes which have a data field and a next
+field, pointing to the next node in the list</li>
+</ul>
+</li>
+<li>Doubly Linked List
+<ul>
+<li>a doubly linked list contains, besides the next field and the data field,
+another link field that points to the <strong>previous</strong> node in the list. This
+is called the <em>forward</em> or <em>backward</em> or <em>previous</em> field</li>
+</ul>
+</li>
+<li>Multiply Linked List
+<ul>
+<li>a multiply linked list is like a doubly linked list, only with multiple
+number of fields pointing in different directions. Actually a doubly
+linked list is just a special case of a multiply linked list</li>
+</ul>
+</li>
+<li>Circular Linked List
+<ul>
+<li>in a circular linked list the last node, instead of being <em>null</em>, is a
+pointer to the head of the list, making it circular. It is also called
+<em>open</em> or <em>linear</em> list</li>
+</ul>
+</li>
+<li>Unrolled Linked List
+<ul>
+<li>a variation of a linked list in which each node stores multiple elements,
+in the form of arrays</li>
+</ul>
+</li>
+<li>Association List
+<ul>
+<li>an early implementation of an associative array, common in Lisp and later
+functional languages (Scheme, OCaml, Haskell). In Lisp is also called
+<em>alist</em></li>
+</ul>
+</li>
+<li>XOR Linked List
+<ul>
+<li>an implementation of a doubly linked list that use <em>bitwise XOR</em>
+operation to store more efficiently the <em>forward</em> and <em>backward</em> field.
+It stores both in a single field by XORing the 2 fields&rsquo; addresses. To
+parse the list then it&rsquo;s needed also the address of the 2 consecutive
+elements other than the XORed field of the current one.</li>
+</ul>
+</li>
+<li>VList
+<ul>
+<li>a singly linked list of arrays whose sizes decreases geometrically, from
+the first to the last. Usually the first array contains roughly half the
+total number of elements.</li>
+</ul>
+</li>
+</ul>
+<p>A <strong>Sentinel Node</strong> may also be implemented as the first or last node instead
+of using <em>null</em> values, to speed up operations (removing the need for an
+expensive branch operation to check for <em>null</em>). It does not hold any data.</p>
+<h1 id="dynamic-array">Dynamic Array</h1>
+<p>Also called <em>growable array</em>, <em>resizable array</em>, <em>dynamic table</em>, <em>mutable
+array</em> or <em>array list</em> is a data structure that is made of 2 parts of a fixed
+size array: the first stores the actual elements and the second is reserved.
+This makes very fast to add elements to the array afterwards, up until the total
+<em>capacity</em> of the array (<em>size</em> is called the size of the allocated elements).</p>
+<p>Variants:</p>
+<ul>
+<li>Gap Buffer
+<ul>
+<li>a dynamic array type that allows efficient insertion and deletion
+operations near the same location</li>
+</ul>
+</li>
+<li>Hashed Array Tree (HAT)
+<ul>
+<li>an hashed array tree has a top-level array where each element contains a
+power of two number of leaf arrays. All leaf arrays are the same size of
+the top level array (the <em>directory</em>). It&rsquo;s similar to a hash table. It
+can hold at most m² elements, where <code>m</code> is the size of the <em>directory</em></li>
+</ul>
+</li>
+<li>Sparse Array
+<ul>
+<li>an array in which most of the elements have the same value (the <em>default
+value</em>, usually 0 for array of numbers and <code>null</code> for array of objects)</li>
+</ul>
+</li>
+<li>Multimap
+<ul>
+<li>a generalization of a map or array in which more than 1 value may be
+associated and returned for a single key. Implementations are: <code>container</code>
+(C++), <code>MultiMap</code> (Java)</li>
+</ul>
+</li>
+<li>Suffix Array
+<ul>
+<li>a sorted array of all suffixes of a string. Also known as <em>PAT array</em></li>
+</ul>
+</li>
+<li>FM-index
+<ul>
+<li>a suffix array that undergoes the <a href="http://en.wikipedia.org/wiki/Burrows-Wheeler_transform">Burrows-Wheeler
+transform</a> of the
+input text. It is used to efficiently find the occurrences of a pattern
+within the text</li>
+</ul>
+</li>
+<li>Judy Array
+<ul>
+<li>a high performance, low memory usage implementation of an associative
+array. Judy arrays may be sparse, containing large ranges of unassigned
+indices. Similar to a highly optimised 256-ary trie</li>
+</ul>
+</li>
+</ul>
+<p>Implementations:</p>
+<ul>
+<li><code>std::vector</code> (C++), <code>ArrayList</code> (Java and .Net), <code>List&lt;&gt;</code> (.Net 2.0),
+<code>OrderedCollection</code> (SmallTalk), <code>list</code> (Python)*</li>
+</ul>
+<h1 id="skip-list">Skip List</h1>
+<p><img src="http://igoro.com/wordpress/wp-content/uploads/2008/07/multilist.png" alt="" title="Skip 
+List example"></p>
+<p>Basically, a skip list is a normal linked list that has multiple levels,
+themselves linked lists. The bottom level is a linked list linking all elements,
+one after another; then the subsequent levels may link only the odd elements,
+jumping one or two at the time and so on up until the topmost level that usually
+links only the head to the middle and then the tail. They <em>skip</em> elements, thus
+the name.</p>
+<h1 id="binary-tree">Binary Tree</h1>
+<p>A binary tree is a data structure in which each node has at most 2 child nodes.
+Nodes with children are called <em>parent nodes</em> and there may exists a <em>root</em>
+node, the origin of all nodes. Definitions:</p>
+<ul>
+<li><strong>depth</strong> of a node is the length of the path from the root to the node.
+Sometimes called <em>level</em></li>
+<li><strong>depth</strong> of a tree is the length of the path from the root to the deepest
+node. Sometimes called <em>height</em></li>
+<li><strong>siblings</strong> are nodes that share the same parent node</li>
+<li><strong>ancestor</strong> is a node <code>n</code> of node <code>q</code> if it exists on the path from root to
+node <code>q</code>. It is then a <strong>descendant</strong> of <code>n</code></li>
+<li><strong>size</strong> of a node is the number of descendants it has, itself included</li>
+<li><strong>in-degree</strong> of a node is the number of nodes arriving at that node</li>
+<li><strong>out-degree</strong> of a node is the number of nodes leaving that node</li>
+</ul>
+<p>Variants:</p>
+<ul>
+<li>Rooted Binary Tree
+<ul>
+<li>a tree with a root node in which each leaf node has at most 2 children</li>
+</ul>
+</li>
+<li>Full Binary Tree
+<ul>
+<li>a tree in which every node, not only the leaves, has 2 children. More
+precisaly, every node has either 0 or 2 children. Also called <em>proper
+binary tree</em>, <em>2-tree</em> or <em>strictly binary tree</em></li>
+</ul>
+</li>
+<li>Perfect Binary Tree
+<ul>
+<li>a tree in which all leaves are at the same depth or same level and in
+which every parent has exactly 2 children</li>
+</ul>
+</li>
+<li>Complete Binary Tree
+<ul>
+<li>a tree in which every level, except possibly the last, is completely
+filled and all nodes are as far left as possible</li>
+</ul>
+</li>
+<li>Balanced Binary Tree
+<ul>
+<li>a tree in which the depth of the 2 subtrees of every node differ by 1 or
+less; more generally, it is a binary tree where no leaf is much farther
+away from the root than any other leaf.</li>
+</ul>
+</li>
+<li>Degenerate Tree
+<ul>
+<li>a tree where each parent node has only 1 child node. Basically not,
+performance-wise, a linked list</li>
+</ul>
+</li>
+<li>Dancing Tree
+<ul>
+<li>a self-balancing tree that balances its nodes only when flushing data to
+the disk, to gain performance by delaying optimization. Used in the
+Reiser4 filesystem</li>
+</ul>
+</li>
+<li>B-tree
+<ul>
+<li>a tree that&rsquo;s not limited to 2 child nodes. Vastly used in databases and
+filesystems</li>
+</ul>
+</li>
+<li>B+-tree
+<ul>
+<li>a b-tree that stores copies of the keys in the internal nodes. Keys and
+records are normally stored in leaves. A leaf node may include a pointer
+to the next leaf node</li>
+</ul>
+</li>
+<li>B*-tree
+<ul>
+<li>the b*-tree balances more neighboring internal nodes to keep them more
+densely packed. It requires non-root nodes to be at least 2/3 full instead
+than 1/2. To achieve this, instead of splitting up a node when it gets
+full, its keys are shared with a node next to it. Only when both nodes are
+full they get split up in a third node</li>
+</ul>
+</li>
+<li>B+tree
+<ul>
+<li>as a b-tree but with usually large number of nodes and in which all nodes
+contain only keys (not pairs) and to which an additional level is added at
+the bottom with linked leaves</li>
+</ul>
+</li>
+<li>Red-Black Tree
+<ul>
+<li>a version of a balanced binary tree where each node is &ldquo;painted&rdquo; in two
+distinct colours, tipically red and black, in such a way that the
+resulting tree won&rsquo;t be significantly unbalanced. Tracking the colour of
+every node it&rsquo;s fast because it only requires 1 bit (just 2 colours). The
+root node is usually considered black, all leaves and the children of the
+same node are black too, the rest is red</li>
+</ul>
+</li>
+<li>AA Tree
+<ul>
+<li>named after its inventor, Arne Andersson, is a variant of a red-black tree
+that allows the red nodes to be added only in the right direction. No red
+node can thus be a left sub-child</li>
+</ul>
+</li>
+<li>AVL Tree
+<ul>
+<li>the first implementation of a balancing binary tree, named after its
+inventors (G.M.Adelson-Velskii and E.M.Landis)</li>
+</ul>
+</li>
+<li>Splay Tree
+<ul>
+<li>a self balancing tree that adds an operation, <em>splaying</em>, that rearranges
+the tree itself by putting a specific element as the root, making very
+quick to access it again</li>
+</ul>
+</li>
+<li>2-3 Tree
+<ul>
+<li>a tree where every node with children has either 2 children and 1 data
+element or 3 children and 2 data elements. Nodes on the outside of of the
+tree, <em>leaf nodes</em>, have no children and 1 or 2 data elements. It&rsquo;s
+similar to the AA tree</li>
+</ul>
+</li>
+<li>2-3-4 Tree
+<ul>
+<li>a tree commonly used to implement dictionaries. Numbers mean a tree where
+every node with 2 children has either 2 children and 1 data element or 3
+children and 2 data elements or 4 children and 3 data elements. Also
+called <em>2-4 tree</em></li>
+</ul>
+</li>
+<li>Cartesian Tree
+<ul>
+<li>a binary tree derived from a sequence of numbers. Each number has a node
+in the tree, with left nodes coming before the root in the sequence while
+the right subtree consists of later numbers. The tree has the <em>heap
+property</em>, the parent of any non-root node has a smaller value than the
+node itself</li>
+</ul>
+</li>
+<li>Rope
+<ul>
+<li>a binary tree used to store strings. Leaves contain a short string; each
+node has weight equal to the length of the string plus the sum of all the
+weight in its left subtree. Thus a node with 2 children divides the whole
+string in 2 parts: the left part stores the first part of the string, the
+right part stores the second part and its weight is the sum of the left
+child&rsquo;s weight and the length of its contained string. Also called <em>cord</em></li>
+</ul>
+</li>
+<li>Threaded Binary Tree
+<ul>
+<li>a binary tree that has all the right child pointers that would be normally
+be null point to the successor of the node and all the left child
+pointers, that would too be normally null, point to the predecessor of the
+node</li>
+</ul>
+</li>
+<li>Ternary Tree
+<ul>
+<li>a tree in which each node has at most 3 child nodes, usually called
+<em>left</em>, <em>mid</em> and <em>right</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="bsp-tree">BSP Tree</h2>
+<ul>
+<li><a href="https://pdfs.semanticscholar.org/90e4/c4a65b4b04d9e2374e5753659c102de4c0eb.pdf">Paper on BSP (Binary Spacing Partitioning)</a></li>
+</ul>
+<h2 id="binary-indexed-tree">Binary Indexed Tree</h2>
+<p>A complete and clear answer on <a href="https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a">SO</a> about the intuition behind a Binary Indexed Tree.</p>
+<h1 id="heap">Heap</h1>
+<p>a tree that satisfies the <em>heap property</em>: if <code>A</code> is a parent node of <code>B</code>, then
+<code>key(A)</code> is ordered with respect to <code>key(B)</code>. The same applies across the heap.
+Thus, either the keys of parent nodes are always greater than or equal to those
+of the children and the highest key is the root (this kind of heap is called
+<em>max heap</em>) or the keys of the parent node are less or equal to those of the
+children (<em>min heap</em>)</p>
+<p>Variants:</p>
+<ul>
+<li>Beap
+<ul>
+<li>a data structure where every node has 2 parents and 2 children, unless it
+is the first or on the last level. Also known as <em>bi-parental heap</em></li>
+</ul>
+</li>
+<li>Binary Heap
+<ul>
+<li>very similar to a binary tree but with two additional constraints: it is a
+complete binary tree, thus all levels are fully filled except maybe the
+last, and each node is greater or equal to each of its children, making
+thus a heap and not just a tree</li>
+</ul>
+</li>
+<li>Fibonacci Heap
+<ul>
+<li>a heap consisting of a collection of trees, even separated, satisfying the
+<em>minimum-heap property</em> (every child is always greater or equal to the
+parent)</li>
+</ul>
+</li>
+<li>Leftist Heap
+<ul>
+<li>a variant of a binary heap. Every node has an <em>s-value</em> which is the
+distance to the nearest leaf. Unlike binary heaps, a leftist heap (also
+called <em>leftist tree</em>) is very unbalanced and mantained so the right
+descendant of each node has the lower s-value</li>
+</ul>
+</li>
+<li>2-3 Heap
+<ul>
+<li>a heap similar to the 2-3 tree</li>
+</ul>
+</li>
+<li>d-ary Heap
+<ul>
+<li>a generalization of a binary heap in which the nodes have <code>d</code> children
+instead of 2. Thus a binary heap is a <em>2-heap</em>. Also simply called a
+<em>d-heap</em></li>
+</ul>
+</li>
+<li>Skew Heap
+<ul>
+<li>a heap similar to a binary heap but without structural constraints. Only
+two conditions must be satisfied: the general heap order must be enforced
+and every operation on two skew heaps must be done using a special <em>skew
+heap merge</em></li>
+</ul>
+</li>
+</ul>
+<p>Implementations:</p>
+<ul>
+<li><code>make_heap</code>, <code>push_heap</code> and <code>pop_heap</code> (C++), <code>java.util.PriorityQueue&lt;E&gt;</code>
+(Java), <code>heapq</code> (Python), <code>SplMaxHeap</code> and <code>SplMinHeap</code> (Php), <code>Heap</code> (Perl),
+<code>heap</code> (Go)*</li>
+</ul>
+<h1 id="associative-array">Associative Array</h1>
+<p>Also called <em>map</em> or <em>dictionary</em> is a collection of pairs (key, value) such
+that each keys appear at most once in the collection</p>
+<p>Variants:</p>
+<ul>
+<li>Hash Table
+<ul>
+<li>an associative array that uses a <em>hash function</em> to compute an <em>index</em> into
+an array of <em>buckets</em> or <em>slots</em> from which the correct value can be
+found. Hash collisions, different keys that are assigned by the function
+to the same bucket, can happen</li>
+</ul>
+</li>
+</ul>
+<p>Implementations:</p>
+<ul>
+<li><code>dictionary</code> (Smalltalk, Objective-C, .Net, Python), <code>hash</code> (Perl, Ruby),
+<code>map</code> (C++, Java, Go, Clojure, Scala), <code>hash table</code> (Common Lisp, PowerShell),
+<code>table</code> (Lua)</li>
+</ul>
+<h1 id="bit-array">Bit Array</h1>
+<p>An array that stores bits, as in 0 or 1 values. Known also as <em>bitmap</em>,
+<em>bitset</em>, <em>bit string</em>, <em>bit field</em> or <em>bit vector</em></p>
+<p>Implementations:</p>
+<ul>
+<li><code>bitfield</code> (C), <code>BitSet</code> (Java), <code>bitset</code> (C++), <code>BitArray</code> (.Net)</li>
+</ul>
+<h1 id="trie">Trie</h1>
+<p>Also called <em>digital tree</em> or <em>prefix tree</em>, the trie is used to store an
+associative array where keys are usually strings. Differently from a binary
+search tree, no node in the tree stores the key associated with that node; its
+position in the tree defines the key with which it is associated. All the
+descendants of a node have a common prefix of the string associated with that
+node, and the root is associated with an empty string. Values are associated
+with leaves, not every node.</p>
+<p>Variations:</p>
+<ul>
+<li>Radix Tree
+<ul>
+<li>a space-optimized trie where each node with only one child is merged with
+its child, resulting in every internal node having 2 children. Also called
+<em>patricia trie</em>, _radix trie or <em>compact prefix tree</em></li>
+</ul>
+</li>
+<li>Suffix Tree
+<ul>
+<li>a tree that presents the suffixes of a given string in a way that allows
+fast operations on it. Its edges are labeled with strings, such that each
+suffix of the string corresponds to exactly one path from the tree&rsquo;s root
+to the leaf. The suffix tree is like a radix tree for the suffixes of a
+string</li>
+</ul>
+</li>
+<li>B-Trie
+<ul>
+<li>a trie that can store and retrieve variable-length strings efficiently on
+disk</li>
+</ul>
+</li>
+</ul>
+<h1 id="record">Record</h1>
+<p>A value that contains other values, generally in fixed number, order and indexed
+by names. Record elements are called <em>fields</em> or <em>members</em>. Unlike arrays,
+records have fixed number of fields, all with a name, and with different types
+among them. Also called <em>tuple</em>, <em>struct</em> or <em>compound data</em></p>
+<h1 id="union">Union</h1>
+<p>Very similar to records, an union may have multiple elements but only one at the
+time can have a value as unions&rsquo; elements are stored at a single spot in memory
+and thus setting any value will overwrite all other elements&rsquo; values. As an
+advantage, they are clearly more compact than records.</p>
+<p>Variants:</p>
+<ul>
+<li>Tagged Union
+<ul>
+<li>an union that has a tag field that signals which type is in use and which
+field is active. Also known as <em>variant</em>, <em>variant record</em>,
+<em>discriminated union</em>, <em>disjoint union</em> or <em>sum type</em></li>
+</ul>
+</li>
+</ul>
+<h1 id="set">Set</h1>
+<p>A structure that can store any arbitrary value, in no particular order, and no
+repeated value. It can be <em>static</em> or <em>frozen</em>, not modifiable after the
+creation, or <em>dynamic</em> or <em>mutable</em>, that are modifiables.</p>
+<p>Implementations:</p>
+<ul>
+<li><code>Set</code> (Java), <code>NSSet</code> and similar classes (Objective-C), <code>set</code> and <code>frozenset</code>
+(Python), <code>HashSet</code> and <code>SortedSet</code> (.Net), <code>set</code> (Ruby), <code>Data.Set</code> (Haskell)</li>
+</ul>
+<p>Variations:</p>
+<ul>
+<li>Multiset
+<ul>
+<li>a generalization of a set, allowing repeated/duplicates values in either
+identical or different objects storing the same value. Also known as
+<em>bag</em></li>
+</ul>
+</li>
+</ul>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/theory/Data_Structures.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/theory/big_oh_notation/" title="Big Oh Notation"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Big Oh Notation</a>
+<a class="nav nav-next" href="https://example.com/theory/set_theory/" title="Set Theory">Next - Set Theory <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class="active"><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>ViM - Personal Wiki</title>
+<meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
+<meta name="generator" content="Hugo 0.71.1" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/programs/vim/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="ViM" />
+<meta property="og:description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/programs/vim/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Personal Wiki" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="ViM"/>
+<meta name="twitter:description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!"/>
+<meta itemprop="name" content="ViM">
+<meta itemprop="description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!">
+
+<meta itemprop="wordCount" content="2956">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Personal Wiki</h1>
+
+ <span class="version">Version 0.9.1</span>
+<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>ViM</h1>
+<h2 id="basic-commands">Basic commands</h2>
+<ul>
+<li><code>J</code> = Join next to current line</li>
+<li><code>:%j</code> = Join all lines (make the file all on a single line in practice)</li>
+<li><code>u</code> = Undo</li>
+<li><code>Ctrl+r</code> = Repeat last command (Redo)</li>
+<li><code>.</code> = Repeat last command (escluding Undo, Redo and command of the <code>:command</code> type)</li>
+<li><code>:w filename</code> = Save current file, or the selection, to <code>filename</code></li>
+<li><code>i</code> = Enter insert mode at the cursor position</li>
+<li><code>a</code> = Enter insert mode after the cursor position</li>
+<li><code>o</code> = Add an empty line below the current one</li>
+<li><code>O</code> = Add an empty line above the current one</li>
+<li><code>:q!</code> = Quit Vi without saving changes</li>
+<li><code>V</code> = Start visual mode, selecting by lines</li>
+<li><code>Ctrl+V</code> = Start visual mode, selecting by rows</li>
+<li><code>p</code> = Paste</li>
+<li><code>y</code> = Copy</li>
+<li><code>“*P</code> = Paste clipboard&rsquo;s contents</li>
+<li><code>“*y</code> = Copy selection to clipboard</li>
+<li><code>”+y</code> = Copy selection to x11-selection (different from clipboard!)</li>
+<li><code>”+p</code> = Paste x11-selection contents</li>
+<li><code>&quot;%p</code> = Paste the current file name</li>
+<li><code>:put *</code> = Paste clipboard&rsquo;s contents</li>
+<li><code>”&lt;buffer&gt;y</code> = Paste selection to &lt;buffer&gt; (usually a single character for brevity reasons)</li>
+<li><code>m&lt;a&gt;</code> = Mark current position as &lt;a&gt;</li>
+<li><code>:1,4up &lt;newfile&gt;</code> = Save file contents from line 1 through 4 into &lt;newfile&gt;. Can be applied also to selections</li>
+</ul>
+<h2 id="movements">Movements</h2>
+<ul>
+<li><code>b</code> = Move back a word, going to the end of the previous one or at the beginning of the current one</li>
+<li><code>w</code> = Jump at the beginning of the next word</li>
+<li><code>e</code> = Jump at the end of the next word</li>
+<li><code>:n</code> = Go to <code>n</code> line</li>
+<li><code>Ctrl+AltGr+]</code> = Follow a url like <code>|url|</code></li>
+<li><code>Ctrl+T</code> = Go back to where was before following a link</li>
+<li><code>10w</code> = Go forward 10 words</li>
+<li><code>10b</code> = Go back 10 words</li>
+<li><code>-</code> = Go back to the beginning of the previous line</li>
+<li><code>+</code> = Go to the beginning of the next line</li>
+<li><code>0</code> = Go at the beginning of the current line</li>
+<li><code>$</code> = Go at the end of the current line</li>
+<li><code>End</code> = Move to the end of the current line. It accepts a number to jump multiple lines</li>
+<li><code>fj</code> = Go to the next occurrence of <code>j</code></li>
+<li><code>Fj</code> = Go to the previous occurrence of <code>j</code></li>
+<li><code>12G</code> = Go to the specified line. In the example, go to the 12th line</li>
+<li><code>G</code> = Go to the end of the current buffer</li>
+<li><code>10%</code> = Move to the 10% of the current buffer</li>
+<li><code>Ctrl+W</code> = Jump to the next Vi window</li>
+<li><code>'.</code> = Go to the last modified line</li>
+<li><code>\</code>.` = Go to the exact point where last edit happened</li>
+<li><code>\</code>`` = Go back to the point before the last search was made</li>
+<li><code>gt</code> = Go to the next tab</li>
+<li><code>gT</code> = Go to the previous tab</li>
+<li><code>gi</code> = Go to the exact point where last edit happened, like <code>\</code>.`, but also enter insert mode</li>
+<li>``m<code>= Go to the mark</code>m`</li>
+<li><code>H</code> = Go to the first line of the screen (which is not the first line of the file!)</li>
+<li><code>M</code> = Go to the middle of the screen</li>
+<li><code>L</code> = Go to the bottom of the screen</li>
+<li><code>Ctrl+U</code> = Scroll a page up</li>
+<li><code>Ctrl+D</code> = Scroll a page down</li>
+<li><code>n</code> = Go to the next occurrence of a search term</li>
+<li><code>N</code> = Go to the previous occurrence of a search term</li>
+<li><code>g*</code> = Go to the next occurrence of the word under the cursor</li>
+<li><code>g#</code> = Go to the previous occurrence of the word under the cursor</li>
+<li><code>%</code>  = Go to the end of the current block (which can be a if/then/else block, a comment, a text between parentheses etc.)</li>
+<li><code>[[</code> = Go back to the beginning of the current function</li>
+<li><code>gd</code> = Go to the first occurrence of the variable under the cursor, following the scope (thus first local then global variables)</li>
+<li><code>gD</code> = Go to the first occurrence of the variable under the cursor, starting from the beginning of the file (thus ignoring scope; generally it&rsquo;s then the definition of the variable)</li>
+<li><code>(</code> = Go to the beginning of the previous phrase (often it&rsquo;s the first character after a period or a newline)</li>
+<li><code>)</code> = Go to the beginning of the next phrase</li>
+<li><code>{</code> = Go to the beginning of the previous or current paragraph or code block</li>
+<li><code>}</code> = Go to the end of the next or current paragraph or code block</li>
+</ul>
+<h2 id="removal-and-substitution">Removal and Substitution</h2>
+<ul>
+<li><code>x</code> = Delete the character under the cursor</li>
+<li><code>X</code> = Delete the character before the cursor</li>
+<li><code>dd</code> = Delete the current line</li>
+<li><code>d11w</code> = Delete multiple words, in the example, 11</li>
+<li><code>daw</code> = Delete the word under the cursor. This works also if not at the beginning of word, differently from <code>dw</code></li>
+<li><code>d^</code> = Delete everything from the cursor to the beginning of the line</li>
+<li><code>d$</code> = Delete everything from the cursor to the end of the line</li>
+<li><code>dG</code> = Delete everything from the cursor to the end of the file</li>
+<li><code>c11wAAA</code> = Substitutes with <code>AAA</code> multiple words, in the example, 11</li>
+<li><code>C</code> = Delete next line and enter insert mode</li>
+<li><code>11rAAA</code> = Substitutes multiple times, here 11, the text <code>AAA</code> with what&rsquo;s after the cursor</li>
+<li><code>:%s/stringtosubstitute/stringtoinsert/g</code> = Substitutes <code>stringtosubstitute</code> with <code>stringtoinser</code> in the file, all occurrences (g). Without the <code>%</code>, substitutes only in the current line</li>
+<li><code>g?</code> = ROT13 encrypt the current line, or the selected ones</li>
+<li><code>Ctrl+a</code> = Add 1 to the number below the cursor</li>
+<li><code>Ctrl+x</code> = Subtract 1 to the number below the cursor</li>
+<li><code>xp</code> = Switch character under the cursor with the following one</li>
+<li><code>ddp</code> = Switch the current line with the following one</li>
+<li><code>Istring&lt;ESC&gt;</code> = Add string at the beginning of every line previously selected with <code>Ctrl+v</code></li>
+<li><code>Astring&lt;ESC&gt;</code> = Add string at the end of every line previously selected with <code>Ctrl+v</code></li>
+<li><code>Ctrl+W</code> = When in insert mode, delete the word before the cursor</li>
+<li><code>Rstring</code> = Overwrites the text from the cursor with string</li>
+<li><code>rcharacter</code> = Insert character right under the cursor</li>
+<li><code>:sort u</code> = Remove all double lines and sort them alphabetically</li>
+<li><code>:v/regexp/d</code> = Remove all lines not corresponding to regexp</li>
+<li><code>:g/regexp/m$</code> = Move all lines matching regexp at the end of the file ($)</li>
+<li><code>{d}</code> = Go to the end of the current paragraph, or the previous if the cursor is on an empty line, and delete it</li>
+<li><code>d/regexp</code> = Delete everything between the cursor and the first occurrence of regexp</li>
+<li><code>cas</code> = Substitute a sentence (delete all its contents and go in insert mode)</li>
+<li><code>cap</code> = As above but on a whole paragraph</li>
+<li><code>dap</code> = Remove the current paragraph</li>
+<li><code>ci&quot;</code> = Remove everything between the previous <code>&quot;</code> and the next <code>&quot;</code> and go in insert mode. It&rsquo;s not necessary to actually have the cursor between 2 <code>&quot;</code>, it&rsquo;ll automatically move to the next occurrence</li>
+<li><code>di&quot;</code> = As above but it only delete the text</li>
+</ul>
+<h2 id="text-formatting">Text formatting</h2>
+<ul>
+<li><code>gUw</code> = Make a word all uppercase (starting from the cursor)</li>
+<li><code>guw</code> = Like above but lowercase</li>
+<li><code>guu</code> or <code>gUU</code> = Make lowercase or uppercase a whole line</li>
+<li><code>g~~</code> = Switch every character in the whole line, from uppercase to lowercase and viceversa</li>
+<li><code>~</code> = Switch the character under the cursor (uppercase/lowercase)</li>
+<li><code>&gt;&gt;</code> = Increase indentation</li>
+<li><code>&lt;&lt;</code> = Remove a level of indentation</li>
+<li><code>Ctrl+t</code> = Increase indentation (in insert mode)</li>
+<li><code>Ctrl+d</code> = Remove a level of indentation (in insert mode)</li>
+<li><code>:set textwidth=number</code> = Set line margin to <code>number</code></li>
+<li><code>gq</code> = Justify the current line</li>
+<li><code>gq}</code> = Justify the curren paragraph</li>
+<li><code>gggqG</code> = Justify all the file</li>
+<li><code>:center</code> = Center the selection</li>
+<li><code>:right</code> = Right align the selection</li>
+<li><code>:left</code> = Left align the selection</li>
+<li><code>:set autoindent</code> = Respect indentation when starting to edit a new line</li>
+<li><code>:set linebreak</code> = Set linebreak of a word if it doesn&rsquo;t fit in the line, preventing it to be split across two lines</li>
+<li><code>:set fileformat=(unix|dos)</code> = Set newline format to unix or dos</li>
+<li><code>:retab</code> = Transform tabs in whitespaces and viceversa in the whole file, respecting current settings (like <code>expandtab</code>, <code>shiftwidth</code> and <code>tabstop</code>)</li>
+<li><code>:1,$j</code> = Join all lines from the first (1) to the last ($) in a single line</li>
+<li><code>:1G!Gsort</code> = Go to the first line (1G) and then sort the whole file</li>
+</ul>
+<h2 id="windows">Windows</h2>
+<ul>
+<li><code>:split file</code> = Open file in a new split window. Also <code>:new</code> to simply open an empty file</li>
+<li><code>:vsplit file</code> = As above but the split window will be vertical</li>
+<li><code>:res -n</code> = Shrink window of <code>n</code> lines</li>
+<li><code>:res +n</code> = Enlarge window of <code>n</code> lines</li>
+<li><code>z10</code> = Shrink window of 10 lines</li>
+<li><code>:qwall</code> = Quit, closing and saving all changes in all windows</li>
+<li><code>:qall!</code> = As above but don&rsquo;t save changes</li>
+<li><code>:windo</code> = Execute a command in all windows</li>
+</ul>
+<h2 id="folding">Folding</h2>
+<ul>
+<li><code>zf3j</code> = Fold 3 lines</li>
+<li><code>zfa(</code> = Fold from the parentheses &ldquo;(&rdquo; to the matching closing parentheses. Any symbol can be used. Cursor needs to be on the opening symbol</li>
+<li><code>:20,25 fold</code> = Fold from line 20 through line 25</li>
+<li><code>zo</code> = Open the fold under cursor</li>
+<li><code>zc</code> = Close, fold again, the last opened fold</li>
+<li><code>zr</code> = Open all the first level folds (those that aren&rsquo;t inside another fold)</li>
+<li><code>zR</code> = Open all the folds</li>
+<li><code>zm</code> = Close all first level folds</li>
+<li><code>zM</code> = Close all folds</li>
+<li><code>zd</code> = Delete the fold under the cursor</li>
+<li><code>:set nofoldenable</code> = Delete all folds in current file</li>
+</ul>
+<h2 id="searches">Searches</h2>
+<ul>
+<li><code>/string</code> = Search string. Use <code>n</code> to jump between results</li>
+<li><code>:g/regexp/</code> = Show all lines matching regexp</li>
+<li><code>:g/regexp/#</code> = As above but also show the line number next to the matching lines</li>
+<li><code>q/</code> = Show last searches</li>
+<li><code>*</code> = Search word under the cursor forward in the file</li>
+<li><code>#</code> = Search word under the cursor backward in the file</li>
+<li><code>:%s/pattern//gn</code> = Count the occurrences of <code>pattern</code> in current buffer, without modifying anything</li>
+</ul>
+<h2 id="spell-checking">Spell Checking</h2>
+<ul>
+<li><code>:set spell</code> = Enable spell checking. <code>:set nospell</code> to disable it</li>
+<li><code>:set spelllang=xx</code> = Set spell checking language to xx. Dictionary files have to be in /usr/share/vim/spell or ~/.vim/spell</li>
+<li><code>]s</code> = Go to the next wrong word</li>
+<li><code>[s</code> = Go to the previous wrong word</li>
+<li><code>zg</code> = Add word under the cursor to the main dictionary</li>
+<li><code>zG</code> = Add word under the cursor to a supplementary dictionary, separated from the main one</li>
+<li><code>zw</code> = Add word under the cursor to the dictionary of wrong words</li>
+<li><code>zW</code> = Add word under the cursor to a supplementary dictionary of wrong words, separated from the main one</li>
+<li><code>z=</code> = Show possible correction for the word under cursor</li>
+</ul>
+<h2 id="buffers">Buffers</h2>
+<ul>
+<li><code>:badd file</code> = Add file to the buffer list but don&rsquo;t open it</li>
+<li><code>:buffers</code> = Show all buffers</li>
+<li><code>:ls</code> = Show all buffers</li>
+<li><code>:bdelete</code> = Delete a buffer. Needs its name or its number. This doesn&rsquo;t dump the information about it so it&rsquo;s quicker to reopen it if needed</li>
+<li><code>:bwipeout</code> = As above but delete also its information</li>
+<li><code>:1,3bdelete</code> = Delete buffers from 1 to the 3</li>
+<li><code>:buffer</code> = Show a buffer.</li>
+<li><code>:bfirst</code> = Go to the first buffer</li>
+<li><code>:bn</code> = Go to the next buffer</li>
+<li><code>:bp</code> = Go to the previous buffer</li>
+<li><code>:blast</code> = Go to the last buffer</li>
+<li><code>:ball</code> = Open all buffer in as many split windows as needed</li>
+<li><code>:bmodified</code> = Go to the last modified buffer</li>
+<li><code>:bufdo</code> = Execute a command in all opened buffers</li>
+</ul>
+<h2 id="registers">Registers</h2>
+<ul>
+<li><code>:registers</code> = Show the contents of all registers</li>
+<li><code>&quot;0</code> = The register containing the most recent yanked text but never deleted text</li>
+<li><code>&quot;1-9</code> = Registers 1 through 9 contain the most recent deleted text, from the most recent (1) to the oldest (9)</li>
+<li><code>&quot;%</code> = The register containing the name of current buffer&rsquo;s file. It&rsquo;s a read-only register</li>
+<li><code>&quot;:</code> = The register containing the most recent executed command</li>
+<li><code>&quot;&quot;</code> = The &ldquo;unnamed&rdquo; register. Every operation gets written into it, no matter what it is or if it&rsquo;s specifically saved to another register</li>
+<li><code>&quot;_</code> = A &ldquo;discard&rdquo; register. Everything written into it is lost</li>
+<li><code>&quot;-</code> = The register that saves any delete operations that is smaller than 1 line length. If the operation is explicitly saved to another register, it won&rsquo;t be saved here too</li>
+<li>`&rdquo;/&rdquo; = The register containing the most recent search pattern</li>
+<li><code>&quot;=expression&lt;Enter&gt;p&quot; = The </code>=<code>register evaluates the</code>expression<code>and</code>p<code>paste it at the current cursor position. For instance,</code>&quot;=5*5<Enter>p` will paste output 25</li>
+<li><code>:22put r</code> = Insert contents of register <code>r</code> at line 22. Without a number, defaults to the current line</li>
+</ul>
+<h2 id="ctags">Ctags</h2>
+<ul>
+<li><code>Ctrl+]</code> = Jump to the first occurrence Vim finds of the class/method/function/variable/whatever the cursor is at</li>
+<li><code>Ctrl+t</code> = Get back to where you were before jumping with <code>Ctrl+]</code></li>
+<li><code>:tnext</code> = Go to the next tag</li>
+<li><code>:tprev</code> = Go to the previous tag</li>
+<li><code>:ltag</code> = Load the tags in the location list window, that can be shown with <code>:lopen</code></li>
+<li><code>Ctrl+x Ctrl+]</code> = Insert the first tag that starts with the characters before the cursor among tags and insert it in front of the cursor (in insert mode)</li>
+</ul>
+<h2 id="various-commands">Various Commands</h2>
+<ul>
+<li><code>:h holy-grail</code> = Show a general list of commands</li>
+<li><code>:set all</code> = Show the options</li>
+<li><code>:set list</code> = Show non-printable characters</li>
+<li><code>:set paste</code> = Enable paste mode, useful to paste text without formatting it, exactly as it is. Disable it with <code>:set nopaste</code></li>
+<li><code>:set patchmode=.ext</code> = Make a copy of the current file with an extension ext</li>
+<li><code>:set key=</code> = Remove the password set to open the file, making it plain text</li>
+<li><code>:set number</code> = Show line numbers</li>
+<li><code>:ab abb string</code> = Create an abbreviation, substituting string each time abb is typed</li>
+<li><code>:una abb</code> = Cancel the previously created abbreviation abb</li>
+<li><code>:ascii</code> = Show the decimal, hexadecimal and octal numbers of the characters under the cursor in the ASCII table</li>
+<li><code>:digraph</code> = Show all special symbols that can be inserted and how</li>
+<li><code>:noh</code> = Clean the screen from all highlightings</li>
+<li><code>:e directory</code> = Open directory in Vi</li>
+<li><code>:r!cmd</code> = Insert in Vi the output of shell command cmd</li>
+<li><code>:r file</code> = Insert the contents of file under the cursor. Also <code>:2r</code> to insert at line 2</li>
+<li><code>gf</code> = Open the filename or whole path under the cursor. To show the path Vi look for files, use <code>:echo &amp;path</code>. Should work also with http or ftp urls</li>
+<li><code>q:</code> = Show last executed commands</li>
+<li><code>:tabe file</code> = Open file in a new tab</li>
+<li><code>:tabc</code> = Close current tab</li>
+<li><code>:tabn</code> = Go to next tab</li>
+<li><code>:tabc</code> = Go to previous tab</li>
+<li><code>!!date</code> = Insert date and time</li>
+<li><code>Ctrl+L</code> = Clear screen from all messages and warnings</li>
+<li><code>Ctrl+k</code> = Activate the insertion of special symbol and characters (those shown by <code>:digraphs</code>)</li>
+<li><code>g&lt;Ctrl+g&gt;</code> = Show some statistics about current file</li>
+<li><code>gv</code> = Select again last visual selectio</li>
+<li><code>Ctrl+n</code> = Show a list of possible completions for the word under cursor (based on the opened file)</li>
+<li><code>Ctrl+x</code> and <code>Ctrl+l</code> = Show a list of possible completions for the whole line (in insert mode)</li>
+<li><code>Ctrl+x</code> and <code>Ctrl+f</code> = Show a list of possible completions for the whole line with an existing path (in insert mode)</li>
+<li><code>Ctrl+y</code> = Insert the character directly above the cursor. Useful to quickly copy the above line with very few edits (in insert mode)</li>
+<li><code>Ctrl+v character</code> = Insert a literal character (as &lt;Esc&gt; or an ASCII code or an Unicode character like <code>u&lt;unicode_number&gt;</code></li>
+<li><code>Ctrl+o</code> = In insert mode, execute a command as if it was in normal mode and then return to insert</li>
+<li><code>:echom message</code> = Print message to the command line. Unlike <code>:echo</code>, the message stays visible until another substitutes it</li>
+<li><code>:mksession file</code> = Save all open buffers in file (defaults to Session.vim) in the current directory. With <code>vi -S file</code> then the session can be quickly restored</li>
+<li><code>:scriptnames</code> = List all plugins and files loaded at start, in the order they were loaded</li>
+<li><code>vi +q  --startuptime startup.txt file</code> = Save debug info in <code>startup.txt</code>. Useful to see load times, what plugins and files are loaded etc.</li>
+<li><code>:args</code> = Modify the arguments list. By default it corresponds to the opened files but with, for example, <code>:args *.c</code> it becomes all .c files in the current directory</li>
+<li><code>:argdo cmd</code> = Execute cmd for every file in the arguments list</li>
+<li><code>:diffupdate</code> = Recalculate the diff (in vimdiff or <code>vi -d</code> mode)</li>
+<li><code>:set noscrollbind</code> = Disable simultaneous scrolling of the diff buffers. Reenable it then with <code>:set scrollbind</code></li>
+<li><code>ga</code> = Show the decimal, octal and hexadecimal index of the character under the cursor</li>
+<li><code>:au</code> = Show all the autocommands in effect</li>
+<li><code>:silent cmd</code> = adding <code>silent</code> before any command suppresses messages it may produce. Useful to not have to press <Enter> at startup to confirm enabling a plugin or a command</li>
+</ul>
+<h2 id="macros">Macros</h2>
+<p>Some macros I find useful</p>
+<ul>
+<li><code>:g/^\s*$/d</code> = Delete all empty lines</li>
+<li><code>:%s/^/\=line('.'). ''</code> = Add at the beginning of every line its number</li>
+<li><code>:%s/^/\=strpart(line(”.”).” ”, 0, 5)</code> = As above but add a space between the number and the following text</li>
+<li><code>:runtime! syntax/2html.vim</code> = Output the current file as html</li>
+<li><code>:%s#&lt;\_.\{-1,}&gt;##g</code> = Remove all html tags</li>
+<li><code>:g/regexp/,/regexp/d</code> = Remove all lines where the first <em>or</em> the second regexp appears</li>
+<li><code>:%s/^\(.*\)\n\1$/\1/</code> = Remove all duplicated lines in the current file</li>
+</ul>
+<p>##Tips</p>
+<h3 id="change-statusline-colours">Change statusline colours</h3>
+<p>Edit in the colour theme file the <code>hi Statusline</code> line. <code>ctermfg</code> is the foreground colour, <code>ctermbg</code> is the background. Use <code>:he cterm-colors</code> to see which colours can be used. Up until 256 colours, if the terminal supports it, can be used, see <a href="http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim">here</a></p>
+<h3 id="regexp">Regexp</h3>
+<p>Instead of backslashing special characters, it&rsquo;s possible to add <code>\v</code> at the
+very beginning of a regexp so that everything that&rsquo;s not a letter, a number or
+an underscore is taken to have a special meaning unless explicitly escaped. For
+example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:%<span style="color:#a6e22e">s</span><span style="color:#e6db74">/\v^%(abc){1,3}(.+)$/</span>\<span style="color:#ae81ff">1</span>/<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>doesn&rsquo;t need backslashing before parentheses, plus sign and curly brackets.</p>
+<p>Also, <code>\c</code> turns off case sensitivity. Its opposite is <code>\C</code>, forcing case
+sensitivity on.</p>
+<h3 id="identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</h3>
+<p>Typing <code>v</code> + <code>a</code> + <code>t</code> will select everything inside the html tag where is the cursor. Subsequently <code>o</code> will jump between the opening and closing tag, <code>c</code> will change content and <code>y</code> will yank</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/programs/Vim.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/programs/urxvt/" title="URxvt"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - URxvt</a>
+<a class="nav nav-next" href="https://example.com/programs/wireshark/" title="Wireshark">Next - Wireshark <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/android/android/">Android</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
+<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
+<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
+<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
+<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
+<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
+<li class=""><a href="https://example.com/languages/c/">C</a></li>
+<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://example.com/languages/go/">Go</a></li>
+<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
+<li class=""><a href="https://example.com/languages/python/">Python</a></li>
+<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+
+<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
+<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
+<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://example.com/programs/git/">Git</a></li>
+<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
+<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
+<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
+<li class="active"><a href="https://example.com/programs/vim/">ViM</a></li>
+<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
+<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
