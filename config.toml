@@ -1,4 +1,4 @@
-baseURL = "https://www.gianlucafiore.it/Personal-Wiki/"
+baseURL = "https://donearm.github.io/Personal-Wiki/"
 
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
@@ -26,7 +26,7 @@ pygmentsUseClasses = true
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/Donearm/Personal-Wiki/"
+    github_doc_repository = "https://donearm.github.io/Personal-Wiki/"
 
     # Analytic section
     google_analytics_id = "" # Your Google Analytics tracking id

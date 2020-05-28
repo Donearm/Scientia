@@ -6,24 +6,24 @@
 <title>Firewall - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
-<link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">
-<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
+<link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">
+<link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
+<link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
+<script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Firewall" />
 <meta property="og:description" content="Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/" />
-<meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/" />
+<meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Firewall"/>
 <meta name="twitter:description" content="Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing."/>
@@ -31,11 +31,11 @@
 <meta itemprop="description" content="Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.">
 
 <meta itemprop="wordCount" content="300">
-<meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 
 
-<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/custom.css">
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
 <h1>Gianluca Fiore Personal Wiki</h1>
@@ -97,143 +97,143 @@
 </ul>
 <div class="edit-meta">
 
-<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/operating_systems/linux/Firewall.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/" title="Debian"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Debian</a>
-<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/" title="Framebuffer">Next - Framebuffer <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/operating_systems/linux/Firewall.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/" title="Debian"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Debian</a>
+<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/" title="Framebuffer">Next - Framebuffer <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/">Home</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/">Home</a></li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/android/android/">Android</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/aws/">AWS</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/docker/">Docker</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/">System Design</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/devops/aws/">AWS</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/devops/docker/">Docker</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/devops/system_design/">System Design</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/">Frontend<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/frontend/">Frontend<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/css/">Css</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/">D3</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">jQuery</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/">Npm</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/frontend/css/">Css</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/frontend/d3/">D3</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/frontend/npm/">Npm</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/">Awk</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">Bash</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/">C</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/go/">Go</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/">Lua</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">Python</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/">Sed</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/awk/">Awk</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/bash/">Bash</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/c/">C</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/go/">Go</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/lua/">Lua</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/python/">Python</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
-<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
+<li class="active"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
 </ul>
   
 </li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
-</ul>
-  
-</li>
-
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/">Chromium</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/curl/">Curl</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/">Emacs</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/">Firefox</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/flash/">Flash</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/">Gimp</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/git/">Git</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/">GMail</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/">Gnome</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/grub/">Grub</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/">HTTrack</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">Mutt</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/screen/">Screen</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/">Ssh</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/">Tmux</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/">URxvt</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/vim/">ViM</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/curl/">Curl</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/flash/">Flash</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/git/">Git</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/grub/">Grub</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/screen/">Screen</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/vim/">ViM</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/hardware/">Hardware</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
-<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/networks/">Networks</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
   
 </li>
