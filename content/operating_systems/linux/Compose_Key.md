@@ -11,7 +11,9 @@ Some computers (e.g. those from Sun) have a Compose key on their keyboard, but f
 
 From a desktop like Gnome or KDE, the choice can be made with the system menu. Alternatively, the command xmodmap can be used to define the key (as Multi\_key). In general (apart from any desktop being used), the Compose key can be specified in the "Input Device" section of the `/etc/X11/xorg.conf` file. For instance, the following sets the "right windows" key to be the Compose key:
 
-	Option      "XkbOptions"  "compose:rwin"
+```xorg.conf
+Option      "XkbOptions"  "compose:rwin"
+```
 
 A list of compose sequences is in the file `/usr/share/X11/locale/en_US.·UTF-8/Compose`. Unfortunately, this includes many sequences which may not actually work.
 The command `dumpkeys` should show what are the possible combinations under the "compose" voices
@@ -27,32 +29,34 @@ Some examples: to get accented letters, use
 
 Other combinations are
 
-	aa for å
-	-d for đ
-	.i for ı
-	.I for İ
-	ng for ŋ
-	/o for ø
-	ss for ß
-	th for þ
-	ae for æ
-	oe for œ
-	oc for ©
-	e= for €
-	p! for ¶
-	so for §
-	-y for ¥
-	!! for ¡
-	?? for ¿
-	<< for «
-	>> for »
-	/c for ¢
-	_a for ª
-	_o for º
-	<’ for ‘
-	>’ for ’
-	^0 for °
-	^2 for ²
-	xx for ×
-	-: for ÷
-	+- for ±
+```txt
+aa for å
+-d for đ
+.i for ı
+.I for İ
+ng for ŋ
+/o for ø
+ss for ß
+th for þ
+ae for æ
+oe for œ
+oc for ©
+e= for €
+p! for ¶
+so for §
+-y for ¥
+!! for ¡
+?? for ¿
+<< for «
+>> for »
+/c for ¢
+_a for ª
+_o for º
+<’ for ‘
+>’ for ’
+^0 for °
+^2 for ²
+xx for ×
+-: for ÷
++- for ±
+```
