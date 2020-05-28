@@ -6,11 +6,15 @@ weight: 845
 
 ### Mount Samba shares on Linux
 
-	mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory
+```bash
+mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory
+```
 
 and add to fstab:
 
-	//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto
+```posh
+//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto
+```
 
 ### Configure network printer in Cups
 
