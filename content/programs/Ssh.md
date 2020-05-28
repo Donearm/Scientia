@@ -17,15 +17,21 @@ Dsa keys are the most recent format, Rsa ones are older
 
 add the keys in `~/.ssh/authorized_keys2`. Make sure that in hosts.allow the localhost and lan are enabled like this:
 
-	sshd: 127.0.0.1
-	sshd: 192.168.1.
+```toml
+sshd: 127.0.0.1
+sshd: 192.168.1.
+```
 
 In the `ssh_config` file be sure to list the preferred authentication methods as:
 
-	PreferredAuthentications publickey
+```cfg
+PreferredAuthentications publickey
+```
 
 and in `sshd_config` enable just the public key authentication with:
 
-	PubkeyAuthentication yes
-	ChallengeResponseAuthentication yes
-	PasswordAuthentication no
+```cfg
+PubkeyAuthentication yes
+ChallengeResponseAuthentication yes
+PasswordAuthentication no
+```

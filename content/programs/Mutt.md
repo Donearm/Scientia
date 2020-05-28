@@ -70,25 +70,35 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.
 ## Highlight according to a pattern
 
 You can play with these for a start (probably want to get rid of
-`~x \@\`hostname\`` stuff):
+`~x \@`\``hostname`\` stuff):
 
-	~F
+```cfg
+~F
+```
 
 Flagged as !  color index cyan default 
 
-	 ~Q   (~Q ~x \@`hostname`)
+```cfg
+ ~Q   (~Q ~x \@`hostname`)
+ ```
 
 Replied to  color index yellow default
 
-	~p   (~p ~x \@`hostname`)   (~x \@`hostname`)
+```cfg
+~p   (~p ~x \@`hostname`)   (~x \@`hostname`)
+```
 
 Answers to my mails  color index magenta default 
 
-	~P   (~P ~x \@`hostname`)
+```cfg
+~P   (~P ~x \@`hostname`)
+```
 
 Answered by myself  color index green default
 
-	~N (~P ~p ~Q ~x \@`hostname`)
+```cfg
+~N (~P ~p ~Q ~x \@`hostname`)
+```
 
 New concerning myself  color index red default
 
@@ -96,15 +106,21 @@ New concerning myself  color index red default
 
 TagPatterns
 
-	T ~m 1-700
+```cfg
+T ~m 1-700
+```
 	
 to mark messages from 1 to 700
 
-	T ~d 01/1/2006-24/2/2006
+```cfg
+T ~d 01/1/2006-24/2/2006
+```
 
 to mark messages in that time span
 
-	T ~d >1d
+```cfg
+T ~d >1d
+```
 
 to mark messages older than 1 day (use `d` for days, `w` for weeks, `m` for months and `y` for years)
 
@@ -114,13 +130,13 @@ In mutt, type `:set &charset ?charset`
 
 ## Macros
 
-```
+```cfg
 macro index,pager d "<save-message>=MAILBOX<enter><enter>" "Trash"
 ```
 
 Move message in "MAILBOX", which should correspond to the trash one of the inbox. For GMail it would be "[Gmail]/Trash"
 
-```
+```cfg
 macro index A "WNK<save-message>=MAILBOX<enter>" "Archive"
 ```
 

@@ -6,11 +6,15 @@ weight: 631
 
 ### Change charset on the fly
 
-	printf '\33]701;%s\007' it_IT.~UTF-8
+```bash
+printf '\33]701;%s\007' it_IT.~UTF-8
+```
 
 ### Change font on the flye
 
-	printf '\33]50;%s\007' 9x15,xft:Kochi" Mincho"
+```bash
+printf '\33]50;%s\007' 9x15,xft:Kochi" Mincho"
+```
 
 ### Insert an Unicode characters with its hexadecimal code
 

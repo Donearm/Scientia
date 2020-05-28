@@ -8,7 +8,9 @@ weight: 616
 
 Add:
 
-	EnableLinuxHWVideoDecode=1
-	OverrideGPUValidation=1
+```cfg
+EnableLinuxHWVideoDecode=1
+OverrideGPUValidation=1
+```
 
 in /etc/adobe/mms.cfg
