@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Computer Science Theory on Personal Wiki</title>
-    <link>https://example.com/theory/</link>
-    <description>Recent content in Computer Science Theory on Personal Wiki</description>
+    <title>Computer Science Theory on Gianluca Fiore Personal Wiki</title>
+    <link>https://www.gianlucafiore.it/Personal-Wiki/theory/</link>
+    <description>Recent content in Computer Science Theory on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://example.com/theory/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.gianlucafiore.it/Personal-Wiki/theory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Big Oh Notation</title>
-      <link>https://example.com/theory/big_oh_notation/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/big_oh_notation/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/</guid>
       <description>Basic definitions  O(1) = constant: the operation doesn&amp;rsquo;t depend on the size of its input O(n) = linear: the run time complexity is proportionate to the size of n O(log n) = logarithmic: normally associated with algorithms that break the problem into smaller chunks O(n log n) = just n log n: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and then takes the results of the smaller chunks and stitches them back together O(n²) = quadratic O(n³) = cubic  </description>
     </item>
     
     <item>
       <title>Data Structures</title>
-      <link>https://example.com/theory/data_structures/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/data_structures/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/</guid>
       <description>Linked List Versions:
  Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions.</description>
     </item>
     
     <item>
       <title>Set Theory</title>
-      <link>https://example.com/theory/set_theory/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/set_theory/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/</guid>
       <description>Basics  A ⊆ B = A is a subset of B. All the members of A are also found in B A ∪ B = Union. All the elements that are in A, B or both A ∩ B = Intersection. All the elements that are both in A and B A⊂ = Complement or Absolute complement. The set of all elements that are not in A but are in U, which is the universal set, basically a superset of all sets defined A⊂ ∩ B = Relative complement.</description>
     </item>
     

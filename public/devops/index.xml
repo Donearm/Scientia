@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DevOps on Personal Wiki</title>
-    <link>https://example.com/devops/</link>
-    <description>Recent content in DevOps on Personal Wiki</description>
+    <title>DevOps on Gianluca Fiore Personal Wiki</title>
+    <link>https://www.gianlucafiore.it/Personal-Wiki/devops/</link>
+    <description>Recent content in DevOps on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://example.com/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.gianlucafiore.it/Personal-Wiki/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS</title>
-      <link>https://example.com/devops/aws/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/aws/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/aws/</guid>
       <description>AMI Amazon Machine Images. Images to choose from to launch an instance.
 AWS CLI The command-line interface to AWS services.
 Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</description>
@@ -23,28 +23,28 @@ Useful Commands  aws configure = initial command to run in order to configure ac
     
     <item>
       <title>Docker</title>
-      <link>https://example.com/devops/docker/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/docker/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/docker/</guid>
       <description>Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://example.com/devops/kubernetes/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/kubernetes/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/</guid>
       <description>Basic commands  kubectl get nodes = list all nodes in the cluster kubectl get pods = list all pods kubectl get deployments = list all deployments kubectl get svc = list all services kubectl get pods -n kube-system = list all system pods kubeadm init = initialize the master cluster kubectl describe pod $podname = show detailed info about a specific pod kubectl describe node $nodename = show detailed info about a specific node kubectl delete pod $podname = delete a specific pod.</description>
     </item>
     
     <item>
       <title>System Design</title>
-      <link>https://example.com/devops/system_design/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/system_design/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/</guid>
       <description>CAP Theorem The theorem asserts that between Consistency, Availability and Partition tolerance only 2 can be had at the same time. The system designer has to make a trade off among CAP
  Consistency: data served is the same across all nodes Availability: every request receives a response, whether it succeeded or failed Partition Tolerance: the system continues to operate despite message loss or failure of part of it  </description>
     </item>

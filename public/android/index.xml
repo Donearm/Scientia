@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on Personal Wiki</title>
-    <link>https://example.com/android/</link>
-    <description>Recent content in Android on Personal Wiki</description>
+    <title>Android on Gianluca Fiore Personal Wiki</title>
+    <link>https://www.gianlucafiore.it/Personal-Wiki/android/</link>
+    <description>Recent content in Android on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://example.com/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.gianlucafiore.it/Personal-Wiki/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android</title>
-      <link>https://example.com/android/android/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/android/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/android/android/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/android/android/</guid>
       <description>In /system/build.prop edit:
 ro.~HOME_APP_ADJ=1  to force launcher into memory
 ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m  specifies the VM heapsize
+dalvik.vm.heapsize=48m specifies the VM heapsize
 debug.sf.hw=1  to render UI with the GPU
 ro.telephony.call_ring.delay=0  to decrease dialing out delay
 windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0  while
+Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
 persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1  Raise photo and video recording quality ro.</description>
+Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro.</description>
     </item>
     
   </channel>

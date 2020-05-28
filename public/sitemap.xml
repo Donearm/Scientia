@@ -3,323 +3,327 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/android/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/android/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/android/android/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/devops/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/devops/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/devops/aws/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/devops/aws/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/devops/docker/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/devops/docker/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/devops/kubernetes/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/devops/system_design/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/frontend/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/frontend/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/frontend/css/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/frontend/css/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/frontend/d3/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/frontend/jquery/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/frontend/npm/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/awk/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/awk/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/bash/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/bash/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/c/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/c/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/common_lisp/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/go/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/go/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/lua/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/lua/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/python/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/python/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/languages/sed/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/languages/sed/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/freebsd/freebsd_commands/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/apparmor/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/compose_key/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/debian/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/firewall/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/framebuffer/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/kernel/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/linux_commands/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/selinux/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/sysrq_key/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/systemd/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/linux/x/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/nixos/nixos_commands/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/operating_systems/windows/windows_commands/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/chromium/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/curl/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/curl/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/emacs/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/e-uae/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/ffmpeg/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/firefox/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/flash/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/flash/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/gimp/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/git/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/git/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/gmail/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/gnome/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/grub/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/grub/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/httrack/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/imagemagick-convert/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/mplayer/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/mutt/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/rtorrent/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/screen/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/screen/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/ssh/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/tcpdump/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/tmux/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/urxvt/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/vim/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/vim/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/programs/wireshark/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/theory/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/theory/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/theory/big_oh_notation/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/theory/data_structures/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/theory/set_theory/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/advertising_and_marketing/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/cryptocurrencies/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/hardware/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/hardware/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/load_balancing/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/markdown/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/markdown/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/mongodb/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/networks/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/networks/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/samba_and_nfs/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/sqlite/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/various/tiddlywiki/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/android/android/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/categories/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.gianlucafiore.it/Personal-Wiki/tags/</loc>
   </url>
   
 </urlset>

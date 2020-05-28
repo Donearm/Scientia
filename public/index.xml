@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal Wiki</title>
-    <link>https://example.com/</link>
-    <description>Recent content on Personal Wiki</description>
+    <title>Gianluca Fiore Personal Wiki</title>
+    <link>https://www.gianlucafiore.it/Personal-Wiki/</link>
+    <description>Recent content on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.gianlucafiore.it/Personal-Wiki/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Android</title>
-      <link>https://example.com/android/android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/android/android/</guid>
-      <description>In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m  specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0  while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1  Raise photo and video recording quality ro.</description>
-    </item>
     
     <item>
       <title>AWS</title>
-      <link>https://example.com/devops/aws/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/aws/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/aws/</guid>
       <description>AMI Amazon Machine Images. Images to choose from to launch an instance.
 AWS CLI The command-line interface to AWS services.
 Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</description>
@@ -41,85 +23,85 @@ Useful Commands  aws configure = initial command to run in order to configure ac
     
     <item>
       <title>Docker</title>
-      <link>https://example.com/devops/docker/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/docker/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/docker/</guid>
       <description>Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://example.com/devops/kubernetes/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/kubernetes/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/</guid>
       <description>Basic commands  kubectl get nodes = list all nodes in the cluster kubectl get pods = list all pods kubectl get deployments = list all deployments kubectl get svc = list all services kubectl get pods -n kube-system = list all system pods kubeadm init = initialize the master cluster kubectl describe pod $podname = show detailed info about a specific pod kubectl describe node $nodename = show detailed info about a specific node kubectl delete pod $podname = delete a specific pod.</description>
     </item>
     
     <item>
       <title>System Design</title>
-      <link>https://example.com/devops/system_design/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/devops/system_design/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/</guid>
       <description>CAP Theorem The theorem asserts that between Consistency, Availability and Partition tolerance only 2 can be had at the same time. The system designer has to make a trade off among CAP
  Consistency: data served is the same across all nodes Availability: every request receives a response, whether it succeeded or failed Partition Tolerance: the system continues to operate despite message loss or failure of part of it  </description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>https://example.com/frontend/css/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/frontend/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/frontend/css/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/frontend/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D3</title>
-      <link>https://example.com/frontend/d3/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/frontend/d3/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/</guid>
       <description>Append an element directly to the body d3.select(&amp;#39;body&amp;#39;).append(&amp;#39;svg&amp;#39;) append() returns the appended element, not the body as in jQuery</description>
     </item>
     
     <item>
       <title>jQuery</title>
-      <link>https://example.com/frontend/jquery/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/frontend/jquery/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/</guid>
       <description>Selectors $(&amp;#39;.foo&amp;#39;).addClass(&amp;#34;foobar&amp;#34;); $(&amp;#39;.foo&amp;#39;).removeClass(&amp;#34;foobar&amp;#34;); Attribute and Style manipulations $(&amp;#39;.foo&amp;#39;).attr(&amp;#34;new-attr&amp;#34;, &amp;#34;new-value&amp;#34;); $(&amp;#39;.foo&amp;#39;).css(&amp;#34;background&amp;#34;, &amp;#34;white&amp;#34;); Ajax $.getJSON(&amp;#39;http://resource.json&amp;#39;, doSomething); $.ajax({ url: &amp;#39;http://resource.txt&amp;#39;, dataType: &amp;#39;text&amp;#39;, type: &amp;#39;GET&amp;#39;, success: doSomething }); Append and Prepend nodes $(&amp;#39;.foo&amp;#39;).append(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); $(&amp;#39;.foo&amp;#39;).prepend(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); Listening to events $(&amp;#39;.foo&amp;#39;).on(&amp;#39;click&amp;#39;, clickHandler); Removing elements $(&amp;#39;.foo&amp;#39;).remove(); Content manipulation $(&amp;#39;.foo&amp;#39;).text(&amp;#39;Hello World!&amp;#39;); $(&amp;#39;.foo&amp;#39;).html(&amp;#39;&amp;lt;div class=&amp;#34;bar&amp;#34;&amp;gt;Hello&amp;lt;/div&amp;gt;&amp;#39;); inserting a new element after each li element
 $(&amp;#39;li&amp;#39;).after(&amp;#39;&amp;lt;li&amp;gt;Item&amp;lt;/li&amp;gt;&amp;#39;); obviously .before() works the opposite way. The .empty() function will completely remove all children of an element</description>
     </item>
     
     <item>
       <title>Npm</title>
-      <link>https://example.com/frontend/npm/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/frontend/npm/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/</guid>
       <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
     </item>
     
     <item>
       <title>Awk</title>
-      <link>https://example.com/languages/awk/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/awk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/awk/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/awk/</guid>
       <description>Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;
 To negate a pattern (print only lines that don&amp;rsquo;t match), use awk &#39;$1 !</description>
     </item>
     
     <item>
       <title>Bash</title>
-      <link>https://example.com/languages/bash/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/bash/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/bash/</guid>
       <description>Functions namename prints the basename without extension
 ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;
 function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; echo &amp;#34;${name0:-$name}&amp;#34; } function ext() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; local ext=${name0:+${name#$name0}} echo &amp;#34;${ext:-.}&amp;#34; } Commands CTRL Key Bound  Ctrl + _ = undo Ctrl + @ = set mark Ctrl + a = Jump to the start of the line Ctrl + b = Move back a char Ctrl + c = Terminate the command Ctrl + d = Delete character under the cursor Ctrl + e = Jump to the end of the line Ctrl + f = Move forward a char Ctrl + k = Delete from cursor to EOL Ctrl + l = Clear the screen Ctrl + n = select the next command in history Ctrl + p = select the previous command in history Ctrl + r = Search the history backwards Ctrl + R = Search the history backwards with multi occurrence Ctrl + t = drag character before cursor over the one under the cursor Ctrl + u = Delete backward from cursor Ctrl + v = Insert next character verbatim Ctrl + w = kill word before cursor Ctrl + x = kill backward to the beginning of line Ctrl + xx = Move between EOL and current cursor position Ctrl + x @ = Show possible hostname completions Ctrl + y = paste the text at top of the kill#ring Ctrl + z = Suspend/ Stop the command  ALT Key Bound  Alt + &#39;&#39;&amp;lt;&#39;&#39; = Move to the first line in the history Alt + &#39;&#39;&amp;gt;&#39;&#39; = Move to the last line in the history Alt + ?</description>
@@ -127,19 +109,19 @@ function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#3
     
     <item>
       <title>C</title>
-      <link>https://example.com/languages/c/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/c/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/c/</guid>
       <description>Gcc  gcc -dM -E - &amp;lt;/dev/null = Print all the default macros  </description>
     </item>
     
     <item>
       <title>Common Lisp</title>
-      <link>https://example.com/languages/common_lisp/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/common_lisp/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/</guid>
       <description>Syntax and various functions (format t &amp;#34;hello&amp;#34;) print to stdout (t) the string
 (list :a 1 :b 2 :c 3) make an indexed list (plist)
 getf (list :a 1 :b 2) :a) returns the value of :a
@@ -150,434 +132,434 @@ getf (list :a 1 :b 2) :a) returns the value of :a
     
     <item>
       <title>Go</title>
-      <link>https://example.com/languages/go/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/go/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/go/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/go/</guid>
       <description>Commands  go list all = List all installed packages, standard library&amp;rsquo;s included go list std = List only packages from the standard library go test -bench=. = Run benchmarks after the tests. . stands for current directory, obviously go env = List all Go variables  Go Modules  go mod init = creates a new module by initializing the go.mod file go list -m all = prints the current module&amp;rsquo;s dependencies go mod tidy = removes unused dependencies  Test Coverage  go test -cover = prints the percentage of coverage of your unit tests go test -cover -coverprofile=c.</description>
     </item>
     
     <item>
       <title>Lua</title>
-      <link>https://example.com/languages/lua/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/lua/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/lua/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/lua/</guid>
       <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})</description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://example.com/languages/python/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/python/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/python/</guid>
       <description>class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&amp;rsquo;s being executed enumerate() = Returns a list&amp;rsquo;s elements with numeric indexes.</description>
     </item>
     
     <item>
       <title>Sed</title>
-      <link>https://example.com/languages/sed/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/languages/sed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/languages/sed/</guid>
-      <description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &#39;s/$oldstring/$newstring/g&#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
-Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g&#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/languages/sed/</guid>
+      <description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &amp;#39;s/$oldstring/$newstring/g&amp;#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
+Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
     </item>
     
     <item>
       <title>FreeBSD</title>
-      <link>https://example.com/operating_systems/freebsd/freebsd_commands/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/freebsd/freebsd_commands/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</guid>
       <description>Various Commands  cvsup = Update ports tree make search key=program = Search for program among the ports tree make index = Generate the ports index pkg_add = Install a package pkg_info = Show info about installed packages pkg_version = Show version number of an installed package pkg_delete = Remove a package /etc/rc.d/rc.daemon rcvar = Check if daemon is enabled or not /etc/rc.d/rc.daemon status = Check the status of daemon kldload = Load a kernel module pw = Modify, remove or add users and groups ipfw -a list = List firewall rules burncd = Command to burn cd gbde = Utility to encrypt/decrypt a disk portupgrade -af = Upgrade all ports freebsd-update = Upgrade the whole system freebsd-update -r version upgrade = Upgrade system to version freebsd-update install = Actually install updates, remove old libraries and object files portsclean -C = Clean out the work directory of past compilations portsclean -D = Clean out all distfiles that are not referenced by any ports in the tree.</description>
     </item>
     
     <item>
       <title>AppArmor</title>
-      <link>https://example.com/operating_systems/linux/apparmor/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/apparmor/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/</guid>
       <description>Basic commands  apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command  </description>
     </item>
     
     <item>
       <title>Compose Key</title>
-      <link>https://example.com/operating_systems/linux/compose_key/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/compose_key/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/</guid>
       <description>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
 Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</description>
     </item>
     
     <item>
       <title>Debian</title>
-      <link>https://example.com/operating_systems/linux/debian/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/debian/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/</guid>
       <description>Commands  update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package  </description>
     </item>
     
     <item>
       <title>Firewall</title>
-      <link>https://example.com/operating_systems/linux/firewall/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/firewall/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/</guid>
       <description>Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
     </item>
     
     <item>
       <title>Framebuffer</title>
-      <link>https://example.com/operating_systems/linux/framebuffer/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/framebuffer/</guid>
-      <description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH)  </description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/</guid>
+      <description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH) </description>
     </item>
     
     <item>
       <title>Kernel</title>
-      <link>https://example.com/operating_systems/linux/kernel/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/kernel/</guid>
-      <description>Various kernel options Systemd net.ifnames=0  turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
-Acpi/Apic options no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override  Plus:
-acpi_os_name=  that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/</guid>
+      <description>Various kernel options Systemd net.ifnames=0 turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
+Acpi/Apic options no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override Plus:
+acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description>
     </item>
     
     <item>
       <title>Linux Commands</title>
-      <link>https://example.com/operating_systems/linux/linux_commands/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/linux_commands/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/</guid>
       <description>A variegated collection of useful Linux commands, in no particular order
  testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
     </item>
     
     <item>
       <title>SELinux</title>
-      <link>https://example.com/operating_systems/linux/selinux/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/selinux/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/</guid>
       <description>General commands  semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
     </item>
     
     <item>
       <title>Sysrq Key</title>
-      <link>https://example.com/operating_systems/linux/sysrq_key/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/sysrq_key/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/</guid>
       <description>How do I use the magic SysRq key? to enable it
-echo &amp;quot;1&amp;quot; &amp;gt; /proc/sys/kernel/sysrq  or edit /etc/sysctl.conf and add kernel.sysrq = 1
+echo &amp;#34;1&amp;#34; &amp;gt; /proc/sys/kernel/sysrq or edit /etc/sysctl.conf and add kernel.sysrq = 1
 On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;. Note - Some keyboards may not have a key labeled SysRq. The SysRq key is also known as the Print Screen key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.</description>
     </item>
     
     <item>
       <title>SystemD</title>
-      <link>https://example.com/operating_systems/linux/systemd/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/systemd/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/</guid>
       <description>Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.</description>
     </item>
     
     <item>
       <title>Xorg</title>
-      <link>https://example.com/operating_systems/linux/x/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/linux/x/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/</guid>
       <description>Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.
 Or read the full list on the web</description>
     </item>
     
     <item>
       <title>NixOS</title>
-      <link>https://example.com/operating_systems/nixos/nixos_commands/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/nixos/nixos_commands/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/</guid>
       <description>Various Commands nixos-rebuild switch = rebuild the system after having edited the configuration nix-env -qaP package = search for package nix-env -e package = uninstall package nix-channel --update = update the system (according to currently subscribed channel)</description>
     </item>
     
     <item>
       <title>Windows Commands</title>
-      <link>https://example.com/operating_systems/windows/windows_commands/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/operating_systems/windows/windows_commands/</guid>
-      <description>Windows Registry tweaks  HKEY_CURRENT_USER\ControlPanel\Desktop  MenuShowDelay = Delay in ms at the opening of menus. Default is 400   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management  DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters  EnablePrefetcher = Enable prefetching of data on the hard disk.</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/</guid>
+      <description>Windows Registry tweaks * HKEY\_CURRENT\_USER\ControlPanel\Desktop * MenuShowDelay = Delay in ms at the opening of menus. Default is 400 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management * DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 * LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters * EnablePrefetcher = Enable prefetching of data on the hard disk.</description>
     </item>
     
     <item>
       <title>Chromium</title>
-      <link>https://example.com/programs/chromium/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/chromium/</guid>
-      <description>Useful URIs chrome:extension = Opens the window to manage the installed extensions chrome:flags = Opens the experimental features and settings page chrome://gpu = View the status of GPU related features and about the drivers being used</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/</guid>
+      <description>Useful URIs  chrome:extension = Opens the window to manage the installed extensions chrome:flags = Opens the experimental features and settings page chrome://gpu = View the status of GPU related features and about the drivers being used  </description>
     </item>
     
     <item>
       <title>Curl</title>
-      <link>https://example.com/programs/curl/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/curl/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/curl/</guid>
       <description>Various  curl -C - -O url = resume an interrupted download of url xargs -n 1 curl -O &amp;lt; listofurls.txt = download a file list from a file, one by one curl -I www.url.com = get HTTP headers returning from a server curl --data &amp;quot;abc=123&amp;amp;def=456&amp;quot; http://url.com/info.php = make a POST request by sending the abc and def parameters with 123 and 456 values to the server curl --user-agent &amp;quot;User Agent string&amp;quot; = specify an User Agent string curl --cookie-jar cookies.</description>
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>https://example.com/programs/emacs/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/emacs/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/</guid>
       <description>Movements  C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.) C-M-b = Go to the previous s-expression C-n = Go to next line C-p = Go to previous line C-a = Go to the beginning of current line C-e = Go to the end of current line M-a = Go to the beginning of phrase M-e = Go to the end of phrase M-&amp;lt; = Go back to the beginning of current file M-&amp;gt; = Move forward till the end of current file M-g g = Go to a specific line number (to be inserted) C-x r j a = Go to the position saved in register &amp;ldquo;a&amp;rdquo; M-r = Alternatively jump between the top, the bottom and the middle of the current screen C-M-a = Go at the beginning of current or previous function C-M-e = Go at the end of current or previous function  Basic commands  C-g = Cancel the currently active command C-x u = Undo last command C-x C-c = Exit from Emacs C-h = Open the help for a command C-s = Find text forward C-r = Find text backward C-s C-w = Find forward the word where the cursor is C-r C-w = Find backward the word where the cursor is C-x r a = Save current position in a register &amp;ldquo;a&amp;rdquo; C-x z = Repeat last executed command.</description>
     </item>
     
     <item>
       <title>E-Uae</title>
-      <link>https://example.com/programs/e-uae/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/e-uae/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/</guid>
       <description>Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
  F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;lsquo;n&amp;rsquo;.</description>
     </item>
     
     <item>
       <title>Ffmpeg</title>
-      <link>https://example.com/programs/ffmpeg/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/ffmpeg/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/</guid>
       <description>Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0+x,y file = Capture what&amp;rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0.</description>
     </item>
     
     <item>
       <title>Firefox</title>
-      <link>https://example.com/programs/firefox/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/firefox/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/</guid>
       <description>For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1.</description>
     </item>
     
     <item>
       <title>Flash</title>
-      <link>https://example.com/programs/flash/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/flash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/flash/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/flash/</guid>
       <description>Enable hardware acceleration with the GPU Add:
-EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1  in /etc/adobe/mms.cfg</description>
+EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1 in /etc/adobe/mms.cfg</description>
     </item>
     
     <item>
       <title>Gimp</title>
-      <link>https://example.com/programs/gimp/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/gimp/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/</guid>
       <description>Retouch scanned images Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened
 Various plugins to try Filters-&amp;gt;Defocus  Gaussian Selective Gaussian = 6-255 (no moirè); 3-200 (little moiré without getting too out of focus)  </description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://example.com/programs/git/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/git/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/git/</guid>
       <description>A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
  git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &amp;gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file.</description>
     </item>
     
     <item>
       <title>GMail</title>
-      <link>https://example.com/programs/gmail/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/gmail/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/</guid>
       <description>Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  </description>
     </item>
     
     <item>
       <title>Gnome</title>
-      <link>https://example.com/programs/gnome/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/gnome/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/</guid>
       <description>Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
-Change the start button run gconf-editor navigate to /app/panel/objects find a object_x with the “object_type=menu-object”. tick up “use_custom_icon” 4. change “custom_icon” value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file
+Change the start button  run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file
 Change gtk theme (2.0) Theme must be in /usr/share/themes or under ~/.</description>
     </item>
     
     <item>
       <title>Grub</title>
-      <link>https://example.com/programs/grub/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/grub/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/grub/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/grub/</guid>
       <description>Various Commands  convert -geometry 640×480 -colors 14 img img.xpm = Convert an image in the format grub (legacy) accepts grub-set-default num = Tells grub which os to boot next time elevator=scheduler = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq)  Generate a standalone Grub bootloader for UEFI systems First, have or generate a grub.cfg. grub-mkconfig is the command. Then create the path for it by mkdir -p boot/grub/ and putting it there.</description>
     </item>
     
     <item>
       <title>HTTrack</title>
-      <link>https://example.com/programs/httrack/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/httrack/</guid>
-      <description>Mirroring a site but keeping only files matching a pattern httrack website -W -O &amp;quot;/path/to/save/the/website&amp;quot; -%v +*.pdf +*.html +*.htm  This mirrors website but actually saves only html and pdf documents</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/</guid>
+      <description>Mirroring a site but keeping only files matching a pattern httrack website -W -O &amp;#34;/path/to/save/the/website&amp;#34; -%v +*.pdf +*.html +*.htm This mirrors website but actually saves only html and pdf documents</description>
     </item>
     
     <item>
       <title>Imagemagick Convert</title>
-      <link>https://example.com/programs/imagemagick-convert/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/imagemagick-convert/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/</guid>
       <description>Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx+nnn+nnn dove nnn sta per l&amp;rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso</description>
     </item>
     
     <item>
       <title>MPlayer</title>
-      <link>https://example.com/programs/mplayer/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/mplayer/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/</guid>
       <description>Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.
  -afm dmo = Sometimes useful to reproduce files with out of sync audio -ss HH:MM:SS = Start playing at HH:MM:SS -frames n = Stop playing after n frames -vc null -vo null -ao pcm:fast:waveheader:file=$file = Convert an audio file to a wav mplayer video -vf cropdetect = Try to detect the areas of video to crop mplayer video -vo jpeg:outdir=dir/ -nosound = Write every frame of video as a jpeg image in outdir mplayer video -vo gif89a:output=filedioutput.</description>
     </item>
     
     <item>
       <title>Mutt</title>
-      <link>https://example.com/programs/mutt/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/mutt/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/</guid>
       <description>General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
     </item>
     
     <item>
       <title>Rtorrent</title>
-      <link>https://example.com/programs/rtorrent/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/rtorrent/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/</guid>
       <description>Add trackers to a torrent Select the torrent. Press Ctrl+x and insert this command:
-d.tracker.insert=&amp;quot;3&amp;quot;,&amp;quot;url_of_tracker&amp;quot;  where 3 is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and url_of_tracker is obviously the url of the new tracker. Might be necessary to do a tracker update request with T (or just wait a bit and rtorrent will do it by itself)</description>
+d.tracker.insert=&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34; where 3 is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and url_of_tracker is obviously the url of the new tracker. Might be necessary to do a tracker update request with T (or just wait a bit and rtorrent will do it by itself)</description>
     </item>
     
     <item>
       <title>Screen</title>
-      <link>https://example.com/programs/screen/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/screen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/screen/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/screen/</guid>
       <description>C-a : = Go in command mode, where it&amp;rsquo;s possible to insert commands as with Vi C-a n &amp;amp; C-a p = Go to the next or previous window C-a S = Open a new region in the current window C-a Tab = Switches between regions C-a X = Kill the current region C-a s = Freeze the current window C-a q = Reactivate the current window C-a Esc = Start copying mode.</description>
     </item>
     
     <item>
       <title>Ssh</title>
-      <link>https://example.com/programs/ssh/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/ssh/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/</guid>
       <description>ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
     </item>
     
     <item>
       <title>Tcpdump</title>
-      <link>https://example.com/programs/tcpdump/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/tcpdump/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/</guid>
       <description>Various commands  tcpdump &#39;tcp[13] &amp;amp; 2 != 0&#39; = Catch all SYN packets tcpdump &#39;tcp[13] &amp;amp; 4 != 0&#39; = Catch all RST packets tcpdump &#39;tcp[13] &amp;amp; 16 != 0&#39; = Catch all ACK packets  The 2, 4 and 16 above correspond to the 13th byte in the TCP header and only grab packets that have a not zero 2nd bit there, matching thus different type of TCP packets.</description>
     </item>
     
     <item>
       <title>Tmux</title>
-      <link>https://example.com/programs/tmux/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/tmux/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/</guid>
       <description>Change base directory of an existing session First detach from the session. Then reattach with:
-tmux attach -t $sessionname -c /new/base/dir  Various commands  :set -g status off = hide the statusbar. Can be re-enabled with on, surprisingly &amp;lt;prefix&amp;gt;( and &amp;lt;prefix&amp;gt;) = jump between active sessions prefix&amp;gt;:kill-session = kill the current session (from within itself) tmux list-keys = list all keybindings. Can be run from within a session with &amp;lt;prefix:list-keys or &amp;lt;prefix&amp;gt;?</description>
+tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status off = hide the statusbar. Can be re-enabled with on, surprisingly &amp;lt;prefix&amp;gt;( and &amp;lt;prefix&amp;gt;) = jump between active sessions prefix&amp;gt;:kill-session = kill the current session (from within itself) tmux list-keys = list all keybindings. Can be run from within a session with &amp;lt;prefix:list-keys or &amp;lt;prefix&amp;gt;?</description>
     </item>
     
     <item>
       <title>URxvt</title>
-      <link>https://example.com/programs/urxvt/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/urxvt/</guid>
-      <description>Change charset on the fly printf &#39;\33]701;%s\007&#39; it_IT.~UTF-8  Change font on the flye printf &#39;\33]50;%s\007&#39; 9x15,xft:Kochi&amp;quot; Mincho&amp;quot;  Insert an Unicode characters with its hexadecimal code press together &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; pressed</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/</guid>
+      <description>Change charset on the fly printf &amp;#39;\33]701;%s\007&amp;#39; it_IT.~UTF-8 Change font on the flye printf &amp;#39;\33]50;%s\007&amp;#39; 9x15,xft:Kochi&amp;#34; Mincho&amp;#34; Insert an Unicode characters with its hexadecimal code press together &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; pressed</description>
     </item>
     
     <item>
       <title>ViM</title>
-      <link>https://example.com/programs/vim/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/vim/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/vim/</guid>
       <description>Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!</description>
     </item>
     
     <item>
       <title>Wireshark</title>
-      <link>https://example.com/programs/wireshark/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/programs/wireshark/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/</guid>
       <description>Sniff lan traffic  Install dsniff o any package that furnishes arpspoof Enable IP forwarding with echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward Start the Arp spoofing with arpspoof -i eth0 -t 192.168.0.3 192.168.0.1 where -t is the target ip and the following is the ip of the gateway. This way the target computer will think our computer is the gateway and will route all packets through it. The local pc will then forward all the packets to the real gateway Use Wireshark on the local network interface (eth0, in the above case) to sniff the traffic  </description>
     </item>
     
     <item>
       <title>Big Oh Notation</title>
-      <link>https://example.com/theory/big_oh_notation/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/big_oh_notation/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/</guid>
       <description>Basic definitions  O(1) = constant: the operation doesn&amp;rsquo;t depend on the size of its input O(n) = linear: the run time complexity is proportionate to the size of n O(log n) = logarithmic: normally associated with algorithms that break the problem into smaller chunks O(n log n) = just n log n: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and then takes the results of the smaller chunks and stitches them back together O(n²) = quadratic O(n³) = cubic  </description>
     </item>
     
     <item>
       <title>Data Structures</title>
-      <link>https://example.com/theory/data_structures/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/data_structures/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/</guid>
       <description>Linked List Versions:
  Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions.</description>
     </item>
     
     <item>
       <title>Set Theory</title>
-      <link>https://example.com/theory/set_theory/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/theory/set_theory/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/</guid>
       <description>Basics  A ⊆ B = A is a subset of B. All the members of A are also found in B A ∪ B = Union. All the elements that are in A, B or both A ∩ B = Intersection. All the elements that are both in A and B A⊂ = Complement or Absolute complement. The set of all elements that are not in A but are in U, which is the universal set, basically a superset of all sets defined A⊂ ∩ B = Relative complement.</description>
     </item>
     
     <item>
       <title>Advertising and Marketing</title>
-      <link>https://example.com/various/advertising_and_marketing/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/advertising_and_marketing/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/</guid>
       <description>Google Ads Google Search Network = search + Google Play + Google Shopping + Google Maps + search partners
 Google Display Ads Network = as above + partner sites with Adsense
 Match types  Broad Match = the default, matches misspellings, synonyms and related searches Broad Match Modifier = a + in front of a keyword. Matches only keywords and close varations of them Phrase Match = quotation marks (&amp;quot;) around a phrase.</description>
@@ -585,20 +567,20 @@ Match types  Broad Match = the default, matches misspellings, synonyms and relat
     
     <item>
       <title>Cryptocurrencies</title>
-      <link>https://example.com/various/cryptocurrencies/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/cryptocurrencies/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/</guid>
       <description>Litecoin API
 Bitcoin/Litecoin API commands  getaccountaddress &amp;quot;&amp;quot; = Print BTC/LTC address backupwallet &amp;lt;location&amp;gt; = Dump wallet to location encryptwallet &amp;lt;passphrase&amp;gt; = Encrypt the wallet with passphrase validateaddress &amp;lt;coin_address&amp;gt; = Print informations about coin_address walletpassphrasechange &amp;lt;oldpass&amp;gt; &amp;lt;newpass&amp;gt; = Change wallet password  </description>
     </item>
     
     <item>
       <title>Hardware</title>
-      <link>https://example.com/various/hardware/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/hardware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/hardware/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/hardware/</guid>
       <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
 Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
 Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
@@ -606,19 +588,19 @@ Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not 
     
     <item>
       <title>Load Balancing</title>
-      <link>https://example.com/various/load_balancing/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/load_balancing/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/</guid>
       <description>Modes  Round Robin = requests are distributed sequentially. Least Connections = new requests are distributed to the node with currently the least requests. Source/IP Hash = the IP source of the request is used to determine the destination node.  </description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>https://example.com/various/markdown/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/markdown/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/markdown/</guid>
       <description>How to make footnotes Use
 Text to be linked[^1] and then at the bottom of the file:
 [^1]: text or link </description>
@@ -626,51 +608,79 @@ Text to be linked[^1] and then at the bottom of the file:
     
     <item>
       <title>MongoDB</title>
-      <link>https://example.com/various/mongodb/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/mongodb/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/</guid>
       <description>Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike. db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; }); = update user Mike with Viktor.</description>
     </item>
     
     <item>
       <title>Networks</title>
-      <link>https://example.com/various/networks/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/networks/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/networks/</guid>
       <description>HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request.</description>
     </item>
     
     <item>
       <title>Samba and Nfs</title>
-      <link>https://example.com/various/samba_and_nfs/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/samba_and_nfs/</guid>
-      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory  and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto  Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/</guid>
+      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
+//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
     </item>
     
     <item>
       <title>SQLite</title>
-      <link>https://example.com/various/sqlite/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/sqlite/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/</guid>
       <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
     </item>
     
     <item>
       <title>Tiddlywiki</title>
-      <link>https://example.com/various/tiddlywiki/</link>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/various/tiddlywiki/</guid>
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/</guid>
       <description>Tweaks and features of Tiddlywiki Tiddlywiki markup list
 To use the file browser to insert a file into the wiki This:
-&amp;lt;html&amp;gt;&amp;lt;div align=&amp;quot;left&amp;quot;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;quot;whatFile()&amp;quot; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt;  or this:
-&amp;lt;html&amp;gt; &amp;lt;form target=&amp;quot;theFrameID&amp;quot;&amp;gt; &amp;lt;input type=file name=whichfile&amp;gt; &amp;lt;input type=button value=&amp;quot;View&amp;quot; onclick=&amp;quot;var frame=document.getElementById(this.form.target); this.form.action=&#39;file:///&#39;+this.form.whichfile.value; try { frame.style.display=&#39;block&#39;; this.form.done.disabled=false; this.form.submit(); } catch(e) { alert(e.description?e.description:e.toString()); }&amp;quot;&amp;gt; &amp;lt;input type=button name=done value=&amp;quot;Done&amp;quot; disabled onclick=&amp;quot;var frame=document.getElementById(this.form.target); frame.style.display=&#39;none&#39;; this.disabled=true;&amp;quot;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;theFrameID&amp;quot; id=&amp;quot;theFrameID&amp;quot; style=&amp;quot;display:none;background:#fff;width:100%;height:500px&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt; &amp;lt;/html&amp;gt;  To show a text file with an iframe &amp;lt;html&amp;gt;&amp;lt;iframe src =&amp;quot;file:///C:\Users\Owner\Documents\testingtesting2.</description>
+&amp;lt;html&amp;gt;&amp;lt;div align=&amp;#34;left&amp;#34;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;#34;whatFile()&amp;#34; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt; or this:
+&amp;lt;html&amp;gt; &amp;lt;form target=&amp;#34;theFrameID&amp;#34;&amp;gt; &amp;lt;input type=file name=whichfile&amp;gt; &amp;lt;input type=button value=&amp;#34;View&amp;#34; onclick=&amp;#34;var frame=document.getElementById(this.form.target); this.form.action=&amp;#39;file:///&amp;#39;+this.form.whichfile.value; try { frame.style.display=&amp;#39;block&amp;#39;; this.form.done.disabled=false; this.form.submit(); } catch(e) { alert(e.description?e.description:e.toString()); }&amp;#34;&amp;gt; &amp;lt;input type=button name=done value=&amp;#34;Done&amp;#34; disabled onclick=&amp;#34;var frame=document.getElementById(this.form.target); frame.style.display=&amp;#39;none&amp;#39;; this.disabled=true;&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;iframe src=&amp;#34;&amp;#34; name=&amp;#34;theFrameID&amp;#34; id=&amp;#34;theFrameID&amp;#34; style=&amp;#34;display:none;background:#fff;width:100%;height:500px&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt; &amp;lt;/html&amp;gt; To show a text file with an iframe &amp;lt;html&amp;gt;&amp;lt;iframe src =&amp;#34;file:///C:\Users\Owner\Documents\testingtesting2.</description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/android/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/android/android/</guid>
+      <description>In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1  to force launcher into memory
+ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+dalvik.vm.heapsize=48m specifies the VM heapsize
+debug.sf.hw=1  to render UI with the GPU
+ro.telephony.call_ring.delay=0  to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness
+Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
+persist.adb.notify=0  disables debugging notify icon on statusbar
+Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://www.gianlucafiore.it/Personal-Wiki/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gianlucafiore.it/Personal-Wiki/search/</guid>
+      <description>var search = instantsearch({ indexName: &#39;Gianluca Fiore Personal Wiki&#39;, searchClient: algoliasearch( &#39;DRRGB5NMNG&#39;, &#39;b66dcbe0616bd937b0436433b526ee27&#39; ), routing: true, }); const renderHits = (renderOptions, isFirstRender) = { const { hits } = renderOptions; document.querySelector(&#39;#hits&#39;).innerHTML = ` ${hits .map( item = `${ item.title }${ dayjs(item.lastmod).format(&#34;YYYY/MM/DD&#34;) } - ${ item.description ? item.description : item.content.length  200 ? item.content.substring( 0, 200 ) + &#39;...&#39; : item.content }
+` ) .</description>
     </item>
     
   </channel>

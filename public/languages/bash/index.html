@@ -3,29 +3,29 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Bash - Personal Wiki</title>
+<title>Bash - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
-<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://example.com/languages/bash/">
-<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://example.com/js/bundle.js"></script><style>
-:root {}
+<script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
+:root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Bash" />
 <meta property="og:description" content="Functions namename prints the basename without extension
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/languages/bash/" />
-<meta property="og:image" content="https://example.com/images/og-image.png"/>
-<meta property="og:site_name" content="Personal Wiki" />
+<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/" />
+<meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+<meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Bash"/>
 <meta name="twitter:description" content="Functions namename prints the basename without extension
@@ -37,15 +37,14 @@ ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?">
 
 <meta itemprop="wordCount" content="1402">
-<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+<meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 
 
-<meta itemprop="keywords" content="" /></head>
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/custom.css">
+</head>
 <body><div class="container"><header>
-<h1>Personal Wiki</h1>
-
- <span class="version">Version 0.9.1</span>
+<h1>Gianluca Fiore Personal Wiki</h1>
 <a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
 
@@ -53,8 +52,8 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 <div class="global-menu">
 <nav>
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+<li><a href="/Personal-Wiki/">Home</a></li>
+<li><a href="/Personal-Wiki/search">Search</a></li></ul>
 </nav>
 </div>
 <div class="content-container">
@@ -62,19 +61,19 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 <h1 id="functions">Functions</h1>
 <p>namename prints the basename without extension<br>
 ext prints extension of a file, including &ldquo;.&rdquo;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">	<span style="color:#66d9ef">function</span> namename<span style="color:#f92672">()</span>
-	<span style="color:#f92672">{</span>
-	  local name<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>1##*/<span style="color:#e6db74">}</span>
-	  local name0<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name%.*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-	  echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name0<span style="color:#66d9ef">:-</span>$name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-	<span style="color:#f92672">}</span>
-	<span style="color:#66d9ef">function</span> ext<span style="color:#f92672">()</span>
-	<span style="color:#f92672">{</span>
-	  local name<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>1##*/<span style="color:#e6db74">}</span>
-	  local name0<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>name%.*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-	  local ext<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>name0:+<span style="color:#e6db74">${</span>name#$name0<span style="color:#e6db74">}}</span>
-	  echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ext<span style="color:#66d9ef">:-</span>.<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-	<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">	<span class="k">function</span> namename<span class="o">()</span>
+	<span class="o">{</span>
+	  <span class="nb">local</span> <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">##*/</span><span class="si">}</span>
+	  <span class="nb">local</span> <span class="nv">name0</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">name</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&#34;</span>
+	  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">name0</span><span class="k">:-</span><span class="nv">$name</span><span class="si">}</span><span class="s2">&#34;</span>
+	<span class="o">}</span>
+	<span class="k">function</span> ext<span class="o">()</span>
+	<span class="o">{</span>
+	  <span class="nb">local</span> <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">##*/</span><span class="si">}</span>
+	  <span class="nb">local</span> <span class="nv">name0</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">name</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&#34;</span>
+	  <span class="nb">local</span> <span class="nv">ext</span><span class="o">=</span><span class="si">${</span><span class="nv">name0</span><span class="p">:+</span><span class="si">${</span><span class="nv">name</span><span class="p">#</span><span class="nv">$name0</span><span class="si">}}</span>
+	  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ext</span><span class="k">:-</span><span class="p">.</span><span class="si">}</span><span class="s2">&#34;</span>
+	<span class="o">}</span>
 </code></pre></div><h1 id="commands">Commands</h1>
 <h2 id="ctrl-key-bound">CTRL Key Bound</h2>
 <ul>
@@ -150,16 +149,16 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 </ul>
 <h1 id="scripts">Scripts</h1>
 <h2 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find -type f -name <span style="color:#e6db74">&#34;name.ext&#34;</span> | <span style="color:#66d9ef">while</span> read i; <span style="color:#66d9ef">do</span> mv $i $i%.ext; <span style="color:#66d9ef">done</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">find -type f -name <span class="s2">&#34;name.ext&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span> <span class="k">do</span> mv <span class="nv">$i</span> <span class="nv">$i</span>%.ext<span class="p">;</span> <span class="k">done</span>
 </code></pre></div><h2 id="rot13-encryption">Rot13 Encryption</h2>
 <p>In a file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span> | tr <span style="color:#e6db74">&#39;a-zA-Z&#39;</span> <span style="color:#e6db74">&#39;n-za-mN-Z-A-M&#39;</span>
-exit <span style="color:#ae81ff">0</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> <span class="p">|</span> tr <span class="s1">&#39;a-zA-Z&#39;</span> <span class="s1">&#39;n-za-mN-Z-A-M&#39;</span>
+<span class="nb">exit</span> <span class="m">0</span>
 </code></pre></div><h2 id="rename-multiple-files">Rename multiple files</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> files in <span style="color:#66d9ef">$(</span>ls .<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span>
-	  newname<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $files | sed <span style="color:#e6db74">&#39;s/oldtext/newtext/g&#39;</span><span style="color:#e6db74">`</span>;
-	  mv $files $newname;
-<span style="color:#66d9ef">done</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> files in <span class="k">$(</span>ls .<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+	  <span class="nv">newname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$files</span> <span class="p">|</span> sed <span class="s1">&#39;s/oldtext/newtext/g&#39;</span><span class="sb">`</span><span class="p">;</span>
+	  mv <span class="nv">$files</span> <span class="nv">$newname</span><span class="p">;</span>
+<span class="k">done</span>
 </code></pre></div><h1 id="syntax">Syntax</h1>
 <h4 id="various-bash-syntax-rules">Various Bash syntax rules</h4>
 <ul>
@@ -220,143 +219,143 @@ exit <span style="color:#ae81ff">0</span>
 <p>To prevent commands to overlap on the prompt, add a <code>\</code> before every <code>[</code> and <code>]</code> in your bash prompt (<code>$PS1</code>)</p>
 <div class="edit-meta">
 
-<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/languages/Bash.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/languages/awk/" title="Awk"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Awk</a>
-<a class="nav nav-next" href="https://example.com/languages/c/" title="C">Next - C <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/languages/Bash.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/" title="Awk"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Awk</a>
+<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/" title="C">Next - C <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
-<li class=""><a href="https://example.com">Home</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/">Home</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/android/android/">Android</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
-<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
-<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
-<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/aws/">AWS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/docker/">Docker</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/">System Design</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/">Frontend<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
-<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
-<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
-<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/css/">Css</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/">D3</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/">Npm</a></li>
 </ul>
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/">Languages<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
-<li class="active"><a href="https://example.com/languages/bash/">Bash</a></li>
-<li class=""><a href="https://example.com/languages/c/">C</a></li>
-<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
-<li class=""><a href="https://example.com/languages/go/">Go</a></li>
-<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
-<li class=""><a href="https://example.com/languages/python/">Python</a></li>
-<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/">Awk</a></li>
+<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">Bash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/">C</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/go/">Go</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/">Lua</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">Python</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
 </ul>
   
 </li>
-<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
-<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
-</ul>
-  
-</li>
-
-<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
-<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
-<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
-<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
-<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
-<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
-<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
-<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
-<li class=""><a href="https://example.com/programs/git/">Git</a></li>
-<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
-<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
-<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
-<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
-<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
-<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
-<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
-<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
-<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
-<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
-<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
-<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
-<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
-<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
-<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
-<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
-<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/curl/">Curl</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/flash/">Flash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/git/">Git</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/grub/">Grub</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/screen/">Screen</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/vim/">ViM</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
-<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
-<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
-<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
-<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
-<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
-<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
-<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
-<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
-<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
   
 </li>

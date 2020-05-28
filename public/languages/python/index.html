@@ -3,27 +3,27 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Python - Personal Wiki</title>
+<title>Python - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
-<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://example.com/languages/python/">
-<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://example.com/js/bundle.js"></script><style>
-:root {}
+<script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
+:root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Python" />
 <meta property="og:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/languages/python/" />
-<meta property="og:image" content="https://example.com/images/og-image.png"/>
-<meta property="og:site_name" content="Personal Wiki" />
+<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/languages/python/" />
+<meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+<meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Python"/>
 <meta name="twitter:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes."/>
@@ -31,15 +31,14 @@
 <meta itemprop="description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes.">
 
 <meta itemprop="wordCount" content="973">
-<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+<meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 
 
-<meta itemprop="keywords" content="" /></head>
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/custom.css">
+</head>
 <body><div class="container"><header>
-<h1>Personal Wiki</h1>
-
- <span class="version">Version 0.9.1</span>
+<h1>Gianluca Fiore Personal Wiki</h1>
 <a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
 
@@ -47,8 +46,8 @@
 <div class="global-menu">
 <nav>
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+<li><a href="/Personal-Wiki/">Home</a></li>
+<li><a href="/Personal-Wiki/search">Search</a></li></ul>
 </nav>
 </div>
 <div class="content-container">
@@ -73,33 +72,33 @@
 </ul>
 <h3 id="decorators">Decorators</h3>
 <p>Write a function like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">func1</span>(func):
-	   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>():
-			<span style="color:#75715e"># code to execute before func()</span>
-			func()
-			<span style="color:#75715e"># code to execute after func()</span>
-	   <span style="color:#66d9ef">return</span> wrapper
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+	   <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
+			<span class="c1"># code to execute before func()</span>
+			<span class="n">func</span><span class="p">()</span>
+			<span class="c1"># code to execute after func()</span>
+	   <span class="k">return</span> <span class="n">wrapper</span>
 </code></pre></div><p>and then pass to a function this way:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@func1</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">func</span>():
-	<span style="color:#75715e"># function code</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="nd">@func1</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+	<span class="c1"># function code</span>
 </code></pre></div><h3 id="metaclasses">Metaclasses</h3>
 <p>Syntax:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ClassName <span style="color:#f92672">=</span> type(
-	   <span style="color:#e6db74">&#39;ClassName&#39;</span>,
-	   (object, ),
-	   {<span style="color:#e6db74">&#39;abc&#39;</span>: def, <span style="color:#e6db74">&#39;esse&#39;</span>: erre}
-)
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ClassName</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span>
+	   <span class="s1">&#39;ClassName&#39;</span><span class="p">,</span>
+	   <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span>
+	   <span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">:</span> <span class="n">def</span><span class="p">,</span> <span class="s1">&#39;esse&#39;</span><span class="p">:</span> <span class="n">erre</span><span class="p">}</span>
+<span class="p">)</span>
 </code></pre></div><p>where <code>ClassName</code> is the name of the metaclass, <code>(object,)</code> is a tuple with all the classes to inherit and the following dictionary is the namespace of the metaclass. To refer to an instance of a metaclasse, use <code>cls</code> instead of <code>self</code></p>
 <p>Then to instantiate a metaclass:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">MyClass <span style="color:#f92672">=</span> ClassName(<span style="color:#e6db74">&#39;MyClass&#39;</span>, (object, ), {})
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">MyClass</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="s1">&#39;MyClass&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span> <span class="p">{})</span>
 </code></pre></div><p>or it&rsquo;s possible to instantiate the metaclass directly when creating a class, like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>(object):
-	  __metaclass__ <span style="color:#f92672">=</span> MyMetaClass
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+	  <span class="vm">__metaclass__</span> <span class="o">=</span> <span class="n">MyMetaClass</span>
 </code></pre></div><h3 id="set-operations">Set operations</h3>
 <p>various operations possible over sets. Examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>,}
-B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>}
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,}</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">}</span>
 </code></pre></div><ul>
 <li><code>A | B</code> -&gt; <code>set([1, 2, 3, 4, 5, 6, 7])</code></li>
 <li><code>A &amp; B</code> -&gt; <code>set([3])</code></li>
@@ -128,23 +127,22 @@ B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">3</span>, <s
 <li><code>collections.OrderedDict</code> = A dictionary that remembers the order in which values have been inserted and when iterated upon, returns value in that exact order. Consequently, 2 OrderedDict with the same values but in a different order will not be considered equals, whereas a 2 normal dictionaries would</li>
 </ul>
 <h3 id="named-tuples">Named tuples</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Point <span style="color:#f92672">=</span> collections<span style="color:#f92672">.</span>namedtuple(<span style="color:#e6db74">&#39;Point&#39;</span>, [<span style="color:#e6db74">&#39;x&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>])
-p <span style="color:#f92672">=</span> Point(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">2.0</span>)
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Point</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Point&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">])</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
 </code></pre></div><h3 id="dis">Dis</h3>
 <ul>
 <li><code>dis.dis(code_object)</code> = Disassemble un code_object</li>
 </ul>
 <h3 id="itertools">Itertools</h3>
 <p>Permutations</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> itertools<span style="color:#f92672">.</span>permutations([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]):
-	<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(str(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> p))
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span>
+	<span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">p</span><span class="p">))</span>
 </code></pre></div><p>prints all the possible combinations</p>
-<pre><code>1234
-1243
-1324
-1342
-</code></pre>
-<p>etc.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="mi">1234</span>
+<span class="mi">1243</span>
+<span class="mi">1324</span>
+<span class="mi">1342</span>
+</code></pre></div><p>etc.</p>
 <h3 id="json">Json</h3>
 <ul>
 <li><code>python -m json.tool &lt; file.json</code> = Pretty JSON printer</li>
@@ -191,143 +189,143 @@ p <span style="color:#f92672">=</span> Point(x<span style="color:#f92672">=</spa
 </ul>
 <div class="edit-meta">
 
-<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/languages/Python.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/languages/lua/" title="Lua"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Lua</a>
-<a class="nav nav-next" href="https://example.com/languages/sed/" title="Sed">Next - Sed <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/languages/Python.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/" title="Lua"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Lua</a>
+<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/" title="Sed">Next - Sed <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
-<li class=""><a href="https://example.com">Home</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/">Home</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/android/android/">Android</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
-<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
-<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
-<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/aws/">AWS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/docker/">Docker</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/">System Design</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/">Frontend<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
-<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
-<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
-<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/css/">Css</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/">D3</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/">Npm</a></li>
 </ul>
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/">Languages<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
-<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
-<li class=""><a href="https://example.com/languages/c/">C</a></li>
-<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
-<li class=""><a href="https://example.com/languages/go/">Go</a></li>
-<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
-<li class="active"><a href="https://example.com/languages/python/">Python</a></li>
-<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/">Awk</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">Bash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/">C</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/go/">Go</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/">Lua</a></li>
+<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">Python</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
 </ul>
   
 </li>
-<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
-<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
-</ul>
-  
-</li>
-
-<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
-<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
-<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
-<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
-<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
-<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
-<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
-<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
-<li class=""><a href="https://example.com/programs/git/">Git</a></li>
-<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
-<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
-<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
-<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
-<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
-<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
-<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
-<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
-<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
-<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
-<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
-<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
-<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
-<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
-<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
-<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
-<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/curl/">Curl</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/flash/">Flash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/git/">Git</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/grub/">Grub</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/screen/">Screen</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/vim/">ViM</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
-<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
-<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
-<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
-<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
-<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
-<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
-<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
-<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
-<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
   
 </li>

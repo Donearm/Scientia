@@ -3,27 +3,27 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Mutt - Personal Wiki</title>
+<title>Mutt - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
-<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://example.com/programs/mutt/">
-<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://example.com/js/bundle.js"></script><style>
-:root {}
+<script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
+:root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Mutt" />
 <meta property="og:description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/programs/mutt/" />
-<meta property="og:image" content="https://example.com/images/og-image.png"/>
-<meta property="og:site_name" content="Personal Wiki" />
+<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/" />
+<meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+<meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Mutt"/>
 <meta name="twitter:description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i."/>
@@ -31,15 +31,14 @@
 <meta itemprop="description" content="General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &lt;Return&gt; = display-message &lt;Tab&gt;	= jump to the next new message @	= show the author&rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &lt;Return&gt; = go down one line &lt;Space&gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &lsquo;Fcc&rsquo; mailbox i.">
 
 <meta itemprop="wordCount" content="587">
-<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+<meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 
 
-<meta itemprop="keywords" content="" /></head>
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/custom.css">
+</head>
 <body><div class="container"><header>
-<h1>Personal Wiki</h1>
-
- <span class="version">Version 0.9.1</span>
+<h1>Gianluca Fiore Personal Wiki</h1>
 <a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
 
@@ -47,8 +46,8 @@
 <div class="global-menu">
 <nav>
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+<li><a href="/Personal-Wiki/">Home</a></li>
+<li><a href="/Personal-Wiki/search">Search</a></li></ul>
 </nav>
 </div>
 <div class="content-container">
@@ -116,179 +115,171 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.</
 </ul>
 <h2 id="highlight-according-to-a-pattern">Highlight according to a pattern</h2>
 <p>You can play with these for a start (probably want to get rid of
-<code>~x \@\</code>hostname`` stuff):</p>
-<pre><code>~F
-</code></pre>
-<p>Flagged as !  color index cyan default</p>
-<pre><code> ~Q   (~Q ~x \@`hostname`)
-</code></pre>
-<p>Replied to  color index yellow default</p>
-<pre><code>~p   (~p ~x \@`hostname`)   (~x \@`hostname`)
-</code></pre>
-<p>Answers to my mails  color index magenta default</p>
-<pre><code>~P   (~P ~x \@`hostname`)
-</code></pre>
-<p>Answered by myself  color index green default</p>
-<pre><code>~N (~P ~p ~Q ~x \@`hostname`)
-</code></pre>
-<p>New concerning myself  color index red default</p>
+<code>~x \@</code>`<code>hostname</code>` stuff):</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~F</span>
+</code></pre></div><p>Flagged as !  color index cyan default</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"> <span class="na">~Q   (~Q ~x \@`hostname`)</span>
+</code></pre></div><p>Replied to  color index yellow default</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~p   (~p ~x \@`hostname`)   (~x \@`hostname`)</span>
+</code></pre></div><p>Answers to my mails  color index magenta default</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~P   (~P ~x \@`hostname`)</span>
+</code></pre></div><p>Answered by myself  color index green default</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~N (~P ~p ~Q ~x \@`hostname`)</span>
+</code></pre></div><p>New concerning myself  color index red default</p>
 <h2 id="tagging">Tagging</h2>
 <p>TagPatterns</p>
-<pre><code>T ~m 1-700
-</code></pre>
-<p>to mark messages from 1 to 700</p>
-<pre><code>T ~d 01/1/2006-24/2/2006
-</code></pre>
-<p>to mark messages in that time span</p>
-<pre><code>T ~d &gt;1d
-</code></pre>
-<p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~m 1-700</span>
+</code></pre></div><p>to mark messages from 1 to 700</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~d 01/1/2006-24/2/2006</span>
+</code></pre></div><p>to mark messages in that time span</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~d &gt;1d</span>
+</code></pre></div><p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
 <h2 id="see-what-charset-is-being-used">See what charset is being used</h2>
 <p>In mutt, type <code>:set &amp;charset ?charset</code></p>
 <h2 id="macros">Macros</h2>
-<pre><code>macro index,pager d &quot;&lt;save-message&gt;=MAILBOX&lt;enter&gt;&lt;enter&gt;&quot; &quot;Trash&quot;
-</code></pre><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
-<pre><code>macro index A &quot;WNK&lt;save-message&gt;=MAILBOX&lt;enter&gt;&quot; &quot;Archive&quot;
-</code></pre><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">macro index,pager d &#34;&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&lt;enter&gt;&#34; &#34;Trash&#34;</span>
+</code></pre></div><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
+<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">macro index A &#34;WNK&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&#34; &#34;Archive&#34;</span>
+</code></pre></div><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
 <div class="edit-meta">
 
-<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/programs/Mutt.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/programs/mplayer/" title="MPlayer"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - MPlayer</a>
-<a class="nav nav-next" href="https://example.com/programs/rtorrent/" title="Rtorrent">Next - Rtorrent <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/programs/Mutt.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/" title="MPlayer"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - MPlayer</a>
+<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/" title="Rtorrent">Next - Rtorrent <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
-<li class=""><a href="https://example.com">Home</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/">Home</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/android/android/">Android</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
-<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
-<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
-<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/aws/">AWS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/docker/">Docker</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/">System Design</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/">Frontend<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
-<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
-<li class=""><a href="https://example.com/frontend/jquery/">jQuery</a></li>
-<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/css/">Css</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/">D3</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/">Npm</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
-<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
-<li class=""><a href="https://example.com/languages/c/">C</a></li>
-<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
-<li class=""><a href="https://example.com/languages/go/">Go</a></li>
-<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
-<li class=""><a href="https://example.com/languages/python/">Python</a></li>
-<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/">Awk</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">Bash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/">C</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/go/">Go</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/">Lua</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">Python</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
 </ul>
   
 </li>
-<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
-<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
-</ul>
-  
-</li>
-
-<li class="parent has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark opened">-</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
-<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
-<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
-<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
-<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
-<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
-<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
-<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
-<li class=""><a href="https://example.com/programs/git/">Git</a></li>
-<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
-<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
-<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
-<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
-<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
-<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
-<li class="active"><a href="https://example.com/programs/mutt/">Mutt</a></li>
-<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
-<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
-<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
-<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
-<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
-<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
-<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
-<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/">Programs<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
-<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
-<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/curl/">Curl</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/flash/">Flash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/git/">Git</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/grub/">Grub</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
+<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/screen/">Screen</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/vim/">ViM</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
-<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
-<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
-<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
-<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
-<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
-<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
-<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
-<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
-<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
   
 </li>

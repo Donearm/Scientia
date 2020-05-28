@@ -3,28 +3,28 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>jQuery - Personal Wiki</title>
+<title>jQuery - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
-<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://example.com/frontend/jquery/">
-<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://example.com/js/bundle.js"></script><style>
-:root {}
+<script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
+:root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="jQuery" />
 <meta property="og:description" content="Selectors $(&#39;.foo&#39;).addClass(&#34;foobar&#34;); $(&#39;.foo&#39;).removeClass(&#34;foobar&#34;); Attribute and Style manipulations $(&#39;.foo&#39;).attr(&#34;new-attr&#34;, &#34;new-value&#34;); $(&#39;.foo&#39;).css(&#34;background&#34;, &#34;white&#34;); Ajax $.getJSON(&#39;http://resource.json&#39;, doSomething); $.ajax({ url: &#39;http://resource.txt&#39;, dataType: &#39;text&#39;, type: &#39;GET&#39;, success: doSomething }); Append and Prepend nodes $(&#39;.foo&#39;).append(&#39;&lt;div/&gt;&#39;); $(&#39;.foo&#39;).prepend(&#39;&lt;div/&gt;&#39;); Listening to events $(&#39;.foo&#39;).on(&#39;click&#39;, clickHandler); Removing elements $(&#39;.foo&#39;).remove(); Content manipulation $(&#39;.foo&#39;).text(&#39;Hello World!&#39;); $(&#39;.foo&#39;).html(&#39;&lt;div class=&#34;bar&#34;&gt;Hello&lt;/div&gt;&#39;); inserting a new element after each li element
 $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() works the opposite way. The .empty() function will completely remove all children of an element" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/frontend/jquery/" />
-<meta property="og:image" content="https://example.com/images/og-image.png"/>
-<meta property="og:site_name" content="Personal Wiki" />
+<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/" />
+<meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
+<meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+<meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="jQuery"/>
 <meta name="twitter:description" content="Selectors $(&#39;.foo&#39;).addClass(&#34;foobar&#34;); $(&#39;.foo&#39;).removeClass(&#34;foobar&#34;); Attribute and Style manipulations $(&#39;.foo&#39;).attr(&#34;new-attr&#34;, &#34;new-value&#34;); $(&#39;.foo&#39;).css(&#34;background&#34;, &#34;white&#34;); Ajax $.getJSON(&#39;http://resource.json&#39;, doSomething); $.ajax({ url: &#39;http://resource.txt&#39;, dataType: &#39;text&#39;, type: &#39;GET&#39;, success: doSomething }); Append and Prepend nodes $(&#39;.foo&#39;).append(&#39;&lt;div/&gt;&#39;); $(&#39;.foo&#39;).prepend(&#39;&lt;div/&gt;&#39;); Listening to events $(&#39;.foo&#39;).on(&#39;click&#39;, clickHandler); Removing elements $(&#39;.foo&#39;).remove(); Content manipulation $(&#39;.foo&#39;).text(&#39;Hello World!&#39;); $(&#39;.foo&#39;).html(&#39;&lt;div class=&#34;bar&#34;&gt;Hello&lt;/div&gt;&#39;); inserting a new element after each li element
@@ -34,15 +34,14 @@ $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() 
 $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() works the opposite way. The .empty() function will completely remove all children of an element">
 
 <meta itemprop="wordCount" content="71">
-<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+<meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 
 
-<meta itemprop="keywords" content="" /></head>
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/custom.css">
+</head>
 <body><div class="container"><header>
-<h1>Personal Wiki</h1>
-
- <span class="version">Version 0.9.1</span>
+<h1>Gianluca Fiore Personal Wiki</h1>
 <a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. and related topics at the moment</p>
 
@@ -50,179 +49,179 @@ $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() 
 <div class="global-menu">
 <nav>
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="https://twitter.com/thingsym">Twitter</a></li></ul>
+<li><a href="/Personal-Wiki/">Home</a></li>
+<li><a href="/Personal-Wiki/search">Search</a></li></ul>
 </nav>
 </div>
 <div class="content-container">
 <main><h1>jQuery</h1>
 <h3 id="selectors">Selectors</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;foobar&#34;</span>);
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">removeClass</span>(<span style="color:#e6db74">&#34;foobar&#34;</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&#34;foobar&#34;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s2">&#34;foobar&#34;</span><span class="p">);</span>
 </code></pre></div><h3 id="attribute-and-style-manipulations">Attribute and Style manipulations</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;new-attr&#34;</span>, <span style="color:#e6db74">&#34;new-value&#34;</span>);
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;background&#34;</span>, <span style="color:#e6db74">&#34;white&#34;</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;new-attr&#34;</span><span class="p">,</span> <span class="s2">&#34;new-value&#34;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&#34;background&#34;</span><span class="p">,</span> <span class="s2">&#34;white&#34;</span><span class="p">);</span>
 </code></pre></div><h3 id="ajax">Ajax</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">getJSON</span>(<span style="color:#e6db74">&#39;http://resource.json&#39;</span>, <span style="color:#a6e22e">doSomething</span>);
-<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://resource.txt&#39;</span>,
-    <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;text&#39;</span>,
-    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
-    <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">doSomething</span>
-});
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s1">&#39;http://resource.json&#39;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://resource.txt&#39;</span><span class="p">,</span>
+    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+    <span class="nx">success</span><span class="o">:</span> <span class="nx">doSomething</span>
+<span class="p">});</span>
 </code></pre></div><h3 id="append-and-prepend-nodes">Append and Prepend nodes</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;&lt;div/&gt;&#39;</span>);
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">prepend</span>(<span style="color:#e6db74">&#39;&lt;div/&gt;&#39;</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;div/&gt;&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="s1">&#39;&lt;div/&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><h3 id="listening-to-events">Listening to events</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">clickHandler</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">clickHandler</span><span class="p">);</span>
 </code></pre></div><h3 id="removing-elements">Removing elements</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">remove</span>();
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
 </code></pre></div><h3 id="content-manipulation">Content manipulation</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;Hello World!&#39;</span>);
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.foo&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;&lt;div class=&#34;bar&#34;&gt;Hello&lt;/div&gt;&#39;</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;&lt;div class=&#34;bar&#34;&gt;Hello&lt;/div&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><p>inserting a new element after each <code>li</code> element</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;li&#39;</span>).<span style="color:#a6e22e">after</span>(<span style="color:#e6db74">&#39;&lt;li&gt;Item&lt;/li&gt;&#39;</span>);
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;Item&lt;/li&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><p>obviously <code>.before()</code> works the opposite way. The <code>.empty()</code> function will completely remove all children of an element</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;ul&#39;</span>).<span style="color:#a6e22e">empty</span>();
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
 </code></pre></div><div class="edit-meta">
 
-<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/frontend/jQuery.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/frontend/d3/" title="D3"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - D3</a>
-<a class="nav nav-next" href="https://example.com/frontend/npm/" title="Npm">Next - Npm <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/frontend/jQuery.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/" title="D3"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - D3</a>
+<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/" title="Npm">Next - Npm <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
-<li class=""><a href="https://example.com">Home</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/">Home</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/android/">Android<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/android/android/">Android</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/devops/">DevOps<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/">DevOps<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/devops/aws/">AWS</a></li>
-<li class=""><a href="https://example.com/devops/docker/">Docker</a></li>
-<li class=""><a href="https://example.com/devops/kubernetes/">Kubernetes</a></li>
-<li class=""><a href="https://example.com/devops/system_design/">System Design</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/aws/">AWS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/docker/">Docker</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/kubernetes/">Kubernetes</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/devops/system_design/">System Design</a></li>
 </ul>
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://example.com/frontend/">Frontend<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/">Frontend<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/frontend/css/">Css</a></li>
-<li class=""><a href="https://example.com/frontend/d3/">D3</a></li>
-<li class="active"><a href="https://example.com/frontend/jquery/">jQuery</a></li>
-<li class=""><a href="https://example.com/frontend/npm/">Npm</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/css/">Css</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/d3/">D3</a></li>
+<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/jquery/">jQuery</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/frontend/npm/">Npm</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/languages/">Languages<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/languages/awk/">Awk</a></li>
-<li class=""><a href="https://example.com/languages/bash/">Bash</a></li>
-<li class=""><a href="https://example.com/languages/c/">C</a></li>
-<li class=""><a href="https://example.com/languages/common_lisp/">Common Lisp</a></li>
-<li class=""><a href="https://example.com/languages/go/">Go</a></li>
-<li class=""><a href="https://example.com/languages/lua/">Lua</a></li>
-<li class=""><a href="https://example.com/languages/python/">Python</a></li>
-<li class=""><a href="https://example.com/languages/sed/">Sed</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/awk/">Awk</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/bash/">Bash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/c/">C</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/common_lisp/">Common Lisp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/go/">Go</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/lua/">Lua</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/python/">Python</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://example.com/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/compose_key/">Compose Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/debian/">Debian</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/firewall/">Firewall</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/framebuffer/">Framebuffer</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/kernel/">Kernel</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/selinux/">SELinux</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/systemd/">SystemD</a></li>
-<li class=""><a href="https://example.com/operating_systems/linux/x/">Xorg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li>
 </ul>
   
 </li>
-<li class=""><a href="https://example.com/operating_systems/nixos/nixos_commands/">NixOS</a></li>
-<li class=""><a href="https://example.com/operating_systems/windows/windows_commands/">Windows Commands</a></li>
-</ul>
-  
-</li>
-
-<li class=" has-sub-menu"><a href="https://example.com/programs/">Programs<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://example.com/programs/chromium/">Chromium</a></li>
-<li class=""><a href="https://example.com/programs/curl/">Curl</a></li>
-<li class=""><a href="https://example.com/programs/emacs/">Emacs</a></li>
-<li class=""><a href="https://example.com/programs/e-uae/">E-Uae</a></li>
-<li class=""><a href="https://example.com/programs/ffmpeg/">Ffmpeg</a></li>
-<li class=""><a href="https://example.com/programs/firefox/">Firefox</a></li>
-<li class=""><a href="https://example.com/programs/flash/">Flash</a></li>
-<li class=""><a href="https://example.com/programs/gimp/">Gimp</a></li>
-<li class=""><a href="https://example.com/programs/git/">Git</a></li>
-<li class=""><a href="https://example.com/programs/gmail/">GMail</a></li>
-<li class=""><a href="https://example.com/programs/gnome/">Gnome</a></li>
-<li class=""><a href="https://example.com/programs/grub/">Grub</a></li>
-<li class=""><a href="https://example.com/programs/httrack/">HTTrack</a></li>
-<li class=""><a href="https://example.com/programs/imagemagick-convert/">Imagemagick Convert</a></li>
-<li class=""><a href="https://example.com/programs/mplayer/">MPlayer</a></li>
-<li class=""><a href="https://example.com/programs/mutt/">Mutt</a></li>
-<li class=""><a href="https://example.com/programs/rtorrent/">Rtorrent</a></li>
-<li class=""><a href="https://example.com/programs/screen/">Screen</a></li>
-<li class=""><a href="https://example.com/programs/ssh/">Ssh</a></li>
-<li class=""><a href="https://example.com/programs/tcpdump/">Tcpdump</a></li>
-<li class=""><a href="https://example.com/programs/tmux/">Tmux</a></li>
-<li class=""><a href="https://example.com/programs/urxvt/">URxvt</a></li>
-<li class=""><a href="https://example.com/programs/vim/">ViM</a></li>
-<li class=""><a href="https://example.com/programs/wireshark/">Wireshark</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/theory/">Computer Science Theory<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/theory/big_oh_notation/">Big Oh Notation</a></li>
-<li class=""><a href="https://example.com/theory/data_structures/">Data Structures</a></li>
-<li class=""><a href="https://example.com/theory/set_theory/">Set Theory</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/chromium/">Chromium</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/curl/">Curl</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/emacs/">Emacs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/e-uae/">E-Uae</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ffmpeg/">Ffmpeg</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/firefox/">Firefox</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/flash/">Flash</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gimp/">Gimp</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/git/">Git</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/gnome/">Gnome</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/grub/">Grub</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/httrack/">HTTrack</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/mutt/">Mutt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/screen/">Screen</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/ssh/">Ssh</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tcpdump/">Tcpdump</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/tmux/">Tmux</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/urxvt/">URxvt</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/vim/">ViM</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/programs/wireshark/">Wireshark</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://example.com/various/">Various (I.T.)<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/">Computer Science Theory<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://example.com/various/advertising_and_marketing/">Advertising and Marketing</a></li>
-<li class=""><a href="https://example.com/various/cryptocurrencies/">Cryptocurrencies</a></li>
-<li class=""><a href="https://example.com/various/hardware/">Hardware</a></li>
-<li class=""><a href="https://example.com/various/load_balancing/">Load Balancing</a></li>
-<li class=""><a href="https://example.com/various/markdown/">Markdown</a></li>
-<li class=""><a href="https://example.com/various/mongodb/">MongoDB</a></li>
-<li class=""><a href="https://example.com/various/networks/">Networks</a></li>
-<li class=""><a href="https://example.com/various/samba_and_nfs/">Samba and Nfs</a></li>
-<li class=""><a href="https://example.com/various/sqlite/">SQLite</a></li>
-<li class=""><a href="https://example.com/various/tiddlywiki/">Tiddlywiki</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/big_oh_notation/">Big Oh Notation</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/data_structures/">Data Structures</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/theory/set_theory/">Set Theory</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/cryptocurrencies/">Cryptocurrencies</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/hardware/">Hardware</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
   
 </li>

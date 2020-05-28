@@ -1,0 +1,4 @@
+:not(pre) > code {
+	background-color: #38405f;
+	color: #fafafa;
+}

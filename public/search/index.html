@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Samba and Nfs - Gianluca Fiore Personal Wiki</title>
+<title>Search - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.71.1" />
 <link href="https://www.gianlucafiore.it/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">
+<link rel="canonical" href="https://www.gianlucafiore.it/Personal-Wiki/search/">
 <link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://www.gianlucafiore.it/Personal-Wiki/css/chroma.min.css">
@@ -16,24 +16,24 @@
 <script src="https://www.gianlucafiore.it/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
-<meta property="og:title" content="Samba and Nfs" />
-<meta property="og:description" content="Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer" />
+<meta property="og:title" content="Search" />
+<meta property="og:description" content="var search = instantsearch({ indexName: &#39;Gianluca Fiore Personal Wiki&#39;, searchClient: algoliasearch( &#39;DRRGB5NMNG&#39;, &#39;b66dcbe0616bd937b0436433b526ee27&#39; ), routing: true, }); const renderHits = (renderOptions, isFirstRender) = { const { hits } = renderOptions; document.querySelector(&#39;#hits&#39;).innerHTML = ` ${hits .map( item = `${ item.title }${ dayjs(item.lastmod).format(&#34;YYYY/MM/DD&#34;) } - ${ item.description ? item.description : item.content.length  200 ? item.content.substring( 0, 200 ) &#43; &#39;...&#39; : item.content }
+` ) ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/" />
+<meta property="og:url" content="https://www.gianlucafiore.it/Personal-Wiki/search/" />
 <meta property="og:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
-<meta name="twitter:title" content="Samba and Nfs"/>
-<meta name="twitter:description" content="Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer"/>
-<meta itemprop="name" content="Samba and Nfs">
-<meta itemprop="description" content="Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer">
+<meta name="twitter:title" content="Search"/>
+<meta name="twitter:description" content="var search = instantsearch({ indexName: &#39;Gianluca Fiore Personal Wiki&#39;, searchClient: algoliasearch( &#39;DRRGB5NMNG&#39;, &#39;b66dcbe0616bd937b0436433b526ee27&#39; ), routing: true, }); const renderHits = (renderOptions, isFirstRender) = { const { hits } = renderOptions; document.querySelector(&#39;#hits&#39;).innerHTML = ` ${hits .map( item = `${ item.title }${ dayjs(item.lastmod).format(&#34;YYYY/MM/DD&#34;) } - ${ item.description ? item.description : item.content.length  200 ? item.content.substring( 0, 200 ) &#43; &#39;...&#39; : item.content }
+` ) ."/>
+<meta itemprop="name" content="Search">
+<meta itemprop="description" content="var search = instantsearch({ indexName: &#39;Gianluca Fiore Personal Wiki&#39;, searchClient: algoliasearch( &#39;DRRGB5NMNG&#39;, &#39;b66dcbe0616bd937b0436433b526ee27&#39; ), routing: true, }); const renderHits = (renderOptions, isFirstRender) = { const { hits } = renderOptions; document.querySelector(&#39;#hits&#39;).innerHTML = ` ${hits .map( item = `${ item.title }${ dayjs(item.lastmod).format(&#34;YYYY/MM/DD&#34;) } - ${ item.description ? item.description : item.content.length  200 ? item.content.substring( 0, 200 ) &#43; &#39;...&#39; : item.content }
+` ) .">
 
-<meta itemprop="wordCount" content="41">
+<meta itemprop="wordCount" content="94">
 <meta itemprop="image" content="https://www.gianlucafiore.it/Personal-Wiki/images/og-image.png"/>
 
 
@@ -54,17 +54,69 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Samba and Nfs</h1>
-<h3 id="mount-samba-shares-on-linux">Mount Samba shares on Linux</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mount -t smbfs -o <span class="nv">username</span><span class="o">=</span>david,password<span class="o">=</span><span class="nb">test</span> //pc_con_smbd/david /mnt/local_directory
-</code></pre></div><p>and add to fstab:</p>
-<div class="highlight"><pre class="chroma"><code class="language-posh" data-lang="posh"><span class="p">//</span><span class="n">pc_con_smbd</span><span class="p">/</span><span class="n">david</span> <span class="p">/</span><span class="n">mnt</span><span class="p">/</span><span class="n">local_directory</span> <span class="n">smbfs</span> <span class="n">rw</span><span class="p">,</span><span class="n">username</span><span class="p">=</span><span class="n">david</span><span class="p">,</span><span class="n">password</span><span class="p">=</span><span class="n">test</span><span class="p">,</span><span class="n">noauto</span>
-</code></pre></div><h3 id="configure-network-printer-in-cups">Configure network printer in Cups</h3>
-<p>with <code>lpinfo -v</code> can be listed all network protocols, with URIs, available on the local computer</p>
+<main><h1>Search</h1>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js" integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+<div id="searchbox"></div>
+<div id="stats"></div>
+<div id="hits"></div>
+<div id="pagination"></div>
+
+<script>
+var search = instantsearch({
+  indexName: 'Gianluca Fiore Personal Wiki',
+  searchClient: algoliasearch(
+    'DRRGB5NMNG',
+    'b66dcbe0616bd937b0436433b526ee27'
+  ),
+  routing: true,
+});
+
+const renderHits = (renderOptions, isFirstRender) => {
+  const { hits } = renderOptions;
+
+  document.querySelector('#hits').innerHTML = `
+    ${hits
+      .map(
+        item =>
+          `<div class="ais-Hits-item"><h3><a href="${ item.permalink }">${ item.title }</a></h3><p><span class="lastmod">${ dayjs(item.lastmod).format("YYYY/MM/DD") }</span> - ${ item.description ? item.description : item.content.length > 200 ? item.content.substring( 0, 200 ) + '...' : item.content }</p></div>`
+      )
+      .join('')}
+  `;
+};
+
+const customHits = instantsearch.connectors.connectHits( renderHits );
+
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+    showReset: false,
+  }),
+
+  instantsearch.widgets.stats({
+    container: '#stats',
+  }),
+
+  customHits({
+    container: document.querySelector('#hits'),
+  }),
+
+  instantsearch.widgets.pagination({
+    container: '#pagination',
+    maxPages: 20,
+  })
+]);
+
+search.start();
+
+</script>
+
+
 <div class="edit-meta">
 
-<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/various/Samba_and_Nfs.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/" title="Networks"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Networks</a>
-<a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/" title="SQLite">Next - SQLite <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://github.com/Donearm/Personal-Wiki//edit/master/content/search.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-next" href="https://www.gianlucafiore.it/Personal-Wiki/android/" title="Android">Next - Android <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -187,7 +239,7 @@
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/">Various (I.T.)<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
@@ -197,7 +249,7 @@
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/markdown/">Markdown</a></li>
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/mongodb/">MongoDB</a></li>
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/networks/">Networks</a></li>
-<li class="active"><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
+<li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/samba_and_nfs/">Samba and Nfs</a></li>
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/sqlite/">SQLite</a></li>
 <li class=""><a href="https://www.gianlucafiore.it/Personal-Wiki/various/tiddlywiki/">Tiddlywiki</a></li>
 </ul>
