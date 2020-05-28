@@ -20,16 +20,24 @@ weight: 614
 
 #### H264
 
-	ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
+```bash
+ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
+```
 
 #### VP8
 
-	ffmpeg -i inputfile -vcodec libvpx -qmin 0 -qmax 50 -crf 10 -b:v 1M -acodec libvorbis outputfile.webm
+```bash
+ffmpeg -i inputfile -vcodec libvpx -qmin 0 -qmax 50 -crf 10 -b:v 1M -acodec libvorbis outputfile.webm
+```
 
 #### VP9
 
-	ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
+```bash
+ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
+```
 
 ### Gif to VP8
 
-	ffmpeg -y -i input.gif -r 16 -c:v libvpx -quality good -cpu-used 0 -b:v 2M -crf 12 -pix_fmt yuv420p -movflags faststart outputfile.webm
+```bash
+ffmpeg -y -i input.gif -r 16 -c:v libvpx -quality good -cpu-used 0 -b:v 2M -crf 12 -pix_fmt yuv420p -movflags faststart outputfile.webm
+```
