@@ -48,26 +48,32 @@ Enabling of HTTP/1.1 pipelining
 
 ### AwesomeBar tweaks
 
-	places.frecency.linkVisitBonus 100
-	places.frecency.typedVisitBonus 2000
-	places.frecency.bookmarkVisitBonus 150
-	places.frecency.embedVisitBonus 0
-	places.frecency.downloadVisitBonus 0
-	places.frecency.permRedirectVisitBonus 0
-	places.frecency.tempRedirectVisitBonus 0
-	browser.urlbar.maxRichResults 12
+```bash
+places.frecency.linkVisitBonus 100
+places.frecency.typedVisitBonus 2000
+places.frecency.bookmarkVisitBonus 150
+places.frecency.embedVisitBonus 0
+places.frecency.downloadVisitBonus 0
+places.frecency.permRedirectVisitBonus 0
+places.frecency.tempRedirectVisitBonus 0
+browser.urlbar.maxRichResults 12
+```
 
 ### Disable compatibility check for extensions
 
 
 To force compatibility between a newer Firefox version and a not yet updated extension, add two booleans:
 
-	extensions.checkUpdateSecurity  
-	extensions.checkCompatibility  
+```bash
+extensions.checkUpdateSecurity  
+extensions.checkCompatibility  
+```
 
 and set both to false. It could be needed to add another boolean, false too, like:
 
-	extensions.checkCompatibility.3.6b
+```bash
+extensions.checkCompatibility.3.6b
+```
 
 where 3.6b is the installed Firefox version
 
