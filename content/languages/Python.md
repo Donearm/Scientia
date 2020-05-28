@@ -128,10 +128,12 @@ for p in itertools.permutations([1, 2, 3, 4]):
 
 prints all the possible combinations
 	
-	1234
-	1243
-	1324
-	1342
+```python
+1234
+1243
+1324
+1342
+```
 
 etc.
 
