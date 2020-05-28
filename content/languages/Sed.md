@@ -6,7 +6,7 @@ bookCollapseSection: true
 
 ### Edit a string in multiple files at once
 
-```sed
+```bash
 for f in $files; do grep $oldstring $f | sed 's/$oldstring/$newstring/g' $f > ${f}.new ; done`
 ```
 
@@ -14,7 +14,7 @@ this actually outputs every edited files to a new file. To edit in place, use se
 
 ### Update copyright date at the change of year
 
-```sed
+```bash
 sed -i 's/2011\([, ] \)/2012\1/g'
 ```
 
