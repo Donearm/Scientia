@@ -6,7 +6,7 @@ weight: 590
 
 ## Windows Registry tweaks
 
-```c
+```registry
 * HKEY\_CURRENT\_USER\ControlPanel\Desktop
 	* MenuShowDelay = Delay in ms at the opening of menus. Default is 400
 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management
