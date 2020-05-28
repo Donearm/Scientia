@@ -17,9 +17,12 @@ Keyboard shortcuts to save game state. It could be necessary to use F11 instead 
 
 To make a floppy DD image:
 
-    dd if=/dev/zero of=blank.adf count=1760
+```bash
+dd if=/dev/zero of=blank.adf count=1760
+```
 
 To make a floppy HD image:
 
-    dd if=/dev/zero of=blank.adf count=3520
-
+```bash
+dd if=/dev/zero of=blank.adf count=3520
+```
