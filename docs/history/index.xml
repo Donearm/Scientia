@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>History on Gianluca Fiore Personal Wiki</title>
+    <link>https://donearm.github.io/Personal-Wiki/history/</link>
+    <description>Recent content in History on Gianluca Fiore Personal Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://donearm.github.io/Personal-Wiki/history/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yoga</title>
+      <link>https://donearm.github.io/Personal-Wiki/history/yoga/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/history/yoga/</guid>
+      <description>Random facts
+ Developed since the Indus civilization times Codified in sutras by Patanjali (around 1550 b.C.), with buddhistic influences Hatha Yoga (born in 900 a.C. but fully developed in 1400 by Yogi Swatmarama): introduces many postures, increases the importance of purifying the mind through the purification of the body  </description>
+    </item>
+    
+  </channel>
+</rss>
