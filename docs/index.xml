@@ -645,6 +645,16 @@ Text to be linked[^1] and then at the bottom of the file:
     </item>
     
     <item>
+      <title>SEO</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/seo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/various/seo/</guid>
+      <description>SEO audit checklist Roughly copied from Chase Reiner&amp;rsquo;s
+ Primary Core SEO Issues – The most common SEO issues or mistakes include focusing on content quantity instead of quality, incomplete on-page SEO optimization, overlooking the importance of well-constructed URLs, and focusing on too many keywords. Site Redirects To Preferred Version – You can check the documentation of your hosting provider to figure out how to set up 301 redirects to send your website visitors from the non-preferred URLs to the preferred version.</description>
+    </item>
+    
+    <item>
       <title>SQLite</title>
       <link>https://donearm.github.io/Personal-Wiki/various/sqlite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
