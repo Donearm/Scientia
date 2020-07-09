@@ -33,7 +33,7 @@
 <meta itemprop="description" content="A variegated collection of useful Linux commands, in no particular order
  testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.">
 
-<meta itemprop="wordCount" content="2368">
+<meta itemprop="wordCount" content="2419">
 <meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 
@@ -201,6 +201,8 @@
 <li><code>lastlog</code> = Display the last accesses of each daemons and users</li>
 <li><code>dig $domain +noall +answer</code> = Display the IP address of <code>$domain</code> with a TTL of how long the data is kept in local DNS cache</li>
 <li><code>file -i $filename</code> = Show the mimetype and locale of <code>$filename</code></li>
+<li><code>ddjvu --format=pdf file.djvu file.pdf</code> = Convert a djvu file to a pdf</li>
+<li><code>gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOUtputFile=file.pdf file_to_optimize.pdf</code> = Compress and optimize a pdf. <code>/ebook</code> means a medium quality, 150dpi. Alternatives are <code>/prepress</code>, which produces a 300dpi pdf, and <code>/screen</code>, for a 72dpi, good for screen reading only, pdf</li>
 </ul>
 <div class="edit-meta">
 
