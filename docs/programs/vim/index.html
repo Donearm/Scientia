@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>ViM - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
-<meta name="generator" content="Hugo 0.73.0" />
+<meta name="generator" content="Hugo 0.75.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/vim/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -35,7 +35,8 @@
 
 
 
-<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
+<meta itemprop="keywords" content="" />
+<link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
 <h1>Gianluca Fiore Personal Wiki</h1>
@@ -259,7 +260,7 @@
 <li><code>&quot;&quot;</code> = The &ldquo;unnamed&rdquo; register. Every operation gets written into it, no matter what it is or if it&rsquo;s specifically saved to another register</li>
 <li><code>&quot;_</code> = A &ldquo;discard&rdquo; register. Everything written into it is lost</li>
 <li><code>&quot;-</code> = The register that saves any delete operations that is smaller than 1 line length. If the operation is explicitly saved to another register, it won&rsquo;t be saved here too</li>
-<li>`&rdquo;/&rdquo; = The register containing the most recent search pattern</li>
+<li>`&quot;/&quot; = The register containing the most recent search pattern</li>
 <li><code>&quot;=expression&lt;Enter&gt;p&quot; = The </code>=<code>register evaluates the</code>expression<code>and</code>p<code>paste it at the current cursor position. For instance,</code>&quot;=5*5<Enter>p` will paste output 25</li>
 <li><code>:22put r</code> = Insert contents of register <code>r</code> at line 22. Without a number, defaults to the current line</li>
 </ul>

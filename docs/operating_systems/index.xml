@@ -5,11 +5,7 @@
     <link>https://donearm.github.io/Personal-Wiki/operating_systems/</link>
     <description>Recent content in Operating Systems on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    
-	<atom:link href="https://donearm.github.io/Personal-Wiki/operating_systems/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/operating_systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FreeBSD</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</link>

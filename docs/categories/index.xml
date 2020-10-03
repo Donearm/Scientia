@@ -5,10 +5,6 @@
     <link>https://donearm.github.io/Personal-Wiki/categories/</link>
     <description>Recent content in Categories on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    
-	<atom:link href="https://donearm.github.io/Personal-Wiki/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

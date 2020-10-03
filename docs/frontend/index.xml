@@ -5,11 +5,7 @@
     <link>https://donearm.github.io/Personal-Wiki/frontend/</link>
     <description>Recent content in Frontend on Gianluca Fiore Personal Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    
-	<atom:link href="https://donearm.github.io/Personal-Wiki/frontend/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css</title>
       <link>https://donearm.github.io/Personal-Wiki/frontend/css/</link>
@@ -44,7 +40,7 @@ $(&amp;#39;li&amp;#39;).after(&amp;#39;&amp;lt;li&amp;gt;Item&amp;lt;/li&amp;gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/frontend/npm/</guid>
-      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
+      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&#39; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
     </item>
     
   </channel>
