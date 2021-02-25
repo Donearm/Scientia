@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Sed - Gianluca Fiore Personal Wiki</title>
+<title>Raspberry Pi OS - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.80.0" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/sed/">
+<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
@@ -16,24 +16,21 @@
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
-<meta property="og:title" content="Sed" />
-<meta property="og:description" content="Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &#39;s/$oldstring/$newstring/g&#39; $f &gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&rsquo;t redirect the output
-Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g&#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;/w file&#39; &lt; inputfile = Save pattern from inputfile in file." />
+<meta property="og:title" content="Raspberry Pi OS" />
+<meta property="og:description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/sed/" />
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/" />
 <meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
-<meta name="twitter:title" content="Sed"/>
-<meta name="twitter:description" content="Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &#39;s/$oldstring/$newstring/g&#39; $f &gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&rsquo;t redirect the output
-Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g&#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;/w file&#39; &lt; inputfile = Save pattern from inputfile in file."/>
-<meta itemprop="name" content="Sed">
-<meta itemprop="description" content="Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &#39;s/$oldstring/$newstring/g&#39; $f &gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&rsquo;t redirect the output
-Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g&#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;/w file&#39; &lt; inputfile = Save pattern from inputfile in file.">
+<meta name="twitter:title" content="Raspberry Pi OS"/>
+<meta name="twitter:description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd  "/>
+<meta itemprop="name" content="Raspberry Pi OS">
+<meta itemprop="description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd  ">
 
-<meta itemprop="wordCount" content="366">
+<meta itemprop="wordCount" content="18">
 <meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 
@@ -55,35 +52,14 @@ Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Sed</h1>
-<h3 id="edit-a-string-in-multiple-files-at-once">Edit a string in multiple files at once</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> f in <span class="nv">$files</span><span class="p">;</span> <span class="k">do</span> grep <span class="nv">$oldstring</span> <span class="nv">$f</span> <span class="p">|</span> sed <span class="s1">&#39;s/$oldstring/$newstring/g&#39;</span> <span class="nv">$f</span> &gt; <span class="si">${</span><span class="nv">f</span><span class="si">}</span>.new <span class="p">;</span> <span class="k">done</span><span class="sb">`</span>
-</code></pre></div><p>this actually outputs every edited files to a new file. To edit in place, use sed with <code>-i</code> and don&rsquo;t redirect the output</p>
-<h3 id="update-copyright-date-at-the-change-of-year">Update copyright date at the change of year</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sed -i <span class="s1">&#39;s/2011\([, ] \)/2012\1/g&#39;</span>
-</code></pre></div><h3 id="various-syntax">Various syntax</h3>
+<main><h1>Raspberry Pi OS</h1>
 <ul>
-<li><code>s/pattern//2g</code> = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first</li>
-<li><code>'s/pattern/&amp;/w file' &lt; inputfile</code> = Save pattern from inputfile in file. Here <code>w</code> stands for write and the <code>&amp;</code> represents the pattern itself</li>
-<li><code>'/^#/ s/pattern//g'</code> = Remove pattern in all occurrences (g) that are in lines starting with <code>#</code> (^#). It&rsquo;s possible to use <code>'5 s/...//'</code> to remove only at the fifth line or <code>5,70</code> to remove only between the fifth and seventh line. Also with <code>/pattern1/,/pattern2/</code> to operate only on the text between pattern1 and pattern2</li>
-<li><code>/pattern/ a\insertion</code> = Add insertion after pattern</li>
-<li><code>/pattern/ i\insertion</code> = Add insertion before pattern</li>
-<li><code>/pattern/ c\newwholeline</code> = Substitute pattern with newwholeline</li>
-<li><code>s/&lt;[^&gt;]*&gt;//g</code> = Remove all html tags</li>
-<li><code>'1i Title, Name' file</code> = add an header of &ldquo;Title, Name&rdquo; at the first line in file (<code>1</code>)</li>
-<li><code>'1a string' file</code> = like above but add the string <strong>after</strong> the first line (<code>a</code> instead of <code>i</code>)</li>
-<li><code>'$a string' file</code> = add string after the last line of file (<code>$</code> means the end of the file here)</li>
-<li><code>'s/^/String: /' file</code> = prepend String: to the beginning of every line (<code>^</code>). Similarly, using <code>$</code> instead append String: at the end</li>
-<li><code>'/string/p' file</code> = sed as grep</li>
-<li><code>'/string/d' file</code> = print only lines not containing the string. As <code>grep -v</code></li>
-<li><code>'/pattern/q' file</code> = print file only up until sed encounters <code>pattern</code>. <code>q</code> here means to quit when the action succeeds</li>
-<li><code>'s/^../XX/' file</code> = replace first (<code>^</code>) 2 characters (<code>..</code>) of every line in file with XX. The <code>^</code> can be omitted, sed starts by default at the beginning of line. With <code>$</code> the same can be done for the end of line</li>
-<li><code>'s/.*/&quot;&amp;&quot;/' file</code> = add a character (<code>&quot;</code>) before and after a string. <code>&amp;</code> denotes the pattern matched, <code>.*</code> being the whole line/string</li>
+<li><a href="https://www.pragmaticlinux.com/2020/08/move-the-raspberry-pi-root-file-system-to-a-usb-drive/">Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd</a></li>
 </ul>
 <div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/languages/Sed.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/python/" title="Python"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Python</a>
-<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/" title="Operating Systems">Next - Operating Systems <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/operating_systems/linux/RaspberryPiOs.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/" title="Linux Commands"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Linux Commands</a>
+<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/" title="SELinux">Next - SELinux <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -122,7 +98,7 @@ Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/languages/">Languages<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/awk/">Awk</a></li>
@@ -132,17 +108,17 @@ Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/go/">Go</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/lua/">Lua</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/python/">Python</a></li>
-<li class="active"><a href="https://donearm.github.io/Personal-Wiki/languages/sed/">Sed</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/sed/">Sed</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
@@ -152,7 +128,7 @@ Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/">Kernel</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/">Linux Commands</a></li>
-<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/">Raspberry Pi OS</a></li>
+<li class="active"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/">Raspberry Pi OS</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/">SELinux</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/">Sysrq Key</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/">SystemD</a></li>

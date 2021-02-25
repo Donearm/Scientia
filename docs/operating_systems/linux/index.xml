@@ -74,6 +74,15 @@ acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;
     </item>
     
     <item>
+      <title>Raspberry Pi OS</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</guid>
+      <description> Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd  </description>
+    </item>
+    
+    <item>
       <title>SELinux</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
