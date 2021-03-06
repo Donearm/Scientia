@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Bash - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.81.0" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/bash/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -21,9 +21,10 @@
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/bash/" />
-<meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/bash/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
+
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
@@ -36,13 +37,8 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?">
 
-<meta itemprop="wordCount" content="1402">
-<meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
+<meta itemprop="wordCount" content="1402"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
 <h1>Gianluca Fiore Personal Wiki</h1>
