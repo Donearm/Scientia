@@ -150,3 +150,8 @@ Create ranking reports for each of the following:
 * Bounce rate
 * Scroll depth - how far visitors scroll down individual pages.
 
+# Google Analytics
+
+* [Reference for all Metrics & Dimensions](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
+* [Google Analytics Sheets Addons manual](https://developers.google.com/analytics/solutions/google-analytics-spreadsheet-add-on#optional-parameters)
+
