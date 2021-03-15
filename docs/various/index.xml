@@ -127,5 +127,14 @@ To use the file browser to insert a file into the wiki This:
 &amp;lt;html&amp;gt; &amp;lt;form target=&amp;#34;theFrameID&amp;#34;&amp;gt; &amp;lt;input type=file name=whichfile&amp;gt; &amp;lt;input type=button value=&amp;#34;View&amp;#34; onclick=&amp;#34;var frame=document.getElementById(this.form.target); this.form.action=&amp;#39;file:///&amp;#39;+this.form.whichfile.value; try { frame.style.display=&amp;#39;block&amp;#39;; this.form.done.disabled=false; this.form.submit(); } catch(e) { alert(e.description?e.description:e.toString()); }&amp;#34;&amp;gt; &amp;lt;input type=button name=done value=&amp;#34;Done&amp;#34; disabled onclick=&amp;#34;var frame=document.getElementById(this.form.target); frame.style.display=&amp;#39;none&amp;#39;; this.disabled=true;&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;iframe src=&amp;#34;&amp;#34; name=&amp;#34;theFrameID&amp;#34; id=&amp;#34;theFrameID&amp;#34; style=&amp;#34;display:none;background:#fff;width:100%;height:500px&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt; &amp;lt;/html&amp;gt; To show a text file with an iframe &amp;lt;html&amp;gt;&amp;lt;iframe src =&amp;#34;file:///C:\Users\Owner\Documents\testingtesting2.</description>
     </item>
     
+    <item>
+      <title>Zfs</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/zfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/various/zfs/</guid>
+      <description>Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS  </description>
+    </item>
+    
   </channel>
 </rss>
