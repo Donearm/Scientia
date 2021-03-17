@@ -21,3 +21,7 @@ Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the c
 #### Cat8
 
 Up to 250000 or 40000Mb/s (25 and 40 Gigabit) and 30 meters. Currently in development.
+
+## Keyboard layouts
+
+[A visual comparison of different national layouts on a computer keyboard](http://www.farah.cl/Keyboardery/A-Visual-Comparison-of-Different-National-Layouts/)
