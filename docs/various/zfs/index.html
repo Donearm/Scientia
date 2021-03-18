@@ -17,7 +17,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Zfs" />
-<meta property="og:description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS  " />
+<meta property="og:description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/various/zfs/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="various" />
 
@@ -27,11 +27,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Zfs"/>
-<meta name="twitter:description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS  "/>
+<meta name="twitter:description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified  "/>
 <meta itemprop="name" content="Zfs">
-<meta itemprop="description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS  ">
+<meta itemprop="description" content="Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified  ">
 
-<meta itemprop="wordCount" content="19"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="79"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -52,6 +52,10 @@
 <h2 id="useful-commands">Useful commands</h2>
 <ul>
 <li><code>arc_summary</code> = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS</li>
+<li><code>zfs set mountpoint=$path $pool</code> = change the mountpoint of <code>$pool</code> in <code>$path</code></li>
+<li><code>zfs rename $datastore $datastorenew</code> = rename a data store</li>
+<li><code>zfs get compressratio $pool</code> = get the compression rate of <code>$pool</code> (may be a pool or a data store)</li>
+<li><code>zfs list -r -t snapshot</code> = get all the snapshot, in general or of a specific pool/data store if specified</li>
 </ul>
 <div class="edit-meta">
 
