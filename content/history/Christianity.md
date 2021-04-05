@@ -156,3 +156,76 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* it is written in form of dialogues between the disciple Salome and Jesus.
 	* Jesus advocates celibacy, or actual sexual ascetism, as a way to break the cycle of birth and overcoming the alleged sinful differences between men and women, coming back to an androginous state that was the original one for all humanity.
 	* Jesus famously answer to the question "How long shall death prevail?" with: "As long as women bear children".
+* [Gospel of Truth](https://en.wikipedia.org/wiki/Gospel_of_Truth) = a Gnostic Gospel, which actually lacks a proper name but is named after the very first three words of the text
+	* more an homily than a Gospel, written in heavily poetic form.
+	* probably written originally in Greek between 140 and 180 a.C.
+	* possibly by [Valentinus](https://en.wikipedia.org/wiki/Valentinus_(Gnostic)) himself.
+	* content starts with the cause of the creation of the world: ignorance. Jesus was sent by God to correct this, reuniting the aeons and humanity with God.
+	* it describes ignorance as a nightmare, that prevents us from knowing God and attaining salvation.
+	* there is no need for God to save humans as every person has inside the seed for salvation, through knowledge alone.
+	* this "gospel" does not describe the life of Jesus by comes from teachings given by him in the 40 days after the resurrection.
+* [Pistis Sophia](https://en.wikipedia.org/wiki/Pistis_Sophia) = a Gnostic text, from an original Coptic manuscript of 178 pages
+	* discovered in 1773
+	* probably written between the third and fourth century a.C.
+	* Sophia would be an important feminine divinity in many Gnostic texts, possibly a feminine version of either Christ himself or the Holy Ghost
+	* much of the content is in the form of questions from the Apostles to Jesus. Mary Magdalene is heavily feaured, appearing in a major role among the apostles.
+	* Jesus remains 11 years after the resurrection to teach the apostles, the Virgin Mary, Mary Magdalene and Martha.
+	* After these 11 years Jesus receives "higher garments" and teaches higher mysteries related to cosmology and other necessary knowledges to attain salvation.
+	* 32 carnal desires are cited to be overcome to be saved.
+	* [Full text](https://www.sacred-texts.com/chr/ps/index.htm).
+* [Second Treatise of the Great Seth](https://en.wikipedia.org/wiki/Second_Treatise_of_the_Great_Seth) = a Gnostic Gospel found among the Nag Hammadi library texts.
+	* the Seth referenced in the title doesn't appear in the content.
+	* dated around the third century a.C.
+	* the Seth of the title is the third son of Adam and Eve, the one initiated to gnostic mysteries.
+	* Jesus was not crucified, Simon of Cyrene was mistaken for him and got crucified in his place.
+	* Jesus is described as standing by the place of the crucifixion and "laughing at their ignorance".
+	* the text is written in the first person perspective of Jesus.
+	* the text laughs at those believing that Jesus was crucified and to all the believers of the previous prophets (like Adam, Abraham, Isaac, Moses and so on).
+	* the God of the Jews is not the true God but only the Demiurge.
+	* Jesus is claimed to never have been a man but a pure docetistic spirit.
+	* Jesus claimed a body of an human man and took it for his own use.
+* [Apocryphon of John](https://en.wikipedia.org/wiki/Apocryphon_of_John) = a gnostic Gospel, known to Irenaeus.
+	* written before 180 a.C.
+	* found in Egypt in 4 Coptic manuscripts, translated from the original Greek version.
+	* it narrates a revelation of Jesus after the resurrection to John the Apostle.
+	* the highest divine principle is named as the Monad.
+	* a feminine divinity named Barbelo is produced by the Monad, after his thought. Barbelo is the first of a class of divinity, the Aeons.
+	* Sophia, one of the Aeons, produces with a male consort the first of demonic entities named the Archons, Yaltabaoth, disrupting the harmony that reigned before.
+	* Sophia repents though, and the Monad and the other Aeons help her to redeem the Archons. During this process, Adam is created.
+	* The Garden of Eden is a false paradise, as the Tree of Life is only a part of the larger Tree of Knowledge of Good and Evil.
+	* Jesus reveals to have been him to have caused Adam to consume the fruit of the Tree of Knowledge. Within Adam there is the essence of Light and Eve is created in an attempt to extract this essence out of him.
+	* Yaltabaoth keeps humanity in check by making them reproduce and inserting into them a counterfeit spirit. Through ignorance, humanity is kept away from the Aeons and the Monad, and subject to the Archons.
+* [Apocalypse of Paul](https://en.wikipedia.org/wiki/Apocalypse_of_Paul) = a Gospel narrating the vision of heaven and hell by the apostle Paul. Not to be confused with the unrelated text Coptic Apocalypse of Paul.
+	* the original Greek version is lost.
+	* dated around the fourth century a.C.
+	* based off the Apocalypse of Peter but expanding on it.
+	* Syriac, Amharic, Coptic and Georgian versions exists, along with an Ethiopian one which differs in making the Virgin Mary the one experiencing the vision.
+	* pride is cited as the root of all evil.
+	* the paradise is the land of milk and honey.
+	* Paul obtains from God a rest for the damned on every Sunday.
+* [First Apocalypse of James](https://en.wikipedia.org/wiki/First_Apocalypse_of_James) = a Gnostic apocalypse.
+	* dated to the early third century a.C.
+	* the text is a dialogue James the Just, named as the brother of Jesus, and Jesus. They are not biological brothers though, being born of different mothers and fathers.
+	* James is subject to martyrdom by crucifixion. A few "passwords" are given to him before the martyrdom so he can ascend to the highest heaven, out of 72 in total, after death, without being blocked by the Demiurge.
+	* James is the early head of the Church.
+	* James is the most senior apostle.
+	* [Integral text](http://www.gnosis.org/naghamm/1ja.html).
+* [Second Apocalypse of James](https://en.wikipedia.org/wiki/Second_Apocalypse_of_James) = a Gnostic Gospel describing the martyrdom of James the Just.
+	* dated to the second century a.C.
+	* the father of James is named Theudas, not Joseph. The mother is named Mary but it is not specified in the text if this is the same Virgin Mary or another Mary.
+	* in contrast with the First Apocalypse of James, the text here explicitly say that James and Jesus share the same mother, although it is not stated that this mother is the same Mary.
+	* Jesus and James share a kiss on the lips, in a probably metaphor for the passing of Gnosis between them.
+* [Apocalypse of Pseudo-Methodius](https://en.wikipedia.org/wiki/Apocalypse_of_Pseudo-Methodius) = a late Christian eschatological text.
+	* written in Syriac in the seventh century a.C.
+	* the work attempts to make sense of the recent Islamic conquests.
+	* typical messianic elements of the tale of Gog and Magog, the rise of the Antichrist and the tribulations before the end of time are present.
+	* another messianic element is added though, in the character of a messianic Roman emperor, Saviour of the christians against the army of Ishmael (the Islamic Empire).
+* [Apocalypse of Peter](https://en.wikipedia.org/wiki/Apocalypse_of_Peter) = an early Christian text with an apocalyptic tone.
+	* mentioned in the [Muratorian fragment](https://en.wikipedia.org/wiki/Muratorian_fragment), the oldest surviving list of New Testament books. It is reputed a true Gospel in the fragment but also stated that some authorities would not have it read in church.
+	* dated to the second century a.C.
+	* two versions exist, a Koine Greek and an Ethiopian one. This latter version has included later texts and diverges from the original considerably.
+	* another version exists in Arabic, the **Ru'ya Butrus**.
+	* the text is framed as a discourse between Jesus after the resurrection and the Apostle. A first vision of heaven and hell is granted to Peter.
+	* a description of people in heaven (with milky white skin, curly hair and wearing shiny clothes) and of the torments given to the sinner in hell is given.
+	* at the end of time every soul in hell will be pardoned thanks to the prayers of the souls in heaven but it is best if this remains a secret.
+	* [Integral text](http://www.earlychristianwritings.com/text/apocalypsepeter-mrjames.html).
