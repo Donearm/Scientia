@@ -1,5 +1,5 @@
 ---
-title: Various (I.T.)
+title: Various
 bookCollapseSection: true
 weight: 800
 ---
