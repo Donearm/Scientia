@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Windows Commands - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.83.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -66,7 +66,7 @@
 <p>As Url use: <code>http://$ip_pc_with_cups:631/printers/printer_name</code></p>
 <h2 id="windows8">Windows8</h2>
 <p>as W8 has the bad habit to set itself as the default element to boot under UEFI (and it probably does something similar under BIOS too) use</p>
-<div class="highlight"><pre class="chroma"><code class="language-posh" data-lang="posh"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">arch</span><span class="p">\</span><span class="n">vmlinuz-arch</span><span class="p">.</span><span class="n">efi</span>
+<div class="highlight"><pre class="chroma"><code class="language-posh" data-lang="posh"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">arch</span><span class="p">\</span><span class="nb">vmlinuz-arch</span><span class="p">.</span><span class="n">efi</span>
 </code></pre></div><p>to change it to Linux. Here both <code>{bootmgr}</code> and <code>path</code> are literals and <code>vmlinuz-arch.efi</code> is the actual path of the Archlinux kernel to load. As I haven&rsquo;t found yet a way to pass parameters, I prefer directing Windows to use rEFInd thus</p>
 <div class="highlight"><pre class="chroma"><code class="language-posh" data-lang="posh"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">refind</span><span class="p">\</span><span class="n">refind_x64</span><span class="p">.</span><span class="n">efi</span>
 </code></pre></div><div class="edit-meta">
@@ -135,6 +135,7 @@
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">Archlinux</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>

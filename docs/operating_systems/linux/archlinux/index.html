@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>GMail - Gianluca Fiore Personal Wiki</title>
+<title>Archlinux - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
 <meta name="generator" content="Hugo 0.83.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/gmail/">
+<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
@@ -16,22 +16,25 @@
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
-<meta property="og:title" content="GMail" />
-<meta property="og:description" content="Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  " />
+<meta property="og:title" content="Archlinux" />
+<meta property="og:description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
+[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/gmail/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="operating_systems" />
 
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
-<meta name="twitter:title" content="GMail"/>
-<meta name="twitter:description" content="Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  "/>
-<meta itemprop="name" content="GMail">
-<meta itemprop="description" content="Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  ">
+<meta name="twitter:title" content="Archlinux"/>
+<meta name="twitter:description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
+[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file."/>
+<meta itemprop="name" content="Archlinux">
+<meta itemprop="description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
+[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file.">
 
-<meta itemprop="wordCount" content="15"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="75"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -48,16 +51,17 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1>GMail</h1>
-<h3 id="useful-filters">Useful filters</h3>
-<ul>
-<li><code>before:2007/09/01</code> = select all mails before 01/09/2007</li>
-<li><code>label:$label</code> = select mails matching <code>$label</code></li>
-</ul>
+<main><h1>Archlinux</h1>
+<h1 id="set-up-a-wireless-connection">Set up a wireless connection</h1>
+<p>Using <a href="https://wiki.archlinux.org/title/Iwd">iwd</a> as a network manager, it is possible to use the cli <code>iwctl</code> to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory <code>iwd</code> looks for them, <code>/var/lib/iwd/</code>. Under this directory, create a file named after your SSID like <code>name-of-ssid.psk</code> with this content:</p>
+<pre><code>[Security]
+Passphrase=yourpassphrase
+</code></pre>
+<p>At the first connection, <code>iwd</code> will append a pre-shared key entry to this file. More info at <a href="https://wiki.archlinux.org/title/Iwd#WPA-PSK">iwd#WPA-PSK</a>.</p>
 <div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/programs/GMail.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/git/" title="Git"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Git</a>
-<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/gnome/" title="Gnome">Next - Gnome <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/operating_systems/linux/Archlinux.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/" title="AppArmor"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - AppArmor</a>
+<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/" title="Compose Key">Next - Compose Key <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -111,16 +115,16 @@
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
-<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">Archlinux</a></li>
+<li class="active"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">Archlinux</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
@@ -141,7 +145,7 @@
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/programs/">Programs<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/programs/">Programs<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/chromium/">Chromium</a></li>
@@ -153,7 +157,7 @@
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/flash/">Flash</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gimp/">Gimp</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/git/">Git</a></li>
-<li class="active"><a href="https://donearm.github.io/Personal-Wiki/programs/gmail/">GMail</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gmail/">GMail</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/gnome/">Gnome</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/grub/">Grub</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/programs/httrack/">HTTrack</a></li>

@@ -121,7 +121,7 @@ Text to be linked[^1] and then at the bottom of the file:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/various/sqlite/</guid>
-      <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
+      <description>Exporting tables to csv sqlite3databasefile&amp;gt;.</description>
     </item>
     
     <item>

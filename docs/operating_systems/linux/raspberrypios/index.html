@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Raspberry Pi OS - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. and related topics at the moment">
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.83.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -17,7 +17,8 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Raspberry Pi OS" />
-<meta property="og:description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  " />
+<meta property="og:description" content="Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&lt;Insert 2 letter ISO 3166-1 country code here&gt; network={ ssid=&quot;&lt;Name of your wireless LAN&gt;&quot; psk=&quot;&lt;Password for your wireless LAN&gt;&quot; }  More info here." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="operating_systems" />
 
@@ -27,11 +28,13 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Raspberry Pi OS"/>
-<meta name="twitter:description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  "/>
+<meta name="twitter:description" content="Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&lt;Insert 2 letter ISO 3166-1 country code here&gt; network={ ssid=&quot;&lt;Name of your wireless LAN&gt;&quot; psk=&quot;&lt;Password for your wireless LAN&gt;&quot; }  More info here."/>
 <meta itemprop="name" content="Raspberry Pi OS">
-<meta itemprop="description" content=" Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  ">
+<meta itemprop="description" content="Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&lt;Insert 2 letter ISO 3166-1 country code here&gt; network={ ssid=&quot;&lt;Name of your wireless LAN&gt;&quot; psk=&quot;&lt;Password for your wireless LAN&gt;&quot; }  More info here.">
 
-<meta itemprop="wordCount" content="24"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="106"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -53,6 +56,19 @@
 <li><a href="https://www.pragmaticlinux.com/2020/08/move-the-raspberry-pi-root-file-system-to-a-usb-drive/">Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd</a></li>
 <li><a href="https://downloads.raspberrypi.org/nightlies/">Nightlies repository for the 64bit version</a></li>
 </ul>
+<h2 id="configure-wireless-and-wired-connections">Configure Wireless and Wired connections</h2>
+<p>Create a <code>wpa_supplicant.conf</code> file in /boot, which will be later copied on the root partition at <code>/etc/wpa_supplicant/wpa_supplicant.conf</code>, with these contents:</p>
+<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=&lt;Insert 2 letter ISO 3166-1 country code here&gt;
+
+network={
+	ssid=&quot;&lt;Name of your wireless LAN&gt;&quot;
+	psk=&quot;&lt;Password for your wireless LAN&gt;&quot;
+}
+</code></pre>
+<p>More info <a href="%C3%AE200~https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">here</a>.</p>
+<p>For a wired connection, it should connect automatically. Just make sure that the router the RaspberryPi is attached to is accepting connections from new devices and not rejecting them by default.</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/operating_systems/linux/RaspberryPiOs.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/" title="Linux Commands"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Linux Commands</a>
@@ -119,6 +135,7 @@
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">Archlinux</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>

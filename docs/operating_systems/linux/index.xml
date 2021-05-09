@@ -16,6 +16,16 @@
     </item>
     
     <item>
+      <title>Archlinux</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/</guid>
+      <description>Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
+[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file.</description>
+    </item>
+    
+    <item>
       <title>Compose Key</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,7 +89,8 @@ acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</guid>
-      <description> Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  </description>
+      <description>Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;quot;&amp;lt;Name of your wireless LAN&amp;gt;&amp;quot; psk=&amp;quot;&amp;lt;Password for your wireless LAN&amp;gt;&amp;quot; }  More info here.</description>
     </item>
     
     <item>
