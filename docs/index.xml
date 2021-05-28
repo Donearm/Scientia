@@ -164,6 +164,18 @@ Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012
     </item>
     
     <item>
+      <title>Zsh</title>
+      <link>https://donearm.github.io/Personal-Wiki/languages/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/languages/zsh/</guid>
+      <description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+for x (1 2 3); do echo $x; done  or like this:
+for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext  The :r tells the shell to automatically strip the extension, period included</description>
+    </item>
+    
+    <item>
       <title>FreeBSD</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

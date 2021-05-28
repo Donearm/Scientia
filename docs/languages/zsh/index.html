@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Android - Gianluca Fiore Personal Wiki</title>
+<title>Zsh - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
 <meta name="generator" content="Hugo 0.83.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/android/android/">
+<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/zsh/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
@@ -16,49 +16,31 @@
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
-<meta property="og:title" content="Android" />
-<meta property="og:description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro." />
+<meta property="og:title" content="Zsh" />
+<meta property="og:description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+for x (1 2 3); do echo $x; done  or like this:
+for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext  The :r tells the shell to automatically strip the extension, period included" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/android/android/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="android" />
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/zsh/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
 
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
-<meta name="twitter:title" content="Android"/>
-<meta name="twitter:description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro."/>
-<meta itemprop="name" content="Android">
-<meta itemprop="description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro.">
+<meta name="twitter:title" content="Zsh"/>
+<meta name="twitter:description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+for x (1 2 3); do echo $x; done  or like this:
+for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext  The :r tells the shell to automatically strip the extension, period included"/>
+<meta itemprop="name" content="Zsh">
+<meta itemprop="description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+for x (1 2 3); do echo $x; done  or like this:
+for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext  The :r tells the shell to automatically strip the extension, period included">
 
-<meta itemprop="wordCount" content="212"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="63"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -75,71 +57,23 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Android</h1>
-<p>In <code>/system/build.prop</code> edit:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1  </span>
-</code></pre></div><p>to force launcher into memory</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100  </span>
-</code></pre></div><p>to raise jpeg quality to 100%</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">dalvik.vm.heapsize</span><span class="o">=</span><span class="s">48m</span>
-</code></pre></div><p>specifies the VM heapsize</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1  </span>
-</code></pre></div><p>to render UI with the GPU</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>to decrease dialing out delay</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">windowsmgr.max_events_per_sec</span><span class="o">=</span><span class="s">150  </span>
-</code></pre></div><p>help scrolling responsiveness</p>
-<h3 id="save-battery">Save battery</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">wifi.supplicant_scan_interval</span><span class="o">=</span><span class="s">180</span>
-<span class="na">pm.sleep_mode</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.disable.power.collapse</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>while</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">persist.adb.notify</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>disables debugging notify icon on statusbar</p>
-<h3 id="increase-overall-touch-responsiveness">Increase overall touch responsiveness</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.performance.tuning</span><span class="o">=</span><span class="s">1</span>
-<span class="na">video.accelerate.hw</span><span class="o">=</span><span class="s">1</span>
-</code></pre></div><h3 id="raise-photo-and-video-recording-quality">Raise photo and video recording quality</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.dec.jpeg.memcap</span><span class="o">=</span><span class="s">8000000</span>
-<span class="na">ro.media.enc.hprof.vid.bps</span><span class="o">=</span><span class="s">8000000</span>
-</code></pre></div><h3 id="3g-signal-tweaks">3G signal tweaks</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.ril.hsxpa</span><span class="o">=</span><span class="s">2</span>
-<span class="na">ro.ril.gprsclass</span><span class="o">=</span><span class="s">10 </span>
-<span class="na">ro.ril.hep</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.enable.dtm</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.hsdpa.category</span><span class="o">=</span><span class="s">10</span>
-<span class="na">ro.ril.enable.a53</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.enable.3g.prefix</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.htcmaskw1.bitmask</span><span class="o">=</span><span class="s">4294967295</span>
-<span class="na">ro.ril.htcmaskw1</span><span class="o">=</span><span class="s">14449</span>
-<span class="na">ro.ril.hsupa.category</span><span class="o">=</span><span class="s">5</span>
-</code></pre></div><h3 id="net-tcp-speed-tweaks">Net Tcp speed tweaks</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">net.tcp.buffersize.default</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.wifi</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.umts</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.gprs</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.edge</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-</code></pre></div><h3 id="disable-blackscreen-issue-after-call">Disable blackscreen issue after call</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.lge.proximity.delay</span><span class="o">=</span><span class="s">25</span>
-<span class="na">mot.proximity.delay</span><span class="o">=</span><span class="s">25</span>
-</code></pre></div><h3 id="various">Various</h3>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.config.hwfeature_wakeupkey</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>the phone will not wakeup from hitting the volume rocker</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>force button lights on when the screen is on too</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>disable boot animation for faster boot</p>
-<h2 id="uninstall-system-app">Uninstall system app</h2>
-<p>This may not work on all devices as some will just &ldquo;disable&rdquo; those apps, not showing them as an icon but still listing them among the installed apps, occupying disk space. But at least the process won&rsquo;t start and won&rsquo;t occupy memory and use battery time.</p>
-<ul>
-<li>Connect to the device using <code>adb</code></li>
-<li>Check for the name of the package to uninstall with <code>pm list packages -f $packagename</code></li>
-<li>Uninstall it with <code>pm uninstall -k -user 0 $packagename</code>, where <code>$packagename</code> is the output of the previous command</li>
-</ul>
+<main><h1>Zsh</h1>
+<h1 id="for-loops-syntax">For loops syntax</h1>
+<p>In Zsh, the for loops syntax differs from Bash. Write a loop either like:</p>
+<pre><code>for x (1 2 3); do echo $x; done
+</code></pre>
+<p>or like this:</p>
+<pre><code>for x in 1 2 3; do echo $x; done
+</code></pre>
+<h1 id="parameter-expansion">Parameter expansion</h1>
+<p>An alternative to the POSIX-complaint <code>${i%.ext}.newext</code> in Zsh is:</p>
+<pre><code>${i:r}.newext
+</code></pre>
+<p>The <code>:r</code> tells the shell to automatically strip the extension, period included</p>
 <div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/android/Android.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/android/" title="Android"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Android</a>
-<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/devops/" title="DevOps">Next - DevOps <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/languages/Zsh.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/sed/" title="Sed"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Sed</a>
+<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/" title="Operating Systems">Next - Operating Systems <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -148,10 +82,10 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
 <ul>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/">Home</a></li>
 
-<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/android/">Android<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/android/">Android<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class="active"><a href="https://donearm.github.io/Personal-Wiki/android/android/">Android</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/android/android/">Android</a></li>
 </ul>
   
 </li>
@@ -178,7 +112,7 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/languages/">Languages<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/languages/">Languages<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/awk/">Awk</a></li>
@@ -189,7 +123,7 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/lua/">Lua</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/python/">Python</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/sed/">Sed</a></li>
-<li class=""><a href="https://donearm.github.io/Personal-Wiki/languages/zsh/">Zsh</a></li>
+<li class="active"><a href="https://donearm.github.io/Personal-Wiki/languages/zsh/">Zsh</a></li>
 </ul>
   
 </li>

@@ -87,5 +87,17 @@ getf (list :a 1 :b 2) :a) returns the value of :a
 Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
     </item>
     
+    <item>
+      <title>Zsh</title>
+      <link>https://donearm.github.io/Personal-Wiki/languages/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/languages/zsh/</guid>
+      <description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+for x (1 2 3); do echo $x; done  or like this:
+for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext  The :r tells the shell to automatically strip the extension, period included</description>
+    </item>
+    
   </channel>
 </rss>
