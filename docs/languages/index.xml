@@ -60,6 +60,16 @@ getf (list :a 1 :b 2) :a) returns the value of :a
     </item>
     
     <item>
+      <title>Javascript</title>
+      <link>https://donearm.github.io/Personal-Wiki/languages/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/languages/javascript/</guid>
+      <description>Asm.js Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM
+ Gwt = compiler from Java to JS Emscripten and Mandreel = compilers from C++ to JS  </description>
+    </item>
+    
+    <item>
       <title>Lua</title>
       <link>https://donearm.github.io/Personal-Wiki/languages/lua/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
