@@ -75,6 +75,18 @@ weight: 910
 
 # Asia
 
+## Indonesia
+
+#### Bali
+
+A few possible excursions outside proper Bali.
+
+* Komodo Island = flight to Labuhanbajo on Flores. Then bus to Badjo and from there either a tour by boat or the ferry.
+* Lombok = By plane (25min) or ferry (4-5hr) from Padang Bai (east coast of Bali)
+* Bromo-Tengger-Semeru Park = from Surabaya, bus or car (60-100km)
+* Prambanan = flight to Yogyakarta and then bus (30min)
+* Borobudur = flight to Yogyakarta and then bus (1hr)
+
 ## Thailand
 
 #### Bangkok
