@@ -6,6 +6,18 @@ weight: 720
 
 # Linked List
 
+A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+
+Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there's no need to rearrange the whole structure each time but:
+
++ a linked list use more memory (data + reference)
++ nodes must be read in order
++ longer access time as nodes are not contiguosly stored
+
+#### History
+
+First developed in 1955 for the IPL language. In 1958 linked lists were implemented in Lisp. The Flex family of file systems used doubly linked lists for their file structure, as the IBM's T53/360 operating system.
+
 Versions:
 
 * Singly Linked List
@@ -44,6 +56,20 @@ Versions:
 A **Sentinel Node** may also be implemented as the first or last node instead 
 of using _null_ values, to speed up operations (removing the need for an 
 expensive branch operation to check for _null_). It does not hold any data.
+
+**Empty lists** are without data fields. Lists with only sentinel nodes are also considered empty.
+
+**Hash Linking** are two arrays, one with the data and another with the links, both with the same indices.
+
+A **Stack** is a sort of a singly linked list which allows pop and push operations only on the first node, the top of the stack. Historically they have been invented in Munich and independently in Australia around 1954-1955. Stacks are commonly implemented through arrays and linked lists. They are LIFO, last in first out, data structure.
+
+# Queues
+
+Similarly to stacks, queues are a collection of data in which addition is made at the back only and removal at the front only. These are respectively known as enqueque and dequeue operations. Doubly or singly linked lists are commonly used to implement queues.
+
+**Deques** or double-ended queues are queues in which elements can be added and removed both on front and back of the queue. Also known as head-tail linked list.
+
+**Priority Queues** are standard queues whose values are pre-ordered for priority, with the top value being the highest priority one.
 
 # Dynamic Array
 
@@ -105,16 +131,31 @@ A binary tree is a data structure in which each node has at most 2 child nodes.
 Nodes with children are called _parent nodes_ and there may exists a _root_ 
 node, the origin of all nodes. Definitions: 
 
+* **root** is the top node
+* **child** is a node directly connected to another
+* **parent** is an immediate ancestor of a node
+* **siblings** are nodes that share the same parent node
+* **neighbor** is a parent or child node of another
+* **descendant** is a node reachable by proceeding from parent to child
+* **ancestor** is a node reachable by proceeding from child to parent. Also defined as a node `n` of node `q` if it exists on the path from root to node `q`. It is then a **descendant** of `n`
+* **leaf**, or external, is a node with no children
+* **branch**, or internal, is a node with at least one child
+* **edge** the connection between one node and another
+* **path** a sequence of nodes and edges connecting a node with a descendant
+* **distance** the number of edges on the shortest path between two nodes
 * **depth** of a node is the length of the path from the root to the node. 
   Sometimes called _level_
 * **depth** of a tree is the length of the path from the root to the deepest 
   node. Sometimes called _height_
-* **siblings** are nodes that share the same parent node
-* **ancestor** is a node `n` of node `q` if it exists on the path from root to 
-  node `q`. It is then a **descendant** of `n`
+* **level** is the number of edges between a node and root + 1
+* **height** is the number of edges on the longest path between a node and a descendant leaf
+* **width** the number of nodes in a level
+* **breadth** the number of leaves
+* the **height of tree** is the height of root
 * **size** of a node is the number of descendants it has, itself included
 * **in-degree** of a node is the number of nodes arriving at that node
 * **out-degree** of a node is the number of nodes leaving that node
+* **subtree** is a node in a tree with all its descendants
 
 Variants:
 

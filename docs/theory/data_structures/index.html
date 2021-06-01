@@ -17,8 +17,9 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Data Structures" />
-<meta property="og:description" content="Linked List Versions:
- Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions." />
+<meta property="og:description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
+ a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/theory/data_structures/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="theory" />
 
@@ -28,13 +29,15 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Data Structures"/>
-<meta name="twitter:description" content="Linked List Versions:
- Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions."/>
+<meta name="twitter:description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
+ a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language."/>
 <meta itemprop="name" content="Data Structures">
-<meta itemprop="description" content="Linked List Versions:
- Singly Linked List  a singly linked list contains nodes which have a data field and a next field, pointing to the next node in the list   Doubly Linked List  a doubly linked list contains, besides the next field and the data field, another link field that points to the previous node in the list. This is called the forward or backward or previous field   Multiply Linked List  a multiply linked list is like a doubly linked list, only with multiple number of fields pointing in different directions.">
+<meta itemprop="description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
+ a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language.">
 
-<meta itemprop="wordCount" content="2534"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="3011"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -53,6 +56,15 @@
 <div class="content-container">
 <main><h1>Data Structures</h1>
 <h1 id="linked-list">Linked List</h1>
+<p>A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.</p>
+<p>Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:</p>
+<ul>
+<li>a linked list use more memory (data + reference)</li>
+<li>nodes must be read in order</li>
+<li>longer access time as nodes are not contiguosly stored</li>
+</ul>
+<h4 id="history">History</h4>
+<p>First developed in 1955 for the IPL language. In 1958 linked lists were implemented in Lisp. The Flex family of file systems used doubly linked lists for their file structure, as the IBM&rsquo;s T53/360 operating system.</p>
 <p>Versions:</p>
 <ul>
 <li>Singly Linked List
@@ -115,6 +127,13 @@ total number of elements.</li>
 <p>A <strong>Sentinel Node</strong> may also be implemented as the first or last node instead
 of using <em>null</em> values, to speed up operations (removing the need for an
 expensive branch operation to check for <em>null</em>). It does not hold any data.</p>
+<p><strong>Empty lists</strong> are without data fields. Lists with only sentinel nodes are also considered empty.</p>
+<p><strong>Hash Linking</strong> are two arrays, one with the data and another with the links, both with the same indices.</p>
+<p>A <strong>Stack</strong> is a sort of a singly linked list which allows pop and push operations only on the first node, the top of the stack. Historically they have been invented in Munich and independently in Australia around 1954-1955. Stacks are commonly implemented through arrays and linked lists. They are LIFO, last in first out, data structure.</p>
+<h1 id="queues">Queues</h1>
+<p>Similarly to stacks, queues are a collection of data in which addition is made at the back only and removal at the front only. These are respectively known as enqueque and dequeue operations. Doubly or singly linked lists are commonly used to implement queues.</p>
+<p><strong>Deques</strong> or double-ended queues are queues in which elements can be added and removed both on front and back of the queue. Also known as head-tail linked list.</p>
+<p><strong>Priority Queues</strong> are standard queues whose values are pre-ordered for priority, with the top value being the highest priority one.</p>
 <h1 id="dynamic-array">Dynamic Array</h1>
 <p>Also called <em>growable array</em>, <em>resizable array</em>, <em>dynamic table</em>, <em>mutable
 array</em> or <em>array list</em> is a data structure that is made of 2 parts of a fixed
@@ -190,16 +209,31 @@ the name.</p>
 Nodes with children are called <em>parent nodes</em> and there may exists a <em>root</em>
 node, the origin of all nodes. Definitions:</p>
 <ul>
+<li><strong>root</strong> is the top node</li>
+<li><strong>child</strong> is a node directly connected to another</li>
+<li><strong>parent</strong> is an immediate ancestor of a node</li>
+<li><strong>siblings</strong> are nodes that share the same parent node</li>
+<li><strong>neighbor</strong> is a parent or child node of another</li>
+<li><strong>descendant</strong> is a node reachable by proceeding from parent to child</li>
+<li><strong>ancestor</strong> is a node reachable by proceeding from child to parent. Also defined as a node <code>n</code> of node <code>q</code> if it exists on the path from root to node <code>q</code>. It is then a <strong>descendant</strong> of <code>n</code></li>
+<li><strong>leaf</strong>, or external, is a node with no children</li>
+<li><strong>branch</strong>, or internal, is a node with at least one child</li>
+<li><strong>edge</strong> the connection between one node and another</li>
+<li><strong>path</strong> a sequence of nodes and edges connecting a node with a descendant</li>
+<li><strong>distance</strong> the number of edges on the shortest path between two nodes</li>
 <li><strong>depth</strong> of a node is the length of the path from the root to the node.
 Sometimes called <em>level</em></li>
 <li><strong>depth</strong> of a tree is the length of the path from the root to the deepest
 node. Sometimes called <em>height</em></li>
-<li><strong>siblings</strong> are nodes that share the same parent node</li>
-<li><strong>ancestor</strong> is a node <code>n</code> of node <code>q</code> if it exists on the path from root to
-node <code>q</code>. It is then a <strong>descendant</strong> of <code>n</code></li>
+<li><strong>level</strong> is the number of edges between a node and root + 1</li>
+<li><strong>height</strong> is the number of edges on the longest path between a node and a descendant leaf</li>
+<li><strong>width</strong> the number of nodes in a level</li>
+<li><strong>breadth</strong> the number of leaves</li>
+<li>the <strong>height of tree</strong> is the height of root</li>
 <li><strong>size</strong> of a node is the number of descendants it has, itself included</li>
 <li><strong>in-degree</strong> of a node is the number of nodes arriving at that node</li>
 <li><strong>out-degree</strong> of a node is the number of nodes leaving that node</li>
+<li><strong>subtree</strong> is a node in a tree with all its descendants</li>
 </ul>
 <p>Variants:</p>
 <ul>
