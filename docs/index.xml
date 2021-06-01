@@ -151,7 +151,8 @@ getf (list :a 1 :b 2) :a) returns the value of :a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/languages/lua/</guid>
-      <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})</description>
+      <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
+Coroutines  coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.</description>
     </item>
     
     <item>

@@ -17,7 +17,8 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Lua" />
-<meta property="og:description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})" />
+<meta property="og:description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
+Coroutines  coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/lua/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
 
@@ -27,11 +28,13 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Lua"/>
-<meta name="twitter:description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})"/>
+<meta name="twitter:description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
+Coroutines  coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine."/>
 <meta itemprop="name" content="Lua">
-<meta itemprop="description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})">
+<meta itemprop="description" content="Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
+Coroutines  coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.">
 
-<meta itemprop="wordCount" content="48"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="122"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -51,6 +54,15 @@
 <main><h1>Lua</h1>
 <h3 id="self-in-lua">Self in Lua</h3>
 <p>Declaring a function as <code>t:test</code> instead than <code>t.test</code> will automatically set a variable named <code>self</code> that refers to <code>t</code>. If that is a table, it&rsquo;ll be possible to use <code>self.a</code> to refer to the value of object <code>a</code> in table <code>t</code> (like <code>table = {a=1}</code>)</p>
+<h3 id="coroutines">Coroutines</h3>
+<ul>
+<li><code>coroutine.create(f)</code> = where <code>f</code> is a function</li>
+<li><code>coroutine.resume(c, [ares])</code> = resume a coroutine, optionally passing an argument</li>
+<li><code>coroutine.running()</code> = to obtain a reference to the currently running coroutine</li>
+<li><code>coroutine.status(c)</code> = returns strings &ldquo;running&rdquo;, &ldquo;suspended&rdquo;, &ldquo;normal&rdquo;, &ldquo;dead&rdquo; according to the status of the coroutine</li>
+<li><code>coroutine.yield(...)</code> = suspends the current coroutine and returns its arguments</li>
+<li><code>coroutine.wrap(f)</code> = wrap a normal function so it can be used like <code>coroutine.yield()</code> on it, like it were a coroutine</li>
+</ul>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/languages/Lua.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/javascript/" title="Javascript"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Javascript</a>
