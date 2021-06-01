@@ -48,7 +48,7 @@ VLANs follow the IEEE 802.1Q standard that consists of 32bits added to the stand
 
 + **Autoritative NS**: a server that has the domain's data. If the server is not authoritative of the requested domain, it will point to another NS or serve cached copies of other NS
 + **Zone file**: text file containing the mapping between domain names and IP addresses
-+ **Root Servers*: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server
++ **Root Servers**: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server
 + **Domain Level NS**: the actual servers containing the records for the requested domains (think of ns1.domain.com, ns2.domain.com etc.)
 
 #### Resource Records
@@ -66,6 +66,14 @@ There are three types of DNS queries that may be sent to a DNS server: Recursive
 + **Recursive Query**: With a recursive name query, a DNS server is forced to respond to a DNS client request with either the requested resource record or an error message stating that the record or domain name does not exist. In this case, the DNS server will contact other DNS servers until it gets the information, or until the query fails.
 + **Iterative Query**: With an iterative name query, the DNS client allows the DNS server to respond with the best answer it can give (the answer will be based on its cache or zone data). That may be as a referral to a better DNS server or a pointer to another DNS server authoritative for a lower level of the domain namespace.
 + **Authoritative-Only Query**: the DNS server only answers those queries for which it stores the zones. Does not respond to recursive queries and cache query results.
+
+#### DNS Fields
+
+Example of the fields returning from a `dig` query:
+
+	www.someserver.com 300 IN A 192.30.30.165
+
+Where the first is the domain name, the second the TTL, the third can be IN (Internet) or NS (Name Server) or MX (Mail Server) or CNAME (Canonical Name), the fourth is either A (IPv4) or AAAA (IPv6) and the last field is the IP address
 
 ## VPN
 

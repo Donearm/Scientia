@@ -31,7 +31,7 @@
 <meta itemprop="name" content="Networks">
 <meta itemprop="description" content="HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request.">
 
-<meta itemprop="wordCount" content="818"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="880"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -82,7 +82,7 @@
 <ul>
 <li><strong>Autoritative NS</strong>: a server that has the domain&rsquo;s data. If the server is not authoritative of the requested domain, it will point to another NS or serve cached copies of other NS</li>
 <li><strong>Zone file</strong>: text file containing the mapping between domain names and IP addresses</li>
-<li>*<em>Root Servers</em>: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server</li>
+<li><strong>Root Servers</strong>: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server</li>
 <li><strong>Domain Level NS</strong>: the actual servers containing the records for the requested domains (think of ns1.domain.com, ns2.domain.com etc.)</li>
 </ul>
 <h4 id="resource-records">Resource Records</h4>
@@ -99,6 +99,11 @@
 <li><strong>Iterative Query</strong>: With an iterative name query, the DNS client allows the DNS server to respond with the best answer it can give (the answer will be based on its cache or zone data). That may be as a referral to a better DNS server or a pointer to another DNS server authoritative for a lower level of the domain namespace.</li>
 <li><strong>Authoritative-Only Query</strong>: the DNS server only answers those queries for which it stores the zones. Does not respond to recursive queries and cache query results.</li>
 </ul>
+<h4 id="dns-fields">DNS Fields</h4>
+<p>Example of the fields returning from a <code>dig</code> query:</p>
+<pre><code>www.someserver.com 300 IN A 192.30.30.165
+</code></pre>
+<p>Where the first is the domain name, the second the TTL, the third can be IN (Internet) or NS (Name Server) or MX (Mail Server) or CNAME (Canonical Name), the fourth is either A (IPv4) or AAAA (IPv6) and the last field is the IP address</p>
 <h2 id="vpn">VPN</h2>
 <p>Operates at OSI Layer 3 level (application independent). When operating with IPSec, it uses two modes: <strong>Transport</strong> or <strong>Tunnel</strong>. In the first, data is encrypted but headers are not, while in the latter both are.</p>
 <p>When operating with SSL/TLS, it uses OSI Layer 7 (application dependent then) in two modes: <strong>OpenVPN</strong> (Certificate/password-based, TCP) or <strong>Open Connect</strong> (DTLS, UDP).</p>
