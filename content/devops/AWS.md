@@ -4,6 +4,8 @@ weight: 201
 bookCollapseSection: true
 ---
 
+# Products
+
 ## AMI
 
 Amazon Machine Images. Images to choose from to launch an instance.
@@ -75,3 +77,12 @@ Virtual Private Cloud. A virtual network.
 ## WAF
 
 Web Application Firewall. A firewall that protects web applications.
+
+# Terminology
+
+* Scalability: the ability to scale resources according to needs
+* Elasticity: the ability to recover unused resources when not needed anymore
+* High Availability: being able to access resources regardless of the load on the servers
+* Fault Tolerancy: the ability to recover from faults or crashes, and be able to give access to resources quickly again
+* AWS Region: a world zone where AWS services are given from
+* Availability Zone: an actual datacenter within an AWS Region. Each region contains multiple availability zones

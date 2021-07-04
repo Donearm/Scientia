@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/devops/aws/</guid>
-      <description>AMI Amazon Machine Images. Images to choose from to launch an instance.
+      <description>Products AMI Amazon Machine Images. Images to choose from to launch an instance.
 AWS CLI The command-line interface to AWS services.
 Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</description>
     </item>
