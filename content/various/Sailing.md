@@ -36,3 +36,30 @@ weight: 843
 * Charts, tides and currents
 * Basic first-aid
 * Anchoring and running aground
+
+# Boats
+
+## Good boats
+
+* Nautor Swan 43
+* Oyster Mariner
+* Hallberg Rassy Mistral
+* Hallberg Rassy Monsun
+* Hylas 44 (130-150k€ used)
+* Kirie Feeling 486 (120-150k€ used)
+* Hallberg Rassy 310 (190k€)
+* Catalina 400 MkII (120-150k€)
+* Dufour 36 (80-120k€ used)
+* Dufour 38
+* Moody 41 DS (way too expensive...)
+* Sirius 35/40
+* Dehler 38SQ (170k€+)
+
+## Cheap new boats
+
+* Beneteau Oceanis 38.1 (120-150k€)
+* Beneteau Oceanis 41.1
+* Aventura 34 (catamaran)
+* Aventura 37 (catamaran)
+* Hunter 41 (110-150k€)
+* Hanse 348 (100k€)
