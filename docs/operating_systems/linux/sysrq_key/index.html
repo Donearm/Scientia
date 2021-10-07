@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Sysrq Key - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -57,7 +57,7 @@ On x86 - You press the key combo &ldquo;ALT-SysRq-&lt;command key&gt;&rdquo;. No
 <main><h1>Sysrq Key</h1>
 <h3 id="how-do-i-use-the-magic-sysrq-key">How do I use the magic SysRq key?</h3>
 <p>to enable it</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;1&#34;</span> &gt; /proc/sys/kernel/sysrq
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;1&#34;</span> &gt; /proc/sys/kernel/sysrq
 </code></pre></div><p>or edit <code>/etc/sysctl.conf</code> and add <code>kernel.sysrq = 1</code></p>
 <p>On x86 - You press the key combo &ldquo;ALT-SysRq-&lt;command key&gt;&rdquo;.
 Note - Some keyboards may not have a key labeled <em>SysRq</em>. The <em>SysRq</em> key is also known as the <em>Print Screen</em> key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &ldquo;press Alt&rdquo;, &ldquo;press SysRq&rdquo;, &ldquo;release Alt&rdquo;, &ldquo;press &lt;command key&gt;&rdquo;, release everything.</p>

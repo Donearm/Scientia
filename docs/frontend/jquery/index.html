@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>jQuery - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/frontend/jquery/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -53,13 +53,13 @@ $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() 
 <div class="content-container">
 <main><h1>jQuery</h1>
 <h3 id="selectors">Selectors</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&#34;foobar&#34;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&#34;foobar&#34;</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s2">&#34;foobar&#34;</span><span class="p">);</span>
 </code></pre></div><h3 id="attribute-and-style-manipulations">Attribute and Style manipulations</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;new-attr&#34;</span><span class="p">,</span> <span class="s2">&#34;new-value&#34;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;new-attr&#34;</span><span class="p">,</span> <span class="s2">&#34;new-value&#34;</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&#34;background&#34;</span><span class="p">,</span> <span class="s2">&#34;white&#34;</span><span class="p">);</span>
 </code></pre></div><h3 id="ajax">Ajax</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s1">&#39;http://resource.json&#39;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s1">&#39;http://resource.json&#39;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
     <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://resource.txt&#39;</span><span class="p">,</span>
     <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span>
@@ -67,19 +67,19 @@ $(&#39;li&#39;).after(&#39;&lt;li&gt;Item&lt;/li&gt;&#39;); obviously .before() 
     <span class="nx">success</span><span class="o">:</span> <span class="nx">doSomething</span>
 <span class="p">});</span>
 </code></pre></div><h3 id="append-and-prepend-nodes">Append and Prepend nodes</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;div/&gt;&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;div/&gt;&#39;</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="s1">&#39;&lt;div/&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><h3 id="listening-to-events">Listening to events</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">clickHandler</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">clickHandler</span><span class="p">);</span>
 </code></pre></div><h3 id="removing-elements">Removing elements</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
 </code></pre></div><h3 id="content-manipulation">Content manipulation</h3>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.foo&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;&lt;div class=&#34;bar&#34;&gt;Hello&lt;/div&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><p>inserting a new element after each <code>li</code> element</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;Item&lt;/li&gt;&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;Item&lt;/li&gt;&#39;</span><span class="p">);</span>
 </code></pre></div><p>obviously <code>.before()</code> works the opposite way. The <code>.empty()</code> function will completely remove all children of an element</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
 </code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/frontend/jQuery.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/frontend/d3/" title="D3"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - D3</a>

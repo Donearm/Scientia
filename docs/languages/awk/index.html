@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Awk - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/awk/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -53,41 +53,41 @@ To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !
 <div class="content-container">
 <main><h1>Awk</h1>
 <h3 id="print-longest-line-value-of-a-file">Print longest line value of a file</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">expand</span> <span class="nx">some_file</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">&#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">expand</span> <span class="nx">some_file</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">&#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39;</span>
 </code></pre></div><h3 id="print-only-non-empty-lines">Print only non-empty lines</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;NF &gt; 0&#39;</span> <span class="nx">some_file</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;NF &gt; 0&#39;</span> <span class="nx">some_file</span>
 </code></pre></div><h3 id="count-lines">Count lines</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;END {print NR}&#39;</span> <span class="nx">some_file</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;END {print NR}&#39;</span> <span class="nx">some_file</span>
 </code></pre></div><h3 id="awk-as-grep">Awk as Grep</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{print $2}&#39;</span> <span class="nx">some_file</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{print $2}&#39;</span> <span class="nx">some_file</span>
 </code></pre></div><p>which is a quicker alternative to <code>cat some_file | awk '{print $2}'</code></p>
 <p>To negate a pattern (print only lines that don&rsquo;t match), use <code>awk '$1 !~ /regexp/' some_file</code></p>
 <h3 id="strings-substitution">Strings substitution</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{sub(&#34;from&#34;, &#34;to&#34;); print}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{sub(&#34;from&#34;, &#34;to&#34;); print}&#39;</span>
 </code></pre></div><p>substitutes &ldquo;from&rdquo; to &ldquo;to&rdquo;. With <code>{gsub(&quot;from&quot;, &quot;to&quot;); print}</code> it substitutes all occurrences and not just the first. Both can be used with regexps, like <code>/regexp/', 'new_string'</code></p>
 <h3 id="comparison">Comparison</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$2 &gt; 1&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$2 &gt; 1&#39;</span>
 </code></pre></div><p>print only lines where $2 is bigger than 1</p>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$1 &gt; 1 &amp;&amp; &lt; 10&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$1 &gt; 1 &amp;&amp; &lt; 10&#39;</span>
 </code></pre></div><p>multiple comparisons (bigger than 1 and smaller than 10)</p>
 <p><code>==</code></p>
 <p>equality</p>
 <p><code>~</code></p>
 <p>matching (even a regexp)</p>
 <h3 id="print-only-unique-lines-like-uniq">Print only unique lines (like uniq)</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;!a[$0]++&#39;</span> <span class="nx">file</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;!a[$0]++&#39;</span> <span class="nx">file</span>
 </code></pre></div><h3 id="regexp-matching">Regexp matching</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$0 ~ &#34;[A-Za-z0-9]+&#34; {print $1}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;$0 ~ &#34;[A-Za-z0-9]+&#34; {print $1}&#39;</span>
 </code></pre></div><p>print $1 only if $0 matches the regexp</p>
 <h3 id="variables-in-awk">Variables in Awk</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var</span><span class="o">=</span><span class="s2">&#34;bang&#34;</span> <span class="s1">&#39;{sub(var,&#34;boom&#34;);print}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var</span><span class="o">=</span><span class="s2">&#34;bang&#34;</span> <span class="s1">&#39;{sub(var,&#34;boom&#34;);print}&#39;</span>
 </code></pre></div><p>it also accepts shell variables with <code>-v var=$shell_variable</code></p>
 <p>Environment variables can also be accessed with <code>awk '{print, $0,ENVIRON[&quot;x&quot;]}' some_file</code></p>
 <h3 id="date-in-awk">Date in Awk</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{print strftime(&#34;%d-%m-%y %H-%M-%S&#34;, systime());}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{print strftime(&#34;%d-%m-%y %H-%M-%S&#34;, systime());}&#39;</span>
 </code></pre></div><p><code>strftime</code> converts the output of <code>systime</code> from the Unix epoch to a more human-readable format. Pattern is the same as <code>date</code> command. <code>systime</code> can be omitted (it defaults to current time). Only in GNU awk.</p>
 <h3 id="print-only-fields-after-the-first-2">Print only fields after the first 2</h3>
-<div class="highlight"><pre class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{$1=$2=&#34;&#34;; print $0}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{$1=$2=&#34;&#34;; print $0}&#39;</span>
 </code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/languages/Awk.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/" title="Languages"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Languages</a>

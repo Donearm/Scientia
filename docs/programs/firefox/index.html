@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Firefox - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/firefox/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -93,7 +93,7 @@ Useful URIs  about:buildconfig = Shows info about the arguments used to compile 
 <li><code>mousewheel.withnokey.sysnumlines</code> = With false, make Firefox ignore the speed of the mouse wheel chosen by the OS. Default is true</li>
 </ul>
 <h3 id="awesomebar-tweaks">AwesomeBar tweaks</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">places.frecency.linkVisitBonus <span class="m">100</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">places.frecency.linkVisitBonus <span class="m">100</span>
 places.frecency.typedVisitBonus <span class="m">2000</span>
 places.frecency.bookmarkVisitBonus <span class="m">150</span>
 places.frecency.embedVisitBonus <span class="m">0</span>
@@ -103,10 +103,10 @@ places.frecency.tempRedirectVisitBonus <span class="m">0</span>
 browser.urlbar.maxRichResults <span class="m">12</span>
 </code></pre></div><h3 id="disable-compatibility-check-for-extensions">Disable compatibility check for extensions</h3>
 <p>To force compatibility between a newer Firefox version and a not yet updated extension, add two booleans:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">extensions.checkUpdateSecurity  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">extensions.checkUpdateSecurity  
 extensions.checkCompatibility  
 </code></pre></div><p>and set both to false. It could be needed to add another boolean, false too, like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">extensions.checkCompatibility.3.6b
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">extensions.checkCompatibility.3.6b
 </code></pre></div><p>where 3.6b is the installed Firefox version</p>
 <h3 id="keyboard-shortcuts">Keyboard shortcuts</h3>
 <ul>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Common Lisp - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/common_lisp/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -65,45 +65,45 @@ getf (list :a 1 :b 2) :a) returns the value of :a
 <div class="content-container">
 <main><h1>Common Lisp</h1>
 <h2 id="syntax-and-various-functions">Syntax and various functions</h2>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">format</span> <span class="no">t</span> <span class="s">&#34;hello&#34;</span><span class="p">)</span> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">format</span> <span class="no">t</span> <span class="s">&#34;hello&#34;</span><span class="p">)</span> 
 </code></pre></div><p>print to stdout (t) the string</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nc">list</span> <span class="ss">:a</span> <span class="mi">1</span> <span class="ss">:b</span> <span class="mi">2</span> <span class="ss">:c</span> <span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nc">list</span> <span class="ss">:a</span> <span class="mi">1</span> <span class="ss">:b</span> <span class="mi">2</span> <span class="ss">:c</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div><p>make an indexed list (plist)</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nf">getf</span> <span class="p">(</span><span class="nc">list</span> <span class="ss">:a</span> <span class="mi">1</span> <span class="ss">:b</span> <span class="mi">2</span><span class="p">)</span> <span class="ss">:a</span><span class="p">)</span> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nf">getf</span> <span class="p">(</span><span class="nc">list</span> <span class="ss">:a</span> <span class="mi">1</span> <span class="ss">:b</span> <span class="mi">2</span><span class="p">)</span> <span class="ss">:a</span><span class="p">)</span> 
 </code></pre></div><p>returns the value of <code>:a</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">defvar</span> <span class="nv">var</span> <span class="nv">value</span><span class="p">)</span> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">defvar</span> <span class="nv">var</span> <span class="nv">value</span><span class="p">)</span> 
 </code></pre></div><p>define var with given value</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">parse-integer</span> <span class="nv">str</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">parse-integer</span> <span class="nv">str</span><span class="p">)</span>
 </code></pre></div><p>converts the string str in an integer (if possible)</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">y-or-n-p</span> <span class="nc">string</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">y-or-n-p</span> <span class="nc">string</span><span class="p">)</span>
 </code></pre></div><p>make a yes/no prompt with <code>string</code> and waits the user input (basically until he press y or n)</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">with-open-file</span> <span class="p">(</span><span class="nv">out</span> <span class="nv">filename</span><span class="p">))</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">with-open-file</span> <span class="p">(</span><span class="nv">out</span> <span class="nv">filename</span><span class="p">))</span>
 </code></pre></div><p>open filename and loads its contents in the variable <code>out</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">read</span> <span class="nv">in</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">read</span> <span class="nv">in</span><span class="p">)</span>
 </code></pre></div><p>read, and eventually evaluates in lisp, the string <code>in</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">setf</span> <span class="nv">var</span> <span class="nv">value</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">setf</span> <span class="nv">var</span> <span class="nv">value</span><span class="p">)</span>
 </code></pre></div><p>set value to variable var</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">remove-if-not</span> <span class="nf">#&#39;evenp</span> <span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">remove-if-not</span> <span class="nf">#&#39;evenp</span> <span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">)</span>
 </code></pre></div><p>remove not matching values (like <code>grep</code>). In the above example, prints only the even numbers (<code>evenp</code>)</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">evenp</span> <span class="p">(</span><span class="mi">1</span> <span class="mi">2</span><span class="p">))</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">evenp</span> <span class="p">(</span><span class="mi">1</span> <span class="mi">2</span><span class="p">))</span>
 </code></pre></div><p>returns true if all the arguments are even numbers</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">equal</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">equal</span><span class="p">)</span>
 </code></pre></div><p>string comparation</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">remove-if</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">remove-if</span><span class="p">)</span>
 </code></pre></div><p>the opposite of <code>remove-if-not</code>, prints only not matching values</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nf">reverse</span> <span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nf">reverse</span> <span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div><p>reverse the arguments. In the example, returns <code>(3 2 1)</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="k">quote</span> <span class="nv">expr</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="k">quote</span> <span class="nv">expr</span><span class="p">)</span>
 </code></pre></div><p>return expr without evaluating. Alternatively, it can suffice <code>'(expr)</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;optional</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;optional</span>
 </code></pre></div><p>marks the beginning of the optional arguments to a function</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;rest</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;rest</span>
 </code></pre></div><p>like above but save all arguments in a single list</p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;key</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="k">&amp;key</span>
 </code></pre></div><p>assigns a variable to the following arguments. For example <code>(defun foo (a b &amp;key c))</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nc">function</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nc">function</span><span class="p">)</span>
 </code></pre></div><p>returns the function object. Also with <code>#'function</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">funcall</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">funcall</span><span class="p">)</span>
 </code></pre></div><p>executes a function object</p>
 <div class="edit-meta">
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Bash - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/bash/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -58,7 +58,7 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 <h1 id="functions">Functions</h1>
 <p>namename prints the basename without extension<br>
 ext prints extension of a file, including &ldquo;.&rdquo;</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">	<span class="k">function</span> namename<span class="o">()</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">	<span class="k">function</span> namename<span class="o">()</span>
 	<span class="o">{</span>
 	  <span class="nb">local</span> <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">##*/</span><span class="si">}</span>
 	  <span class="nb">local</span> <span class="nv">name0</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">name</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&#34;</span>
@@ -146,13 +146,13 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 </ul>
 <h1 id="scripts">Scripts</h1>
 <h2 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">find -type f -name <span class="s2">&#34;name.ext&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span> <span class="k">do</span> mv <span class="nv">$i</span> <span class="nv">$i</span>%.ext<span class="p">;</span> <span class="k">done</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">find -type f -name <span class="s2">&#34;name.ext&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span> <span class="k">do</span> mv <span class="nv">$i</span> <span class="nv">$i</span>%.ext<span class="p">;</span> <span class="k">done</span>
 </code></pre></div><h2 id="rot13-encryption">Rot13 Encryption</h2>
 <p>In a file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> <span class="p">|</span> tr <span class="s1">&#39;a-zA-Z&#39;</span> <span class="s1">&#39;n-za-mN-Z-A-M&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> <span class="p">|</span> tr <span class="s1">&#39;a-zA-Z&#39;</span> <span class="s1">&#39;n-za-mN-Z-A-M&#39;</span>
 <span class="nb">exit</span> <span class="m">0</span>
 </code></pre></div><h2 id="rename-multiple-files">Rename multiple files</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> files in <span class="k">$(</span>ls .<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> files in <span class="k">$(</span>ls .<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
 	  <span class="nv">newname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$files</span> <span class="p">|</span> sed <span class="s1">&#39;s/oldtext/newtext/g&#39;</span><span class="sb">`</span><span class="p">;</span>
 	  mv <span class="nv">$files</span> <span class="nv">$newname</span><span class="p">;</span>
 <span class="k">done</span>

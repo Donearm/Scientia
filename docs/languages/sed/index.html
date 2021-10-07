@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Sed - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/sed/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -53,10 +53,10 @@ Update copyright date at the change of year sed -i &#39;s/2011\([, ] \)/2012\1/g
 <div class="content-container">
 <main><h1>Sed</h1>
 <h3 id="edit-a-string-in-multiple-files-at-once">Edit a string in multiple files at once</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> f in <span class="nv">$files</span><span class="p">;</span> <span class="k">do</span> grep <span class="nv">$oldstring</span> <span class="nv">$f</span> <span class="p">|</span> sed <span class="s1">&#39;s/$oldstring/$newstring/g&#39;</span> <span class="nv">$f</span> &gt; <span class="si">${</span><span class="nv">f</span><span class="si">}</span>.new <span class="p">;</span> <span class="k">done</span><span class="sb">`</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> f in <span class="nv">$files</span><span class="p">;</span> <span class="k">do</span> grep <span class="nv">$oldstring</span> <span class="nv">$f</span> <span class="p">|</span> sed <span class="s1">&#39;s/$oldstring/$newstring/g&#39;</span> <span class="nv">$f</span> &gt; <span class="si">${</span><span class="nv">f</span><span class="si">}</span>.new <span class="p">;</span> <span class="k">done</span><span class="sb">`</span>
 </code></pre></div><p>this actually outputs every edited files to a new file. To edit in place, use sed with <code>-i</code> and don&rsquo;t redirect the output</p>
 <h3 id="update-copyright-date-at-the-change-of-year">Update copyright date at the change of year</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sed -i <span class="s1">&#39;s/2011\([, ] \)/2012\1/g&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sed -i <span class="s1">&#39;s/2011\([, ] \)/2012\1/g&#39;</span>
 </code></pre></div><h3 id="various-syntax">Various syntax</h3>
 <ul>
 <li><code>s/pattern//2g</code> = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first</li>

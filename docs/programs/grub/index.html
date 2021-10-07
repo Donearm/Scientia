@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Grub - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/grub/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -59,11 +59,11 @@
 <p>First, have or generate a <code>grub.cfg</code>. <code>grub-mkconfig</code> is the command. Then
 create the path for it by <code>mkdir -p boot/grub/</code> and putting it there. Once done,
 generate the Grub2 standalone, with all the drivers embedded, with</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">grub-mkstandalone --directory<span class="o">=</span><span class="s2">&#34;/usr/lib/grub/x86_64-efi/&#34;</span> --format<span class="o">=</span><span class="s2">&#34;x86_64-efi&#34;</span> --compression<span class="o">=</span><span class="s2">&#34;xz&#34;</span> <span class="se">\ </span>--output<span class="o">=</span><span class="s2">&#34;/boot/efi/EFI/arch_grub/grubx64_standalone.efi&#34;</span> <span class="s2">&#34;boot/grub/grub.cfg&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub-mkstandalone --directory<span class="o">=</span><span class="s2">&#34;/usr/lib/grub/x86_64-efi/&#34;</span> --format<span class="o">=</span><span class="s2">&#34;x86_64-efi&#34;</span> --compression<span class="o">=</span><span class="s2">&#34;xz&#34;</span> <span class="se">\ </span>--output<span class="o">=</span><span class="s2">&#34;/boot/efi/EFI/arch_grub/grubx64_standalone.efi&#34;</span> <span class="s2">&#34;boot/grub/grub.cfg&#34;</span>
 </code></pre></div><p>of course, customize the output directory and the name of the grub executable as
 you wish. Then add the new grub entry to the UEFI boot list with <code>efibootmgr</code>
 thus</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">efibootmgr -c -g -d /dev/sda -p <span class="m">1</span> -w -L <span class="s2">&#34;Grub&#34;</span> -l <span class="err">&#39;</span><span class="se">\E</span>FI<span class="se">\a</span>rch_grub<span class="se">\g</span>rubx64_standalone.efi
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">efibootmgr -c -g -d /dev/sda -p <span class="m">1</span> -w -L <span class="s2">&#34;Grub&#34;</span> -l <span class="err">&#39;</span><span class="se">\E</span>FI<span class="se">\a</span>rch_grub<span class="se">\g</span>rubx64_standalone.efi
 </code></pre></div><p>again, customize the label (<code>-L</code>) as you prefer. And that&rsquo;s it, reboot!</p>
 <h1 id="grub2">Grub2</h1>
 <ul>

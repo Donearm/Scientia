@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>ViM - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/vim/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -334,7 +334,7 @@
 very beginning of a regexp so that everything that&rsquo;s not a letter, a number or
 an underscore is taken to have a special meaning unless explicitly escaped. For
 example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-vim" data-lang="vim"><span class="p">:</span>%<span class="nx">s</span><span class="sr">/\v^%(abc){1,3}(.+)$/</span>\<span class="m">1</span>/<span class="err">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="p">:</span>%<span class="nx">s</span><span class="sr">/\v^%(abc){1,3}(.+)$/</span>\<span class="m">1</span>/<span class="err">
 </span></code></pre></div><p>doesn&rsquo;t need backslashing before parentheses, plus sign and curly brackets.</p>
 <p>Also, <code>\c</code> turns off case sensitivity. Its opposite is <code>\C</code>, forcing case
 sensitivity on.</p>

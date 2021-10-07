@@ -73,6 +73,35 @@ weight: 910
 * Praia de Alvor - south of Alvor, just west of Portimao
 * Praia do Martinhal - east of Sagres
 
+# Americas
+
+## Mexico
+
+* Chichen Itza
+* Sian Ka'an Biosphere
+* Bacalar with the Cenote Azul
+* Muyil (archeological area plus the lagoon)
+* Ek Balam
+* Banco Chinchorro (excursion possible with a tour from Mahahual)
+
+### Cenotes
+
+* Zaci
+* Tza-ujun-kat
+* Ik Kil
+* Sac Actun
+* Suytun
+* Calavera
+
+### Best beaches
+
+* Xcacel
+* Mahahual
+* Las Coloradas
+* Maroma
+* El Cielo (on Cozumel)
+* Punta Cocos (on Holbox, nearby there's the bay where bioluminescence is possible at night)
+
 # Asia
 
 ## Indonesia

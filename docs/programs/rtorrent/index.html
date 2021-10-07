@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Rtorrent - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.88.1" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/rtorrent/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -54,7 +54,7 @@ d.tracker.insert=&#34;3&#34;,&#34;url_of_tracker&#34; where 3 is the next slot i
 <main><h1>Rtorrent</h1>
 <h3 id="add-trackers-to-a-torrent">Add trackers to a torrent</h3>
 <p>Select the torrent. Press <code>Ctrl+x</code> and insert this command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">d.tracker.insert</span><span class="o">=</span><span class="s">&#34;3&#34;,&#34;url_of_tracker&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">d.tracker.insert</span><span class="o">=</span><span class="s">&#34;3&#34;,&#34;url_of_tracker&#34;</span>
 </code></pre></div><p>where <code>3</code> is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and <code>url_of_tracker</code> is obviously the url of the new tracker. Might be necessary to do a tracker update request with <code>T</code> (or just wait a bit and rtorrent will do it by itself)</p>
 <div class="edit-meta">
 
