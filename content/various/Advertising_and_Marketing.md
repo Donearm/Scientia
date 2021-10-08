@@ -37,3 +37,63 @@ A set of strategies and products to create lists to layer onto your ad groups.
 * **Variable Bidding** = automatically increase or decrease bids on certain audiences
 * **Keyword Expansion** = target generic keywords and only show ads to certain audiences
 * **Creative Customization** = target specific audiences with bespoke text ads
+
+## Create a Marketing Plan
+
+* Start with an empty presentation
+* Fill only headings at the beginning
+* As you collect data, fill the presentation
+
+### 1. Collect Data
+
+Most important data to gather:
+
+* Market size
+* Market fluctuation
+* Economic and regulatory influences
+* Market shares of your client and main competitors'
+* Market share changes and why
+* Data about competitors, especially:
+	* Products
+	* Services
+	* Price points
+	* Promotions on web and social media
+	* Value propositions
+	* Customer loyalty
+
+### 2. Select the mission statement
+
+Define company's business and relative objectives. Establish a vision statement (the desired future position of the company). Both the mission and vision statements may already exist. If so, ask about them and review them.
+
+### 3. Write a market analysis
+
+Points to consider:
+
+* Total Addressable Market (TAM). Meaning the total sales of all companies in the industry + potential new customers.
+
+Total Industry Sales / TAM = Market Penetration OR % of total market reached
+
+Company Total Industry Sales / Total Market Sales = Revenue Market Share
+
+Write a SWOT analysis:
+
+* Strenghts of the client
+* Weaknesses of the client
+* Opportunities of the client (like favorable situations)
+* Threats for the client (unfavorable situations)
+
+### 4. Describe a current customer's persona
+
+### 5. Write a customer buying process map
+
+* Describe how a customer gets awareness of the products/services
+* How customers search and evaluate alternatives
+* Purchase and post purchase behaviour
+* Write what benefits a typical customers may be looking for
+
+### 6. Write a product/service analysis
+
+* For each product or service write the features and relative benefits
+* Compare with client's competitors and identify what matches, the gaps and the opportunities
+
+### 7. Collect all the data thus gathered in an overall strategy
