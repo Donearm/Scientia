@@ -58,7 +58,7 @@ weight: 632
 * `gt` = Go to the next tab
 * `gT` = Go to the previous tab
 * `gi` = Go to the exact point where last edit happened, like `\`.`, but also enter insert mode
-* ``m` = Go to the mark `m`
+* `m` = Go to the mark `m`
 * `H` = Go to the first line of the screen (which is not the first line of the file!)
 * `M` = Go to the middle of the screen
 * `L` = Go to the bottom of the screen
@@ -282,6 +282,7 @@ Some macros I find useful
 * `:g/regexp/,/regexp/d` = Remove all lines where the first *or* the second regexp appears
 * `:%s/^\(.*\)\n\1$/\1/` = Remove all duplicated lines in the current file
 
+
 ##Tips
 
 ### Change statusline colours
@@ -307,3 +308,11 @@ sensitivity on.
 ### Identify corresponding opening/closing HTML tag
 
 Typing `v` + `a` + `t` will select everything inside the html tag where is the cursor. Subsequently `o` will jump between the opening and closing tag, `c` will change content and `y` will yank
+
+### Plugins
+
+Other than using a plugin helper, from ViM 8 onward it is possible to install a plugin directly in the `.vim/pack/` directory and load it without touching the configuration at all.
+
+If the plugin is on Github, it can be automatically installed and set to autoload with this command:
+
+	git clone --depth 1 https://github.com/account/pluginname .vim/pack/dist/start/pluginname

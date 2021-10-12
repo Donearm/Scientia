@@ -31,7 +31,7 @@
 <meta itemprop="name" content="ViM">
 <meta itemprop="description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!">
 
-<meta itemprop="wordCount" content="2956"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="3014"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -103,7 +103,7 @@
 <li><code>gt</code> = Go to the next tab</li>
 <li><code>gT</code> = Go to the previous tab</li>
 <li><code>gi</code> = Go to the exact point where last edit happened, like <code>\</code>.`, but also enter insert mode</li>
-<li>``m<code>= Go to the mark</code>m`</li>
+<li><code>m</code> = Go to the mark <code>m</code></li>
 <li><code>H</code> = Go to the first line of the screen (which is not the first line of the file!)</li>
 <li><code>M</code> = Go to the middle of the screen</li>
 <li><code>L</code> = Go to the bottom of the screen</li>
@@ -340,6 +340,11 @@ example:</p>
 sensitivity on.</p>
 <h3 id="identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</h3>
 <p>Typing <code>v</code> + <code>a</code> + <code>t</code> will select everything inside the html tag where is the cursor. Subsequently <code>o</code> will jump between the opening and closing tag, <code>c</code> will change content and <code>y</code> will yank</p>
+<h3 id="plugins">Plugins</h3>
+<p>Other than using a plugin helper, from ViM 8 onward it is possible to install a plugin directly in the <code>.vim/pack/</code> directory and load it without touching the configuration at all.</p>
+<p>If the plugin is on Github, it can be automatically installed and set to autoload with this command:</p>
+<pre><code>git clone --depth 1 https://github.com/account/pluginname .vim/pack/dist/start/pluginname
+</code></pre>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/programs/Vim.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/urxvt/" title="URxvt"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - URxvt</a>
