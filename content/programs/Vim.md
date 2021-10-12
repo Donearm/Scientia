@@ -46,7 +46,7 @@ weight: 632
 * `0` = Go at the beginning of the current line
 * `$` = Go at the end of the current line
 * `End` = Move to the end of the current line. It accepts a number to jump multiple lines
-* `fj` = Go to the next occurrence of `j` 
+* `fj` = Go to the next occurrence of `j`
 * `Fj` = Go to the previous occurrence of `j`
 * `12G` = Go to the specified line. In the example, go to the 12th line
 * `G` = Go to the end of the current buffer
@@ -246,12 +246,12 @@ weight: 632
 * `:tabe file` = Open file in a new tab
 * `:tabc` = Close current tab
 * `:tabn` = Go to next tab
-* `:tabc` = Go to previous tab 
+* `:tabc` = Go to previous tab
 * `!!date` = Insert date and time
 * `Ctrl+L` = Clear screen from all messages and warnings
 * `Ctrl+k` = Activate the insertion of special symbol and characters (those shown by `:digraphs`)
 * `g<Ctrl+g>` = Show some statistics about current file
-* `gv` = Select again last visual selectio 
+* `gv` = Select again last visual selection
 * `Ctrl+n` = Show a list of possible completions for the word under cursor (based on the opened file)
 * `Ctrl+x` and `Ctrl+l` = Show a list of possible completions for the whole line (in insert mode)
 * `Ctrl+x` and `Ctrl+f` = Show a list of possible completions for the whole line with an existing path (in insert mode)
@@ -290,9 +290,9 @@ Edit in the colour theme file the `hi Statusline` line. `ctermfg` is the foregro
 
 ### Regexp
 
-Instead of backslashing special characters, it's possible to add `\v` at the 
-very beginning of a regexp so that everything that's not a letter, a number or 
-an underscore is taken to have a special meaning unless explicitly escaped. For 
+Instead of backslashing special characters, it's possible to add `\v` at the
+very beginning of a regexp so that everything that's not a letter, a number or
+an underscore is taken to have a special meaning unless explicitly escaped. For
 example:
 
 ```vim
@@ -301,7 +301,7 @@ example:
 
 doesn't need backslashing before parentheses, plus sign and curly brackets.
 
-Also, `\c` turns off case sensitivity. Its opposite is `\C`, forcing case 
+Also, `\c` turns off case sensitivity. Its opposite is `\C`, forcing case
 sensitivity on.
 
 ### Identify corresponding opening/closing HTML tag
