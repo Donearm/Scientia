@@ -315,4 +315,6 @@ Other than using a plugin helper, from ViM 8 onward it is possible to install a 
 
 If the plugin is on Github, it can be automatically installed and set to autoload with this command:
 
-	git clone --depth 1 https://github.com/account/pluginname .vim/pack/dist/start/pluginname
+```vim
+git clone --depth 1 https://github.com/account/pluginname .vim/pack/dist/start/pluginname
+```
