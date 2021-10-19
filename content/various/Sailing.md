@@ -63,3 +63,4 @@ weight: 843
 * Aventura 37 (catamaran)
 * Hunter 41 (110-150k€)
 * Hanse 348 (100k€)
+* Hanse 388 (150k€)
