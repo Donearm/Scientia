@@ -4,6 +4,7 @@ weight: 1050
 ---
 
 * [Marcion of Sinope](https://en.wikipedia.org/wiki/Marcion_of_Sinope) = founder of Marcionism. First to develop a New Testament canon. Then declared heretic and forced the orthodox Church to develop their own canon.
+* [Therapeautae](https://en.wikipedia.org/wiki/Therapeutae) = a Christian sect in Alexandria from 1st century a.C. Their practices were similar to Theravada Buddhism and their name may have been an adaption to Greek of the pali word Theravada.
 
 ## Apocryphal books
 
