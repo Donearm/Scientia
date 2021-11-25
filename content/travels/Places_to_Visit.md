@@ -73,6 +73,19 @@ weight: 910
 * Praia de Alvor - south of Alvor, just west of Portimao
 * Praia do Martinhal - east of Sagres
 
+# Africa
+
+## Egypt
+
+A second trip to mainly visit what I missed in the first and return on the best 
+places (north to south):
+
+* Cairo: Museum of Islamic Art, Mosque of Ibn Tulun
+* Gizah Pyramids
+* Saqqara: Red, Black and Djoser Pyramids. The Serapeum
+* Obydos: Osireion and Temple of Seti I
+* Abu Simbel
+
 # Americas
 
 ## Mexico
