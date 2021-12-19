@@ -77,8 +77,7 @@ weight: 910
 
 ## Egypt
 
-A second trip to mainly visit what I missed in the first and return on the best 
-places (north to south):
+A second trip to mainly visit what I missed in the first and return on the best places (north to south):
 
 * Cairo: Museum of Islamic Art, Mosque of Ibn Tulun
 * Gizah Pyramids
