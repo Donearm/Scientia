@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
@@ -38,8 +39,7 @@ d.tracker.insert=&#34;3&#34;,&#34;url_of_tracker&#34; where 3 is the next slot i
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
-<h1>Gianluca Fiore Personal Wiki</h1>
-<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<h1>Gianluca Fiore Personal Wiki</h1><a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. with a few non-related topics</p>
 
 </header>
@@ -58,11 +58,12 @@ d.tracker.insert=&#34;3&#34;,&#34;url_of_tracker&#34; where 3 is the next slot i
 </code></pre></div><p>where <code>3</code> is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and <code>url_of_tracker</code> is obviously the url of the new tracker. Might be necessary to do a tracker update request with <code>T</code> (or just wait a bit and rtorrent will do it by itself)</p>
 <div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/programs/Rtorrent.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/mutt/" title="Mutt"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Mutt</a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/Rtorrent.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/mutt/" title="Mutt"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Mutt</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/screen/" title="Screen">Next - Screen <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
-</main><div class="sidebar">
+</main>
+<div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
@@ -255,6 +256,7 @@ d.tracker.insert=&#34;3&#34;,&#34;url_of_tracker&#34; where 3 is the next slot i
 
 <div class="sidebar-footer"></div>
 </div>
+
 </div><a href="#" id="backtothetop-fixed" class="backtothetop"
  data-backtothetop-duration="600"
  data-backtothetop-easing="easeOutQuart"

@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
@@ -35,8 +36,7 @@
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
-<h1>Gianluca Fiore Personal Wiki</h1>
-<a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
+<h1>Gianluca Fiore Personal Wiki</h1><a href="https://github.com/Donearm/Personal-Wiki/" class="github"><i class="fab fa-github"></i></a>
 <p class="description">My `Knowledge Wiki`. Mostly I.T. with a few non-related topics</p>
 
 </header>
@@ -72,11 +72,12 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ffmpeg -y -i input.gif -r <span class="m">16</span> -c:v libvpx -quality good -cpu-used <span class="m">0</span> -b:v 2M -crf <span class="m">12</span> -pix_fmt yuv420p -movflags faststart outputfile.webm
 </code></pre></div><div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/content/programs/Ffmpeg.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/e-uae/" title="E-Uae"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - E-Uae</a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/Ffmpeg.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/e-uae/" title="E-Uae"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - E-Uae</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/firefox/" title="Firefox">Next - Firefox <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
-</main><div class="sidebar">
+</main>
+<div class="sidebar">
 
 <nav class="slide-menu">
 <ul>
@@ -269,6 +270,7 @@
 
 <div class="sidebar-footer"></div>
 </div>
+
 </div><a href="#" id="backtothetop-fixed" class="backtothetop"
  data-backtothetop-duration="600"
  data-backtothetop-easing="easeOutQuart"
