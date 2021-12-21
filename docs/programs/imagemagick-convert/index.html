@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Imagemagick Convert - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.89.4" />
+<meta name="generator" content="Hugo 0.90.0" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -32,7 +32,7 @@
 <meta itemprop="name" content="Imagemagick Convert">
 <meta itemprop="description" content="Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx&#43;nnn&#43;nnn dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso">
 
-<meta itemprop="wordCount" content="553"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="610"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -61,6 +61,9 @@ L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&
 <h3 id="tweak-brightness-and-contrast">Tweak brightness and contrast</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert -level blackpoint%,whitepoint%,gamma
 </code></pre></div><p>blackpoint and whitepoint are the limit over which the black and white pixel will be discarded, in a percentage. Therefore, removing the blackest and/or whitest pixels can reduce the overall contrast of the image. Gamma increases or decreases the overall brightness. Default value is 1.0, lower it to dim and increases it to brighten</p>
+<p>Alternatively another command can be used, tweaking brightness and contrast at the same time:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert original_image -brightness-contrast n%xm% final_image
+</code></pre></div><p>where <code>n%</code> refer to the increment or decrement in percentage of the brightness, and <code>m%</code> is relative to the contrast. Add a <code>+</code> or <code>-</code> to signal to ImageMagick if there has to be an increment or decrement.</p>
 <h3 id="change-main-colour-of-an-icon">Change main colour of an icon</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert <span class="se">\(</span> icon.png -alpha extract <span class="se">\)</span> -background <span class="s2">&#34;#ffffff&#34;</span> -alpha shape white-icon.png
 </code></pre></div><p>Convert an icon main colour, the foreground one, to white. Colours can be any of those listed at <a href="http://www.imagemagick.org/script/color.php">Color Names</a></p>

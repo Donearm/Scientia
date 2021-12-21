@@ -31,6 +31,14 @@ convert -level blackpoint%,whitepoint%,gamma
 
 blackpoint and whitepoint are the limit over which the black and white pixel will be discarded, in a percentage. Therefore, removing the blackest and/or whitest pixels can reduce the overall contrast of the image. Gamma increases or decreases the overall brightness. Default value is 1.0, lower it to dim and increases it to brighten
 
+Alternatively another command can be used, tweaking brightness and contrast at the same time:
+
+```bash
+convert original_image -brightness-contrast n%xm% final_image
+```
+
+where `n%` refer to the increment or decrement in percentage of the brightness, and `m%` is relative to the contrast. Add a `+` or `-` to signal to ImageMagick if there has to be an increment or decrement.
+
 ### Change main colour of an icon
 
 ```bash
