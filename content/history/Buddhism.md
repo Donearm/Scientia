@@ -12,3 +12,17 @@ In the apocryphal Gospel of Thomas, at verse 90, Jesus says:
 Come unto me, for my yoga is natural and my lordship is gentle—and you shall find repose for yourselves.
 ```
 thus literally naming Yoga in a text of very early Christianity. It is also stated by Dio Chrysostum and Clement (respectively 1st and 2nd century A.D.) that in Alexandria, Egypt, Indian scholars were a common sight (cit needed).
+
+## Similitudes between Buddhism and Western philosophies
+
+### Hegesians
+
+[Hegesias of Cyrene](https://en.wikipedia.org/wiki/Hegesias_of_Cyrene) (fl. 290 BC) argued how happiness was impossible to achieve and the goal of life should be to avoid pain and sorrow.
+
+He arguably wrote a book called _Death by Starvation_ that persuaded so many people that death was more desirable than life that he was banned from teaching in Alexandria.
+
+Hegesias was living before the edicts of Ashoka (268-232 BC) and the missionaries the Indian king sent to the Hellenistic world. Therefore the connection to Buddhism should have happened earlier, unrelated with Ashoka's reign.
+
+### Dionysus in India
+
+Fairly attested throughout the Greek texts is the belief that the God Dionysus travelled and subdued India (parts of). He was called Nysian/Nysean by the Indians.
