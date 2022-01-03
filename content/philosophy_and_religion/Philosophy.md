@@ -26,3 +26,17 @@ Eliminativism is in direct contrast with common physicology, asserting how it ha
 ### References
 
 * Main [Wikipedia's page about Eliminativism](https://en.wikipedia.org/wiki/Eliminative_materialism)
+
+## Moral Nihilism
+
+The view that asserts that there is nothing morally right or wrong. It opposes traditional views in which moral proprieties or methods hold objectively and from which we can decide the morality of our actions. For the moral nihilists such proprieties do not exist in the world, therefore the traditional meaning of morality does not exists as well.
+
+Moral assertions can be true or false only if there are moral proprieties. Once those are rejected, it is logical that the former cannot exist.
+
+### Notable philosophers of Moral Nihilism
+
+* [J. L. Mackie](https://en.wikipedia.org/wiki/J._L._Mackie)
+
+## Existential Nihilism
+
+The philosophical theory that life has no meaning and that humanity has no purpose. This includes both us as a society and the individual. The capacity of purpose is not denied, it is only assumed that none is given or inherent to objects and humans.
