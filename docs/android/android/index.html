@@ -18,16 +18,13 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Android" />
-<meta property="og:description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+<meta property="og:description" content="Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app   Performance tweaks In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1 to force launcher into memory
+ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
 dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro." />
+debug.sf.hw=1 to render UI with the GPU
+ro.telephony.call_ring.delay=0 to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/android/android/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="android" />
 
@@ -37,29 +34,23 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Android"/>
-<meta name="twitter:description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+<meta name="twitter:description" content="Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app   Performance tweaks In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1 to force launcher into memory
+ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
 dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro."/>
+debug.sf.hw=1 to render UI with the GPU
+ro.telephony.call_ring.delay=0 to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness"/>
 <meta itemprop="name" content="Android">
-<meta itemprop="description" content="In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1  to force launcher into memory
-ro.media.enc.jpeg.quality=100  to raise jpeg quality to 100%
+<meta itemprop="description" content="Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app   Performance tweaks In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1 to force launcher into memory
+ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
 dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1  to render UI with the GPU
-ro.telephony.call_ring.delay=0  to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness
-Save battery wifi.supplicant_scan_interval=180 pm.sleep_mode=1 ro.ril.disable.power.collapse=0 while
-persist.adb.notify=0  disables debugging notify icon on statusbar
-Increase overall touch responsiveness debug.performance.tuning=1 video.accelerate.hw=1 Raise photo and video recording quality ro.media.dec.jpeg.memcap=8000000 ro.">
+debug.sf.hw=1 to render UI with the GPU
+ro.telephony.call_ring.delay=0 to decrease dialing out delay
+windowsmgr.max_events_per_sec=150  help scrolling responsiveness">
 
-<meta itemprop="wordCount" content="212"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="244"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -76,16 +67,29 @@ Increase overall touch responsiveness debug.performance.tuning=1 video.accelerat
 </div>
 <div class="content-container">
 <main><h1>Android</h1>
+<ul>
+<li><a href="#performance-tweaks">Performance tweaks</a></li>
+<li><a href="#save-battery">Save Battery</a></li>
+<li><a href="#increase-overall-touch-responsiveness">Increase overall touch responsiveness</a></li>
+<li><a href="#raise-photo-and-video-recording-quality">Raise photo and video recording quality</a></li>
+<li><a href="#3g-signal-tweaks">3G signal tweaks</a></li>
+<li><a href="#net-tcp-speed-tweaks">Net Tcp speed tweaks</a></li>
+<li><a href="#disable-blackscreen-issue-after-call">Disable blackscreen issue after call</a></li>
+<li><a href="#various">Various</a></li>
+<li><a href="#uninstall-system-app">Uninstall sytem app</a></li>
+</ul>
+<hr>
+<h1 id="performance-tweaks">Performance tweaks</h1>
 <p>In <code>/system/build.prop</code> edit:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1  </span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1</span>
 </code></pre></div><p>to force launcher into memory</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100  </span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100</span>
 </code></pre></div><p>to raise jpeg quality to 100%</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">dalvik.vm.heapsize</span><span class="o">=</span><span class="s">48m</span>
 </code></pre></div><p>specifies the VM heapsize</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1  </span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1</span>
 </code></pre></div><p>to render UI with the GPU</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0  </span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0</span>
 </code></pre></div><p>to decrease dialing out delay</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">windowsmgr.max_events_per_sec</span><span class="o">=</span><span class="s">150  </span>
 </code></pre></div><p>help scrolling responsiveness</p>

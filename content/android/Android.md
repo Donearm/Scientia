@@ -3,18 +3,31 @@ title: Android
 type: docs
 ---
 
+* [Performance tweaks](#performance-tweaks)
+* [Save Battery](#save-battery)
+* [Increase overall touch responsiveness](#increase-overall-touch-responsiveness)
+* [Raise photo and video recording quality](#raise-photo-and-video-recording-quality)
+* [3G signal tweaks](#3g-signal-tweaks)
+* [Net Tcp speed tweaks](#net-tcp-speed-tweaks)
+* [Disable blackscreen issue after call](#disable-blackscreen-issue-after-call)
+* [Various](#various)
+* [Uninstall sytem app](#uninstall-system-app)
+
+-----------
+
+# Performance tweaks
 In `/system/build.prop` edit:
 
 ```cfg
-ro.~HOME_APP_ADJ=1  
+ro.~HOME_APP_ADJ=1
 ```
 
 to force launcher into memory
 
 ```cfg
-ro.media.enc.jpeg.quality=100  
+ro.media.enc.jpeg.quality=100
 ```
-	
+
 to raise jpeg quality to 100%
 
 ```cfg
@@ -24,13 +37,13 @@ dalvik.vm.heapsize=48m
 specifies the VM heapsize
 
 ```cfg
-debug.sf.hw=1  
+debug.sf.hw=1
 ```
-	
+
 to render UI with the GPU
 
 ```cfg
-ro.telephony.call_ring.delay=0  
+ro.telephony.call_ring.delay=0
 ```
 
 to decrease dialing out delay
