@@ -1,6 +1,6 @@
 ---
 title: Hinduism
-weight: 1060
+weight: 1360
 ---
 
 # Philosophical schools within Hinduism

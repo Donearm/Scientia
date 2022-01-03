@@ -1,6 +1,6 @@
 ---
 title: Christianity
-weight: 1050
+weight: 1350
 ---
 
 * [Marcion of Sinope](https://en.wikipedia.org/wiki/Marcion_of_Sinope) = founder of Marcionism. First to develop a New Testament canon. Then declared heretic and forced the orthodox Church to develop their own canon.

@@ -1,6 +1,6 @@
 ---
 title: Military History
-weight: 1070
+weight: 1050
 ---
 
 # Early Islamic Conquests

@@ -1,6 +1,6 @@
 ---
 title: Buddhism
-weight: 1030
+weight: 1320
 ---
 
 ## Contacts between Buddhism and Christianity

@@ -1,6 +1,6 @@
 ---
 title: Philosophy
-weight: 1075
+weight: 1375
 ---
 
 ## Eliminative materialism/Eliminativism
