@@ -4,6 +4,20 @@ weight: 405
 bookCollapseSection: true
 ---
 
+* [Pring longest line value of a file](#print-longest-line-value-of-a-file)
+* [Print only non-empty lines](#print-only-non-empty-lines)
+* [Count lines](#count-lines)
+* [Awk as Grep](#awk-as-grep)
+* [Strings substitution](#strings-substitution)
+* [Comparison](#comparison)
+* [Print only unique lines (like uniq)](#print-only-unique-lines-like-uniq)
+* [Regexp matching](#regexp-matching)
+* [Variables in Awk](#variables-in-awk)
+* [Dates in Awk](#dates-in-awk)
+* [Print only fields after the first 2](#print-only-fields-after-the-first-2)
+
+------------------
+
 ###  Print longest line value of a file
 
 ```awk
@@ -86,7 +100,7 @@ it also accepts shell variables with `-v var=$shell_variable`
 
 Environment variables can also be accessed with `awk '{print, $0,ENVIRON["x"]}' some_file`
 
-### Date in Awk
+### Dates in Awk
 
 ```awk
 awk '{print strftime("%d-%m-%y %H-%M-%S", systime());}'

@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Docker" />
-<meta property="og:description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile." />
+<meta property="og:description" content="Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm   Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/devops/docker/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="devops" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Docker"/>
-<meta name="twitter:description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile."/>
+<meta name="twitter:description" content="Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm   Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile."/>
 <meta itemprop="name" content="Docker">
-<meta itemprop="description" content="Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.">
+<meta itemprop="description" content="Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm   Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.">
 
-<meta itemprop="wordCount" content="911"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="928"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,16 @@
 </div>
 <div class="content-container">
 <main><h1>Docker</h1>
+<ul>
+<li><a href="#working-with-images">Working with images</a></li>
+<li><a href="#working-with-containers">Working with containers</a></li>
+<li><a href="#working-with-networks">Working with networks</a></li>
+<li><a href="#working-with-volumes">Working with volumes</a></li>
+<li><a href="#general-commands">General commands</a></li>
+<li><a href="#docker-compose">Docker-compose</a></li>
+<li><a href="#docker-swarm">Docker Swarm</a></li>
+</ul>
+<hr>
 <h1 id="working-with-images">Working with images</h1>
 <ul>
 <li><code>docker image ls</code> = list all images</li>

@@ -5,6 +5,16 @@ weight: 304
 bookCollapseSection: true
 ---
 
+* [Selectors](#selectors)
+* [Attribute and style manipulations](#attribute-and-style-manipulations)
+* [Ajax](#ajax)
+* [Append and prepend nodes](#append-and-prepend-nodes)
+* [Listening to events](#listening-to-events)
+* [Removing elements](#removing-elements)
+* [Content manipulation](#content-manipulation)
+
+---------------------
+
 ### Selectors
 
 ```javascript

@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/devops/aws/</guid>
-      <description>Products AMI Amazon Machine Images. Images to choose from to launch an instance.
+      <description>Products Terminology   Products AMI Amazon Machine Images. Images to choose from to launch an instance.
 AWS CLI The command-line interface to AWS services.
-Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</description>
+Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@ Useful Commands  aws configure = initial command to run in order to configure ac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/devops/docker/</guid>
-      <description>Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
+      <description>Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm   Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
     </item>
     
     <item>
@@ -69,8 +69,7 @@ Useful Commands  aws configure = initial command to run in order to configure ac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/frontend/jquery/</guid>
-      <description>Selectors $(&amp;#39;.foo&amp;#39;).addClass(&amp;#34;foobar&amp;#34;); $(&amp;#39;.foo&amp;#39;).removeClass(&amp;#34;foobar&amp;#34;); Attribute and Style manipulations $(&amp;#39;.foo&amp;#39;).attr(&amp;#34;new-attr&amp;#34;, &amp;#34;new-value&amp;#34;); $(&amp;#39;.foo&amp;#39;).css(&amp;#34;background&amp;#34;, &amp;#34;white&amp;#34;); Ajax $.getJSON(&amp;#39;http://resource.json&amp;#39;, doSomething); $.ajax({ url: &amp;#39;http://resource.txt&amp;#39;, dataType: &amp;#39;text&amp;#39;, type: &amp;#39;GET&amp;#39;, success: doSomething }); Append and Prepend nodes $(&amp;#39;.foo&amp;#39;).append(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); $(&amp;#39;.foo&amp;#39;).prepend(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); Listening to events $(&amp;#39;.foo&amp;#39;).on(&amp;#39;click&amp;#39;, clickHandler); Removing elements $(&amp;#39;.foo&amp;#39;).remove(); Content manipulation $(&amp;#39;.foo&amp;#39;).text(&amp;#39;Hello World!&amp;#39;); $(&amp;#39;.foo&amp;#39;).html(&amp;#39;&amp;lt;div class=&amp;#34;bar&amp;#34;&amp;gt;Hello&amp;lt;/div&amp;gt;&amp;#39;); inserting a new element after each li element
-$(&amp;#39;li&amp;#39;).after(&amp;#39;&amp;lt;li&amp;gt;Item&amp;lt;/li&amp;gt;&amp;#39;); obviously .before() works the opposite way. The .empty() function will completely remove all children of an element</description>
+      <description>Selectors Attribute and style manipulations Ajax Append and prepend nodes Listening to events Removing elements Content manipulation   Selectors $(&amp;#39;.foo&amp;#39;).addClass(&amp;#34;foobar&amp;#34;); $(&amp;#39;.foo&amp;#39;).removeClass(&amp;#34;foobar&amp;#34;); Attribute and Style manipulations $(&amp;#39;.foo&amp;#39;).attr(&amp;#34;new-attr&amp;#34;, &amp;#34;new-value&amp;#34;); $(&amp;#39;.foo&amp;#39;).css(&amp;#34;background&amp;#34;, &amp;#34;white&amp;#34;); Ajax $.getJSON(&amp;#39;http://resource.json&amp;#39;, doSomething); $.ajax({ url: &amp;#39;http://resource.txt&amp;#39;, dataType: &amp;#39;text&amp;#39;, type: &amp;#39;GET&amp;#39;, success: doSomething }); Append and Prepend nodes $(&amp;#39;.foo&amp;#39;).append(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); $(&amp;#39;.foo&amp;#39;).prepend(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); Listening to events $(&amp;#39;.foo&amp;#39;).on(&amp;#39;click&amp;#39;, clickHandler); Removing elements $(&amp;#39;.foo&amp;#39;).remove(); Content manipulation $(&amp;#39;.foo&amp;#39;).text(&amp;#39;Hello World!&amp;#39;); $(&amp;#39;.foo&amp;#39;).html(&amp;#39;&amp;lt;div class=&amp;#34;bar&amp;#34;&amp;gt;Hello&amp;lt;/div&amp;gt;&amp;#39;); inserting a new element after each li element</description>
     </item>
     
     <item>
@@ -88,8 +87,7 @@ $(&amp;#39;li&amp;#39;).after(&amp;#39;&amp;lt;li&amp;gt;Item&amp;lt;/li&amp;gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/languages/awk/</guid>
-      <description>Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;
-To negate a pattern (print only lines that don&amp;rsquo;t match), use awk &#39;$1 !</description>
+      <description>Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2   Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;</description>
     </item>
     
     <item>

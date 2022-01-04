@@ -18,8 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Awk" />
-<meta property="og:description" content="Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;
-To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !" />
+<meta property="og:description" content="Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2   Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/awk/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
 
@@ -29,13 +28,11 @@ To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Awk"/>
-<meta name="twitter:description" content="Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;
-To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !"/>
+<meta name="twitter:description" content="Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2   Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;"/>
 <meta itemprop="name" content="Awk">
-<meta itemprop="description" content="Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;
-To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !">
+<meta itemprop="description" content="Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2   Print longest line value of a file expand some_file | awk &#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39; Print only non-empty lines awk &#39;NF &gt; 0&#39; some_file Count lines awk &#39;END {print NR}&#39; some_file Awk as Grep awk &#39;{print $2}&#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;">
 
-<meta itemprop="wordCount" content="253"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="293"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -52,6 +49,20 @@ To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !
 </div>
 <div class="content-container">
 <main><h1>Awk</h1>
+<ul>
+<li><a href="#print-longest-line-value-of-a-file">Pring longest line value of a file</a></li>
+<li><a href="#print-only-non-empty-lines">Print only non-empty lines</a></li>
+<li><a href="#count-lines">Count lines</a></li>
+<li><a href="#awk-as-grep">Awk as Grep</a></li>
+<li><a href="#strings-substitution">Strings substitution</a></li>
+<li><a href="#comparison">Comparison</a></li>
+<li><a href="#print-only-unique-lines-like-uniq">Print only unique lines (like uniq)</a></li>
+<li><a href="#regexp-matching">Regexp matching</a></li>
+<li><a href="#variables-in-awk">Variables in Awk</a></li>
+<li><a href="#dates-in-awk">Dates in Awk</a></li>
+<li><a href="#print-only-fields-after-the-first-2">Print only fields after the first 2</a></li>
+</ul>
+<hr>
 <h3 id="print-longest-line-value-of-a-file">Print longest line value of a file</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">expand</span> <span class="nx">some_file</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">&#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39;</span>
 </code></pre></div><h3 id="print-only-non-empty-lines">Print only non-empty lines</h3>
@@ -83,7 +94,7 @@ To negate a pattern (print only lines that don&rsquo;t match), use awk &#39;$1 !
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var</span><span class="o">=</span><span class="s2">&#34;bang&#34;</span> <span class="s1">&#39;{sub(var,&#34;boom&#34;);print}&#39;</span>
 </code></pre></div><p>it also accepts shell variables with <code>-v var=$shell_variable</code></p>
 <p>Environment variables can also be accessed with <code>awk '{print, $0,ENVIRON[&quot;x&quot;]}' some_file</code></p>
-<h3 id="date-in-awk">Date in Awk</h3>
+<h3 id="dates-in-awk">Dates in Awk</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="nx">awk</span> <span class="s1">&#39;{print strftime(&#34;%d-%m-%y %H-%M-%S&#34;, systime());}&#39;</span>
 </code></pre></div><p><code>strftime</code> converts the output of <code>systime</code> from the Unix epoch to a more human-readable format. Pattern is the same as <code>date</code> command. <code>systime</code> can be omitted (it defaults to current time). Only in GNU awk.</p>
 <h3 id="print-only-fields-after-the-first-2">Print only fields after the first 2</h3>
