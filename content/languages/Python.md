@@ -4,6 +4,16 @@ weight: 435
 bookCollapseSection: true
 ---
 
+* [Generic features and syntax](#generic-features-and-syntax)
+* [Decorators](#decorators)
+* [Metaclasses](#metaclasses)
+* [Set operations](#set-operations)
+* [Modules](#modules)
+
+----------
+
+## Generic features and syntax
+
 * `class.__mro__` = Contains all the ancestors of the class, up till `object`, the Python base class
 * `_` = At Python prompt, it represents the last value. Mostly like `$?` in Bash
 * `__file__` = Contains the name of the file loaded (a module if importing or the filename of the script)

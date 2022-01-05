@@ -4,8 +4,14 @@ weight: 410
 bookCollapseSection: true
 ---
 
+* [Functions](#functions)
+* [Commands](#commands)
+* [Scripts](#scripts)
+* [Syntax](#syntax)
 
-# Functions
+------------
+
+## Functions
 
 namename prints the basename without extension  
 ext prints extension of a file, including "."  
@@ -26,9 +32,9 @@ ext prints extension of a file, including "."
 	}
 ```
 
-# Commands
+## Commands
 
-## CTRL Key Bound
+### CTRL Key Bound
 
 * `Ctrl + _` =  undo
 * `Ctrl + @` = set mark
@@ -54,7 +60,7 @@ ext prints extension of a file, including "."
 * `Ctrl + y` = paste the text at top of the kill#ring
 * `Ctrl + z` = Suspend/ Stop the command
 
-## ALT Key Bound
+### ALT Key Bound
 
 * `Alt + ''<''` = Move to the first line in the history
 * `Alt + ''>''` = Move to the last line in the history
@@ -74,7 +80,7 @@ ext prints extension of a file, including "."
 * `Alt + u` = Make word uppercase
 * `Alt + backspace` = Delete backward from cursor
 
-## Meta Key Bound
+### Meta Key Bound
 
 Meta usually corresponds to the `Esc` key
 
@@ -87,7 +93,7 @@ Meta usually corresponds to the `Esc` key
 * `M + u` = uppercase current word
 * `M + y` = rotate the kill=ring
 
-## More Special Keybindings
+### More Special Keybindings
 
 Here "2T" means Press `TAB` twice
 
@@ -102,15 +108,15 @@ Here "2T" means Press `TAB` twice
 * `$ =2T` = Output like ls or dir
 * `Ctrl + v Ctrl + m` = Insert a newline control character
 
-# Scripts
+## Scripts
 
-## Remove the extensions from multiple files
+### Remove the extensions from multiple files
 
 ```bash
 find -type f -name "name.ext" | while read i; do mv $i $i%.ext; done
 ```
 
-## Rot13 Encryption
+### Rot13 Encryption
 
 In a file:
 
@@ -119,7 +125,7 @@ cat "$@" | tr 'a-zA-Z' 'n-za-mN-Z-A-M'
 exit 0
 ```
 
-## Rename multiple files
+### Rename multiple files
 
 ```bash
 for files in $(ls .); do
@@ -128,7 +134,7 @@ for files in $(ls .); do
 done
 ```
 
-# Syntax
+## Syntax
 
   
 #### Various Bash syntax rules  

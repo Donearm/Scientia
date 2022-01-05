@@ -7,15 +7,15 @@ bookCollapseSection: true
 ## Syntax and various functions
 
 ```lisp
-(format t "hello") 
-```
-	
+(format t "hello")
+```	
+
 print to stdout (t) the string
 
 ```lisp
 (list :a 1 :b 2 :c 3)
 ```
-	
+
 make an indexed list (plist)
 
 ```lisp

@@ -19,9 +19,9 @@
 </style>
 <meta property="og:title" content="Zsh" />
 <meta property="og:description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
-for x (1 2 3); do echo $x; done  or like this:
-for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext  The :r tells the shell to automatically strip the extension, period included" />
+for x (1 2 3); do echo $x; done or like this:
+for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext The :r tells the shell to automatically strip the extension, period included" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/zsh/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
 
@@ -32,14 +32,14 @@ ${i:r}.newext  The :r tells the shell to automatically strip the extension, peri
 
 <meta name="twitter:title" content="Zsh"/>
 <meta name="twitter:description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
-for x (1 2 3); do echo $x; done  or like this:
-for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext  The :r tells the shell to automatically strip the extension, period included"/>
+for x (1 2 3); do echo $x; done or like this:
+for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext The :r tells the shell to automatically strip the extension, period included"/>
 <meta itemprop="name" content="Zsh">
 <meta itemprop="description" content="For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
-for x (1 2 3); do echo $x; done  or like this:
-for x in 1 2 3; do echo $x; done  Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext  The :r tells the shell to automatically strip the extension, period included">
+for x (1 2 3); do echo $x; done or like this:
+for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
+${i:r}.newext The :r tells the shell to automatically strip the extension, period included">
 
 <meta itemprop="wordCount" content="63"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
@@ -60,16 +60,13 @@ ${i:r}.newext  The :r tells the shell to automatically strip the extension, peri
 <main><h1>Zsh</h1>
 <h1 id="for-loops-syntax">For loops syntax</h1>
 <p>In Zsh, the for loops syntax differs from Bash. Write a loop either like:</p>
-<pre><code>for x (1 2 3); do echo $x; done
-</code></pre>
-<p>or like this:</p>
-<pre><code>for x in 1 2 3; do echo $x; done
-</code></pre>
-<h1 id="parameter-expansion">Parameter expansion</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="k">for</span> x <span class="o">(</span><span class="m">1</span> <span class="m">2</span> 3<span class="o">)</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div><p>or like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="k">for</span> x in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div><h1 id="parameter-expansion">Parameter expansion</h1>
 <p>An alternative to the POSIX-complaint <code>${i%.ext}.newext</code> in Zsh is:</p>
-<pre><code>${i:r}.newext
-</code></pre>
-<p>The <code>:r</code> tells the shell to automatically strip the extension, period included</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="si">${</span><span class="nv">i</span><span class="p">:</span><span class="nv">r</span><span class="si">}</span>.newext
+</code></pre></div><p>The <code>:r</code> tells the shell to automatically strip the extension, period included</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/languages/Zsh.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/sed/" title="Sed"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Sed</a>

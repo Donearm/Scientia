@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Bash" />
-<meta property="og:description" content="Functions namename prints the basename without extension
+<meta property="og:description" content="Functions Commands Scripts Syntax   Functions namename prints the basename without extension
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?" />
 <meta property="og:type" content="article" />
@@ -30,15 +30,15 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Bash"/>
-<meta name="twitter:description" content="Functions namename prints the basename without extension
+<meta name="twitter:description" content="Functions Commands Scripts Syntax   Functions namename prints the basename without extension
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?"/>
 <meta itemprop="name" content="Bash">
-<meta itemprop="description" content="Functions namename prints the basename without extension
+<meta itemprop="description" content="Functions Commands Scripts Syntax   Functions namename prints the basename without extension
 ext prints extension of a file, including &ldquo;.&rdquo;
 function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo &#34;${name0:-$name}&#34; } function ext() { local name=${1##*/} local name0=&#34;${name%.*}&#34; local ext=${name0:&#43;${name#$name0}} echo &#34;${ext:-.}&#34; } Commands CTRL Key Bound  Ctrl &#43; _ = undo Ctrl &#43; @ = set mark Ctrl &#43; a = Jump to the start of the line Ctrl &#43; b = Move back a char Ctrl &#43; c = Terminate the command Ctrl &#43; d = Delete character under the cursor Ctrl &#43; e = Jump to the end of the line Ctrl &#43; f = Move forward a char Ctrl &#43; k = Delete from cursor to EOL Ctrl &#43; l = Clear the screen Ctrl &#43; n = select the next command in history Ctrl &#43; p = select the previous command in history Ctrl &#43; r = Search the history backwards Ctrl &#43; R = Search the history backwards with multi occurrence Ctrl &#43; t = drag character before cursor over the one under the cursor Ctrl &#43; u = Delete backward from cursor Ctrl &#43; v = Insert next character verbatim Ctrl &#43; w = kill word before cursor Ctrl &#43; x = kill backward to the beginning of line Ctrl &#43; xx = Move between EOL and current cursor position Ctrl &#43; x @ = Show possible hostname completions Ctrl &#43; y = paste the text at top of the kill#ring Ctrl &#43; z = Suspend/ Stop the command  ALT Key Bound  Alt &#43; &#39;&#39;&lt;&#39;&#39; = Move to the first line in the history Alt &#43; &#39;&#39;&gt;&#39;&#39; = Move to the last line in the history Alt &#43; ?">
 
-<meta itemprop="wordCount" content="1402"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="1406"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -55,7 +55,14 @@ function namename() { local name=${1##*/} local name0=&#34;${name%.*}&#34; echo 
 </div>
 <div class="content-container">
 <main><h1>Bash</h1>
-<h1 id="functions">Functions</h1>
+<ul>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#syntax">Syntax</a></li>
+</ul>
+<hr>
+<h2 id="functions">Functions</h2>
 <p>namename prints the basename without extension<br>
 ext prints extension of a file, including &ldquo;.&rdquo;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">	<span class="k">function</span> namename<span class="o">()</span>
@@ -71,8 +78,8 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 	  <span class="nb">local</span> <span class="nv">ext</span><span class="o">=</span><span class="si">${</span><span class="nv">name0</span><span class="p">:+</span><span class="si">${</span><span class="nv">name</span><span class="p">#</span><span class="nv">$name0</span><span class="si">}}</span>
 	  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ext</span><span class="k">:-</span><span class="p">.</span><span class="si">}</span><span class="s2">&#34;</span>
 	<span class="o">}</span>
-</code></pre></div><h1 id="commands">Commands</h1>
-<h2 id="ctrl-key-bound">CTRL Key Bound</h2>
+</code></pre></div><h2 id="commands">Commands</h2>
+<h3 id="ctrl-key-bound">CTRL Key Bound</h3>
 <ul>
 <li><code>Ctrl + _</code> =  undo</li>
 <li><code>Ctrl + @</code> = set mark</li>
@@ -98,7 +105,7 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 <li><code>Ctrl + y</code> = paste the text at top of the kill#ring</li>
 <li><code>Ctrl + z</code> = Suspend/ Stop the command</li>
 </ul>
-<h2 id="alt-key-bound">ALT Key Bound</h2>
+<h3 id="alt-key-bound">ALT Key Bound</h3>
 <ul>
 <li><code>Alt + ''&lt;''</code> = Move to the first line in the history</li>
 <li><code>Alt + ''&gt;''</code> = Move to the last line in the history</li>
@@ -118,7 +125,7 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 <li><code>Alt + u</code> = Make word uppercase</li>
 <li><code>Alt + backspace</code> = Delete backward from cursor</li>
 </ul>
-<h2 id="meta-key-bound">Meta Key Bound</h2>
+<h3 id="meta-key-bound">Meta Key Bound</h3>
 <p>Meta usually corresponds to the <code>Esc</code> key</p>
 <ul>
 <li><code>M + f</code> = move forward to the end of next word</li>
@@ -130,7 +137,7 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 <li><code>M + u</code> = uppercase current word</li>
 <li><code>M + y</code> = rotate the kill=ring</li>
 </ul>
-<h2 id="more-special-keybindings">More Special Keybindings</h2>
+<h3 id="more-special-keybindings">More Special Keybindings</h3>
 <p>Here &ldquo;2T&rdquo; means Press <code>TAB</code> twice</p>
 <ul>
 <li><code>$ 2T</code> = All available commands(common)</li>
@@ -144,19 +151,19 @@ ext prints extension of a file, including &ldquo;.&rdquo;</p>
 <li><code>$ =2T</code> = Output like ls or dir</li>
 <li><code>Ctrl + v Ctrl + m</code> = Insert a newline control character</li>
 </ul>
-<h1 id="scripts">Scripts</h1>
-<h2 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h2>
+<h2 id="scripts">Scripts</h2>
+<h3 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">find -type f -name <span class="s2">&#34;name.ext&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span> <span class="k">do</span> mv <span class="nv">$i</span> <span class="nv">$i</span>%.ext<span class="p">;</span> <span class="k">done</span>
-</code></pre></div><h2 id="rot13-encryption">Rot13 Encryption</h2>
+</code></pre></div><h3 id="rot13-encryption">Rot13 Encryption</h3>
 <p>In a file:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> <span class="p">|</span> tr <span class="s1">&#39;a-zA-Z&#39;</span> <span class="s1">&#39;n-za-mN-Z-A-M&#39;</span>
 <span class="nb">exit</span> <span class="m">0</span>
-</code></pre></div><h2 id="rename-multiple-files">Rename multiple files</h2>
+</code></pre></div><h3 id="rename-multiple-files">Rename multiple files</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> files in <span class="k">$(</span>ls .<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
 	  <span class="nv">newname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$files</span> <span class="p">|</span> sed <span class="s1">&#39;s/oldtext/newtext/g&#39;</span><span class="sb">`</span><span class="p">;</span>
 	  mv <span class="nv">$files</span> <span class="nv">$newname</span><span class="p">;</span>
 <span class="k">done</span>
-</code></pre></div><h1 id="syntax">Syntax</h1>
+</code></pre></div><h2 id="syntax">Syntax</h2>
 <h4 id="various-bash-syntax-rules">Various Bash syntax rules</h4>
 <ul>
 <li><code>${#variable}</code> = Variable string length</li>

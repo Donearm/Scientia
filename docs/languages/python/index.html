@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Python" />
-<meta property="og:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes." />
+<meta property="og:description" content="Generic features and syntax Decorators Metaclasses Set operations Modules   Generic features and syntax  class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/languages/python/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="languages" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Python"/>
-<meta name="twitter:description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes."/>
+<meta name="twitter:description" content="Generic features and syntax Decorators Metaclasses Set operations Modules   Generic features and syntax  class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace."/>
 <meta itemprop="name" content="Python">
-<meta itemprop="description" content="class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&rsquo;s being executed enumerate() = Returns a list&rsquo;s elements with numeric indexes.">
+<meta itemprop="description" content="Generic features and syntax Decorators Metaclasses Set operations Modules   Generic features and syntax  class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.">
 
-<meta itemprop="wordCount" content="973"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="986"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,15 @@
 </div>
 <div class="content-container">
 <main><h1>Python</h1>
+<ul>
+<li><a href="#generic-features-and-syntax">Generic features and syntax</a></li>
+<li><a href="#decorators">Decorators</a></li>
+<li><a href="#metaclasses">Metaclasses</a></li>
+<li><a href="#set-operations">Set operations</a></li>
+<li><a href="#modules">Modules</a></li>
+</ul>
+<hr>
+<h2 id="generic-features-and-syntax">Generic features and syntax</h2>
 <ul>
 <li><code>class.__mro__</code> = Contains all the ancestors of the class, up till <code>object</code>, the Python base class</li>
 <li><code>_</code> = At Python prompt, it represents the last value. Mostly like <code>$?</code> in Bash</li>
