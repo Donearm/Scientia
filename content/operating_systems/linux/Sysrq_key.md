@@ -4,7 +4,6 @@ bookCollapseSection: true
 weight: 550
 ---
 
-
 ### How do I use the magic SysRq key?
 
 to enable it 

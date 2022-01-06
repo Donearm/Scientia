@@ -4,6 +4,11 @@ bookCollapseSection: true
 weight: 555
 ---
 
+* [Systemd/Systemctl](#systemd-systemctl)
+* [Journal](#journal)
+* [Various](#various)
+
+--------------
 
 ### Systemd/Systemctl
 

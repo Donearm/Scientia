@@ -19,7 +19,7 @@
 </style>
 <meta property="og:title" content="Archlinux" />
 <meta property="og:description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file." />
+[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="operating_systems" />
 
@@ -30,10 +30,10 @@
 
 <meta name="twitter:title" content="Archlinux"/>
 <meta name="twitter:description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file."/>
+[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file."/>
 <meta itemprop="name" content="Archlinux">
 <meta itemprop="description" content="Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase  At the first connection, iwd will append a pre-shared key entry to this file.">
+[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.">
 
 <meta itemprop="wordCount" content="75"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
@@ -54,10 +54,9 @@
 <main><h1>Archlinux</h1>
 <h1 id="set-up-a-wireless-connection">Set up a wireless connection</h1>
 <p>Using <a href="https://wiki.archlinux.org/title/Iwd">iwd</a> as a network manager, it is possible to use the cli <code>iwctl</code> to interactively connect and set up the connection&rsquo;s parameters or write them directly in the directory <code>iwd</code> looks for them, <code>/var/lib/iwd/</code>. Under this directory, create a file named after your SSID like <code>name-of-ssid.psk</code> with this content:</p>
-<pre><code>[Security]
+<pre tabindex="0"><code class="language-conf" data-lang="conf">[Security]
 Passphrase=yourpassphrase
-</code></pre>
-<p>At the first connection, <code>iwd</code> will append a pre-shared key entry to this file. More info at <a href="https://wiki.archlinux.org/title/Iwd#WPA-PSK">iwd#WPA-PSK</a>.</p>
+</code></pre><p>At the first connection, <code>iwd</code> will append a pre-shared key entry to this file. More info at <a href="https://wiki.archlinux.org/title/Iwd#WPA-PSK">iwd#WPA-PSK</a>.</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/operating_systems/linux/Archlinux.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/" title="AppArmor"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - AppArmor</a>

@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="SystemD" />
-<meta property="og:description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3." />
+<meta property="og:description" content="Systemd/Systemctl Journal Various   Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="operating_systems" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="SystemD"/>
-<meta name="twitter:description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3."/>
+<meta name="twitter:description" content="Systemd/Systemctl Journal Various   Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3."/>
 <meta itemprop="name" content="SystemD">
-<meta itemprop="description" content="Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.">
+<meta itemprop="description" content="Systemd/Systemctl Journal Various   Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.">
 
-<meta itemprop="wordCount" content="244"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="247"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,12 @@
 </div>
 <div class="content-container">
 <main><h1>SystemD</h1>
+<ul>
+<li><a href="#systemd-systemctl">Systemd/Systemctl</a></li>
+<li><a href="#journal">Journal</a></li>
+<li><a href="#various">Various</a></li>
+</ul>
+<hr>
 <h3 id="systemdsystemctl">Systemd/Systemctl</h3>
 <ul>
 <li><code>systemd-cgls</code> = show full hierarchy of control groups</li>
