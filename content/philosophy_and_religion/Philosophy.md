@@ -3,6 +3,19 @@ title: Philosophy
 weight: 1375
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Eliminative materialism/Eliminativism](#eliminative-materialismeliminativism)
+	* [Notable philosphers of Eliminativism](#notable-philosphers-of-eliminativism)
+	* [References](#references)
+* [Moral Nihilism](#moral-nihilism)
+	* [Notable philosophers of Moral Nihilism](#notable-philosophers-of-moral-nihilism)
+* [Existential Nihilism](#existential-nihilism)
+
+<!-- vim-markdown-toc -->
+
+-------------
+
 ## Eliminative materialism/Eliminativism
 
 In general, eliminativism refers to the class of views in sciences that deny the existence of some entities. In the [philosophy of mind](https://en.wikipedia.org/wiki/Philosophy_of_mind) realm, Eliminativism means the denial of existence of various states of the mind, such as belief or desire. It postulates how no scientifical basis for the existence of these states will ever be found.

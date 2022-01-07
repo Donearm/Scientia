@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="MongoDB" />
-<meta property="og:description" content="Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike. db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; }); = update user Mike with Viktor." />
+<meta property="og:description" content="Basic CLI commands CRUD commands  Importing csv files     Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/various/mongodb/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="various" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="MongoDB"/>
-<meta name="twitter:description" content="Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike. db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; }); = update user Mike with Viktor."/>
+<meta name="twitter:description" content="Basic CLI commands CRUD commands  Importing csv files     Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db."/>
 <meta itemprop="name" content="MongoDB">
-<meta itemprop="description" content="Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike. db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; }); = update user Mike with Viktor.">
+<meta itemprop="description" content="Basic CLI commands CRUD commands  Importing csv files     Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.">
 
-<meta itemprop="wordCount" content="117"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="125"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,17 @@
 </div>
 <div class="content-container">
 <main><h1>MongoDB</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#basic-cli-commands">Basic CLI commands</a></li>
+<li><a href="#crud-commands">CRUD commands</a>
+<ul>
+<li><a href="#importing-csv-files">Importing csv files</a></li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <h2 id="basic-cli-commands">Basic CLI commands</h2>
 <ul>
 <li><code>show dbs</code> = list all databases</li>
@@ -63,7 +74,7 @@
 <li><code>db.users.update({ name: 'Mike' }, { name: 'Viktor' });</code> = update user Mike with Viktor.</li>
 <li><code>db.users.remove();</code> = delete all entries in <code>users</code>.</li>
 </ul>
-<h4 id="importing-csv-files">Importing csv files</h4>
+<h3 id="importing-csv-files">Importing csv files</h3>
 <ul>
 <li><code>mongoimport --collection nameofcollection --type csv --headerline --db nameofdatabase file.csv</code> = import a csv file as a collection in MongoDB. If csv file has no headers, omit <code>--headerline</code>.</li>
 </ul>

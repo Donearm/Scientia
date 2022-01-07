@@ -3,7 +3,7 @@ title: Depression
 weight: 1110
 ---
 
-# Random notes of the effects/causes of depression on/due to the brain
+A few notes on the effects/causes of depression on/due to the brain.
 
 Mostly coming from [The Upward Spiral book](https://www.goodreads.com/book/show/21413760-the-upward-spiral)
 

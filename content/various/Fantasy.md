@@ -4,7 +4,7 @@ bookCollapseSection: true
 weight: 817
 ---
 
-# Chronology of fantasy of importance
+## Chronology of fantasy of importance
 
 * **1865**: Alice's Adventures in Wonderland is first published.
 * **1922**: E.R. Eddison's The Worm Ouroboros is published.

@@ -3,9 +3,18 @@ title: Technical Writing
 weight: 1210
 ---
 
-# Good practices and procedures
+<!-- vim-markdown-toc GFM -->
 
-### Develop a Doc Plan
+* [Good practices and procedures](#good-practices-and-procedures)
+	* [Developing a Doc Plan](#developing-a-doc-plan)
+
+<!-- vim-markdown-toc -->
+
+---------------
+
+## Good practices and procedures
+
+### Developing a Doc Plan
 
 At the beginning of a project of any size, writing down a Doc Plan to help starting it out and following a fixed schedule. The plan will consists of:
 

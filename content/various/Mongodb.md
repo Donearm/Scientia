@@ -4,6 +4,16 @@ bookCollapseSection: true
 weight: 835
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Basic CLI commands](#basic-cli-commands)
+* [CRUD commands](#crud-commands)
+	* [Importing csv files](#importing-csv-files)
+
+<!-- vim-markdown-toc -->
+
+---------
+
 ## Basic CLI commands
 
 * `show dbs` = list all databases
@@ -18,6 +28,6 @@ weight: 835
 * `db.users.update({ name: 'Mike' }, { name: 'Viktor' });` = update user Mike with Viktor.
 * `db.users.remove();` = delete all entries in `users`.
 
-#### Importing csv files
+### Importing csv files
 
 * `mongoimport --collection nameofcollection --type csv --headerline --db nameofdatabase file.csv` = import a csv file as a collection in MongoDB. If csv file has no headers, omit `--headerline`.

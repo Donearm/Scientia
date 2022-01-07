@@ -5,14 +5,14 @@ weight: 908
 
 Sort of ideal itinerary for a 10-15 days trip.
 
-# Not to miss
+## Not to miss
 
 * Huahine
 * Bora Bora
 * Moorea
 * Nuku Hiva (one of the Marquesas)
 
-# Nice to go
+## Nice to go
 
 * Rangiroa (an atoll)
 * Fakarava (another atoll)

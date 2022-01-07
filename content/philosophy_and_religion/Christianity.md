@@ -3,16 +3,59 @@ title: Christianity
 weight: 1350
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Apocryphal books](#apocryphal-books)
+	* [Book of Jubilees](#book-of-jubilees)
+	* [Book of Enoch](#book-of-enoch)
+* [Apocryphal Gospels](#apocryphal-gospels)
+	* [Gospel of James](#gospel-of-james)
+	* [Infancy Gospel of Thomas](#infancy-gospel-of-thomas)
+	* [Gospel of Pseudo-Matthew](#gospel-of-pseudo-matthew)
+	* [Gospel of the Ebionites](#gospel-of-the-ebionites)
+	* [Gospel of the Hebrews](#gospel-of-the-hebrews)
+	* [Gospel of the Nazarenes](#gospel-of-the-nazarenes)
+	* [Gospel of Marcion](#gospel-of-marcion)
+	* [Gospel of Mani](#gospel-of-mani)
+	* [Gospel of Peter](#gospel-of-peter)
+	* [Gospel of Nicodemus](#gospel-of-nicodemus)
+	* [Questions of Bartholomew](#questions-of-bartholomew)
+	* [Apocryphon of James](#apocryphon-of-james)
+	* [Book of Thomas the Contender](#book-of-thomas-the-contender)
+	* [Dialogue of the Savior](#dialogue-of-the-savior)
+	* [Gospel of Judas](#gospel-of-judas)
+	* [Gospel of Mary](#gospel-of-mary)
+	* [Gospel of Philip](#gospel-of-philip)
+	* [Greek Gospel of the Egyptians](#greek-gospel-of-the-egyptians)
+	* [Gospel of Truth](#gospel-of-truth)
+	* [Pistis Sophia](#pistis-sophia)
+	* [Second Treatise of the Great Seth](#second-treatise-of-the-great-seth)
+	* [Apocryphon of John](#apocryphon-of-john)
+	* [Apocalypse of Paul](#apocalypse-of-paul)
+	* [First Apocalypse of James](#first-apocalypse-of-james)
+	* [Second Apocalypse of James](#second-apocalypse-of-james)
+	* [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
+	* [Apocalypse of Peter](#apocalypse-of-peter)
+
+<!-- vim-markdown-toc -->
+
+-------------
+
 * [Marcion of Sinope](https://en.wikipedia.org/wiki/Marcion_of_Sinope) = founder of Marcionism. First to develop a New Testament canon. Then declared heretic and forced the orthodox Church to develop their own canon.
 * [Therapeautae](https://en.wikipedia.org/wiki/Therapeutae) = a Christian sect in Alexandria from 1st century a.C. Their practices were similar to Theravada Buddhism and their name may have been an adaption to Greek of the pali word Theravada.
 
 ## Apocryphal books
+
+### Book of Jubilees
 
 * [Book of Jubilees](https://en.wikipedia.org/wiki/Book_of_Jubilees) = only canon for the Ethiopian Church and the Ethiopian Jews. Condemned from the fourth century onward but before largely commented by Church Fathers. It is a rewriting of the Genesis and Exodus but with more details.
 	* Specifically narrates of the genesis of angels and how they gave birth to the Nephilims from human women. Angels come from Seth and the women from Cain.
 	* The Nephilims then generate the Elioud.
 	* Names 2 sisters of Seth and Cain, Awan and Azura.
 	* Cites hebrew as God's language and the only one spoke in the original Garden, before Adam and Eve were cast out
+
+### Book of Enoch
+
 * [Book of Enoch](https://en.wikipedia.org/wiki/Book_of_Enoch) = dated around 300-200 b.C. till, the newer parts, 100 b.C., it is canon only for the Ethiopian and Eritrean churches.
 	* It only exists today in its ethiopian translation
 	* Initially considered canon by Church's Fathers like Athegonaras, Clement of Alexandria, Irenaeus and Tertullian but then rejected as such in the fourth century a.C.
@@ -29,6 +72,8 @@ Generally the canonical Gospels started to be considered so only in the second h
 
 Only around 190 a.C. the word "New Testament" is first used, distinct from the Old. Before that date, the various Gospels, apocryphals or not were considered text more or less truthful, but not of divine inspiration, and the Old Testament was considered the only sacred text.
 
+### Gospel of James
+
 * [Gospel of James](https://en.wikipedia.org/wiki/Gospel_of_James) = perhaps autobiographical, it is attributed to a son of Saint Joseph from a previous wife.
 	* dated between 150 and 200 a.C. (first mentioned in the third century by Origen of Alexandria).
 	* asserts the virginity of Mary before and after the birth of Jesus.
@@ -36,19 +81,31 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* explicitly asserts that Saint Joseph had several children, being a widower.
 	* claims the old age of Saint Joseph at the birth of Jesus.
 	* tells the infancy of Mary in a temple, also confirmed in the Qu'ran.
+
+### Infancy Gospel of Thomas
+
 * [Infancy Gospel of Thomas](https://en.wikipedia.org/wiki/Infancy_Gospel_of_Thomas) = not canonical for any Church today, it is thought to be Gnostic in origin. Rejected as heretical since the beginning of Christianity, it contains many miracles and stories about Jesus that are accepted as true in the Qu'ran.
 	* not of Saint Thomas.
 	* first cited by Irenaeus around 185 a.C. The earliest possible autorship date is 80 a.C. but is generally agreed upon on a mid second century date.
 	* the text tells of many childish miracles of Jesus, even tricks, some of which are confirmed by the Qu'ran.
 	* Jesus is depicted as a rebel child, unheedful of the advice of his parents
 	* 2 children and their teacher die due to a curse of Jesus
+
+### Gospel of Pseudo-Matthew
+
 * [Gospel of Pseudo-Matthew](https://en.wikipedia.org/wiki/Gospel_of_Pseudo-Matthew) = originally considered written by Saint Matthew himself but not anymore. Focuses on the infancy of Jesus and Mary.
 	* a late text, from around 600-625 a.C.
 	* influencial in the Middle Age pictorial of Nativity, first mention of the ox and donkey at the birth of Jesus.
+
+### Gospel of the Ebionites
+
 * [Gospel of the Ebionites](https://en.wikipedia.org/wiki/Gospel_of_the_Ebionites) = surviving only in fragments, it is an apocryphal Gospel of Jewish-Christian origin.
 	* dated around the middle of second century a.C.
 	* mostly quoted by Epiphanius, the bishop of Salamis, Cyprus.
 	* important teological take is the assertion that the Holy Ghost enters Jesus as a dove at the moment of his baptism. Only from there he's considered the son of God.
+
+### Gospel of the Hebrews
+
 * [Gospel of the Hebrews](https://en.wikipedia.org/wiki/Gospel_of_the_Hebrews) = another Jewish-Christian Gospel, perhaps composed in Greek by the local commmunity in Egypt. Only citations from the Church Fathers of it exist today.
 	* considered canonical until the New Testament canon was formed in fourth century a.C.
 	* dated around the second century a.C.
@@ -56,10 +113,16 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* the Holy Ghost is the "Divine Mother" of Jesus, feminine, following an ancient jewish tradition.
 	* James the Just, the stepbrother of Jesus, is the head of the Jerusalem Church and present at the Last Supper.
 	* other stepbrothers of Jesus are cited as among his followers.
+
+### Gospel of the Nazarenes
+
 * [Gospel of the Nazarenes](https://en.wikipedia.org/wiki/Gospel_of_the_Nazarenes) = last of the Jewish-Christian Gospels, along with the Hebrews and Ebionites it is perhaps a single text.
 	* dated before 200 a.C. but the full text doesn't exist anymore. Its existence was inferred by citations of Church Fathers.
 	* written in hebrew.
 	* it is considered one of the sources of the canonical Gospel of Matthew.
+
+### Gospel of Marcion
+
 * [Gospel of Marcion](https://en.wikipedia.org/wiki/Gospel_of_Marcion) = written by Marcion of Sinope as a relaboration of various Gospels, mostly as an edited version of the Gospel of Luke.
 	* around 2nd century a.C.
 	* declared eretical on 144 a.C.
@@ -67,10 +130,16 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* an hypothesis is that Marcion's Gospel predates Luke and is thus the very first Gospel.
 	* Jesus didn't follow the tradition of the prophets.
 	* the Earth is considered evil.
+
+### Gospel of Mani
+
 * [Gospel of Mani](https://en.wikipedia.org/wiki/Gospel_of_Mani) = also known as the **living Gospel**, is a Gnostic Gospel written by Mani.
 	* a few fragments remain of the original 22 parts.
 	* thought as a Gnostic Gospel that should have replaced all the other Gospels.
 	* the Manicheans adopted it as the only true Gospel.
+
+### Gospel of Peter
+
 * [Gospel of Peter](https://en.wikipedia.org/wiki/Gospel_of_Peter) = of an unknown author but assumed to be Peter the apostle and the Gospel itself claims so.
 	* around second century a.C.
 	* declared heretical at the councils of Carthage and Rome, when the canonical New Testament was formed. Mostly accused of being [docetic](https://en.wikipedia.org/wiki/Docetism).
@@ -81,11 +150,17 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* Jesus is brought to the sky along with the cross, which is a talking cross.
 	* Angels of gargantuan size are present at the crucifixion.
 	* Jesus travels to Hell.
+
+### Gospel of Nicodemus
+
 * [Gospel of Nicodemus](https://en.wikipedia.org/wiki/Gospel_of_Nicodemus) = also known as the **Acts of Pilate**, is a Gospel derived from an original Hebrew work written by Nicodemus, an associate of Jesus.
 	* dated around the fourth century a.C.
 	* the section talking about Pilate is an original greek text that narrates the supposedly official report that Pilate did to emperor Claudius of the events surrounding the crucifixion of Jesus.
 	* Jesus travels to Hell.
 	* it is hinted of a conversion or repentance of Pilate.
+
+### Questions of Bartholomew
+
 * [Questions of Bartholomew](https://en.wikipedia.org/wiki/Questions_of_Bartholomew) = a late Gospel in a similar style to the Apocalypse of St. John. It is framed as a discussion between Jesus and the apostles, spurred by many questions of Bartholomew.
 	* could be the same text as the Gospel of Bartholomew.
 	* copies in greek, latin and old slavonic still existing.
@@ -94,6 +169,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* A son of Satan, Salpsan, is named in the greek version.
 	* Jesus narrates his travel to Hell and angels open the Earth to let the apostles see it themselves.
 	* Salpsan is compared to Cain in accounts where this is sired by a fallen angel, Samael, that had been seduced by Eve.
+
+### Apocryphon of James
+
 * [Apocryphon of James](https://en.wikipedia.org/wiki/Apocryphon_of_James) = also known as the **Secret Book of James**, it mainly tells of the teachings given by Jesus to James and Peter after the resurrection.
 	* probably written in the first half of the second century a.C.
 	* it shows affinities with Gnosticism but has not clearly attributed to any Gnostic sects.
@@ -102,17 +180,26 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* only Peter and James are given these additional teachings from Jesus and only James comprehend them in full.
 	* both Peter and James are invited in Heaven by Jesus but neither understand the invite, as they are distracted by the questions of the other apostles.
 	* it is hinted that James is the heir of Jesus as the head of the apostles.
+
+### Book of Thomas the Contender
+
 * [Book of Thomas the Contender](https://en.wikipedia.org/wiki/Book_of_Thomas_the_Contender) = simply known also as the **Book of Thomas**.
 	* a scribe named Matthias is the one who actually writes the text. It is thought from this then that it may be the lost Gospel of Matthias.
 	* quite metaphoric in tone, and similar to many gnostic texts.
 	* it is stressed the importance of fighting evil with good.
 	* important is also trying to overcome ego lusts and attachments.
+
+### Dialogue of the Savior
+
 * [Dialogue of the Savior](https://en.wikipedia.org/wiki/Dialogue_of_the_Saviour) = another Gnostic text, heavily damaged.
 	* largely edited and confusing, with sections apparently not connectd with the main text.
 	* the final version may have been redacted around 150 a.C.
 	* Thomas, Mary and Matthew are shown Hell from the border of the Earth and an angel explains them that the Earth itself was not a willingly create world and inherently evil.
 	* controlling carnal desires is important (literrally called "the works of femininity")
 	* it is partly a dialogue with Jesus, which abruptly mid-text is stopped being called __Lord__ and is instead addressed as __Savior__.
+
+### Gospel of Judas
+
 * [Gospel of Judas](https://en.wikipedia.org/wiki/Gospel_of_Judas) = a Gnostic Gospel, probably composed by Gnostic christians rather than Judas himself.
 	* dated to second century a.C. due to the only existing copy found in Egypt was carbon dated to 280 ± 60 years.
 	* it is thought that it was written in Coptic from an original Greek text.
@@ -134,6 +221,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* Judas is the favorite apostle and not at all a traitor. His function was known to Jesus and in accord with his wishes.
 	* Judas doesn't die by hanging himself but is lapidated by the other apostles, thinking him a villain.
 	* [Full text as translated by the National Geographic](https://web.archive.org/web/20060408153348/http://www.nationalgeographic.com/lostgospel/_pdf/GospelofJudas.pdf).
+
+### Gospel of Mary
+
 * [Gospel of Mary](https://en.wikipedia.org/wiki/Gospel_of_Mary) = not considered an actual Gospel but a general text of the early Christianity.
 	* from an original text written in Greek around the second century a.C.
 	* it was suggested it may have been actually written during the time of Christ.
@@ -142,6 +232,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* the remaining parts contain discourses between Mary and the apostles.
 	* the self of each human being is composed of a soul, a spirit/mind and a third mind.
 	* not all the apostles are convinced by the revelations that Mary does to them. Peter is offended that Mary was chosen as the favorite by Jesus instead of him.
+
+### Gospel of Philip
+
 * [Gospel of Philip](https://en.wikipedia.org/wiki/Gospel_of_Philip) = another Gnostic Gospel, it was lost during medieval times until it was rediscovered in Nag Hammadi, Egypt, in 1945.
 	* dated to around the third century a.C. or between 180 and 300 a.C.
 	* probably not written by Philip the apostle, as he died in 80 a.C., but the text doesn't claim to be either.
@@ -150,6 +243,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* marriage is called a __sacred mystery__.
 	* a sister of Jesus is named, as confirmed by the canonical Gospel of Mark (6:3). It is unclear whether it is an actual sister of Jesus or a sister of his mother, thus an aunt of Jesus
 	* it is narrated of a kiss between Jesus and Mary Magdalene, again, in uncertain form, and how Mary Magdalene had a privileged spot among the apostles and how this caused some resentment.
+
+### Greek Gospel of the Egyptians
+
 * [Greek Gospel of the Egyptians](https://en.wikipedia.org/wiki/Greek_Gospel_of_the_Egyptians) = not to be confused with the **Coptic Gospel of the Egyptians**, is a gospel whose name cames from its opening line.
 	* dated around the second quarter of the second century a.C.
 	* only fragments remain today.
@@ -157,6 +253,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* it is written in form of dialogues between the disciple Salome and Jesus.
 	* Jesus advocates celibacy, or actual sexual ascetism, as a way to break the cycle of birth and overcoming the alleged sinful differences between men and women, coming back to an androginous state that was the original one for all humanity.
 	* Jesus famously answer to the question "How long shall death prevail?" with: "As long as women bear children".
+
+### Gospel of Truth
+
 * [Gospel of Truth](https://en.wikipedia.org/wiki/Gospel_of_Truth) = a Gnostic Gospel, which actually lacks a proper name but is named after the very first three words of the text
 	* more an homily than a Gospel, written in heavily poetic form.
 	* probably written originally in Greek between 140 and 180 a.C.
@@ -165,6 +264,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* it describes ignorance as a nightmare, that prevents us from knowing God and attaining salvation.
 	* there is no need for God to save humans as every person has inside the seed for salvation, through knowledge alone.
 	* this "gospel" does not describe the life of Jesus by comes from teachings given by him in the 40 days after the resurrection.
+
+### Pistis Sophia
+
 * [Pistis Sophia](https://en.wikipedia.org/wiki/Pistis_Sophia) = a Gnostic text, from an original Coptic manuscript of 178 pages
 	* discovered in 1773
 	* probably written between the third and fourth century a.C.
@@ -174,6 +276,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* After these 11 years Jesus receives "higher garments" and teaches higher mysteries related to cosmology and other necessary knowledges to attain salvation.
 	* 32 carnal desires are cited to be overcome to be saved.
 	* [Full text](https://www.sacred-texts.com/chr/ps/index.htm).
+
+### Second Treatise of the Great Seth
+
 * [Second Treatise of the Great Seth](https://en.wikipedia.org/wiki/Second_Treatise_of_the_Great_Seth) = a Gnostic Gospel found among the Nag Hammadi library texts.
 	* the Seth referenced in the title doesn't appear in the content.
 	* dated around the third century a.C.
@@ -185,6 +290,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* the God of the Jews is not the true God but only the Demiurge.
 	* Jesus is claimed to never have been a man but a pure docetistic spirit.
 	* Jesus claimed a body of an human man and took it for his own use.
+
+### Apocryphon of John
+
 * [Apocryphon of John](https://en.wikipedia.org/wiki/Apocryphon_of_John) = a gnostic Gospel, known to Irenaeus.
 	* written before 180 a.C.
 	* found in Egypt in 4 Coptic manuscripts, translated from the original Greek version.
@@ -196,6 +304,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* The Garden of Eden is a false paradise, as the Tree of Life is only a part of the larger Tree of Knowledge of Good and Evil.
 	* Jesus reveals to have been him to have caused Adam to consume the fruit of the Tree of Knowledge. Within Adam there is the essence of Light and Eve is created in an attempt to extract this essence out of him.
 	* Yaltabaoth keeps humanity in check by making them reproduce and inserting into them a counterfeit spirit. Through ignorance, humanity is kept away from the Aeons and the Monad, and subject to the Archons.
+
+### Apocalypse of Paul
+
 * [Apocalypse of Paul](https://en.wikipedia.org/wiki/Apocalypse_of_Paul) = a Gospel narrating the vision of heaven and hell by the apostle Paul. Not to be confused with the unrelated text Coptic Apocalypse of Paul.
 	* the original Greek version is lost.
 	* dated around the fourth century a.C.
@@ -204,6 +315,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* pride is cited as the root of all evil.
 	* the paradise is the land of milk and honey.
 	* Paul obtains from God a rest for the damned on every Sunday.
+
+### First Apocalypse of James
+
 * [First Apocalypse of James](https://en.wikipedia.org/wiki/First_Apocalypse_of_James) = a Gnostic apocalypse.
 	* dated to the early third century a.C.
 	* the text is a dialogue James the Just, named as the brother of Jesus, and Jesus. They are not biological brothers though, being born of different mothers and fathers.
@@ -211,16 +325,25 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* James is the early head of the Church.
 	* James is the most senior apostle.
 	* [Integral text](http://www.gnosis.org/naghamm/1ja.html).
+
+### Second Apocalypse of James
+
 * [Second Apocalypse of James](https://en.wikipedia.org/wiki/Second_Apocalypse_of_James) = a Gnostic Gospel describing the martyrdom of James the Just.
 	* dated to the second century a.C.
 	* the father of James is named Theudas, not Joseph. The mother is named Mary but it is not specified in the text if this is the same Virgin Mary or another Mary.
 	* in contrast with the First Apocalypse of James, the text here explicitly say that James and Jesus share the same mother, although it is not stated that this mother is the same Mary.
 	* Jesus and James share a kiss on the lips, in a probably metaphor for the passing of Gnosis between them.
+
+### Apocalypse of Pseudo-Methodius
+
 * [Apocalypse of Pseudo-Methodius](https://en.wikipedia.org/wiki/Apocalypse_of_Pseudo-Methodius) = a late Christian eschatological text.
 	* written in Syriac in the seventh century a.C.
 	* the work attempts to make sense of the recent Islamic conquests.
 	* typical messianic elements of the tale of Gog and Magog, the rise of the Antichrist and the tribulations before the end of time are present.
 	* another messianic element is added though, in the character of a messianic Roman emperor, Saviour of the christians against the army of Ishmael (the Islamic Empire).
+
+### Apocalypse of Peter
+
 * [Apocalypse of Peter](https://en.wikipedia.org/wiki/Apocalypse_of_Peter) = an early Christian text with an apocalyptic tone.
 	* mentioned in the [Muratorian fragment](https://en.wikipedia.org/wiki/Muratorian_fragment), the oldest surviving list of New Testament books. It is reputed a true Gospel in the fragment but also stated that some authorities would not have it read in church.
 	* dated to the second century a.C.

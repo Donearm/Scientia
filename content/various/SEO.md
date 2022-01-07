@@ -4,7 +4,22 @@ bookCollapseSection: true
 weight: 847
 ---
 
-# SEO audit checklist
+<!-- vim-markdown-toc GFM -->
+
+* [SEO audit checklist](#seo-audit-checklist)
+	* [Useful Wordpress plugins](#useful-wordpress-plugins)
+	* [Pages for local businesses](#pages-for-local-businesses)
+* [SEO Evaluations](#seo-evaluations)
+* [How to report on SEO](#how-to-report-on-seo)
+* [Common metrics](#common-metrics)
+* [Engagement metrics](#engagement-metrics)
+* [Google Analytics](#google-analytics)
+
+<!-- vim-markdown-toc -->
+
+-----------
+
+## SEO audit checklist
 
 Roughly copied from [Chase Reiner's](https://chasereiner.com/seo-audit-checklist-template/)
 
@@ -91,7 +106,7 @@ Roughly copied from [Chase Reiner's](https://chasereiner.com/seo-audit-checklist
 * **Proper Navigation** – Website navigation refers to the set of links that connects pages together. Proper website navigation will enable your visitors to find things easily on your website.
 * **AMP (News Websites Only)** – AMP stands for Accelerated Mobile Pages. If you are running a news website, you should create AMP versions of your articles. Otherwise, it will extremely unlikely for your articles to appear in Google’s Top Stories carousel when web users conduct a mobile search.
 
-#### Useful Wordpress plugins
+### Useful Wordpress plugins
 
 * **Smusher or other Image Compression** – An image smusher refers to a tool that decreases the size of an image to reduce the cost of transmission and storage.
 * **Broken Link Checker** – The Broken Link Checker is a WordPress plugin that identifies broken links and displays them in a new tab of your WordPress admin panel.
@@ -100,7 +115,7 @@ Roughly copied from [Chase Reiner's](https://chasereiner.com/seo-audit-checklist
 * **WP Fastest Cache** – WP Fastest Cache is a WordPress plugin that will help reduce your website’s page load time by creating HTML files that can be quickly rendered, stored, and accessed by multiple visitors.
 * **Markup (JSON-LD) structured in schema.org** – This WordPress plugin allows you to add schema.org JSON-LD syntax markup to your website.
 
-#### Pages for local businesses
+### Pages for local businesses
 
 * **Google My Business Optimization (Local Only)** – Use Google My Business Optimization to improve your local ranking in Google.
 * **Physical Address** – Your contact page and Google My Business profile should include the physical address of your business.
@@ -113,7 +128,7 @@ Roughly copied from [Chase Reiner's](https://chasereiner.com/seo-audit-checklist
 * **Citation Count Low** – A low citation count can negatively impact local search engine rankings.
 * **Citations Inconsistent** – If search engines encounter inconsistent citaitons, it can hurt local search engine rankings.
 
-# SEO Evaluations
+## SEO Evaluations
 
 Things to keep track of, to monitor and report
 
@@ -127,7 +142,7 @@ Things to keep track of, to monitor and report
 	* Social Engagement
 	* Link Footprint (where they are getting their links from, basically)
 
-#### How to report on SEO
+## How to report on SEO
 
 Create ranking reports for each of the following:
 
@@ -150,8 +165,7 @@ Create ranking reports for each of the following:
 * Bounce rate
 * Scroll depth - how far visitors scroll down individual pages.
 
-# Google Analytics
+## Google Analytics
 
 * [Reference for all Metrics & Dimensions](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
 * [Google Analytics Sheets Addons manual](https://developers.google.com/analytics/solutions/google-analytics-spreadsheet-add-on#optional-parameters)
-

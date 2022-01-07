@@ -4,6 +4,17 @@ bookCollapseSection: true
 weight: 843
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Things to know before a sailing course (ideally)](#things-to-know-before-a-sailing-course-ideally)
+* [Boats](#boats)
+	* [Good boats](#good-boats)
+	* [Cheap new boats](#cheap-new-boats)
+
+<!-- vim-markdown-toc -->
+
+----------
+
 ## Things to know before a sailing course (ideally)
 
 * Sea terminology = parts of boat, rigging, sails
@@ -37,9 +48,9 @@ weight: 843
 * Basic first-aid
 * Anchoring and running aground
 
-# Boats
+## Boats
 
-## Good boats
+### Good boats
 
 * Nautor Swan 43
 * Oyster Mariner
@@ -55,7 +66,7 @@ weight: 843
 * Sirius 35/40
 * Dehler 38SQ (170k€+)
 
-## Cheap new boats
+### Cheap new boats
 
 * Beneteau Oceanis 38.1 (120-150k€)
 * Beneteau Oceanis 41.1

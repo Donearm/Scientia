@@ -4,6 +4,20 @@ bookCollapseSection: true
 weight: 855
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Tweaks and features of Tiddlywiki](#tweaks-and-features-of-tiddlywiki)
+	* [To use the file browser to insert a file into the wiki](#to-use-the-file-browser-to-insert-a-file-into-the-wiki)
+	* [To show a text file with an iframe](#to-show-a-text-file-with-an-iframe)
+	* [To insert an image](#to-insert-an-image)
+	* [To directly install a plugin](#to-directly-install-a-plugin)
+	* [Export tiddlers as pdf/ps](#export-tiddlers-as-pdfps)
+	* [Show Tiddlywiki version number](#show-tiddlywiki-version-number)
+
+<!-- vim-markdown-toc -->
+
+------------
+
 ## Tweaks and features of Tiddlywiki
 
 [Tiddlywiki markup list](http://tiddlywiki.org/bags/tiddlywiki_public/tiddlers/TiddlyWiki%20Markup.html)
@@ -27,7 +41,7 @@ or this:
 			this.form.action='file:///'+this.form.whichfile.value;
 			try { frame.style.display='block'; this.form.done.disabled=false; this.form.submit(); }
 			catch(e) { alert(e.description?e.description:e.toString()); }">
-	<input type=button name=done value="Done" disabled 
+	<input type=button name=done value="Done" disabled
 		onclick="var frame=document.getElementById(this.form.target);
 			frame.style.display='none'; this.disabled=true;">
 	</form>

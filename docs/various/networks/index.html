@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Networks" />
-<meta property="og:description" content="HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request." />
+<meta property="og:description" content="* [HTTP Status Codes](#http-status-codes) * [OSI Model](#osi-model) * [TCP connection states](#tcp-connection-states)   Firewalls VLANs DNS  Basic concepts Resource Records DNS Query DNS Fields   VPN IP Addressing   HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/various/networks/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="various" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Networks"/>
-<meta name="twitter:description" content="HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request."/>
+<meta name="twitter:description" content="* [HTTP Status Codes](#http-status-codes) * [OSI Model](#osi-model) * [TCP connection states](#tcp-connection-states)   Firewalls VLANs DNS  Basic concepts Resource Records DNS Query DNS Fields   VPN IP Addressing   HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed."/>
 <meta itemprop="name" content="Networks">
-<meta itemprop="description" content="HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point CLOSE-WAIT: The local end-point has received a connection termination request and acknowledged it FIN-WAIT-2: The remote end-point has sent an acknowledgement for the previously sent connection termination request.">
+<meta itemprop="description" content="* [HTTP Status Codes](#http-status-codes) * [OSI Model](#osi-model) * [TCP connection states](#tcp-connection-states)   Firewalls VLANs DNS  Basic concepts Resource Records DNS Query DNS Fields   VPN IP Addressing   HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed.">
 
-<meta itemprop="wordCount" content="880"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="905"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,27 @@
 </div>
 <div class="content-container">
 <main><h1>Networks</h1>
+<!-- vim-markdown-toc GFM -->
+<pre><code>* [HTTP Status Codes](#http-status-codes)
+* [OSI Model](#osi-model)
+* [TCP connection states](#tcp-connection-states)
+</code></pre>
+<ul>
+<li><a href="#firewalls">Firewalls</a></li>
+<li><a href="#vlans">VLANs</a></li>
+<li><a href="#dns">DNS</a>
+<ul>
+<li><a href="#basic-concepts">Basic concepts</a></li>
+<li><a href="#resource-records">Resource Records</a></li>
+<li><a href="#dns-query">DNS Query</a></li>
+<li><a href="#dns-fields">DNS Fields</a></li>
+</ul>
+</li>
+<li><a href="#vpn">VPN</a></li>
+<li><a href="#ip-addressing">IP Addressing</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <h3 id="http-status-codes">HTTP Status Codes</h3>
 <p><img src="http-status-codes-definition.png" alt="HTTP Status Codes Infographic"></p>
 <h3 id="osi-model">OSI Model</h3>
@@ -78,20 +99,20 @@
 <p><strong>Dynamic VLANs</strong> instead are defined by physical addresses (MACs) of the devices or network account names and are not physically based.</p>
 <p>VLANs follow the IEEE 802.1Q standard that consists of 32bits added to the standard Ethernet frame header.</p>
 <h2 id="dns">DNS</h2>
-<h4 id="basic-concepts">Basic concepts</h4>
+<h3 id="basic-concepts">Basic concepts</h3>
 <ul>
 <li><strong>Autoritative NS</strong>: a server that has the domain&rsquo;s data. If the server is not authoritative of the requested domain, it will point to another NS or serve cached copies of other NS</li>
 <li><strong>Zone file</strong>: text file containing the mapping between domain names and IP addresses</li>
 <li><strong>Root Servers</strong>: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server</li>
 <li><strong>Domain Level NS</strong>: the actual servers containing the records for the requested domains (think of ns1.domain.com, ns2.domain.com etc.)</li>
 </ul>
-<h4 id="resource-records">Resource Records</h4>
+<h3 id="resource-records">Resource Records</h3>
 <ul>
 <li><strong>A Record</strong>: map a host to an IP address. Example: <code>host IN A 222.64.51.99</code></li>
 <li><strong>MX Record</strong>: map a mail exchange used for the domain. Example: <code>IN MX 10 mail.domain.com.</code>, where 10 is the priority</li>
 <li><strong>PTR Record</strong>: used for Reverse DNS lookups, map an IP address to a domain name.</li>
 </ul>
-<h4 id="dns-query">DNS Query</h4>
+<h3 id="dns-query">DNS Query</h3>
 <p>A DNS query is a request for DNS resource records of a specified resource record type with a specified DNS name. DNS queries can be sent from a DNS client (resolver) to a DNS server, or between two DNS servers.</p>
 <p>There are three types of DNS queries that may be sent to a DNS server: Recursive, Iterative and Authoritative-Only.</p>
 <ul>
@@ -99,11 +120,10 @@
 <li><strong>Iterative Query</strong>: With an iterative name query, the DNS client allows the DNS server to respond with the best answer it can give (the answer will be based on its cache or zone data). That may be as a referral to a better DNS server or a pointer to another DNS server authoritative for a lower level of the domain namespace.</li>
 <li><strong>Authoritative-Only Query</strong>: the DNS server only answers those queries for which it stores the zones. Does not respond to recursive queries and cache query results.</li>
 </ul>
-<h4 id="dns-fields">DNS Fields</h4>
+<h3 id="dns-fields">DNS Fields</h3>
 <p>Example of the fields returning from a <code>dig</code> query:</p>
-<pre><code>www.someserver.com 300 IN A 192.30.30.165
-</code></pre>
-<p>Where the first is the domain name, the second the TTL, the third can be IN (Internet) or NS (Name Server) or MX (Mail Server) or CNAME (Canonical Name), the fourth is either A (IPv4) or AAAA (IPv6) and the last field is the IP address</p>
+<pre tabindex="0"><code>www.someserver.com 300 IN A 192.30.30.165
+</code></pre><p>Where the first is the domain name, the second the TTL, the third can be IN (Internet) or NS (Name Server) or MX (Mail Server) or CNAME (Canonical Name), the fourth is either A (IPv4) or AAAA (IPv6) and the last field is the IP address</p>
 <h2 id="vpn">VPN</h2>
 <p>Operates at OSI Layer 3 level (application independent). When operating with IPSec, it uses two modes: <strong>Transport</strong> or <strong>Tunnel</strong>. In the first, data is encrypted but headers are not, while in the latter both are.</p>
 <p>When operating with SSL/TLS, it uses OSI Layer 7 (application dependent then) in two modes: <strong>OpenVPN</strong> (Certificate/password-based, TCP) or <strong>Open Connect</strong> (DTLS, UDP).</p>

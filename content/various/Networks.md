@@ -4,6 +4,25 @@ bookCollapseSection: true
 weight: 840
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+	* [HTTP Status Codes](#http-status-codes)
+	* [OSI Model](#osi-model)
+	* [TCP connection states](#tcp-connection-states)
+* [Firewalls](#firewalls)
+* [VLANs](#vlans)
+* [DNS](#dns)
+	* [Basic concepts](#basic-concepts)
+	* [Resource Records](#resource-records)
+	* [DNS Query](#dns-query)
+	* [DNS Fields](#dns-fields)
+* [VPN](#vpn)
+* [IP Addressing](#ip-addressing)
+
+<!-- vim-markdown-toc -->
+
+-----------------
+
 ### HTTP Status Codes
 
 ![HTTP Status Codes Infographic](http-status-codes-definition.png)
@@ -44,20 +63,20 @@ VLANs follow the IEEE 802.1Q standard that consists of 32bits added to the stand
 
 ## DNS
 
-#### Basic concepts
+### Basic concepts
 
 + **Autoritative NS**: a server that has the domain's data. If the server is not authoritative of the requested domain, it will point to another NS or serve cached copies of other NS
 + **Zone file**: text file containing the mapping between domain names and IP addresses
 + **Root Servers**: 13 main IP addresses of DNS servers, a to h, routed to the nearest mirror of the server
 + **Domain Level NS**: the actual servers containing the records for the requested domains (think of ns1.domain.com, ns2.domain.com etc.)
 
-#### Resource Records
+### Resource Records
 
 + **A Record**: map a host to an IP address. Example: `host IN A 222.64.51.99`
 + **MX Record**: map a mail exchange used for the domain. Example: `IN MX 10 mail.domain.com.`, where 10 is the priority
 + **PTR Record**: used for Reverse DNS lookups, map an IP address to a domain name.
 
-#### DNS Query
+### DNS Query
 
 A DNS query is a request for DNS resource records of a specified resource record type with a specified DNS name. DNS queries can be sent from a DNS client (resolver) to a DNS server, or between two DNS servers.
 
@@ -67,11 +86,13 @@ There are three types of DNS queries that may be sent to a DNS server: Recursive
 + **Iterative Query**: With an iterative name query, the DNS client allows the DNS server to respond with the best answer it can give (the answer will be based on its cache or zone data). That may be as a referral to a better DNS server or a pointer to another DNS server authoritative for a lower level of the domain namespace.
 + **Authoritative-Only Query**: the DNS server only answers those queries for which it stores the zones. Does not respond to recursive queries and cache query results.
 
-#### DNS Fields
+### DNS Fields
 
 Example of the fields returning from a `dig` query:
 
-	www.someserver.com 300 IN A 192.30.30.165
+```
+www.someserver.com 300 IN A 192.30.30.165
+```
 
 Where the first is the domain name, the second the TTL, the third can be IN (Internet) or NS (Name Server) or MX (Mail Server) or CNAME (Canonical Name), the fourth is either A (IPv4) or AAAA (IPv6) and the last field is the IP address
 

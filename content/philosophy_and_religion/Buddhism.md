@@ -3,6 +3,17 @@ title: Buddhism
 weight: 1320
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Contacts between Buddhism and Christianity](#contacts-between-buddhism-and-christianity)
+* [Similitudes between Buddhism and Western philosophies](#similitudes-between-buddhism-and-western-philosophies)
+	* [Hegesians](#hegesians)
+	* [Dionysus in India](#dionysus-in-india)
+
+<!-- vim-markdown-toc -->
+
+----------------
+
 ## Contacts between Buddhism and Christianity
 
 One one of the major Ashoka's rock edicts, ([the 13th](https://en.wikipedia.org/wiki/Major_Rock_Edicts#Major_Rock_Edict_13)), it is stated how a few ellenistic kings were followers of the Dhamma. One of them is Ptolemy II and his sister Arsinoe II.

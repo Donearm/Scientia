@@ -3,24 +3,54 @@ title: "Places to Visit"
 weight: 910
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Europe](#europe)
+	* [Cyprus](#cyprus)
+		* [Ayia Napa beaches](#ayia-napa-beaches)
+		* [Protaras beaches](#protaras-beaches)
+	* [Croatia](#croatia)
+		* [Best beaches](#best-beaches)
+		* [Croatian tour agencies](#croatian-tour-agencies)
+	* [Malta](#malta)
+		* [Maltese best beaches](#maltese-best-beaches)
+	* [Portugal](#portugal)
+		* [Portugal beaches](#portugal-beaches)
+* [Africa](#africa)
+	* [Egypt](#egypt)
+* [Americas](#americas)
+	* [Mexico](#mexico)
+		* [Cenotes](#cenotes)
+		* [Best beaches](#best-beaches-1)
+* [Asia](#asia)
+	* [Indonesia](#indonesia)
+			* [Bali](#bali)
+	* [Thailand](#thailand)
+		* [Bangkok](#bangkok)
+		* [Pattaya](#pattaya)
+
+<!-- vim-markdown-toc -->
+
+----------
+
 # Europe
 
 ## Cyprus
 
-#### Ayia Napa beaches
+### Ayia Napa beaches
 
 * Nissi
 * Makronisos
 * Grecian Bay
 
-#### Protaras beaches
+### Protaras beaches
 
 * Fig Tree Bay
 * Cape Greco
 
 ## Croatia
 
-#### Best beaches
+### Best beaches
 
 * Baska - on Krk
 * Girandella - Rabac
@@ -29,14 +59,14 @@ weight: 910
 * Zlatni Rat - on Brac
 * Plat - south of Dubrovnik, near Brasina
 
-#### Croatian tour agencies
+### Croatian tour agencies
 
 + [Adriatic Explore](http://www.adriatic-explore.com/)
 + [Atlas Croatia](http://www.atlas-croatia.com)
 
 ## Malta
 
-#### Maltese best beaches
+### Maltese best beaches
 
 * Armier Bay
 * Balluta/St.Julian's Bay
@@ -60,7 +90,7 @@ weight: 910
 * Silves - old Algarve capital. Arab Castle (09:00-17:30 everyday)
 * Tavira - historical centre and town park
 
-#### Portugal beaches
+### Portugal beaches
 
 * Ilha da Barreta - deserted island, reachable by [boat](http://www.ilha-deserta.com) from Faro
 * Praia do Beliche - west of Sagres
@@ -130,7 +160,7 @@ A few possible excursions outside proper Bali.
 
 ## Thailand
 
-#### Bangkok
+### Bangkok
 
 + Anantasamakhom Throne Hall
 + Bodhi Court
@@ -156,7 +186,7 @@ Day or 2-days excursions from Bangkok:
 + Ayutthaya
 + Bang Pa-In
 
-#### Pattaya
+### Pattaya
 
 + Buddha Hill
 + Jomtien Beach
