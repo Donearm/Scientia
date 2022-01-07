@@ -4,6 +4,20 @@ bookCollapseSection: true
 weight: 615
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Useful URIs](#useful-uris)
+* [Pipelining](#pipelining)
+* [Various tweaks](#various-tweaks)
+* [Tweak mouse wheel speed](#tweak-mouse-wheel-speed)
+* [AwesomeBar tweaks](#awesomebar-tweaks)
+* [Disable compatibility check for extensions](#disable-compatibility-check-for-extensions)
+* [Keyboard shortcuts](#keyboard-shortcuts)
+
+<!-- vim-markdown-toc -->
+
+---------
+
 For most of these info, thanks to the very complete [Mozillazine](http://kb.mozillazine.org/Category:Preferences)
 
 ### Useful URIs
@@ -33,7 +47,7 @@ Enabling of HTTP/1.1 pipelining
 * `content.interrupt.parsing` = Enable other options under `content.`
 * `content.notify.interval = The minimum number in microseconds between reflows. Default is 120000. Lowering it will lower the perceived page loading time but increase the total loading time, especially on slower connection. Values below 100000 have a significant impact on performances and are not recommended
 * `ui.submenuDelay` =  Determines the delay in milliseconds between hovering over a menu option with a submenu and the submenu appearing. If this preference is not set, the OS's value is used. 0 disables it
-* `browser.search.openintab` = Open search results from the Search Bar in a new tab if true. Default is false 
+* `browser.search.openintab` = Open search results from the Search Bar in a new tab if true. Default is false
 * `gfx.color_management.enabled` = If true, enable color management (and supposedly the quality of images). Default is false
 * `browser.download.manager.scanWhenDone` = Scan for viruses downloaded files. Default is true. False disables it (on Linux could be disabled, gaining some milliseconds in UI responsiveness)
 * `browser.cache.check_doc_frequency` = How often to check the remote page for a newer version. Default is 3, thus automatically determined. 0 means to check once per browser session. 1 every time I view the page and 2 to never check (always use the cached page)
@@ -65,8 +79,8 @@ browser.urlbar.maxRichResults 12
 To force compatibility between a newer Firefox version and a not yet updated extension, add two booleans:
 
 ```bash
-extensions.checkUpdateSecurity  
-extensions.checkCompatibility  
+extensions.checkUpdateSecurity
+extensions.checkCompatibility
 ```
 
 and set both to false. It could be needed to add another boolean, false too, like:

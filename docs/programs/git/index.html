@@ -18,8 +18,8 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Git" />
-<meta property="og:description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
- git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file." />
+<meta property="og:description" content="Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/git/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
 
@@ -29,13 +29,13 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Git"/>
-<meta name="twitter:description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
- git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file."/>
+<meta name="twitter:description" content="Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit."/>
 <meta itemprop="name" content="Git">
-<meta itemprop="description" content="A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
- git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file.">
+<meta itemprop="description" content="Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit.">
 
-<meta itemprop="wordCount" content="1309"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="1322"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -52,6 +52,15 @@
 </div>
 <div class="content-container">
 <main><h1>Git</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#various-useful-commands">Various useful commands</a></li>
+<li><a href="#cherry-picking-a-range-of-commits">Cherry picking a range of commits</a></li>
+<li><a href="#github">Github</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
+<h3 id="various-useful-commands">Various useful commands</h3>
 <p>A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )</p>
 <ul>
 <li><code>git mv oldfile newfile</code> = Move a file, or simply rename it</li>

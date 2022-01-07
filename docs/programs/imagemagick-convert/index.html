@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Imagemagick Convert" />
-<meta property="og:description" content="Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx&#43;nnn&#43;nnn dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso" />
+<meta property="og:description" content="Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Imagemagick Convert"/>
-<meta name="twitter:description" content="Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx&#43;nnn&#43;nnn dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso"/>
+<meta name="twitter:description" content="Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine."/>
 <meta itemprop="name" content="Imagemagick Convert">
-<meta itemprop="description" content="Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx&#43;nnn&#43;nnn dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso">
+<meta itemprop="description" content="Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with convert thus: L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine.">
 
-<meta itemprop="wordCount" content="610"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="625"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,10 +49,19 @@
 </div>
 <div class="content-container">
 <main><h1>Imagemagick Convert</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#create-an-animated-gif">Create an animated gif</a></li>
+<li><a href="#tweak-brightness-and-contrast">Tweak brightness and contrast</a></li>
+<li><a href="#change-main-colour-of-an-icon">Change main colour of an icon</a></li>
+<li><a href="#various">Various</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <h3 id="create-an-animated-gif">Create an animated gif</h3>
 <p>A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with <code>convert</code> thus:
 L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: <code>wwwXhhhx+nnn+nnn</code> dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> jpegs in ./*.jpg<span class="p">;</span> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> jpegs in ./*.jpg<span class="p">;</span>
 	<span class="k">do</span> convert -crop wwwXhhh+nn1+nn2 <span class="nv">$jpegs</span> crops/<span class="sb">`</span>basename <span class="nv">$jpegs</span><span class="sb">`</span><span class="p">;</span>
 <span class="k">done</span>
 </code></pre></div><p>where <code>www</code> is the width and <code>hhh</code> the height of the resulting image and <code>nn1</code> and <code>nn2</code> are respectively the height and width from where to start calculating the final width and height. For example, a source image of 1600x1200, using convert like <code>1400x1100+10+20</code> means that the final image will be 1400x1100 and it will be extrapolated 10 pixel from the left and 20 pixel from the top of the source image, thus excluding some part of it on the top and left. Then:</p>

@@ -4,6 +4,21 @@ bookCollapseSection: true
 weight: 612
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Movements](#movements)
+* [Basic commands](#basic-commands)
+* [Windows/Buffers](#windowsbuffers)
+* [Editing](#editing)
+* [Files](#files)
+* [Dired](#dired)
+* [Shell](#shell)
+* [Various](#various)
+
+<!-- vim-markdown-toc -->
+
+-----------
+
 ## Movements
 
 * `C-v` = Move forward of a screenful

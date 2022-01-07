@@ -4,6 +4,18 @@ bookCollapseSection: true
 weight: 618
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Various useful commands](#various-useful-commands)
+* [Cherry picking a range of commits](#cherry-picking-a-range-of-commits)
+* [Github](#github)
+
+<!-- vim-markdown-toc -->
+
+-------------
+
+### Various useful commands
+
 A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
 
 * `git mv oldfile newfile` = Move a file, or simply rename it

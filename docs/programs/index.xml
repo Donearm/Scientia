@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/emacs/</guid>
-      <description>Movements  C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.) C-M-b = Go to the previous s-expression C-n = Go to next line C-p = Go to previous line C-a = Go to the beginning of current line C-e = Go to the end of current line M-a = Go to the beginning of phrase M-e = Go to the end of phrase M-&amp;lt; = Go back to the beginning of current file M-&amp;gt; = Move forward till the end of current file M-g g = Go to a specific line number (to be inserted) C-x r j a = Go to the position saved in register &amp;ldquo;a&amp;rdquo; M-r = Alternatively jump between the top, the bottom and the middle of the current screen C-M-a = Go at the beginning of current or previous function C-M-e = Go at the end of current or previous function  Basic commands  C-g = Cancel the currently active command C-x u = Undo last command C-x C-c = Exit from Emacs C-h = Open the help for a command C-s = Find text forward C-r = Find text backward C-s C-w = Find forward the word where the cursor is C-r C-w = Find backward the word where the cursor is C-x r a = Save current position in a register &amp;ldquo;a&amp;rdquo; C-x z = Repeat last executed command.</description>
+      <description>Movements Basic commands Windows/Buffers Editing Files Dired Shell Various   Movements  C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/ffmpeg/</guid>
-      <description>Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0+x,y file = Capture what&amp;rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0.</description>
+      <description>Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/firefox/</guid>
-      <description>For most of these info, thanks to the very complete Mozillazine
+      <description>Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1.</description>
     </item>
     
@@ -88,8 +88,8 @@ Various plugins to try Filters-&amp;gt;Defocus  Gaussian Selective Gaussian = 6-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/git/</guid>
-      <description>A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
- git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit. All the subsequent commits, that with --hard would have been lost, are still in the log and can be quickly reverted back to git log &amp;gt; Changelog = Save the log as a simple changelog git log file = Show all commits that modified file.</description>
+      <description>Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
+ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit.</description>
     </item>
     
     <item>
@@ -107,9 +107,8 @@ Various plugins to try Filters-&amp;gt;Defocus  Gaussian Selective Gaussian = 6-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/gnome/</guid>
-      <description>Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
-Change the start button  run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file
-Change gtk theme (2.0) Theme must be in /usr/share/themes or under ~/.</description>
+      <description>Disable desktop icons Change the start button Select a specific pixmap Change gtk theme (2.0)   Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
+Change the start button  run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file</description>
     </item>
     
     <item>
@@ -136,7 +135,7 @@ Change gtk theme (2.0) Theme must be in /usr/share/themes or under ~/.</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/</guid>
-      <description>Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: wwwXhhhx+nnn+nnn dove nnn sta per l&amp;rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso</description>
+      <description>Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine.</description>
     </item>
     
     <item>
@@ -155,7 +154,7 @@ Change gtk theme (2.0) Theme must be in /usr/share/themes or under ~/.</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/mutt/</guid>
-      <description>General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
+      <description>General Commands Keybindings  The Message Index (browsing through mailbox) The Pager (reading an email) Composer (setting the send options for an email)   Arguments Highlight according to a pattern   General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
     </item>
     
     <item>
@@ -183,7 +182,7 @@ d.tracker.insert=&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34; where 3 is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/ssh/</guid>
-      <description>ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
+      <description>General commands  ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
     </item>
     
     <item>
@@ -220,7 +219,7 @@ tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status of
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/vim/</guid>
-      <description>Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!</description>
+      <description>Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) .</description>
     </item>
     
     <item>

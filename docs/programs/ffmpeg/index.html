@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Ffmpeg" />
-<meta property="og:description" content="Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0&#43;x,y file = Capture what&rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0." />
+<meta property="og:description" content="Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/ffmpeg/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Ffmpeg"/>
-<meta name="twitter:description" content="Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0&#43;x,y file = Capture what&rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0."/>
+<meta name="twitter:description" content="Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0."/>
 <meta itemprop="name" content="Ffmpeg">
-<meta itemprop="description" content="Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0&#43;x,y file = Capture what&rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0.">
+<meta itemprop="description" content="Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.">
 
-<meta itemprop="wordCount" content="294"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="302"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,20 @@
 </div>
 <div class="content-container">
 <main><h1>Ffmpeg</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#conversions">Conversions</a>
+<ul>
+<li><a href="#h264">H264</a></li>
+<li><a href="#vp8">VP8</a></li>
+<li><a href="#vp9">VP9</a></li>
+</ul>
+</li>
+<li><a href="#gif-to-vp8">Gif to VP8</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <h3 id="commands">Commands</h3>
 <ul>
 <li><code>ffmpeg -i file</code> = Show info about file</li>

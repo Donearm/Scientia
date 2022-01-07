@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="ViM" />
-<meta property="og:description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!" />
+<meta property="og:description" content="Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/vim/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="ViM"/>
-<meta name="twitter:description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!"/>
+<meta name="twitter:description" content="Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) ."/>
 <meta itemprop="name" content="ViM">
-<meta itemprop="description" content="Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!">
+<meta itemprop="description" content="Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl&#43;r = Repeat last command (Redo) .">
 
-<meta itemprop="wordCount" content="3014"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="3044"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -49,6 +49,32 @@
 </div>
 <div class="content-container">
 <main><h1>ViM</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#basic-commands">Basic commands</a></li>
+<li><a href="#movements">Movements</a></li>
+<li><a href="#removal-and-substitution">Removal and Substitution</a></li>
+<li><a href="#text-formatting">Text formatting</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#folding">Folding</a></li>
+<li><a href="#searches">Searches</a></li>
+<li><a href="#spell-checking">Spell Checking</a></li>
+<li><a href="#buffers">Buffers</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#ctags">Ctags</a></li>
+<li><a href="#various-commands">Various Commands</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#tips">Tips</a>
+<ul>
+<li><a href="#change-statusline-colours">Change statusline colours</a></li>
+<li><a href="#regexp">Regexp</a></li>
+<li><a href="#identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</a></li>
+<li><a href="#plugins">Plugins</a></li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <h2 id="basic-commands">Basic commands</h2>
 <ul>
 <li><code>J</code> = Join next to current line</li>

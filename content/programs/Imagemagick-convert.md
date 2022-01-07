@@ -3,6 +3,16 @@ title: Imagemagick Convert
 bookCollapseSection: true
 weight: 623
 ---
+<!-- vim-markdown-toc GFM -->
+
+* [Create an animated gif](#create-an-animated-gif)
+* [Tweak brightness and contrast](#tweak-brightness-and-contrast)
+* [Change main colour of an icon](#change-main-colour-of-an-icon)
+* [Various](#various)
+
+<!-- vim-markdown-toc -->
+
+-----------
 
 ### Create an animated gif
 
@@ -10,7 +20,7 @@ A directory already containing the image files that will compose the animated gi
 L'area prescelta si calcola a partire dal vertice in alto a sinistra dell'immagine. Per selezionare da dove partire con il taglio impostare così: `wwwXhhhx+nnn+nnn` dove nnn sta per l'altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso
 
 ```bash
-for jpegs in ./*.jpg; 
+for jpegs in ./*.jpg;
 	do convert -crop wwwXhhh+nn1+nn2 $jpegs crops/`basename $jpegs`;
 done
 ```
@@ -51,7 +61,7 @@ Convert an icon main colour, the foreground one, to white. Colours can be any of
 
 * `convert file.pdf img_%04d.png` = Convert all the images in a pdf in png, using 4 digits to enumerate the images
 * `convert -quality 0.75 -interlace None -type TrueColor -resample 96×96 -resize resolution img img.out` = Make an image ready to be used at boot (generally for Grub legacy)
-* `convert -colors n` = Modify the number of colours in an image 
+* `convert -colors n` = Modify the number of colours in an image
 * `convert -despeckle` = Reduce the noise of an image, mixing the contrasting pixels better. It may slightly increase the size of the image though
 * `convert image1 image2 +append finalimage` = Join `image1` and `image2` (a potentially infinite number images may be used) into `finalimage`, horizontally. Images should be of the same length or there'd be a background added to the shorter one for padding
 * `convert -flip image image.out` = Vertically mirror image to `image.out`. Using `-flop` instead mirrors horizontally

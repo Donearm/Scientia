@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Firefox" />
-<meta property="og:description" content="For most of these info, thanks to the very complete Mozillazine
+<meta property="og:description" content="Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/firefox/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
@@ -29,13 +29,13 @@ Useful URIs  about:buildconfig = Shows info about the arguments used to compile 
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Firefox"/>
-<meta name="twitter:description" content="For most of these info, thanks to the very complete Mozillazine
+<meta name="twitter:description" content="Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1."/>
 <meta itemprop="name" content="Firefox">
-<meta itemprop="description" content="For most of these info, thanks to the very complete Mozillazine
+<meta itemprop="description" content="Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1.">
 
-<meta itemprop="wordCount" content="658"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="676"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -52,6 +52,18 @@ Useful URIs  about:buildconfig = Shows info about the arguments used to compile 
 </div>
 <div class="content-container">
 <main><h1>Firefox</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#useful-uris">Useful URIs</a></li>
+<li><a href="#pipelining">Pipelining</a></li>
+<li><a href="#various-tweaks">Various tweaks</a></li>
+<li><a href="#tweak-mouse-wheel-speed">Tweak mouse wheel speed</a></li>
+<li><a href="#awesomebar-tweaks">AwesomeBar tweaks</a></li>
+<li><a href="#disable-compatibility-check-for-extensions">Disable compatibility check for extensions</a></li>
+<li><a href="#keyboard-shortcuts">Keyboard shortcuts</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
 <p>For most of these info, thanks to the very complete <a href="http://kb.mozillazine.org/Category:Preferences">Mozillazine</a></p>
 <h3 id="useful-uris">Useful URIs</h3>
 <ul>
@@ -103,8 +115,8 @@ places.frecency.tempRedirectVisitBonus <span class="m">0</span>
 browser.urlbar.maxRichResults <span class="m">12</span>
 </code></pre></div><h3 id="disable-compatibility-check-for-extensions">Disable compatibility check for extensions</h3>
 <p>To force compatibility between a newer Firefox version and a not yet updated extension, add two booleans:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">extensions.checkUpdateSecurity  
-extensions.checkCompatibility  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">extensions.checkUpdateSecurity
+extensions.checkCompatibility
 </code></pre></div><p>and set both to false. It could be needed to add another boolean, false too, like:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">extensions.checkCompatibility.3.6b
 </code></pre></div><p>where 3.6b is the installed Firefox version</p>

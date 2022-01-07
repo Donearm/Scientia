@@ -4,6 +4,19 @@ bookCollapseSection: true
 weight: 614
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Commands](#commands)
+* [Conversions](#conversions)
+	* [H264](#h264)
+	* [VP8](#vp8)
+	* [VP9](#vp9)
+* [Gif to VP8](#gif-to-vp8)
+
+<!-- vim-markdown-toc -->
+
+-----------
+
 ### Commands
 
 * `ffmpeg -i file` = Show info about file

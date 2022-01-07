@@ -3,6 +3,30 @@ title: ViM
 bookCollapseSection: true
 weight: 632
 ---
+<!-- vim-markdown-toc GFM -->
+
+* [Basic commands](#basic-commands)
+* [Movements](#movements)
+* [Removal and Substitution](#removal-and-substitution)
+* [Text formatting](#text-formatting)
+* [Windows](#windows)
+* [Folding](#folding)
+* [Searches](#searches)
+* [Spell Checking](#spell-checking)
+* [Buffers](#buffers)
+* [Registers](#registers)
+* [Ctags](#ctags)
+* [Various Commands](#various-commands)
+* [Macros](#macros)
+* [Tips](#tips)
+	* [Change statusline colours](#change-statusline-colours)
+	* [Regexp](#regexp)
+	* [Identify corresponding opening/closing HTML tag](#identify-corresponding-openingclosing-html-tag)
+	* [Plugins](#plugins)
+
+<!-- vim-markdown-toc -->
+
+-------------
 
 ## Basic commands
 

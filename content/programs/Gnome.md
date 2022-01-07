@@ -3,6 +3,16 @@ title: Gnome
 bookCollapseSection: true
 weight: 620
 ---
+<!-- vim-markdown-toc GFM -->
+
+* [Disable desktop icons](#disable-desktop-icons)
+* [Change the start button](#change-the-start-button)
+* [Select a specific pixmap](#select-a-specific-pixmap)
+* [Change gtk theme (2.0)](#change-gtk-theme-20)
+
+<!-- vim-markdown-toc -->
+
+-----------
 
 ### Disable desktop icons
 

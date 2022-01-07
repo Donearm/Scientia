@@ -3,23 +3,36 @@ title: Mutt
 bookCollapseSection: true
 weight: 625
 ---
+<!-- vim-markdown-toc GFM -->
+
+* [General Commands](#general-commands)
+* [Keybindings](#keybindings)
+	* [The Message Index  (browsing through mailbox)](#the-message-index--browsing-through-mailbox)
+	* [The Pager (reading an email)](#the-pager-reading-an-email)
+	* [Composer (setting the send options for an email)](#composer-setting-the-send-options-for-an-email)
+* [Arguments](#arguments)
+* [Highlight according to a pattern](#highlight-according-to-a-pattern)
+
+<!-- vim-markdown-toc -->
+
+-------------
 
 ## General Commands
 
-* `q(x)`	= exit the current menu (abort without saving) 
-* `^g`		= cancel current action 
-* `?`		= list all keybindings for the current menu 
+* `q(x)`	= exit the current menu (abort without saving)
+* `^g`		= cancel current action
+* `?`		= list all keybindings for the current menu
 
 ## Keybindings
 
 ### The Message Index  (browsing through mailbox)
 
-* `m`		= compose a new message 
-* `d(D)`	= delete the current message (matching a pattern) 
-* `u(U)`	= undelete-message (matching a pattern) 
-* `C(ALT C)` = copy the current message to another mailbox (decode first) 
-* `s(ALT s)` = save-message (decode first) 
-* `r(g)  (L)` = reply to sender (all recipients) (reply to mailing list) 
+* `m`		= compose a new message
+* `d(D)`	= delete the current message (matching a pattern)
+* `u(U)`	= undelete-message (matching a pattern)
+* `C(ALT C)` = copy the current message to another mailbox (decode first)
+* `s(ALT s)` = save-message (decode first)
+* `r(g)  (L)` = reply to sender (all recipients) (reply to mailing list)
 * `f(b)`	= forward message (bounce) 
 * `/(ALT /)` = search  (search-reverse) 
 * `c`		= change to a different mailbox/folder 
