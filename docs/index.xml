@@ -577,9 +577,8 @@ tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status of
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/theory/data_structures/</guid>
-      <description>Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&amp;rsquo;s no need to rearrange the whole structure each time but:
- a linked list use more memory (data + reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language.</description>
+      <description>Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence.</description>
     </item>
     
     <item>

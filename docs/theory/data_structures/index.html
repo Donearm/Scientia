@@ -18,9 +18,8 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Data Structures" />
-<meta property="og:description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
- a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language." />
+<meta property="og:description" content="Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/theory/data_structures/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="theory" />
 
@@ -30,15 +29,13 @@ Each element, or node, contains both data and a reference to the next node in th
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Data Structures"/>
-<meta name="twitter:description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
- a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language."/>
+<meta name="twitter:description" content="Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence."/>
 <meta itemprop="name" content="Data Structures">
-<meta itemprop="description" content="Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:
- a linked list use more memory (data &#43; reference) nodes must be read in order longer access time as nodes are not contiguosly stored  History First developed in 1955 for the IPL language.">
+<meta itemprop="description" content="Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
+Each element, or node, contains both data and a reference to the next node in the sequence.">
 
-<meta itemprop="wordCount" content="3011"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="3035"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -55,7 +52,33 @@ Each element, or node, contains both data and a reference to the next node in th
 </div>
 <div class="content-container">
 <main><h1>Data Structures</h1>
-<h1 id="linked-list">Linked List</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#linked-list">Linked List</a>
+<ul>
+<li><a href="#history">History</a></li>
+</ul>
+</li>
+<li><a href="#queues">Queues</a></li>
+<li><a href="#dynamic-array">Dynamic Array</a></li>
+<li><a href="#skip-list">Skip List</a></li>
+<li><a href="#binary-tree">Binary Tree</a>
+<ul>
+<li><a href="#bsp-tree">BSP Tree</a></li>
+<li><a href="#binary-indexed-tree">Binary Indexed Tree</a></li>
+</ul>
+</li>
+<li><a href="#heap">Heap</a></li>
+<li><a href="#associative-array">Associative Array</a></li>
+<li><a href="#bit-array">Bit Array</a></li>
+<li><a href="#trie">Trie</a></li>
+<li><a href="#record">Record</a></li>
+<li><a href="#union">Union</a></li>
+<li><a href="#set">Set</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
+<h2 id="linked-list">Linked List</h2>
 <p>A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.</p>
 <p>Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&rsquo;s no need to rearrange the whole structure each time but:</p>
 <ul>
@@ -63,7 +86,7 @@ Each element, or node, contains both data and a reference to the next node in th
 <li>nodes must be read in order</li>
 <li>longer access time as nodes are not contiguosly stored</li>
 </ul>
-<h4 id="history">History</h4>
+<h3 id="history">History</h3>
 <p>First developed in 1955 for the IPL language. In 1958 linked lists were implemented in Lisp. The Flex family of file systems used doubly linked lists for their file structure, as the IBM&rsquo;s T53/360 operating system.</p>
 <p>Versions:</p>
 <ul>
@@ -130,11 +153,11 @@ expensive branch operation to check for <em>null</em>). It does not hold any dat
 <p><strong>Empty lists</strong> are without data fields. Lists with only sentinel nodes are also considered empty.</p>
 <p><strong>Hash Linking</strong> are two arrays, one with the data and another with the links, both with the same indices.</p>
 <p>A <strong>Stack</strong> is a sort of a singly linked list which allows pop and push operations only on the first node, the top of the stack. Historically they have been invented in Munich and independently in Australia around 1954-1955. Stacks are commonly implemented through arrays and linked lists. They are LIFO, last in first out, data structure.</p>
-<h1 id="queues">Queues</h1>
+<h2 id="queues">Queues</h2>
 <p>Similarly to stacks, queues are a collection of data in which addition is made at the back only and removal at the front only. These are respectively known as enqueque and dequeue operations. Doubly or singly linked lists are commonly used to implement queues.</p>
 <p><strong>Deques</strong> or double-ended queues are queues in which elements can be added and removed both on front and back of the queue. Also known as head-tail linked list.</p>
 <p><strong>Priority Queues</strong> are standard queues whose values are pre-ordered for priority, with the top value being the highest priority one.</p>
-<h1 id="dynamic-array">Dynamic Array</h1>
+<h2 id="dynamic-array">Dynamic Array</h2>
 <p>Also called <em>growable array</em>, <em>resizable array</em>, <em>dynamic table</em>, <em>mutable
 array</em> or <em>array list</em> is a data structure that is made of 2 parts of a fixed
 size array: the first stores the actual elements and the second is reserved.
@@ -195,7 +218,7 @@ indices. Similar to a highly optimised 256-ary trie</li>
 <li><code>std::vector</code> (C++), <code>ArrayList</code> (Java and .Net), <code>List&lt;&gt;</code> (.Net 2.0),
 <code>OrderedCollection</code> (SmallTalk), <code>list</code> (Python)*</li>
 </ul>
-<h1 id="skip-list">Skip List</h1>
+<h2 id="skip-list">Skip List</h2>
 <p><img src="http://igoro.com/wordpress/wp-content/uploads/2008/07/multilist.png" alt="" title="Skip 
 List example"></p>
 <p>Basically, a skip list is a normal linked list that has multiple levels,
@@ -204,7 +227,7 @@ one after another; then the subsequent levels may link only the odd elements,
 jumping one or two at the time and so on up until the topmost level that usually
 links only the head to the middle and then the tail. They <em>skip</em> elements, thus
 the name.</p>
-<h1 id="binary-tree">Binary Tree</h1>
+<h2 id="binary-tree">Binary Tree</h2>
 <p>A binary tree is a data structure in which each node has at most 2 child nodes.
 Nodes with children are called <em>parent nodes</em> and there may exists a <em>root</em>
 node, the origin of all nodes. Definitions:</p>
@@ -390,13 +413,13 @@ node</li>
 </ul>
 </li>
 </ul>
-<h2 id="bsp-tree">BSP Tree</h2>
+<h3 id="bsp-tree">BSP Tree</h3>
 <ul>
 <li><a href="https://pdfs.semanticscholar.org/90e4/c4a65b4b04d9e2374e5753659c102de4c0eb.pdf">Paper on BSP (Binary Spacing Partitioning)</a></li>
 </ul>
-<h2 id="binary-indexed-tree">Binary Indexed Tree</h2>
+<h3 id="binary-indexed-tree">Binary Indexed Tree</h3>
 <p>A complete and clear answer on <a href="https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a">SO</a> about the intuition behind a Binary Indexed Tree.</p>
-<h1 id="heap">Heap</h1>
+<h2 id="heap">Heap</h2>
 <p>a tree that satisfies the <em>heap property</em>: if <code>A</code> is a parent node of <code>B</code>, then
 <code>key(A)</code> is ordered with respect to <code>key(B)</code>. The same applies across the heap.
 Thus, either the keys of parent nodes are always greater than or equal to those
@@ -461,7 +484,7 @@ heap merge</em></li>
 (Java), <code>heapq</code> (Python), <code>SplMaxHeap</code> and <code>SplMinHeap</code> (Php), <code>Heap</code> (Perl),
 <code>heap</code> (Go)*</li>
 </ul>
-<h1 id="associative-array">Associative Array</h1>
+<h2 id="associative-array">Associative Array</h2>
 <p>Also called <em>map</em> or <em>dictionary</em> is a collection of pairs (key, value) such
 that each keys appear at most once in the collection</p>
 <p>Variants:</p>
@@ -481,14 +504,14 @@ to the same bucket, can happen</li>
 <code>map</code> (C++, Java, Go, Clojure, Scala), <code>hash table</code> (Common Lisp, PowerShell),
 <code>table</code> (Lua)</li>
 </ul>
-<h1 id="bit-array">Bit Array</h1>
+<h2 id="bit-array">Bit Array</h2>
 <p>An array that stores bits, as in 0 or 1 values. Known also as <em>bitmap</em>,
 <em>bitset</em>, <em>bit string</em>, <em>bit field</em> or <em>bit vector</em></p>
 <p>Implementations:</p>
 <ul>
 <li><code>bitfield</code> (C), <code>BitSet</code> (Java), <code>bitset</code> (C++), <code>BitArray</code> (.Net)</li>
 </ul>
-<h1 id="trie">Trie</h1>
+<h2 id="trie">Trie</h2>
 <p>Also called <em>digital tree</em> or <em>prefix tree</em>, the trie is used to store an
 associative array where keys are usually strings. Differently from a binary
 search tree, no node in the tree stores the key associated with that node; its
@@ -521,12 +544,12 @@ disk</li>
 </ul>
 </li>
 </ul>
-<h1 id="record">Record</h1>
+<h2 id="record">Record</h2>
 <p>A value that contains other values, generally in fixed number, order and indexed
 by names. Record elements are called <em>fields</em> or <em>members</em>. Unlike arrays,
 records have fixed number of fields, all with a name, and with different types
 among them. Also called <em>tuple</em>, <em>struct</em> or <em>compound data</em></p>
-<h1 id="union">Union</h1>
+<h2 id="union">Union</h2>
 <p>Very similar to records, an union may have multiple elements but only one at the
 time can have a value as unions' elements are stored at a single spot in memory
 and thus setting any value will overwrite all other elements' values. As an
@@ -541,7 +564,7 @@ field is active. Also known as <em>variant</em>, <em>variant record</em>,
 </ul>
 </li>
 </ul>
-<h1 id="set">Set</h1>
+<h2 id="set">Set</h2>
 <p>A structure that can store any arbitrary value, in no particular order, and no
 repeated value. It can be <em>static</em> or <em>frozen</em>, not modifiable after the
 creation, or <em>dynamic</em> or <em>mutable</em>, that are modifiables.</p>

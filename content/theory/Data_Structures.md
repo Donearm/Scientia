@@ -3,8 +3,29 @@ title: Data Structures
 bookCollapseSection: true
 weight: 720
 ---
+<!-- vim-markdown-toc GFM -->
 
-# Linked List
+* [Linked List](#linked-list)
+	* [History](#history)
+* [Queues](#queues)
+* [Dynamic Array](#dynamic-array)
+* [Skip List](#skip-list)
+* [Binary Tree](#binary-tree)
+	* [BSP Tree](#bsp-tree)
+	* [Binary Indexed Tree](#binary-indexed-tree)
+* [Heap](#heap)
+* [Associative Array](#associative-array)
+* [Bit Array](#bit-array)
+* [Trie](#trie)
+* [Record](#record)
+* [Union](#union)
+* [Set](#set)
+
+<!-- vim-markdown-toc -->
+
+----------
+
+## Linked List
 
 A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
 
@@ -14,7 +35,7 @@ Each element, or node, contains both data and a reference to the next node in th
 + nodes must be read in order
 + longer access time as nodes are not contiguosly stored
 
-#### History
+### History
 
 First developed in 1955 for the IPL language. In 1958 linked lists were implemented in Lisp. The Flex family of file systems used doubly linked lists for their file structure, as the IBM's T53/360 operating system.
 
@@ -63,7 +84,7 @@ expensive branch operation to check for _null_). It does not hold any data.
 
 A **Stack** is a sort of a singly linked list which allows pop and push operations only on the first node, the top of the stack. Historically they have been invented in Munich and independently in Australia around 1954-1955. Stacks are commonly implemented through arrays and linked lists. They are LIFO, last in first out, data structure.
 
-# Queues
+## Queues
 
 Similarly to stacks, queues are a collection of data in which addition is made at the back only and removal at the front only. These are respectively known as enqueque and dequeue operations. Doubly or singly linked lists are commonly used to implement queues.
 
@@ -71,7 +92,7 @@ Similarly to stacks, queues are a collection of data in which addition is made a
 
 **Priority Queues** are standard queues whose values are pre-ordered for priority, with the top value being the highest priority one.
 
-# Dynamic Array
+## Dynamic Array
 
 Also called _growable array_, _resizable array_, _dynamic table_, _mutable 
 array_ or _array list_ is a data structure that is made of 2 parts of a fixed 
@@ -113,7 +134,7 @@ Implementations:
 * `std::vector` (C++), `ArrayList` (Java and .Net), `List<>` (.Net 2.0), 
   `OrderedCollection` (SmallTalk), `list` (Python)*
 
-# Skip List
+## Skip List
 
 ![](http://igoro.com/wordpress/wp-content/uploads/2008/07/multilist.png "Skip 
 List example")
@@ -125,7 +146,7 @@ jumping one or two at the time and so on up until the topmost level that usually
 links only the head to the middle and then the tail. They _skip_ elements, thus 
 the name.
 
-# Binary Tree
+## Binary Tree
 
 A binary tree is a data structure in which each node has at most 2 child nodes. 
 Nodes with children are called _parent nodes_ and there may exists a _root_ 
@@ -249,15 +270,15 @@ Variants:
     * a tree in which each node has at most 3 child nodes, usually called 
 	  _left_, _mid_ and _right_
 
-## BSP Tree
+### BSP Tree
 
 + [Paper on BSP (Binary Spacing Partitioning)](https://pdfs.semanticscholar.org/90e4/c4a65b4b04d9e2374e5753659c102de4c0eb.pdf)
 
-## Binary Indexed Tree
+### Binary Indexed Tree
 
 A complete and clear answer on [SO](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a) about the intuition behind a Binary Indexed Tree.
 
-# Heap
+## Heap
 
 a tree that satisfies the _heap property_: if `A` is a parent node of `B`, then 
 `key(A)` is ordered with respect to `key(B)`. The same applies across the heap. 
@@ -303,7 +324,7 @@ Implementations:
   (Java), `heapq` (Python), `SplMaxHeap` and `SplMinHeap` (Php), `Heap` (Perl), 
   `heap` (Go)*
 
-# Associative Array
+## Associative Array
 
 Also called _map_ or _dictionary_ is a collection of pairs (key, value) such 
 that each keys appear at most once in the collection
@@ -322,7 +343,7 @@ Implementations:
   `map` (C++, Java, Go, Clojure, Scala), `hash table` (Common Lisp, PowerShell), 
   `table` (Lua)
 
-# Bit Array
+## Bit Array
 
 An array that stores bits, as in 0 or 1 values. Known also as _bitmap_, 
 _bitset_, _bit string_, _bit field_ or _bit vector_
@@ -331,7 +352,7 @@ Implementations:
 
 * `bitfield` (C), `BitSet` (Java), `bitset` (C++), `BitArray` (.Net) 
 
-# Trie
+## Trie
 
 Also called _digital tree_ or _prefix tree_, the trie is used to store an 
 associative array where keys are usually strings. Differently from a binary 
@@ -357,14 +378,14 @@ Variations:
     * a trie that can store and retrieve variable-length strings efficiently on 
 	  disk
 
-# Record
+## Record
 
 A value that contains other values, generally in fixed number, order and indexed
 by names. Record elements are called _fields_ or _members_. Unlike arrays,
 records have fixed number of fields, all with a name, and with different types 
 among them. Also called _tuple_, _struct_ or _compound data_
 
-# Union
+## Union
 
 Very similar to records, an union may have multiple elements but only one at the 
 time can have a value as unions' elements are stored at a single spot in memory 
@@ -378,7 +399,7 @@ Variants:
 	  field is active. Also known as _variant_, _variant record_, 
 	  _discriminated union_, _disjoint union_ or _sum type_
 
-# Set
+## Set
 
 A structure that can store any arbitrary value, in no particular order, and no 
 repeated value. It can be _static_ or _frozen_, not modifiable after the 
