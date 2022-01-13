@@ -38,7 +38,7 @@ After that, the workspace json file will be created but all the classes and prop
 i3-save-tree --workspace 1 &gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
 After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.">
 
-<meta itemprop="wordCount" content="133"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="142"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -69,6 +69,7 @@ configuration:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">exec</span> --no-startup-id <span class="s2">&#34;i3-msg &#39;workspace 1; append_layout ~/.config/i3/i3-workspace-1.json&#39;&#34;</span>
 </code></pre></div><p>Have this line <em>before</em> the one that launches the actual clients named in the
 workspace file and you are all set for next i3 startup.</p>
+<p>More info on the <a href="https://i3wm.org/docs/layout-saving.html">official documentation for layout saving</a>.</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/various/i3.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/various/hugo/" title="Hugo"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Hugo</a>
