@@ -1,7 +1,7 @@
 ---
 title: Load Balancing 
 bookCollapseSection: true
-weight: 825
+weight: 828
 ---
 
 ## Modes

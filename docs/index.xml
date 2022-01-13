@@ -640,6 +640,17 @@ pygmentsStyle = &amp;#34;dracula&amp;#34; </description>
     </item>
     
     <item>
+      <title>i3</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/i3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/various/i3/</guid>
+      <description>How to save layout and reload at boot First, save the current layout of any workspace with:
+i3-save-tree --workspace 1 &amp;gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
+After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.</description>
+    </item>
+    
+    <item>
       <title>Load Balancing</title>
       <link>https://donearm.github.io/Personal-Wiki/various/load_balancing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

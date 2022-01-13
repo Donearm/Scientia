@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Compose Key - Gianluca Fiore Personal Wiki</title>
+<title>i3 - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
 <meta name="generator" content="Hugo 0.91.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">
+<link rel="canonical" href="https://donearm.github.io/Personal-Wiki/various/i3/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/chroma.min.css">
@@ -17,25 +17,28 @@
 <script src="https://donearm.github.io/Personal-Wiki/js/bundle.js"></script><style>
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
-<meta property="og:title" content="Compose Key" />
-<meta property="og:description" content="This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose &#43; a &#43; e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice." />
+<meta property="og:title" content="i3" />
+<meta property="og:description" content="How to save layout and reload at boot First, save the current layout of any workspace with:
+i3-save-tree --workspace 1 &gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
+After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="operating_systems" />
+<meta property="og:url" content="https://donearm.github.io/Personal-Wiki/various/i3/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="various" />
 
 <meta property="og:site_name" content="Gianluca Fiore Personal Wiki" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
-<meta name="twitter:title" content="Compose Key"/>
-<meta name="twitter:description" content="This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose &#43; a &#43; e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice."/>
-<meta itemprop="name" content="Compose Key">
-<meta itemprop="description" content="This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose &#43; a &#43; e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.">
+<meta name="twitter:title" content="i3"/>
+<meta name="twitter:description" content="How to save layout and reload at boot First, save the current layout of any workspace with:
+i3-save-tree --workspace 1 &gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
+After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented."/>
+<meta itemprop="name" content="i3">
+<meta itemprop="description" content="How to save layout and reload at boot First, save the current layout of any workspace with:
+i3-save-tree --workspace 1 &gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
+After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.">
 
-<meta itemprop="wordCount" content="305"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="133"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -51,56 +54,25 @@ Some computers (e.g. those from Sun) have a Compose key on their keyboard, but f
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Compose Key</h1>
-<p>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.</p>
-<p>Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</p>
-<p>From a desktop like Gnome or KDE, the choice can be made with the system menu. Alternatively, the command xmodmap can be used to define the key (as Multi_key). In general (apart from any desktop being used), the Compose key can be specified in the &ldquo;Input Device&rdquo; section of the <code>/etc/X11/xorg.conf</code> file. For instance, the following sets the &ldquo;right windows&rdquo; key to be the Compose key:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xorg.conf" data-lang="xorg.conf"><span class="n">Option</span><span class="w">      </span><span class="s">&#34;XkbOptions&#34;  &#34;compose:rwin&#34;</span><span class="w">
-</span></code></pre></div><p>A list of compose sequences is in the file <code>/usr/share/X11/locale/en_US.·UTF-8/Compose</code>. Unfortunately, this includes many sequences which may not actually work.
-The command <code>dumpkeys</code> should show what are the possible combinations under the &ldquo;compose&rdquo; voices</p>
-<p>Some examples: to get accented letters, use</p>
-<ul>
-<li>grave, tilde, circumflex keys</li>
-<li>apostrophe for the acute</li>
-<li>double-quote for the dieresis</li>
-<li>period for the over-dot</li>
-<li>comma for both the cedilla and ogonek</li>
-<li>hyphen gives a tilde with ‘aon’ but a macron with ‘eiu’</li>
-</ul>
-<p>Other combinations are</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">aa for å
--d for đ
-.i for ı
-.I for İ
-ng for ŋ
-/o for ø
-ss for ß
-th for þ
-ae for æ
-oe for œ
-oc for ©
-e= for €
-p! for ¶
-so for §
--y for ¥
-!! for ¡
-?? for ¿
-&lt;&lt; for «
-&gt;&gt; for »
-/c for ¢
-_a for ª
-_o for º
-&lt;’ for ‘
-&gt;’ for ’
-^0 for °
-^2 for ²
-xx for ×
--: for ÷
-+- for ±
-</code></pre></div><div class="edit-meta">
+<main><h1>i3</h1>
+<h3 id="how-to-save-layout-and-reload-at-boot">How to save layout and reload at boot</h3>
+<p>First, save the current layout of any workspace with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">i3-save-tree --workspace <span class="m">1</span> &gt; ~/.config/i3/i3-workspace-1.json
+</code></pre></div><p>Where <code>1</code> refers to the workspace number. Make sure that all the clients you
+want to be run on that workspace are open and visible before running the
+command.</p>
+<p>After that, the workspace json file will be created but all the classes and
+proprieties of the clients caught will be commented. Uncomment the minimum you
+need to recognize all the clients before using the file.</p>
+<p>To enable then the workspace file at startup, add this to your i3
+configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">exec</span> --no-startup-id <span class="s2">&#34;i3-msg &#39;workspace 1; append_layout ~/.config/i3/i3-workspace-1.json&#39;&#34;</span>
+</code></pre></div><p>Have this line <em>before</em> the one that launches the actual clients named in the
+workspace file and you are all set for next i3 startup.</p>
+<div class="edit-meta">
 
-<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/operating_systems/linux/Compose_Key.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/" title="Archlinux"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Archlinux</a>
-<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/" title="Debian">Next - Debian <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="https://donearm.github.io/Personal-Wiki//edit/master/various/i3.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/various/hugo/" title="Hugo"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Hugo</a>
+<a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/various/load_balancing/" title="Load Balancing">Next - Load Balancing <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main>
@@ -157,17 +129,17 @@ xx for ×
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/">Operating Systems<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/">FreeBSD</a></li>
 
-<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/">Linux<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/">AppArmor</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/">Archlinux</a></li>
-<li class="active"><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
+<li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">Compose Key</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/">Debian</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/">Firewall</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/">Framebuffer</a></li>
@@ -228,7 +200,7 @@ xx for ×
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/various/">Various<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://donearm.github.io/Personal-Wiki/various/">Various<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/">Advertising and Marketing</a></li>
@@ -236,7 +208,7 @@ xx for ×
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/fantasy/">Fantasy</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/hardware/">Hardware</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/hugo/">Hugo</a></li>
-<li class=""><a href="https://donearm.github.io/Personal-Wiki/various/i3/">i3</a></li>
+<li class="active"><a href="https://donearm.github.io/Personal-Wiki/various/i3/">i3</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/load_balancing/">Load Balancing</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/markdown/">Markdown</a></li>
 <li class=""><a href="https://donearm.github.io/Personal-Wiki/various/mongodb/">MongoDB</a></li>
