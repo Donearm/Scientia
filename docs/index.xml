@@ -698,6 +698,15 @@ Text to be linked[^1] and then at the bottom of the file:
     </item>
     
     <item>
+      <title>Plain Text Accounting</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/</guid>
+      <description>Beancount Reporting  bean-report file.ledger balances = basic balance report command. bean-report file.ledger balances -e AccountName = same as above but only showing account names matching AccountName. bean-report file.ledger balances | treeify = piping the basic balance command to treeify, provided by beancount, to have a tree-like visualization. bean-report file.ledger balsheet &amp;gt; balance.html = output the balance report to an html file. bean-report file.ledger income &amp;gt; income.html = output the income report to an html file.</description>
+    </item>
+    
+    <item>
       <title>Sailing</title>
       <link>https://donearm.github.io/Personal-Wiki/various/sailing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
