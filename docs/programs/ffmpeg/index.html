@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Ffmpeg - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/ffmpeg/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -77,14 +77,14 @@
 </ul>
 <h3 id="conversions">Conversions</h3>
 <h4 id="h264">H264</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
-</code></pre></div><h4 id="vp8">VP8</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ffmpeg -i inputfile -vcodec libvpx -qmin <span class="m">0</span> -qmax <span class="m">50</span> -crf <span class="m">10</span> -b:v 1M -acodec libvorbis outputfile.webm
-</code></pre></div><h4 id="vp9">VP9</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
-</code></pre></div><h3 id="gif-to-vp8">Gif to VP8</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ffmpeg -y -i input.gif -r <span class="m">16</span> -c:v libvpx -quality good -cpu-used <span class="m">0</span> -b:v 2M -crf <span class="m">12</span> -pix_fmt yuv420p -movflags faststart outputfile.webm
-</code></pre></div><div class="edit-meta">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
+</span></span></code></pre></div><h4 id="vp8">VP8</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ffmpeg -i inputfile -vcodec libvpx -qmin <span class="m">0</span> -qmax <span class="m">50</span> -crf <span class="m">10</span> -b:v 1M -acodec libvorbis outputfile.webm
+</span></span></code></pre></div><h4 id="vp9">VP9</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
+</span></span></code></pre></div><h3 id="gif-to-vp8">Gif to VP8</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ffmpeg -y -i input.gif -r <span class="m">16</span> -c:v libvpx -quality good -cpu-used <span class="m">0</span> -b:v 2M -crf <span class="m">12</span> -pix_fmt yuv420p -movflags faststart outputfile.webm
+</span></span></code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/Ffmpeg.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/e-uae/" title="E-Uae"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - E-Uae</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/firefox/" title="Firefox">Next - Firefox <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

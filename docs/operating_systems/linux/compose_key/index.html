@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Compose Key - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -55,8 +55,8 @@ Some computers (e.g. those from Sun) have a Compose key on their keyboard, but f
 <p>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.</p>
 <p>Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</p>
 <p>From a desktop like Gnome or KDE, the choice can be made with the system menu. Alternatively, the command xmodmap can be used to define the key (as Multi_key). In general (apart from any desktop being used), the Compose key can be specified in the &ldquo;Input Device&rdquo; section of the <code>/etc/X11/xorg.conf</code> file. For instance, the following sets the &ldquo;right windows&rdquo; key to be the Compose key:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xorg.conf" data-lang="xorg.conf"><span class="n">Option</span><span class="w">      </span><span class="s">&#34;XkbOptions&#34;  &#34;compose:rwin&#34;</span><span class="w">
-</span></code></pre></div><p>A list of compose sequences is in the file <code>/usr/share/X11/locale/en_US.·UTF-8/Compose</code>. Unfortunately, this includes many sequences which may not actually work.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xorg.conf" data-lang="xorg.conf"><span class="line"><span class="cl"><span class="n">Option</span><span class="w">      </span><span class="s">&#34;XkbOptions&#34;  &#34;compose:rwin&#34;</span><span class="w">
+</span></span></span></code></pre></div><p>A list of compose sequences is in the file <code>/usr/share/X11/locale/en_US.·UTF-8/Compose</code>. Unfortunately, this includes many sequences which may not actually work.
 The command <code>dumpkeys</code> should show what are the possible combinations under the &ldquo;compose&rdquo; voices</p>
 <p>Some examples: to get accented letters, use</p>
 <ul>
@@ -68,36 +68,36 @@ The command <code>dumpkeys</code> should show what are the possible combinations
 <li>hyphen gives a tilde with ‘aon’ but a macron with ‘eiu’</li>
 </ul>
 <p>Other combinations are</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">aa for å
--d for đ
-.i for ı
-.I for İ
-ng for ŋ
-/o for ø
-ss for ß
-th for þ
-ae for æ
-oe for œ
-oc for ©
-e= for €
-p! for ¶
-so for §
--y for ¥
-!! for ¡
-?? for ¿
-&lt;&lt; for «
-&gt;&gt; for »
-/c for ¢
-_a for ª
-_o for º
-&lt;’ for ‘
-&gt;’ for ’
-^0 for °
-^2 for ²
-xx for ×
--: for ÷
-+- for ±
-</code></pre></div><div class="edit-meta">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">aa for å
+</span></span><span class="line"><span class="cl">-d for đ
+</span></span><span class="line"><span class="cl">.i for ı
+</span></span><span class="line"><span class="cl">.I for İ
+</span></span><span class="line"><span class="cl">ng for ŋ
+</span></span><span class="line"><span class="cl">/o for ø
+</span></span><span class="line"><span class="cl">ss for ß
+</span></span><span class="line"><span class="cl">th for þ
+</span></span><span class="line"><span class="cl">ae for æ
+</span></span><span class="line"><span class="cl">oe for œ
+</span></span><span class="line"><span class="cl">oc for ©
+</span></span><span class="line"><span class="cl">e= for €
+</span></span><span class="line"><span class="cl">p! for ¶
+</span></span><span class="line"><span class="cl">so for §
+</span></span><span class="line"><span class="cl">-y for ¥
+</span></span><span class="line"><span class="cl">!! for ¡
+</span></span><span class="line"><span class="cl">?? for ¿
+</span></span><span class="line"><span class="cl">&lt;&lt; for «
+</span></span><span class="line"><span class="cl">&gt;&gt; for »
+</span></span><span class="line"><span class="cl">/c for ¢
+</span></span><span class="line"><span class="cl">_a for ª
+</span></span><span class="line"><span class="cl">_o for º
+</span></span><span class="line"><span class="cl">&lt;’ for ‘
+</span></span><span class="line"><span class="cl">&gt;’ for ’
+</span></span><span class="line"><span class="cl">^0 for °
+</span></span><span class="line"><span class="cl">^2 for ²
+</span></span><span class="line"><span class="cl">xx for ×
+</span></span><span class="line"><span class="cl">-: for ÷
+</span></span><span class="line"><span class="cl">+- for ±
+</span></span></code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/operating_systems/linux/Compose_Key.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/" title="Archlinux"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Archlinux</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/" title="Debian">Next - Debian <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

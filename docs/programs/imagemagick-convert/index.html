@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Imagemagick Convert - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -61,21 +61,21 @@
 <h3 id="create-an-animated-gif">Create an animated gif</h3>
 <p>A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&rsquo;s part of the image that isn&rsquo;t desired to end up in the gif, crop with <code>convert</code> thus:
 L&rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: <code>wwwXhhhx+nnn+nnn</code> dove nnn sta per l&rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> jpegs in ./*.jpg<span class="p">;</span>
-	<span class="k">do</span> convert -crop wwwXhhh+nn1+nn2 <span class="nv">$jpegs</span> crops/<span class="sb">`</span>basename <span class="nv">$jpegs</span><span class="sb">`</span><span class="p">;</span>
-<span class="k">done</span>
-</code></pre></div><p>where <code>www</code> is the width and <code>hhh</code> the height of the resulting image and <code>nn1</code> and <code>nn2</code> are respectively the height and width from where to start calculating the final width and height. For example, a source image of 1600x1200, using convert like <code>1400x1100+10+20</code> means that the final image will be 1400x1100 and it will be extrapolated 10 pixel from the left and 20 pixel from the top of the source image, thus excluding some part of it on the top and left. Then:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert -adjoin -delay ms -resize 80×80! +map crops/* final.gif
-</code></pre></div><p>will create an animated gif (final.gif) with a delay between frames of ms, a size of 80x80 (here the <code>!</code> means disregard aspect ratio and force resizing) and with optimized colours and transparency to reduce final size (+map)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> jpegs in ./*.jpg<span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">do</span> convert -crop wwwXhhh+nn1+nn2 <span class="nv">$jpegs</span> crops/<span class="sb">`</span>basename <span class="nv">$jpegs</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><p>where <code>www</code> is the width and <code>hhh</code> the height of the resulting image and <code>nn1</code> and <code>nn2</code> are respectively the height and width from where to start calculating the final width and height. For example, a source image of 1600x1200, using convert like <code>1400x1100+10+20</code> means that the final image will be 1400x1100 and it will be extrapolated 10 pixel from the left and 20 pixel from the top of the source image, thus excluding some part of it on the top and left. Then:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert -adjoin -delay ms -resize 80×80! +map crops/* final.gif
+</span></span></code></pre></div><p>will create an animated gif (final.gif) with a delay between frames of ms, a size of 80x80 (here the <code>!</code> means disregard aspect ratio and force resizing) and with optimized colours and transparency to reduce final size (+map)</p>
 <h3 id="tweak-brightness-and-contrast">Tweak brightness and contrast</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert -level blackpoint%,whitepoint%,gamma
-</code></pre></div><p>blackpoint and whitepoint are the limit over which the black and white pixel will be discarded, in a percentage. Therefore, removing the blackest and/or whitest pixels can reduce the overall contrast of the image. Gamma increases or decreases the overall brightness. Default value is 1.0, lower it to dim and increases it to brighten</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert -level blackpoint%,whitepoint%,gamma
+</span></span></code></pre></div><p>blackpoint and whitepoint are the limit over which the black and white pixel will be discarded, in a percentage. Therefore, removing the blackest and/or whitest pixels can reduce the overall contrast of the image. Gamma increases or decreases the overall brightness. Default value is 1.0, lower it to dim and increases it to brighten</p>
 <p>Alternatively another command can be used, tweaking brightness and contrast at the same time:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert original_image -brightness-contrast n%xm% final_image
-</code></pre></div><p>where <code>n%</code> refer to the increment or decrement in percentage of the brightness, and <code>m%</code> is relative to the contrast. Add a <code>+</code> or <code>-</code> to signal to ImageMagick if there has to be an increment or decrement.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert original_image -brightness-contrast n%xm% final_image
+</span></span></code></pre></div><p>where <code>n%</code> refer to the increment or decrement in percentage of the brightness, and <code>m%</code> is relative to the contrast. Add a <code>+</code> or <code>-</code> to signal to ImageMagick if there has to be an increment or decrement.</p>
 <h3 id="change-main-colour-of-an-icon">Change main colour of an icon</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">convert <span class="se">\(</span> icon.png -alpha extract <span class="se">\)</span> -background <span class="s2">&#34;#ffffff&#34;</span> -alpha shape white-icon.png
-</code></pre></div><p>Convert an icon main colour, the foreground one, to white. Colours can be any of those listed at <a href="http://www.imagemagick.org/script/color.php">Color Names</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert <span class="se">\(</span> icon.png -alpha extract <span class="se">\)</span> -background <span class="s2">&#34;#ffffff&#34;</span> -alpha shape white-icon.png
+</span></span></code></pre></div><p>Convert an icon main colour, the foreground one, to white. Colours can be any of those listed at <a href="http://www.imagemagick.org/script/color.php">Color Names</a></p>
 <h3 id="various">Various</h3>
 <ul>
 <li><code>convert file.pdf img_%04d.png</code> = Convert all the images in a pdf in png, using 4 digits to enumerate the images</li>

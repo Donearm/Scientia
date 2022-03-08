@@ -5,12 +5,26 @@ weight: 1210
 
 <!-- vim-markdown-toc GFM -->
 
+* [Tools](#tools)
+	* [Confluence](#confluence)
+		* [Useful Macros/Plugins](#useful-macrosplugins)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
 <!-- vim-markdown-toc -->
 
 ---------------
+
+## Tools
+
+### Confluence
+
+Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.
+
+#### Useful Macros/Plugins
+
+* Colgroup Tag + Column = great at showing two variants of code next to each other, it embeds the content into multiple columns. No header is supported but it can easily be added manually and formatted as desired.
+* Tabs Container + Tabs Page = alternatively to columns, when different version of similar content aren't necessarily needed to be shown together, tabs can be used. This macro support headers and will show like browser's tabs. Not much in the way of customization by default but CSS code is supported.
 
 ## Good practices and procedures
 

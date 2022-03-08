@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Tmux - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/tmux/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -54,8 +54,8 @@ tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status of
 <main><h1>Tmux</h1>
 <h3 id="change-base-directory-of-an-existing-session">Change base directory of an existing session</h3>
 <p>First detach from the session. Then reattach with:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tmux attach -t <span class="nv">$sessionname</span> -c /new/base/dir
-</code></pre></div><h3 id="various-commands">Various commands</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux attach -t <span class="nv">$sessionname</span> -c /new/base/dir
+</span></span></code></pre></div><h3 id="various-commands">Various commands</h3>
 <ul>
 <li><code>:set -g status off</code> = hide the statusbar. Can be re-enabled with <code>on</code>, surprisingly</li>
 <li><code>&lt;prefix&gt;(</code> and <code>&lt;prefix&gt;)</code> = jump between active sessions</li>

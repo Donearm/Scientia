@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Zsh - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/zsh/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -60,13 +60,13 @@ ${i:r}.newext The :r tells the shell to automatically strip the extension, perio
 <main><h1>Zsh</h1>
 <h1 id="for-loops-syntax">For loops syntax</h1>
 <p>In Zsh, the for loops syntax differs from Bash. Write a loop either like:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="k">for</span> x <span class="o">(</span><span class="m">1</span> <span class="m">2</span> 3<span class="o">)</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
-</code></pre></div><p>or like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="k">for</span> x in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
-</code></pre></div><h1 id="parameter-expansion">Parameter expansion</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl"><span class="k">for</span> x <span class="o">(</span><span class="m">1</span> <span class="m">2</span> 3<span class="o">)</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
+</span></span></code></pre></div><p>or like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl"><span class="k">for</span> x in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span>
+</span></span></code></pre></div><h1 id="parameter-expansion">Parameter expansion</h1>
 <p>An alternative to the POSIX-complaint <code>${i%.ext}.newext</code> in Zsh is:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="si">${</span><span class="nv">i</span><span class="p">:</span><span class="nv">r</span><span class="si">}</span>.newext
-</code></pre></div><p>The <code>:r</code> tells the shell to automatically strip the extension, period included</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl"><span class="si">${</span><span class="nv">i</span><span class="p">:</span><span class="nv">r</span><span class="si">}</span>.newext
+</span></span></code></pre></div><p>The <code>:r</code> tells the shell to automatically strip the extension, period included</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/languages/Zsh.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/languages/sed/" title="Sed"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Sed</a>

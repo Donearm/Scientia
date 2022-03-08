@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/frontend/npm/</guid>
-      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&#39; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
+      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
     </item>
     
   </channel>

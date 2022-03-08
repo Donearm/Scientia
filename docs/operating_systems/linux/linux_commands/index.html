@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Linux Commands - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -188,13 +188,13 @@
 <li><code>curl -X POST -d &quot;fname=Mark&amp;lname=Babe&quot; url</code> = Send a POST request to <code>url</code> with given parameters. It&rsquo;s also possible to send a JSON file containing the parameters using <code>-d @parameters.json</code> syntax</li>
 <li><code>du -s directory/</code> = Show only the total sum of occupied space on disk of <code>directory</code>, and not every single file also</li>
 <li><code>find Maildir/ -type f | grep -vE ',[^,]*S[^,]*$'</code> = Find all unread emails in the maildir (Maildir format)</li>
-<li><code>nl $file</code> = Print the file with the lines' numbers next to each line. By default it skips empty lines, to include them add <code>-b a</code>.</li>
+<li><code>nl $file</code> = Print the file with the lines&rsquo; numbers next to each line. By default it skips empty lines, to include them add <code>-b a</code>.</li>
 <li><code>ip -s link show</code> = Print all the network interfaces present on the system with additional statistics about them</li>
 <li><code>ip neighbour show</code> = Show the ARP table</li>
 <li><code>route add -host $ip reject</code> = Reject all traffic to host with IP address of <code>$ip</code></li>
 <li><code>ls -Z</code> = Display SELinux context for the files</li>
-<li><code>last</code> = Display a chronological list of users' accesses</li>
-<li><code>lastb</code> = Display a chronological list of failed users' accesses (&ldquo;bad logins&rdquo;)</li>
+<li><code>last</code> = Display a chronological list of users&rsquo; accesses</li>
+<li><code>lastb</code> = Display a chronological list of failed users&rsquo; accesses (&ldquo;bad logins&rdquo;)</li>
 <li><code>lastlog</code> = Display the last accesses of each daemons and users</li>
 <li><code>dig $domain +noall +answer</code> = Display the IP address of <code>$domain</code> with a TTL of how long the data is kept in local DNS cache</li>
 <li><code>file -i $filename</code> = Show the mimetype and locale of <code>$filename</code></li>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Samba and Nfs - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -53,10 +53,10 @@
 <div class="content-container">
 <main><h1>Samba and Nfs</h1>
 <h3 id="mount-samba-shares-on-linux">Mount Samba shares on Linux</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mount -t smbfs -o <span class="nv">username</span><span class="o">=</span>david,password<span class="o">=</span><span class="nb">test</span> //pc_con_smbd/david /mnt/local_directory
-</code></pre></div><p>and add to fstab:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="p">//</span><span class="n">pc_con_smbd</span><span class="p">/</span><span class="n">david</span> <span class="p">/</span><span class="n">mnt</span><span class="p">/</span><span class="n">local_directory</span> <span class="n">smbfs</span> <span class="n">rw</span><span class="p">,</span><span class="n">username</span><span class="p">=</span><span class="n">david</span><span class="p">,</span><span class="n">password</span><span class="p">=</span><span class="n">test</span><span class="p">,</span><span class="n">noauto</span>
-</code></pre></div><h3 id="configure-network-printer-in-cups">Configure network printer in Cups</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount -t smbfs -o <span class="nv">username</span><span class="o">=</span>david,password<span class="o">=</span><span class="nb">test</span> //pc_con_smbd/david /mnt/local_directory
+</span></span></code></pre></div><p>and add to fstab:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="line"><span class="cl"><span class="p">//</span><span class="n">pc_con_smbd</span><span class="p">/</span><span class="n">david</span> <span class="p">/</span><span class="n">mnt</span><span class="p">/</span><span class="n">local_directory</span> <span class="n">smbfs</span> <span class="n">rw</span><span class="p">,</span><span class="n">username</span><span class="p">=</span><span class="n">david</span><span class="p">,</span><span class="n">password</span><span class="p">=</span><span class="n">test</span><span class="p">,</span><span class="n">noauto</span>
+</span></span></code></pre></div><h3 id="configure-network-printer-in-cups">Configure network printer in Cups</h3>
 <p>with <code>lpinfo -v</code> can be listed all network protocols, with URIs, available on the local computer</p>
 <div class="edit-meta">
 

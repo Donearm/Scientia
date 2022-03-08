@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Windows Commands - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -50,26 +50,26 @@
 <div class="content-container">
 <main><h1>Windows Commands</h1>
 <h2 id="windows-registry-tweaks">Windows Registry tweaks</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-registry" data-lang="registry"><span class="err">*</span> <span class="err">HKEY\_CURRENT\_USER\ControlPanel\Desktop</span>
-	<span class="na">* MenuShowDelay</span> <span class="o">=</span> <span class="s">Delay in ms at the opening of menus. Default is 400</span>
-<span class="err">*</span> <span class="err">HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session</span> <span class="err">Manager\Memory</span> <span class="err">Management</span>
-	<span class="na">* DisablePagingExecutive</span> <span class="o">=</span> <span class="s">With 1, disable paging, forcing Windows to load everything into ram. Default is 0</span>
-	<span class="na">* LargeSystemCache</span> <span class="o">=</span> <span class="s">With 1, load at boot also the kernel into ram. Default is 0</span>
-<span class="err">*</span> <span class="err">HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session</span> <span class="err">Manager\Memory</span> <span class="err">Management\PrefetchParameters</span>
-	<span class="na">* EnablePrefetcher</span> <span class="o">=</span> <span class="s">Enable prefetching of data on the hard disk. With 2, the default, only for Windows, with 3, for every applications</span>
-</code></pre></div><h2 id="windows-vista">Windows Vista</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-registry" data-lang="registry"><span class="line"><span class="cl"><span class="err">*</span> <span class="err">HKEY\_CURRENT\_USER\ControlPanel\Desktop</span>
+</span></span><span class="line"><span class="cl">	<span class="na">* MenuShowDelay</span> <span class="o">=</span> <span class="s">Delay in ms at the opening of menus. Default is 400</span>
+</span></span><span class="line"><span class="cl"><span class="err">*</span> <span class="err">HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session</span> <span class="err">Manager\Memory</span> <span class="err">Management</span>
+</span></span><span class="line"><span class="cl">	<span class="na">* DisablePagingExecutive</span> <span class="o">=</span> <span class="s">With 1, disable paging, forcing Windows to load everything into ram. Default is 0</span>
+</span></span><span class="line"><span class="cl">	<span class="na">* LargeSystemCache</span> <span class="o">=</span> <span class="s">With 1, load at boot also the kernel into ram. Default is 0</span>
+</span></span><span class="line"><span class="cl"><span class="err">*</span> <span class="err">HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session</span> <span class="err">Manager\Memory</span> <span class="err">Management\PrefetchParameters</span>
+</span></span><span class="line"><span class="cl">	<span class="na">* EnablePrefetcher</span> <span class="o">=</span> <span class="s">Enable prefetching of data on the hard disk. With 2, the default, only for Windows, with 3, for every applications</span>
+</span></span></code></pre></div><h2 id="windows-vista">Windows Vista</h2>
 <p>enable login as Administrator. At command prompt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="n">net</span> <span class="n">user</span> <span class="n">administrator</span> <span class="p">/</span><span class="n">active</span><span class="err">:</span><span class="n">yes</span>
-</code></pre></div><p>the Administrator account will be enabled without the need of entering a password. To disable it again:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="n">net</span> <span class="n">user</span> <span class="n">administrator</span> <span class="p">/</span><span class="n">active</span><span class="err">:</span><span class="n">no</span>
-</code></pre></div><h2 id="use-a-network-printer-from-a-cups-server">Use a network printer from a Cups server</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="line"><span class="cl"><span class="n">net</span> <span class="n">user</span> <span class="n">administrator</span> <span class="p">/</span><span class="n">active</span><span class="err">:</span><span class="n">yes</span>
+</span></span></code></pre></div><p>the Administrator account will be enabled without the need of entering a password. To disable it again:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="line"><span class="cl"><span class="n">net</span> <span class="n">user</span> <span class="n">administrator</span> <span class="p">/</span><span class="n">active</span><span class="err">:</span><span class="n">no</span>
+</span></span></code></pre></div><h2 id="use-a-network-printer-from-a-cups-server">Use a network printer from a Cups server</h2>
 <p>As Url use: <code>http://$ip_pc_with_cups:631/printers/printer_name</code></p>
 <h2 id="windows8">Windows8</h2>
 <p>as W8 has the bad habit to set itself as the default element to boot under UEFI (and it probably does something similar under BIOS too) use</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">arch</span><span class="p">\</span><span class="nb">vmlinuz-arch</span><span class="p">.</span><span class="n">efi</span>
-</code></pre></div><p>to change it to Linux. Here both <code>{bootmgr}</code> and <code>path</code> are literals and <code>vmlinuz-arch.efi</code> is the actual path of the Archlinux kernel to load. As I haven&rsquo;t found yet a way to pass parameters, I prefer directing Windows to use rEFInd thus</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">refind</span><span class="p">\</span><span class="n">refind_x64</span><span class="p">.</span><span class="n">efi</span>
-</code></pre></div><div class="edit-meta">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="line"><span class="cl"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">arch</span><span class="p">\</span><span class="nb">vmlinuz-arch</span><span class="p">.</span><span class="n">efi</span>
+</span></span></code></pre></div><p>to change it to Linux. Here both <code>{bootmgr}</code> and <code>path</code> are literals and <code>vmlinuz-arch.efi</code> is the actual path of the Archlinux kernel to load. As I haven&rsquo;t found yet a way to pass parameters, I prefer directing Windows to use rEFInd thus</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-posh" data-lang="posh"><span class="line"><span class="cl"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="p">{</span><span class="n">bootmgr</span><span class="p">}</span> <span class="n">path</span> <span class="p">\</span><span class="n">EFI</span><span class="p">\</span><span class="n">refind</span><span class="p">\</span><span class="n">refind_x64</span><span class="p">.</span><span class="n">efi</span>
+</span></span></code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/operating_systems/windows/Windows_Commands.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/" title="NixOS"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - NixOS</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/" title="Programs">Next - Programs <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

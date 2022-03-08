@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Android - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/android/android/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -81,58 +81,58 @@ windowsmgr.max_events_per_sec=150  help scrolling responsiveness">
 <hr>
 <h1 id="performance-tweaks">Performance tweaks</h1>
 <p>In <code>/system/build.prop</code> edit:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1</span>
-</code></pre></div><p>to force launcher into memory</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100</span>
-</code></pre></div><p>to raise jpeg quality to 100%</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">dalvik.vm.heapsize</span><span class="o">=</span><span class="s">48m</span>
-</code></pre></div><p>specifies the VM heapsize</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1</span>
-</code></pre></div><p>to render UI with the GPU</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>to decrease dialing out delay</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">windowsmgr.max_events_per_sec</span><span class="o">=</span><span class="s">150  </span>
-</code></pre></div><p>help scrolling responsiveness</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><p>to force launcher into memory</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100</span>
+</span></span></code></pre></div><p>to raise jpeg quality to 100%</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">dalvik.vm.heapsize</span><span class="o">=</span><span class="s">48m</span>
+</span></span></code></pre></div><p>specifies the VM heapsize</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><p>to render UI with the GPU</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>to decrease dialing out delay</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">windowsmgr.max_events_per_sec</span><span class="o">=</span><span class="s">150  </span>
+</span></span></code></pre></div><p>help scrolling responsiveness</p>
 <h3 id="save-battery">Save battery</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">wifi.supplicant_scan_interval</span><span class="o">=</span><span class="s">180</span>
-<span class="na">pm.sleep_mode</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.disable.power.collapse</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>while</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">persist.adb.notify</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>disables debugging notify icon on statusbar</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">wifi.supplicant_scan_interval</span><span class="o">=</span><span class="s">180</span>
+</span></span><span class="line"><span class="cl"><span class="na">pm.sleep_mode</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.disable.power.collapse</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>while</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">persist.adb.notify</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>disables debugging notify icon on statusbar</p>
 <h3 id="increase-overall-touch-responsiveness">Increase overall touch responsiveness</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">debug.performance.tuning</span><span class="o">=</span><span class="s">1</span>
-<span class="na">video.accelerate.hw</span><span class="o">=</span><span class="s">1</span>
-</code></pre></div><h3 id="raise-photo-and-video-recording-quality">Raise photo and video recording quality</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.media.dec.jpeg.memcap</span><span class="o">=</span><span class="s">8000000</span>
-<span class="na">ro.media.enc.hprof.vid.bps</span><span class="o">=</span><span class="s">8000000</span>
-</code></pre></div><h3 id="3g-signal-tweaks">3G signal tweaks</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.ril.hsxpa</span><span class="o">=</span><span class="s">2</span>
-<span class="na">ro.ril.gprsclass</span><span class="o">=</span><span class="s">10 </span>
-<span class="na">ro.ril.hep</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.enable.dtm</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.hsdpa.category</span><span class="o">=</span><span class="s">10</span>
-<span class="na">ro.ril.enable.a53</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.enable.3g.prefix</span><span class="o">=</span><span class="s">1</span>
-<span class="na">ro.ril.htcmaskw1.bitmask</span><span class="o">=</span><span class="s">4294967295</span>
-<span class="na">ro.ril.htcmaskw1</span><span class="o">=</span><span class="s">14449</span>
-<span class="na">ro.ril.hsupa.category</span><span class="o">=</span><span class="s">5</span>
-</code></pre></div><h3 id="net-tcp-speed-tweaks">Net Tcp speed tweaks</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">net.tcp.buffersize.default</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.wifi</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.umts</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.gprs</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-<span class="na">net.tcp.buffersize.edge</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
-</code></pre></div><h3 id="disable-blackscreen-issue-after-call">Disable blackscreen issue after call</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.lge.proximity.delay</span><span class="o">=</span><span class="s">25</span>
-<span class="na">mot.proximity.delay</span><span class="o">=</span><span class="s">25</span>
-</code></pre></div><h3 id="various">Various</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.config.hwfeature_wakeupkey</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>the phone will not wakeup from hitting the volume rocker</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>force button lights on when the screen is on too</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0  </span>
-</code></pre></div><p>disable boot animation for faster boot</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">debug.performance.tuning</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">video.accelerate.hw</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><h3 id="raise-photo-and-video-recording-quality">Raise photo and video recording quality</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.media.dec.jpeg.memcap</span><span class="o">=</span><span class="s">8000000</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.media.enc.hprof.vid.bps</span><span class="o">=</span><span class="s">8000000</span>
+</span></span></code></pre></div><h3 id="3g-signal-tweaks">3G signal tweaks</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.ril.hsxpa</span><span class="o">=</span><span class="s">2</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.gprsclass</span><span class="o">=</span><span class="s">10 </span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hep</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.dtm</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hsdpa.category</span><span class="o">=</span><span class="s">10</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.a53</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.3g.prefix</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.htcmaskw1.bitmask</span><span class="o">=</span><span class="s">4294967295</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.htcmaskw1</span><span class="o">=</span><span class="s">14449</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hsupa.category</span><span class="o">=</span><span class="s">5</span>
+</span></span></code></pre></div><h3 id="net-tcp-speed-tweaks">Net Tcp speed tweaks</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.default</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.wifi</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.umts</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.gprs</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.edge</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span></code></pre></div><h3 id="disable-blackscreen-issue-after-call">Disable blackscreen issue after call</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.lge.proximity.delay</span><span class="o">=</span><span class="s">25</span>
+</span></span><span class="line"><span class="cl"><span class="na">mot.proximity.delay</span><span class="o">=</span><span class="s">25</span>
+</span></span></code></pre></div><h3 id="various">Various</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.config.hwfeature_wakeupkey</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>the phone will not wakeup from hitting the volume rocker</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>force button lights on when the screen is on too</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>disable boot animation for faster boot</p>
 <h2 id="uninstall-system-app">Uninstall system app</h2>
 <p>This may not work on all devices as some will just &ldquo;disable&rdquo; those apps, not showing them as an icon but still listing them among the installed apps, occupying disk space. But at least the process won&rsquo;t start and won&rsquo;t occupy memory and use battery time.</p>
 <ul>

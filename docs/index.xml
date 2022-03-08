@@ -78,7 +78,7 @@ Useful Commands  aws configure = initial command to run in order to configure ac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/frontend/npm/</guid>
-      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&#39; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
+      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
     </item>
     
     <item>
@@ -371,7 +371,7 @@ Or read the full list on the web</description>
       
       <guid>https://donearm.github.io/Personal-Wiki/programs/e-uae/</guid>
       <description>Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
- F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;lsquo;n&amp;rsquo;.</description>
+ F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;rsquo;n&#39;.</description>
     </item>
     
     <item>
@@ -770,7 +770,7 @@ To use the file browser to insert a file into the wiki This:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/travels/caribbeans/</guid>
-      <description>Anguilla Antigua Aruba Barbados Bonaire Caymans Curaçao Dominica Grenada Guadeloupe Martinique St. Barts St. Kitts &amp;amp; Nevis St. Lucia Turks &amp;amp; Caicos  Connections between isles     Brief and vague description of some Caribbean islands&#39; tourism and environment.
+      <description>Anguilla Antigua Aruba Barbados Bonaire Caymans Curaçao Dominica Grenada Guadeloupe Martinique St. Barts St. Kitts &amp;amp; Nevis St. Lucia Turks &amp;amp; Caicos  Connections between isles     Brief and vague description of some Caribbean islands&amp;rsquo; tourism and environment.
 Anguilla Great beaches, expensive, little to do, low-key vibe
 Antigua Green, good beaches, some history, medium expensive
 Aruba Lunar-looking, arid, great beaches, mostly resorts, no history, somewhat affordable</description>
@@ -852,8 +852,8 @@ Mostly coming from The Upward Spiral book
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://donearm.github.io/Personal-Wiki/writing/technical_writing/</guid>
-      <description>Good practices and procedures  Developing a Doc Plan     Good practices and procedures Developing a Doc Plan At the beginning of a project of any size, writing down a Doc Plan to help starting it out and following a fixed schedule. The plan will consists of:
- Product Description: a brief summary of the product Audience: the audience the documentation is aimed to Deliverables: name, format and descriptions of all documents, including media files if present, that will be created Receivables: what you as a writer need from others (accesses, product versions, availability of experts that can answer your questions, templates etc.</description>
+      <description>Tools  Confluence  Useful Macros/Plugins     Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.
+Useful Macros/Plugins  Colgroup Tag + Column = great at showing two variants of code next to each other, it embeds the content into multiple columns.</description>
     </item>
     
     <item>

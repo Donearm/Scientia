@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Python - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/languages/python/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -78,34 +78,34 @@
 </ul>
 <h3 id="decorators">Decorators</h3>
 <p>Write a function like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-	   <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
-			<span class="c1"># code to execute before func()</span>
-			<span class="n">func</span><span class="p">()</span>
-			<span class="c1"># code to execute after func()</span>
-	   <span class="k">return</span> <span class="n">wrapper</span>
-</code></pre></div><p>and then pass to a function this way:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nd">@func1</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
-	<span class="c1"># function code</span>
-</code></pre></div><h3 id="metaclasses">Metaclasses</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	   <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">			<span class="c1"># code to execute before func()</span>
+</span></span><span class="line"><span class="cl">			<span class="n">func</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">			<span class="c1"># code to execute after func()</span>
+</span></span><span class="line"><span class="cl">	   <span class="k">return</span> <span class="n">wrapper</span>
+</span></span></code></pre></div><p>and then pass to a function this way:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@func1</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># function code</span>
+</span></span></code></pre></div><h3 id="metaclasses">Metaclasses</h3>
 <p>Syntax:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">ClassName</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span>
-	   <span class="s1">&#39;ClassName&#39;</span><span class="p">,</span>
-	   <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span>
-	   <span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">:</span> <span class="n">def</span><span class="p">,</span> <span class="s1">&#39;esse&#39;</span><span class="p">:</span> <span class="n">erre</span><span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div><p>where <code>ClassName</code> is the name of the metaclass, <code>(object,)</code> is a tuple with all the classes to inherit and the following dictionary is the namespace of the metaclass. To refer to an instance of a metaclasse, use <code>cls</code> instead of <code>self</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ClassName</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	   <span class="s1">&#39;ClassName&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	   <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span>
+</span></span><span class="line"><span class="cl">	   <span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">:</span> <span class="n">def</span><span class="p">,</span> <span class="s1">&#39;esse&#39;</span><span class="p">:</span> <span class="n">erre</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>where <code>ClassName</code> is the name of the metaclass, <code>(object,)</code> is a tuple with all the classes to inherit and the following dictionary is the namespace of the metaclass. To refer to an instance of a metaclasse, use <code>cls</code> instead of <code>self</code></p>
 <p>Then to instantiate a metaclass:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">MyClass</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="s1">&#39;MyClass&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span> <span class="p">{})</span>
-</code></pre></div><p>or it&rsquo;s possible to instantiate the metaclass directly when creating a class, like:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-	  <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">MyMetaClass</span>
-</code></pre></div><h3 id="set-operations">Set operations</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">MyClass</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="s1">&#39;MyClass&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span> <span class="p">{})</span>
+</span></span></code></pre></div><p>or it&rsquo;s possible to instantiate the metaclass directly when creating a class, like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	  <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">MyMetaClass</span>
+</span></span></code></pre></div><h3 id="set-operations">Set operations</h3>
 <p>various operations possible over sets. Examples:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,}</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">}</span>
+</span></span></code></pre></div><ul>
 <li><code>A | B</code> -&gt; <code>set([1, 2, 3, 4, 5, 6, 7])</code></li>
 <li><code>A &amp; B</code> -&gt; <code>set([3])</code></li>
 <li><code>A - B</code> -&gt; <code>set([1, 2])</code></li>
@@ -133,32 +133,32 @@
 <li><code>collections.OrderedDict</code> = A dictionary that remembers the order in which values have been inserted and when iterated upon, returns value in that exact order. Consequently, 2 OrderedDict with the same values but in a different order will not be considered equals, whereas a 2 normal dictionaries would</li>
 </ul>
 <h3 id="named-tuples">Named tuples</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">Point</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Point&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">])</span>
-<span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
-</code></pre></div><h3 id="dis">Dis</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Point</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Point&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="dis">Dis</h3>
 <ul>
 <li><code>dis.dis(code_object)</code> = Disassemble un code_object</li>
 </ul>
 <h3 id="itertools">Itertools</h3>
 <p>Permutations</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span>
-	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">p</span><span class="p">))</span>
-</code></pre></div><p>prints all the possible combinations</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="mi">1234</span>
-<span class="mi">1243</span>
-<span class="mi">1324</span>
-<span class="mi">1342</span>
-</code></pre></div><p>etc.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">p</span><span class="p">))</span>
+</span></span></code></pre></div><p>prints all the possible combinations</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">1234</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1243</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1324</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1342</span>
+</span></span></code></pre></div><p>etc.</p>
 <h3 id="json">Json</h3>
 <ul>
 <li><code>python -m json.tool &lt; file.json</code> = Pretty JSON printer</li>
 </ul>
 <h3 id="ospath">Os.Path</h3>
 <ul>
-<li><code>os.path.sep</code> = Variable containing the path separator of the current OS ('' or &lsquo;/')</li>
-<li><code>os.path.extsep</code> = Variable containing the filename/extension separator (usually, &lsquo;.')</li>
+<li><code>os.path.sep</code> = Variable containing the path separator of the current OS (&rsquo;' or &lsquo;/&rsquo;)</li>
+<li><code>os.path.extsep</code> = Variable containing the filename/extension separator (usually, &lsquo;.&rsquo;)</li>
 <li><code>os.path.curdir</code> = Variable containing the symbol of the current directory (&rsquo;.&rsquo; in Unix-like sytems)</li>
-<li><code>os.path.pardir</code> = Variable containing the representation of the parent directory ('..' in Unix-like systems)</li>
+<li><code>os.path.pardir</code> = Variable containing the representation of the parent directory (&rsquo;..&rsquo; in Unix-like systems)</li>
 </ul>
 <h3 id="platform">Platform</h3>
 <p>Module to obtain various informations on the system. For example:</p>

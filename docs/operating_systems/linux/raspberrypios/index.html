@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Raspberry Pi OS - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -59,15 +59,15 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=
 </ul>
 <h2 id="configure-wireless-and-wired-connections">Configure Wireless and Wired connections</h2>
 <p>Create a <code>wpa_supplicant.conf</code> file in /boot, which will be later copied on the root partition at <code>/etc/wpa_supplicant/wpa_supplicant.conf</code>, with these contents:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ctrl_interface</span><span class="o">=</span><span class="s">DIR=/var/run/wpa_supplicant GROUP=netdev</span>
-<span class="na">update_config</span><span class="o">=</span><span class="s">1</span>
-<span class="na">country</span><span class="o">=</span><span class="s">&lt;Insert 2 letter ISO 3166-1 country code here&gt;</span>
-
-<span class="na">network</span><span class="o">=</span><span class="s">{
-</span><span class="s">	ssid=&#34;&lt;Name of your wireless LAN&gt;&#34;
-</span><span class="s">	psk=&#34;&lt;Password for your wireless LAN&gt;&#34;</span>
-<span class="na">}</span>
-</code></pre></div><p>More info <a href="%C3%AE200~https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">here</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ctrl_interface</span><span class="o">=</span><span class="s">DIR=/var/run/wpa_supplicant GROUP=netdev</span>
+</span></span><span class="line"><span class="cl"><span class="na">update_config</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">country</span><span class="o">=</span><span class="s">&lt;Insert 2 letter ISO 3166-1 country code here&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">network</span><span class="o">=</span><span class="s">{
+</span></span></span><span class="line"><span class="cl"><span class="s">	ssid=&#34;&lt;Name of your wireless LAN&gt;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">	psk=&#34;&lt;Password for your wireless LAN&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="na">}</span>
+</span></span></code></pre></div><p>More info <a href="%C3%AE200~https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">here</a>.</p>
 <p>For a wired connection, it should connect automatically. Just make sure that the router the RaspberryPi is attached to is accepting connections from new devices and not rejecting them by default.</p>
 <div class="edit-meta">
 

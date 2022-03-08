@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>E-Uae - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/e-uae/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -19,7 +19,7 @@
 </style>
 <meta property="og:title" content="E-Uae" />
 <meta property="og:description" content="Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
- F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &lsquo;n&rsquo;." />
+ F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &rsquo;n&#39;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/programs/e-uae/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="programs" />
 
@@ -30,10 +30,10 @@
 
 <meta name="twitter:title" content="E-Uae"/>
 <meta name="twitter:description" content="Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
- F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &lsquo;n&rsquo;."/>
+ F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &rsquo;n&#39;."/>
 <meta itemprop="name" content="E-Uae">
 <meta itemprop="description" content="Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
- F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &lsquo;n&rsquo;.">
+ F12 &#43; Numpad 0	# Quick save emulator state. F12 &#43; Right Shift &#43; Numpad 0	# Quick load emulator state. F12 &#43; Numpad 1	# Quick save emulator state to slot 1. F12 &#43; Right Shift &#43; Numpad 1	# Quick load emulator state from slot 1. F12 &#43; Numpad &#39;n&#39;	# Quick save emulator state to slot &rsquo;n&#39;.">
 
 <meta itemprop="wordCount" content="121"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
@@ -58,15 +58,15 @@
 <li><code>F12 + Right Shift + Numpad 0</code>	# Quick load emulator state.</li>
 <li><code>F12 + Numpad 1</code>					# Quick save emulator state to slot 1.</li>
 <li><code>F12 + Right Shift + Numpad 1</code>	# Quick load emulator state from slot 1.</li>
-<li><code>F12 + Numpad 'n'</code>				# Quick save emulator state to slot &lsquo;n&rsquo;.</li>
-<li><code>F12 + Right Shift + Numpad 'n'</code>	# Quick load emulator state from slot &lsquo;n&rsquo;.</li>
+<li><code>F12 + Numpad 'n'</code>				# Quick save emulator state to slot &rsquo;n'.</li>
+<li><code>F12 + Right Shift + Numpad 'n'</code>	# Quick load emulator state from slot &rsquo;n'.</li>
 </ul>
 <h3 id="make-an-empty-floppy-a-file-adf">Make an empty floppy (a file .adf)</h3>
 <p>To make a floppy DD image:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>blank.adf <span class="nv">count</span><span class="o">=</span><span class="m">1760</span>
-</code></pre></div><p>To make a floppy HD image:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>blank.adf <span class="nv">count</span><span class="o">=</span><span class="m">3520</span>
-</code></pre></div><div class="edit-meta">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>blank.adf <span class="nv">count</span><span class="o">=</span><span class="m">1760</span>
+</span></span></code></pre></div><p>To make a floppy HD image:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>blank.adf <span class="nv">count</span><span class="o">=</span><span class="m">3520</span>
+</span></span></code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/E-Uae.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/emacs/" title="Emacs"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Emacs</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/ffmpeg/" title="Ffmpeg">Next - Ffmpeg <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

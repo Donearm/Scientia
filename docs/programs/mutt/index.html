@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Mutt - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/mutt/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -128,31 +128,31 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.</
 <h2 id="highlight-according-to-a-pattern">Highlight according to a pattern</h2>
 <p>You can play with these for a start (probably want to get rid of
 <code>~x \@</code>`<code>hostname</code>` stuff):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~F</span>
-</code></pre></div><p>Flagged as !  color index cyan default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"> <span class="na">~Q   (~Q ~x \@`hostname`)</span>
-</code></pre></div><p>Replied to  color index yellow default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~p   (~p ~x \@`hostname`)   (~x \@`hostname`)</span>
-</code></pre></div><p>Answers to my mails  color index magenta default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~P   (~P ~x \@`hostname`)</span>
-</code></pre></div><p>Answered by myself  color index green default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~N (~P ~p ~Q ~x \@`hostname`)</span>
-</code></pre></div><p>New concerning myself  color index red default</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~F</span>
+</span></span></code></pre></div><p>Flagged as !  color index cyan default</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"> <span class="na">~Q   (~Q ~x \@`hostname`)</span>
+</span></span></code></pre></div><p>Replied to  color index yellow default</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~p   (~p ~x \@`hostname`)   (~x \@`hostname`)</span>
+</span></span></code></pre></div><p>Answers to my mails  color index magenta default</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~P   (~P ~x \@`hostname`)</span>
+</span></span></code></pre></div><p>Answered by myself  color index green default</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~N (~P ~p ~Q ~x \@`hostname`)</span>
+</span></span></code></pre></div><p>New concerning myself  color index red default</p>
 <h2 id="tagging">Tagging</h2>
 <p>TagPatterns</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~m 1-700</span>
-</code></pre></div><p>to mark messages from 1 to 700</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~d 01/1/2006-24/2/2006</span>
-</code></pre></div><p>to mark messages in that time span</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">T ~d &gt;1d</span>
-</code></pre></div><p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~m 1-700</span>
+</span></span></code></pre></div><p>to mark messages from 1 to 700</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~d 01/1/2006-24/2/2006</span>
+</span></span></code></pre></div><p>to mark messages in that time span</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~d &gt;1d</span>
+</span></span></code></pre></div><p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
 <h2 id="see-what-charset-is-being-used">See what charset is being used</h2>
 <p>In mutt, type <code>:set &amp;charset ?charset</code></p>
 <h2 id="macros">Macros</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">macro index,pager d &#34;&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&lt;enter&gt;&#34; &#34;Trash&#34;</span>
-</code></pre></div><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">macro index A &#34;WNK&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&#34; &#34;Archive&#34;</span>
-</code></pre></div><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">macro index,pager d &#34;&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&lt;enter&gt;&#34; &#34;Trash&#34;</span>
+</span></span></code></pre></div><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">macro index A &#34;WNK&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&#34; &#34;Archive&#34;</span>
+</span></span></code></pre></div><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/Mutt.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/mplayer/" title="MPlayer"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - MPlayer</a>

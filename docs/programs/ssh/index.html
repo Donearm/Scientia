@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Ssh - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/programs/ssh/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -61,15 +61,15 @@
 <h3 id="public-key-authentication">Public Key authentication</h3>
 <p>Dsa keys are the most recent format, Rsa ones are older</p>
 <p>add the keys in <code>~/.ssh/authorized_keys2</code>. Make sure that in hosts.allow the localhost and lan are enabled like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">sshd</span><span class="err">:</span> <span class="mf">127.0</span><span class="p">.</span><span class="mf">0.1</span>
-<span class="nx">sshd</span><span class="err">:</span> <span class="mf">192.168</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span>
-</code></pre></div><p>In the <code>ssh_config</code> file be sure to list the preferred authentication methods as:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">PreferredAuthentications publickey</span>
-</code></pre></div><p>and in <code>sshd_config</code> enable just the public key authentication with:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">PubkeyAuthentication yes</span>
-<span class="na">ChallengeResponseAuthentication yes</span>
-<span class="na">PasswordAuthentication no</span>
-</code></pre></div><div class="edit-meta">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">sshd</span><span class="err">:</span> <span class="mf">127.0</span><span class="p">.</span><span class="mf">0.1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">sshd</span><span class="err">:</span> <span class="mf">192.168</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span>
+</span></span></code></pre></div><p>In the <code>ssh_config</code> file be sure to list the preferred authentication methods as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">PreferredAuthentications publickey</span>
+</span></span></code></pre></div><p>and in <code>sshd_config</code> enable just the public key authentication with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">PubkeyAuthentication yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">ChallengeResponseAuthentication yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">PasswordAuthentication no</span>
+</span></span></code></pre></div><div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/programs/Ssh.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/programs/screen/" title="Screen"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Screen</a>
 <a class="nav nav-next" href="https://donearm.github.io/Personal-Wiki/programs/tcpdump/" title="Tcpdump">Next - Tcpdump <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

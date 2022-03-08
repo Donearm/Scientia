@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Kernel - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.93.2" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -57,13 +57,13 @@ acpi_os_name= that needs a parameter, among &ldquo;Microsoft Windows XP&rdquo;, 
 <main><h1>Kernel</h1>
 <h2 id="various-kernel-options">Various kernel options</h2>
 <h3 id="systemd">Systemd</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">net.ifnames</span><span class="o">=</span><span class="s">0</span>
-</code></pre></div><p>turns off predictable name logic for network cards. Revert to the old <code>eth0</code>, <code>eth1</code> etc.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">net.ifnames</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>turns off predictable name logic for network cards. Revert to the old <code>eth0</code>, <code>eth1</code> etc.</p>
 <h3 id="acpiapic-options">Acpi/Apic options</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">no8259A - nolapic - noIapic - noapictimer - acpi</span><span class="o">=</span><span class="s">noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override</span>
-</code></pre></div><p>Plus:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">acpi_os_name</span><span class="o">=</span> 
-</code></pre></div><p>that needs a parameter, among &ldquo;Microsoft Windows XP&rdquo;, &ldquo;Microsoft Windows&rdquo;, &ldquo;Microsoft Windows NT&rdquo; or &ldquo;Windows 2001&rdquo;. It&rsquo;s mostly useful to trick the BIOS into believing that it&rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">no8259A - nolapic - noIapic - noapictimer - acpi</span><span class="o">=</span><span class="s">noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override</span>
+</span></span></code></pre></div><p>Plus:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">acpi_os_name</span><span class="o">=</span> 
+</span></span></code></pre></div><p>that needs a parameter, among &ldquo;Microsoft Windows XP&rdquo;, &ldquo;Microsoft Windows&rdquo;, &ldquo;Microsoft Windows NT&rdquo; or &ldquo;Windows 2001&rdquo;. It&rsquo;s mostly useful to trick the BIOS into believing that it&rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</p>
 <div class="edit-meta">
 
 <br><a href="https://donearm.github.io/Personal-Wiki//edit/master/operating_systems/linux/Kernel.md" class="edit-page"><i class="fas fa-pen-square"></i>&nbsp;Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/" title="Framebuffer"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - Framebuffer</a>
