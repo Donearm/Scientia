@@ -8,6 +8,11 @@ weight: 1210
 * [Tools](#tools)
 	* [Confluence](#confluence)
 		* [Useful Macros/Plugins](#useful-macrosplugins)
+	* [Help & Manual](#help--manual)
+	* [MadCap Flare](#madcap-flare)
+	* [RoboHelp](#robohelp)
+	* [Scribus](#scribus)
+	* [Framemaker](#framemaker)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -25,6 +30,26 @@ Often used for internal documentation, Confluence is an ok-ish tool for technica
 
 * Colgroup Tag + Column = great at showing two variants of code next to each other, it embeds the content into multiple columns. No header is supported but it can easily be added manually and formatted as desired.
 * Tabs Container + Tabs Page = alternatively to columns, when different version of similar content aren't necessarily needed to be shown together, tabs can be used. This macro support headers and will show like browser's tabs. Not much in the way of customization by default but CSS code is supported.
+
+### Help & Manual
+
+[Help & Manual](http://helpandmanual.com/) is an XML-based help authoring tool for writing help/manual pages.
+
+### MadCap Flare
+
+One of the main editor for technical writers, [MadCap Flare](http://www.madcapsoftware.com/) is only a part of a suite of tools for helping writers creating single-source documentation.
+
+### RoboHelp
+
+[Adobe RoboHelp](http://www.adobe.com/products/robohelp.html) is Adobe's effort for an help authoring tool.
+
+### Scribus
+
+As an open source tool, [Scribus](https://www.scribus.net/) is one of the most widespread. It is an XML-based software, which can import and export to multiple formats.
+
+### Framemaker
+
+Another Adobe tool, [Framemaker](http://www.adobe.com/products/framemaker) is specifically designed to handle a large amount of documents, structured or not.
 
 ## Good practices and procedures
 
