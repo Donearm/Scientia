@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Technical Writing - Gianluca Fiore Personal Wiki</title>
 <meta name="description" content="My `Knowledge Wiki`. Mostly I.T. with a few non-related topics">
-<meta name="generator" content="Hugo 0.95.0" />
+<meta name="generator" content="Hugo 0.96.0" />
 <link href="https://donearm.github.io/Personal-Wiki//index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://donearm.github.io/Personal-Wiki/writing/technical_writing/">
 <link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/theme.min.css">
@@ -18,8 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Technical Writing" />
-<meta property="og:description" content="Tools  Confluence  Useful Macros/Plugins   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.
-Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants of code next to each other, it embeds the content into multiple columns." />
+<meta property="og:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/writing/technical_writing/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="writing" />
 
@@ -29,13 +28,11 @@ Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Technical Writing"/>
-<meta name="twitter:description" content="Tools  Confluence  Useful Macros/Plugins   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.
-Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants of code next to each other, it embeds the content into multiple columns."/>
+<meta name="twitter:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it."/>
 <meta itemprop="name" content="Technical Writing">
-<meta itemprop="description" content="Tools  Confluence  Useful Macros/Plugins   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.
-Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants of code next to each other, it embeds the content into multiple columns.">
+<meta itemprop="description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.">
 
-<meta itemprop="wordCount" content="433"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="631"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -59,6 +56,8 @@ Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants
 <li><a href="#confluence">Confluence</a>
 <ul>
 <li><a href="#useful-macrosplugins">Useful Macros/Plugins</a></li>
+<li><a href="#content-reusing-in-confluence">Content reusing in Confluence</a></li>
+<li><a href="#tips">Tips</a></li>
 </ul>
 </li>
 <li><a href="#help--manual">Help &amp; Manual</a></li>
@@ -83,6 +82,26 @@ Useful Macros/Plugins  Colgroup Tag &#43; Column = great at showing two variants
 <ul>
 <li>Colgroup Tag + Column = great at showing two variants of code next to each other, it embeds the content into multiple columns. No header is supported but it can easily be added manually and formatted as desired.</li>
 <li>Tabs Container + Tabs Page = alternatively to columns, when different version of similar content aren&rsquo;t necessarily needed to be shown together, tabs can be used. This macro support headers and will show like browser&rsquo;s tabs. Not much in the way of customization by default but CSS code is supported.</li>
+<li>Section + Column = a default option to have the page&rsquo;s layout split into columns.</li>
+</ul>
+<h4 id="content-reusing-in-confluence">Content reusing in Confluence</h4>
+<p>Multiple possibilities exist:</p>
+<ul>
+<li>Include macro = can include a whole page into another.</li>
+<li>Excerpt and Excerpt-Include macros = can include pieces of content into another page. The big limitation is that content can be included only once.</li>
+<li>Multiexcerpt macro = works as the Excerpt macro above but doesn&rsquo;t have the limitation of only including the content once.</li>
+</ul>
+<p>An useful tip to organize content for reusing is to have a page per excerpt
+under the root of the wiki, not under any space to hid the page from searches.
+A special title, like a prepended underscore, can be used to differentiate
+these pages from the others. The Include macro can then be used to include
+content from this sort of mini-library of excerpts elsewhere.</p>
+<p>All the excerpt macros can be set to <code>hidden</code> to hid them in the page where
+they are created but not from the page where they are included.</p>
+<h4 id="tips">Tips</h4>
+<ul>
+<li>Categories are best used to connect and group similar spaces together.</li>
+<li>Space and page layouts work with the Apache&rsquo;s <a href="https://velocity.apache.org">Velocity template engine</a>.</li>
 </ul>
 <h3 id="help--manual">Help &amp; Manual</h3>
 <p><a href="http://helpandmanual.com/">Help &amp; Manual</a> is an XML-based help authoring tool for writing help/manual pages.</p>

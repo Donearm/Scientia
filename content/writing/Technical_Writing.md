@@ -8,6 +8,8 @@ weight: 1210
 * [Tools](#tools)
 	* [Confluence](#confluence)
 		* [Useful Macros/Plugins](#useful-macrosplugins)
+		* [Content reusing in Confluence](#content-reusing-in-confluence)
+		* [Tips](#tips)
 	* [Help & Manual](#help--manual)
 	* [MadCap Flare](#madcap-flare)
 	* [RoboHelp](#robohelp)
@@ -30,6 +32,29 @@ Often used for internal documentation, Confluence is an ok-ish tool for technica
 
 * Colgroup Tag + Column = great at showing two variants of code next to each other, it embeds the content into multiple columns. No header is supported but it can easily be added manually and formatted as desired.
 * Tabs Container + Tabs Page = alternatively to columns, when different version of similar content aren't necessarily needed to be shown together, tabs can be used. This macro support headers and will show like browser's tabs. Not much in the way of customization by default but CSS code is supported.
+* Section + Column = a default option to have the page's layout split into columns.
+
+#### Content reusing in Confluence
+
+Multiple possibilities exist:
+
+* Include macro = can include a whole page into another.
+* Excerpt and Excerpt-Include macros = can include pieces of content into another page. The big limitation is that content can be included only once.
+* Multiexcerpt macro = works as the Excerpt macro above but doesn't have the limitation of only including the content once.
+
+An useful tip to organize content for reusing is to have a page per excerpt 
+under the root of the wiki, not under any space to hid the page from searches. 
+A special title, like a prepended underscore, can be used to differentiate 
+these pages from the others. The Include macro can then be used to include 
+content from this sort of mini-library of excerpts elsewhere.
+
+All the excerpt macros can be set to `hidden` to hid them in the page where 
+they are created but not from the page where they are included.
+
+#### Tips
+
+* Categories are best used to connect and group similar spaces together.
+* Space and page layouts work with the Apache's [Velocity template engine](https://velocity.apache.org).
 
 ### Help & Manual
 
