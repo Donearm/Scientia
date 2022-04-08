@@ -22,12 +22,15 @@ weight: 910
 	* [Mexico](#mexico)
 		* [Cenotes](#cenotes)
 		* [Best beaches](#best-beaches-1)
+	* [Caribbeans](#caribbeans)
 * [Asia](#asia)
 	* [Indonesia](#indonesia)
-			* [Bali](#bali)
+		* [Bali](#bali)
 	* [Thailand](#thailand)
 		* [Bangkok](#bangkok)
 		* [Pattaya](#pattaya)
+* [Oceania](#oceania)
+	* [French Polynesia](#french-polynesia)
 
 <!-- vim-markdown-toc -->
 
@@ -144,19 +147,17 @@ A second trip to mainly visit what I missed in the first and return on the best 
 * El Cielo (on Cozumel)
 * Punta Cocos (on Holbox, nearby there's the bay where bioluminescence is possible at night)
 
+## Caribbeans
+
+See [Caribbeans' page](../caribbeans).
+
 # Asia
 
 ## Indonesia
 
-#### Bali
+### Bali
 
-A few possible excursions outside proper Bali.
-
-* Komodo Island = flight to Labuhanbajo on Flores. Then bus to Badjo and from there either a tour by boat or the ferry.
-* Lombok = By plane (25min) or ferry (4-5hr) from Padang Bai (east coast of Bali)
-* Bromo-Tengger-Semeru Park = from Surabaya, bus or car (60-100km)
-* Prambanan = flight to Yogyakarta and then bus (30min)
-* Borobudur = flight to Yogyakarta and then bus (1hr)
+See [Bali's page](../bali).
 
 ## Thailand
 
@@ -201,3 +202,9 @@ Day excursion from Pattaya:
 * Koh Sak island
 * Koh Phai - small group of islands. 2hrs ferry
 * Koh Si Chang island
+
+# Oceania
+
+## French Polynesia
+
+See [French Polynesia's page](../french_polynesia).
