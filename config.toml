@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 [params]
 
     # Source Code repository section
-    description = "My `Knowledge Wiki`. Mostly I.T. with a few non-related topics"
+    description = "My personal knowledge wiki. Mostly I.T. but with a few more recent topics"
     github_repository = "https://github.com/Donearm/Personal-Wiki/"
     version = ""
 
@@ -78,7 +78,7 @@ pygmentsUseClasses = true
         name = "Home"
         url = "/"
         weight = 1
-	
+
 	[[menu.main]]
 		name = "Search"
 		url = "/search"
