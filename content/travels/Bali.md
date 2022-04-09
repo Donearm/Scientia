@@ -111,6 +111,8 @@ weight: 903
 * Pura Agung Besakih (hindu temple at the feet of Mount Agung)
 * Ulun Danu Beratan (temple on a lake in central-western Bali)
 * Tegallalang rice fields (north of Ubud)
+* Handara gate (famous opening on a wall of a hindu-inspired golf course with 
+  mountains backdrop, central Bali)
 * Jatiluwih rice fields (near the geographical centre of Bali)
 * Tegenungan waterfall (just south of Ubud)
 * Aling-Aling waterfall (4 waterfalls with possibility to swim in each,
