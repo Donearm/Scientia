@@ -18,6 +18,8 @@ weight: 903
 	* [Kuta](#kuta)
 * [What to visit in Bali](#what-to-visit-in-bali)
 * [Excursions from Bali](#excursions-from-bali)
+	* [Gili islands](#gili-islands)
+		* [Transportation to Gili islands](#transportation-to-gili-islands)
 * [Getting around Bali](#getting-around-bali)
 
 <!-- vim-markdown-toc -->
@@ -111,7 +113,7 @@ weight: 903
 * Pura Agung Besakih (hindu temple at the feet of Mount Agung)
 * Ulun Danu Beratan (temple on a lake in central-western Bali)
 * Tegallalang rice fields (north of Ubud)
-* Handara gate (famous opening on a wall of a hindu-inspired golf course with 
+* Handara gate (famous opening on a wall of a hindu-inspired golf course with
   mountains backdrop, central Bali)
 * Jatiluwih rice fields (near the geographical centre of Bali)
 * Tegenungan waterfall (just south of Ubud)
@@ -129,6 +131,34 @@ weight: 903
 * Bromo-Tengger-Semeru Park = from Surabaya, bus or car (60-100km)
 * Prambanan = flight to Yogyakarta and then bus (30min)
 * Borobudur = flight to Yogyakarta and then bus (1hr)
+
+### Gili islands
+
+Three small islands next to Lombok with beautiful sandy beaches and easily walkable.
+
+Gili Trawangan is the westernmost and liveliest of the three. It is a good spot
+to see sea turtles when the sea is calm.
+
+Gili Memo, the middle one, is calm and geared towards romantic travellers. Not
+the cheapest in terms of accomodations.
+
+Gili Air, the easternmost one, is the laid-back one.
+
+#### Transportation to Gili islands
+
+From Bali, regular ferries leave from Sanur, Serangan and Padang Bai. The 
+latter being the one with the most connections available. The whole trip is 
+between 1,5hrs and 2,5hrs, depending on the type of ferry chosen. Some of the 
+companies offering this trip are:
+
+* Eka Jaya
+* [Wahan Gili Ocean](https://wahanagiliocean.com)
+* Scoot Fast Cruises
+* Semaya One
+* Ostina
+
+There is also the possibility to move between the Gili islands by private or 
+public ferry. The public one being the cheapest and can host around 30 persons.
 
 ## Getting around Bali
 
