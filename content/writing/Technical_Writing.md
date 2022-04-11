@@ -12,6 +12,8 @@ weight: 1210
 		* [Tips](#tips)
 	* [Help & Manual](#help--manual)
 	* [MadCap Flare](#madcap-flare)
+	* [Oxygen](#oxygen)
+	* [SDL Triton](#sdl-triton)
 	* [RoboHelp](#robohelp)
 	* [Scribus](#scribus)
 	* [Framemaker](#framemaker)
@@ -63,6 +65,14 @@ they are created but not from the page where they are included.
 ### MadCap Flare
 
 One of the main editor for technical writers, [MadCap Flare](http://www.madcapsoftware.com/) is only a part of a suite of tools for helping writers creating single-source documentation.
+
+### Oxygen
+
+A suite of tools to create documentation from XML files. The main one is the [XML Editor](https://www.oxygenxml.com).
+
+### SDL Triton
+
+A [web content manager](https://www.rws.com/content-management/tridion/), semantic AI search and all around solution for content management.
 
 ### RoboHelp
 
