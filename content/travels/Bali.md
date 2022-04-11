@@ -15,6 +15,7 @@ weight: 903
 	* [Seminyak](#seminyak)
 	* [Jimbaran](#jimbaran)
 	* [Munduk](#munduk)
+	* [Lovina](#lovina)
 	* [Kuta](#kuta)
 * [What to visit in Bali](#what-to-visit-in-bali)
 * [Excursions from Bali](#excursions-from-bali)
@@ -92,6 +93,13 @@ weight: 903
 * In the interior
 * Waterfalls, very green
 * Local coffee
+* Great trekking and hiking area
+
+### Lovina
+
+* On the north coast
+* Relatively developed but still quiet
+* Dolphins spotting
 
 ### Kuta
 
@@ -100,6 +108,7 @@ weight: 903
 * Surfers
 * Vibrant nightlife
 * Can get overcrowded and dirty
+
 
 ## What to visit in Bali
 
