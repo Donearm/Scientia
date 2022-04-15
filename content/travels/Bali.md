@@ -17,6 +17,7 @@ weight: 903
 	* [Munduk](#munduk)
 	* [Lovina](#lovina)
 	* [Kuta](#kuta)
+* [Best Bali beaches](#best-bali-beaches)
 * [What to visit in Bali](#what-to-visit-in-bali)
 * [Excursions from Bali](#excursions-from-bali)
 	* [Gili islands](#gili-islands)
@@ -109,6 +110,21 @@ weight: 903
 * Vibrant nightlife
 * Can get overcrowded and dirty
 
+## Best Bali beaches
+
+* Kuta - south coast (lively, touristic, long, many available activities)
+* Pemuteran - north-west coast (calm, sandy with some rocks, good for 
+  snorkeling)
+* Padang Padang - west side of the southern peninsula (giant rocks encompassing 
+  a sandy stretch, popular spot for pictures, monkeys, touristic)
+* Pasir Putih - east coast (relatively unspoiled, white sand, usually clean)
+* Bias Tugel - east coast (white sand, not super-crowded, rock formations with 
+  pools on the sides, good for snorkeling)
+* Nusa Dua - on the east coast of the southern peninsula (fairly large, sandy 
+  with rocks around, calm waters, mostly families)
+* Seminyak - on the south-east coast (for surfers, black sand, large)
+* Sanur - east coast (large, sandy, relatively quiet, good for swimming and 
+  snorkeling)
 
 ## What to visit in Bali
 
