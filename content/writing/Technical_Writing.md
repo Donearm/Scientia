@@ -17,6 +17,8 @@ weight: 1210
 	* [RoboHelp](#robohelp)
 	* [Scribus](#scribus)
 	* [Framemaker](#framemaker)
+		* [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
+		* [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -85,6 +87,35 @@ As an open source tool, [Scribus](https://www.scribus.net/) is one of the most w
 ### Framemaker
 
 Another Adobe tool, [Framemaker](http://www.adobe.com/products/framemaker) is specifically designed to handle a large amount of documents, structured or not.
+
+#### Default DITA xml elements available in Framemaker
+
+* Topic = an element that consists of a single, self-contained subject matter. 
+* Concept = generally speaking, the Concept element can be considered as a 
+  "specialized topic". It should be used when trying to answer all that is 
+  necessary to do or achieve something, in a descriptive, usually, way.
+* Task = as with the Concept, a task is a specialized topic that answers how, 
+  procedurally, a task can be accomplished. It is more practical-oriented than 
+  a Concept and usually doesn't include background info, as instead the Concept 
+  does.
+* Reference = another specialized topic, it differs from both the Concept and 
+  Task as it neither provides background info or a step by step lists of 
+  practical actions. It is meant to show general information about a topic that 
+  can be useful, without explaining a specific task or topic, but being largely 
+  just informative.
+
+All the above elements are inserted into a new DITA xml file by selecting **New 
+DITA File** in the menu and choosing the desired element from the submenu.
+
+#### How to change background colour of a paragraph
+
+1. Select the paragraph
+2. Open the Paragraph Designer (Ctrl+M)
+3. Go to the **advanced** tab
+4. Change the colour, default is none, in the bottom right, under **Pgf. Box**
+
+The colour will be by default applied to all the successive paragraphs. Set it 
+back to none to cancel this.
 
 ## Good practices and procedures
 

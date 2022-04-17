@@ -18,7 +18,7 @@
 :root {--custom-font-color: #f2efea;--custom-background-color: #38405f;}
 </style>
 <meta property="og:title" content="Technical Writing" />
-<meta property="og:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it." />
+<meta property="og:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker  Default DITA xml elements available in Framemaker How to change background colour of a paragraph     Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://donearm.github.io/Personal-Wiki/writing/technical_writing/" /><meta property="og:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/><meta property="article:section" content="writing" />
 
@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 
 <meta name="twitter:title" content="Technical Writing"/>
-<meta name="twitter:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it."/>
+<meta name="twitter:description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker  Default DITA xml elements available in Framemaker How to change background colour of a paragraph     Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation."/>
 <meta itemprop="name" content="Technical Writing">
-<meta itemprop="description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation. It has its quirks but lots of macros/plugins to customize the appearance of the content, and better format it.">
+<meta itemprop="description" content="Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker  Default DITA xml elements available in Framemaker How to change background colour of a paragraph     Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation.">
 
-<meta itemprop="wordCount" content="668"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
+<meta itemprop="wordCount" content="913"><meta itemprop="image" content="https://donearm.github.io/Personal-Wiki/images/og-image.png"/>
 <meta itemprop="keywords" content="" /><link rel="stylesheet" href="https://donearm.github.io/Personal-Wiki/css/custom.css">
 </head>
 <body><div class="container"><header>
@@ -66,7 +66,12 @@
 <li><a href="#sdl-triton">SDL Triton</a></li>
 <li><a href="#robohelp">RoboHelp</a></li>
 <li><a href="#scribus">Scribus</a></li>
-<li><a href="#framemaker">Framemaker</a></li>
+<li><a href="#framemaker">Framemaker</a>
+<ul>
+<li><a href="#default-dita-xml-elements-available-in-framemaker">Default DITA xml elements available in Framemaker</a></li>
+<li><a href="#how-to-change-background-colour-of-a-paragraph">How to change background colour of a paragraph</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#good-practices-and-procedures">Good practices and procedures</a>
@@ -119,6 +124,33 @@ they are created but not from the page where they are included.</p>
 <p>As an open source tool, <a href="https://www.scribus.net/">Scribus</a> is one of the most widespread. It is an XML-based software, which can import and export to multiple formats.</p>
 <h3 id="framemaker">Framemaker</h3>
 <p>Another Adobe tool, <a href="http://www.adobe.com/products/framemaker">Framemaker</a> is specifically designed to handle a large amount of documents, structured or not.</p>
+<h4 id="default-dita-xml-elements-available-in-framemaker">Default DITA xml elements available in Framemaker</h4>
+<ul>
+<li>Topic = an element that consists of a single, self-contained subject matter.</li>
+<li>Concept = generally speaking, the Concept element can be considered as a
+&ldquo;specialized topic&rdquo;. It should be used when trying to answer all that is
+necessary to do or achieve something, in a descriptive, usually, way.</li>
+<li>Task = as with the Concept, a task is a specialized topic that answers how,
+procedurally, a task can be accomplished. It is more practical-oriented than
+a Concept and usually doesn&rsquo;t include background info, as instead the Concept
+does.</li>
+<li>Reference = another specialized topic, it differs from both the Concept and
+Task as it neither provides background info or a step by step lists of
+practical actions. It is meant to show general information about a topic that
+can be useful, without explaining a specific task or topic, but being largely
+just informative.</li>
+</ul>
+<p>All the above elements are inserted into a new DITA xml file by selecting <strong>New
+DITA File</strong> in the menu and choosing the desired element from the submenu.</p>
+<h4 id="how-to-change-background-colour-of-a-paragraph">How to change background colour of a paragraph</h4>
+<ol>
+<li>Select the paragraph</li>
+<li>Open the Paragraph Designer (Ctrl+M)</li>
+<li>Go to the <strong>advanced</strong> tab</li>
+<li>Change the colour, default is none, in the bottom right, under <strong>Pgf. Box</strong></li>
+</ol>
+<p>The colour will be by default applied to all the successive paragraphs. Set it
+back to none to cancel this.</p>
 <h2 id="good-practices-and-procedures">Good practices and procedures</h2>
 <h3 id="developing-a-doc-plan">Developing a Doc Plan</h3>
 <p>At the beginning of a project of any size, writing down a Doc Plan to help starting it out and following a fixed schedule. The plan will consists of:</p>
