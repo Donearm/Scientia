@@ -19,6 +19,7 @@ weight: 1210
 	* [Framemaker](#framemaker)
 		* [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
 		* [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
+	* [Paligo](#paligo)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -116,6 +117,10 @@ DITA File** in the menu and choosing the desired element from the submenu.
 
 The colour will be by default applied to all the successive paragraphs. Set it 
 back to none to cancel this.
+
+### Paligo
+
+An XML-based, [web](https://paligo.net) CCMS for technical documentation.
 
 ## Good practices and procedures
 
