@@ -22,6 +22,8 @@ weight: 903
 * [Excursions from Bali](#excursions-from-bali)
 	* [Gili islands](#gili-islands)
 		* [Transportation to Gili islands](#transportation-to-gili-islands)
+	* [Labuan Bajo and Komodo](#labuan-bajo-and-komodo)
+	* [Other islands](#other-islands)
 * [Getting around Bali](#getting-around-bali)
 
 <!-- vim-markdown-toc -->
@@ -184,6 +186,22 @@ companies offering this trip are:
 
 There is also the possibility to move between the Gili islands by private or 
 public ferry. The public one being the cheapest and can host around 30 persons.
+
+### Labuan Bajo and Komodo
+
+A couple of small islands, remote, have great beaches and water:
+
+* Le Pirate
+* Kanawa
+
+Both can be reached by renting a boat from Labuan Bajo port. There's nothing to 
+do on these islands, being just a resort on an otherwise uninhabited island.
+
+### Other islands
+
+* Gili Layar is on the south-west of Lombok coast. It is quite remote and not 
+  developed at all. There's a coral reef, plenty of beaches, and an atmosphere 
+  of a quiet, tropical island.
 
 ## Getting around Bali
 
