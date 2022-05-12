@@ -20,6 +20,9 @@ weight: 1210
 		* [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
 		* [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
 	* [Paligo](#paligo)
+	* [Booktype](#booktype)
+	* [Clickhelp](#clickhelp)
+	* [HelnNDoc](#helnndoc)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -121,6 +124,22 @@ back to none to cancel this.
 ### Paligo
 
 An XML-based, [web](https://paligo.net) CCMS for technical documentation.
+
+### Booktype
+
+An open source publishing software. Web-based, it is still [available for 
+download](https://www.sourcefabric.org/software/booktype) but it is not 
+actively developed anymore.
+
+### Clickhelp
+
+A single-sourcing web-based documentation tool, with a large range of 
+[features](https://clickhelp.com/online-software-documentation-tool/).
+
+### HelnNDoc
+
+A french publishing software, [free for personal 
+use](https://www.helpndoc.com/), but only for Windows.
 
 ## Good practices and procedures
 
