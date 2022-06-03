@@ -20,11 +20,14 @@ weight: 903
 * [Best Bali beaches](#best-bali-beaches)
 * [What to visit in Bali](#what-to-visit-in-bali)
 * [Excursions from Bali](#excursions-from-bali)
+	* [Nusa Penida and Nusa Lembongan](#nusa-penida-and-nusa-lembongan)
+		* [Transportation to Nusa Penida and Nusa Lembogan](#transportation-to-nusa-penida-and-nusa-lembogan)
 	* [Gili islands](#gili-islands)
 		* [Transportation to Gili islands](#transportation-to-gili-islands)
 	* [Labuan Bajo and Komodo](#labuan-bajo-and-komodo)
 	* [Other islands](#other-islands)
 * [Getting around Bali](#getting-around-bali)
+	* [Prices](#prices)
 
 <!-- vim-markdown-toc -->
 
@@ -115,8 +118,7 @@ weight: 903
 ## Best Bali beaches
 
 * Kuta - south coast (lively, touristic, long, many available activities)
-* Pemuteran - north-west coast (calm, sandy with some rocks, good for 
-  snorkeling)
+* Pemuteran - north-west coast (calm, sandy with some rocks, good for snorkeling)
 * Padang Padang - west side of the southern peninsula (giant rocks encompassing 
   a sandy stretch, popular spot for pictures, monkeys, touristic)
 * Pasir Putih - east coast (relatively unspoiled, white sand, usually clean)
@@ -159,6 +161,17 @@ weight: 903
 * Prambanan = flight to Yogyakarta and then bus (30min)
 * Borobudur = flight to Yogyakarta and then bus (1hr)
 
+### Nusa Penida and Nusa Lembongan
+
+#### Transportation to Nusa Penida and Nusa Lembogan
+
+Common ports to take a ferry or boat to both islands are Sanur and, especially, Padangbai. From the latter there's a slow ferry that can carry cars as well,
+cheaper. Otherwise, the usual speed boats are available.
+
+Some companies doing these routes are:
+
+* [Maruti Group](https://marutigroupfastboat.com/)
+
 ### Gili islands
 
 Three small islands next to Lombok with beautiful sandy beaches and easily walkable.
@@ -178,11 +191,11 @@ latter being the one with the most connections available. The whole trip is
 between 1,5hrs and 2,5hrs, depending on the type of ferry chosen. Some of the 
 companies offering this trip are:
 
-* Eka Jaya
+* [Eka Jaya](https://ekajayafastboat.com/index.html)
 * [Wahan Gili Ocean](https://wahanagiliocean.com)
-* Scoot Fast Cruises
+* [Scoot Fast Cruises](http://scootcruise.com/) - possibly with a stop on Lembogan on the way to the Gilis
 * Semaya One
-* Ostina
+* [Ostina](https://www.ostinafastboat.com/)
 
 There is also the possibility to move between the Gili islands by private or 
 public ferry. The public one being the cheapest and can host around 30 persons.
@@ -209,4 +222,23 @@ do on these islands, being just a resort on an otherwise uninhabited island.
 shuttles between the main places in Bali.
 
 Grab is an app alternative to Uber popular in Bali. Some drivers may take you
-off the main streets for fear of the taxi mafia.
+off the main streets for fear of the taxi mafia. Similarly for Gojack app.
+
+A perhaps even cheaper way to book drivers and move around Bali is Klook app. 
+Some reputed tour operators are on it as well.
+
+From the Airport is usually not possible to use any app but only a pre-booked 
+driver or a taxi. There should be a Grab office as of 2022 to book a ride 
+though. Alternatively, getting out of the airport and through the Novotel puts 
+you on a side street where Grab/Gojack drivers can pick you up.
+
+Some reliable tour/driver companies:
+
+* [BaliMade](https://www.balimadetour.com/)
+
+### Prices
+
+These are taxi prices and are an approximation. Updated as of summer 2022.
+
+* Ubud to Sanur = 100-125k IDR
+* Airport to main touristic areas of Bali = 200-300k IDR
