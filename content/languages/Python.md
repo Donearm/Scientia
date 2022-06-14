@@ -2,6 +2,7 @@
 title: Python
 weight: 435
 bookCollapseSection: true
+tags: [python]
 ---
 
 * [Generic features and syntax](#generic-features-and-syntax)

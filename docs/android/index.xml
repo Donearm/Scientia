@@ -10,7 +10,6 @@
       <title>Android</title>
       <link>https://donearm.github.io/Personal-Wiki/android/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/android/android/</guid>
       <description>Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app   Performance tweaks In /system/build.prop edit:
 ro.~HOME_APP_ADJ=1 to force launcher into memory
@@ -20,6 +19,5 @@ debug.sf.hw=1 to render UI with the GPU
 ro.telephony.call_ring.delay=0 to decrease dialing out delay
 windowsmgr.max_events_per_sec=150  help scrolling responsiveness</description>
     </item>
-    
   </channel>
 </rss>

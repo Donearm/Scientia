@@ -10,226 +10,178 @@
       <title>Chromium</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/chromium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/chromium/</guid>
       <description>Useful URIs  chrome:extension = Opens the window to manage the installed extensions chrome:flags = Opens the experimental features and settings page chrome://gpu = View the status of GPU related features and about the drivers being used  </description>
     </item>
-    
     <item>
       <title>Curl</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/curl/</guid>
       <description>Various  curl -C - -O url = resume an interrupted download of url xargs -n 1 curl -O &amp;lt; listofurls.txt = download a file list from a file, one by one curl -I www.url.com = get HTTP headers returning from a server curl --data &amp;quot;abc=123&amp;amp;def=456&amp;quot; http://url.com/info.php = make a POST request by sending the abc and def parameters with 123 and 456 values to the server curl --user-agent &amp;quot;User Agent string&amp;quot; = specify an User Agent string curl --cookie-jar cookies.</description>
     </item>
-    
     <item>
       <title>Emacs</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/emacs/</guid>
       <description>Movements Basic commands Windows/Buffers Editing Files Dired Shell Various   Movements  C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.</description>
     </item>
-    
     <item>
       <title>E-Uae</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/e-uae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/e-uae/</guid>
       <description>Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
  F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;rsquo;n&#39;.</description>
     </item>
-    
     <item>
       <title>Ffmpeg</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/ffmpeg/</guid>
       <description>Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.</description>
     </item>
-    
     <item>
       <title>Firefox</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/firefox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/firefox/</guid>
       <description>Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
 Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1.</description>
     </item>
-    
     <item>
       <title>Flash</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/flash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/flash/</guid>
       <description>Enable hardware acceleration with the GPU Add:
 EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1 in /etc/adobe/mms.cfg</description>
     </item>
-    
     <item>
       <title>Gimp</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/gimp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/gimp/</guid>
       <description>Retouch scanned images Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened
 Various plugins to try Filters-&amp;gt;Defocus  Gaussian Selective Gaussian = 6-255 (no moirè); 3-200 (little moiré without getting too out of focus)  </description>
     </item>
-    
     <item>
       <title>Git</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/git/</guid>
       <description>Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
  git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit.</description>
     </item>
-    
     <item>
       <title>GMail</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/gmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/gmail/</guid>
       <description>Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  </description>
     </item>
-    
     <item>
       <title>Gnome</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/gnome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/gnome/</guid>
       <description>Disable desktop icons Change the start button Select a specific pixmap Change gtk theme (2.0)   Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
 Change the start button  run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file</description>
     </item>
-    
     <item>
       <title>Grub</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/grub/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/grub/</guid>
       <description>Various Commands  convert -geometry 640×480 -colors 14 img img.xpm = Convert an image in the format grub (legacy) accepts grub-set-default num = Tells grub which os to boot next time elevator=scheduler = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq)  Generate a standalone Grub bootloader for UEFI systems First, have or generate a grub.cfg. grub-mkconfig is the command. Then create the path for it by mkdir -p boot/grub/ and putting it there.</description>
     </item>
-    
     <item>
       <title>HTTrack</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/httrack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/httrack/</guid>
       <description>Mirroring a site but keeping only files matching a pattern httrack website -W -O &amp;#34;/path/to/save/the/website&amp;#34; -%v +*.pdf +*.html +*.htm This mirrors website but actually saves only html and pdf documents</description>
     </item>
-    
     <item>
       <title>Imagemagick Convert</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/</guid>
       <description>Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine.</description>
     </item>
-    
     <item>
       <title>MPlayer</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/mplayer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/mplayer/</guid>
       <description>Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.
  -afm dmo = Sometimes useful to reproduce files with out of sync audio -ss HH:MM:SS = Start playing at HH:MM:SS -frames n = Stop playing after n frames -vc null -vo null -ao pcm:fast:waveheader:file=$file = Convert an audio file to a wav mplayer video -vf cropdetect = Try to detect the areas of video to crop mplayer video -vo jpeg:outdir=dir/ -nosound = Write every frame of video as a jpeg image in outdir mplayer video -vo gif89a:output=filedioutput.</description>
     </item>
-    
     <item>
       <title>Mutt</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/mutt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/mutt/</guid>
       <description>General Commands Keybindings  The Message Index (browsing through mailbox) The Pager (reading an email) Composer (setting the send options for an email)   Arguments Highlight according to a pattern   General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
     </item>
-    
     <item>
       <title>Rtorrent</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/rtorrent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/rtorrent/</guid>
       <description>Add trackers to a torrent Select the torrent. Press Ctrl+x and insert this command:
 d.tracker.insert=&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34; where 3 is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and url_of_tracker is obviously the url of the new tracker. Might be necessary to do a tracker update request with T (or just wait a bit and rtorrent will do it by itself)</description>
     </item>
-    
     <item>
       <title>Screen</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/screen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/screen/</guid>
       <description>C-a : = Go in command mode, where it&amp;rsquo;s possible to insert commands as with Vi C-a n &amp;amp; C-a p = Go to the next or previous window C-a S = Open a new region in the current window C-a Tab = Switches between regions C-a X = Kill the current region C-a s = Freeze the current window C-a q = Reactivate the current window C-a Esc = Start copying mode.</description>
     </item>
-    
     <item>
       <title>Ssh</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/ssh/</guid>
       <description>General commands  ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
     </item>
-    
     <item>
       <title>Tcpdump</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/tcpdump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/tcpdump/</guid>
       <description>Various commands  tcpdump &#39;tcp[13] &amp;amp; 2 != 0&#39; = Catch all SYN packets tcpdump &#39;tcp[13] &amp;amp; 4 != 0&#39; = Catch all RST packets tcpdump &#39;tcp[13] &amp;amp; 16 != 0&#39; = Catch all ACK packets  The 2, 4 and 16 above correspond to the 13th byte in the TCP header and only grab packets that have a not zero 2nd bit there, matching thus different type of TCP packets.</description>
     </item>
-    
     <item>
       <title>Tmux</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/tmux/</guid>
       <description>Change base directory of an existing session First detach from the session. Then reattach with:
 tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status off = hide the statusbar. Can be re-enabled with on, surprisingly &amp;lt;prefix&amp;gt;( and &amp;lt;prefix&amp;gt;) = jump between active sessions prefix&amp;gt;:kill-session = kill the current session (from within itself) tmux list-keys = list all keybindings. Can be run from within a session with &amp;lt;prefix:list-keys or &amp;lt;prefix&amp;gt;?</description>
     </item>
-    
     <item>
       <title>URxvt</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/urxvt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/urxvt/</guid>
       <description>Change charset on the fly printf &amp;#39;\33]701;%s\007&amp;#39; it_IT.~UTF-8 Change font on the flye printf &amp;#39;\33]50;%s\007&amp;#39; 9x15,xft:Kochi&amp;#34; Mincho&amp;#34; Insert an Unicode characters with its hexadecimal code press together &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; pressed</description>
     </item>
-    
     <item>
       <title>ViM</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/vim/</guid>
       <description>Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) .</description>
     </item>
-    
     <item>
       <title>Wireshark</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/programs/wireshark/</guid>
       <description>Sniff lan traffic  Install dsniff o any package that furnishes arpspoof Enable IP forwarding with echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward Start the Arp spoofing with arpspoof -i eth0 -t 192.168.0.3 192.168.0.1 where -t is the target ip and the following is the ip of the gateway. This way the target computer will think our computer is the gateway and will route all packets through it. The local pc will then forward all the packets to the real gateway Use Wireshark on the local network interface (eth0, in the above case) to sniff the traffic  </description>
     </item>
-    
   </channel>
 </rss>

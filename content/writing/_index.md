@@ -1,5 +1,5 @@
 ---
 title: Writing
 bookCollapseSection: true
-weight: 1200
+weight: 1400
 ---

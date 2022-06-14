@@ -10,29 +10,23 @@
       <title>Big Oh Notation</title>
       <link>https://donearm.github.io/Personal-Wiki/theory/big_oh_notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/theory/big_oh_notation/</guid>
       <description>Basic definitions  O(1) = constant: the operation doesn&amp;rsquo;t depend on the size of its input O(n) = linear: the run time complexity is proportionate to the size of n O(log n) = logarithmic: normally associated with algorithms that break the problem into smaller chunks O(n log n) = just n log n: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and then takes the results of the smaller chunks and stitches them back together O(n²) = quadratic O(n³) = cubic  </description>
     </item>
-    
     <item>
       <title>Data Structures</title>
       <link>https://donearm.github.io/Personal-Wiki/theory/data_structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/theory/data_structures/</guid>
       <description>Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
 Each element, or node, contains both data and a reference to the next node in the sequence.</description>
     </item>
-    
     <item>
       <title>Set Theory</title>
       <link>https://donearm.github.io/Personal-Wiki/theory/set_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://donearm.github.io/Personal-Wiki/theory/set_theory/</guid>
       <description>Basics  A ⊆ B = A is a subset of B. All the members of A are also found in B A ∪ B = Union. All the elements that are in A, B or both A ∩ B = Intersection. All the elements that are both in A and B A⊂ = Complement or Absolute complement. The set of all elements that are not in A but are in U, which is the universal set, basically a superset of all sets defined A⊂ ∩ B = Relative complement.</description>
     </item>
-    
   </channel>
 </rss>

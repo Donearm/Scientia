@@ -7,956 +7,102 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AWS</title>
-      <link>https://donearm.github.io/Personal-Wiki/devops/aws/</link>
+      <title>Android</title>
+      <link>https://donearm.github.io/Personal-Wiki/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/devops/aws/</guid>
-      <description>Products Terminology   Products AMI Amazon Machine Images. Images to choose from to launch an instance.
-AWS CLI The command-line interface to AWS services.
-Useful Commands  aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config  CloudFormation The provisioning service of AWS.</description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://donearm.github.io/Personal-Wiki/devops/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/devops/docker/</guid>
-      <description>Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm   Working with images  docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://donearm.github.io/Personal-Wiki/devops/kubernetes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/devops/kubernetes/</guid>
-      <description>Basic commands  kubectl get nodes = list all nodes in the cluster kubectl get pods = list all pods kubectl get deployments = list all deployments kubectl get svc = list all services kubectl get pods -n kube-system = list all system pods kubeadm init = initialize the master cluster kubectl describe pod $podname = show detailed info about a specific pod kubectl describe node $nodename = show detailed info about a specific node kubectl delete pod $podname = delete a specific pod.</description>
-    </item>
-    
-    <item>
-      <title>System Design</title>
-      <link>https://donearm.github.io/Personal-Wiki/devops/system_design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/devops/system_design/</guid>
-      <description>CAP Theorem The theorem asserts that between Consistency, Availability and Partition tolerance only 2 can be had at the same time. The system designer has to make a trade off among CAP
- Consistency: data served is the same across all nodes Availability: every request receives a response, whether it succeeded or failed Partition Tolerance: the system continues to operate despite message loss or failure of part of it  </description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>https://donearm.github.io/Personal-Wiki/frontend/css/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/frontend/css/</guid>
+      <guid>https://donearm.github.io/Personal-Wiki/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>D3</title>
-      <link>https://donearm.github.io/Personal-Wiki/frontend/d3/</link>
+      <title>DevOps</title>
+      <link>https://donearm.github.io/Personal-Wiki/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/frontend/d3/</guid>
-      <description>Append an element directly to the body d3.select(&amp;#39;body&amp;#39;).append(&amp;#39;svg&amp;#39;) append() returns the appended element, not the body as in jQuery</description>
+      <guid>https://donearm.github.io/Personal-Wiki/devops/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>jQuery</title>
-      <link>https://donearm.github.io/Personal-Wiki/frontend/jquery/</link>
+      <title>Frontend</title>
+      <link>https://donearm.github.io/Personal-Wiki/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/frontend/jquery/</guid>
-      <description>Selectors Attribute and style manipulations Ajax Append and prepend nodes Listening to events Removing elements Content manipulation   Selectors $(&amp;#39;.foo&amp;#39;).addClass(&amp;#34;foobar&amp;#34;); $(&amp;#39;.foo&amp;#39;).removeClass(&amp;#34;foobar&amp;#34;); Attribute and Style manipulations $(&amp;#39;.foo&amp;#39;).attr(&amp;#34;new-attr&amp;#34;, &amp;#34;new-value&amp;#34;); $(&amp;#39;.foo&amp;#39;).css(&amp;#34;background&amp;#34;, &amp;#34;white&amp;#34;); Ajax $.getJSON(&amp;#39;http://resource.json&amp;#39;, doSomething); $.ajax({ url: &amp;#39;http://resource.txt&amp;#39;, dataType: &amp;#39;text&amp;#39;, type: &amp;#39;GET&amp;#39;, success: doSomething }); Append and Prepend nodes $(&amp;#39;.foo&amp;#39;).append(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); $(&amp;#39;.foo&amp;#39;).prepend(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;); Listening to events $(&amp;#39;.foo&amp;#39;).on(&amp;#39;click&amp;#39;, clickHandler); Removing elements $(&amp;#39;.foo&amp;#39;).remove(); Content manipulation $(&amp;#39;.foo&amp;#39;).text(&amp;#39;Hello World!&amp;#39;); $(&amp;#39;.foo&amp;#39;).html(&amp;#39;&amp;lt;div class=&amp;#34;bar&amp;#34;&amp;gt;Hello&amp;lt;/div&amp;gt;&amp;#39;); inserting a new element after each li element</description>
+      <guid>https://donearm.github.io/Personal-Wiki/frontend/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Npm</title>
-      <link>https://donearm.github.io/Personal-Wiki/frontend/npm/</link>
+      <title>Languages</title>
+      <link>https://donearm.github.io/Personal-Wiki/languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/frontend/npm/</guid>
-      <description>Some useful commands  npm home express = open the package&amp;rsquo;s homepage in the default browser (in this case, Express&amp;rsquo; homepage) npm prune = remove packages which are not in package.json npm outdated = checks the latest version of installed packages  </description>
+      <guid>https://donearm.github.io/Personal-Wiki/languages/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Awk</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/awk/</link>
+      <title>Operating Systems</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/awk/</guid>
-      <description>Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2   Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;</description>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Bash</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/bash/</link>
+      <title>Programs</title>
+      <link>https://donearm.github.io/Personal-Wiki/programs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/bash/</guid>
-      <description>Functions Commands Scripts Syntax   Functions namename prints the basename without extension
-ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;
-function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; echo &amp;#34;${name0:-$name}&amp;#34; } function ext() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; local ext=${name0:+${name#$name0}} echo &amp;#34;${ext:-.}&amp;#34; } Commands CTRL Key Bound  Ctrl + _ = undo Ctrl + @ = set mark Ctrl + a = Jump to the start of the line Ctrl + b = Move back a char Ctrl + c = Terminate the command Ctrl + d = Delete character under the cursor Ctrl + e = Jump to the end of the line Ctrl + f = Move forward a char Ctrl + k = Delete from cursor to EOL Ctrl + l = Clear the screen Ctrl + n = select the next command in history Ctrl + p = select the previous command in history Ctrl + r = Search the history backwards Ctrl + R = Search the history backwards with multi occurrence Ctrl + t = drag character before cursor over the one under the cursor Ctrl + u = Delete backward from cursor Ctrl + v = Insert next character verbatim Ctrl + w = kill word before cursor Ctrl + x = kill backward to the beginning of line Ctrl + xx = Move between EOL and current cursor position Ctrl + x @ = Show possible hostname completions Ctrl + y = paste the text at top of the kill#ring Ctrl + z = Suspend/ Stop the command  ALT Key Bound  Alt + &#39;&#39;&amp;lt;&#39;&#39; = Move to the first line in the history Alt + &#39;&#39;&amp;gt;&#39;&#39; = Move to the last line in the history Alt + ?</description>
+      <guid>https://donearm.github.io/Personal-Wiki/programs/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>C</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/c/</link>
+      <title>Computer Science Theory</title>
+      <link>https://donearm.github.io/Personal-Wiki/theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/c/</guid>
-      <description>Gcc  gcc -dM -E - &amp;lt;/dev/null = Print all the default macros  </description>
+      <guid>https://donearm.github.io/Personal-Wiki/theory/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Common Lisp</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</link>
+      <title>Various</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</guid>
-      <description>Syntax and various functions (format t &amp;#34;hello&amp;#34;) print to stdout (t) the string
-(list :a 1 :b 2 :c 3) make an indexed list (plist)
-getf (list :a 1 :b 2) :a) returns the value of :a
-(defvar var value) define var with given value
-(parse-integer str) converts the string str in an integer (if possible)
-(y-or-n-p string) make a yes/no prompt with string and waits the user input (basically until he press y or n)</description>
+      <guid>https://donearm.github.io/Personal-Wiki/various/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Go</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/go/</link>
+      <title>Travels</title>
+      <link>https://donearm.github.io/Personal-Wiki/travels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/go/</guid>
-      <description>Commands  go list all = List all installed packages, standard library&amp;rsquo;s included go list std = List only packages from the standard library go test -bench=. = Run benchmarks after the tests. . stands for current directory, obviously go env = List all Go variables  Go Modules  go mod init = creates a new module by initializing the go.mod file go list -m all = prints the current module&amp;rsquo;s dependencies go mod tidy = removes unused dependencies  Test Coverage  go test -cover = prints the percentage of coverage of your unit tests go test -cover -coverprofile=c.</description>
+      <guid>https://donearm.github.io/Personal-Wiki/travels/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Javascript</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/javascript/</link>
+      <title>History</title>
+      <link>https://donearm.github.io/Personal-Wiki/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/javascript/</guid>
-      <description>Asm.js Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM
- Gwt = compiler from Java to JS Emscripten and Mandreel = compilers from C++ to JS  </description>
+      <guid>https://donearm.github.io/Personal-Wiki/history/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Lua</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/lua/</link>
+      <title>Hobbies</title>
+      <link>https://donearm.github.io/Personal-Wiki/hobbies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/lua/</guid>
-      <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
-Coroutines  coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.</description>
+      <guid>https://donearm.github.io/Personal-Wiki/hobbies/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Python</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/python/</link>
+      <title>Health</title>
+      <link>https://donearm.github.io/Personal-Wiki/health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/python/</guid>
-      <description>Generic features and syntax Decorators Metaclasses Set operations Modules   Generic features and syntax  class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
+      <guid>https://donearm.github.io/Personal-Wiki/health/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Sed</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/sed/</link>
+      <title>Philosophy and Religion</title>
+      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/sed/</guid>
-      <description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &amp;#39;s/$oldstring/$newstring/g&amp;#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
-Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax  s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
+      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/</guid>
+      <description></description>
     </item>
-    
     <item>
-      <title>Zsh</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/zsh/</link>
+      <title>Writing</title>
+      <link>https://donearm.github.io/Personal-Wiki/writing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/languages/zsh/</guid>
-      <description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
-for x (1 2 3); do echo $x; done or like this:
-for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext The :r tells the shell to automatically strip the extension, period included</description>
+      <guid>https://donearm.github.io/Personal-Wiki/writing/</guid>
+      <description></description>
     </item>
-    
-    <item>
-      <title>FreeBSD</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/</guid>
-      <description>Various Commands  cvsup = Update ports tree make search key=program = Search for program among the ports tree make index = Generate the ports index pkg_add = Install a package pkg_info = Show info about installed packages pkg_version = Show version number of an installed package pkg_delete = Remove a package /etc/rc.d/rc.daemon rcvar = Check if daemon is enabled or not /etc/rc.d/rc.daemon status = Check the status of daemon kldload = Load a kernel module pw = Modify, remove or add users and groups ipfw -a list = List firewall rules burncd = Command to burn cd gbde = Utility to encrypt/decrypt a disk portupgrade -af = Upgrade all ports freebsd-update = Upgrade the whole system freebsd-update -r version upgrade = Upgrade system to version freebsd-update install = Actually install updates, remove old libraries and object files portsclean -C = Clean out the work directory of past compilations portsclean -D = Clean out all distfiles that are not referenced by any ports in the tree.</description>
-    </item>
-    
-    <item>
-      <title>AppArmor</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/</guid>
-      <description>Basic commands  apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command  </description>
-    </item>
-    
-    <item>
-      <title>Archlinux</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/</guid>
-      <description>Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.</description>
-    </item>
-    
-    <item>
-      <title>Compose Key</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/</guid>
-      <description>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</description>
-    </item>
-    
-    <item>
-      <title>Debian</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/</guid>
-      <description>Commands  update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package  </description>
-    </item>
-    
-    <item>
-      <title>Firewall</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/</guid>
-      <description>Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
-    </item>
-    
-    <item>
-      <title>Framebuffer</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/</guid>
-      <description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH) </description>
-    </item>
-    
-    <item>
-      <title>Kernel</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/</guid>
-      <description>Various kernel options Systemd net.ifnames=0 turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
-Acpi/Apic options no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override Plus:
-acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description>
-    </item>
-    
-    <item>
-      <title>Linux Commands</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/</guid>
-      <description>A variegated collection of useful Linux commands, in no particular order
- testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi OS</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</guid>
-      <description>Useful links  Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } More info here.</description>
-    </item>
-    
-    <item>
-      <title>SELinux</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/</guid>
-      <description>General commands  semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
-    </item>
-    
-    <item>
-      <title>Sysrq Key</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/</guid>
-      <description>How do I use the magic SysRq key? to enable it
-echo &amp;#34;1&amp;#34; &amp;gt; /proc/sys/kernel/sysrq or edit /etc/sysctl.conf and add kernel.sysrq = 1
-On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;. Note - Some keyboards may not have a key labeled SysRq. The SysRq key is also known as the Print Screen key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.</description>
-    </item>
-    
-    <item>
-      <title>SystemD</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</guid>
-      <description>Systemd/Systemctl Journal Various   Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.</description>
-    </item>
-    
-    <item>
-      <title>Xorg</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/</guid>
-      <description>Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.
-Or read the full list on the web</description>
-    </item>
-    
-    <item>
-      <title>NixOS</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/</guid>
-      <description>Various Commands nixos-rebuild switch = rebuild the system after having edited the configuration nix-env -qaP package = search for package nix-env -e package = uninstall package nix-channel --update = update the system (according to currently subscribed channel)</description>
-    </item>
-    
-    <item>
-      <title>Windows Commands</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/</guid>
-      <description>Windows Registry tweaks * HKEY\_CURRENT\_USER\ControlPanel\Desktop * MenuShowDelay = Delay in ms at the opening of menus. Default is 400 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management * DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 * LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters * EnablePrefetcher = Enable prefetching of data on the hard disk.</description>
-    </item>
-    
-    <item>
-      <title>Chromium</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/chromium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/chromium/</guid>
-      <description>Useful URIs  chrome:extension = Opens the window to manage the installed extensions chrome:flags = Opens the experimental features and settings page chrome://gpu = View the status of GPU related features and about the drivers being used  </description>
-    </item>
-    
-    <item>
-      <title>Curl</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/curl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/curl/</guid>
-      <description>Various  curl -C - -O url = resume an interrupted download of url xargs -n 1 curl -O &amp;lt; listofurls.txt = download a file list from a file, one by one curl -I www.url.com = get HTTP headers returning from a server curl --data &amp;quot;abc=123&amp;amp;def=456&amp;quot; http://url.com/info.php = make a POST request by sending the abc and def parameters with 123 and 456 values to the server curl --user-agent &amp;quot;User Agent string&amp;quot; = specify an User Agent string curl --cookie-jar cookies.</description>
-    </item>
-    
-    <item>
-      <title>Emacs</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/emacs/</guid>
-      <description>Movements Basic commands Windows/Buffers Editing Files Dired Shell Various   Movements  C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.</description>
-    </item>
-    
-    <item>
-      <title>E-Uae</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/e-uae/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/e-uae/</guid>
-      <description>Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
- F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;rsquo;n&#39;.</description>
-    </item>
-    
-    <item>
-      <title>Ffmpeg</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/ffmpeg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/ffmpeg/</guid>
-      <description>Commands Conversions  H264 VP8 VP9   Gif to VP8   Commands  ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.</description>
-    </item>
-    
-    <item>
-      <title>Firefox</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/firefox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/firefox/</guid>
-      <description>Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts   For most of these info, thanks to the very complete Mozillazine
-Useful URIs  about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs  Pipelining Enabling of HTTP/1.</description>
-    </item>
-    
-    <item>
-      <title>Flash</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/flash/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/flash/</guid>
-      <description>Enable hardware acceleration with the GPU Add:
-EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1 in /etc/adobe/mms.cfg</description>
-    </item>
-    
-    <item>
-      <title>Gimp</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/gimp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/gimp/</guid>
-      <description>Retouch scanned images Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened
-Various plugins to try Filters-&amp;gt;Defocus  Gaussian Selective Gaussian = 6-255 (no moirè); 3-200 (little moiré without getting too out of focus)  </description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/git/</guid>
-      <description>Various useful commands Cherry picking a range of commits Github   Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
- git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit.</description>
-    </item>
-    
-    <item>
-      <title>GMail</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/gmail/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/gmail/</guid>
-      <description>Useful filters  before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label  </description>
-    </item>
-    
-    <item>
-      <title>Gnome</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/gnome/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/gnome/</guid>
-      <description>Disable desktop icons Change the start button Select a specific pixmap Change gtk theme (2.0)   Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
-Change the start button  run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path.  Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file</description>
-    </item>
-    
-    <item>
-      <title>Grub</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/grub/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/grub/</guid>
-      <description>Various Commands  convert -geometry 640×480 -colors 14 img img.xpm = Convert an image in the format grub (legacy) accepts grub-set-default num = Tells grub which os to boot next time elevator=scheduler = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq)  Generate a standalone Grub bootloader for UEFI systems First, have or generate a grub.cfg. grub-mkconfig is the command. Then create the path for it by mkdir -p boot/grub/ and putting it there.</description>
-    </item>
-    
-    <item>
-      <title>HTTrack</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/httrack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/httrack/</guid>
-      <description>Mirroring a site but keeping only files matching a pattern httrack website -W -O &amp;#34;/path/to/save/the/website&amp;#34; -%v +*.pdf +*.html +*.htm This mirrors website but actually saves only html and pdf documents</description>
-    </item>
-    
-    <item>
-      <title>Imagemagick Convert</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/imagemagick-convert/</guid>
-      <description>Create an animated gif Tweak brightness and contrast Change main colour of an icon Various   Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine.</description>
-    </item>
-    
-    <item>
-      <title>MPlayer</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/mplayer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/mplayer/</guid>
-      <description>Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.
- -afm dmo = Sometimes useful to reproduce files with out of sync audio -ss HH:MM:SS = Start playing at HH:MM:SS -frames n = Stop playing after n frames -vc null -vo null -ao pcm:fast:waveheader:file=$file = Convert an audio file to a wav mplayer video -vf cropdetect = Try to detect the areas of video to crop mplayer video -vo jpeg:outdir=dir/ -nosound = Write every frame of video as a jpeg image in outdir mplayer video -vo gif89a:output=filedioutput.</description>
-    </item>
-    
-    <item>
-      <title>Mutt</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/mutt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/mutt/</guid>
-      <description>General Commands Keybindings  The Message Index (browsing through mailbox) The Pager (reading an email) Composer (setting the send options for an email)   Arguments Highlight according to a pattern   General Commands  q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu  Keybindings The Message Index (browsing through mailbox)  m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone  The Pager (reading an email)  &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text)  Composer (setting the send options for an email)  y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
-    </item>
-    
-    <item>
-      <title>Rtorrent</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/rtorrent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/rtorrent/</guid>
-      <description>Add trackers to a torrent Select the torrent. Press Ctrl+x and insert this command:
-d.tracker.insert=&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34; where 3 is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and url_of_tracker is obviously the url of the new tracker. Might be necessary to do a tracker update request with T (or just wait a bit and rtorrent will do it by itself)</description>
-    </item>
-    
-    <item>
-      <title>Screen</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/screen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/screen/</guid>
-      <description>C-a : = Go in command mode, where it&amp;rsquo;s possible to insert commands as with Vi C-a n &amp;amp; C-a p = Go to the next or previous window C-a S = Open a new region in the current window C-a Tab = Switches between regions C-a X = Kill the current region C-a s = Freeze the current window C-a q = Reactivate the current window C-a Esc = Start copying mode.</description>
-    </item>
-    
-    <item>
-      <title>Ssh</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/ssh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/ssh/</guid>
-      <description>General commands  ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
-    </item>
-    
-    <item>
-      <title>Tcpdump</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/tcpdump/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/tcpdump/</guid>
-      <description>Various commands  tcpdump &#39;tcp[13] &amp;amp; 2 != 0&#39; = Catch all SYN packets tcpdump &#39;tcp[13] &amp;amp; 4 != 0&#39; = Catch all RST packets tcpdump &#39;tcp[13] &amp;amp; 16 != 0&#39; = Catch all ACK packets  The 2, 4 and 16 above correspond to the 13th byte in the TCP header and only grab packets that have a not zero 2nd bit there, matching thus different type of TCP packets.</description>
-    </item>
-    
-    <item>
-      <title>Tmux</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/tmux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/tmux/</guid>
-      <description>Change base directory of an existing session First detach from the session. Then reattach with:
-tmux attach -t $sessionname -c /new/base/dir Various commands  :set -g status off = hide the statusbar. Can be re-enabled with on, surprisingly &amp;lt;prefix&amp;gt;( and &amp;lt;prefix&amp;gt;) = jump between active sessions prefix&amp;gt;:kill-session = kill the current session (from within itself) tmux list-keys = list all keybindings. Can be run from within a session with &amp;lt;prefix:list-keys or &amp;lt;prefix&amp;gt;?</description>
-    </item>
-    
-    <item>
-      <title>URxvt</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/urxvt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/urxvt/</guid>
-      <description>Change charset on the fly printf &amp;#39;\33]701;%s\007&amp;#39; it_IT.~UTF-8 Change font on the flye printf &amp;#39;\33]50;%s\007&amp;#39; 9x15,xft:Kochi&amp;#34; Mincho&amp;#34; Insert an Unicode characters with its hexadecimal code press together &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; pressed</description>
-    </item>
-    
-    <item>
-      <title>ViM</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/vim/</guid>
-      <description>Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips  Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins     Basic commands  J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) .</description>
-    </item>
-    
-    <item>
-      <title>Wireshark</title>
-      <link>https://donearm.github.io/Personal-Wiki/programs/wireshark/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/programs/wireshark/</guid>
-      <description>Sniff lan traffic  Install dsniff o any package that furnishes arpspoof Enable IP forwarding with echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward Start the Arp spoofing with arpspoof -i eth0 -t 192.168.0.3 192.168.0.1 where -t is the target ip and the following is the ip of the gateway. This way the target computer will think our computer is the gateway and will route all packets through it. The local pc will then forward all the packets to the real gateway Use Wireshark on the local network interface (eth0, in the above case) to sniff the traffic  </description>
-    </item>
-    
-    <item>
-      <title>Big Oh Notation</title>
-      <link>https://donearm.github.io/Personal-Wiki/theory/big_oh_notation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/theory/big_oh_notation/</guid>
-      <description>Basic definitions  O(1) = constant: the operation doesn&amp;rsquo;t depend on the size of its input O(n) = linear: the run time complexity is proportionate to the size of n O(log n) = logarithmic: normally associated with algorithms that break the problem into smaller chunks O(n log n) = just n log n: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and then takes the results of the smaller chunks and stitches them back together O(n²) = quadratic O(n³) = cubic  </description>
-    </item>
-    
-    <item>
-      <title>Data Structures</title>
-      <link>https://donearm.github.io/Personal-Wiki/theory/data_structures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/theory/data_structures/</guid>
-      <description>Linked List  History   Queues Dynamic Array Skip List Binary Tree  BSP Tree Binary Indexed Tree   Heap Associative Array Bit Array Trie Record Union Set   Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence.</description>
-    </item>
-    
-    <item>
-      <title>Set Theory</title>
-      <link>https://donearm.github.io/Personal-Wiki/theory/set_theory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/theory/set_theory/</guid>
-      <description>Basics  A ⊆ B = A is a subset of B. All the members of A are also found in B A ∪ B = Union. All the elements that are in A, B or both A ∩ B = Intersection. All the elements that are both in A and B A⊂ = Complement or Absolute complement. The set of all elements that are not in A but are in U, which is the universal set, basically a superset of all sets defined A⊂ ∩ B = Relative complement.</description>
-    </item>
-    
-    <item>
-      <title>Advertising and Marketing</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/</guid>
-      <description>Google Ads  Match types Bid Strategies Audience Solutions   Create a Marketing Plan  1. Collect Data 2. Select the mission statement 3. Write a market analysis 4. Describe a current customer&amp;rsquo;s persona 5. Write a customer buying process map 6. Write a product/service analysis 7. Collect all the data thus gathered in an overall strategy     Google Ads Google Search Network = search + Google Play + Google Shopping + Google Maps + search partners</description>
-    </item>
-    
-    <item>
-      <title>Cryptocurrencies</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/cryptocurrencies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/cryptocurrencies/</guid>
-      <description>Litecoin API
-Bitcoin/Litecoin API commands  getaccountaddress &amp;quot;&amp;quot; = Print BTC/LTC address backupwallet &amp;lt;location&amp;gt; = Dump wallet to location encryptwallet &amp;lt;passphrase&amp;gt; = Encrypt the wallet with passphrase validateaddress &amp;lt;coin_address&amp;gt; = Print informations about coin_address walletpassphrasechange &amp;lt;oldpass&amp;gt; &amp;lt;newpass&amp;gt; = Change wallet password  </description>
-    </item>
-    
-    <item>
-      <title>Fantasy</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/fantasy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/fantasy/</guid>
-      <description>Chronology of fantasy of importance  1865: Alice&amp;rsquo;s Adventures in Wonderland is first published. 1922: E.R. Eddison&amp;rsquo;s The Worm Ouroboros is published. 1924: Lord Dunsany&amp;rsquo;s The King of Elfland&amp;rsquo;s Daughter is published. 1932-: Conan the Barbarian appears on Weird Tales in 1932. Main stories would be published throughout the 1930s, with a few posthumously being released during the 1950s and 1960s. 1946-1959: Mervyn Peake&amp;rsquo;s Ghormenghast series is published. 1954: Poul Anderson&amp;rsquo;s The Broken Sword.</description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/hardware/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/hardware/</guid>
-      <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
-Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
-Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/hugo/</guid>
-      <description>Syntax Highlighting Hugo makes use of Chroma as its syntax highlighter. It is possible to select the style from these here by adding in Hugo config:
-pygmentsStyle = &amp;#34;dracula&amp;#34; </description>
-    </item>
-    
-    <item>
-      <title>i3</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/i3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/i3/</guid>
-      <description>How to save layout and reload at boot First, save the current layout of any workspace with:
-i3-save-tree --workspace 1 &amp;gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
-After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.</description>
-    </item>
-    
-    <item>
-      <title>Load Balancing</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/load_balancing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/load_balancing/</guid>
-      <description>Modes  Round Robin = requests are distributed sequentially. Least Connections = new requests are distributed to the node with currently the least requests. Source/IP Hash = the IP source of the request is used to determine the destination node.  </description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/markdown/</guid>
-      <description>How to make footnotes Use
-Text to be linked[^1] and then at the bottom of the file:
-[^1]: text or link </description>
-    </item>
-    
-    <item>
-      <title>MongoDB</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/mongodb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/mongodb/</guid>
-      <description>Basic CLI commands CRUD commands  Importing csv files     Basic CLI commands  show dbs = list all databases db = show current database use dbname = select database dbname  CRUD commands  db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.</description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/music/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/music/</guid>
-      <description>Noticeable lyrics Dark Tranquillity - Punish My Heaven</description>
-    </item>
-    
-    <item>
-      <title>Networks</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/networks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/networks/</guid>
-      <description>* [HTTP Status Codes](#http-status-codes) * [OSI Model](#osi-model) * [TCP connection states](#tcp-connection-states)   Firewalls VLANs DNS  Basic concepts Resource Records DNS Query DNS Fields   VPN IP Addressing   HTTP Status Codes OSI Model TCP connection states  CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed.</description>
-    </item>
-    
-    <item>
-      <title>Plain Text Accounting</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/</guid>
-      <description>Beancount Reporting  bean-report file.ledger balances = basic balance report command. bean-report file.ledger balances -e AccountName = same as above but only showing account names matching AccountName. bean-report file.ledger balances | treeify = piping the basic balance command to treeify, provided by beancount, to have a tree-like visualization. bean-report file.ledger balsheet &amp;gt; balance.html = output the balance report to an html file. bean-report file.ledger income &amp;gt; income.html = output the income report to an html file.</description>
-    </item>
-    
-    <item>
-      <title>Sailing</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/sailing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/sailing/</guid>
-      <description>Things to know before a sailing course (ideally) Boats  Good boats Cheap new boats     Things to know before a sailing course (ideally)  Sea terminology = parts of boat, rigging, sails Sail handling = bending on, setting, reefing, handling of sails, use of sheets, halyards and winches Ropework = coiling, stowing and securing to cleats and single/double bollards of ropes. Handling warps Knots = to learn  figure-of-eight clove hitch rolling hitch bowline round turn two half hitches single sheet bend double sheet bend reef knot   Fire and hazards = awareness and precautions to prevent fire, actions to take in the event of fire Rules for wearing safety harnesses, lifejackets and buoyancy aids Man overboard procedures Emergency equipment = how to operate and when to use distress flares, how to launch and board a life raft Manners and customs = use of burgees and ensigns, prevention of noise or disturbance, responsibilities to protect the environment Rules of passing and precedence Dinghies = loading rules, handling under oars Meteo = forecasting services knowledge, Beaufort scale Knowing and handling seasickness Helmanship = basic principles of sailing, steering and trimming sails on all points of sailing, steer a compass course under sail and power Responsibilities of skipper and crew Vessel checkout = documentation, charts, nautical publications and flags Capsizing, swamping and sinking Buoyage Charts, tides and currents Basic first-aid Anchoring and running aground  Boats Good boats  Nautor Swan 43 Oyster Mariner Hallberg Rassy Mistral Hallberg Rassy Monsun Hylas 44 (130-150k€ used) Kirie Feeling 486 (120-150k€ used) Hallberg Rassy 310 (190k€) Catalina 400 MkII (120-150k€) Dufour 36 (80-120k€ used) Dufour 38 Moody 41 DS (way too expensive&amp;hellip;) Sirius 35/40 Dehler 38SQ (170k€+)  Cheap new boats  Beneteau Oceanis 38.</description>
-    </item>
-    
-    <item>
-      <title>Samba and Nfs</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/</guid>
-      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
-    </item>
-    
-    <item>
-      <title>SEO</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/seo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/seo/</guid>
-      <description>SEO audit checklist  Useful Wordpress plugins Pages for local businesses   SEO Evaluations How to report on SEO Common metrics Engagement metrics Google Analytics   SEO audit checklist Roughly copied from Chase Reiner&amp;rsquo;s
- Primary Core SEO Issues – The most common SEO issues or mistakes include focusing on content quantity instead of quality, incomplete on-page SEO optimization, overlooking the importance of well-constructed URLs, and focusing on too many keywords.</description>
-    </item>
-    
-    <item>
-      <title>SQLite</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/sqlite/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/sqlite/</guid>
-      <description>Exporting tables to csv sqlite3databasefile&amp;gt;.</description>
-    </item>
-    
-    <item>
-      <title>Tiddlywiki</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/tiddlywiki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/tiddlywiki/</guid>
-      <description>Tweaks and features of Tiddlywiki  To use the file browser to insert a file into the wiki To show a text file with an iframe To insert an image To directly install a plugin Export tiddlers as pdf/ps Show Tiddlywiki version number     Tweaks and features of Tiddlywiki Tiddlywiki markup list
-To use the file browser to insert a file into the wiki This:
-&amp;lt;html&amp;gt;&amp;lt;div align=&amp;#34;left&amp;#34;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;#34;whatFile()&amp;#34; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt; or this:</description>
-    </item>
-    
-    <item>
-      <title>Zfs</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/zfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/various/zfs/</guid>
-      <description>Useful commands  arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified  ZFS encrypted datasets  zfs get -p encryption,keystatus,keylocation,pbkdf2iters $dataset = show details about an encrypted dataset zfs-load-key $dataset = load the key for the specified dataset, enabling access to it zfs-unload-key $dataset = unload a previously loaded key for a data set, preventing it from being accessed later without giving the key again zfs mount $dataset = mount the dataset zfs unmount $dataset = unmount the dataset  </description>
-    </item>
-    
-    <item>
-      <title>Bali</title>
-      <link>https://donearm.github.io/Personal-Wiki/travels/bali/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/travels/bali/</guid>
-      <description>Info about Bali places and areas  Canggu Uluwatu Nusa Dua Ubud Amed Sanur Seminyak Jimbaran Munduk Lovina Kuta   Best Bali beaches What to visit in Bali Excursions from Bali  Nusa Penida and Nusa Lembongan  Transportation to Nusa Penida and Nusa Lembogan   Gili islands  Transportation to Gili islands   Labuan Bajo and Komodo Other islands   Getting around Bali  Prices     Info about Bali places and areas Canggu  Boho-chic, affordable Good food options Casual beach Mostly young tourists Not excessively touristy nor commercialized (yet)  Uluwatu  Good beaches and high cliffs over the sea Quiet, generally Secluded  Nusa Dua  Good for families Many all-inclusive resorts are here Plenty of water activities available  Ubud  Diverse food Hippies Good local market for crafts and souvenirs On the hills, not next to the sea Sacred Monkey Forest Sanctuary is right in Ubud Lots of arts, temples, shows for tourists Surrounded by rice fields  Amed  Good for snorkeling Clean beach with shallow reef Dryer climate than most of Bali Chill vibe, less touristy  Sanur  Quiet, relaxed Middle-aged tourists Golden beaches Direct boat access to Nusa Lembongan and Nusa Penida Not a lot to do outside of the beach  Seminyak  Upscale but commercialized Luxury accomodations Shopping capital of Bali Good nightlife Sunset beach bars  Jimbaran  Chic Little nightlife, quiet Good beach  Munduk  In the interior Waterfalls, very green Local coffee Great trekking and hiking area  Lovina  On the north coast Relatively developed but still quiet Dolphins spotting  Kuta  Plenty of long beaches Very developed Surfers Vibrant nightlife Can get overcrowded and dirty  Best Bali beaches  Kuta - south coast (lively, touristic, long, many available activities) Pemuteran - north-west coast (calm, sandy with some rocks, good for snorkeling) Padang Padang - west side of the southern peninsula (giant rocks encompassing a sandy stretch, popular spot for pictures, monkeys, touristic) Pasir Putih - east coast (relatively unspoiled, white sand, usually clean) Bias Tugel - east coast (white sand, not super-crowded, rock formations with pools on the sides, good for snorkeling) Nusa Dua - on the east coast of the southern peninsula (fairly large, sandy with rocks around, calm waters, mostly families) Seminyak - on the south-east coast (for surfers, black sand, large) Sanur - east coast (large, sandy, relatively quiet, good for swimming and snorkeling)  What to visit in Bali  Tannah Lot (temple right on the sea, west coast) Taman Ayun (temple, west of Ubud) Tirta Gangga (temple with gardens, pools and possibility of picnic, near the easternmost point of Bali) Uluwatu (another temple overlooking the sea, south-west point of the southern Bali peninsula) Saraswati (hindu temple in Ubud) Pura Agung Besakih (hindu temple at the feet of Mount Agung) Ulun Danu Beratan (temple on a lake in central-western Bali) Tegallalang rice fields (north of Ubud) Handara gate (famous opening on a wall of a hindu-inspired golf course with mountains backdrop, central Bali) Jatiluwih rice fields (near the geographical centre of Bali) Tegenungan waterfall (just south of Ubud) Aling-Aling waterfall (4 waterfalls with possibility to swim in each, centre-north of Bali) Tukad Cepung waterfall (small but pretty, a bit north-east of Ubud) Monkey Forest (temples and monkeys, in Ubud) Kelingking Beach (beach down spectacular cliffs, on southern coast of Nusa Penida)  Excursions from Bali  Komodo Island = flight to Labuhanbajo on Flores.</description>
-    </item>
-    
-    <item>
-      <title>Caribbeans</title>
-      <link>https://donearm.github.io/Personal-Wiki/travels/caribbeans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/travels/caribbeans/</guid>
-      <description>Anguilla Antigua Aruba Barbados Bonaire Caymans Curaçao Dominica Grenada Guadeloupe Martinique St. Barts St. Kitts &amp;amp; Nevis St. Lucia Turks &amp;amp; Caicos  Connections between isles     Brief and vague description of some Caribbean islands&amp;rsquo; tourism and environment.
-Anguilla Great beaches, expensive, little to do, low-key vibe
-Antigua Green, good beaches, some history, medium expensive
-Aruba Lunar-looking, arid, great beaches, mostly resorts, no history, somewhat affordable</description>
-    </item>
-    
-    <item>
-      <title>French Polynesia</title>
-      <link>https://donearm.github.io/Personal-Wiki/travels/french_polynesia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/travels/french_polynesia/</guid>
-      <description>Sort of ideal itinerary for a 10-15 days trip.
-Not to miss  Huahine Bora Bora Moorea Nuku Hiva (one of the Marquesas)  Nice to go  Rangiroa (an atoll) Fakarava (another atoll) Mauputi (a cheaper alternative to Bora Bora, very similar to it) Raiatea (rocky) Taha&amp;rsquo;a (next to Bora Bora, similar as it is an atoll around a rocky and mountainous island) Tikehau (another atoll, next to Rangiroa) Mataiva (an arid atoll, next to Tikehau)  </description>
-    </item>
-    
-    <item>
-      <title>Places to Visit</title>
-      <link>https://donearm.github.io/Personal-Wiki/travels/places_to_visit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/travels/places_to_visit/</guid>
-      <description>Europe  Cyprus  Ayia Napa beaches Protaras beaches   Croatia  Best beaches Croatian tour agencies   Malta  Maltese best beaches   Portugal  Portugal beaches     Africa  Egypt   Americas  Mexico  Cenotes Best beaches   Caribbeans   Asia  Indonesia  Bali   Thailand  Bangkok Pattaya     Oceania  French Polynesia     Europe Cyprus Ayia Napa beaches  Nissi Makronisos Grecian Bay  Protaras beaches  Fig Tree Bay Cape Greco  Croatia Best beaches  Baska - on Krk Girandella - Rabac Brela - north of Makarska Supetar - on Brac Zlatni Rat - on Brac Plat - south of Dubrovnik, near Brasina  Croatian tour agencies  Adriatic Explore Atlas Croatia  Malta Maltese best beaches  Armier Bay Balluta/St.</description>
-    </item>
-    
-    <item>
-      <title>Military History</title>
-      <link>https://donearm.github.io/Personal-Wiki/history/military_history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/history/military_history/</guid>
-      <description>Early Islamic Conquests Main notes  Caliph Umar didn&amp;rsquo;t want to invade Persia after occupying Iraq. He wished to retain the Mesopotamian area only but the ammassing of troops along the Zagros mountains and some Sassanid raids in southern Iraq forced him to act.  Khalid ibn Walid Originally an opposer to Muhammad, he was never a zealot in pushing Islam but more like a shrewd, bold and cunning military commander.</description>
-    </item>
-    
-    <item>
-      <title>Sumeria</title>
-      <link>https://donearm.github.io/Personal-Wiki/history/sumeria/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/history/sumeria/</guid>
-      <description>Electronic Text Corpus of Sumerian Literature (ordered by date).
-Interesting texts perused so far:
- Letter from Gudea to his god imploring support  with a nice ending quote My god, I am not one to be hostile. May you show sympathy towards me once again.   Nanshe and the birds Gilgamesh, Enkidu and the nether world Enlil and Sud Gilgamesh and Aga Ningishzida&amp;rsquo;s journey to the nether world Gilgamesh and Huwawa The Sumerian King List Enki&amp;rsquo;s journey to Nibiru Enlil and Ninlil Pabilsang&amp;rsquo;s journey to Nibru The Lament for Nibru The Sargon legend The cursing of Agade Lugalbanda The marriage of Martu  </description>
-    </item>
-    
-    <item>
-      <title>Autism</title>
-      <link>https://donearm.github.io/Personal-Wiki/health/autism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/health/autism/</guid>
-      <description>A few notes on the effects/causes of autism on/due to the brain.
- Study on the effects of serotonin receptors on the Gut-Brain Microbiome in Autism Spectrum disorders  Gut disfunctions occur at a four-fold greater rate in individuals with autism spectrum disorder than in normal population. Correlation found between autism spectrum disorders, especially connected to language-impairment, and constipation.    </description>
-    </item>
-    
-    <item>
-      <title>Depression</title>
-      <link>https://donearm.github.io/Personal-Wiki/health/depression/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/health/depression/</guid>
-      <description>A few notes on the effects/causes of depression on/due to the brain.
-Mostly coming from The Upward Spiral book
- Depressed subjects have less dopamine activity in the nucleus accumbens Dorsal striatum has strong ties with the nucleus accumbens Dopamine released in dorsal striatum doesn&amp;rsquo;t increase feelings of pleasure Patterns in the dorsal striatum can&amp;rsquo;t be erased, ever Serotonin is not unlimited Inhibiting an impulse uses serotonin The dopamine system helps modulating both slow-wave deep sleep and rem sleep Circadian rhythms influence the production of dopamine receptors, dopamine transponders and dopamine itself Depressed subjects have dysregulated oxytocin.</description>
-    </item>
-    
-    <item>
-      <title>Mental Health</title>
-      <link>https://donearm.github.io/Personal-Wiki/health/mental_health/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/health/mental_health/</guid>
-      <description>Various notes on possible issues to keep in mind.
- Not Asking For Help: possible cause is none of value, or at all, is believed to be possibly received. Not Being Socially Active: probably due to the fact that if I didn&amp;rsquo;t feel loved by family, the assumption is that nobody else could love me. If neither my family loved me, why would anybody else do? Why bothering trying to find love in others then?</description>
-    </item>
-    
-    <item>
-      <title>Technical Writing</title>
-      <link>https://donearm.github.io/Personal-Wiki/writing/technical_writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/writing/technical_writing/</guid>
-      <description>Tools  Confluence  Useful Macros/Plugins Content reusing in Confluence Tips   Help &amp;amp; Manual MadCap Flare Oxygen SDL Triton RoboHelp Scribus Framemaker  Default DITA xml elements available in Framemaker How to change background colour of a paragraph   Paligo Booktype Clickhelp HelnNDoc   Good practices and procedures  Developing a Doc Plan     Tools Confluence Often used for internal documentation, Confluence is an ok-ish tool for technical documentation.</description>
-    </item>
-    
-    <item>
-      <title>Buddhism</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/buddhism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/buddhism/</guid>
-      <description>Contacts between Buddhism and Christianity Similitudes between Buddhism and Western philosophies  Hegesians Dionysus in India     Contacts between Buddhism and Christianity One one of the major Ashoka&amp;rsquo;s rock edicts, (the 13th), it is stated how a few ellenistic kings were followers of the Dhamma. One of them is Ptolemy II and his sister Arsinoe II.
-In the apocryphal Gospel of Thomas, at verse 90, Jesus says:</description>
-    </item>
-    
-    <item>
-      <title>Christianity</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/christianity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/christianity/</guid>
-      <description>Random facts Apocryphal books  Book of Jubilees Book of Enoch   Apocryphal Gospels  Gospel of James Infancy Gospel of Thomas Gospel of Pseudo-Matthew Gospel of the Ebionites Gospel of the Hebrews Gospel of the Nazarenes Gospel of Marcion Gospel of Mani Gospel of Peter Gospel of Nicodemus Questions of Bartholomew Apocryphon of James Book of Thomas the Contender Dialogue of the Savior Gospel of Judas Gospel of Mary Gospel of Philip Greek Gospel of the Egyptians Gospel of Truth Pistis Sophia Second Treatise of the Great Seth Apocryphon of John Apocalypse of Paul First Apocalypse of James Second Apocalypse of James Apocalypse of Pseudo-Methodius Apocalypse of Peter      Marcion of Sinope = founder of Marcionism.</description>
-    </item>
-    
-    <item>
-      <title>Hinduism</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/hinduism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/hinduism/</guid>
-      <description>Philosophical schools within Hinduism  Cārvāka - contemporary school to Buddha&amp;rsquo;s lifetime, which has arguably influenced his teachings. Materialistic, skeptic, atheist. Samkhya - one of the most ancient schools, already rejecting the concept of an unitary God (Ishvara).  </description>
-    </item>
-    
-    <item>
-      <title>Philosophy</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/philosophy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/philosophy/</guid>
-      <description>Eliminative materialism/Eliminativism  Notable philosphers of Eliminativism References   Moral Nihilism  Notable philosophers of Moral Nihilism   Existential Nihilism   Eliminative materialism/Eliminativism In general, eliminativism refers to the class of views in sciences that deny the existence of some entities. In the philosophy of mind realm, Eliminativism means the denial of existence of various states of the mind, such as belief or desire. It postulates how no scientifical basis for the existence of these states will ever be found.</description>
-    </item>
-    
-    <item>
-      <title>Paganism</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/paganism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/paganism/</guid>
-      <description>Greek Paganism Roman Paganism Nordic Paganism   Greek Paganism Certain deities, in particular Zeus and Poseidon, were never depicted by images during the Archaic period (cit. A History of Pagan Europe, ch 2, pg 85)
-Roman Paganism Varro tells us that the early Romans worshipped their deities without images. The basic Roman belief seems to have been in numen or supernatural power rather than in personified spirits (cit. A History of Pagan Europe, ch 3, pg 52)</description>
-    </item>
-    
-    <item>
-      <title>Yoga</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/yoga/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/yoga/</guid>
-      <description>Random facts
- Developed since the Indus civilization times Codified in sutras by Patanjali (around 1550 b.C.), with buddhistic influences Hatha Yoga (born in 900 a.C. but fully developed in 1400 by Yogi Swatmarama): introduces many postures, increases the importance of purifying the mind through the purification of the body  </description>
-    </item>
-    
-    <item>
-      <title>Zealots</title>
-      <link>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/zealots/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/philosophy_and_religion/zealots/</guid>
-      <description>Random facts
-Jewish sect, formed around 6 b.C. Strong opposers of Roman domination.
-Characteristics
- Simon, one of the apostles, was called &amp;ldquo;the zealot&amp;rdquo; The Zealots waited for the coming of the King of the World Strong messianic beliefs Preference for the Maccabees books over all other ones. Those books aren&amp;rsquo;t considered canonical by some protestant churches and are thus only after the Trent Council for catholics Zealots were killed off after the Bar Kochba insurrection of 131 a.</description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>https://donearm.github.io/Personal-Wiki/android/android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/android/android/</guid>
-      <description>Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app   Performance tweaks In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1 to force launcher into memory
-ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1 to render UI with the GPU
-ro.telephony.call_ring.delay=0 to decrease dialing out delay
-windowsmgr.max_events_per_sec=150  help scrolling responsiveness</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://donearm.github.io/Personal-Wiki/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://donearm.github.io/Personal-Wiki/search/</guid>
-      <description>var search = instantsearch({ indexName: &#39;Gianluca Fiore Personal Wiki&#39;, searchClient: algoliasearch( &#39;DRRGB5NMNG&#39;, &#39;b66dcbe0616bd937b0436433b526ee27&#39; ), routing: true, }); const renderHits = (renderOptions, isFirstRender) = { const { hits } = renderOptions; document.querySelector(&#39;#hits&#39;).innerHTML = ` ${hits .map( item = `${ item.title }${ dayjs(item.lastmod).format(&#34;YYYY/MM/DD&#34;) } - ${ item.description ? item.description : item.content.length  200 ? item.content.substring( 0, 200 ) + &#39;...&#39; : item.content }
-` ) .</description>
-    </item>
-    
   </channel>
 </rss>

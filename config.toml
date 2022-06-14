@@ -3,7 +3,7 @@ baseURL = "https://donearm.github.io/Personal-Wiki/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "Gianluca Fiore Personal Wiki"
-theme = "hugo-theme-techdoc"
+theme = "hugo-theme-relearn"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
@@ -18,11 +18,37 @@ pygmentsStyle = "dracula"
 pygmentsUseClasses = true
 
 [params]
-
-    # Source Code repository section
+	author = "Gianluca Fiore"
     description = "My personal knowledge wiki. Mostly I.T. but with a few more recent topics"
     github_repository = "https://github.com/Donearm/Personal-Wiki/"
     version = ""
+	showVisitedLinks = false
+	disableSearch = false
+	disableSearchHiddenPages = true
+	disableSeoHiddenPages = true
+	disableTagHiddenPages = true
+	disableLandingPageButton = true
+	disableBreadcrumb = false
+	# If set to false, load the Mermaid module on every page regardless 
+	# if a Mermaid shortcode or Mermaid codefence is present
+	disableMermaid = true
+	# Specifies the remote location of the Mermaid js
+	customMermaidURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
+	# Order sections in menu by "weight" or "title". Default to "weight";
+	# this can be overridden in the pages frontmatter
+	ordersectionsby = "weight"
+	# Change default color scheme with a variant one. Eg. can be "red", 
+	# "blue", "green" or an array like [ "blue", "green" ].
+	themeVariant = "red"
+	# Change the title separator. Default to "::".
+	titleSeparator = "-"
+	# If set to true, the menu in the sidebar will be displayed in a collapsible tree view.
+	collapsibleMenu = false
+
+
+
+
+
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
@@ -39,6 +65,11 @@ pygmentsUseClasses = true
     # See https://gohugo.io/templates/internal/#twitter-cards
     title = "Gianluca Fiore Personal Wiki"
     images = ["images/og-image.png"] # Open graph images are placed in `static/images`
+
+	# This controls whether submenus will be expanded (true), or collapsed (false) in the
+	# menu; if no setting is given, the first menu level is set to false, all others to true;
+	# this can be overridden in the pages frontmatter
+	alwaysopen = false
 
     # Theme settings section
     # Theme color
@@ -74,15 +105,27 @@ pygmentsUseClasses = true
 # Global menu section
 # See https://gohugo.io/content-management/menus/
 [menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
+	[[menu.shortcuts]]
+		name = "<i class='fas fa-tags'></i> Tags"
+		url = "/tags"
+		weight = 10
 
-	[[menu.main]]
-		name = "Search"
-		url = "/search"
-		weight = 2
+	[[menu.shortcuts]]
+		name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+		identifier = "ds"
+		url = "https://github.com/Donearm/Personal-Wiki"
+		weight = 20
+
+	[[menu.shortcuts]]
+		name = "<i class='fas fa-fw fa-bookmark'></i> Personal Site"
+		identifier = "gianlucafioreit"
+		url = "https://www.gianlucafiore.it"
+		weight = 30
+
+	[[menu.shortcuts]]
+		name = "<i class='fas fa-solid fa-pen-nib'></i> Fountain Pen Creator"
+		url = "https://www.fountainpencreator.com"
+		weight = 40
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
@@ -96,9 +139,12 @@ pygmentsUseClasses = true
         ordered = false
 	[markup.highlight]
 		codeFences = true
+		# choose a color theme or create your own. A list of supported 
+		# themes for syntax highlighting can be found at https://xyproto.github.io/splash/docs/all.html
+		style = "fruity"
 
 [outputs]
-    home = ["HTML", "RSS", "Algolia"]
+    home = ["HTML", "RSS", "JSON", "Algolia"]
 
 # Algolia Search configure section
 [outputFormats.Algolia]
