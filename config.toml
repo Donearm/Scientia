@@ -39,7 +39,7 @@ pygmentsUseClasses = true
 	ordersectionsby = "weight"
 	# Change default color scheme with a variant one. Eg. can be "red", 
 	# "blue", "green" or an array like [ "blue", "green" ].
-	themeVariant = "red"
+	themeVariant = "fpc"
 	# Change the title separator. Default to "::".
 	titleSeparator = "-"
 	# If set to true, the menu in the sidebar will be displayed in a collapsible tree view.
