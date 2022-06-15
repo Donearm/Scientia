@@ -5,6 +5,9 @@ weight: 1210
 
 <!-- vim-markdown-toc GFM -->
 
+* [Books](#books)
+	* [Writing and Technical Writing books](#writing-and-technical-writing-books)
+	* [Styling and Designing Content books](#styling-and-designing-content-books)
 * [Tools](#tools)
 	* [Confluence](#confluence)
 		* [Useful Macros/Plugins](#useful-macrosplugins)
@@ -29,6 +32,29 @@ weight: 1210
 <!-- vim-markdown-toc -->
 
 ---------------
+
+## Books
+
+### Writing and Technical Writing books
+
+* **Information Architecture** by Peter Morville at al.
+* **Business Writing for Technical People** by Carrie Marshall
+* **A Guide to Writing as an Engineer** by David F. Beer, David A. McMurrey
+* **Docs for Developers: An Engineer's Field Guide to Technical Writing** by Jared Bhatti
+* **Technical Editing: The Practical Guide for Editors and Writers** by Judith A. Tarutz
+* **The Product is Docs** by Christopher Gales and the Splunk documentation team
+* **Modern Technical Writing: An Introduction to Software Documentation** by Andrew Etter
+* **Revising Business Prose** by Richard Lanham
+* **Untechnical Writing** by JoAnn T. Hackos
+* **Technical Writing Process** by Kieran Morgan
+* **The Insider's Guide to Technical Writing** by Krista Van Laan
+
+### Styling and Designing Content books
+
+* **Read Me First! A Style Guide for the Computer Industry** by the Sun Microsystems Press
+* **Don't Make Me Think: A Common Sense Approach to Web Usability** by Steve Krug
+* **The Design of Everyday Things** by Donald Norman
+* **The Elements of Style** by William Strunk Jr.
 
 ## Tools
 
