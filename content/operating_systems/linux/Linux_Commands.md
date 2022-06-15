@@ -146,3 +146,4 @@ A variegated collection of useful Linux commands, in no particular order
 * `file -i $filename` = Show the mimetype and locale of `$filename`
 * `ddjvu --format=pdf file.djvu file.pdf` = Convert a djvu file to a pdf
 * `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOUtputFile=file.pdf file_to_optimize.pdf` = Compress and optimize a pdf. `/ebook` means a medium quality, 150dpi. Alternatives are `/prepress`, which produces a 300dpi pdf, and `/screen`, for a 72dpi, good for screen reading only, pdf
+* `pactl list | grep codec` = Check what bluetooth codec is being used (need bluez and pavucontrol installed)
