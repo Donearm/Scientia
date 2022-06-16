@@ -26,6 +26,7 @@ weight: 1210
 	* [Booktype](#booktype)
 	* [Clickhelp](#clickhelp)
 	* [HelnNDoc](#helnndoc)
+	* [Markdoc](#markdoc)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -166,6 +167,11 @@ A single-sourcing web-based documentation tool, with a large range of
 
 A french publishing software, [free for personal 
 use](https://www.helpndoc.com/), but only for Windows.
+
+### Markdoc
+
+A content authoring [tool](https://markdoc.io) based off pure markdown files. 
+It powers the praised Stripe documentation.
 
 ## Good practices and procedures
 
