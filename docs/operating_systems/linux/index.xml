@@ -11,7 +11,7 @@
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/</guid>
-      <description>Basic commands  apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command  </description>
+      <description>Basic commands apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command </description>
     </item>
     <item>
       <title>Archlinux</title>
@@ -34,14 +34,14 @@ Some computers (e.g. those from Sun) have a Compose key on their keyboard, but f
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/</guid>
-      <description>Commands  update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package  </description>
+      <description>Commands update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package </description>
     </item>
     <item>
       <title>Firewall</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/</guid>
-      <description>Netfilter chains  NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
+      <description>Netfilter chains NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
     </item>
     <item>
       <title>Framebuffer</title>
@@ -65,14 +65,14 @@ acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/</guid>
       <description>A variegated collection of useful Linux commands, in no particular order
- testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
+testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
     </item>
     <item>
       <title>Raspberry Pi OS</title>
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/</guid>
-      <description>Useful links  Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version  Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+      <description>Useful links Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } More info here.</description>
     </item>
     <item>
@@ -80,7 +80,7 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/</guid>
-      <description>General commands  semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
+      <description>General commands semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
     </item>
     <item>
       <title>Sysrq Key</title>
@@ -96,7 +96,7 @@ On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</guid>
-      <description>Systemd/Systemctl Journal Various   Systemd/Systemctl  systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.</description>
+      <description>Systemd/Systemctl Journal Various Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.</description>
     </item>
     <item>
       <title>Xorg</title>

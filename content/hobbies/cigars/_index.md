@@ -24,6 +24,8 @@ I am not a huge fan nor a conneisseur. But love to identify the different flavou
 
 ## Cigars flavours
 
+![Cigar Flavors Wheel](cigar-flavors-wheel.webp)
+
 Credit to [Cigar Inspector](https://www.cigarinspector.com/cigars-101/cigar-flavor-components).
 
 ### Plants

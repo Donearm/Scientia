@@ -11,7 +11,7 @@
       <link>https://donearm.github.io/Personal-Wiki/languages/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/languages/python/</guid>
-      <description>Generic features and syntax Decorators Metaclasses Set operations Modules   Generic features and syntax  class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
+      <description>Generic features and syntax Decorators Metaclasses Set operations Modules Generic features and syntax class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
     </item>
   </channel>
 </rss>
