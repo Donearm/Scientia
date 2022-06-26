@@ -27,3 +27,4 @@ weight: 1120
 * **1999**: Gardens of the Moon, first book of the Malazan Book of the Fallen, is published. It had already been completed around 1991-1992 though.
 * **2000**: Perdido Street Station is published.
 * **2004-2006**: The first trilogy (The Prince of Nothing) of Scott Bakker's Second Apocalypse series is published.
+* **2009-2017**: The second trilogy (The Aspect-Emperor) of Scott Bakker's Second Apocalypse series is published.
