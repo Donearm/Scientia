@@ -7,7 +7,7 @@
     <meta name="generator" content="Relearn 4.0.5&#43;tip">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>Mutt - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>Art History - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <link href="/Personal-Wiki/css/nucleus.css?1656257506" rel="stylesheet">
     <link href="/Personal-Wiki/css/fontawesome-all.min.css?1656257506" rel="stylesheet">
@@ -37,50 +37,28 @@
     </script>
     <script src="/Personal-Wiki/js/jquery.min.js?1656257506"></script>
   </head>
-  <body class="mobile-support" data-url="/Personal-Wiki/programs/mutt/">
+  <body class="mobile-support" data-url="/Personal-Wiki/history/art_history/">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <a class="nav nav-next" href="/Personal-Wiki/programs/rtorrent/" title="Rtorrent (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+             <a class="nav nav-next" href="/Personal-Wiki/history/military_history/" title="Military History (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-             <a class="nav nav-prev" href="/Personal-Wiki/programs/mplayer/" title="MPlayer (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+             <a class="nav nav-prev" href="/Personal-Wiki/history/" title="History (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+m)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <meta itemprop="itemListOrder" content="Descending" />
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="3" /><a itemprop="item" href="/Personal-Wiki/"><span itemprop="name">Gianluca Fiore Personal Wiki</span></a> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="2" /><a itemprop="item" href="/Personal-Wiki/programs/"><span itemprop="name">Programs</span></a> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="1" /><a itemprop="item" href="/Personal-Wiki/programs/mutt/" aria-disabled="true"><span itemprop="name">Mutt</span></a></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="2" /><a itemprop="item" href="/Personal-Wiki/history/"><span itemprop="name">History</span></a> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="1" /><a itemprop="item" href="/Personal-Wiki/history/art_history/" aria-disabled="true"><span itemprop="name">Art History</span></a></li>
             </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#general-commands">General Commands</a></li>
-    <li><a href="#keybindings">Keybindings</a>
-      <ul>
-        <li><a href="#the-message-index--browsing-through-mailbox">The Message Index  (browsing through mailbox)</a></li>
-        <li><a href="#the-pager-reading-an-email">The Pager (reading an email)</a></li>
-        <li><a href="#composer-setting-the-send-options-for-an-email">Composer (setting the send options for an email)</a></li>
-      </ul>
-    </li>
-    <li><a href="#arguments">Arguments</a></li>
-    <li><a href="#highlight-according-to-a-pattern">Highlight according to a pattern</a></li>
-    <li><a href="#tagging">Tagging</a></li>
-    <li><a href="#see-what-charset-is-being-used">See what charset is being used</a></li>
-    <li><a href="#macros">Macros</a></li>
-  </ul>
-</nav>
-            </div>
           </div>
         </div>
       </nav>
@@ -90,111 +68,13 @@
           </div>
           <article>
 
-<h1>Mutt</h1>
+<h1>Art History</h1>
 <!-- vim-markdown-toc GFM -->
 <ul>
-<li><a href="#general-commands">General Commands</a></li>
-<li><a href="#keybindings">Keybindings</a>
-<ul>
-<li><a href="#the-message-index--browsing-through-mailbox">The Message Index  (browsing through mailbox)</a></li>
-<li><a href="#the-pager-reading-an-email">The Pager (reading an email)</a></li>
-<li><a href="#composer-setting-the-send-options-for-an-email">Composer (setting the send options for an email)</a></li>
-</ul>
-</li>
-<li><a href="#arguments">Arguments</a></li>
-<li><a href="#highlight-according-to-a-pattern">Highlight according to a pattern</a></li>
+<li><a href="#islamic-art">Islamic Art</a></li>
 </ul>
 <!-- vim-markdown-toc -->
-<hr>
-<h2 id="general-commands">General Commands</h2>
-<ul>
-<li><code>q(x)</code>	= exit the current menu (abort without saving)</li>
-<li><code>^g</code>		= cancel current action</li>
-<li><code>?</code>		= list all keybindings for the current menu</li>
-</ul>
-<h2 id="keybindings">Keybindings</h2>
-<h3 id="the-message-index--browsing-through-mailbox">The Message Index  (browsing through mailbox)</h3>
-<ul>
-<li><code>m</code>		= compose a new message</li>
-<li><code>d(D)</code>	= delete the current message (matching a pattern)</li>
-<li><code>u(U)</code>	= undelete-message (matching a pattern)</li>
-<li><code>C(ALT C)</code> = copy the current message to another mailbox (decode first)</li>
-<li><code>s(ALT s)</code> = save-message (decode first)</li>
-<li><code>r(g)  (L)</code> = reply to sender (all recipients) (reply to mailing list)</li>
-<li><code>f(b)</code>	= forward message (bounce)</li>
-<li><code>/(ALT /)</code> = search  (search-reverse)</li>
-<li><code>c</code>		= change to a different mailbox/folder</li>
-<li><code>F(N)</code>	= mark as important (new)</li>
-<li><code>l</code>		= show messages matching a pattern</li>
-<li><code>o(O)</code>	= change the current sort method (reverse sort)</li>
-<li><code>t(ALT t)</code> = toggle the tag on a message (entire message thread)</li>
-<li><code>T(^t)</code>	= tag messages matching a pattern (untag)</li>
-<li><code>v</code>		= view-attachments</li>
-<li><code>&lt;Return&gt;</code> = display-message</li>
-<li><code>&lt;Tab&gt;</code>	= jump to the next new message</li>
-<li><code>@</code>		= show the author&rsquo;s full e-mail address</li>
-<li><code>$</code>		= save changes to mailbox</li>
-<li><code>^l</code>		= clear and redraw the screen</li>
-<li><code>ALT k</code>	= mail a PGP public key to someone</li>
-</ul>
-<h3 id="the-pager-reading-an-email">The Pager (reading an email)</h3>
-<ul>
-<li><code>&lt;Return&gt;</code>  = go down one line</li>
-<li><code>&lt;Space&gt;(-)</code> = display the next page/message (previous)</li>
-<li><code>^($)</code>	= jump to the top (bottom) of the message</li>
-<li><code>/(ALT /) (n)</code> = search for a regular expression (search backwards) (next match)</li>
-<li><code>\</code>		= toggle search pattern coloring</li>
-<li><code>S(T)</code>	= skip beyond quoted text (toggle display of quoted text)</li>
-</ul>
-<h3 id="composer-setting-the-send-options-for-an-email">Composer (setting the send options for an email)</h3>
-<ul>
-<li><code>y(P)(w)</code> = send the message  (postpone)  (write to folder)</li>
-<li><code>i</code>		= check spelling, if available</li>
-<li><code>a(A)(D)</code> = attach a file  (attach message)  (detach)</li>
-<li><code>d</code>	= edit description on attachment</li>
-<li><code>t(ALT f)</code> = edit the To field (From field)</li>
-<li><code>c(b)</code>	= edit the Cc field (Bcc field)</li>
-<li><code>s</code>	= edit the Subject</li>
-<li><code>r</code>	= edit the Reply-To field</li>
-<li><code>p</code>	= select PGP options</li>
-<li><code>ALT k</code> = attach a PGP public key</li>
-<li><code>^f</code> = wipe PGP passphrase from memory</li>
-<li><code>f</code>	= specify an &lsquo;Fcc&rsquo; mailbox i.e. sent folder</li>
-</ul>
-<p><code>^g</code> means CTRL and the g key. <code>ALT f</code> means ALT and the f key.							
-If you do not have an ALT key then use ESC then key. Do not type the brackets.</p>
-<h2 id="arguments">Arguments</h2>
-<ul>
-<li><code>-H file</code> = Use a file as a model for a new message, taking both headers and body. Very useful for sending patches generated with <code>git format-patch</code></li>
-</ul>
-<h2 id="highlight-according-to-a-pattern">Highlight according to a pattern</h2>
-<p>You can play with these for a start (probably want to get rid of
-<code>~x \@</code>`<code>hostname</code>` stuff):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~F</span>
-</span></span></code></pre></div><p>Flagged as !  color index cyan default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"> <span class="na">~Q   (~Q ~x \@`hostname`)</span>
-</span></span></code></pre></div><p>Replied to  color index yellow default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~p   (~p ~x \@`hostname`)   (~x \@`hostname`)</span>
-</span></span></code></pre></div><p>Answers to my mails  color index magenta default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~P   (~P ~x \@`hostname`)</span>
-</span></span></code></pre></div><p>Answered by myself  color index green default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">~N (~P ~p ~Q ~x \@`hostname`)</span>
-</span></span></code></pre></div><p>New concerning myself  color index red default</p>
-<h2 id="tagging">Tagging</h2>
-<p>TagPatterns</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~m 1-700</span>
-</span></span></code></pre></div><p>to mark messages from 1 to 700</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~d 01/1/2006-24/2/2006</span>
-</span></span></code></pre></div><p>to mark messages in that time span</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">T ~d &gt;1d</span>
-</span></span></code></pre></div><p>to mark messages older than 1 day (use <code>d</code> for days, <code>w</code> for weeks, <code>m</code> for months and <code>y</code> for years)</p>
-<h2 id="see-what-charset-is-being-used">See what charset is being used</h2>
-<p>In mutt, type <code>:set &amp;charset ?charset</code></p>
-<h2 id="macros">Macros</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">macro index,pager d &#34;&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&lt;enter&gt;&#34; &#34;Trash&#34;</span>
-</span></span></code></pre></div><p>Move message in &ldquo;MAILBOX&rdquo;, which should correspond to the trash one of the inbox. For GMail it would be &ldquo;[Gmail]/Trash&rdquo;</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">macro index A &#34;WNK&lt;save-message&gt;</span><span class="o">=</span><span class="s">MAILBOX&lt;enter&gt;&#34; &#34;Archive&#34;</span>
-</span></span></code></pre></div><p>Archive a message, marking it as read and moving to a generic inbox (for GMail it will be &ldquo;[Gmail]/All Mail)</p>
+<h1 id="islamic-art">Islamic Art</h1>
 
             <footer class="footline">
             </footer>
@@ -264,7 +144,7 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.</
           <li data-nav-id="/Personal-Wiki/operating_systems/linux/x/" title="Xorg" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/x/">Xorg</a></li></ul></li>
           <li data-nav-id="/Personal-Wiki/operating_systems/nixos/nixos_commands/" title="NixOS" class="dd-item"><a href="/Personal-Wiki/operating_systems/nixos/nixos_commands/">NixOS</a></li>
           <li data-nav-id="/Personal-Wiki/operating_systems/windows/windows_commands/" title="Windows Commands" class="dd-item"><a href="/Personal-Wiki/operating_systems/windows/windows_commands/">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Personal-Wiki/programs/" title="Programs" class="dd-item parent"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" class="toggle" checked/><label for="section-5e3ad4673f47319cd86a754082834f00" ></label><a href="/Personal-Wiki/programs/">Programs</a><ul>
+          <li data-nav-id="/Personal-Wiki/programs/" title="Programs" class="dd-item"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" class="toggle"/><label for="section-5e3ad4673f47319cd86a754082834f00" ></label><a href="/Personal-Wiki/programs/">Programs</a><ul>
           <li data-nav-id="/Personal-Wiki/programs/chromium/" title="Chromium" class="dd-item"><a href="/Personal-Wiki/programs/chromium/">Chromium</a></li>
           <li data-nav-id="/Personal-Wiki/programs/curl/" title="Curl" class="dd-item"><a href="/Personal-Wiki/programs/curl/">Curl</a></li>
           <li data-nav-id="/Personal-Wiki/programs/emacs/" title="Emacs" class="dd-item"><a href="/Personal-Wiki/programs/emacs/">Emacs</a></li>
@@ -280,7 +160,7 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.</
           <li data-nav-id="/Personal-Wiki/programs/httrack/" title="HTTrack" class="dd-item"><a href="/Personal-Wiki/programs/httrack/">HTTrack</a></li>
           <li data-nav-id="/Personal-Wiki/programs/imagemagick-convert/" title="Imagemagick Convert" class="dd-item"><a href="/Personal-Wiki/programs/imagemagick-convert/">Imagemagick Convert</a></li>
           <li data-nav-id="/Personal-Wiki/programs/mplayer/" title="MPlayer" class="dd-item"><a href="/Personal-Wiki/programs/mplayer/">MPlayer</a></li>
-          <li data-nav-id="/Personal-Wiki/programs/mutt/" title="Mutt" class="dd-item active"><a href="/Personal-Wiki/programs/mutt/">Mutt</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/mutt/" title="Mutt" class="dd-item"><a href="/Personal-Wiki/programs/mutt/">Mutt</a></li>
           <li data-nav-id="/Personal-Wiki/programs/rtorrent/" title="Rtorrent" class="dd-item"><a href="/Personal-Wiki/programs/rtorrent/">Rtorrent</a></li>
           <li data-nav-id="/Personal-Wiki/programs/screen/" title="Screen" class="dd-item"><a href="/Personal-Wiki/programs/screen/">Screen</a></li>
           <li data-nav-id="/Personal-Wiki/programs/ssh/" title="Ssh" class="dd-item"><a href="/Personal-Wiki/programs/ssh/">Ssh</a></li>
@@ -314,8 +194,8 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.</
           <li data-nav-id="/Personal-Wiki/travels/caribbeans/" title="Caribbeans" class="dd-item"><a href="/Personal-Wiki/travels/caribbeans/">Caribbeans</a></li>
           <li data-nav-id="/Personal-Wiki/travels/french_polynesia/" title="French Polynesia" class="dd-item"><a href="/Personal-Wiki/travels/french_polynesia/">French Polynesia</a></li>
           <li data-nav-id="/Personal-Wiki/travels/places_to_visit/" title="Places to Visit" class="dd-item"><a href="/Personal-Wiki/travels/places_to_visit/">Places to Visit</a></li></ul></li>
-          <li data-nav-id="/Personal-Wiki/history/" title="History" class="dd-item"><input type="checkbox" id="section-28afe07b1f43a9e9c0c12d4859c39ee9" class="toggle"/><label for="section-28afe07b1f43a9e9c0c12d4859c39ee9" ></label><a href="/Personal-Wiki/history/">History</a><ul>
-          <li data-nav-id="/Personal-Wiki/history/art_history/" title="Art History" class="dd-item"><a href="/Personal-Wiki/history/art_history/">Art History</a></li>
+          <li data-nav-id="/Personal-Wiki/history/" title="History" class="dd-item parent"><input type="checkbox" id="section-28afe07b1f43a9e9c0c12d4859c39ee9" class="toggle" checked/><label for="section-28afe07b1f43a9e9c0c12d4859c39ee9" ></label><a href="/Personal-Wiki/history/">History</a><ul>
+          <li data-nav-id="/Personal-Wiki/history/art_history/" title="Art History" class="dd-item active"><a href="/Personal-Wiki/history/art_history/">Art History</a></li>
           <li data-nav-id="/Personal-Wiki/history/military_history/" title="Military History" class="dd-item"><a href="/Personal-Wiki/history/military_history/">Military History</a></li>
           <li data-nav-id="/Personal-Wiki/history/sumeria/" title="Sumeria" class="dd-item"><a href="/Personal-Wiki/history/sumeria/">Sumeria</a></li></ul></li>
           <li data-nav-id="/Personal-Wiki/hobbies/" title="Hobbies" class="dd-item"><input type="checkbox" id="section-1fbb774d475b742078ae8ed457b37bc6" class="toggle"/><label for="section-1fbb774d475b742078ae8ed457b37bc6" ></label><a href="/Personal-Wiki/hobbies/">Hobbies</a><ul>
