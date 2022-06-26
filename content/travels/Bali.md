@@ -28,6 +28,7 @@ weight: 903
 	* [Other islands](#other-islands)
 * [Getting around Bali](#getting-around-bali)
 	* [Prices](#prices)
+* [Prices](#prices-1)
 
 <!-- vim-markdown-toc -->
 
@@ -242,3 +243,13 @@ These are taxi prices and are an approximation. Updated as of summer 2022.
 
 * Ubud to Sanur = 100-125k IDR
 * Airport to main touristic areas of Bali = 200-300k IDR
+
+## Prices
+
+_Updated as of mid 2022_
+
+A sim card from Telkomsel prepaid should cost 100000IDR with 25Gb of data and 
+5G speed. [Prepaid card](https://www.telkomsel.com/en/perdana/tourist-prepaid-card) can also be 
+ordered online and picked up when in Bali.
+
+Renting a driver for the day should cost about 500000IDR for 12 hours.
