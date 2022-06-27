@@ -27,6 +27,10 @@ weight: 1210
 	* [Clickhelp](#clickhelp)
 	* [HelnNDoc](#helnndoc)
 	* [Markdoc](#markdoc)
+	* [Author-it](#author-it)
+	* [Astoria](#astoria)
+	* [Ovitas](#ovitas)
+	* [Document360](#document360)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 
@@ -172,6 +176,26 @@ use](https://www.helpndoc.com/), but only for Windows.
 
 A content authoring [tool](https://markdoc.io) based off pure markdown files. 
 It powers the praised Stripe documentation.
+
+### Author-it
+
+An online content authoring [cms](https://www.author-it.com/home) built for 
+eLearning courses and technical documentation.
+
+### Astoria
+
+A DITA XML-based [tool](https://www.astoriasoftware.com/) for content 
+management.
+
+### Ovitas
+
+A range of [solutions](https://www.ovitas.com/products/) for document 
+management, publishing, and automation.
+
+### Document360
+
+A [software](https://document360.com/) for building knowledge base and online 
+help documentation but not strictly limited to those.
 
 ## Good practices and procedures
 
