@@ -257,4 +257,7 @@ A sim card from Telkomsel prepaid should cost 100000IDR with 25Gb of data and
 5G speed. [Prepaid card](https://www.telkomsel.com/en/perdana/tourist-prepaid-card) can also be 
 ordered online and picked up when in Bali.
 
-Renting a driver for the day should cost about 500000IDR for 12 hours.
+Renting a driver for the day should cost about 500kIDR for 12 hours.
+
+A speed boat + shuttle bus from one of the Gili islands to Bali and then to 
+Ubud should cost between 450kIDR and 600kIDR per person.
