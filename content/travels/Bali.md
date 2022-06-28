@@ -185,6 +185,11 @@ the cheapest in terms of accomodations.
 
 Gili Air, the easternmost one, is the laid-back one.
 
+Snorkeling on all the Gilis can be done from the beach, no particular need of 
+booking a tour. Usually the west side of each island has the strongest currents 
+while the east the weakest. On Gili Air, right on the east cost, turtles can be 
+spotted.
+
 #### Transportation to Gili islands
 
 From Bali, regular ferries leave from Sanur, Serangan and Padang Bai. The 
