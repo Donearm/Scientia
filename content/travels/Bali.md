@@ -22,6 +22,7 @@ weight: 903
 * [Excursions from Bali](#excursions-from-bali)
 	* [Nusa Penida and Nusa Lembongan](#nusa-penida-and-nusa-lembongan)
 		* [Transportation to Nusa Penida and Nusa Lembogan](#transportation-to-nusa-penida-and-nusa-lembogan)
+		* [Tours to Nusa Penida and Nusa Lembogan](#tours-to-nusa-penida-and-nusa-lembogan)
 	* [Gili islands](#gili-islands)
 		* [Transportation to Gili islands](#transportation-to-gili-islands)
 	* [Labuan Bajo and Komodo](#labuan-bajo-and-komodo)
@@ -172,6 +173,18 @@ cheaper. Otherwise, the usual speed boats are available.
 Some companies doing these routes are:
 
 * [Maruti Group](https://marutigroupfastboat.com/)
+
+#### Tours to Nusa Penida and Nusa Lembogan
+
+A lot of tours have early pick-up times (6-7am). Private tours are flexible in 
+this regard.
+
+* [Private tour + snorkeling](https://www.tripadvisor.com/AttractionProductReview-g297694-d15695752-Nusa_Penida_Island_Beach_Tour_With_Snorkeling_Departure_From_Bali_Island-Denpasar_.html)
+	* Private and full day with snorkeling
+* [Snorkeling Adventure](https://www.tripadvisor.com/AttractionProductReview-g297694-d15682075-Nusa_Penida_Snorkeling_Adventure_Private_All_Inclusive-Denpasar_Bali.html)
+	* Private and full day with snorkeling
+* [Kadek Nusa Penida Private Tour](https://www.tripadvisor.com/AttractionProductReview-g469404-d15767166-Kadek_Nusa_Penida_Private_Guided_Tour_Free_WiFi-Seminyak_Kuta_District_Bali.html)
+	* Private and short, without snorkeling
 
 ### Gili islands
 
