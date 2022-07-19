@@ -27,9 +27,11 @@ weight: 903
 		* [Transportation to Gili islands](#transportation-to-gili-islands)
 	* [Labuan Bajo and Komodo](#labuan-bajo-and-komodo)
 	* [Other islands](#other-islands)
+		* [Komodo Island and Park](#komodo-island-and-park)
 * [Getting around Bali](#getting-around-bali)
 	* [Prices](#prices)
 * [Prices](#prices-1)
+* [Things to do and try](#things-to-do-and-try)
 
 <!-- vim-markdown-toc -->
 
@@ -154,6 +156,8 @@ weight: 903
 * Monkey Forest (temples and monkeys, in Ubud)
 * Kelingking Beach (beach down spectacular cliffs, on southern coast of Nusa
   Penida)
+* Suluban Beach (little cove among cliffs to visit during low tide in the 
+  morning, near Uluwatu)
 
 ## Excursions from Bali
 
@@ -235,6 +239,11 @@ do on these islands, being just a resort on an otherwise uninhabited island.
   developed at all. There's a coral reef, plenty of beaches, and an atmosphere 
   of a quiet, tropical island.
 
+#### Komodo Island and Park
+
+[Bintang Komodo Tours](https://bintangkomodotours.com/) organizes tours to 
+Komodo and around Flores from Bali.
+
 ## Getting around Bali
 
 [Perama](https://www.peramatour.com/en/) offer modern buses that act as
@@ -274,3 +283,8 @@ Renting a driver for the day should cost about 500kIDR for 12 hours.
 
 A speed boat + shuttle bus from one of the Gili islands to Bali and then to 
 Ubud should cost between 450kIDR and 600kIDR per person.
+
+## Things to do and try
+
+* Try Martabak dessert.
+* Watch Kecak Dance at Uluwatu temple.
