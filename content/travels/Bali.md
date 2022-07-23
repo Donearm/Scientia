@@ -233,6 +233,8 @@ A couple of small islands, remote, have great beaches and water:
 Both can be reached by renting a boat from Labuan Bajo port. There's nothing to 
 do on these islands, being just a resort on an otherwise uninhabited island.
 
+A [list of officially accredited tour operators in Labuan Bajo](https://registration.labuanbajoflores.id/export/list-ta-to) is available.
+
 ### Other islands
 
 * Gili Layar is on the south-west of Lombok coast. It is quite remote and not 
