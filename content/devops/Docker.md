@@ -65,6 +65,7 @@ bookCollapseSection: true
 
 + `docker system events --since '2h'` = show all events related to the local Docker daemon, that happened in the last 2 hours
 + `docker system events --filter type=volume --since '2h'` = as above but filters for events related to volumes only
++ `docker cp localfile <containername>:/path/inside/the/container/to/file` = copy a local file to inside an existing container.
 
 # Docker-compose
 
