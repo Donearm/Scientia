@@ -16,6 +16,9 @@ weight: 910
 		* [Maltese best beaches](#maltese-best-beaches)
 	* [Portugal](#portugal)
 		* [Portugal beaches](#portugal-beaches)
+	* [Sweden](#sweden)
+		* [Stockholm](#stockholm)
+			* [Various costs (updated as of 2021)](#various-costs-updated-as-of-2021)
 * [Africa](#africa)
 	* [Egypt](#egypt)
 * [Americas](#americas)
@@ -105,6 +108,20 @@ weight: 910
 * Praia da Marinha - east of Portimao
 * Praia de Alvor - south of Alvor, just west of Portimao
 * Praia do Martinhal - east of Sagres
+
+## Sweden
+
+### Stockholm
+
+#### Various costs (updated as of 2021)
+
+* Bus from airport = 99SEK one way
+* Suburban train from airport = 158SEK one way
+
+* Public transportation tickets
+	* One ride (75min) - 39SEK
+	* Travel Card (24hrs) - 165SEK
+	* Travel Card (72hrs) - 330SEK
 
 # Africa
 
