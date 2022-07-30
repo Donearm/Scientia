@@ -235,6 +235,15 @@ do on these islands, being just a resort on an otherwise uninhabited island.
 
 A [list of officially accredited tour operators in Labuan Bajo](https://registration.labuanbajoflores.id/export/list-ta-to) is available.
 
+Some well-reputed operators are:
+
+* [Labuanbajoku](https://labuanbajoku.com/)
+* [Manumadi](https://manumadi.com/)
+* [Indonesia Viaggi](https://www.indonesiaviaggi.net/)
+* [Your Flores](https://yourflores.com/)
+* [Antavaya](https://www.antavaya.com/)
+* [Long Lasting Trip](https://longlastingtrip.com)
+
 ### Other islands
 
 * Gili Layar is on the south-west of Lombok coast. It is quite remote and not 
