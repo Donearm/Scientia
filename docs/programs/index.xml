@@ -111,6 +111,13 @@ Change the start button run gconf-editor navigate to /app/panel/objects find a o
       <description>Create an animated gif Tweak brightness and contrast Change main colour of an icon Various Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine.</description>
     </item>
     <item>
+      <title>Kitty</title>
+      <link>https://donearm.github.io/Personal-Wiki/programs/kitty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/programs/kitty/</guid>
+      <description> Various keybindings Various keybindings Ctrl+Shift+u = opens a terminal that allow to search by name or hexcode any Unicode character </description>
+    </item>
+    <item>
       <title>MPlayer</title>
       <link>https://donearm.github.io/Personal-Wiki/programs/mplayer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

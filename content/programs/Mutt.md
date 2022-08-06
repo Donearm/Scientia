@@ -1,7 +1,7 @@
 ---
 title: Mutt
 bookCollapseSection: true
-weight: 625
+weight: 626
 ---
 <!-- vim-markdown-toc GFM -->
 

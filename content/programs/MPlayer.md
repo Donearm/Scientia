@@ -1,7 +1,7 @@
 ---
 title: MPlayer
 bookCollapseSection: true
-weight: 624
+weight: 625
 ---
 
 Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.

@@ -1,7 +1,7 @@
 ---
 title: ViM
 bookCollapseSection: true
-weight: 632
+weight: 633
 ---
 <!-- vim-markdown-toc GFM -->
 
