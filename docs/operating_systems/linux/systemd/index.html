@@ -9,17 +9,17 @@
     <meta name="author" content="Gianluca Fiore">
     <title>SystemD - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
-    <link href="/Personal-Wiki/css/nucleus.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/featherlight.min.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/auto-complete.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/theme.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/theme-fpc.css?1659811696" rel="stylesheet" id="variant-style">
-    <link href="/Personal-Wiki/css/ie.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/variant.css?1659811696" rel="stylesheet">
-    <link href="/Personal-Wiki/css/print.css?1659811696" rel="stylesheet" media="print">
-    <script src="/Personal-Wiki/js/variant.js?1659811696"></script>
+    <link href="/Personal-Wiki/css/nucleus.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/featherlight.min.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/auto-complete.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme-fpc.css?1660648753" rel="stylesheet" id="variant-style">
+    <link href="/Personal-Wiki/css/ie.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/variant.css?1660648753" rel="stylesheet">
+    <link href="/Personal-Wiki/css/print.css?1660648753" rel="stylesheet" media="print">
+    <script src="/Personal-Wiki/js/variant.js?1660648753"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,7 +35,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Personal-Wiki/';
       variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Personal-Wiki/js/jquery.min.js?1659811696"></script>
+    <script src="/Personal-Wiki/js/jquery.min.js?1660648753"></script>
   </head>
   <body class="mobile-support" data-url="/Personal-Wiki/operating_systems/linux/systemd/">
     <div id="body" class="default-animation">
@@ -71,6 +71,7 @@
         <li><a href="#systemdsystemctl">Systemd/Systemctl</a></li>
         <li><a href="#journal">Journal</a></li>
         <li><a href="#various">Various</a></li>
+        <li><a href="#timers">Timers</a></li>
       </ul>
     </li>
   </ul>
@@ -86,11 +87,14 @@
           <article>
 
 <h1>SystemD</h1>
+<!-- vim-markdown-toc GFM -->
 <ul>
-<li><a href="#systemd-systemctl">Systemd/Systemctl</a></li>
+<li><a href="#systemdsystemctl">Systemd/Systemctl</a></li>
 <li><a href="#journal">Journal</a></li>
 <li><a href="#various">Various</a></li>
+<li><a href="#timers">Timers</a></li>
 </ul>
+<!-- vim-markdown-toc -->
 <hr>
 <h3 id="systemdsystemctl">Systemd/Systemctl</h3>
 <ul>
@@ -99,7 +103,6 @@
 <li><code>systemctl kill apache</code> = kill all processes associated with apache server</li>
 <li><code>systemctl daemon-reload</code> = reload a service configuration</li>
 <li><code>systemctl list-unit-files</code> = show a full list of installed unit along with their state</li>
-<li><code>systemctl list-timers --all</code> = show a full list of timers, enabled or not</li>
 <li><code>systemctl --failed</code> = show failed units</li>
 <li><code>systemctl isolate runlevel3.target</code> = switch to run level 3. Run level 5 is named <code>graphical.target</code></li>
 <li><code>systemctl show --property=UnitPath</code> = show all paths SystemD checks for unit files</li>
@@ -124,6 +127,11 @@
 <li><code>localectl</code> = get current locale, both on virtual console and X11</li>
 <li><code>timedatctl</code> = get info about time and timezone</li>
 </ul>
+<h3 id="timers">Timers</h3>
+<ul>
+<li><code>systemctl list-timers --all</code> = show a full list of timers, enabled or not</li>
+<li><code>systemd-analyze calendar &quot;Mon,Tue *-*-01..04 12:00:00&quot;</code> = check that the time specified in a timer unit is correct and when it will trigger the relative service</li>
+</ul>
 
             <footer class="footline">
             </footer>
@@ -145,11 +153,11 @@
         <script>
           var pageBaseLang="en";
         </script>
-        <script src="/Personal-Wiki/js/auto-complete.js?1659811696"></script>
-        <script src="/Personal-Wiki/js/lunr.min.js?1659811696"></script>
-        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1659811696"></script>
-        <script src="/Personal-Wiki/js/lunr.en.min.js?1659811696"></script>
-        <script src="/Personal-Wiki/js/search.js?1659811696"></script>
+        <script src="/Personal-Wiki/js/auto-complete.js?1660648753"></script>
+        <script src="/Personal-Wiki/js/lunr.min.js?1660648753"></script>
+        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1660648753"></script>
+        <script src="/Personal-Wiki/js/lunr.en.min.js?1660648753"></script>
+        <script src="/Personal-Wiki/js/search.js?1660648753"></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics">
@@ -312,9 +320,9 @@
         </div>
       </div>
     </aside>
-    <script src="/Personal-Wiki/js/clipboard.min.js?1659811696"></script>
-    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1659811696"></script>
-    <script src="/Personal-Wiki/js/featherlight.min.js?1659811696"></script>
-    <script src="/Personal-Wiki/js/theme.js?1659811696"></script>
+    <script src="/Personal-Wiki/js/clipboard.min.js?1660648753"></script>
+    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1660648753"></script>
+    <script src="/Personal-Wiki/js/featherlight.min.js?1660648753"></script>
+    <script src="/Personal-Wiki/js/theme.js?1660648753"></script>
   </body>
 </html>

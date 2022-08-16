@@ -96,7 +96,7 @@ On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/</guid>
-      <description>Systemd/Systemctl Journal Various Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl list-timers --all = show a full list of timers, enabled or not systemctl --failed = show failed units systemctl isolate runlevel3.</description>
+      <description>Systemd/Systemctl Journal Various Timers Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl --failed = show failed units systemctl isolate runlevel3.target = switch to run level 3.</description>
     </item>
     <item>
       <title>Xorg</title>
