@@ -186,7 +186,7 @@ this regard.
 * [Private tour + snorkeling](https://www.tripadvisor.com/AttractionProductReview-g297694-d15695752-Nusa_Penida_Island_Beach_Tour_With_Snorkeling_Departure_From_Bali_Island-Denpasar_.html)
 	* Private and full day with snorkeling
 * [Snorkeling Adventure](https://www.tripadvisor.com/AttractionProductReview-g297694-d15682075-Nusa_Penida_Snorkeling_Adventure_Private_All_Inclusive-Denpasar_Bali.html)
-	* Private and full day with snorkeling
+	* Private and full day with snorkeling. Book on [their website](https://forevervacation.com/bali-nusa-penida-snorkeling-adventure)
 * [Kadek Nusa Penida Private Tour](https://www.tripadvisor.com/AttractionProductReview-g469404-d15767166-Kadek_Nusa_Penida_Private_Guided_Tour_Free_WiFi-Seminyak_Kuta_District_Bali.html)
 	* Private and short, without snorkeling
 
