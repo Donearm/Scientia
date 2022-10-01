@@ -27,7 +27,6 @@ weight: 903
 		* [Transportation to Gili islands](#transportation-to-gili-islands)
 	* [Labuan Bajo and Komodo](#labuan-bajo-and-komodo)
 	* [Other islands](#other-islands)
-		* [Komodo Island and Park](#komodo-island-and-park)
 * [Getting around Bali](#getting-around-bali)
 	* [Prices](#prices)
 * [Prices](#prices-1)
@@ -161,7 +160,6 @@ weight: 903
 
 ## Excursions from Bali
 
-* Komodo Island = flight to Labuhanbajo on Flores. Then bus to Badjo and from there either a tour by boat or the ferry.
 * Lombok = By plane (25min) or ferry (4-5hr) from Padang Bai (east coast of Bali)
 * Bromo-Tengger-Semeru Park = from Surabaya, bus or car (60-100km)
 * Prambanan = flight to Yogyakarta and then bus (30min)
@@ -214,24 +212,34 @@ latter being the one with the most connections available. The whole trip is
 between 1,5hrs and 2,5hrs, depending on the type of ferry chosen. Some of the 
 companies offering this trip are:
 
-* [Eka Jaya](https://ekajayafastboat.com/index.html)
+* [Eka Jaya](https://ekajayafastboat.com/index.html) - fairly big boat
 * [Wahan Gili Ocean](https://wahanagiliocean.com)
 * [Scoot Fast Cruises](http://scootcruise.com/) - possibly with a stop on Lembogan on the way to the Gilis
 * Semaya One
-* [Ostina](https://www.ostinafastboat.com/)
+* [Ostina](https://www.ostinafastboat.com/) - medium boat, not often recommended
+* [Blue Water Express](https://bluewater-express.com/) - medium boat, well-reputed
 
-There is also the possibility to move between the Gili islands by private or 
-public ferry. The public one being the cheapest and can host around 30 persons.
+There is also the possibility to reach the Gili islands by public ferry. This 
+is the cheapest option, with a slow but fairly large boat (30+ persons). The 
+trip takes about 6 hours.
 
 ### Labuan Bajo and Komodo
 
-A couple of small islands, remote, have great beaches and water:
+To reach Komodo, a flight to Labuan Bajo on Flores is necessary. Then bus to 
+Badjo and from there either a tour by boat or the ferry. A proper tour of 
+Komodo island includes Padar and Pink Beach and takes a full day at least. It 
+is not currently (2022) possible to go early in the morning to Labuan Bajo, do 
+the tour, and be back on the same day on Bali.
+
+A couple of small islands near Labuan Bajo, remote, have great beaches and 
+water:
 
 * Le Pirate
 * Kanawa
 
 Both can be reached by renting a boat from Labuan Bajo port. There's nothing to 
-do on these islands, being just a resort on an otherwise uninhabited island.
+do on these islands, being both just a resort on an otherwise uninhabited 
+island.
 
 A [list of officially accredited tour operators in Labuan Bajo](https://registration.labuanbajoflores.id/export/list-ta-to) is available.
 
@@ -243,17 +251,13 @@ Some well-reputed operators are:
 * [Your Flores](https://yourflores.com/)
 * [Antavaya](https://www.antavaya.com/)
 * [Long Lasting Trip](https://longlastingtrip.com)
+* [Bintang Komodo Tours](https://bintangkomodotours.com/) organizes tours to Komodo and around Flores from Bali
 
 ### Other islands
 
 * Gili Layar is on the south-west of Lombok coast. It is quite remote and not 
   developed at all. There's a coral reef, plenty of beaches, and an atmosphere 
   of a quiet, tropical island.
-
-#### Komodo Island and Park
-
-[Bintang Komodo Tours](https://bintangkomodotours.com/) organizes tours to 
-Komodo and around Flores from Bali.
 
 ## Getting around Bali
 
