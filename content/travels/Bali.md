@@ -212,12 +212,12 @@ latter being the one with the most connections available. The whole trip is
 between 1,5hrs and 2,5hrs, depending on the type of ferry chosen. Some of the 
 companies offering this trip are:
 
-* [Eka Jaya](https://ekajayafastboat.com/index.html) - fairly big boat
+* [Eka Jaya](https://ekajayafastboat.com/index.html) - fairly big boat, leaving from Padang Bai
 * [Wahan Gili Ocean](https://wahanagiliocean.com)
-* [Scoot Fast Cruises](http://scootcruise.com/) - possibly with a stop on Lembogan on the way to the Gilis
+* [Scoot Fast Cruises](http://scootcruise.com/) - possibly with a stop on Lembogan on the way to the Gilis, leaving from Sanur
 * Semaya One
-* [Ostina](https://www.ostinafastboat.com/) - medium boat, not often recommended
-* [Blue Water Express](https://bluewater-express.com/) - medium boat, well-reputed
+* [Ostina](https://www.ostinafastboat.com/) - medium boat, leaving from Padang Bai, not often recommended
+* [Blue Water Express](https://bluewater-express.com/) - medium boat, leaving from Padang Bai, well-reputed
 
 There is also the possibility to reach the Gili islands by public ferry. This 
 is the cheapest option, with a slow but fairly large boat (30+ persons). The 
