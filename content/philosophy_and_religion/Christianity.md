@@ -37,6 +37,10 @@ weight: 1350
 	* [Second Apocalypse of James](#second-apocalypse-of-james)
 	* [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
 	* [Apocalypse of Peter](#apocalypse-of-peter)
+* [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
+* [Non-theological facts](#non-theological-facts)
+	* [Antisemitism](#antisemitism)
+	* [Other facts](#other-facts)
 
 <!-- vim-markdown-toc -->
 
@@ -358,3 +362,32 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 	* a description of people in heaven (with milky white skin, curly hair and wearing shiny clothes) and of the torments given to the sinner in hell is given.
 	* at the end of time every soul in hell will be pardoned thanks to the prayers of the souls in heaven but it is best if this remains a secret.
 	* [Integral text](http://www.earlychristianwritings.com/text/apocalypsepeter-mrjames.html).
+
+## Early Christianity Chrolonogy
+
+* 330 a.C.: neoplatonism is officially condemned
+* 336 a.C.: Arius is restored to communion after having been condemned in the 
+  previous First Sinod of Tyre (335 a.C.)
+
+## Non-theological facts
+
+### Antisemitism
+
+* Gregory of Nyssa was one of the primary theologians of the early Church. He 
+  famously cursed the Jews in a sort of prayer, in mid 4th century a.C.
+* Elvira, in south of Spain, in 306 a.C. prohibited any relationship between 
+  its citizens and Jews
+
+### Other facts
+
+* Ignatius of Antioch first used the greek word _katholikos_ to describe the 
+  Church (2nd century a.C.). He also opposed the term to "heretic", for the 
+  first time.
+  * He is also responsible for the idea of a monarchic conception of the 
+	bishops, where each christian community should be ruled by a bishop.
+* At the beginning of the 3rd century a.C. the bishop of Rome Hippolitus 
+  denounced at least 32 christian sects.
+* Porphyry was the author of a series of 15 books [Against the 
+  Christians](https://en.wikipedia.org/wiki/Against_the_Christians). No copy of 
+  any remain today, only citations from other writers. He was a neoplatonic 
+  thinker.
