@@ -44,12 +44,11 @@ weight: 903
 * Good food options
 * Casual beach
 * Mostly young tourists
-* Not excessively touristy nor commercialized (yet)
 
 ### Uluwatu
 
 * Good beaches and high cliffs over the sea
-* Quiet, generally
+* Only a couple of beaches good for swimming due to strong currents
 * Secluded
 
 ### Nusa Dua
@@ -67,6 +66,7 @@ weight: 903
 * Sacred Monkey Forest Sanctuary is right in Ubud
 * Lots of arts, temples, shows for tourists
 * Surrounded by rice fields
+* Quite humid and rainy, even outside the rainy season
 
 ### Amed
 
@@ -90,12 +90,13 @@ weight: 903
 * Shopping capital of Bali
 * Good nightlife
 * Sunset beach bars
+* Dirty beach
 
 ### Jimbaran
 
 * Chic
 * Little nightlife, quiet
-* Good beach
+* Good but dirty beach
 
 ### Munduk
 
@@ -113,14 +114,12 @@ weight: 903
 ### Kuta
 
 * Plenty of long beaches
-* Very developed
 * Surfers
 * Vibrant nightlife
-* Can get overcrowded and dirty
+* Overcrowded and dirty
 
 ## Best Bali beaches
 
-* Kuta - south coast (lively, touristic, long, many available activities)
 * Pemuteran - north-west coast (calm, sandy with some rocks, good for snorkeling)
 * Padang Padang - west side of the southern peninsula (giant rocks encompassing 
   a sandy stretch, popular spot for pictures, monkeys, touristic)
