@@ -3,7 +3,13 @@ title: Yoga
 weight: 1395
 ---
 
-Random facts
+<!-- vim-markdown-toc GFM -->
+
+* [Random Facts](#random-facts)
+
+<!-- vim-markdown-toc -->
+
+## Random Facts
 
 * Developed since the Indus civilization times
 * Codified in  sutras by Patanjali (around 1550 b.C.), with buddhistic influences
