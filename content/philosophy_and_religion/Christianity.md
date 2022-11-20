@@ -38,6 +38,7 @@ weight: 1350
 	* [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
 	* [Apocalypse of Peter](#apocalypse-of-peter)
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
+* [Theological facts](#theological-facts)
 * [Non-theological facts](#non-theological-facts)
 	* [Antisemitism](#antisemitism)
 	* [Other facts](#other-facts)
@@ -365,9 +366,24 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 
 ## Early Christianity Chrolonogy
 
+* undated: St.Paul in one of his letters first spoke of the "Old Covenant" 
+  compared to the new
 * 330 a.C.: neoplatonism is officially condemned
 * 336 a.C.: Arius is restored to communion after having been condemned in the 
   previous First Sinod of Tyre (335 a.C.)
+* 1672: Synod of Jerusalem. The Eastern Church agreed on rejecting the 
+  Protestant Reform refuting the Confession of Lucaris, that Christ is present 
+  during the Eucharist, confirmed the canonicity of Old Testament books 
+  (refuting the claim of Protestants that didn't accept them) and that the Holy 
+  Ghost proceeds from God only, not from both Father and Son
+
+## Theological facts
+
+* Only John's Apocalypse is supposed to be dictated by God directly. None of 
+  the other biblical texts claim so.
+* [Justyn Martyr](https://en.wikipedia.org/wiki/Justin_Martyr), 100-165 a.C., 
+  did not consider the Gospels as canon but only as a sort of "memorable facts" 
+  about the life of Christ
 
 ## Non-theological facts
 

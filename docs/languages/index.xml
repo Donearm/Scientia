@@ -1,93 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Languages on Gianluca Fiore Personal Wiki</title>
-    <link>https://donearm.github.io/Personal-Wiki/languages/</link>
-    <description>Recent content in Languages on Gianluca Fiore Personal Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/languages/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Awk</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/awk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/awk/</guid>
-      <description>Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2 Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;</description>
-    </item>
-    <item>
-      <title>Bash</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/bash/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/bash/</guid>
-      <description>Functions Commands Scripts Syntax Functions namename prints the basename without extension
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Languages on Gianluca Fiore Personal Wiki</title><link>https://donearm.github.io/Personal-Wiki/languages/</link><description>Recent content in Languages on Gianluca Fiore Personal Wiki</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/languages/index.xml" rel="self" type="application/rss+xml"/><item><title>Awk</title><link>https://donearm.github.io/Personal-Wiki/languages/awk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/awk/</guid><description>Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2 Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk '{print $2}'</description></item><item><title>Bash</title><link>https://donearm.github.io/Personal-Wiki/languages/bash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/bash/</guid><description>Functions Commands Scripts Syntax Functions namename prints the basename without extension
 ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;
-function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; echo &amp;#34;${name0:-$name}&amp;#34; } function ext() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; local ext=${name0:+${name#$name0}} echo &amp;#34;${ext:-.}&amp;#34; } Commands CTRL Key Bound Ctrl + _ = undo Ctrl + @ = set mark Ctrl + a = Jump to the start of the line Ctrl + b = Move back a char Ctrl + c = Terminate the command Ctrl + d = Delete character under the cursor Ctrl + e = Jump to the end of the line Ctrl + f = Move forward a char Ctrl + k = Delete from cursor to EOL Ctrl + l = Clear the screen Ctrl + n = select the next command in history Ctrl + p = select the previous command in history Ctrl + r = Search the history backwards Ctrl + R = Search the history backwards with multi occurrence Ctrl + t = drag character before cursor over the one under the cursor Ctrl + u = Delete backward from cursor Ctrl + v = Insert next character verbatim Ctrl + w = kill word before cursor Ctrl + x = kill backward to the beginning of line Ctrl + xx = Move between EOL and current cursor position Ctrl + x @ = Show possible hostname completions Ctrl + y = paste the text at top of the kill#ring Ctrl + z = Suspend/ Stop the command ALT Key Bound Alt + &#39;&#39;&amp;lt;&#39;&#39; = Move to the first line in the history Alt + &#39;&#39;&amp;gt;&#39;&#39; = Move to the last line in the history Alt + ?</description>
-    </item>
-    <item>
-      <title>C</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/c/</guid>
-      <description>Gcc gcc -dM -E - &amp;lt;/dev/null = Print all the default macros </description>
-    </item>
-    <item>
-      <title>Common Lisp</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</guid>
-      <description>Syntax and various functions (format t &amp;#34;hello&amp;#34;) print to stdout (t) the string
+function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; echo &amp;#34;${name0:-$name}&amp;#34; } function ext() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; local ext=${name0:+${name#$name0}} echo &amp;#34;${ext:-.}&amp;#34; } Commands CTRL Key Bound Ctrl + _ = undo Ctrl + @ = set mark Ctrl + a = Jump to the start of the line Ctrl + b = Move back a char Ctrl + c = Terminate the command Ctrl + d = Delete character under the cursor Ctrl + e = Jump to the end of the line Ctrl + f = Move forward a char Ctrl + k = Delete from cursor to EOL Ctrl + l = Clear the screen Ctrl + n = select the next command in history Ctrl + p = select the previous command in history Ctrl + r = Search the history backwards Ctrl + R = Search the history backwards with multi occurrence Ctrl + t = drag character before cursor over the one under the cursor Ctrl + u = Delete backward from cursor Ctrl + v = Insert next character verbatim Ctrl + w = kill word before cursor Ctrl + x = kill backward to the beginning of line Ctrl + xx = Move between EOL and current cursor position Ctrl + x @ = Show possible hostname completions Ctrl + y = paste the text at top of the kill#ring Ctrl + z = Suspend/ Stop the command ALT Key Bound Alt + ''&amp;lt;'' = Move to the first line in the history Alt + ''&amp;gt;'' = Move to the last line in the history Alt + ?</description></item><item><title>C</title><link>https://donearm.github.io/Personal-Wiki/languages/c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/c/</guid><description>Gcc gcc -dM -E - &amp;lt;/dev/null = Print all the default macros</description></item><item><title>Common Lisp</title><link>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/common_lisp/</guid><description>Syntax and various functions (format t &amp;#34;hello&amp;#34;) print to stdout (t) the string
 (list :a 1 :b 2 :c 3) make an indexed list (plist)
 getf (list :a 1 :b 2) :a) returns the value of :a
 (defvar var value) define var with given value
 (parse-integer str) converts the string str in an integer (if possible)
-(y-or-n-p string) make a yes/no prompt with string and waits the user input (basically until he press y or n)</description>
-    </item>
-    <item>
-      <title>Go</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/go/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/go/</guid>
-      <description>Commands go list all = List all installed packages, standard library&amp;rsquo;s included go list std = List only packages from the standard library go test -bench=. = Run benchmarks after the tests. . stands for current directory, obviously go env = List all Go variables Go Modules go mod init = creates a new module by initializing the go.mod file go list -m all = prints the current module&amp;rsquo;s dependencies go mod tidy = removes unused dependencies Test Coverage go test -cover = prints the percentage of coverage of your unit tests go test -cover -coverprofile=c.</description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/javascript/</guid>
-      <description>Asm.js Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM
-Gwt = compiler from Java to JS Emscripten and Mandreel = compilers from C++ to JS </description>
-    </item>
-    <item>
-      <title>Lua</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/lua/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/lua/</guid>
-      <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
-Coroutines coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.</description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/python/</guid>
-      <description>Generic features and syntax Decorators Metaclasses Set operations Modules Generic features and syntax class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
-    </item>
-    <item>
-      <title>Sed</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/sed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/sed/</guid>
-      <description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &amp;#39;s/$oldstring/$newstring/g&amp;#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
-Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
-    </item>
-    <item>
-      <title>Zsh</title>
-      <link>https://donearm.github.io/Personal-Wiki/languages/zsh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/languages/zsh/</guid>
-      <description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
+(y-or-n-p string) make a yes/no prompt with string and waits the user input (basically until he press y or n)</description></item><item><title>Go</title><link>https://donearm.github.io/Personal-Wiki/languages/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/go/</guid><description>Commands go list all = List all installed packages, standard library&amp;rsquo;s included go list std = List only packages from the standard library go test -bench=. = Run benchmarks after the tests. . stands for current directory, obviously go env = List all Go variables Go Modules go mod init = creates a new module by initializing the go.mod file go list -m all = prints the current module&amp;rsquo;s dependencies go mod tidy = removes unused dependencies Test Coverage go test -cover = prints the percentage of coverage of your unit tests go test -cover -coverprofile=c.</description></item><item><title>Javascript</title><link>https://donearm.github.io/Personal-Wiki/languages/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/javascript/</guid><description>Asm.js Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM
+Gwt = compiler from Java to JS Emscripten and Mandreel = compilers from C++ to JS</description></item><item><title>Lua</title><link>https://donearm.github.io/Personal-Wiki/languages/lua/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/lua/</guid><description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
+Coroutines coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.</description></item><item><title>Python</title><link>https://donearm.github.io/Personal-Wiki/languages/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/python/</guid><description>Generic features and syntax Decorators Metaclasses Set operations Modules Generic features and syntax class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description></item><item><title>Sed</title><link>https://donearm.github.io/Personal-Wiki/languages/sed/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/sed/</guid><description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &amp;#39;s/$oldstring/$newstring/g&amp;#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
+Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first 's/pattern/&amp;amp;/w file' &amp;lt; inputfile = Save pattern from inputfile in file.</description></item><item><title>Zsh</title><link>https://donearm.github.io/Personal-Wiki/languages/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/languages/zsh/</guid><description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
 for x (1 2 3); do echo $x; done or like this:
 for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext The :r tells the shell to automatically strip the extension, period included</description>
-    </item>
-  </channel>
-</rss>
+${i:r}.newext The :r tells the shell to automatically strip the extension, period included</description></item></channel></rss>
