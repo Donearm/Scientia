@@ -3,7 +3,7 @@ baseURL = "https://donearm.github.io/Personal-Wiki/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "Gianluca Fiore Personal Wiki"
-theme = "hugo-theme-relearn"
+theme = "hugo-theme-relearn-5.6.5"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
