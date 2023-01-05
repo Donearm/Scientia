@@ -14,6 +14,7 @@ weight: 847
 * [Common metrics](#common-metrics)
 * [Engagement metrics](#engagement-metrics)
 * [Google Analytics](#google-analytics)
+* [ChatGPT](#chatgpt)
 
 <!-- vim-markdown-toc -->
 
@@ -169,3 +170,23 @@ Create ranking reports for each of the following:
 
 * [Reference for all Metrics & Dimensions](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
 * [Google Analytics Sheets Addons manual](https://developers.google.com/analytics/solutions/google-analytics-spreadsheet-add-on#optional-parameters)
+
+## ChatGPT
+
+A few useful prompts for ChatGPT to speed up SEO tasks.
+
+* `Generate a list of x popular questions related to <keyword> that are relevant for <audience>`
+* `Classify the following keyword list in groups based on their search intent` and add a list of keywords, obviously
+* `Translate the following keywords from <source language> to <output language> and generate the results in a table with two columns, with the keywors in <source language> in the first one, and their translation to <output language> in the second` useful to do multi-language SEO
+
+Prompts for content optimization
+
+* `Generate X unique title tags, of maximum 60 characters, for the following text. They should be descriptive and include the term <keyword> in them` and add part of the page content to optimize
+* `Generate Z unique meta descriptions, of a maximum of 150 characters, for the following text. They should be catchy with a call to action, including the term <main keyword> in them`
+* `Generate a list of X frequently asked questions based on the following content:` to generate a FAQ section for an article
+* `Generate a list of the top 10 facts, statistics and trends related to <topic>, including their source`
+* `Cluster the following titles into groups based on their semantic relevance:` and include a list with titles of existing content
+
+Link building and competitors researching
+
+* `Recommend X popular blogs about <site area> that cover <topic>, along with their URLs`
