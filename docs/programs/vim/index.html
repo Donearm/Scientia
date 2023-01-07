@@ -1,25 +1,624 @@
-<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.105.0"><meta name=generator content="Relearn 5.6.5"><meta name=robots content="noindex, nofollow, noarchive, noimageindex"><meta name=description content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics"><meta name=author content="Gianluca Fiore"><title>ViM - Gianluca Fiore Personal Wiki</title><link rel=icon href=/images/fpc-favicon.png type=image/png><link href=/Personal-Wiki/css/fontawesome-all.min.css?1668962863 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/Personal-Wiki/css/fontawesome-all.min.css?1668962863 rel=stylesheet></noscript><link href=/Personal-Wiki/css/featherlight.min.css?1668962863 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/Personal-Wiki/css/featherlight.min.css?1668962863 rel=stylesheet></noscript><link href=/Personal-Wiki/css/auto-complete.css?1668962863 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/Personal-Wiki/css/auto-complete.css?1668962863 rel=stylesheet></noscript><link href=/Personal-Wiki/css/perfect-scrollbar.min.css?1668962863 rel=stylesheet><link href=/Personal-Wiki/css/nucleus.css?1668962863 rel=stylesheet><link href=/Personal-Wiki/css/fonts.css?1668962863 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/Personal-Wiki/css/fonts.css?1668962863 rel=stylesheet></noscript><link href=/Personal-Wiki/css/theme.css?1668962863 rel=stylesheet><link href=/Personal-Wiki/css/theme-fpc.css?1668962863 rel=stylesheet id=variant-style><link href=/Personal-Wiki/css/ie.css?1668962863 rel=stylesheet><link href=/Personal-Wiki/css/variant.css?1668962863 rel=stylesheet><link href=/Personal-Wiki/css/print.css?1668962863 rel=stylesheet media=print><script src=/Personal-Wiki/js/url.js?1668962863></script>
-<script src=/Personal-Wiki/js/variant.js?1668962863></script>
-<script>window.index_json_url="/Personal-Wiki/index.json";var root_url="/",baseUriFull,baseUri=root_url.replace(/\/$/,"");window.T_Copy_to_clipboard="Copy to clipboard",window.T_Copied_to_clipboard="Copied to clipboard!",window.T_Copy_link_to_clipboard="Copy link to clipboard",window.T_Link_copied_to_clipboard="Copied link to clipboard!",window.T_No_results_found="No results found for \u0022{0}\u0022",window.T_N_results_found="{1} results found for \u0022{0}\u0022",baseUriFull="https://donearm.github.io/Personal-Wiki/",window.variants&&variants.init(["fpc"])</script><script src=/Personal-Wiki/js/jquery.min.js?1668962863 defer></script></head><body class="mobile-support html" data-url=/Personal-Wiki/programs/vim/index.html><div id=body class=default-animation><div id=sidebar-overlay></div><div id=toc-overlay></div><nav id=topbar class=highlightable dir=ltr><div><div class=navigation><a class="nav nav-next" href=/Personal-Wiki/programs/wireshark/index.html title="Wireshark (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a></div><div class=navigation><a class="nav nav-prev" href=/Personal-Wiki/programs/urxvt/index.html title="URxvt (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a></div><div id=breadcrumbs><span id=sidebar-toggle-span><a href=# id=sidebar-toggle title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a></span>
-<span id=toc-menu title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span><ol class=links itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/Personal-Wiki/index.html><span itemprop=name>Gianluca Fiore Personal Wiki</span></a><meta itemprop=position content="1">></li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/Personal-Wiki/programs/index.html><span itemprop=name>Programs</span></a><meta itemprop=position content="2">></li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>ViM</span><meta itemprop=position content="3"></li></ol></div><div class="default-animation progress"><div class=toc-wrapper dir=ltr><nav id=TableOfContents><ul><li><a href=#basic-commands>Basic commands</a></li><li><a href=#movements>Movements</a></li><li><a href=#removal-and-substitution>Removal and Substitution</a></li><li><a href=#text-formatting>Text formatting</a></li><li><a href=#windows>Windows</a></li><li><a href=#folding>Folding</a></li><li><a href=#searches>Searches</a></li><li><a href=#spell-checking>Spell Checking</a></li><li><a href=#buffers>Buffers</a></li><li><a href=#registers>Registers</a></li><li><a href=#ctags>Ctags</a></li><li><a href=#various-commands>Various Commands</a></li><li><a href=#macros>Macros</a><ul><li><a href=#change-statusline-colours>Change statusline colours</a></li><li><a href=#regexp>Regexp</a></li><li><a href=#identify-corresponding-openingclosing-html-tag>Identify corresponding opening/closing HTML tag</a></li><li><a href=#plugins>Plugins</a></li></ul></li></ul></nav></div></div></div></nav><main id=body-inner class="highlightable default" tabindex=-1><div class=flex-block-wrapper><div id=head-tags></div><article class=default><h1 id=vim>ViM</h1><ul><li><a href=#basic-commands>Basic commands</a></li><li><a href=#movements>Movements</a></li><li><a href=#removal-and-substitution>Removal and Substitution</a></li><li><a href=#text-formatting>Text formatting</a></li><li><a href=#windows>Windows</a></li><li><a href=#folding>Folding</a></li><li><a href=#searches>Searches</a></li><li><a href=#spell-checking>Spell Checking</a></li><li><a href=#buffers>Buffers</a></li><li><a href=#registers>Registers</a></li><li><a href=#ctags>Ctags</a></li><li><a href=#various-commands>Various Commands</a></li><li><a href=#macros>Macros</a></li><li><a href=#tips>Tips</a><ul><li><a href=#change-statusline-colours>Change statusline colours</a></li><li><a href=#regexp>Regexp</a></li><li><a href=#identify-corresponding-openingclosing-html-tag>Identify corresponding opening/closing HTML tag</a></li><li><a href=#plugins>Plugins</a></li></ul></li></ul><hr><h2 id=basic-commands>Basic commands</h2><ul><li><code>J</code> = Join next to current line</li><li><code>:%j</code> = Join all lines (make the file all on a single line in practice)</li><li><code>u</code> = Undo</li><li><code>Ctrl+r</code> = Repeat last command (Redo)</li><li><code>.</code> = Repeat last command (escluding Undo, Redo and command of the <code>:command</code> type)</li><li><code>:w filename</code> = Save current file, or the selection, to <code>filename</code></li><li><code>i</code> = Enter insert mode at the cursor position</li><li><code>a</code> = Enter insert mode after the cursor position</li><li><code>o</code> = Add an empty line below the current one</li><li><code>O</code> = Add an empty line above the current one</li><li><code>:q!</code> = Quit Vi without saving changes</li><li><code>V</code> = Start visual mode, selecting by lines</li><li><code>Ctrl+V</code> = Start visual mode, selecting by rows</li><li><code>p</code> = Paste</li><li><code>y</code> = Copy</li><li><code>“*P</code> = Paste clipboard&rsquo;s contents</li><li><code>“*y</code> = Copy selection to clipboard</li><li><code>”+y</code> = Copy selection to x11-selection (different from clipboard!)</li><li><code>”+p</code> = Paste x11-selection contents</li><li><code>"%p</code> = Paste the current file name</li><li><code>:put *</code> = Paste clipboard&rsquo;s contents</li><li><code>”&lt;buffer>y</code> = Paste selection to &lt;buffer> (usually a single character for brevity reasons)</li><li><code>m&lt;a></code> = Mark current position as &lt;a></li><li><code>:1,4up &lt;newfile></code> = Save file contents from line 1 through 4 into &lt;newfile>. Can be applied also to selections</li></ul><h2 id=movements>Movements</h2><ul><li><code>b</code> = Move back a word, going to the end of the previous one or at the beginning of the current one</li><li><code>w</code> = Jump at the beginning of the next word</li><li><code>e</code> = Jump at the end of the next word</li><li><code>:n</code> = Go to <code>n</code> line</li><li><code>Ctrl+AltGr+]</code> = Follow a url like <code>|url|</code></li><li><code>Ctrl+T</code> = Go back to where was before following a link</li><li><code>10w</code> = Go forward 10 words</li><li><code>10b</code> = Go back 10 words</li><li><code>-</code> = Go back to the beginning of the previous line</li><li><code>+</code> = Go to the beginning of the next line</li><li><code>0</code> = Go at the beginning of the current line</li><li><code>$</code> = Go at the end of the current line</li><li><code>End</code> = Move to the end of the current line. It accepts a number to jump multiple lines</li><li><code>fj</code> = Go to the next occurrence of <code>j</code></li><li><code>Fj</code> = Go to the previous occurrence of <code>j</code></li><li><code>12G</code> = Go to the specified line. In the example, go to the 12th line</li><li><code>G</code> = Go to the end of the current buffer</li><li><code>10%</code> = Move to the 10% of the current buffer</li><li><code>Ctrl+W</code> = Jump to the next Vi window</li><li><code>'.</code> = Go to the last modified line</li><li><code>\</code>.` = Go to the exact point where last edit happened</li><li><code>\</code>`` = Go back to the point before the last search was made</li><li><code>gt</code> = Go to the next tab</li><li><code>gT</code> = Go to the previous tab</li><li><code>gi</code> = Go to the exact point where last edit happened, like <code>\</code>.`, but also enter insert mode</li><li><code>m</code> = Go to the mark <code>m</code></li><li><code>H</code> = Go to the first line of the screen (which is not the first line of the file!)</li><li><code>M</code> = Go to the middle of the screen</li><li><code>L</code> = Go to the bottom of the screen</li><li><code>Ctrl+U</code> = Scroll a page up</li><li><code>Ctrl+D</code> = Scroll a page down</li><li><code>n</code> = Go to the next occurrence of a search term</li><li><code>N</code> = Go to the previous occurrence of a search term</li><li><code>g*</code> = Go to the next occurrence of the word under the cursor</li><li><code>g#</code> = Go to the previous occurrence of the word under the cursor</li><li><code>%</code> = Go to the end of the current block (which can be a if/then/else block, a comment, a text between parentheses etc.)</li><li><code>[[</code> = Go back to the beginning of the current function</li><li><code>gd</code> = Go to the first occurrence of the variable under the cursor, following the scope (thus first local then global variables)</li><li><code>gD</code> = Go to the first occurrence of the variable under the cursor, starting from the beginning of the file (thus ignoring scope; generally it&rsquo;s then the definition of the variable)</li><li><code>(</code> = Go to the beginning of the previous phrase (often it&rsquo;s the first character after a period or a newline)</li><li><code>)</code> = Go to the beginning of the next phrase</li><li><code>{</code> = Go to the beginning of the previous or current paragraph or code block</li><li><code>}</code> = Go to the end of the next or current paragraph or code block</li></ul><h2 id=removal-and-substitution>Removal and Substitution</h2><ul><li><code>x</code> = Delete the character under the cursor</li><li><code>X</code> = Delete the character before the cursor</li><li><code>dd</code> = Delete the current line</li><li><code>d11w</code> = Delete multiple words, in the example, 11</li><li><code>daw</code> = Delete the word under the cursor. This works also if not at the beginning of word, differently from <code>dw</code></li><li><code>d^</code> = Delete everything from the cursor to the beginning of the line</li><li><code>d$</code> = Delete everything from the cursor to the end of the line</li><li><code>dG</code> = Delete everything from the cursor to the end of the file</li><li><code>c11wAAA</code> = Substitutes with <code>AAA</code> multiple words, in the example, 11</li><li><code>C</code> = Delete next line and enter insert mode</li><li><code>11rAAA</code> = Substitutes multiple times, here 11, the text <code>AAA</code> with what&rsquo;s after the cursor</li><li><code>:%s/stringtosubstitute/stringtoinsert/g</code> = Substitutes <code>stringtosubstitute</code> with <code>stringtoinser</code> in the file, all occurrences (g). Without the <code>%</code>, substitutes only in the current line</li><li><code>g?</code> = ROT13 encrypt the current line, or the selected ones</li><li><code>Ctrl+a</code> = Add 1 to the number below the cursor</li><li><code>Ctrl+x</code> = Subtract 1 to the number below the cursor</li><li><code>xp</code> = Switch character under the cursor with the following one</li><li><code>ddp</code> = Switch the current line with the following one</li><li><code>Istring&lt;ESC></code> = Add string at the beginning of every line previously selected with <code>Ctrl+v</code></li><li><code>Astring&lt;ESC></code> = Add string at the end of every line previously selected with <code>Ctrl+v</code></li><li><code>Ctrl+W</code> = When in insert mode, delete the word before the cursor</li><li><code>Rstring</code> = Overwrites the text from the cursor with string</li><li><code>rcharacter</code> = Insert character right under the cursor</li><li><code>:sort u</code> = Remove all double lines and sort them alphabetically</li><li><code>:v/regexp/d</code> = Remove all lines not corresponding to regexp</li><li><code>:g/regexp/m$</code> = Move all lines matching regexp at the end of the file ($)</li><li><code>{d}</code> = Go to the end of the current paragraph, or the previous if the cursor is on an empty line, and delete it</li><li><code>d/regexp</code> = Delete everything between the cursor and the first occurrence of regexp</li><li><code>cas</code> = Substitute a sentence (delete all its contents and go in insert mode)</li><li><code>cap</code> = As above but on a whole paragraph</li><li><code>dap</code> = Remove the current paragraph</li><li><code>ci"</code> = Remove everything between the previous <code>"</code> and the next <code>"</code> and go in insert mode. It&rsquo;s not necessary to actually have the cursor between 2 <code>"</code>, it&rsquo;ll automatically move to the next occurrence</li><li><code>di"</code> = As above but it only delete the text</li></ul><h2 id=text-formatting>Text formatting</h2><ul><li><code>gUw</code> = Make a word all uppercase (starting from the cursor)</li><li><code>guw</code> = Like above but lowercase</li><li><code>guu</code> or <code>gUU</code> = Make lowercase or uppercase a whole line</li><li><code>g~~</code> = Switch every character in the whole line, from uppercase to lowercase and viceversa</li><li><code>~</code> = Switch the character under the cursor (uppercase/lowercase)</li><li><code>>></code> = Increase indentation</li><li><code>&lt;&lt;</code> = Remove a level of indentation</li><li><code>Ctrl+t</code> = Increase indentation (in insert mode)</li><li><code>Ctrl+d</code> = Remove a level of indentation (in insert mode)</li><li><code>:set textwidth=number</code> = Set line margin to <code>number</code></li><li><code>gq</code> = Justify the current line</li><li><code>gq}</code> = Justify the curren paragraph</li><li><code>gggqG</code> = Justify all the file</li><li><code>:center</code> = Center the selection</li><li><code>:right</code> = Right align the selection</li><li><code>:left</code> = Left align the selection</li><li><code>:set autoindent</code> = Respect indentation when starting to edit a new line</li><li><code>:set linebreak</code> = Set linebreak of a word if it doesn&rsquo;t fit in the line, preventing it to be split across two lines</li><li><code>:set fileformat=(unix|dos)</code> = Set newline format to unix or dos</li><li><code>:retab</code> = Transform tabs in whitespaces and viceversa in the whole file, respecting current settings (like <code>expandtab</code>, <code>shiftwidth</code> and <code>tabstop</code>)</li><li><code>:1,$j</code> = Join all lines from the first (1) to the last ($) in a single line</li><li><code>:1G!Gsort</code> = Go to the first line (1G) and then sort the whole file</li></ul><h2 id=windows>Windows</h2><ul><li><code>:split file</code> = Open file in a new split window. Also <code>:new</code> to simply open an empty file</li><li><code>:vsplit file</code> = As above but the split window will be vertical</li><li><code>:res -n</code> = Shrink window of <code>n</code> lines</li><li><code>:res +n</code> = Enlarge window of <code>n</code> lines</li><li><code>z10</code> = Shrink window of 10 lines</li><li><code>:qwall</code> = Quit, closing and saving all changes in all windows</li><li><code>:qall!</code> = As above but don&rsquo;t save changes</li><li><code>:windo</code> = Execute a command in all windows</li></ul><h2 id=folding>Folding</h2><ul><li><code>zf3j</code> = Fold 3 lines</li><li><code>zfa(</code> = Fold from the parentheses &ldquo;(&rdquo; to the matching closing parentheses. Any symbol can be used. Cursor needs to be on the opening symbol</li><li><code>:20,25 fold</code> = Fold from line 20 through line 25</li><li><code>zo</code> = Open the fold under cursor</li><li><code>zc</code> = Close, fold again, the last opened fold</li><li><code>zr</code> = Open all the first level folds (those that aren&rsquo;t inside another fold)</li><li><code>zR</code> = Open all the folds</li><li><code>zm</code> = Close all first level folds</li><li><code>zM</code> = Close all folds</li><li><code>zd</code> = Delete the fold under the cursor</li><li><code>:set nofoldenable</code> = Delete all folds in current file</li></ul><h2 id=searches>Searches</h2><ul><li><code>/string</code> = Search string. Use <code>n</code> to jump between results</li><li><code>:g/regexp/</code> = Show all lines matching regexp</li><li><code>:g/regexp/#</code> = As above but also show the line number next to the matching lines</li><li><code>q/</code> = Show last searches</li><li><code>*</code> = Search word under the cursor forward in the file</li><li><code>#</code> = Search word under the cursor backward in the file</li><li><code>:%s/pattern//gn</code> = Count the occurrences of <code>pattern</code> in current buffer, without modifying anything</li></ul><h2 id=spell-checking>Spell Checking</h2><ul><li><code>:set spell</code> = Enable spell checking. <code>:set nospell</code> to disable it</li><li><code>:set spelllang=xx</code> = Set spell checking language to xx. Dictionary files have to be in /usr/share/vim/spell or ~/.vim/spell</li><li><code>]s</code> = Go to the next wrong word</li><li><code>[s</code> = Go to the previous wrong word</li><li><code>zg</code> = Add word under the cursor to the main dictionary</li><li><code>zG</code> = Add word under the cursor to a supplementary dictionary, separated from the main one</li><li><code>zw</code> = Add word under the cursor to the dictionary of wrong words</li><li><code>zW</code> = Add word under the cursor to a supplementary dictionary of wrong words, separated from the main one</li><li><code>z=</code> = Show possible correction for the word under cursor</li></ul><h2 id=buffers>Buffers</h2><ul><li><code>:badd file</code> = Add file to the buffer list but don&rsquo;t open it</li><li><code>:buffers</code> = Show all buffers</li><li><code>:ls</code> = Show all buffers</li><li><code>:bdelete</code> = Delete a buffer. Needs its name or its number. This doesn&rsquo;t dump the information about it so it&rsquo;s quicker to reopen it if needed</li><li><code>:bwipeout</code> = As above but delete also its information</li><li><code>:1,3bdelete</code> = Delete buffers from 1 to the 3</li><li><code>:buffer</code> = Show a buffer.</li><li><code>:bfirst</code> = Go to the first buffer</li><li><code>:bn</code> = Go to the next buffer</li><li><code>:bp</code> = Go to the previous buffer</li><li><code>:blast</code> = Go to the last buffer</li><li><code>:ball</code> = Open all buffer in as many split windows as needed</li><li><code>:bmodified</code> = Go to the last modified buffer</li><li><code>:bufdo</code> = Execute a command in all opened buffers</li></ul><h2 id=registers>Registers</h2><ul><li><code>:registers</code> = Show the contents of all registers</li><li><code>"0</code> = The register containing the most recent yanked text but never deleted text</li><li><code>"1-9</code> = Registers 1 through 9 contain the most recent deleted text, from the most recent (1) to the oldest (9)</li><li><code>"%</code> = The register containing the name of current buffer&rsquo;s file. It&rsquo;s a read-only register</li><li><code>":</code> = The register containing the most recent executed command</li><li><code>""</code> = The &ldquo;unnamed&rdquo; register. Every operation gets written into it, no matter what it is or if it&rsquo;s specifically saved to another register</li><li><code>"_</code> = A &ldquo;discard&rdquo; register. Everything written into it is lost</li><li><code>"-</code> = The register that saves any delete operations that is smaller than 1 line length. If the operation is explicitly saved to another register, it won&rsquo;t be saved here too</li><li>`"/" = The register containing the most recent search pattern</li><li><code>"=expression&lt;Enter>p" = The </code>=<code>register evaluates the</code>expression<code>and</code>p<code>paste it at the current cursor position. For instance,</code>"=5*5<enter>p` will paste output 25</li><li><code>:22put r</code> = Insert contents of register <code>r</code> at line 22. Without a number, defaults to the current line</li></ul><h2 id=ctags>Ctags</h2><ul><li><code>Ctrl+]</code> = Jump to the first occurrence Vim finds of the class/method/function/variable/whatever the cursor is at</li><li><code>Ctrl+t</code> = Get back to where you were before jumping with <code>Ctrl+]</code></li><li><code>:tnext</code> = Go to the next tag</li><li><code>:tprev</code> = Go to the previous tag</li><li><code>:ltag</code> = Load the tags in the location list window, that can be shown with <code>:lopen</code></li><li><code>Ctrl+x Ctrl+]</code> = Insert the first tag that starts with the characters before the cursor among tags and insert it in front of the cursor (in insert mode)</li></ul><h2 id=various-commands>Various Commands</h2><ul><li><code>:h holy-grail</code> = Show a general list of commands</li><li><code>:set all</code> = Show the options</li><li><code>:set list</code> = Show non-printable characters</li><li><code>:set paste</code> = Enable paste mode, useful to paste text without formatting it, exactly as it is. Disable it with <code>:set nopaste</code></li><li><code>:set patchmode=.ext</code> = Make a copy of the current file with an extension ext</li><li><code>:set key=</code> = Remove the password set to open the file, making it plain text</li><li><code>:set number</code> = Show line numbers</li><li><code>:ab abb string</code> = Create an abbreviation, substituting string each time abb is typed</li><li><code>:una abb</code> = Cancel the previously created abbreviation abb</li><li><code>:ascii</code> = Show the decimal, hexadecimal and octal numbers of the characters under the cursor in the ASCII table</li><li><code>:digraph</code> = Show all special symbols that can be inserted and how</li><li><code>:noh</code> = Clean the screen from all highlightings</li><li><code>:e directory</code> = Open directory in Vi</li><li><code>:r!cmd</code> = Insert in Vi the output of shell command cmd</li><li><code>:r file</code> = Insert the contents of file under the cursor. Also <code>:2r</code> to insert at line 2</li><li><code>gf</code> = Open the filename or whole path under the cursor. To show the path Vi look for files, use <code>:echo &path</code>. Should work also with http or ftp urls</li><li><code>q:</code> = Show last executed commands</li><li><code>:tabe file</code> = Open file in a new tab</li><li><code>:tabc</code> = Close current tab</li><li><code>:tabn</code> = Go to next tab</li><li><code>:tabc</code> = Go to previous tab</li><li><code>!!date</code> = Insert date and time</li><li><code>Ctrl+L</code> = Clear screen from all messages and warnings</li><li><code>Ctrl+k</code> = Activate the insertion of special symbol and characters (those shown by <code>:digraphs</code>)</li><li><code>g&lt;Ctrl+g></code> = Show some statistics about current file</li><li><code>gv</code> = Select again last visual selection</li><li><code>Ctrl+n</code> = Show a list of possible completions for the word under cursor (based on the opened file)</li><li><code>Ctrl+x</code> and <code>Ctrl+l</code> = Show a list of possible completions for the whole line (in insert mode)</li><li><code>Ctrl+x</code> and <code>Ctrl+f</code> = Show a list of possible completions for the whole line with an existing path (in insert mode)</li><li><code>Ctrl+y</code> = Insert the character directly above the cursor. Useful to quickly copy the above line with very few edits (in insert mode)</li><li><code>Ctrl+v character</code> = Insert a literal character (as &lt;Esc> or an ASCII code or an Unicode character like <code>u&lt;unicode_number></code></li><li><code>Ctrl+o</code> = In insert mode, execute a command as if it was in normal mode and then return to insert</li><li><code>:echom message</code> = Print message to the command line. Unlike <code>:echo</code>, the message stays visible until another substitutes it</li><li><code>:mksession file</code> = Save all open buffers in file (defaults to Session.vim) in the current directory. With <code>vi -S file</code> then the session can be quickly restored</li><li><code>:scriptnames</code> = List all plugins and files loaded at start, in the order they were loaded</li><li><code>vi +q --startuptime startup.txt file</code> = Save debug info in <code>startup.txt</code>. Useful to see load times, what plugins and files are loaded etc.</li><li><code>:args</code> = Modify the arguments list. By default it corresponds to the opened files but with, for example, <code>:args *.c</code> it becomes all .c files in the current directory</li><li><code>:argdo cmd</code> = Execute cmd for every file in the arguments list</li><li><code>:diffupdate</code> = Recalculate the diff (in vimdiff or <code>vi -d</code> mode)</li><li><code>:set noscrollbind</code> = Disable simultaneous scrolling of the diff buffers. Reenable it then with <code>:set scrollbind</code></li><li><code>ga</code> = Show the decimal, octal and hexadecimal index of the character under the cursor</li><li><code>:au</code> = Show all the autocommands in effect</li><li><code>:silent cmd</code> = adding <code>silent</code> before any command suppresses messages it may produce. Useful to not have to press <enter>at startup to confirm enabling a plugin or a command</li></ul><h2 id=macros>Macros</h2><p>Some macros I find useful</p><ul><li><code>:g/^\s*$/d</code> = Delete all empty lines</li><li><code>:%s/^/\=line('.'). ''</code> = Add at the beginning of every line its number</li><li><code>:%s/^/\=strpart(line(”.”).” ”, 0, 5)</code> = As above but add a space between the number and the following text</li><li><code>:runtime! syntax/2html.vim</code> = Output the current file as html</li><li><code>:%s#&lt;\_.\{-1,}>##g</code> = Remove all html tags</li><li><code>:g/regexp/,/regexp/d</code> = Remove all lines where the first <em>or</em> the second regexp appears</li><li><code>:%s/^\(.*\)\n\1$/\1/</code> = Remove all duplicated lines in the current file</li></ul><p>##Tips</p><h3 id=change-statusline-colours>Change statusline colours</h3><p>Edit in the colour theme file the <code>hi Statusline</code> line. <code>ctermfg</code> is the foreground colour, <code>ctermbg</code> is the background. Use <code>:he cterm-colors</code> to see which colours can be used. Up until 256 colours, if the terminal supports it, can be used, see <a href=http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim>here</a></p><h3 id=regexp>Regexp</h3><p>Instead of backslashing special characters, it&rsquo;s possible to add <code>\v</code> at the
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.108.0">
+    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
+    <meta name="author" content="Gianluca Fiore">
+    <title>ViM - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1673107025" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1673107025" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/featherlight.min.css?1673107025" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1673107025" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/auto-complete.css?1673107025" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1673107025" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1673107025" rel="stylesheet">
+    <link href="/Personal-Wiki/css/nucleus.css?1673107025" rel="stylesheet">
+    <link href="/Personal-Wiki/css/fonts.css?1673107025" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1673107025" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/theme.css?1673107025" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme-fpc.css?1673107025" rel="stylesheet" id="variant-style">
+    <link href="/Personal-Wiki/css/ie.css?1673107025" rel="stylesheet">
+    <link href="/Personal-Wiki/css/variant.css?1673107025" rel="stylesheet">
+    <link href="/Personal-Wiki/css/print.css?1673107025" rel="stylesheet" media="print">
+    <script src="/Personal-Wiki/js/url.js?1673107025"></script>
+    <script src="/Personal-Wiki/js/variant.js?1673107025"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_json_url="/Personal-Wiki/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/donearm.github.io\/Personal-Wiki/';
+      window.variants && variants.init( [ 'fpc' ] );
+    </script>
+    <script src="/Personal-Wiki/js/jquery.min.js?1673107025" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/Personal-Wiki/programs/vim/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/Personal-Wiki/programs/wireshark/index.html" title="Wireshark (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/Personal-Wiki/programs/urxvt/index.html" title="URxvt (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Personal-Wiki/index.html"><span itemprop="name">Gianluca Fiore Personal Wiki</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Personal-Wiki/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">ViM</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-commands">Basic commands</a></li>
+    <li><a href="#movements">Movements</a></li>
+    <li><a href="#removal-and-substitution">Removal and Substitution</a></li>
+    <li><a href="#text-formatting">Text formatting</a></li>
+    <li><a href="#windows">Windows</a></li>
+    <li><a href="#folding">Folding</a></li>
+    <li><a href="#searches">Searches</a></li>
+    <li><a href="#spell-checking">Spell Checking</a></li>
+    <li><a href="#buffers">Buffers</a></li>
+    <li><a href="#registers">Registers</a></li>
+    <li><a href="#ctags">Ctags</a></li>
+    <li><a href="#various-commands">Various Commands</a></li>
+    <li><a href="#macros">Macros</a>
+      <ul>
+        <li><a href="#change-statusline-colours">Change statusline colours</a></li>
+        <li><a href="#regexp">Regexp</a></li>
+        <li><a href="#identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="vim">ViM</h1>
+
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#basic-commands">Basic commands</a></li>
+<li><a href="#movements">Movements</a></li>
+<li><a href="#removal-and-substitution">Removal and Substitution</a></li>
+<li><a href="#text-formatting">Text formatting</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#folding">Folding</a></li>
+<li><a href="#searches">Searches</a></li>
+<li><a href="#spell-checking">Spell Checking</a></li>
+<li><a href="#buffers">Buffers</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#ctags">Ctags</a></li>
+<li><a href="#various-commands">Various Commands</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#tips">Tips</a>
+<ul>
+<li><a href="#change-statusline-colours">Change statusline colours</a></li>
+<li><a href="#regexp">Regexp</a></li>
+<li><a href="#identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</a></li>
+<li><a href="#plugins">Plugins</a></li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<hr>
+<h2 id="basic-commands">Basic commands</h2>
+<ul>
+<li><code>J</code> = Join next to current line</li>
+<li><code>:%j</code> = Join all lines (make the file all on a single line in practice)</li>
+<li><code>u</code> = Undo</li>
+<li><code>Ctrl+r</code> = Repeat last command (Redo)</li>
+<li><code>.</code> = Repeat last command (escluding Undo, Redo and command of the <code>:command</code> type)</li>
+<li><code>:w filename</code> = Save current file, or the selection, to <code>filename</code></li>
+<li><code>i</code> = Enter insert mode at the cursor position</li>
+<li><code>a</code> = Enter insert mode after the cursor position</li>
+<li><code>o</code> = Add an empty line below the current one</li>
+<li><code>O</code> = Add an empty line above the current one</li>
+<li><code>:q!</code> = Quit Vi without saving changes</li>
+<li><code>V</code> = Start visual mode, selecting by lines</li>
+<li><code>Ctrl+V</code> = Start visual mode, selecting by rows</li>
+<li><code>p</code> = Paste</li>
+<li><code>y</code> = Copy</li>
+<li><code>“*P</code> = Paste clipboard&rsquo;s contents</li>
+<li><code>“*y</code> = Copy selection to clipboard</li>
+<li><code>”+y</code> = Copy selection to x11-selection (different from clipboard!)</li>
+<li><code>”+p</code> = Paste x11-selection contents</li>
+<li><code>&quot;%p</code> = Paste the current file name</li>
+<li><code>:put *</code> = Paste clipboard&rsquo;s contents</li>
+<li><code>”&lt;buffer&gt;y</code> = Paste selection to &lt;buffer&gt; (usually a single character for brevity reasons)</li>
+<li><code>m&lt;a&gt;</code> = Mark current position as &lt;a&gt;</li>
+<li><code>:1,4up &lt;newfile&gt;</code> = Save file contents from line 1 through 4 into &lt;newfile&gt;. Can be applied also to selections</li>
+</ul>
+<h2 id="movements">Movements</h2>
+<ul>
+<li><code>b</code> = Move back a word, going to the end of the previous one or at the beginning of the current one</li>
+<li><code>w</code> = Jump at the beginning of the next word</li>
+<li><code>e</code> = Jump at the end of the next word</li>
+<li><code>:n</code> = Go to <code>n</code> line</li>
+<li><code>Ctrl+AltGr+]</code> = Follow a url like <code>|url|</code></li>
+<li><code>Ctrl+T</code> = Go back to where was before following a link</li>
+<li><code>10w</code> = Go forward 10 words</li>
+<li><code>10b</code> = Go back 10 words</li>
+<li><code>-</code> = Go back to the beginning of the previous line</li>
+<li><code>+</code> = Go to the beginning of the next line</li>
+<li><code>0</code> = Go at the beginning of the current line</li>
+<li><code>$</code> = Go at the end of the current line</li>
+<li><code>End</code> = Move to the end of the current line. It accepts a number to jump multiple lines</li>
+<li><code>fj</code> = Go to the next occurrence of <code>j</code></li>
+<li><code>Fj</code> = Go to the previous occurrence of <code>j</code></li>
+<li><code>12G</code> = Go to the specified line. In the example, go to the 12th line</li>
+<li><code>G</code> = Go to the end of the current buffer</li>
+<li><code>10%</code> = Move to the 10% of the current buffer</li>
+<li><code>Ctrl+W</code> = Jump to the next Vi window</li>
+<li><code>'.</code> = Go to the last modified line</li>
+<li><code>\</code>.` = Go to the exact point where last edit happened</li>
+<li><code>\</code>`` = Go back to the point before the last search was made</li>
+<li><code>gt</code> = Go to the next tab</li>
+<li><code>gT</code> = Go to the previous tab</li>
+<li><code>gi</code> = Go to the exact point where last edit happened, like <code>\</code>.`, but also enter insert mode</li>
+<li><code>m</code> = Go to the mark <code>m</code></li>
+<li><code>H</code> = Go to the first line of the screen (which is not the first line of the file!)</li>
+<li><code>M</code> = Go to the middle of the screen</li>
+<li><code>L</code> = Go to the bottom of the screen</li>
+<li><code>Ctrl+U</code> = Scroll a page up</li>
+<li><code>Ctrl+D</code> = Scroll a page down</li>
+<li><code>n</code> = Go to the next occurrence of a search term</li>
+<li><code>N</code> = Go to the previous occurrence of a search term</li>
+<li><code>g*</code> = Go to the next occurrence of the word under the cursor</li>
+<li><code>g#</code> = Go to the previous occurrence of the word under the cursor</li>
+<li><code>%</code>  = Go to the end of the current block (which can be a if/then/else block, a comment, a text between parentheses etc.)</li>
+<li><code>[[</code> = Go back to the beginning of the current function</li>
+<li><code>gd</code> = Go to the first occurrence of the variable under the cursor, following the scope (thus first local then global variables)</li>
+<li><code>gD</code> = Go to the first occurrence of the variable under the cursor, starting from the beginning of the file (thus ignoring scope; generally it&rsquo;s then the definition of the variable)</li>
+<li><code>(</code> = Go to the beginning of the previous phrase (often it&rsquo;s the first character after a period or a newline)</li>
+<li><code>)</code> = Go to the beginning of the next phrase</li>
+<li><code>{</code> = Go to the beginning of the previous or current paragraph or code block</li>
+<li><code>}</code> = Go to the end of the next or current paragraph or code block</li>
+</ul>
+<h2 id="removal-and-substitution">Removal and Substitution</h2>
+<ul>
+<li><code>x</code> = Delete the character under the cursor</li>
+<li><code>X</code> = Delete the character before the cursor</li>
+<li><code>dd</code> = Delete the current line</li>
+<li><code>d11w</code> = Delete multiple words, in the example, 11</li>
+<li><code>daw</code> = Delete the word under the cursor. This works also if not at the beginning of word, differently from <code>dw</code></li>
+<li><code>d^</code> = Delete everything from the cursor to the beginning of the line</li>
+<li><code>d$</code> = Delete everything from the cursor to the end of the line</li>
+<li><code>dG</code> = Delete everything from the cursor to the end of the file</li>
+<li><code>c11wAAA</code> = Substitutes with <code>AAA</code> multiple words, in the example, 11</li>
+<li><code>C</code> = Delete next line and enter insert mode</li>
+<li><code>11rAAA</code> = Substitutes multiple times, here 11, the text <code>AAA</code> with what&rsquo;s after the cursor</li>
+<li><code>:%s/stringtosubstitute/stringtoinsert/g</code> = Substitutes <code>stringtosubstitute</code> with <code>stringtoinser</code> in the file, all occurrences (g). Without the <code>%</code>, substitutes only in the current line</li>
+<li><code>g?</code> = ROT13 encrypt the current line, or the selected ones</li>
+<li><code>Ctrl+a</code> = Add 1 to the number below the cursor</li>
+<li><code>Ctrl+x</code> = Subtract 1 to the number below the cursor</li>
+<li><code>xp</code> = Switch character under the cursor with the following one</li>
+<li><code>ddp</code> = Switch the current line with the following one</li>
+<li><code>Istring&lt;ESC&gt;</code> = Add string at the beginning of every line previously selected with <code>Ctrl+v</code></li>
+<li><code>Astring&lt;ESC&gt;</code> = Add string at the end of every line previously selected with <code>Ctrl+v</code></li>
+<li><code>Ctrl+W</code> = When in insert mode, delete the word before the cursor</li>
+<li><code>Rstring</code> = Overwrites the text from the cursor with string</li>
+<li><code>rcharacter</code> = Insert character right under the cursor</li>
+<li><code>:sort u</code> = Remove all double lines and sort them alphabetically</li>
+<li><code>:v/regexp/d</code> = Remove all lines not corresponding to regexp</li>
+<li><code>:g/regexp/m$</code> = Move all lines matching regexp at the end of the file ($)</li>
+<li><code>{d}</code> = Go to the end of the current paragraph, or the previous if the cursor is on an empty line, and delete it</li>
+<li><code>d/regexp</code> = Delete everything between the cursor and the first occurrence of regexp</li>
+<li><code>cas</code> = Substitute a sentence (delete all its contents and go in insert mode)</li>
+<li><code>cap</code> = As above but on a whole paragraph</li>
+<li><code>dap</code> = Remove the current paragraph</li>
+<li><code>ci&quot;</code> = Remove everything between the previous <code>&quot;</code> and the next <code>&quot;</code> and go in insert mode. It&rsquo;s not necessary to actually have the cursor between 2 <code>&quot;</code>, it&rsquo;ll automatically move to the next occurrence</li>
+<li><code>di&quot;</code> = As above but it only delete the text</li>
+</ul>
+<h2 id="text-formatting">Text formatting</h2>
+<ul>
+<li><code>gUw</code> = Make a word all uppercase (starting from the cursor)</li>
+<li><code>guw</code> = Like above but lowercase</li>
+<li><code>guu</code> or <code>gUU</code> = Make lowercase or uppercase a whole line</li>
+<li><code>g~~</code> = Switch every character in the whole line, from uppercase to lowercase and viceversa</li>
+<li><code>~</code> = Switch the character under the cursor (uppercase/lowercase)</li>
+<li><code>&gt;&gt;</code> = Increase indentation</li>
+<li><code>&lt;&lt;</code> = Remove a level of indentation</li>
+<li><code>Ctrl+t</code> = Increase indentation (in insert mode)</li>
+<li><code>Ctrl+d</code> = Remove a level of indentation (in insert mode)</li>
+<li><code>:set textwidth=number</code> = Set line margin to <code>number</code></li>
+<li><code>gq</code> = Justify the current line</li>
+<li><code>gq}</code> = Justify the curren paragraph</li>
+<li><code>gggqG</code> = Justify all the file</li>
+<li><code>:center</code> = Center the selection</li>
+<li><code>:right</code> = Right align the selection</li>
+<li><code>:left</code> = Left align the selection</li>
+<li><code>:set autoindent</code> = Respect indentation when starting to edit a new line</li>
+<li><code>:set linebreak</code> = Set linebreak of a word if it doesn&rsquo;t fit in the line, preventing it to be split across two lines</li>
+<li><code>:set fileformat=(unix|dos)</code> = Set newline format to unix or dos</li>
+<li><code>:retab</code> = Transform tabs in whitespaces and viceversa in the whole file, respecting current settings (like <code>expandtab</code>, <code>shiftwidth</code> and <code>tabstop</code>)</li>
+<li><code>:1,$j</code> = Join all lines from the first (1) to the last ($) in a single line</li>
+<li><code>:1G!Gsort</code> = Go to the first line (1G) and then sort the whole file</li>
+</ul>
+<h2 id="windows">Windows</h2>
+<ul>
+<li><code>:split file</code> = Open file in a new split window. Also <code>:new</code> to simply open an empty file</li>
+<li><code>:vsplit file</code> = As above but the split window will be vertical</li>
+<li><code>:res -n</code> = Shrink window of <code>n</code> lines</li>
+<li><code>:res +n</code> = Enlarge window of <code>n</code> lines</li>
+<li><code>z10</code> = Shrink window of 10 lines</li>
+<li><code>:qwall</code> = Quit, closing and saving all changes in all windows</li>
+<li><code>:qall!</code> = As above but don&rsquo;t save changes</li>
+<li><code>:windo</code> = Execute a command in all windows</li>
+</ul>
+<h2 id="folding">Folding</h2>
+<ul>
+<li><code>zf3j</code> = Fold 3 lines</li>
+<li><code>zfa(</code> = Fold from the parentheses &ldquo;(&rdquo; to the matching closing parentheses. Any symbol can be used. Cursor needs to be on the opening symbol</li>
+<li><code>:20,25 fold</code> = Fold from line 20 through line 25</li>
+<li><code>zo</code> = Open the fold under cursor</li>
+<li><code>zc</code> = Close, fold again, the last opened fold</li>
+<li><code>zr</code> = Open all the first level folds (those that aren&rsquo;t inside another fold)</li>
+<li><code>zR</code> = Open all the folds</li>
+<li><code>zm</code> = Close all first level folds</li>
+<li><code>zM</code> = Close all folds</li>
+<li><code>zd</code> = Delete the fold under the cursor</li>
+<li><code>:set nofoldenable</code> = Delete all folds in current file</li>
+</ul>
+<h2 id="searches">Searches</h2>
+<ul>
+<li><code>/string</code> = Search string. Use <code>n</code> to jump between results</li>
+<li><code>:g/regexp/</code> = Show all lines matching regexp</li>
+<li><code>:g/regexp/#</code> = As above but also show the line number next to the matching lines</li>
+<li><code>q/</code> = Show last searches</li>
+<li><code>*</code> = Search word under the cursor forward in the file</li>
+<li><code>#</code> = Search word under the cursor backward in the file</li>
+<li><code>:%s/pattern//gn</code> = Count the occurrences of <code>pattern</code> in current buffer, without modifying anything</li>
+</ul>
+<h2 id="spell-checking">Spell Checking</h2>
+<ul>
+<li><code>:set spell</code> = Enable spell checking. <code>:set nospell</code> to disable it</li>
+<li><code>:set spelllang=xx</code> = Set spell checking language to xx. Dictionary files have to be in /usr/share/vim/spell or ~/.vim/spell</li>
+<li><code>]s</code> = Go to the next wrong word</li>
+<li><code>[s</code> = Go to the previous wrong word</li>
+<li><code>zg</code> = Add word under the cursor to the main dictionary</li>
+<li><code>zG</code> = Add word under the cursor to a supplementary dictionary, separated from the main one</li>
+<li><code>zw</code> = Add word under the cursor to the dictionary of wrong words</li>
+<li><code>zW</code> = Add word under the cursor to a supplementary dictionary of wrong words, separated from the main one</li>
+<li><code>z=</code> = Show possible correction for the word under cursor</li>
+</ul>
+<h2 id="buffers">Buffers</h2>
+<ul>
+<li><code>:badd file</code> = Add file to the buffer list but don&rsquo;t open it</li>
+<li><code>:buffers</code> = Show all buffers</li>
+<li><code>:ls</code> = Show all buffers</li>
+<li><code>:bdelete</code> = Delete a buffer. Needs its name or its number. This doesn&rsquo;t dump the information about it so it&rsquo;s quicker to reopen it if needed</li>
+<li><code>:bwipeout</code> = As above but delete also its information</li>
+<li><code>:1,3bdelete</code> = Delete buffers from 1 to the 3</li>
+<li><code>:buffer</code> = Show a buffer.</li>
+<li><code>:bfirst</code> = Go to the first buffer</li>
+<li><code>:bn</code> = Go to the next buffer</li>
+<li><code>:bp</code> = Go to the previous buffer</li>
+<li><code>:blast</code> = Go to the last buffer</li>
+<li><code>:ball</code> = Open all buffer in as many split windows as needed</li>
+<li><code>:bmodified</code> = Go to the last modified buffer</li>
+<li><code>:bufdo</code> = Execute a command in all opened buffers</li>
+</ul>
+<h2 id="registers">Registers</h2>
+<ul>
+<li><code>:registers</code> = Show the contents of all registers</li>
+<li><code>&quot;0</code> = The register containing the most recent yanked text but never deleted text</li>
+<li><code>&quot;1-9</code> = Registers 1 through 9 contain the most recent deleted text, from the most recent (1) to the oldest (9)</li>
+<li><code>&quot;%</code> = The register containing the name of current buffer&rsquo;s file. It&rsquo;s a read-only register</li>
+<li><code>&quot;:</code> = The register containing the most recent executed command</li>
+<li><code>&quot;&quot;</code> = The &ldquo;unnamed&rdquo; register. Every operation gets written into it, no matter what it is or if it&rsquo;s specifically saved to another register</li>
+<li><code>&quot;_</code> = A &ldquo;discard&rdquo; register. Everything written into it is lost</li>
+<li><code>&quot;-</code> = The register that saves any delete operations that is smaller than 1 line length. If the operation is explicitly saved to another register, it won&rsquo;t be saved here too</li>
+<li>`&quot;/&quot; = The register containing the most recent search pattern</li>
+<li><code>&quot;=expression&lt;Enter&gt;p&quot; = The </code>=<code>register evaluates the</code>expression<code>and</code>p<code>paste it at the current cursor position. For instance,</code>&quot;=5*5<Enter>p` will paste output 25</li>
+<li><code>:22put r</code> = Insert contents of register <code>r</code> at line 22. Without a number, defaults to the current line</li>
+</ul>
+<h2 id="ctags">Ctags</h2>
+<ul>
+<li><code>Ctrl+]</code> = Jump to the first occurrence Vim finds of the class/method/function/variable/whatever the cursor is at</li>
+<li><code>Ctrl+t</code> = Get back to where you were before jumping with <code>Ctrl+]</code></li>
+<li><code>:tnext</code> = Go to the next tag</li>
+<li><code>:tprev</code> = Go to the previous tag</li>
+<li><code>:ltag</code> = Load the tags in the location list window, that can be shown with <code>:lopen</code></li>
+<li><code>Ctrl+x Ctrl+]</code> = Insert the first tag that starts with the characters before the cursor among tags and insert it in front of the cursor (in insert mode)</li>
+</ul>
+<h2 id="various-commands">Various Commands</h2>
+<ul>
+<li><code>:h holy-grail</code> = Show a general list of commands</li>
+<li><code>:set all</code> = Show the options</li>
+<li><code>:set list</code> = Show non-printable characters</li>
+<li><code>:set paste</code> = Enable paste mode, useful to paste text without formatting it, exactly as it is. Disable it with <code>:set nopaste</code></li>
+<li><code>:set patchmode=.ext</code> = Make a copy of the current file with an extension ext</li>
+<li><code>:set key=</code> = Remove the password set to open the file, making it plain text</li>
+<li><code>:set number</code> = Show line numbers</li>
+<li><code>:ab abb string</code> = Create an abbreviation, substituting string each time abb is typed</li>
+<li><code>:una abb</code> = Cancel the previously created abbreviation abb</li>
+<li><code>:ascii</code> = Show the decimal, hexadecimal and octal numbers of the characters under the cursor in the ASCII table</li>
+<li><code>:digraph</code> = Show all special symbols that can be inserted and how</li>
+<li><code>:noh</code> = Clean the screen from all highlightings</li>
+<li><code>:e directory</code> = Open directory in Vi</li>
+<li><code>:r!cmd</code> = Insert in Vi the output of shell command cmd</li>
+<li><code>:r file</code> = Insert the contents of file under the cursor. Also <code>:2r</code> to insert at line 2</li>
+<li><code>gf</code> = Open the filename or whole path under the cursor. To show the path Vi look for files, use <code>:echo &amp;path</code>. Should work also with http or ftp urls</li>
+<li><code>q:</code> = Show last executed commands</li>
+<li><code>:tabe file</code> = Open file in a new tab</li>
+<li><code>:tabc</code> = Close current tab</li>
+<li><code>:tabn</code> = Go to next tab</li>
+<li><code>:tabc</code> = Go to previous tab</li>
+<li><code>!!date</code> = Insert date and time</li>
+<li><code>Ctrl+L</code> = Clear screen from all messages and warnings</li>
+<li><code>Ctrl+k</code> = Activate the insertion of special symbol and characters (those shown by <code>:digraphs</code>)</li>
+<li><code>g&lt;Ctrl+g&gt;</code> = Show some statistics about current file</li>
+<li><code>gv</code> = Select again last visual selection</li>
+<li><code>Ctrl+n</code> = Show a list of possible completions for the word under cursor (based on the opened file)</li>
+<li><code>Ctrl+x</code> and <code>Ctrl+l</code> = Show a list of possible completions for the whole line (in insert mode)</li>
+<li><code>Ctrl+x</code> and <code>Ctrl+f</code> = Show a list of possible completions for the whole line with an existing path (in insert mode)</li>
+<li><code>Ctrl+y</code> = Insert the character directly above the cursor. Useful to quickly copy the above line with very few edits (in insert mode)</li>
+<li><code>Ctrl+v character</code> = Insert a literal character (as &lt;Esc&gt; or an ASCII code or an Unicode character like <code>u&lt;unicode_number&gt;</code></li>
+<li><code>Ctrl+o</code> = In insert mode, execute a command as if it was in normal mode and then return to insert</li>
+<li><code>:echom message</code> = Print message to the command line. Unlike <code>:echo</code>, the message stays visible until another substitutes it</li>
+<li><code>:mksession file</code> = Save all open buffers in file (defaults to Session.vim) in the current directory. With <code>vi -S file</code> then the session can be quickly restored</li>
+<li><code>:scriptnames</code> = List all plugins and files loaded at start, in the order they were loaded</li>
+<li><code>vi +q  --startuptime startup.txt file</code> = Save debug info in <code>startup.txt</code>. Useful to see load times, what plugins and files are loaded etc.</li>
+<li><code>:args</code> = Modify the arguments list. By default it corresponds to the opened files but with, for example, <code>:args *.c</code> it becomes all .c files in the current directory</li>
+<li><code>:argdo cmd</code> = Execute cmd for every file in the arguments list</li>
+<li><code>:diffupdate</code> = Recalculate the diff (in vimdiff or <code>vi -d</code> mode)</li>
+<li><code>:set noscrollbind</code> = Disable simultaneous scrolling of the diff buffers. Reenable it then with <code>:set scrollbind</code></li>
+<li><code>ga</code> = Show the decimal, octal and hexadecimal index of the character under the cursor</li>
+<li><code>:au</code> = Show all the autocommands in effect</li>
+<li><code>:silent cmd</code> = adding <code>silent</code> before any command suppresses messages it may produce. Useful to not have to press <Enter> at startup to confirm enabling a plugin or a command</li>
+</ul>
+<h2 id="macros">Macros</h2>
+<p>Some macros I find useful</p>
+<ul>
+<li><code>:g/^\s*$/d</code> = Delete all empty lines</li>
+<li><code>:%s/^/\=line('.'). ''</code> = Add at the beginning of every line its number</li>
+<li><code>:%s/^/\=strpart(line(”.”).” ”, 0, 5)</code> = As above but add a space between the number and the following text</li>
+<li><code>:runtime! syntax/2html.vim</code> = Output the current file as html</li>
+<li><code>:%s#&lt;\_.\{-1,}&gt;##g</code> = Remove all html tags</li>
+<li><code>:g/regexp/,/regexp/d</code> = Remove all lines where the first <em>or</em> the second regexp appears</li>
+<li><code>:%s/^\(.*\)\n\1$/\1/</code> = Remove all duplicated lines in the current file</li>
+</ul>
+<p>##Tips</p>
+<h3 id="change-statusline-colours">Change statusline colours</h3>
+<p>Edit in the colour theme file the <code>hi Statusline</code> line. <code>ctermfg</code> is the foreground colour, <code>ctermbg</code> is the background. Use <code>:he cterm-colors</code> to see which colours can be used. Up until 256 colours, if the terminal supports it, can be used, see <a href="http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim">here</a></p>
+<h3 id="regexp">Regexp</h3>
+<p>Instead of backslashing special characters, it&rsquo;s possible to add <code>\v</code> at the
 very beginning of a regexp so that everything that&rsquo;s not a letter, a number or
 an underscore is taken to have a special meaning unless explicitly escaped. For
-example:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-vim data-lang=vim><span class=line><span class=cl><span class=p>:</span>%<span class=nx>s</span><span class=sr>/\v^%(abc){1,3}(.+)$/</span>\<span class=m>1</span>/<span class=err>
-</span></span></span></code></pre></div><p>doesn&rsquo;t need backslashing before parentheses, plus sign and curly brackets.</p><p>Also, <code>\c</code> turns off case sensitivity. Its opposite is <code>\C</code>, forcing case
-sensitivity on.</p><h3 id=identify-corresponding-openingclosing-html-tag>Identify corresponding opening/closing HTML tag</h3><p>Typing <code>v</code> + <code>a</code> + <code>t</code> will select everything inside the html tag where is the cursor. Subsequently <code>o</code> will jump between the opening and closing tag, <code>c</code> will change content and <code>y</code> will yank</p><h3 id=plugins>Plugins</h3><p>Other than using a plugin helper, from ViM 8 onward it is possible to install a plugin directly in the <code>.vim/pack/</code> directory and load it without touching the configuration at all.</p><p>If the plugin is on Github, it can be automatically installed and set to autoload with this command:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-vim data-lang=vim><span class=line><span class=cl><span class=nx>git</span> <span class=nx>clone</span> <span class=p>--</span><span class=nx>depth</span> <span class=m>1</span> <span class=nx>https</span>:<span class=sr>//</span><span class=nx>github</span>.<span class=nx>com</span><span class=sr>/account/</span><span class=nx>pluginname</span> .<span class=nx>vim</span><span class=sr>/pack/</span><span class=nx>dist</span><span class=sr>/start/</span><span class=nx>pluginname</span><span class=err>
-</span></span></span></code></pre></div><footer class=footline></footer></article></div></main></div><aside id=sidebar class=default-animation dir=ltr><div id=header-wrapper class=default-animation><div id=header class=default-animation><a id=logo href=/Personal-Wiki><img src=/images/fpc-darkbluelogo.png></a></div><div class="searchbox default-animation"><i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=search-by>Search</label>
-<input data-search-input id=search-by name=search-by class=search-by type=search placeholder=Search...>
-<span data-search-clear><i class="fas fa-times"></i></span></div><script>var contentLangs=["en"]</script><script src=/Personal-Wiki/js/auto-complete.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/lunr.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/lunr.stemmer.support.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/lunr.multi.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/lunr.en.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/search.js?1668962864 defer></script></div><div id=content-wrapper class=highlightable><ul class=topics><li data-nav-id=/Personal-Wiki/android/index.html class=dd-item><a href=/Personal-Wiki/android/index.html>Android</a></li><li data-nav-id=/Personal-Wiki/devops/index.html class=dd-item><a href=/Personal-Wiki/devops/index.html>DevOps</a><ul id=subsections-28776b52da83a599a93e5a3c3f47860b><li data-nav-id=/Personal-Wiki/devops/aws/index.html class=dd-item><a href=/Personal-Wiki/devops/aws/index.html>AWS</a></li><li data-nav-id=/Personal-Wiki/devops/docker/index.html class=dd-item><a href=/Personal-Wiki/devops/docker/index.html>Docker</a></li><li data-nav-id=/Personal-Wiki/devops/kubernetes/index.html class=dd-item><a href=/Personal-Wiki/devops/kubernetes/index.html>Kubernetes</a></li><li data-nav-id=/Personal-Wiki/devops/system_design/index.html class=dd-item><a href=/Personal-Wiki/devops/system_design/index.html>System Design</a></li></ul></li><li data-nav-id=/Personal-Wiki/frontend/index.html class=dd-item><a href=/Personal-Wiki/frontend/index.html>Frontend</a><ul id=subsections-1f846e8dcef1e4719580d68fa558c953><li data-nav-id=/Personal-Wiki/frontend/css/index.html class=dd-item><a href=/Personal-Wiki/frontend/css/index.html>Css</a></li><li data-nav-id=/Personal-Wiki/frontend/d3/index.html class=dd-item><a href=/Personal-Wiki/frontend/d3/index.html>D3</a></li><li data-nav-id=/Personal-Wiki/frontend/jquery/index.html class=dd-item><a href=/Personal-Wiki/frontend/jquery/index.html>jQuery</a></li><li data-nav-id=/Personal-Wiki/frontend/npm/index.html class=dd-item><a href=/Personal-Wiki/frontend/npm/index.html>Npm</a></li></ul></li><li data-nav-id=/Personal-Wiki/languages/index.html class=dd-item><a href=/Personal-Wiki/languages/index.html>Languages</a><ul id=subsections-5e89ad977c7019b4f16e8a196532bb7b><li data-nav-id=/Personal-Wiki/languages/awk/index.html class=dd-item><a href=/Personal-Wiki/languages/awk/index.html>Awk</a></li><li data-nav-id=/Personal-Wiki/languages/bash/index.html class=dd-item><a href=/Personal-Wiki/languages/bash/index.html>Bash</a></li><li data-nav-id=/Personal-Wiki/languages/c/index.html class=dd-item><a href=/Personal-Wiki/languages/c/index.html>C</a></li><li data-nav-id=/Personal-Wiki/languages/common_lisp/index.html class=dd-item><a href=/Personal-Wiki/languages/common_lisp/index.html>Common Lisp</a></li><li data-nav-id=/Personal-Wiki/languages/go/index.html class=dd-item><a href=/Personal-Wiki/languages/go/index.html>Go</a></li><li data-nav-id=/Personal-Wiki/languages/javascript/index.html class=dd-item><a href=/Personal-Wiki/languages/javascript/index.html>Javascript</a></li><li data-nav-id=/Personal-Wiki/languages/lua/index.html class=dd-item><a href=/Personal-Wiki/languages/lua/index.html>Lua</a></li><li data-nav-id=/Personal-Wiki/languages/python/index.html class=dd-item><a href=/Personal-Wiki/languages/python/index.html>Python</a></li><li data-nav-id=/Personal-Wiki/languages/sed/index.html class=dd-item><a href=/Personal-Wiki/languages/sed/index.html>Sed</a></li><li data-nav-id=/Personal-Wiki/languages/zsh/index.html class=dd-item><a href=/Personal-Wiki/languages/zsh/index.html>Zsh</a></li></ul></li><li data-nav-id=/Personal-Wiki/operating_systems/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/index.html>Operating Systems</a><ul id=subsections-52903e8a7527c9f6c3626680ca25dd54><li data-nav-id=/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html>FreeBSD</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/index.html>Linux</a><ul id=subsections-392eb34fc3afb0ea7edb6b36d7c6de05><li data-nav-id=/Personal-Wiki/operating_systems/linux/apparmor/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/apparmor/index.html>AppArmor</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/archlinux/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/archlinux/index.html>Archlinux</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/compose_key/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/compose_key/index.html>Compose Key</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/debian/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/debian/index.html>Debian</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/firewall/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/firewall/index.html>Firewall</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/framebuffer/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/framebuffer/index.html>Framebuffer</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/kernel/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/kernel/index.html>Kernel</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/linux_commands/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/linux_commands/index.html>Linux Commands</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/raspberrypios/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/raspberrypios/index.html>Raspberry Pi OS</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/selinux/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/selinux/index.html>SELinux</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/sysrq_key/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/sysrq_key/index.html>Sysrq Key</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/systemd/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/systemd/index.html>SystemD</a></li><li data-nav-id=/Personal-Wiki/operating_systems/linux/x/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/linux/x/index.html>Xorg</a></li></ul></li><li data-nav-id=/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html>NixOS</a></li><li data-nav-id=/Personal-Wiki/operating_systems/windows/windows_commands/index.html class=dd-item><a href=/Personal-Wiki/operating_systems/windows/windows_commands/index.html>Windows Commands</a></li></ul></li><li data-nav-id=/Personal-Wiki/programs/index.html class="dd-item parent"><a href=/Personal-Wiki/programs/index.html>Programs</a><ul id=subsections-5e3ad4673f47319cd86a754082834f00><li data-nav-id=/Personal-Wiki/programs/chromium/index.html class=dd-item><a href=/Personal-Wiki/programs/chromium/index.html>Chromium</a></li><li data-nav-id=/Personal-Wiki/programs/curl/index.html class=dd-item><a href=/Personal-Wiki/programs/curl/index.html>Curl</a></li><li data-nav-id=/Personal-Wiki/programs/emacs/index.html class=dd-item><a href=/Personal-Wiki/programs/emacs/index.html>Emacs</a></li><li data-nav-id=/Personal-Wiki/programs/e-uae/index.html class=dd-item><a href=/Personal-Wiki/programs/e-uae/index.html>E-Uae</a></li><li data-nav-id=/Personal-Wiki/programs/ffmpeg/index.html class=dd-item><a href=/Personal-Wiki/programs/ffmpeg/index.html>Ffmpeg</a></li><li data-nav-id=/Personal-Wiki/programs/firefox/index.html class=dd-item><a href=/Personal-Wiki/programs/firefox/index.html>Firefox</a></li><li data-nav-id=/Personal-Wiki/programs/flash/index.html class=dd-item><a href=/Personal-Wiki/programs/flash/index.html>Flash</a></li><li data-nav-id=/Personal-Wiki/programs/gimp/index.html class=dd-item><a href=/Personal-Wiki/programs/gimp/index.html>Gimp</a></li><li data-nav-id=/Personal-Wiki/programs/git/index.html class=dd-item><a href=/Personal-Wiki/programs/git/index.html>Git</a></li><li data-nav-id=/Personal-Wiki/programs/gmail/index.html class=dd-item><a href=/Personal-Wiki/programs/gmail/index.html>GMail</a></li><li data-nav-id=/Personal-Wiki/programs/gnome/index.html class=dd-item><a href=/Personal-Wiki/programs/gnome/index.html>Gnome</a></li><li data-nav-id=/Personal-Wiki/programs/grub/index.html class=dd-item><a href=/Personal-Wiki/programs/grub/index.html>Grub</a></li><li data-nav-id=/Personal-Wiki/programs/httrack/index.html class=dd-item><a href=/Personal-Wiki/programs/httrack/index.html>HTTrack</a></li><li data-nav-id=/Personal-Wiki/programs/imagemagick-convert/index.html class=dd-item><a href=/Personal-Wiki/programs/imagemagick-convert/index.html>Imagemagick Convert</a></li><li data-nav-id=/Personal-Wiki/programs/kitty/index.html class=dd-item><a href=/Personal-Wiki/programs/kitty/index.html>Kitty</a></li><li data-nav-id=/Personal-Wiki/programs/mplayer/index.html class=dd-item><a href=/Personal-Wiki/programs/mplayer/index.html>MPlayer</a></li><li data-nav-id=/Personal-Wiki/programs/mutt/index.html class=dd-item><a href=/Personal-Wiki/programs/mutt/index.html>Mutt</a></li><li data-nav-id=/Personal-Wiki/programs/rtorrent/index.html class=dd-item><a href=/Personal-Wiki/programs/rtorrent/index.html>Rtorrent</a></li><li data-nav-id=/Personal-Wiki/programs/screen/index.html class=dd-item><a href=/Personal-Wiki/programs/screen/index.html>Screen</a></li><li data-nav-id=/Personal-Wiki/programs/ssh/index.html class=dd-item><a href=/Personal-Wiki/programs/ssh/index.html>Ssh</a></li><li data-nav-id=/Personal-Wiki/programs/tcpdump/index.html class=dd-item><a href=/Personal-Wiki/programs/tcpdump/index.html>Tcpdump</a></li><li data-nav-id=/Personal-Wiki/programs/tmux/index.html class=dd-item><a href=/Personal-Wiki/programs/tmux/index.html>Tmux</a></li><li data-nav-id=/Personal-Wiki/programs/urxvt/index.html class=dd-item><a href=/Personal-Wiki/programs/urxvt/index.html>URxvt</a></li><li data-nav-id=/Personal-Wiki/programs/vim/index.html class="dd-item active"><a href=/Personal-Wiki/programs/vim/index.html>ViM</a></li><li data-nav-id=/Personal-Wiki/programs/wireshark/index.html class=dd-item><a href=/Personal-Wiki/programs/wireshark/index.html>Wireshark</a></li></ul></li><li data-nav-id=/Personal-Wiki/theory/index.html class=dd-item><a href=/Personal-Wiki/theory/index.html>Computer Science Theory</a><ul id=subsections-fcd5be2517f8bb5ec12b281f24343413><li data-nav-id=/Personal-Wiki/theory/big_oh_notation/index.html class=dd-item><a href=/Personal-Wiki/theory/big_oh_notation/index.html>Big Oh Notation</a></li><li data-nav-id=/Personal-Wiki/theory/data_structures/index.html class=dd-item><a href=/Personal-Wiki/theory/data_structures/index.html>Data Structures</a></li><li data-nav-id=/Personal-Wiki/theory/set_theory/index.html class=dd-item><a href=/Personal-Wiki/theory/set_theory/index.html>Set Theory</a></li></ul></li><li data-nav-id=/Personal-Wiki/various/index.html class=dd-item><a href=/Personal-Wiki/various/index.html>Various</a><ul id=subsections-051e7d1442dfc9f3a48ad1ca7b758c17><li data-nav-id=/Personal-Wiki/various/advertising_and_marketing/index.html class=dd-item><a href=/Personal-Wiki/various/advertising_and_marketing/index.html>Advertising and Marketing</a></li><li data-nav-id=/Personal-Wiki/various/cryptocurrencies/index.html class=dd-item><a href=/Personal-Wiki/various/cryptocurrencies/index.html>Cryptocurrencies</a></li><li data-nav-id=/Personal-Wiki/various/hardware/index.html class=dd-item><a href=/Personal-Wiki/various/hardware/index.html>Hardware</a></li><li data-nav-id=/Personal-Wiki/various/hugo/index.html class=dd-item><a href=/Personal-Wiki/various/hugo/index.html>Hugo</a></li><li data-nav-id=/Personal-Wiki/various/i3/index.html class=dd-item><a href=/Personal-Wiki/various/i3/index.html>i3</a></li><li data-nav-id=/Personal-Wiki/various/load_balancing/index.html class=dd-item><a href=/Personal-Wiki/various/load_balancing/index.html>Load Balancing</a></li><li data-nav-id=/Personal-Wiki/various/markdown/index.html class=dd-item><a href=/Personal-Wiki/various/markdown/index.html>Markdown</a></li><li data-nav-id=/Personal-Wiki/various/mongodb/index.html class=dd-item><a href=/Personal-Wiki/various/mongodb/index.html>MongoDB</a></li><li data-nav-id=/Personal-Wiki/various/networks/index.html class=dd-item><a href=/Personal-Wiki/various/networks/index.html>Networks</a></li><li data-nav-id=/Personal-Wiki/various/plain_text_accounting/index.html class=dd-item><a href=/Personal-Wiki/various/plain_text_accounting/index.html>Plain Text Accounting</a></li><li data-nav-id=/Personal-Wiki/various/samba_and_nfs/index.html class=dd-item><a href=/Personal-Wiki/various/samba_and_nfs/index.html>Samba and Nfs</a></li><li data-nav-id=/Personal-Wiki/various/seo/index.html class=dd-item><a href=/Personal-Wiki/various/seo/index.html>SEO</a></li><li data-nav-id=/Personal-Wiki/various/sqlite/index.html class=dd-item><a href=/Personal-Wiki/various/sqlite/index.html>SQLite</a></li><li data-nav-id=/Personal-Wiki/various/tiddlywiki/index.html class=dd-item><a href=/Personal-Wiki/various/tiddlywiki/index.html>Tiddlywiki</a></li><li data-nav-id=/Personal-Wiki/various/zfs/index.html class=dd-item><a href=/Personal-Wiki/various/zfs/index.html>Zfs</a></li></ul></li><li data-nav-id=/Personal-Wiki/travels/index.html class=dd-item><a href=/Personal-Wiki/travels/index.html>Travels</a><ul id=subsections-a2f35faeb862d8dc5aa16d3645944559><li data-nav-id=/Personal-Wiki/travels/bali/index.html class=dd-item><a href=/Personal-Wiki/travels/bali/index.html>Bali</a></li><li data-nav-id=/Personal-Wiki/travels/caribbeans/index.html class=dd-item><a href=/Personal-Wiki/travels/caribbeans/index.html>Caribbeans</a></li><li data-nav-id=/Personal-Wiki/travels/french_polynesia/index.html class=dd-item><a href=/Personal-Wiki/travels/french_polynesia/index.html>French Polynesia</a></li><li data-nav-id=/Personal-Wiki/travels/places_to_visit/index.html class=dd-item><a href=/Personal-Wiki/travels/places_to_visit/index.html>Places to Visit</a></li></ul></li><li data-nav-id=/Personal-Wiki/history/index.html class=dd-item><a href=/Personal-Wiki/history/index.html>History</a><ul id=subsections-28afe07b1f43a9e9c0c12d4859c39ee9><li data-nav-id=/Personal-Wiki/history/art_history/index.html class=dd-item><a href=/Personal-Wiki/history/art_history/index.html>Art History</a></li><li data-nav-id=/Personal-Wiki/history/military_history/index.html class=dd-item><a href=/Personal-Wiki/history/military_history/index.html>Military History</a></li><li data-nav-id=/Personal-Wiki/history/sumeria/index.html class=dd-item><a href=/Personal-Wiki/history/sumeria/index.html>Sumeria</a></li></ul></li><li data-nav-id=/Personal-Wiki/hobbies/index.html class=dd-item><a href=/Personal-Wiki/hobbies/index.html>Hobbies</a><ul id=subsections-1fbb774d475b742078ae8ed457b37bc6><li data-nav-id=/Personal-Wiki/hobbies/cigars/index.html class=dd-item><a href=/Personal-Wiki/hobbies/cigars/index.html>Cigars</a></li><li data-nav-id=/Personal-Wiki/hobbies/fantasy/index.html class=dd-item><a href=/Personal-Wiki/hobbies/fantasy/index.html>Fantasy</a></li><li data-nav-id=/Personal-Wiki/hobbies/music/index.html class=dd-item><a href=/Personal-Wiki/hobbies/music/index.html>Music</a></li><li data-nav-id=/Personal-Wiki/hobbies/sailing/index.html class=dd-item><a href=/Personal-Wiki/hobbies/sailing/index.html>Sailing</a></li></ul></li><li data-nav-id=/Personal-Wiki/health/index.html class=dd-item><a href=/Personal-Wiki/health/index.html>Health</a><ul id=subsections-133177f9b5c67f09c921f9e65fbb4aa4><li data-nav-id=/Personal-Wiki/health/autism/index.html class=dd-item><a href=/Personal-Wiki/health/autism/index.html>Autism</a></li><li data-nav-id=/Personal-Wiki/health/depression/index.html class=dd-item><a href=/Personal-Wiki/health/depression/index.html>Depression</a></li><li data-nav-id=/Personal-Wiki/health/mental_health/index.html class=dd-item><a href=/Personal-Wiki/health/mental_health/index.html>Mental Health</a></li></ul></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/index.html>Philosophy and Religion</a><ul id=subsections-ced43f18165055f5416a65be3999dfa5><li data-nav-id=/Personal-Wiki/philosophy_and_religion/buddhism/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/buddhism/index.html>Buddhism</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/christianity/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/christianity/index.html>Christianity</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/hinduism/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/hinduism/index.html>Hinduism</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/philosophy/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/philosophy/index.html>Philosophy</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/paganism/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/paganism/index.html>Paganism</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/yoga/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/yoga/index.html>Yoga</a></li><li data-nav-id=/Personal-Wiki/philosophy_and_religion/zealots/index.html class=dd-item><a href=/Personal-Wiki/philosophy_and_religion/zealots/index.html>Zealots</a></li></ul></li><li data-nav-id=/Personal-Wiki/writing/index.html class=dd-item><a href=/Personal-Wiki/writing/index.html>Writing</a><ul id=subsections-a16074696a2e072964041e9ad7cd8fd5><li data-nav-id=/Personal-Wiki/writing/technical_writing/index.html class=dd-item><a href=/Personal-Wiki/writing/technical_writing/index.html>Technical Writing</a></li></ul></li></ul><div id=shortcuts><div class=nav-title>More</div><ul><li><a class=padding href=https://github.com/Donearm/Personal-Wiki><i class='fab fa-fw fa-github'></i> GitHub repo</a></li><li><a class=padding href=https://www.gianlucafiore.it><i class='fas fa-fw fa-bookmark'></i> Personal Site</a></li><li><a class=padding href=https://www.fountainpencreator.com><i class='fas fa-solid fa-pen-nib'></i> Fountain Pen Creator</a></li></ul></div><div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div><hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"><div id=prefooter class="footerLangSwitch footerVariantSwitch footerVisitedLinks"><ul><li id=select-language-container class=footerLangSwitch><div class="padding select-container"><i class="fas fa-language fa-fw"></i>
-<span>&nbsp;</span><div class=select-style><label class=a11y-only for=select-language>Language</label>
-<select id=select-language onchange="location=baseUri+this.value"></select></div><div class=select-clear></div></div></li><li id=select-variant-container class=footerVariantSwitch><div class="padding select-container"><i class="fas fa-paint-brush fa-fw"></i>
-<span>&nbsp;</span><div class=select-style><label class=a11y-only for=select-variant>Theme</label>
-<select id=select-variant onchange=window.variants&&variants.changeVariant(this.value)><option id=fpc value=fpc selected>Fpc</option></select></div><div class=select-clear></div></div><script>window.variants&&variants.markSelectedVariant()</script></li><li class=footerVisitedLinks><button class=padding onclick=clearHistory()><i class="fas fa-history fa-fw"></i> Clear History</button></li></ul></div><div id=footer class="footerFooter showFooter"><p>© 2000-2022 Gianluca Fiore</p></div></div></aside><script src=/Personal-Wiki/js/clipboard.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/perfect-scrollbar.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/featherlight.min.js?1668962864 defer></script>
-<script src=/Personal-Wiki/js/theme.js?1668962864 defer></script></body></html>
+example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="p">:</span>%<span class="nx">s</span><span class="sr">/\v^%(abc){1,3}(.+)$/</span>\<span class="m">1</span>/<span class="err">
+</span></span></span></code></pre></div><p>doesn&rsquo;t need backslashing before parentheses, plus sign and curly brackets.</p>
+<p>Also, <code>\c</code> turns off case sensitivity. Its opposite is <code>\C</code>, forcing case
+sensitivity on.</p>
+<h3 id="identify-corresponding-openingclosing-html-tag">Identify corresponding opening/closing HTML tag</h3>
+<p>Typing <code>v</code> + <code>a</code> + <code>t</code> will select everything inside the html tag where is the cursor. Subsequently <code>o</code> will jump between the opening and closing tag, <code>c</code> will change content and <code>y</code> will yank</p>
+<h3 id="plugins">Plugins</h3>
+<p>Other than using a plugin helper, from ViM 8 onward it is possible to install a plugin directly in the <code>.vim/pack/</code> directory and load it without touching the configuration at all.</p>
+<p>If the plugin is on Github, it can be automatically installed and set to autoload with this command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">clone</span> <span class="p">--</span><span class="nx">depth</span> <span class="m">1</span> <span class="nx">https</span>:<span class="sr">//</span><span class="nx">github</span>.<span class="nx">com</span><span class="sr">/account/</span><span class="nx">pluginname</span> .<span class="nx">vim</span><span class="sr">/pack/</span><span class="nx">dist</span><span class="sr">/start/</span><span class="nx">pluginname</span><span class="err">
+</span></span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Personal-Wiki"><img src="/images/fpc-darkbluelogo.png"></a>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Personal-Wiki/js/auto-complete.js?1673107025" defer></script>
+        <script src="/Personal-Wiki/js/lunr.min.js?1673107025" defer></script>
+        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1673107025" defer></script>
+        <script src="/Personal-Wiki/js/lunr.multi.min.js?1673107025" defer></script>
+        <script src="/Personal-Wiki/js/lunr.en.min.js?1673107025" defer></script>
+        <script src="/Personal-Wiki/js/search.js?1673107025" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/Personal-Wiki/android/index.html" class="dd-item"><a href="/Personal-Wiki/android/index.html">Android</a></li>
+          <li data-nav-id="/Personal-Wiki/devops/index.html" class="dd-item"><a href="/Personal-Wiki/devops/index.html">DevOps</a><ul id="subsections-28776b52da83a599a93e5a3c3f47860b">
+          <li data-nav-id="/Personal-Wiki/devops/aws/index.html" class="dd-item"><a href="/Personal-Wiki/devops/aws/index.html">AWS</a></li>
+          <li data-nav-id="/Personal-Wiki/devops/docker/index.html" class="dd-item"><a href="/Personal-Wiki/devops/docker/index.html">Docker</a></li>
+          <li data-nav-id="/Personal-Wiki/devops/kubernetes/index.html" class="dd-item"><a href="/Personal-Wiki/devops/kubernetes/index.html">Kubernetes</a></li>
+          <li data-nav-id="/Personal-Wiki/devops/system_design/index.html" class="dd-item"><a href="/Personal-Wiki/devops/system_design/index.html">System Design</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/frontend/index.html" class="dd-item"><a href="/Personal-Wiki/frontend/index.html">Frontend</a><ul id="subsections-1f846e8dcef1e4719580d68fa558c953">
+          <li data-nav-id="/Personal-Wiki/frontend/css/index.html" class="dd-item"><a href="/Personal-Wiki/frontend/css/index.html">Css</a></li>
+          <li data-nav-id="/Personal-Wiki/frontend/d3/index.html" class="dd-item"><a href="/Personal-Wiki/frontend/d3/index.html">D3</a></li>
+          <li data-nav-id="/Personal-Wiki/frontend/jquery/index.html" class="dd-item"><a href="/Personal-Wiki/frontend/jquery/index.html">jQuery</a></li>
+          <li data-nav-id="/Personal-Wiki/frontend/npm/index.html" class="dd-item"><a href="/Personal-Wiki/frontend/npm/index.html">Npm</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/languages/index.html" class="dd-item"><a href="/Personal-Wiki/languages/index.html">Languages</a><ul id="subsections-5e89ad977c7019b4f16e8a196532bb7b">
+          <li data-nav-id="/Personal-Wiki/languages/awk/index.html" class="dd-item"><a href="/Personal-Wiki/languages/awk/index.html">Awk</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/bash/index.html" class="dd-item"><a href="/Personal-Wiki/languages/bash/index.html">Bash</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/c/index.html" class="dd-item"><a href="/Personal-Wiki/languages/c/index.html">C</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/common_lisp/index.html" class="dd-item"><a href="/Personal-Wiki/languages/common_lisp/index.html">Common Lisp</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/go/index.html" class="dd-item"><a href="/Personal-Wiki/languages/go/index.html">Go</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/javascript/index.html" class="dd-item"><a href="/Personal-Wiki/languages/javascript/index.html">Javascript</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/lua/index.html" class="dd-item"><a href="/Personal-Wiki/languages/lua/index.html">Lua</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/python/index.html" class="dd-item"><a href="/Personal-Wiki/languages/python/index.html">Python</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/sed/index.html" class="dd-item"><a href="/Personal-Wiki/languages/sed/index.html">Sed</a></li>
+          <li data-nav-id="/Personal-Wiki/languages/zsh/index.html" class="dd-item"><a href="/Personal-Wiki/languages/zsh/index.html">Zsh</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/index.html">Operating Systems</a><ul id="subsections-52903e8a7527c9f6c3626680ca25dd54">
+          <li data-nav-id="/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html">FreeBSD</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/index.html">Linux</a><ul id="subsections-392eb34fc3afb0ea7edb6b36d7c6de05">
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/apparmor/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/apparmor/index.html">AppArmor</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/archlinux/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/archlinux/index.html">Archlinux</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/compose_key/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/compose_key/index.html">Compose Key</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/debian/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/debian/index.html">Debian</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/firewall/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/firewall/index.html">Firewall</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/framebuffer/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/framebuffer/index.html">Framebuffer</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/kernel/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/kernel/index.html">Kernel</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/linux_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/linux_commands/index.html">Linux Commands</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/raspberrypios/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/raspberrypios/index.html">Raspberry Pi OS</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/selinux/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/selinux/index.html">SELinux</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/sysrq_key/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/sysrq_key/index.html">Sysrq Key</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/systemd/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/systemd/index.html">SystemD</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/linux/x/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
+          <li data-nav-id="/Personal-Wiki/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/programs/index.html" class="dd-item parent"><a href="/Personal-Wiki/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
+          <li data-nav-id="/Personal-Wiki/programs/chromium/index.html" class="dd-item"><a href="/Personal-Wiki/programs/chromium/index.html">Chromium</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/curl/index.html" class="dd-item"><a href="/Personal-Wiki/programs/curl/index.html">Curl</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/emacs/index.html" class="dd-item"><a href="/Personal-Wiki/programs/emacs/index.html">Emacs</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/e-uae/index.html" class="dd-item"><a href="/Personal-Wiki/programs/e-uae/index.html">E-Uae</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/ffmpeg/index.html" class="dd-item"><a href="/Personal-Wiki/programs/ffmpeg/index.html">Ffmpeg</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/firefox/index.html" class="dd-item"><a href="/Personal-Wiki/programs/firefox/index.html">Firefox</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/flash/index.html" class="dd-item"><a href="/Personal-Wiki/programs/flash/index.html">Flash</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/gimp/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gimp/index.html">Gimp</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/git/index.html" class="dd-item"><a href="/Personal-Wiki/programs/git/index.html">Git</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/gmail/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gmail/index.html">GMail</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/gnome/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gnome/index.html">Gnome</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/grub/index.html" class="dd-item"><a href="/Personal-Wiki/programs/grub/index.html">Grub</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/httrack/index.html" class="dd-item"><a href="/Personal-Wiki/programs/httrack/index.html">HTTrack</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/imagemagick-convert/index.html" class="dd-item"><a href="/Personal-Wiki/programs/imagemagick-convert/index.html">Imagemagick Convert</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/kitty/index.html" class="dd-item"><a href="/Personal-Wiki/programs/kitty/index.html">Kitty</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/mplayer/index.html" class="dd-item"><a href="/Personal-Wiki/programs/mplayer/index.html">MPlayer</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/mutt/index.html" class="dd-item"><a href="/Personal-Wiki/programs/mutt/index.html">Mutt</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/rtorrent/index.html" class="dd-item"><a href="/Personal-Wiki/programs/rtorrent/index.html">Rtorrent</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/screen/index.html" class="dd-item"><a href="/Personal-Wiki/programs/screen/index.html">Screen</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/ssh/index.html" class="dd-item"><a href="/Personal-Wiki/programs/ssh/index.html">Ssh</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/tcpdump/index.html" class="dd-item"><a href="/Personal-Wiki/programs/tcpdump/index.html">Tcpdump</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/tmux/index.html" class="dd-item"><a href="/Personal-Wiki/programs/tmux/index.html">Tmux</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/urxvt/index.html" class="dd-item"><a href="/Personal-Wiki/programs/urxvt/index.html">URxvt</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/vim/index.html" class="dd-item active"><a href="/Personal-Wiki/programs/vim/index.html">ViM</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/wireshark/index.html" class="dd-item"><a href="/Personal-Wiki/programs/wireshark/index.html">Wireshark</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/theory/index.html" class="dd-item"><a href="/Personal-Wiki/theory/index.html">Computer Science Theory</a><ul id="subsections-fcd5be2517f8bb5ec12b281f24343413">
+          <li data-nav-id="/Personal-Wiki/theory/big_oh_notation/index.html" class="dd-item"><a href="/Personal-Wiki/theory/big_oh_notation/index.html">Big Oh Notation</a></li>
+          <li data-nav-id="/Personal-Wiki/theory/data_structures/index.html" class="dd-item"><a href="/Personal-Wiki/theory/data_structures/index.html">Data Structures</a></li>
+          <li data-nav-id="/Personal-Wiki/theory/set_theory/index.html" class="dd-item"><a href="/Personal-Wiki/theory/set_theory/index.html">Set Theory</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/various/index.html" class="dd-item"><a href="/Personal-Wiki/various/index.html">Various</a><ul id="subsections-051e7d1442dfc9f3a48ad1ca7b758c17">
+          <li data-nav-id="/Personal-Wiki/various/advertising_and_marketing/index.html" class="dd-item"><a href="/Personal-Wiki/various/advertising_and_marketing/index.html">Advertising and Marketing</a></li>
+          <li data-nav-id="/Personal-Wiki/various/cryptocurrencies/index.html" class="dd-item"><a href="/Personal-Wiki/various/cryptocurrencies/index.html">Cryptocurrencies</a></li>
+          <li data-nav-id="/Personal-Wiki/various/hardware/index.html" class="dd-item"><a href="/Personal-Wiki/various/hardware/index.html">Hardware</a></li>
+          <li data-nav-id="/Personal-Wiki/various/hugo/index.html" class="dd-item"><a href="/Personal-Wiki/various/hugo/index.html">Hugo</a></li>
+          <li data-nav-id="/Personal-Wiki/various/i3/index.html" class="dd-item"><a href="/Personal-Wiki/various/i3/index.html">i3</a></li>
+          <li data-nav-id="/Personal-Wiki/various/load_balancing/index.html" class="dd-item"><a href="/Personal-Wiki/various/load_balancing/index.html">Load Balancing</a></li>
+          <li data-nav-id="/Personal-Wiki/various/markdown/index.html" class="dd-item"><a href="/Personal-Wiki/various/markdown/index.html">Markdown</a></li>
+          <li data-nav-id="/Personal-Wiki/various/mongodb/index.html" class="dd-item"><a href="/Personal-Wiki/various/mongodb/index.html">MongoDB</a></li>
+          <li data-nav-id="/Personal-Wiki/various/networks/index.html" class="dd-item"><a href="/Personal-Wiki/various/networks/index.html">Networks</a></li>
+          <li data-nav-id="/Personal-Wiki/various/plain_text_accounting/index.html" class="dd-item"><a href="/Personal-Wiki/various/plain_text_accounting/index.html">Plain Text Accounting</a></li>
+          <li data-nav-id="/Personal-Wiki/various/samba_and_nfs/index.html" class="dd-item"><a href="/Personal-Wiki/various/samba_and_nfs/index.html">Samba and Nfs</a></li>
+          <li data-nav-id="/Personal-Wiki/various/seo/index.html" class="dd-item"><a href="/Personal-Wiki/various/seo/index.html">SEO</a></li>
+          <li data-nav-id="/Personal-Wiki/various/sqlite/index.html" class="dd-item"><a href="/Personal-Wiki/various/sqlite/index.html">SQLite</a></li>
+          <li data-nav-id="/Personal-Wiki/various/tiddlywiki/index.html" class="dd-item"><a href="/Personal-Wiki/various/tiddlywiki/index.html">Tiddlywiki</a></li>
+          <li data-nav-id="/Personal-Wiki/various/zfs/index.html" class="dd-item"><a href="/Personal-Wiki/various/zfs/index.html">Zfs</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/travels/index.html" class="dd-item"><a href="/Personal-Wiki/travels/index.html">Travels</a><ul id="subsections-a2f35faeb862d8dc5aa16d3645944559">
+          <li data-nav-id="/Personal-Wiki/travels/bali/index.html" class="dd-item"><a href="/Personal-Wiki/travels/bali/index.html">Bali</a></li>
+          <li data-nav-id="/Personal-Wiki/travels/caribbeans/index.html" class="dd-item"><a href="/Personal-Wiki/travels/caribbeans/index.html">Caribbeans</a></li>
+          <li data-nav-id="/Personal-Wiki/travels/french_polynesia/index.html" class="dd-item"><a href="/Personal-Wiki/travels/french_polynesia/index.html">French Polynesia</a></li>
+          <li data-nav-id="/Personal-Wiki/travels/places_to_visit/index.html" class="dd-item"><a href="/Personal-Wiki/travels/places_to_visit/index.html">Places to Visit</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/history/index.html" class="dd-item"><a href="/Personal-Wiki/history/index.html">History</a><ul id="subsections-28afe07b1f43a9e9c0c12d4859c39ee9">
+          <li data-nav-id="/Personal-Wiki/history/art_history/index.html" class="dd-item"><a href="/Personal-Wiki/history/art_history/index.html">Art History</a></li>
+          <li data-nav-id="/Personal-Wiki/history/military_history/index.html" class="dd-item"><a href="/Personal-Wiki/history/military_history/index.html">Military History</a></li>
+          <li data-nav-id="/Personal-Wiki/history/sumeria/index.html" class="dd-item"><a href="/Personal-Wiki/history/sumeria/index.html">Sumeria</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/hobbies/index.html" class="dd-item"><a href="/Personal-Wiki/hobbies/index.html">Hobbies</a><ul id="subsections-1fbb774d475b742078ae8ed457b37bc6">
+          <li data-nav-id="/Personal-Wiki/hobbies/cigars/index.html" class="dd-item"><a href="/Personal-Wiki/hobbies/cigars/index.html">Cigars</a></li>
+          <li data-nav-id="/Personal-Wiki/hobbies/fantasy/index.html" class="dd-item"><a href="/Personal-Wiki/hobbies/fantasy/index.html">Fantasy</a></li>
+          <li data-nav-id="/Personal-Wiki/hobbies/music/index.html" class="dd-item"><a href="/Personal-Wiki/hobbies/music/index.html">Music</a></li>
+          <li data-nav-id="/Personal-Wiki/hobbies/sailing/index.html" class="dd-item"><a href="/Personal-Wiki/hobbies/sailing/index.html">Sailing</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/health/index.html" class="dd-item"><a href="/Personal-Wiki/health/index.html">Health</a><ul id="subsections-133177f9b5c67f09c921f9e65fbb4aa4">
+          <li data-nav-id="/Personal-Wiki/health/autism/index.html" class="dd-item"><a href="/Personal-Wiki/health/autism/index.html">Autism</a></li>
+          <li data-nav-id="/Personal-Wiki/health/depression/index.html" class="dd-item"><a href="/Personal-Wiki/health/depression/index.html">Depression</a></li>
+          <li data-nav-id="/Personal-Wiki/health/mental_health/index.html" class="dd-item"><a href="/Personal-Wiki/health/mental_health/index.html">Mental Health</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/index.html">Philosophy and Religion</a><ul id="subsections-ced43f18165055f5416a65be3999dfa5">
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/buddhism/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/buddhism/index.html">Buddhism</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/christianity/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/christianity/index.html">Christianity</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/hinduism/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/hinduism/index.html">Hinduism</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/philosophy/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/philosophy/index.html">Philosophy</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/paganism/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/paganism/index.html">Paganism</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/yoga/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/yoga/index.html">Yoga</a></li>
+          <li data-nav-id="/Personal-Wiki/philosophy_and_religion/zealots/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/zealots/index.html">Zealots</a></li></ul></li>
+          <li data-nav-id="/Personal-Wiki/writing/index.html" class="dd-item"><a href="/Personal-Wiki/writing/index.html">Writing</a><ul id="subsections-a16074696a2e072964041e9ad7cd8fd5">
+          <li data-nav-id="/Personal-Wiki/writing/technical_writing/index.html" class="dd-item"><a href="/Personal-Wiki/writing/technical_writing/index.html">Technical Writing</a></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
+          <ul>
+            <li><a class="padding" href="https://github.com/Donearm/Personal-Wiki"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="https://www.gianlucafiore.it"><i class='fas fa-fw fa-bookmark'></i> Personal Site</a></li>
+            <li><a class="padding" href="https://www.fountainpencreator.com"><i class='fas fa-solid fa-pen-nib'></i> Fountain Pen Creator</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="fpc" value="fpc" selected>Fpc</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p>© 2000-2022 Gianluca Fiore</p>
+
+        </div>
+      </div>
+    </aside>
+    <script src="/Personal-Wiki/js/clipboard.min.js?1673107026" defer></script>
+    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1673107026" defer></script>
+    <script src="/Personal-Wiki/js/featherlight.min.js?1673107026" defer></script>
+    <script src="/Personal-Wiki/js/theme.js?1673107026" defer></script>
+  </body>
+</html>

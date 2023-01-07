@@ -1,10 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Gianluca Fiore Personal Wiki</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.html</link><description>Recent content in Linux on Gianluca Fiore Personal Wiki</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>AppArmor</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/index.html</guid><description>Basic commands apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command</description></item><item><title>Archlinux</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/index.html</guid><description>Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.</description></item><item><title>Compose Key</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/index.html</guid><description>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</description></item><item><title>Debian</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/index.html</guid><description>Commands update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package</description></item><item><title>Firewall</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/index.html</guid><description>Netfilter chains NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description></item><item><title>Framebuffer</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/index.html</guid><description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH)</description></item><item><title>Kernel</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/index.html</guid><description>Various kernel options Systemd net.ifnames=0 turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Gianluca Fiore Personal Wiki</title>
+    <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.html</link>
+    <description>Recent content in Linux on Gianluca Fiore Personal Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AppArmor</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/apparmor/index.html</guid>
+      <description>Basic commands apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command </description>
+    </item>
+    <item>
+      <title>Archlinux</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/archlinux/index.html</guid>
+      <description>Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
+[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.</description>
+    </item>
+    <item>
+      <title>Compose Key</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/compose_key/index.html</guid>
+      <description>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
+Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</description>
+    </item>
+    <item>
+      <title>Debian</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/debian/index.html</guid>
+      <description>Commands update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package </description>
+    </item>
+    <item>
+      <title>Firewall</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/firewall/index.html</guid>
+      <description>Netfilter chains NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
+    </item>
+    <item>
+      <title>Framebuffer</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/framebuffer/index.html</guid>
+      <description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH) </description>
+    </item>
+    <item>
+      <title>Kernel</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/kernel/index.html</guid>
+      <description>Various kernel options Systemd net.ifnames=0 turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
 Acpi/Apic options no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override Plus:
-acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description></item><item><title>Linux Commands</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/index.html</guid><description>A variegated collection of useful Linux commands, in no particular order
-testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display 'vid:*.</description></item><item><title>Raspberry Pi OS</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/index.html</guid><description>Useful links Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } More info here.</description></item><item><title>SELinux</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/index.html</guid><description>General commands semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce 'enforcing' = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description></item><item><title>Sysrq Key</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/index.html</guid><description>How do I use the magic SysRq key? to enable it
+acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description>
+    </item>
+    <item>
+      <title>Linux Commands</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/linux_commands/index.html</guid>
+      <description>A variegated collection of useful Linux commands, in no particular order
+testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
+    </item>
+    <item>
+      <title>Raspberry Pi OS</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/raspberrypios/index.html</guid>
+      <description>Useful links Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } More info here.</description>
+    </item>
+    <item>
+      <title>SELinux</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/selinux/index.html</guid>
+      <description>General commands semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
+    </item>
+    <item>
+      <title>Sysrq Key</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/sysrq_key/index.html</guid>
+      <description>How do I use the magic SysRq key? to enable it
 echo &amp;#34;1&amp;#34; &amp;gt; /proc/sys/kernel/sysrq or edit /etc/sysctl.conf and add kernel.sysrq = 1
-On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;. Note - Some keyboards may not have a key labeled SysRq. The SysRq key is also known as the Print Screen key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.</description></item><item><title>SystemD</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/index.html</guid><description>Systemd/Systemctl Journal Various Timers Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl --failed = show failed units systemctl isolate runlevel3.target = switch to run level 3.</description></item><item><title>Xorg</title><link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</guid><description>Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.
-Or read the full list on the web</description></item></channel></rss>
+On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;. Note - Some keyboards may not have a key labeled SysRq. The SysRq key is also known as the Print Screen key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.</description>
+    </item>
+    <item>
+      <title>SystemD</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/systemd/index.html</guid>
+      <description>Systemd/Systemctl Journal Various Timers Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl --failed = show failed units systemctl isolate runlevel3.target = switch to run level 3.</description>
+    </item>
+    <item>
+      <title>Xorg</title>
+      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</guid>
+      <description>Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.
+Or read the full list on the web</description>
+    </item>
+  </channel>
+</rss>
