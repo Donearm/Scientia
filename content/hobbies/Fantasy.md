@@ -3,7 +3,6 @@ title: Fantasy
 bookCollapseSection: true
 weight: 1120
 ---
-[Malazan Notes](Malazan)
 
 ## Chronology of fantasy of importance
 
