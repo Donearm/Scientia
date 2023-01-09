@@ -15,6 +15,7 @@ weight: 1110
 	* [Flowers](#flowers)
 	* [Other](#other)
 	* [Not-Really-Flavor Flavors](#not-really-flavor-flavors)
+* [Brands](#brands)
 
 <!-- vim-markdown-toc -->
 
@@ -121,3 +122,7 @@ This is a pretty broad category that will be used to describe a lot of other fla
 * Chewy – again, not really a flavor, more of an experience. A cigar where the smoke has an apparent texture to it in your mouth would be considered “chewy”.
 * Dry – just like wines and tea, a cigar that has that tannic quality that dries out your mouth and teeth. Found mostly in Connecticut Shade cigars – think Davidoff. Cigar Aficionado hates this, but I’m a big fan.
 * Harsh – not really a flavor per se, but definitely used to describe a cigar that may have one or several of the following components: ammonia, pepper and spice. Usually used to describe a cigar that is too young or unbalanced/muddled.
+
+## Brands
+
+A probably complete [list of Cuban cigar brands](https://www.cubancigarwebsite.com/brands).
