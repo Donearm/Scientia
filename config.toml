@@ -43,7 +43,7 @@ pygmentsUseClasses = true
 	# Change the title separator. Default to "::".
 	titleSeparator = "-"
 	# If set to true, the menu in the sidebar will be displayed in a collapsible tree view.
-	collapsibleMenu = false
+	collapsibleMenu = true
 
 
 
