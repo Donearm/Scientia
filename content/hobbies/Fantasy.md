@@ -4,6 +4,8 @@ bookCollapseSection: true
 weight: 1120
 ---
 
+[Malazan notes](../malazan).
+
 ## Chronology of fantasy of importance
 
 * **1865**: Alice's Adventures in Wonderland is first published.
