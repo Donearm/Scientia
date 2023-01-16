@@ -6,24 +6,70 @@ weight: 1127
 
 <!-- vim-markdown-toc GFM -->
 
-* [Gardens of the Moon](#gardens-of-the-moon)
-* [Deadhouse Gates](#deadhouse-gates)
-* [Memories of Ice](#memories-of-ice)
+* [Reading order](#reading-order)
+* [Notes](#notes)
+    * [Gardens of the Moon](#gardens-of-the-moon)
+    * [Deadhouse Gates](#deadhouse-gates)
+    * [Memories of Ice](#memories-of-ice)
 
 <!-- vim-markdown-toc -->
+
+--------------------
+
+## Reading order
+
+Much has been said about the right reading order for the Malazan series. I have no authority on that but I like this one from [The Wertzone](https://thewertzone.blogspot.com/2017/11/a-better-malazan-reading-order.html), modified to include the newest published books and the Bauchelain and Korbal Broach novellas):
+
+
+1. Gardens of the Moon (Malazan Book of the Fallen #1)
+2. Deadhouse Gates (Malazan Book of the Fallen #2)
+3. Memories of Ice (Malazan Book of the Fallen #3)
+4. Blood Follows (Bauchelain and Korbal Broach #1)
+5. The Lees of Laughter's End (Bauchelain and Korbal Broach #2)
+6. The Wurms of Blearmouth (Bauchelain and Korbal Broach #3)
+7. The Healthy Dead (Bauchelain and Korbal Broach #4)
+8. Crack'd Pot Tail (Bauchelain and Korbal Broach #5)
+9. The Fiends of Nightmaria (Bauchelain and Korbal Broach #6)
+10. House of Chains (Malazan Book of the Fallen #4)
+11. Midnight Tides (Malazan Book of the Fallen #5)
+12. Night of Knives (Novels of the Malazan Empire #1)
+13. The Bonehunters (Malazan Book of the Fallen #6)
+14. Return of the Crimson Guard (Novels of the Malazan Empire #2)
+15. Reaper's Gale (Malazan Book of the Fallen #7)
+16. Stonewielder (Novels of the Malazan Empire #3)
+17. Toll the Hounds (Malazan Book of the Fallen #8)
+19. Orb Sceptre Throne (Novels of the Malazan Empire #4)
+20. Dust of Dreams (Malazan Book of the Fallen #9)
+21. The Crippled God (Malazan Book of the Fallen #10)
+22. Blood and Bone (Novels of the Malazan Empire #5)
+23. Assail (Novels of the Malazan Empire #6)
+24. Dancer's Lament (Path to Ascendancy #1)
+25. Deadhouse Landing (Path to Ascendancy #2)
+26. Kellanved's Reach (Path to Ascendancy #3)
+27. Forge of the High Mage (Path to Ascendancy #4)
+28. Untitled (Path to Ascendancy #5)
+29. Untitled (Path to Ascendancy #6)
+30. Forge of Darkness (Kharkanas #1)
+31. Fall of Light (Kharkanas #2)
+32. Walk in Shadow (Kharkanas #3)
+33. The God is not Willing (Witness #1)
+34. No Life Forsaken (Witness #2)
+35. Untitled (Witness #3)
+
+## Notes
 
 As a great fan of the Malazan Book of the Fallen fantasy series, I like to collect small notes and facts during my rereads. Here they are, as a curiosity or starting point of further researching.
 
 The notes are separated by the book they are in, and ordered by page count.
 
-## Gardens of the Moon
+### Gardens of the Moon
 
 * `pg 352-359`: K'rul helps a Rhivi woman and P'ran Chole to give birth to Silverfox in a dream of Kruppe.
 * `pg 386`: Hood, Dessembrae, and all the Tiste Andii were present at the first Chaining.
 * `pg 577`: 800 years earlier, Rake last met with Icarium, with Mappo and Osric also present. Icarium and Osric had an altercation.
 * `pg 596`: Raest considers the Soletaken as aliens.
 
-## Deadhouse Gates
+### Deadhouse Gates
 
 * `pg 84`: Seven Cities were named so after 7 ascendants that founded them.
 * `pg 92`: The Emperor fought both Treach and Ryllandaras outside Li Heng, with Fiddler being present.
@@ -34,7 +80,7 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 738`: Cotillion ordered the Talons to kill all Nameless Ones they could find.
 * `pg 813`: Dassem Ultor's daughter was left in Tremorlor "after Hood was done playing with her" by his father.
 
-## Memories of Ice
+### Memories of Ice
 
 * `pg 189`: Once Anomander Rake killed a score of Seguleh, before being forced to retreat. He is considered the 7th Seguleh.
 * `pg 193`: There has been a mage called Nightchill for hundred years in the Malazan army.
