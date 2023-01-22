@@ -6,12 +6,17 @@ weight: 910
 <!-- vim-markdown-toc GFM -->
 
 * [Europe](#europe)
+	* [Austria](#austria)
+		* [Wien](#wien)
 	* [Cyprus](#cyprus)
 		* [Ayia Napa beaches](#ayia-napa-beaches)
 		* [Protaras beaches](#protaras-beaches)
 	* [Croatia](#croatia)
 		* [Best beaches](#best-beaches)
 		* [Croatian tour agencies](#croatian-tour-agencies)
+	* [Italy](#italy)
+		* [North Italy](#north-italy)
+			* [Venice](#venice)
 	* [Malta](#malta)
 		* [Maltese best beaches](#maltese-best-beaches)
 	* [Portugal](#portugal)
@@ -41,6 +46,22 @@ weight: 910
 
 # Europe
 
+## Austria
+
+### Wien
+
+* Hofburg (both the palace and the museum)
+* Stephansdom
+* Kapuzinekirche (and the crypt with the bodies of Absburg's royals)
+* Opera House
+* Karntnerstrasse (shopping artery of the old city)
+* Prater Park
+* Belvedere (the palace and the gardens)
+* Karlskirche
+* Hudertwasserhaus
+* Rathaus
+* Schonbrunn (palace and gardens)
+
 ## Cyprus
 
 ### Ayia Napa beaches
@@ -69,6 +90,21 @@ weight: 910
 
 + [Adriatic Explore](http://www.adriatic-explore.com/)
 + [Atlas Croatia](http://www.atlas-croatia.com)
+
+## Italy
+
+### North Italy
+
+* Palmanova del Friuli (a star fort city, perfectly preserved)
+
+#### Venice
+
+* Palazzo Ducale
+* Piazza S.Marco
+* Ponte Rialto
+* Scala Contarini del Bovolo (a gothic stairwell)
+* Basilica S.Marco
+* Libreria Acqua Alta (famous bookshop that gets regularly inundated)
 
 ## Malta
 
