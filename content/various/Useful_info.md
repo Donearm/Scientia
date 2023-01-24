@@ -9,6 +9,7 @@ weight: 858
 * [Traveling](#traveling)
 * [Electronics](#electronics)
 * [Law and taxes](#law-and-taxes)
+    * [Poland](#poland)
 
 <!-- vim-markdown-toc -->
 
@@ -30,3 +31,7 @@ eventually. Nothing that would match the other pages only.
 * [Servizi demografici comune di Napoli](https://demografici.comune.napoli.it/anagrafe/certificati)
 * [Decreto generale sul matrimonio canonico](https://www.chiesacattolica.it/wp-content/uploads/sites/31/2017/02/Decreto_generale_matrimonio_canonico.pdf)[PDF}
 * [International taxes for freelancers and digital nomads](https://taxes.pages.dev/)
+
+### Poland
+
+* [How to obtain the A1 certificate through the ZUS portal](https://www.zus.pl/portal/pomoc/index.html?obw0073.html)
