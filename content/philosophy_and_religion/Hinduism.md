@@ -3,6 +3,10 @@ title: Hinduism
 weight: 1360
 ---
 
+## Veda
+
+[Prajapati](https://en.wikipedia.org/wiki/Prajapati) is the progenitor God of the Rigveda. He is later to be equated with Brahma and, especially, the concept of the Brahman. He is considered the creator of the world, being born of the cosmic golden egg (or being the actual egg), that existed among the primeval waters. It has been proposed a comparison between Prajapati and the cult of Orpheus as a creator God in ancient and hellenistic Greece.
+
 ## Philosophical schools within Hinduism
 
 + [Cārvāka](http://en.wikipedia.org/wiki/C%C4%81rv%C4%81ka) - contemporary school to Buddha's lifetime, which has arguably influenced his teachings. Materialistic, skeptic, atheist.
