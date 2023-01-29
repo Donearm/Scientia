@@ -33,6 +33,7 @@ weight: 1210
 	* [Document360](#document360)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
+	* [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
 
@@ -218,3 +219,16 @@ Optionally, and especially when working for external clients, these points can b
 * **Cost**: a breakdown of the costs for each deliverable
 * **Disclaimer**: add one that states that the ultimate responsibility for the accuracy of the content is of the client and/or developers
 * **Terms**: payment schedule, cancellation policy and other legal terms
+
+### Tackling a new technical writing project
+
+A series of questions to help starting out with a new project, from the very 
+beginning when nothing is known about it.
+
+* What is this product? Why would anyone want it?
+	* Answer should come from asking SMEs and researching, not from a marketing standpoint
+* How does the product fit in the ecosystem, if at all? Does it have any dependencies?
+* Where can I acquire this product, and what versions exist?
+* How do I install the product? What are the basic configuration options?
+* What does a simple, start to finish, operation look like?
+	* Any operation will do but it should take users from nothing to something, convince readers that they learned something valuable
