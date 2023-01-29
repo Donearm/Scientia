@@ -18,7 +18,7 @@ Here I collect a few links and tips about games I enjoy(ed).
 ## Europa Universalis IV
 
 {{% expand title="A table with all the EUIV cheat codes" %}}
-| Command Name || Syntax | Description |
+| Command Name  | Syntax  | Description |
 |---------------|---------|-------------|
 | absolutism | absolutism [amount] [country tag] | This console command adds the specified amount (number) of absolutism to the country you are playing as. If a country tag is specified as a second argument, absolutism will be added to this country. Negative numbers can be used to decrease the absolutism of a country. |
 |add_to_curia_treasury | add_to_curia_treasury [amount] | This command adds the specified amount of money to the Curia Treasury. Specify a negative number to remove money from the Curia Treasury. DLC: Emperor|
