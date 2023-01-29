@@ -8,6 +8,7 @@ weight: 1210
 * [Books](#books)
 	* [Writing and Technical Writing books](#writing-and-technical-writing-books)
 	* [Styling and Designing Content books](#styling-and-designing-content-books)
+* [Online documentation and courses](#online-documentation-and-courses)
 * [Tools](#tools)
 	* [Confluence](#confluence)
 		* [Useful Macros/Plugins](#useful-macrosplugins)
@@ -61,6 +62,11 @@ weight: 1210
 * **Don't Make Me Think: A Common Sense Approach to Web Usability** by Steve Krug
 * **The Design of Everyday Things** by Donald Norman
 * **The Elements of Style** by William Strunk Jr.
+
+## Online documentation and courses
+
+* [Learning DITA](https://learningdita.com/available-courses/)
+* [Redhat's introduction to Modular Documentation](https://redhat-documentation.github.io/modular-docs)
 
 ## Tools
 
