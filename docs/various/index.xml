@@ -22,6 +22,15 @@
 Bitcoin/Litecoin API commands getaccountaddress &amp;quot;&amp;quot; = Print BTC/LTC address backupwallet &amp;lt;location&amp;gt; = Dump wallet to location encryptwallet &amp;lt;passphrase&amp;gt; = Encrypt the wallet with passphrase validateaddress &amp;lt;coin_address&amp;gt; = Print informations about coin_address walletpassphrasechange &amp;lt;oldpass&amp;gt; &amp;lt;newpass&amp;gt; = Change wallet password </description>
     </item>
     <item>
+      <title>Electricity</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/electricity/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/various/electricity/index.html</guid>
+      <description>A good answer on how to calculate power consumption The Amp-hours of a battery gives the number of hours it can deliver 1 amp, or the number of amps it can deliver for one hour.
+Amp-hours = amps x hours.
+So a 50Ah battery can run for 50 hours at one amp, or 50 amps for one hour. Or 2 amps for 25 hours, or 25 amps for 2 hours.</description>
+    </item>
+    <item>
       <title>Hardware</title>
       <link>https://donearm.github.io/Personal-Wiki/various/hardware/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
