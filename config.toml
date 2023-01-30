@@ -144,28 +144,28 @@ pygmentsUseClasses = true
 		style = "fruity"
 
 [outputs]
-    home = ["HTML", "RSS", "JSON", "Algolia"]
+    home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE"]
 
 # Algolia Search configure section
-[outputFormats.Algolia]
-    baseName = "algolia"
-    mediaType = "application/json"
-    isPlainText = true
-    notAlternative = true
+#[outputFormats.Algolia]
+#    baseName = "algolia"
+#    mediaType = "application/json"
+#    isPlainText = true
+#    notAlternative = true
 
-[params.algolia]
-    vars = [
-        "title",
-        "summary",
-        "content",
-        "date",
-        "publishdate",
-        "description",
-        "permalink",
-        "keywords",
-        "lastmod",
-    ]
-    params = [
-        "tags",
-        "categories",
-    ]
+#[params.algolia]
+#    vars = [
+#        "title",
+#        "summary",
+#        "content",
+#        "date",
+#        "publishdate",
+#        "description",
+#        "permalink",
+#        "keywords",
+#        "lastmod",
+#    ]
+#    params = [
+#        "tags",
+#        "categories",
+#    ]

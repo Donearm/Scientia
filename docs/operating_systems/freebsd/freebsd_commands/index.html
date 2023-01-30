@@ -11,23 +11,23 @@
     <title>FreeBSD - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1674996630" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1674996630" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/featherlight.min.css?1674996630" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1674996630" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/auto-complete.css?1674996630" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1674996630" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1674996630" rel="stylesheet">
-    <link href="/Personal-Wiki/css/nucleus.css?1674996630" rel="stylesheet">
-    <link href="/Personal-Wiki/css/fonts.css?1674996630" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1674996630" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/theme.css?1674996630" rel="stylesheet">
-    <link href="/Personal-Wiki/css/theme-fpc.css?1674996630" rel="stylesheet" id="variant-style">
-    <link href="/Personal-Wiki/css/ie.css?1674996630" rel="stylesheet">
-    <link href="/Personal-Wiki/css/variant.css?1674996630" rel="stylesheet">
-    <link href="/Personal-Wiki/css/print.css?1674996630" rel="stylesheet" media="print">
-    <script src="/Personal-Wiki/js/url.js?1674996630"></script>
-    <script src="/Personal-Wiki/js/variant.js?1674996630"></script>
+    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1675090741" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1675090741" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/featherlight.min.css?1675090741" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1675090741" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/auto-complete.css?1675090741" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1675090741" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1675090741" rel="stylesheet">
+    <link href="/Personal-Wiki/css/nucleus.css?1675090741" rel="stylesheet">
+    <link href="/Personal-Wiki/css/fonts.css?1675090741" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1675090741" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/theme.css?1675090741" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme-fpc.css?1675090741" rel="stylesheet" id="variant-style">
+    <link href="/Personal-Wiki/css/ie.css?1675090741" rel="stylesheet">
+    <link href="/Personal-Wiki/css/variant.css?1675090741" rel="stylesheet">
+    <link href="/Personal-Wiki/css/print.css?1675090741" rel="stylesheet" media="print">
+    <script src="/Personal-Wiki/js/url.js?1675090741"></script>
+    <script src="/Personal-Wiki/js/variant.js?1675090741"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_json_url="/Personal-Wiki/index.json";
+      window.index_js_url="/Personal-Wiki/index.search.js";
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
       // translations
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Personal-Wiki/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Personal-Wiki/js/jquery.min.js?1674996630" defer></script>
+    <script src="/Personal-Wiki/js/jquery.min.js?1675090741" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html">
     <div id="body" class="default-animation">
@@ -137,21 +137,21 @@
 <a id="logo" href="/Personal-Wiki"><img src="/images/fpc-darkbluelogo.png"></a>
 
         </div>
-        <div class="searchbox default-animation">
-          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+        <form action="/Personal-Wiki/search.html" method="get"><div class="searchbox default-animation">
+          <button type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
           <label class="a11y-only" for="search-by">Search</label>
           <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
           <span data-search-clear=""><i class="fas fa-times"></i></span>
-        </div>
+        </div></form>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Personal-Wiki/js/auto-complete.js?1674996630" defer></script>
-        <script src="/Personal-Wiki/js/lunr.min.js?1674996630" defer></script>
-        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1674996630" defer></script>
-        <script src="/Personal-Wiki/js/lunr.multi.min.js?1674996630" defer></script>
-        <script src="/Personal-Wiki/js/lunr.en.min.js?1674996630" defer></script>
-        <script src="/Personal-Wiki/js/search.js?1674996630" defer></script>
+        <script src="/Personal-Wiki/js/auto-complete.js?1675090741" defer></script>
+        <script src="/Personal-Wiki/js/lunr.min.js?1675090741" defer></script>
+        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1675090741" defer></script>
+        <script src="/Personal-Wiki/js/lunr.multi.min.js?1675090741" defer></script>
+        <script src="/Personal-Wiki/js/lunr.en.min.js?1675090741" defer></script>
+        <script src="/Personal-Wiki/js/search.js?1675090741" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -320,9 +320,9 @@
         </div>
       </div>
     </aside>
-    <script src="/Personal-Wiki/js/clipboard.min.js?1674996630" defer></script>
-    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1674996630" defer></script>
-    <script src="/Personal-Wiki/js/featherlight.min.js?1674996630" defer></script>
-    <script src="/Personal-Wiki/js/theme.js?1674996630" defer></script>
+    <script src="/Personal-Wiki/js/clipboard.min.js?1675090741" defer></script>
+    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1675090741" defer></script>
+    <script src="/Personal-Wiki/js/featherlight.min.js?1675090741" defer></script>
+    <script src="/Personal-Wiki/js/theme.js?1675090741" defer></script>
   </body>
 </html>
