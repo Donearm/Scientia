@@ -35,3 +35,4 @@ eventually. Nothing that would match the other pages only.
 ### Poland
 
 * [How to obtain the A1 certificate through the ZUS portal](https://www.zus.pl/portal/pomoc/index.html?obw0073.html)
+    * to make the request, the US-31 form is necessary to be compiled
