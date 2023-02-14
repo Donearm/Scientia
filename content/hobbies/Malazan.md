@@ -89,3 +89,5 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 406`: Toc the Younger is son of Toc the Elder and Cartheron Crust's sister.
 * `pg 442-443`: The Barghast fought the Tiste Edur at sea, east of the Genabackis continent. The Tiste were forced to retreat south-east, perhaps to Assail.
 * `pg 443`: The Moranth are kin with the Barghast but despised by them. They made peace with the Tiste Edur, learnt their arts, and separated from their Barghast cousins.
+* `pg 748`: Anomander Rake explains how when Heboric was punished, Fener denied him and his hands. Then when Heboric touched the jade statue on the Otataral island, which contained the souls of the followers of the Crippled God, its chaotic magic fought Fener's. It eventually pushed the God out of his realm, into the mortal one
+* `pg 799`: Kellanved ordered the Logros clan to look for all other T'lan Imass clans. The quest was unsuccessful
