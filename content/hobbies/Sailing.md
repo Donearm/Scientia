@@ -10,6 +10,8 @@ weight: 1150
 * [Boats](#boats)
 	* [Good boats](#good-boats)
 	* [Cheap new boats](#cheap-new-boats)
+* [Boat refit](#boat-refit)
+* [Boat land transportation](#boat-land-transportation)
 
 <!-- vim-markdown-toc -->
 
@@ -75,3 +77,17 @@ weight: 1150
 * Hunter 41 (110-150k€)
 * Hanse 348 (100k€)
 * Hanse 388 (150k€)
+
+## Boat refit
+
+A few costs for an hypotetical refit of a 40-ish boat (2022).
+
+* AGM 120aH battery - 380€
+* 1 battery charger 50aH, with 3 outputs - 550€
+* 1 solar panel 120W - 840€
+* 1 MPPT - 300€
+- Electrical cables - 0.4-7€/m (depending on size)
+
+## Boat land transportation
+
+I have been quoted about 2300€ to transport a 45'' boat from Portugal to central Poland (2022)
