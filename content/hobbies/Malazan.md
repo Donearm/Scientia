@@ -91,3 +91,6 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 443`: The Moranth are kin with the Barghast but despised by them. They made peace with the Tiste Edur, learnt their arts, and separated from their Barghast cousins.
 * `pg 748`: Anomander Rake explains how when Heboric was punished, Fener denied him and his hands. Then when Heboric touched the jade statue on the Otataral island, which contained the souls of the followers of the Crippled God, its chaotic magic fought Fener's. It eventually pushed the God out of his realm, into the mortal one
 * `pg 799`: Kellanved ordered the Logros clan to look for all other T'lan Imass clans. The quest was unsuccessful
+* `pg 967`: Kurald Emurlahn is a shattered warren, inaccessible to mortals. The part that Shadowthrone rules is only a fragment, a sort of gatehouse to the rest
+* `pg 969`: The real Throne of Shadow is accessible from Drift Avalii. It is sought after by the Tiste Edur, sworn to destroy Mother Dark, and defended by a group of Tiste Andii
+* `pg 972`: Draconus created Dragnipur to preserve the Throne of Darkness from the assailing powers of Chaos. The more, and more powerful, souls that are sent into it, the faster the internal carriage moves away from Chaos. Eventually Draconus claims that the sword must be shattered to prevent Chaos from ever reaching the Throne
