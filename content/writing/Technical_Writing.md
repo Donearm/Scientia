@@ -26,12 +26,17 @@ weight: 1210
 	* [Paligo](#paligo)
 	* [Booktype](#booktype)
 	* [Clickhelp](#clickhelp)
-	* [HelnNDoc](#helnndoc)
+	* [HelpNDoc](#helpndoc)
 	* [Markdoc](#markdoc)
 	* [Author-it](#author-it)
 	* [Astoria](#astoria)
 	* [Ovitas](#ovitas)
 	* [Document360](#document360)
+	* [Doc-To-Help](#doc-to-help)
+	* [HelpStudio](#helpstudio)
+	* [OfficeHelp](#officehelp)
+	* [Slate](#slate)
+		* [Other tools](#other-tools)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
 	* [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
@@ -174,7 +179,7 @@ actively developed anymore.
 A single-sourcing web-based documentation tool, with a large range of 
 [features](https://clickhelp.com/online-software-documentation-tool/).
 
-### HelnNDoc
+### HelpNDoc
 
 A french publishing software, [free for personal 
 use](https://www.helpndoc.com/), but only for Windows.
@@ -203,6 +208,27 @@ management, publishing, and automation.
 
 A [software](https://document360.com/) for building knowledge base and online 
 help documentation but not strictly limited to those.
+
+### Doc-To-Help
+
+A WYSIWYG [software](https://www.doctohelp.com/) for document management and 
+publishing
+
+### HelpStudio
+
+[Website](https://www.innovasys.com/)
+
+### OfficeHelp
+
+A lean [content management system](https://dokay.de/en/officehelp-en), complementing Microsoft Word.
+
+### Slate
+
+A free and open source [software](https://github.com/slatedocs/slate) to create API documentation.
+
+#### Other tools
+
+A great list of further tools in the technical writing field is found [here](https://www.indoition.com/online-help-authoring-tools-survey.htm#scroll-nav__1).
 
 ## Good practices and procedures
 
