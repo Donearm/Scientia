@@ -37,6 +37,8 @@ weight: 910
 	* [Thailand](#thailand)
 		* [Bangkok](#bangkok)
 		* [Pattaya](#pattaya)
+	* [Turkey](#turkey)
+		* [Istanbul](#istanbul)
 * [Oceania](#oceania)
 	* [French Polynesia](#french-polynesia)
 
@@ -255,6 +257,12 @@ Day excursion from Pattaya:
 * Koh Sak island
 * Koh Phai - small group of islands. 2hrs ferry
 * Koh Si Chang island
+
+## Turkey
+
+### Istanbul
+
+[Map of the public transportation network of Istanbul](https://www.metro.istanbul/Content/assets/uploaded/%C4%B0stanbul%20Rayl%C4%B1%20Sistemler%20Haritas%C4%B1.pdf)(PDF)
 
 # Oceania
 
