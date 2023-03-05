@@ -264,6 +264,11 @@ Day excursion from Pattaya:
 
 [Map of the public transportation network of Istanbul](https://www.metro.istanbul/Content/assets/uploaded/%C4%B0stanbul%20Rayl%C4%B1%20Sistemler%20Haritas%C4%B1.pdf)(PDF)
 
+* Göreme
+* Hattusas (ancient Hittite capital)
+* Konya (for its mosques and madrasas)
+* Mount Nemrut
+
 # Oceania
 
 ## French Polynesia
