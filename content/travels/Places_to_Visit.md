@@ -276,7 +276,7 @@ Day excursion from Pattaya:
 * Topkapi Palace and Museum
 * Great Palace Mosaics Museum
 * Galata Tower
-* Dolmabahîe Palace
+* Dolmabahçe Palace
 
 # Oceania
 
