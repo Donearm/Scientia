@@ -7,6 +7,7 @@ weight: 1150
 <!-- vim-markdown-toc GFM -->
 
 * [Things to know before a sailing course (ideally)](#things-to-know-before-a-sailing-course-ideally)
+	* [Sailing schools in the Mediterranean](#sailing-schools-in-the-mediterranean)
 * [Boats](#boats)
 	* [Good boats](#good-boats)
 	* [Cheap new boats](#cheap-new-boats)
@@ -49,6 +50,13 @@ weight: 1150
 * Charts, tides and currents
 * Basic first-aid
 * Anchoring and running aground
+
+### Sailing schools in the Mediterranean
+
+* [Aegean Sailing School](https://aegeansailingschool.com/course/day-skipper/)
+* [Costa Blanca Sailing](https://www.costablancasailing.co.uk/rya-courses-in-spain/rya-sailing-courses-in-spain/day-skipper-practical/)
+* [Sail Ionian](https://www.sailionian.com/rya-sailing-courses/practical/rya-day-skipper/)
+* [Sunsail](https://www.sunsail.co.uk/sailing-schools/intermediate-courses/rya-day-skipper-practical)
 
 ## Boats
 
