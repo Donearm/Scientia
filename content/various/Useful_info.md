@@ -37,3 +37,7 @@ eventually. Nothing that would match the other pages only.
 
 * [How to obtain the A1 certificate through the ZUS portal](https://www.zus.pl/portal/pomoc/index.html?obw0073.html)
     * to make the request, the US-31 form is necessary to be compiled
+* [How to register to ZUS to pay social and health contribution on your own](https://www.zus.pl/firmy/zgloszenie-platnika/firmy/zgloszenie-podmiotu-pelniacego-role-platnika-zagranicznego)
+    * This includes the possibility for a foreign company to register 
+      themselves and pay for your the social/health contributions
+* [How to calculate social contributions with the ZUS](https://www.zus.pl/firmy/zgloszenie-platnika/firmy/zgloszenie-podmiotu-pelniacego-role-platnika-zagranicznego)
