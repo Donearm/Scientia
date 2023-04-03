@@ -11,6 +11,7 @@ weight: 1127
     * [Gardens of the Moon](#gardens-of-the-moon)
     * [Deadhouse Gates](#deadhouse-gates)
     * [Memories of Ice](#memories-of-ice)
+    * [House of Chains](#house-of-chains)
 
 <!-- vim-markdown-toc -->
 
@@ -99,3 +100,15 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 967`: Kurald Emurlahn is a shattered warren, inaccessible to mortals. The part that Shadowthrone rules is only a fragment, a sort of gatehouse to the rest
 * `pg 969`: The real Throne of Shadow is accessible from Drift Avalii. It is sought after by the Tiste Edur, sworn to destroy Mother Dark, and defended by a group of Tiste Andii
 * `pg 972`: Draconus created Dragnipur to preserve the Throne of Darkness from the assailing powers of Chaos. The more, and more powerful, souls that are sent into it, the faster the internal carriage moves away from Chaos. Eventually Draconus claims that the sword must be shattered to prevent Chaos from ever reaching the Throne
+
+### House of Chains
+
+* `pg 295`: The ship of the Emperor apparently sunk in Malaz City harbour the night of the "assassination"
+* `pg 296-297`: Admiral Nok recounts how the Empire started:
+    * Kellanved and Dancer were the first partners. They teamed up to bring down Mock, a pirate ruler of Malaz island
+    * Nok Ameron and Hawl, Nok's wife, joined them.
+    * They all had access to the Deadhouse on the island, using it as a base and benefitting from its powers. They were granted longevity, immunity to most diseases and "other things".
+    * Next to be recruited were the Napan brothers Cartheron and Urko Crust, Surly, Dassem Ultor.
+    * Toc the Elder, Tayschreen, at the time a renegade high septarch of the D'rek cult, and Dujek were the last to be recruited into the "family", as Nok calls it.
+    * Surly was of the Napan royal line.
+    * When Surly became Laseen and "killed" Kellanved and Dancer, the first to disappear and abandon her were the Napan of the family, the Crust brothers and Ameron (an half-Napan to be correct).
