@@ -63,13 +63,6 @@ windowsmgr.max_events_per_sec=150 help scrolling responsiveness</description>
 The results of what I learned are here.</description>
     </item>
     <item>
-      <title>Various</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/index.html</guid>
-      <description>As you may not surprisingly have imagined, here there are piece of my knowledge that don&amp;rsquo;t fit under the other categories and aren&amp;rsquo;t that large to warrant their own section.</description>
-    </item>
-    <item>
       <title>Travels</title>
       <link>https://donearm.github.io/Personal-Wiki/travels/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -112,6 +105,13 @@ Over the years I have been reading nearly one third of all books as history book
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/writing/index.html</guid>
       <description>Not a large section yet, as most of my actual writing is elsewhere. But here it contains notes about how to write better, in terms of tools, style guides, tricks, courses, and things to remember to help being a better writer.</description>
+    </item>
+    <item>
+      <title>Various</title>
+      <link>https://donearm.github.io/Personal-Wiki/various/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/various/index.html</guid>
+      <description>As you may not surprisingly have imagined, here there are piece of my knowledge that don&amp;rsquo;t fit under the other categories and aren&amp;rsquo;t that large to warrant their own section.</description>
     </item>
   </channel>
 </rss>
