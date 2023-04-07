@@ -6,6 +6,7 @@ weight: 858
 
 <!-- vim-markdown-toc GFM -->
 
+* [Driving license](#driving-license)
 * [Traveling](#traveling)
 * [Electronics](#electronics)
 * [Law and taxes](#law-and-taxes)
@@ -17,6 +18,20 @@ weight: 858
 
 A miscellaneous collection of links that are not immediately useful but may be, 
 eventually. Nothing that would match the other pages only.
+
+## Driving license
+
+Driving license (patente B) to obtain in Italy:
+
+* First theory exam, of 40 questions. This can be done online.
+* Then, if passed, a "foglio rosa" is granted which gives the owner the right 
+  to take the practical exam
+* Within 6 months from the theory exam, the practical one can be attempted. Two 
+  tries.
+
+Usually some practice is assumed before the practical exam, and driving schools 
+offer it along with the actual exam. It is optional too, practice can be done 
+on your own.
 
 ## Traveling
 
