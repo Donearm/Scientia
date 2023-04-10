@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>Git - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>Fountain Pens - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/Personal-Wiki/css/fontawesome-all.min.css?1681132085" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1681132085" rel="stylesheet"></noscript>
@@ -43,17 +43,17 @@
     </script>
     <script src="/Personal-Wiki/js/jquery.min.js?1681132085" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/Personal-Wiki/programs/git/index.html">
+  <body class="mobile-support html" data-url="/Personal-Wiki/writing/fountain_pens/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/Personal-Wiki/programs/gmail/index.html" title="GMail (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/Personal-Wiki/writing/technical_writing/index.html" title="Technical Writing (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/Personal-Wiki/programs/gimp/index.html" title="Gimp (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/Personal-Wiki/writing/index.html" title="Writing (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -62,19 +62,17 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Personal-Wiki/index.html"><span itemprop="name">Gianluca Fiore Personal Wiki</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Personal-Wiki/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Git</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Personal-Wiki/writing/index.html"><span itemprop="name">Writing</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Fountain Pens</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#inks-to-try">Inks to try</a>
       <ul>
-        <li><a href="#various-useful-commands">Various useful commands</a></li>
-        <li><a href="#cherry-picking-a-range-of-commits">Cherry picking a range of commits</a></li>
-        <li><a href="#github">Github</a></li>
+        <li><a href="#wet-inks-for-hard-starter-pens">Wet inks for hard starter pens</a></li>
       </ul>
     </li>
   </ul>
@@ -88,90 +86,27 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="git">Git</h1>
+<h1 id="fountain-pens">Fountain Pens</h1>
 
 <!-- vim-markdown-toc GFM -->
 <ul>
-<li><a href="#various-useful-commands">Various useful commands</a></li>
-<li><a href="#cherry-picking-a-range-of-commits">Cherry picking a range of commits</a></li>
-<li><a href="#github">Github</a></li>
+<li><a href="#inks-to-try">Inks to try</a>
+<ul>
+<li><a href="#wet-inks-for-hard-starter-pens">Wet inks for hard starter pens</a></li>
+</ul>
+</li>
 </ul>
 <!-- vim-markdown-toc -->
 <hr>
-<h3 id="various-useful-commands">Various useful commands</h3>
-<p>A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )</p>
+<h2 id="inks-to-try">Inks to try</h2>
+<h3 id="wet-inks-for-hard-starter-pens">Wet inks for hard starter pens</h3>
 <ul>
-<li><code>git mv oldfile newfile</code> = Move a file, or simply rename it</li>
-<li><code>git reset --hard SHA1_HASH</code> = Revert to the commit with <code>SHA1_HASH</code> and delete all subsequent commits</li>
-<li><code>git revert SHA1_HASH</code> = Like above but write a new commit that restore the repository as it was on <code>SHA1_HASH</code> commit. All the subsequent commits, that with <code>--hard</code> would have been lost, are still in the log and can be quickly reverted back to</li>
-<li><code>git log &gt; Changelog</code> = Save the log as a simple changelog</li>
-<li><code>git log file</code> = Show all commits that modified <code>file</code>. Usually <code>file</code> is a full path but it is also possible to use wildcards, like <code>**/*.js</code></li>
-<li><code>git log -Sstring -p</code> = Show all commits that match <code>string</code> and show also their changes (<code>-p</code>)</li>
-<li><code>git log -p --grep &quot;perl_regexp&quot;</code> = Show all commits whose message matches <code>perl_regexp</code></li>
-<li><code>git merge somebranch</code> = Merge <code>somebranch</code> with current branch</li>
-<li><code>git checkout -b somebranch</code> = Create a new branch <code>somebranch</code> and copy the content of master in it</li>
-<li><code>git checkout .</code> = Cancel all changes not yet committed (but keep new files). Basically return the repository state to the last commit</li>
-<li><code>git cherry-pick SHA1_HASH</code> = Apply the changes in the commit corresponding to <code>SHA1_HASH</code>. Commit can be on another branch (and usually it is). For multiple commits, it&rsquo;s simpler to merge and then rebase</li>
-<li><code>git cherry-pick -X theirs SHA1_HASH</code> = Apply the changes in the commit corresponding to <code>SHA1_HASH</code>. In case of conflicts, prefer the commit&rsquo;s version to the current branch one. The reverse can be preferred with <code>-X ours</code> instead</li>
-<li><code>git stash</code> = Save changes in the stash and return the repository to a clean state. Later they can be recovered and applied with <code>git stash apply</code> and shown with <code>git stash show</code>. To have a list of all changes in the stash use <code>git stash list</code></li>
-<li><code>git stash -p</code> = Interactively select which changes and files to stash</li>
-<li><code>git commit --amend</code> = Modify the last commit message</li>
-<li><code>git commit --amend -a</code> = Modify the last commit message and add also all new changes yet to be committed in it</li>
-<li><code>git rebase -i HEAD~3</code> = Permit to modify, delete or merge all the last 3 commits from the HEAD</li>
-<li><code>git blame file</code> = Show all the editing done in file and who did it</li>
-<li><code>git bundle create somefile HEAD</code> = Save the whole repository in <code>somefile</code>. To then import it back, use <code>git pull somefile</code></li>
-<li><code>git bundle create somefile HEAD ^COMMON_SHA1</code> = As above but only from <code>COMMON_SHA1</code> onward. This is useful when there&rsquo;s an older version of repository, offline, that needs to be just updated with the latest commits</li>
-<li><code>git format-patch START_COMMIT</code> = Create a patch that includes all changes from <code>START_COMMIT</code> till the HEAD. An email header is also generated, for quicker sending</li>
-<li><code>git format-patch START_COMMIT..END_COMMIT</code> = As above but consider only the commits between <code>START_COMMIT</code> and <code>END_COMMIT</code></li>
-<li><code>git diff START_COMMIT..END_COMMIT</code> = Create a patch of commits between <code>START_COMMIT</code> and <code>END_COMMIT</code>. Unlike <code>format-patch</code>, it&rsquo;s a plain patch ready to be used with <code>patch</code></li>
-<li><code>git diff --unified=10</code> = Show 10 lines before and after a change instead of the default 3</li>
-<li><code>git am &lt; patch</code>  = Apply patch to the repository</li>
-<li><code>git archive --format=tar --prefix=project-1.2.3/ -o outputfile HEAD</code> = Save a tarball (or a zip if format is <code>zip</code>) of the whole repository in <code>outputfile</code>, with the given prefix, in the current directory, as is in HEAD</li>
-<li><code>git add -p</code> = Allow to select which changes to include in the next commit</li>
-<li><code>git clean -x</code> = Remove untracked and explicitly ignored files. With also <code>n</code> does a dry run, without actually removing anything</li>
-<li><code>git reflog</code> = Show an extended log, including various operations like merges and checkouts, along with commits</li>
-<li><code>git filter-branch --index-filter 'git update-index --remove file' master</code> = Completely remove <code>file</code> from the history, from the branch master, in every commit it appears. It&rsquo;s like it never existed. To repeat for every branch in which the file was present</li>
-<li><code>git pull --rebase</code> = Pull from a remote branch but don&rsquo;t generate a commit message for the merge</li>
-<li><code>git show :/regexp</code> = Show last commit message matching <code>regexp</code></li>
-<li><code>git show &lt;commitid&gt;:filename</code> = show the status of <code>filename</code> at <code>commitid</code></li>
-<li><code>git remote rename aaa bbb</code> = Rename remote branch <code>aaa</code> to <code>bbb</code></li>
-<li><code>git pull origin branch_remote:branch_local</code> = Pull a remote branch in the local one, creating the latter if it didn&rsquo;t already exist</li>
-<li><code>git merge --edit</code> = Edit the commit message when doing a merge</li>
-<li><code>git merge --squash branch</code> = Merge from branch in the current one, squashing all commits messages from when it diverged. After this, use <code>git commit</code> to record a single commit of changes</li>
-<li><code>git diff --word-diff</code> = Highlights word changes, inline, instead of whole lines</li>
-<li><code>git status -sb</code> = A more concise output for status</li>
-<li><code>git checkout -t origin/feature</code> = Creates and checks out the local &ldquo;feature&rdquo; branch that tracks the remote &ldquo;origin/feature&rdquo;</li>
-<li><code>git name-rev --name-only COMMIT_SHA1</code> = Prints where the <code>COMMIT_SHA1</code> is in the history, relative to a tag. It can output things like <code>master~2</code> (commit is 2 commits before latest in master branch) or <code>tags/v2.3~6</code> (commit is 6 tags before the one with tag 2.3)</li>
-<li><code>git branch -a --contains COMMIT_SHA1</code> = Shows all branches, and also remotes with <code>-a</code>, that have the given commit in their histories</li>
-<li><code>git show :/fix</code> = Shows the last commit that contains the word &ldquo;fix&rdquo;. Also supports regexp, like <code>:/^Test</code></li>
-<li><code>git log --diff-filter=D --summary</code> = Show files, with the corresponding commits, that have been deleted</li>
-<li><code>git show commit:file</code> = Show the full file as it was at commit</li>
-<li><code>git log -p --author=name</code> = Show all commits whose author matches <code>name</code> (it may be a partial name or a regexp)</li>
-<li><code>git log -p master ^origin/master</code> = Show a diff of what is new in <code>master</code> compared to <code>origin/master</code>. It is also possible to use multiple arguments, like <code>git log -p master ^origin/master ^upstream/master</code></li>
-<li><code>git update-index --assume-unchanged file</code> = Assume <code>file</code> is unchanged even if it&rsquo;s not, excluding it from being committed. Re-enable the modifications then with <code>git update-index --no-assume-unchanged file</code></li>
-<li><code>git ls-files</code> = List all files tracked in the repo</li>
-<li><code>git push origin --delete branchname</code> = Delete the remote <code>branchname</code></li>
-<li><code>git cherry -v --abbrev testing master</code> = Show a list of commits present in master but not in testing</li>
-<li><code>git clone --depth 1</code> = Clone only 1 revision in a repo&rsquo;s history. To save space, mostly, or to send a quick patch or if you are only interested in the latest state of the project. A repository thus created can&rsquo;t be cloned, fetched or pushed from or into it.</li>
-<li><code>git show branch-name:filename.js</code> = Show <code>filename.js</code> as it currently is in <code>branch-name</code></li>
-<li><code>git cherry-pick SHA1_HASH..SHA1_HASH</code> = Apply changes in after the first hash till, including, the second one. To also include changes from first hash use <code>SHA1_HASH^..SHA1_HASH</code> format</li>
-<li><code>git remote set-url branch-name url</code> = Set url of remote <code>branch-name</code> to <code>url</code>. Adding <code>--push</code> also changes the remote url to push to for specified branch</li>
-<li><code>git config --list --show-origin</code> = list all configuration settings for Git, both global and local, and where each is set</li>
+<li>deAtramentis</li>
+<li>Ferris Wheel Press</li>
+<li>Iroshizuku: Kon-Peki, Ama-iro, Shin-ryoku, Tsukushi</li>
+<li>Rohrer &amp; Klingner</li>
+<li>Waterman</li>
 </ul>
-<h3 id="cherry-picking-a-range-of-commits">Cherry picking a range of commits</h3>
-<ol>
-<li>Create a new branch from the branch where are the commits you want to apply by specifying the last wanted commit: <code>git checkout -b newbranch SHA1_HASH_OF_COMMIT</code></li>
-<li>Then rebase from the older wanted commit into master: <code>git rebase --onto master SHA1_HASH^</code></li>
-</ol>
-<h3 id="github">Github</h3>
-<p>Sync with origin (the remote repository) after a local fork:</p>
-<ol>
-<li>Create a local branch to be linked with the master of origin: <code>git checkout -b origin/master</code></li>
-<li>Add the origin repository as a remote: <code>git remote add origin git://github.com/username/repo.git</code></li>
-<li>Pull: <code>git pull origin remote</code></li>
-<li>Checkout into local master: <code>git checkout master</code></li>
-<li>Merge origin master in local master: <code>git merge origin/master</code></li>
-</ol>
 
             <footer class="footline">
             </footer>
@@ -243,7 +178,7 @@
           <li data-nav-id="/Personal-Wiki/operating_systems/linux/x/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Personal-Wiki/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Personal-Wiki/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Personal-Wiki/programs/index.html" class="dd-item parent"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle" checked><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Personal-Wiki/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
+          <li data-nav-id="/Personal-Wiki/programs/index.html" class="dd-item"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle"><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Personal-Wiki/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
           <li data-nav-id="/Personal-Wiki/programs/chromium/index.html" class="dd-item"><a href="/Personal-Wiki/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Personal-Wiki/programs/curl/index.html" class="dd-item"><a href="/Personal-Wiki/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Personal-Wiki/programs/emacs/index.html" class="dd-item"><a href="/Personal-Wiki/programs/emacs/index.html">Emacs</a></li>
@@ -252,7 +187,7 @@
           <li data-nav-id="/Personal-Wiki/programs/firefox/index.html" class="dd-item"><a href="/Personal-Wiki/programs/firefox/index.html">Firefox</a></li>
           <li data-nav-id="/Personal-Wiki/programs/flash/index.html" class="dd-item"><a href="/Personal-Wiki/programs/flash/index.html">Flash</a></li>
           <li data-nav-id="/Personal-Wiki/programs/gimp/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gimp/index.html">Gimp</a></li>
-          <li data-nav-id="/Personal-Wiki/programs/git/index.html" class="dd-item active"><a href="/Personal-Wiki/programs/git/index.html">Git</a></li>
+          <li data-nav-id="/Personal-Wiki/programs/git/index.html" class="dd-item"><a href="/Personal-Wiki/programs/git/index.html">Git</a></li>
           <li data-nav-id="/Personal-Wiki/programs/gmail/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gmail/index.html">GMail</a></li>
           <li data-nav-id="/Personal-Wiki/programs/gnome/index.html" class="dd-item"><a href="/Personal-Wiki/programs/gnome/index.html">Gnome</a></li>
           <li data-nav-id="/Personal-Wiki/programs/grub/index.html" class="dd-item"><a href="/Personal-Wiki/programs/grub/index.html">Grub</a></li>
@@ -302,8 +237,8 @@
           <li data-nav-id="/Personal-Wiki/philosophy_and_religion/paganism/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/paganism/index.html">Paganism</a></li>
           <li data-nav-id="/Personal-Wiki/philosophy_and_religion/yoga/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/yoga/index.html">Yoga</a></li>
           <li data-nav-id="/Personal-Wiki/philosophy_and_religion/zealots/index.html" class="dd-item"><a href="/Personal-Wiki/philosophy_and_religion/zealots/index.html">Zealots</a></li></ul></li>
-          <li data-nav-id="/Personal-Wiki/writing/index.html" class="dd-item"><input type="checkbox" id="section-a16074696a2e072964041e9ad7cd8fd5" aria-controls="subsections-a16074696a2e072964041e9ad7cd8fd5" class="toggle"><label class="a11y-only toggle" for="section-a16074696a2e072964041e9ad7cd8fd5" >Submenu Writing</label><a href="/Personal-Wiki/writing/index.html">Writing</a><ul id="subsections-a16074696a2e072964041e9ad7cd8fd5">
-          <li data-nav-id="/Personal-Wiki/writing/fountain_pens/index.html" class="dd-item"><a href="/Personal-Wiki/writing/fountain_pens/index.html">Fountain Pens</a></li>
+          <li data-nav-id="/Personal-Wiki/writing/index.html" class="dd-item parent"><input type="checkbox" id="section-a16074696a2e072964041e9ad7cd8fd5" aria-controls="subsections-a16074696a2e072964041e9ad7cd8fd5" class="toggle" checked><label class="a11y-only toggle" for="section-a16074696a2e072964041e9ad7cd8fd5" >Submenu Writing</label><a href="/Personal-Wiki/writing/index.html">Writing</a><ul id="subsections-a16074696a2e072964041e9ad7cd8fd5">
+          <li data-nav-id="/Personal-Wiki/writing/fountain_pens/index.html" class="dd-item active"><a href="/Personal-Wiki/writing/fountain_pens/index.html">Fountain Pens</a></li>
           <li data-nav-id="/Personal-Wiki/writing/technical_writing/index.html" class="dd-item"><a href="/Personal-Wiki/writing/technical_writing/index.html">Technical Writing</a></li></ul></li>
           <li data-nav-id="/Personal-Wiki/various/index.html" class="dd-item"><input type="checkbox" id="section-051e7d1442dfc9f3a48ad1ca7b758c17" aria-controls="subsections-051e7d1442dfc9f3a48ad1ca7b758c17" class="toggle"><label class="a11y-only toggle" for="section-051e7d1442dfc9f3a48ad1ca7b758c17" >Submenu Various</label><a href="/Personal-Wiki/various/index.html">Various</a><ul id="subsections-051e7d1442dfc9f3a48ad1ca7b758c17">
           <li data-nav-id="/Personal-Wiki/various/advertising_and_marketing/index.html" class="dd-item"><a href="/Personal-Wiki/various/advertising_and_marketing/index.html">Advertising and Marketing</a></li>
