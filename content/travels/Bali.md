@@ -31,6 +31,9 @@ weight: 903
 	* [Prices](#prices)
 * [Prices](#prices-1)
 * [Things to do and try](#things-to-do-and-try)
+* [Where to stay](#where-to-stay)
+	* [Resorts](#resorts)
+	* [Villas](#villas)
 
 <!-- vim-markdown-toc -->
 
@@ -302,3 +305,29 @@ Ubud should cost between 450kIDR and 600kIDR per person.
 
 * Try Martabak dessert.
 * Watch Kecak Dance at Uluwatu temple.
+
+## Where to stay
+
+### Resorts
+
+Some beautiful and generally well-reviewed resorts in the Ubud area.
+
+* Kenran Resort
+* Ayuterra Resort
+* Sankara Resort
+* Kastara Resort
+* Adiswana Bisma
+* Pramana Watukurung
+* Yanyan Resort
+* Adiwana Resort Jembawam
+* The Royal Pita Maha
+* Seres Spring Resort
+* Bisma Eight (both hotel and villas available)
+* Kaamala Resort Ubud
+* Tejaprana Bisma
+
+### Villas
+
+A few villas in the Ubud area to choose from.
+
+* Avalon Ubud Villa
