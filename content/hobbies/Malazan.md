@@ -112,3 +112,6 @@ The notes are separated by the book they are in, and ordered by page count.
     * Toc the Elder, Tayschreen, at the time a renegade high septarch of the D'rek cult, and Dujek were the last to be recruited into the "family", as Nok calls it.
     * Surly was of the Napan royal line.
     * When Surly became Laseen and "killed" Kellanved and Dancer, the first to disappear and abandon her were the Napan of the family, the Crust brothers and Ameron (an half-Napan to be correct).
+* `pg 480-481`: Kimloc the Spiritwalker associated a Tanno song with the Bridgeburners. The song needs to eventually be sanctioned, and for that are both necessary a Bridgeburner and the place where they were born, thus Raraku.
+* `pg 481-482`: The giants of jade have created otatarale when they fell from another realm, due to the powerful magic necessary to pull them (or rather the Crippled God). So far 3 giants have been discovered.
+* `pg 587-592`: in a drugged dream Heboric has a vision of the jade giants. He sees how they follow the Crippled God through a large flaming sash in the sky, and how they contain thousands of its followers.
