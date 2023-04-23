@@ -20,3 +20,4 @@ weight: 915
 [Map of night trains updated to 2023](https://i.redd.it/k8byfzliy1da1.png)
 
 [Wikivoyage page on rail travel in Europe](https://en.wikivoyage.org/wiki/Rail_travel_in_Europe)
+
