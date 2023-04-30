@@ -30,39 +30,40 @@ Very useful tool to get more informations about input devices (keyboards, mice e
 
 All these combinations and more can be read at `man xkeyboard-config`.
 
-| Option				   |	 Description																 |
-| grp:menu_switch          |  Menu (while pressed), Shift+Menu for Menu                                      |
-| grp:caps_switch          |  Caps Lock (while pressed), Alt+Caps Lock for the original Caps Lock action     |
-| grp:rctrl_switch         |  Right Ctrl (while pressed)                                                     |
-| grp:toggle               |  Right Alt                                                                      |
-| grp:lalt_toggle          |  Left Alt                                                                       |
-| grp:caps_toggle          |  Caps Lock                                                                      |
-| grp:shift_caps_toggle    |  Shift+Caps Lock                                                                |
-| grp:caps_select          |  Caps Lock to first layout; Shift+Caps Lock to second layout                    |
-| grp:win_menu_select      |  Left Win to first layout; Right Win/Menu to second layout                      |
-| grp:ctrl_select          |  Left Ctrl to first layout; Right Ctrl to second layout                         |
-| grp:alt_caps_toggle      |  Alt+Caps Lock                                                                  |
-| grp:shifts_toggle        |  Both Shifts together                                                           |
-| grp:alts_toggle          |  Both Alts together                                                             |
-| grp:alt_altgr_toggle     |  Both Alts together; AltGr alone chooses third level                            |
-| grp:ctrls_toggle         |  Both Ctrls together                                                            |
-| grp:ctrl_shift_toggle    |  Ctrl+Shift                                                                     |
-| grp:lctrl_lshift_toggle  |  Left Ctrl+Left Shift                                                           |
-| grp:rctrl_rshift_toggle  |  Right Ctrl+Right Shift                                                         |
-| grp:ctrl_alt_toggle      |  Alt+Ctrl                                                                       |
-| grp:alt_shift_toggle     |  Alt+Shift                                                                      |
-| grp:lalt_lshift_toggle   |  Left Alt+Left Shift                                                            |
-| grp:ralt_rshift_toggle   |  Right Alt+Right Shift                                                          |
-| grp:menu_toggle          |  Menu                                                                           |
-| grp:lwin_toggle          |  Left Win                                                                       |
-| grp:alt_space_toggle     |  Alt+Space                                                                      |
-| grp:win_space_toggle     |  Win+Space                                                                      |
-| grp:ctrl_space_toggle    |  Ctrl+Space                                                                     |
-| grp:rwin_toggle          |  Right Win                                                                      |
-| grp:lshift_toggle        |  Left Shift                                                                     |
-| grp:rshift_toggle        |  Right Shift                                                                    |
-| grp:lctrl_toggle         |  Left Ctrl                                                                      |
-| grp:rctrl_toggle         |  Right Ctrl                                                                     |
-| grp:sclk_toggle          |  Scroll Lock                                                                    |
-| grp:lctrl_lwin_rctrl_menu|  Ctrl+Left Win to first layout; Ctrl+Menu to second layout                      |
-| grp:lctrl_lwin_toggle    |  Left Ctrl+Left Win   															 |
+| Option				    |	 Description																  |
+|---------------------------|---------------------------------------------------------------------------------|
+| grp:menu_switch           |  Menu (while pressed), Shift+Menu for Menu                                      |
+| grp:caps_switch           |  Caps Lock (while pressed), Alt+Caps Lock for the original Caps Lock action     |
+| grp:rctrl_switch          |  Right Ctrl (while pressed)                                                     |
+| grp:toggle                |  Right Alt                                                                      |
+| grp:lalt_toggle           |  Left Alt                                                                       |
+| grp:caps_toggle           |  Caps Lock                                                                      |
+| grp:shift_caps_toggle     |  Shift+Caps Lock                                                                |
+| grp:caps_select           |  Caps Lock to first layout; Shift+Caps Lock to second layout                    |
+| grp:win_menu_select       |  Left Win to first layout; Right Win/Menu to second layout                      |
+| grp:ctrl_select           |  Left Ctrl to first layout; Right Ctrl to second layout                         |
+| grp:alt_caps_toggle       |  Alt+Caps Lock                                                                  |
+| grp:shifts_toggle         |  Both Shifts together                                                           |
+| grp:alts_toggle           |  Both Alts together                                                             |
+| grp:alt_altgr_toggle      |  Both Alts together; AltGr alone chooses third level                            |
+| grp:ctrls_toggle          |  Both Ctrls together                                                            |
+| grp:ctrl_shift_toggle     |  Ctrl+Shift                                                                     |
+| grp:lctrl_lshift_toggle   |  Left Ctrl+Left Shift                                                           |
+| grp:rctrl_rshift_toggle   |  Right Ctrl+Right Shift                                                         |
+| grp:ctrl_alt_toggle       |  Alt+Ctrl                                                                       |
+| grp:alt_shift_toggle      |  Alt+Shift                                                                      |
+| grp:lalt_lshift_toggle    |  Left Alt+Left Shift                                                            |
+| grp:ralt_rshift_toggle    |  Right Alt+Right Shift                                                          |
+| grp:menu_toggle           |  Menu                                                                           |
+| grp:lwin_toggle           |  Left Win                                                                       |
+| grp:alt_space_toggle      |  Alt+Space                                                                      |
+| grp:win_space_toggle      |  Win+Space                                                                      |
+| grp:ctrl_space_toggle     |  Ctrl+Space                                                                     |
+| grp:rwin_toggle           |  Right Win                                                                      |
+| grp:lshift_toggle         |  Left Shift                                                                     |
+| grp:rshift_toggle         |  Right Shift                                                                    |
+| grp:lctrl_toggle          |  Left Ctrl                                                                      |
+| grp:rctrl_toggle          |  Right Ctrl                                                                     |
+| grp:sclk_toggle           |  Scroll Lock                                                                    |
+| grp:lctrl_lwin_rctrl_menu |  Ctrl+Left Win to first layout; Ctrl+Menu to second layout                      |
+| grp:lctrl_lwin_toggle     |  Left Ctrl+Left Win   														  |

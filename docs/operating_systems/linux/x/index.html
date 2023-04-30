@@ -11,19 +11,19 @@
     <title>Xorg - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1682871005" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1682871005" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/featherlight.min.css?1682871005" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1682871005" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/auto-complete.css?1682871005" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1682871005" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1682871005" rel="stylesheet">
-    <link href="/Personal-Wiki/css/nucleus.css?1682871005" rel="stylesheet">
-    <link href="/Personal-Wiki/css/fonts.css?1682871005" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1682871005" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/theme.css?1682871005" rel="stylesheet">
-    <link href="/Personal-Wiki/css/theme-fpc.css?1682871005" rel="stylesheet" id="variant-style">
-    <link href="/Personal-Wiki/css/ie.css?1682871005" rel="stylesheet">
-    <link href="/Personal-Wiki/css/variant.css?1682871005" rel="stylesheet">
-    <link href="/Personal-Wiki/css/print.css?1682871005" rel="stylesheet" media="print">
-    <script src="/Personal-Wiki/js/url.js?1682871005"></script>
-    <script src="/Personal-Wiki/js/variant.js?1682871005"></script>
+    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1682871262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1682871262" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/featherlight.min.css?1682871262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1682871262" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/auto-complete.css?1682871262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1682871262" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1682871262" rel="stylesheet">
+    <link href="/Personal-Wiki/css/nucleus.css?1682871262" rel="stylesheet">
+    <link href="/Personal-Wiki/css/fonts.css?1682871262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1682871262" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/theme.css?1682871262" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme-fpc.css?1682871262" rel="stylesheet" id="variant-style">
+    <link href="/Personal-Wiki/css/ie.css?1682871262" rel="stylesheet">
+    <link href="/Personal-Wiki/css/variant.css?1682871262" rel="stylesheet">
+    <link href="/Personal-Wiki/css/print.css?1682871262" rel="stylesheet" media="print">
+    <script src="/Personal-Wiki/js/url.js?1682871262"></script>
+    <script src="/Personal-Wiki/js/variant.js?1682871262"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Personal-Wiki/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Personal-Wiki/js/jquery.min.js?1682871005" defer></script>
+    <script src="/Personal-Wiki/js/jquery.min.js?1682871262" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Personal-Wiki/operating_systems/linux/x/index.html">
     <div id="body" class="default-animation">
@@ -110,42 +110,156 @@
 </ul>
 <h3 id="keys-combination-available-to-use-in-x">Keys combination available to use in X</h3>
 <p>All these combinations and more can be read at <code>man xkeyboard-config</code>.</p>
-<p>| Option				   |	 Description																 |
-| grp:menu_switch          |  Menu (while pressed), Shift+Menu for Menu                                      |
-| grp:caps_switch          |  Caps Lock (while pressed), Alt+Caps Lock for the original Caps Lock action     |
-| grp:rctrl_switch         |  Right Ctrl (while pressed)                                                     |
-| grp:toggle               |  Right Alt                                                                      |
-| grp:lalt_toggle          |  Left Alt                                                                       |
-| grp:caps_toggle          |  Caps Lock                                                                      |
-| grp:shift_caps_toggle    |  Shift+Caps Lock                                                                |
-| grp:caps_select          |  Caps Lock to first layout; Shift+Caps Lock to second layout                    |
-| grp:win_menu_select      |  Left Win to first layout; Right Win/Menu to second layout                      |
-| grp:ctrl_select          |  Left Ctrl to first layout; Right Ctrl to second layout                         |
-| grp:alt_caps_toggle      |  Alt+Caps Lock                                                                  |
-| grp:shifts_toggle        |  Both Shifts together                                                           |
-| grp:alts_toggle          |  Both Alts together                                                             |
-| grp:alt_altgr_toggle     |  Both Alts together; AltGr alone chooses third level                            |
-| grp:ctrls_toggle         |  Both Ctrls together                                                            |
-| grp:ctrl_shift_toggle    |  Ctrl+Shift                                                                     |
-| grp:lctrl_lshift_toggle  |  Left Ctrl+Left Shift                                                           |
-| grp:rctrl_rshift_toggle  |  Right Ctrl+Right Shift                                                         |
-| grp:ctrl_alt_toggle      |  Alt+Ctrl                                                                       |
-| grp:alt_shift_toggle     |  Alt+Shift                                                                      |
-| grp:lalt_lshift_toggle   |  Left Alt+Left Shift                                                            |
-| grp:ralt_rshift_toggle   |  Right Alt+Right Shift                                                          |
-| grp:menu_toggle          |  Menu                                                                           |
-| grp:lwin_toggle          |  Left Win                                                                       |
-| grp:alt_space_toggle     |  Alt+Space                                                                      |
-| grp:win_space_toggle     |  Win+Space                                                                      |
-| grp:ctrl_space_toggle    |  Ctrl+Space                                                                     |
-| grp:rwin_toggle          |  Right Win                                                                      |
-| grp:lshift_toggle        |  Left Shift                                                                     |
-| grp:rshift_toggle        |  Right Shift                                                                    |
-| grp:lctrl_toggle         |  Left Ctrl                                                                      |
-| grp:rctrl_toggle         |  Right Ctrl                                                                     |
-| grp:sclk_toggle          |  Scroll Lock                                                                    |
-| grp:lctrl_lwin_rctrl_menu|  Ctrl+Left Win to first layout; Ctrl+Menu to second layout                      |
-| grp:lctrl_lwin_toggle    |  Left Ctrl+Left Win   															 |</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>grp:menu_switch</td>
+<td>Menu (while pressed), Shift+Menu for Menu</td>
+</tr>
+<tr>
+<td>grp:caps_switch</td>
+<td>Caps Lock (while pressed), Alt+Caps Lock for the original Caps Lock action</td>
+</tr>
+<tr>
+<td>grp:rctrl_switch</td>
+<td>Right Ctrl (while pressed)</td>
+</tr>
+<tr>
+<td>grp:toggle</td>
+<td>Right Alt</td>
+</tr>
+<tr>
+<td>grp:lalt_toggle</td>
+<td>Left Alt</td>
+</tr>
+<tr>
+<td>grp:caps_toggle</td>
+<td>Caps Lock</td>
+</tr>
+<tr>
+<td>grp:shift_caps_toggle</td>
+<td>Shift+Caps Lock</td>
+</tr>
+<tr>
+<td>grp:caps_select</td>
+<td>Caps Lock to first layout; Shift+Caps Lock to second layout</td>
+</tr>
+<tr>
+<td>grp:win_menu_select</td>
+<td>Left Win to first layout; Right Win/Menu to second layout</td>
+</tr>
+<tr>
+<td>grp:ctrl_select</td>
+<td>Left Ctrl to first layout; Right Ctrl to second layout</td>
+</tr>
+<tr>
+<td>grp:alt_caps_toggle</td>
+<td>Alt+Caps Lock</td>
+</tr>
+<tr>
+<td>grp:shifts_toggle</td>
+<td>Both Shifts together</td>
+</tr>
+<tr>
+<td>grp:alts_toggle</td>
+<td>Both Alts together</td>
+</tr>
+<tr>
+<td>grp:alt_altgr_toggle</td>
+<td>Both Alts together; AltGr alone chooses third level</td>
+</tr>
+<tr>
+<td>grp:ctrls_toggle</td>
+<td>Both Ctrls together</td>
+</tr>
+<tr>
+<td>grp:ctrl_shift_toggle</td>
+<td>Ctrl+Shift</td>
+</tr>
+<tr>
+<td>grp:lctrl_lshift_toggle</td>
+<td>Left Ctrl+Left Shift</td>
+</tr>
+<tr>
+<td>grp:rctrl_rshift_toggle</td>
+<td>Right Ctrl+Right Shift</td>
+</tr>
+<tr>
+<td>grp:ctrl_alt_toggle</td>
+<td>Alt+Ctrl</td>
+</tr>
+<tr>
+<td>grp:alt_shift_toggle</td>
+<td>Alt+Shift</td>
+</tr>
+<tr>
+<td>grp:lalt_lshift_toggle</td>
+<td>Left Alt+Left Shift</td>
+</tr>
+<tr>
+<td>grp:ralt_rshift_toggle</td>
+<td>Right Alt+Right Shift</td>
+</tr>
+<tr>
+<td>grp:menu_toggle</td>
+<td>Menu</td>
+</tr>
+<tr>
+<td>grp:lwin_toggle</td>
+<td>Left Win</td>
+</tr>
+<tr>
+<td>grp:alt_space_toggle</td>
+<td>Alt+Space</td>
+</tr>
+<tr>
+<td>grp:win_space_toggle</td>
+<td>Win+Space</td>
+</tr>
+<tr>
+<td>grp:ctrl_space_toggle</td>
+<td>Ctrl+Space</td>
+</tr>
+<tr>
+<td>grp:rwin_toggle</td>
+<td>Right Win</td>
+</tr>
+<tr>
+<td>grp:lshift_toggle</td>
+<td>Left Shift</td>
+</tr>
+<tr>
+<td>grp:rshift_toggle</td>
+<td>Right Shift</td>
+</tr>
+<tr>
+<td>grp:lctrl_toggle</td>
+<td>Left Ctrl</td>
+</tr>
+<tr>
+<td>grp:rctrl_toggle</td>
+<td>Right Ctrl</td>
+</tr>
+<tr>
+<td>grp:sclk_toggle</td>
+<td>Scroll Lock</td>
+</tr>
+<tr>
+<td>grp:lctrl_lwin_rctrl_menu</td>
+<td>Ctrl+Left Win to first layout; Ctrl+Menu to second layout</td>
+</tr>
+<tr>
+<td>grp:lctrl_lwin_toggle</td>
+<td>Left Ctrl+Left Win</td>
+</tr>
+</tbody>
+</table>
 
             <footer class="footline">
             </footer>
@@ -168,12 +282,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Personal-Wiki/js/auto-complete.js?1682871005" defer></script>
-        <script src="/Personal-Wiki/js/lunr.min.js?1682871005" defer></script>
-        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1682871005" defer></script>
-        <script src="/Personal-Wiki/js/lunr.multi.min.js?1682871005" defer></script>
-        <script src="/Personal-Wiki/js/lunr.en.min.js?1682871005" defer></script>
-        <script src="/Personal-Wiki/js/search.js?1682871005" defer></script>
+        <script src="/Personal-Wiki/js/auto-complete.js?1682871262" defer></script>
+        <script src="/Personal-Wiki/js/lunr.min.js?1682871262" defer></script>
+        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1682871262" defer></script>
+        <script src="/Personal-Wiki/js/lunr.multi.min.js?1682871262" defer></script>
+        <script src="/Personal-Wiki/js/lunr.en.min.js?1682871262" defer></script>
+        <script src="/Personal-Wiki/js/search.js?1682871262" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -345,9 +459,9 @@
         </div>
       </div>
     </aside>
-    <script src="/Personal-Wiki/js/clipboard.min.js?1682871005" defer></script>
-    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1682871005" defer></script>
-    <script src="/Personal-Wiki/js/featherlight.min.js?1682871005" defer></script>
-    <script src="/Personal-Wiki/js/theme.js?1682871005" defer></script>
+    <script src="/Personal-Wiki/js/clipboard.min.js?1682871262" defer></script>
+    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1682871262" defer></script>
+    <script src="/Personal-Wiki/js/featherlight.min.js?1682871262" defer></script>
+    <script src="/Personal-Wiki/js/theme.js?1682871262" defer></script>
   </body>
 </html>
