@@ -115,3 +115,5 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 480-481`: Kimloc the Spiritwalker associated a Tanno song with the Bridgeburners. The song needs to eventually be sanctioned, and for that are both necessary a Bridgeburner and the place where they were born, thus Raraku.
 * `pg 481-482`: The giants of jade have created otatarale when they fell from another realm, due to the powerful magic necessary to pull them (or rather the Crippled God). So far 3 giants have been discovered.
 * `pg 587-592`: in a drugged dream Heboric has a vision of the jade giants. He sees how they follow the Crippled God through a large flaming sash in the sky, and how they contain thousands of its followers.
+* `pg 674`: Onrack painted Kilava in a cave, somehow trapping her and rendering her thus immortal, before the Tellan ritual. He was for this condemned to die but escaped punishment thanks to the menace of four Jaghut Tyrants allying 
+  together. Kilava in turn would tun on her clan, killing them all but for Onon T'oolan, her brother, that resisted her.
