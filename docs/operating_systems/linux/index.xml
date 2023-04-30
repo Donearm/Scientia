@@ -103,8 +103,7 @@ On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt
       <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/x/index.html</guid>
-      <description>Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.
-Or read the full list on the web</description>
+      <description>Keyboard shortcuts using the Multi_key Xinput Keys combination available to use in X Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.</description>
     </item>
   </channel>
 </rss>
