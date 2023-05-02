@@ -117,3 +117,6 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 587-592`: in a drugged dream Heboric has a vision of the jade giants. He sees how they follow the Crippled God through a large flaming sash in the sky, and how they contain thousands of its followers.
 * `pg 674`: Onrack painted Kilava in a cave, somehow trapping her and rendering her thus immortal, before the Tellan ritual. He was for this condemned to die but escaped punishment thanks to the menace of four Jaghut Tyrants allying 
   together. Kilava in turn would tun on her clan, killing them all but for Onon T'oolan, her brother, that resisted her.
+* `pg 778-779`: Logros T'lan Imass moved the First Throne away from the Nameless Ones because they feared that if one of them were to sit on it, he would order all T'lan Imass to permanently move inside the Azath Houses and 
+  in all practice disappear from the world.
+* `pg 779`: Kellanved sought for and in the end discovered the First Throne. He claimed it but commanded the T'lan Imass only sparingly.
