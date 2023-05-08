@@ -11,19 +11,19 @@
     <title>Technical Writing - Gianluca Fiore Personal Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1683032087" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1683032087" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/featherlight.min.css?1683032087" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1683032087" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/auto-complete.css?1683032087" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1683032087" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1683032087" rel="stylesheet">
-    <link href="/Personal-Wiki/css/nucleus.css?1683032087" rel="stylesheet">
-    <link href="/Personal-Wiki/css/fonts.css?1683032087" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1683032087" rel="stylesheet"></noscript>
-    <link href="/Personal-Wiki/css/theme.css?1683032087" rel="stylesheet">
-    <link href="/Personal-Wiki/css/theme-fpc.css?1683032087" rel="stylesheet" id="variant-style">
-    <link href="/Personal-Wiki/css/ie.css?1683032087" rel="stylesheet">
-    <link href="/Personal-Wiki/css/variant.css?1683032087" rel="stylesheet">
-    <link href="/Personal-Wiki/css/print.css?1683032087" rel="stylesheet" media="print">
-    <script src="/Personal-Wiki/js/url.js?1683032087"></script>
-    <script src="/Personal-Wiki/js/variant.js?1683032087"></script>
+    <link href="/Personal-Wiki/css/fontawesome-all.min.css?1683545008" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fontawesome-all.min.css?1683545008" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/featherlight.min.css?1683545008" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/featherlight.min.css?1683545008" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/auto-complete.css?1683545008" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/auto-complete.css?1683545008" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/perfect-scrollbar.min.css?1683545008" rel="stylesheet">
+    <link href="/Personal-Wiki/css/nucleus.css?1683545008" rel="stylesheet">
+    <link href="/Personal-Wiki/css/fonts.css?1683545008" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Personal-Wiki/css/fonts.css?1683545008" rel="stylesheet"></noscript>
+    <link href="/Personal-Wiki/css/theme.css?1683545008" rel="stylesheet">
+    <link href="/Personal-Wiki/css/theme-fpc.css?1683545008" rel="stylesheet" id="variant-style">
+    <link href="/Personal-Wiki/css/ie.css?1683545008" rel="stylesheet">
+    <link href="/Personal-Wiki/css/variant.css?1683545008" rel="stylesheet">
+    <link href="/Personal-Wiki/css/print.css?1683545008" rel="stylesheet" media="print">
+    <script src="/Personal-Wiki/js/url.js?1683545008"></script>
+    <script src="/Personal-Wiki/js/variant.js?1683545008"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Personal-Wiki/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Personal-Wiki/js/jquery.min.js?1683032087" defer></script>
+    <script src="/Personal-Wiki/js/jquery.min.js?1683545008" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Personal-Wiki/writing/technical_writing/index.html">
     <div id="body" class="default-animation">
@@ -70,6 +70,30 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#types-of-technical-documentation">Types of Technical Documentation</a>
+      <ul>
+        <li><a href="#product-documentation">Product documentation</a>
+          <ul>
+            <li><a href="#api-documentation">API documentation</a></li>
+            <li><a href="#sdk-documentation">SDK documentation</a></li>
+            <li><a href="#release-notes">Release Notes</a></li>
+          </ul>
+        </li>
+        <li><a href="#process-documentation--sop">Process documentation / SOP</a>
+          <ul>
+            <li><a href="#project-plans">Project plans</a></li>
+            <li><a href="#business-standards">Business standards</a></li>
+          </ul>
+        </li>
+        <li><a href="#marketing-and-sales-documentation">Marketing and Sales documentation</a>
+          <ul>
+            <li><a href="#market-requirements-documents-mrd">Market Requirements Documents (MRD)</a></li>
+            <li><a href="#request-for-proposals-rfp">Request For Proposals (RFP)</a></li>
+          </ul>
+        </li>
+        <li><a href="#scientific-papers">Scientific papers</a></li>
+      </ul>
+    </li>
     <li><a href="#books">Books</a>
       <ul>
         <li><a href="#writing-and-technical-writing-books">Writing and Technical Writing books</a></li>
@@ -138,6 +162,30 @@
 
 <!-- vim-markdown-toc GFM -->
 <ul>
+<li><a href="#types-of-technical-documentation">Types of Technical Documentation</a>
+<ul>
+<li><a href="#product-documentation">Product documentation</a>
+<ul>
+<li><a href="#api-documentation">API documentation</a></li>
+<li><a href="#sdk-documentation">SDK documentation</a></li>
+<li><a href="#release-notes">Release Notes</a></li>
+</ul>
+</li>
+<li><a href="#process-documentation--sop">Process documentation / SOP</a>
+<ul>
+<li><a href="#project-plans">Project plans</a></li>
+<li><a href="#business-standards">Business standards</a></li>
+</ul>
+</li>
+<li><a href="#marketing-and-sales-documentation">Marketing and Sales documentation</a>
+<ul>
+<li><a href="#market-requirements-documents-mrd">Market Requirements Documents (MRD)</a></li>
+<li><a href="#request-for-proposals-rfp">Request For Proposals (RFP)</a></li>
+</ul>
+</li>
+<li><a href="#scientific-papers">Scientific papers</a></li>
+</ul>
+</li>
 <li><a href="#books">Books</a>
 <ul>
 <li><a href="#writing-and-technical-writing-books">Writing and Technical Writing books</a></li>
@@ -194,6 +242,62 @@
 </ul>
 <!-- vim-markdown-toc -->
 <hr>
+<h2 id="types-of-technical-documentation">Types of Technical Documentation</h2>
+<h3 id="product-documentation">Product documentation</h3>
+<p>This includes guides, training manuals and anything that shows an end user how
+to use a product. Installation and usage instructions, often with
+illustrations, FAQs and knowledge base articles fall into this category. User
+guides are a popular solution for both external users and internal employees to
+get started on the usage of a particular product.</p>
+<h4 id="api-documentation">API documentation</h4>
+<p>API documentation is geared towards developers to show them how to integrate
+and use an API service. This is often accomplished following the
+<a href="https://www.openapis.org/">OpenAPI</a> specifications.</p>
+<h4 id="sdk-documentation">SDK documentation</h4>
+<p>Similar to API documentation, SDK documentation show developers and tech-savy
+users how to use a SDK.</p>
+<h4 id="release-notes">Release Notes</h4>
+<p>These are technical documents that are created and published along with the
+launch of a product or a new update of it. They detail the features, bugs,
+improvements, and fixes that have been the focus of the last version of a
+product (often a software). They can be all the way from purely technical to
+nearly marketing documents, with just links to the actual commits and bugs
+interested by the update.</p>
+<h3 id="process-documentation--sop">Process documentation / SOP</h3>
+<p>These are documents that show internal teams how to execute a task, use an
+internal tool, or follow a procedure. This is often accomplished with an
+internal wiki, and its structure is established by TWs.</p>
+<p>Another name for process documentation is SOP (Standard Operating Procedure).</p>
+<h4 id="project-plans">Project plans</h4>
+<p>More of a project manager task, project plans define goals and objectives of a
+project. They are created as a rather visual map of steps to take for a team in
+order to reach an objective or deliver a product.</p>
+<h4 id="business-standards">Business standards</h4>
+<p>These are documents that set rules, guidelines, and benchmarks that a business
+should meet. They are often used during employees onboarding, as a teaching
+tool, and are written as a series of references that employees and the whole
+company adheres to. They may include company values and large objectives as
+well.</p>
+<h3 id="marketing-and-sales-documentation">Marketing and Sales documentation</h3>
+<p>Not everybody agrees this is proper techincal writing. But if you do, then this
+includes white papers, case studies, blogs, tutorials, and in-depth articles
+showing how a product or service can help somebody&rsquo;s business.</p>
+<h4 id="market-requirements-documents-mrd">Market Requirements Documents (MRD)</h4>
+<p>These are documents that outline your potential customer base, their needs, and
+your competitors. They are part of a marketing plan. MRDs contain info about
+customer problems, their reasons, market opportunities, customer demographics,
+use cases, and competitors.</p>
+<h4 id="request-for-proposals-rfp">Request For Proposals (RFP)</h4>
+<p>This is a document that announces a project and solicits bids for it. In the
+end they are created to persuade customers and investors to buy or finance a
+product/service. Key points of this are the project overview, company
+background, project scope, and goal, often in a clear, visually-appealing,
+document.</p>
+<h3 id="scientific-papers">Scientific papers</h3>
+<p>Unrelated to most of the above are scientific papers. While they can fall into
+the &ldquo;white paper&rdquo; umbrella, proper scientific papers are focused on actual data
+coming from a research, ratehr than starting from the point of view of a
+problem or use case. These are thorough, accurate, highly technical documents.</p>
 <h2 id="books">Books</h2>
 <h3 id="writing-and-technical-writing-books">Writing and Technical Writing books</h3>
 <ul>
@@ -388,12 +492,12 @@ beginning when nothing is known about it.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Personal-Wiki/js/auto-complete.js?1683032087" defer></script>
-        <script src="/Personal-Wiki/js/lunr.min.js?1683032087" defer></script>
-        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1683032087" defer></script>
-        <script src="/Personal-Wiki/js/lunr.multi.min.js?1683032087" defer></script>
-        <script src="/Personal-Wiki/js/lunr.en.min.js?1683032087" defer></script>
-        <script src="/Personal-Wiki/js/search.js?1683032087" defer></script>
+        <script src="/Personal-Wiki/js/auto-complete.js?1683545009" defer></script>
+        <script src="/Personal-Wiki/js/lunr.min.js?1683545009" defer></script>
+        <script src="/Personal-Wiki/js/lunr.stemmer.support.min.js?1683545009" defer></script>
+        <script src="/Personal-Wiki/js/lunr.multi.min.js?1683545009" defer></script>
+        <script src="/Personal-Wiki/js/lunr.en.min.js?1683545009" defer></script>
+        <script src="/Personal-Wiki/js/search.js?1683545009" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -565,9 +669,9 @@ beginning when nothing is known about it.</p>
         </div>
       </div>
     </aside>
-    <script src="/Personal-Wiki/js/clipboard.min.js?1683032087" defer></script>
-    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1683032087" defer></script>
-    <script src="/Personal-Wiki/js/featherlight.min.js?1683032087" defer></script>
-    <script src="/Personal-Wiki/js/theme.js?1683032087" defer></script>
+    <script src="/Personal-Wiki/js/clipboard.min.js?1683545009" defer></script>
+    <script src="/Personal-Wiki/js/perfect-scrollbar.min.js?1683545009" defer></script>
+    <script src="/Personal-Wiki/js/featherlight.min.js?1683545009" defer></script>
+    <script src="/Personal-Wiki/js/theme.js?1683545009" defer></script>
   </body>
 </html>

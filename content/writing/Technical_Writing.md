@@ -5,6 +5,18 @@ weight: 1410
 
 <!-- vim-markdown-toc GFM -->
 
+* [Types of Technical Documentation](#types-of-technical-documentation)
+	* [Product documentation](#product-documentation)
+		* [API documentation](#api-documentation)
+		* [SDK documentation](#sdk-documentation)
+		* [Release Notes](#release-notes)
+	* [Process documentation / SOP](#process-documentation--sop)
+		* [Project plans](#project-plans)
+		* [Business standards](#business-standards)
+	* [Marketing and Sales documentation](#marketing-and-sales-documentation)
+		* [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
+		* [Request For Proposals (RFP)](#request-for-proposals-rfp)
+	* [Scientific papers](#scientific-papers)
 * [Books](#books)
 	* [Writing and Technical Writing books](#writing-and-technical-writing-books)
 	* [Styling and Designing Content books](#styling-and-designing-content-books)
@@ -44,6 +56,86 @@ weight: 1410
 <!-- vim-markdown-toc -->
 
 ---------------
+
+## Types of Technical Documentation
+
+### Product documentation
+
+This includes guides, training manuals and anything that shows an end user how 
+to use a product. Installation and usage instructions, often with 
+illustrations, FAQs and knowledge base articles fall into this category. User 
+guides are a popular solution for both external users and internal employees to 
+get started on the usage of a particular product.
+
+#### API documentation
+
+API documentation is geared towards developers to show them how to integrate 
+and use an API service. This is often accomplished following the 
+[OpenAPI](https://www.openapis.org/) specifications.
+
+#### SDK documentation
+
+Similar to API documentation, SDK documentation show developers and tech-savy 
+users how to use a SDK.
+
+#### Release Notes
+
+These are technical documents that are created and published along with the 
+launch of a product or a new update of it. They detail the features, bugs, 
+improvements, and fixes that have been the focus of the last version of a 
+product (often a software). They can be all the way from purely technical to 
+nearly marketing documents, with just links to the actual commits and bugs 
+interested by the update.
+
+### Process documentation / SOP
+
+These are documents that show internal teams how to execute a task, use an 
+internal tool, or follow a procedure. This is often accomplished with an 
+internal wiki, and its structure is established by TWs.
+
+Another name for process documentation is SOP (Standard Operating Procedure).
+
+#### Project plans
+
+More of a project manager task, project plans define goals and objectives of a 
+project. They are created as a rather visual map of steps to take for a team in 
+order to reach an objective or deliver a product.
+
+#### Business standards
+
+These are documents that set rules, guidelines, and benchmarks that a business 
+should meet. They are often used during employees onboarding, as a teaching 
+tool, and are written as a series of references that employees and the whole 
+company adheres to. They may include company values and large objectives as 
+well.
+
+### Marketing and Sales documentation
+
+Not everybody agrees this is proper techincal writing. But if you do, then this 
+includes white papers, case studies, blogs, tutorials, and in-depth articles 
+showing how a product or service can help somebody's business.
+
+#### Market Requirements Documents (MRD)
+
+These are documents that outline your potential customer base, their needs, and 
+your competitors. They are part of a marketing plan. MRDs contain info about 
+customer problems, their reasons, market opportunities, customer demographics, 
+use cases, and competitors.
+
+#### Request For Proposals (RFP)
+
+This is a document that announces a project and solicits bids for it. In the 
+end they are created to persuade customers and investors to buy or finance a 
+product/service. Key points of this are the project overview, company 
+background, project scope, and goal, often in a clear, visually-appealing, 
+document.
+
+### Scientific papers
+
+Unrelated to most of the above are scientific papers. While they can fall into 
+the "white paper" umbrella, proper scientific papers are focused on actual data 
+coming from a research, ratehr than starting from the point of view of a 
+problem or use case. These are thorough, accurate, highly technical documents.
 
 ## Books
 
