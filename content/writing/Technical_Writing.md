@@ -48,6 +48,9 @@ weight: 1410
 	* [HelpStudio](#helpstudio)
 	* [OfficeHelp](#officehelp)
 	* [Slate](#slate)
+	* [Google Drawing](#google-drawing)
+	* [draw.io](#drawio)
+	* [Lucidchart](#lucidchart)
 		* [Other tools](#other-tools)
 * [Good practices and procedures](#good-practices-and-procedures)
 	* [Developing a Doc Plan](#developing-a-doc-plan)
@@ -317,6 +320,22 @@ A lean [content management system](https://dokay.de/en/officehelp-en), complemen
 ### Slate
 
 A free and open source [software](https://github.com/slatedocs/slate) to create API documentation.
+
+### Google Drawing
+
+An helpful free 
+[tool](https://docs.google.com/drawings/d/1YLSgBTyXGyewK369dXL2SmgstFQ8CUU3kIzxvXLp59E/edit) 
+to create diagrams and charts
+
+### draw.io
+
+A free tool with plenty of integration, [draw.io](https://www.drawio.com/) is 
+for diagramming and illustrating software infrastructures especially.
+
+### Lucidchart
+
+A tool for diagramming, [Lucidchart](https://www.lucidchart.com/pages/) is free 
+for a limited usage only.
 
 #### Other tools
 
