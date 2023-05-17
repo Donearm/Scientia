@@ -12,6 +12,7 @@ weight: 1127
     * [Deadhouse Gates](#deadhouse-gates)
     * [Memories of Ice](#memories-of-ice)
     * [House of Chains](#house-of-chains)
+    * [Midnight Tides](#midnight-tides)
 
 <!-- vim-markdown-toc -->
 
@@ -120,3 +121,8 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 778-779`: Logros T'lan Imass moved the First Throne away from the Nameless Ones because they feared that if one of them were to sit on it, he would order all T'lan Imass to permanently move inside the Azath Houses and 
   in all practice disappear from the world.
 * `pg 779`: Kellanved sought for and in the end discovered the First Throne. He claimed it but commanded the T'lan Imass only sparingly.
+* `pg 817-818`: Osric tells his son L'oric how the Deragoth domesticated some of the Eres, the Imass and humans progenitors. They fought against the K'Chain Che'Malle, destroying their skykeeps. Later, after the Eres extinction, the Deragoth allied with the First Empire of Dessimbelackis.
+
+### Midnight Tides
+
+* `pg 25-26`: Mael asked Gothos to preserve the field of battle between the Tiste, Andii and Edur, and the K'Chain Che'Malle. It caused the Gothos Ice Fields in north Lether and presumably blocked the development of magic on the continent to our days.
