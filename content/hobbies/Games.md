@@ -11,9 +11,22 @@ Here I collect a few links and tips about games I enjoy(ed).
 
 <!-- vim-markdown-toc GFM -->
 
+* [Sensible World of Soccer 2020](#sensible-world-of-soccer-2020)
+	* [Add 100 millions to a career](#add-100-millions-to-a-career)
 * [Europa Universalis IV](#europa-universalis-iv)
 
 <!-- vim-markdown-toc -->
+
+## Sensible World of Soccer 2020
+
+### Add 100 millions to a career
+
+1. Go to hexed.it on your browser
+2. Click "Open file" and select your save game
+3. Type "D5DC" in the "Go to" search field (upper right corner) and hit enter. The correct offset becomes selected
+4. Click somewhere in the background so that the cursor is no longer in the "Go to" field
+5. Type value "00E1F505" and you can see it replaces the original values
+6. Click "Export" to save your edited file
 
 ## Europa Universalis IV
 
