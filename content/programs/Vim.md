@@ -293,6 +293,7 @@ weight: 633
 * `ga` = Show the decimal, octal and hexadecimal index of the character under the cursor
 * `:au` = Show all the autocommands in effect
 * `:silent cmd` = adding `silent` before any command suppresses messages it may produce. Useful to not have to press <Enter> at startup to confirm enabling a plugin or a command
+* `:$!xxd` = enters hex edit mode, to edit an hexadecimal file. Return to normal mode with `:%!xxd -r` before saving and quitting ViM
 
 ## Macros
 
