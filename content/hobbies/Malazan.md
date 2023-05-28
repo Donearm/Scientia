@@ -127,3 +127,6 @@ The notes are separated by the book they are in, and ordered by page count.
 
 * `pg 25-26`: Mael asked Gothos to preserve the field of battle between the Tiste, Andii and Edur, and the K'Chain Che'Malle. It caused the Gothos Ice Fields in north Lether and presumably blocked the development of magic on the continent to our days.
 * `pg 206`: in a vision Udinaas sees a Forkrul Assail inside the Letheras Azath House, next to the corpses of a murdered Jaghut family.
+* `pg 278-279`: Udinaas has another vision in which a dialogue between Ossric and Menandore, Sukul Ankhadu, and Sheltatha Lore reveals a couple of facts:
+    * Ossric mated with Mother Dark and was the father of the three above-mentioned sisters
+    * Sheltatha Lore had two daughters with Draconus, Spite and Envy
