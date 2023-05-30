@@ -64,7 +64,7 @@ EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1 in /etc/adobe/mms.cfg</descri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Personal-Wiki/programs/gimp/index.html</guid>
       <description>Retouch scanned images Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened
-Various plugins to try Filters-&amp;gt;Defocus Gaussian Selective Gaussian = 6-255 (no moirè); 3-200 (little moiré without getting too out of focus) </description>
+Scale a selection of an image Make a normal selection. If the selection is meant to be pasted into another image or file, do respect the ratio of the final shape the selection will be pasted in.</description>
     </item>
     <item>
       <title>Git</title>
