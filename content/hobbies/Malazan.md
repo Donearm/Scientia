@@ -130,3 +130,9 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 278-279`: Udinaas has another vision in which a dialogue between Ossric and Menandore, Sukul Ankhadu, and Sheltatha Lore reveals a couple of facts:
     * Ossric mated with Mother Dark and was the father of the three above-mentioned sisters
     * Sheltatha Lore had two daughters with Draconus, Spite and Envy
+* `pg 538-539`: Silchas Ruin tells Kettle a few facts about the Forkrul Assail:
+    * They usually lived separated from the other races, but occasionally allied with them, namely with the Jaghut
+    * The draconic kins of Silchas Ruin took care to exterminate most of the FA
+    * Not many free FA remains. Most are imprisoned, but those who are free are worshipped by mortals
+    * Kettle has a FA soul
+* `pg 541`: Silchas Ruin talks with Kettle of her second soul, beside the first that was of a Forkrul Assail. This one is from an Eres, and the Nerek of the Letheri continent worshipped her/him with the name "Nameless One".
