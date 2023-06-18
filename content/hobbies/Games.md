@@ -13,6 +13,7 @@ Here I collect a few links and tips about games I enjoy(ed).
 
 * [Sensible World of Soccer 2020](#sensible-world-of-soccer-2020)
 	* [Add 100 millions to a career](#add-100-millions-to-a-career)
+	* [Personal records](#personal-records)
 * [Europa Universalis IV](#europa-universalis-iv)
 
 <!-- vim-markdown-toc -->
@@ -27,6 +28,62 @@ Here I collect a few links and tips about games I enjoy(ed).
 4. Click somewhere in the background so that the cursor is no longer in the "Go to" field
 5. Type value "00E1F505" and you can see it replaces the original values
 6. Click "Export" to save your edited file
+
+### Personal records
+
+After playing for about 30 years to SWOS, I collected quite a few accomplishments. I usually do not keep track of all the games' records I break, and usually these are not many, but for SWOS I made an exception and religiously kept all my best accomplishments throughout this long stretch of playing the game.
+
+Therefore, here are all the records I cared about (or cared to write down).
+
+* Most number of goals by a single player in a season: 112, Julian Joachim (Farense, Portugal)
+* Most number of scored goals in a single season: 261 (Farense, Portugal)
+* Least number of conceded goals in a single season: 4 (Fram, Iceland)
+* Least number of defeats in a single season: 0 (Fram, Iceland), (Farense, Portugal), (Caen, France), (Levski Sofia, Bulgaria)
+* Least number of draws in a single season: 0 (Barcelona, Spain), (Fram, Iceland)
+* Most number of goals scored by a defender: 28, Phil Babb (Fram, Iceland)
+* Longest period without conceding a goal, across all competitions: 1404 minutes (15 matches and 54 minutes, Levski Sofia, Bulgaria)
+* Most number of goals by a single player in an European cup: 26, Jurgen Klinsmann (Farense, Portugal)
+* Most number of goals scored in the league in a single season: 200 (Farense, Portugal)
+* Most number of goals by a single player in a National cup: 12, R. Spehar (Club Bruges, Belgium)
+* Longest streak of victories, across all competitions: 48 (Caen, France)
+* Most number of goals by a single player in a National league: 79, Julian Joachim (Farense, Portugal)
+* Most number of goals by a single player in a single match, in any competition: 8, Giuseppe Rossi in Italia vs Sri Lanka 11-0
+* Most number of goals by a single player in an Euro Championship or World Cup: 6, Giuseppe Rossi (Italy)
+
+Then, alongside these records, I kept track of my overall palmares, what and how many single competitions I won across all my careers in SWOS. Some may be missing, but no more than a handful.
+
+* UEFA Cup: 1
+* Champions' League/Champions Cup: 14
+* Italian Serie A: 2
+* Italian Cup: 2
+* Germanian Bundesliga: 5
+* Germanian Cup: 3
+* Icelandic League: 11
+* Icelandic Cup: 11
+* Portuguese League: 9
+* Portuguese Cup: 8
+* Russian League: 6
+* Russian Cup: 3
+* Swedish League: 6
+* Swedish Cup: 6
+* Spanish Liga: 1
+* Copa del Rey: 1
+* Faroer League: 1
+* Faroer Cup: 1
+* English Premier League: 1
+* English FA Cup: 2
+* Belgian League: 2
+* Belgian Cup: 1
+* Netherlands League: 1
+* French League: 6
+* French Cup: 5
+* Brazilian League: 4
+* Brazilian Cup: 4
+* Bulgarian League: 4
+* Bulgarian Cup: 4
+* Polish Ekstraklasa: 4
+* Polish Cup: 3
+* Euro Championship: 1
 
 ## Europa Universalis IV
 
