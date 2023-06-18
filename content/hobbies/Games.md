@@ -35,20 +35,20 @@ After playing for about 30 years to SWOS, I collected quite a few accomplishment
 
 Therefore, here are all the records I cared about (or cared to write down).
 
-* Most number of goals by a single player in a season: 112, Julian Joachim (Farense, Portugal)
-* Most number of scored goals in a single season: 261 (Farense, Portugal)
-* Least number of conceded goals in a single season: 4 (Fram, Iceland)
-* Least number of defeats in a single season: 0 (Fram, Iceland), (Farense, Portugal), (Caen, France), (Levski Sofia, Bulgaria)
-* Least number of draws in a single season: 0 (Barcelona, Spain), (Fram, Iceland)
-* Most number of goals scored by a defender: 28, Phil Babb (Fram, Iceland)
-* Longest period without conceding a goal, across all competitions: 1404 minutes (15 matches and 54 minutes, Levski Sofia, Bulgaria)
-* Most number of goals by a single player in an European cup: 26, Jurgen Klinsmann (Farense, Portugal)
-* Most number of goals scored in the league in a single season: 200 (Farense, Portugal)
-* Most number of goals by a single player in a National cup: 12, R. Spehar (Club Bruges, Belgium)
-* Longest streak of victories, across all competitions: 48 (Caen, France)
-* Most number of goals by a single player in a National league: 79, Julian Joachim (Farense, Portugal)
-* Most number of goals by a single player in a single match, in any competition: 8, Giuseppe Rossi in Italia vs Sri Lanka 11-0
-* Most number of goals by a single player in an Euro Championship or World Cup: 6, Giuseppe Rossi (Italy)
+* Most number of goals by a single player in a season: **112, Julian Joachim (Farense, Portugal)**
+* Most number of scored goals in a single season: **261 (Farense, Portugal)**
+* Least number of conceded goals in a single season: **4 (Fram, Iceland)
+* Least number of defeats in a single season: **0 (Fram, Iceland), (Farense, Portugal), (Caen, France), (Levski Sofia, Bulgaria)**
+* Least number of draws in a single season: **0 (Barcelona, Spain), (Fram, Iceland)**
+* Most number of goals scored by a defender: **28, Phil Babb (Fram, Iceland)**
+* Longest period without conceding a goal, across all competitions: **1404 minutes (15 matches and 54 minutes, Levski Sofia, Bulgaria)**
+* Most number of goals by a single player in an European cup: **26, Jurgen Klinsmann (Farense, Portugal)**
+* Most number of goals scored in the league in a single season: **200 (Farense, Portugal)**
+* Most number of goals by a single player in a National cup: **12, R. Spehar (Club Bruges, Belgium)**
+* Longest streak of victories, across all competitions: **48 (Caen, France)**
+* Most number of goals by a single player in a National league: **79, Julian Joachim (Farense, Portugal)**
+* Most number of goals by a single player in a single match, in any competition: **8, Giuseppe Rossi in Italia vs Sri Lanka 11-0**
+* Most number of goals by a single player in an Euro Championship or World Cup: **6, Giuseppe Rossi (Italy)**
 
 Then, alongside these records, I kept track of my overall palmares, what and how many single competitions I won across all my careers in SWOS. Some may be missing, but no more than a handful.
 
