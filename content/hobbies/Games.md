@@ -54,8 +54,8 @@ Then, alongside these records, I kept track of my overall palmares, what and how
 
 * UEFA Cup: 1
 * Champions' League/Champions Cup: 14
-* Italian Serie A: 2
-* Italian Cup: 2
+* Italian Serie A: 3
+* Italian Cup: 3
 * Germanian Bundesliga: 5
 * Germanian Cup: 3
 * Icelandic League: 11
