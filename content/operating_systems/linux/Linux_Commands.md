@@ -83,7 +83,7 @@ A variegated collection of useful Linux commands, in no particular order
 * `diff -rupN original_dir/ new_dir/ > file.patch` = Make a patch containing the differences in all files between `original_dir` and `new_dir`
 * `netstat -c host` = Show info about connection of host in a continuosly updated way (needs to be killed then)
 * `curl --head -s url -D -` = Connect to url with a HEAD request, outputting only the response headers
-* `cuebreakpoints file.cue | shnsplit -o flac file.flac` = Split a flac file containg a full album into tracks according to the cue file. See also [Archwiki entry](https://wiki.archlinux.org/title/CUE_Splitting).
+* `cuebreakpoints file.cue | shnsplit -o flac -t "%p-%a-%n-%t" file.flac` = Split a flac file containg a full album into tracks according to the cue file. See also [Archwiki entry](https://wiki.archlinux.org/title/CUE_Splitting).
 * `cuetag.sh file.cue split-track*.flac` = Add tags to the various tracks from the cue file. Usually it is to be after `cuebreakpoints`. See also [Archwiki entry](https://wiki.archlinux.org/title/CUE_Splitting)
 * `sp-sc link 3908 8908 > /dev/null &` = Connect to the Sopcast link at port 3908 and open to listen on localhost on port 8908
 * `mplayer http://localhost:8908/tv.asf` = Play the Sopcast video from above
