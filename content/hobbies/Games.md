@@ -15,6 +15,7 @@ Here I collect a few links and tips about games I enjoy(ed).
 	* [Add 100 millions to a career](#add-100-millions-to-a-career)
 	* [Personal records](#personal-records)
 * [Europa Universalis IV](#europa-universalis-iv)
+* [Amiga games](#amiga-games)
 
 <!-- vim-markdown-toc -->
 
@@ -399,3 +400,15 @@ Source: https://eu4cheats.com/
 {{% /expand %}}
 
 [EUIV Country Tag list](https://eu4cheats.com/country-tags)
+
+## Amiga games
+
+As I grew up playing on an Amiga 500, I have fond memories of many games on that platform. It's been a while, I don't remember them all, but those that I loved the most were:
+
+* Another World
+* Toki
+* Altered Beast
+* Sensible Soccer
+* Turrican
+* Chaos Engine
+* Superfrog
