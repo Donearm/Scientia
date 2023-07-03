@@ -412,3 +412,7 @@ As I grew up playing on an Amiga 500, I have fond memories of many games on that
 * Turrican
 * Chaos Engine
 * Superfrog
+* First Samurai
+* Lotus III
+* Cannon Fodder
+* Golden Axe
