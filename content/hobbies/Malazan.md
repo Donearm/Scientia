@@ -13,6 +13,7 @@ weight: 1127
     * [Memories of Ice](#memories-of-ice)
     * [House of Chains](#house-of-chains)
     * [Midnight Tides](#midnight-tides)
+    * [The Bonehunters](#the-bonehunters)
 
 <!-- vim-markdown-toc -->
 
@@ -136,3 +137,13 @@ The notes are separated by the book they are in, and ordered by page count.
     * Not many free FA remains. Most are imprisoned, but those who are free are worshipped by mortals
     * Kettle has a FA soul
 * `pg 541`: Silchas Ruin talks with Kettle of her second soul, beside the first that was of a Forkrul Assail. This one is from an Eres, and the Nerek of the Letheri continent worshipped her/him with the name "Nameless One".
+
+### The Bonehunters
+
+* `pg 90-95`: Cotillion speaks with 3 pure Eleint dragons, chained by Anomander Rake in Kurald Emurlahn, gathering a few news and facts:
+    * The dragons wanted the Shadow Throne
+    * Anomander Rake invaded Kurald Emurlahn in answer to Scabandari's betrayal, and chained the dragons
+    * The dragons claim that Shadowthrone is not sitting on the true Throne of Shadow
+    * The Elder Gods are not of one world, and were present as elemental forces before Darkness and Light
+* `pg 95`: Edgewalker tells Cotillion that he can consider him an elemental force
+
