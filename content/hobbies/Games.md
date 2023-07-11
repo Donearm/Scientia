@@ -38,7 +38,7 @@ Therefore, here are all the records I cared about (or cared to write down).
 
 * Most number of goals by a single player in a season: **112, Julian Joachim (Farense, Portugal)**
 * Most number of scored goals in a single season: **261 (Farense, Portugal)**
-* Least number of conceded goals in a single season: **4 (Fram, Iceland)
+* Least number of conceded goals in a single season: **4 (Fram, Iceland)**
 * Least number of defeats in a single season: **0 (Fram, Iceland), (Farense, Portugal), (Caen, France), (Levski Sofia, Bulgaria)**
 * Least number of draws in a single season: **0 (Barcelona, Spain), (Fram, Iceland)**
 * Most number of goals scored by a defender: **28, Phil Babb (Fram, Iceland)**
@@ -54,9 +54,9 @@ Therefore, here are all the records I cared about (or cared to write down).
 Then, alongside these records, I kept track of my overall palmares, what and how many single competitions I won across all my careers in SWOS. Some may be missing, but no more than a handful.
 
 * UEFA Cup: 1
-* Champions' League/Champions Cup: 14
-* Italian Serie A: 3
-* Italian Cup: 3
+* Champions' League/Champions Cup: 15
+* Italian Serie A: 4
+* Italian Cup: 4
 * Germanian Bundesliga: 5
 * Germanian Cup: 3
 * Icelandic League: 11
