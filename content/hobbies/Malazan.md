@@ -146,4 +146,4 @@ The notes are separated by the book they are in, and ordered by page count.
     * The dragons claim that Shadowthrone is not sitting on the true Throne of Shadow
     * The Elder Gods are not of one world, and were present as elemental forces before Darkness and Light
 * `pg 95`: Edgewalker tells Cotillion that he can consider him an elemental force
-
+* `pg 146`: Mebra believes Heboric to possess the power to destroy the world
