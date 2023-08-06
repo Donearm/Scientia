@@ -147,3 +147,15 @@ The notes are separated by the book they are in, and ordered by page count.
     * The Elder Gods are not of one world, and were present as elemental forces before Darkness and Light
 * `pg 95`: Edgewalker tells Cotillion that he can consider him an elemental force
 * `pg 146`: Mebra believes Heboric to possess the power to destroy the world
+* `pg 194`: The Soldier of House Death appears to Cutter and Heboric while 
+  hunting Skinner. He is surprised that Darujisthan is not ruled by a Tyrant 
+  with a Seguleh army. The Soldier himself was a Seguleh in life, and one that 
+  speaks freely and much more than his modern compatriots.
+* `pg 280-282`: Mappo and Icarium reflect on the murdering of Sorrit, an Elder 
+  Dragon. They come to the conclusion that a Jaghut or the Tiste Edur committed 
+  the murder.
+* `pg 475`: Ganath, a Jaghut, tells Paran of how the Errant's became the enemy 
+  of stagnation, ennui. He became an ever changing divinity, and in this 
+  transformation attracted the ire of the Forkrul Assail, as it opposed their 
+  world view. They tried to murder the Errant and all his followers, mostly 
+  Imass, Barghast, and Trell worshippers.
