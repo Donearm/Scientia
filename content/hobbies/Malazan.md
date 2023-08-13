@@ -159,3 +159,16 @@ The notes are separated by the book they are in, and ordered by page count.
   transformation attracted the ire of the Forkrul Assail, as it opposed their 
   world view. They tried to murder the Errant and all his followers, mostly 
   Imass, Barghast, and Trell worshippers.
+* `pg 561`: Dessimbelackis made a pact with the last 7 Deragoth while trying to 
+  become a God. Far more Deragoth existed in ancient times, when they 
+  domesticated the Eres'al.
+* `pg 597-598`: Taralack Veed reveals a few facts about Icarium's past while 
+  traveling with him. He was driven by the need to free his father trapped 
+  inside an Azath house. In attempting so, he shattered a wounded warren, 
+  destroyed an Azath, and released an host of demonic creatures. Ultimately 
+  Icarium failed to free his father, and attracted instead the attention of the 
+  Nameless Ones, Azath worshippers. They bound Icarium, who had lost all memory 
+  of his past after his bout of rage against the Azath, to a series of 
+  companions that were put beside him to guide and prevent the half-Jaghut to 
+  unleash his rage ever again. These companions were gifted with longer 
+  life-span than their similars.
