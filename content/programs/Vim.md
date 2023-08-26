@@ -126,7 +126,8 @@ weight: 633
 * `Rstring` = Overwrites the text from the cursor with string
 * `rcharacter` = Insert character right under the cursor
 * `:sort u` = Remove all double lines and sort them alphabetically
-* `:v/regexp/d` = Remove all lines not corresponding to regexp
+* `:v/regexp/d` = Remove all lines that **do not** match regexp
+* `:g/regexp/d` = Remove all lines that **do** match regexp
 * `:g/regexp/m$` = Move all lines matching regexp at the end of the file ($)
 * `{d}` = Go to the end of the current paragraph, or the previous if the cursor is on an empty line, and delete it
 * `d/regexp` = Delete everything between the cursor and the first occurrence of regexp
