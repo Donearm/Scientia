@@ -1,6 +1,6 @@
 ---
 title: Autism
-weight: 1101
+weight: 1211
 ---
 
 A few notes on the effects/causes of autism on/due to the brain.

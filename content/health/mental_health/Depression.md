@@ -1,6 +1,6 @@
 ---
 title: Depression
-weight: 1110
+weight: 1220
 ---
 
 A few notes on the effects/causes of depression on/due to the brain.

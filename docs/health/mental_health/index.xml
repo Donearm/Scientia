@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mental Health on Gianluca Fiore Personal Wiki</title>
+    <link>https://donearm.github.io/Personal-Wiki/health/mental_health/index.html</link>
+    <description>Recent content in Mental Health on Gianluca Fiore Personal Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/health/mental_health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autism</title>
+      <link>https://donearm.github.io/Personal-Wiki/health/mental_health/autism/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/health/mental_health/autism/index.html</guid>
+      <description>A few notes on the effects/causes of autism on/due to the brain.
+Study on the effects of serotonin receptors on the Gut-Brain Microbiome in Autism Spectrum disorders Gut disfunctions occur at a four-fold greater rate in individuals with autism spectrum disorder than in normal population. Correlation found between autism spectrum disorders, especially connected to language-impairment, and constipation. </description>
+    </item>
+    <item>
+      <title>Depression</title>
+      <link>https://donearm.github.io/Personal-Wiki/health/mental_health/depression/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Personal-Wiki/health/mental_health/depression/index.html</guid>
+      <description>A few notes on the effects/causes of depression on/due to the brain.
+Mostly coming from The Upward Spiral book
+Depressed subjects have less dopamine activity in the nucleus accumbens Dorsal striatum has strong ties with the nucleus accumbens Dopamine released in dorsal striatum doesn&amp;rsquo;t increase feelings of pleasure Patterns in the dorsal striatum can&amp;rsquo;t be erased, ever Serotonin is not unlimited Inhibiting an impulse uses serotonin The dopamine system helps modulating both slow-wave deep sleep and rem sleep Circadian rhythms influence the production of dopamine receptors, dopamine transponders and dopamine itself Depressed subjects have dysregulated oxytocin.</description>
+    </item>
+  </channel>
+</rss>
