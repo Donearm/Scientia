@@ -10,4 +10,4 @@ The I.T. part of this wiki includes then solutions and info that are meant as qu
 
 The other sections instead were born more recently, when I thought that I was expanding my interests into multiple areas that were becoming important enough to warrant their own wiki. Thus, I merged these here, spanning from history to personal hobbies, to info about health to curiosities. For the time being they will be here; maybe one day they will have their own wiki or site.
 
-If you need to know more about myself instead, head over my personal website at [gianlucafiore.it](https://www.gianlucafiore.it). Or my professional one as a writer, [fountainpencreator.com](https://www.fountainpencreator.com).
+If you need to know more about myself instead, head over my personal website at [gianlucafiore.it](https://www.gianlucafiore.it). Or my professional one as a writer, [fountainpencreator.com](https://www.fountainpencreator.com). Or explore my [IG feed](https://www.instagram.com/gianlucadfiore/) (mostly about my travels). Other social media I am not much present on.
