@@ -49,7 +49,7 @@ Therefore, here are all the records I cared about (or cared to write down).
 * Longest streak of victories, across all competitions: **48 (Caen, France)**
 * Most number of goals by a single player in a National league: **79, Julian Joachim (Farense, Portugal)**
 * Most number of goals by a single player in a single match, in any competition: **8, Giuseppe Rossi in Italia vs Sri Lanka 11-0**
-* Most number of goals by a single player in an Euro Championship or World Cup: **6, Giuseppe Rossi (Italy)**
+* Most number of goals by a single player in an Euro Championship or World Cup: **15, Gianluca Scamacca (Italy)**
 
 Then, alongside these records, I kept track of my overall palmares, what and how many single competitions I won across all my careers in SWOS. Some may be missing, but no more than a handful.
 
@@ -84,7 +84,7 @@ Then, alongside these records, I kept track of my overall palmares, what and how
 * Bulgarian Cup: 4
 * Polish Ekstraklasa: 4
 * Polish Cup: 3
-* Euro Championship: 1
+* Euro Championship: 2
 
 ## Europa Universalis IV
 
