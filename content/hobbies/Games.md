@@ -12,8 +12,8 @@ Here I collect a few links and tips about games I enjoy(ed).
 <!-- vim-markdown-toc GFM -->
 
 * [Sensible World of Soccer 2020](#sensible-world-of-soccer-2020)
-	* [Add 100 millions to a career](#add-100-millions-to-a-career)
-	* [Personal records](#personal-records)
+    * [Add 100 millions to a career](#add-100-millions-to-a-career)
+    * [Personal records](#personal-records)
 * [Europa Universalis IV](#europa-universalis-iv)
 * [Amiga games](#amiga-games)
 
@@ -85,6 +85,7 @@ Then, alongside these records, I kept track of my overall palmares, what and how
 * Polish Ekstraklasa: 4
 * Polish Cup: 3
 * Euro Championship: 2
+* World Cup: 2
 
 ## Europa Universalis IV
 
