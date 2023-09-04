@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Health on Gianluca Fiore Personal Wiki</title>
-    <link>https://donearm.github.io/Personal-Wiki/health/index.html</link>
-    <description>Recent content in Health on Gianluca Fiore Personal Wiki</description>
+    <title>Health on Scientia - Gianluca Fiore Knowledge Wiki</title>
+    <link>https://donearm.github.io/Scientia/health/index.html</link>
+    <description>Recent content in Health on Scientia - Gianluca Fiore Knowledge Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/health/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mental Health</title>
-      <link>https://donearm.github.io/Personal-Wiki/health/mental_health/index.html</link>
+      <link>https://donearm.github.io/Scientia/health/mental_health/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/health/mental_health/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/health/mental_health/index.html</guid>
       <description>Various notes on possible issues to keep in mind.
 Not Asking For Help: possible cause is none of value, or at all, is believed to be possibly received. Not Being Socially Active: probably due to the fact that if I didn&amp;rsquo;t feel loved by family, the assumption is that nobody else could love me. If neither my family loved me, why would anybody else do? Why bothering trying to find love in others then?</description>
     </item>

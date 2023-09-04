@@ -1,144 +1,144 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Various on Gianluca Fiore Personal Wiki</title>
-    <link>https://donearm.github.io/Personal-Wiki/various/index.html</link>
-    <description>Recent content in Various on Gianluca Fiore Personal Wiki</description>
+    <title>Various on Scientia - Gianluca Fiore Knowledge Wiki</title>
+    <link>https://donearm.github.io/Scientia/various/index.html</link>
+    <description>Recent content in Various on Scientia - Gianluca Fiore Knowledge Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/various/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/various/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advertising and Marketing</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/advertising_and_marketing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/advertising_and_marketing/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/advertising_and_marketing/index.html</guid>
       <description>Google Ads Match types Bid Strategies Audience Solutions Create a Marketing Plan 1. Collect Data 2. Select the mission statement 3. Write a market analysis 4. Describe a current customer&amp;rsquo;s persona 5. Write a customer buying process map 6. Write a product/service analysis 7. Collect all the data thus gathered in an overall strategy Google Ads Google Search Network = search + Google Play + Google Shopping + Google Maps + search partners</description>
     </item>
     <item>
       <title>Cryptocurrencies</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/cryptocurrencies/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/cryptocurrencies/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/cryptocurrencies/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/cryptocurrencies/index.html</guid>
       <description>Litecoin API
 Bitcoin/Litecoin API commands getaccountaddress &amp;quot;&amp;quot; = Print BTC/LTC address backupwallet &amp;lt;location&amp;gt; = Dump wallet to location encryptwallet &amp;lt;passphrase&amp;gt; = Encrypt the wallet with passphrase validateaddress &amp;lt;coin_address&amp;gt; = Print informations about coin_address walletpassphrasechange &amp;lt;oldpass&amp;gt; &amp;lt;newpass&amp;gt; = Change wallet password </description>
     </item>
     <item>
       <title>Electricity</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/electricity/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/electricity/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/electricity/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/electricity/index.html</guid>
       <description>A good answer on how to calculate power consumption The Amp-hours of a battery gives the number of hours it can deliver 1 amp, or the number of amps it can deliver for one hour.
 Amp-hours = amps x hours.
 So a 50Ah battery can run for 50 hours at one amp, or 50 amps for one hour. Or 2 amps for 25 hours, or 25 amps for 2 hours.</description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/hardware/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/hardware/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/hardware/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/hardware/index.html</guid>
       <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
 Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
 Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/hugo/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/hugo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/hugo/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/hugo/index.html</guid>
       <description>Syntax Highlighting Hugo makes use of Chroma as its syntax highlighter. It is possible to select the style from these here by adding in Hugo config:
 pygmentsStyle = &amp;#34;dracula&amp;#34; </description>
     </item>
     <item>
       <title>i3</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/i3/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/i3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/i3/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/i3/index.html</guid>
       <description>How to save layout and reload at boot First, save the current layout of any workspace with:
 i3-save-tree --workspace 1 &amp;gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
 After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.</description>
     </item>
     <item>
       <title>Load Balancing</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/load_balancing/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/load_balancing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/load_balancing/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/load_balancing/index.html</guid>
       <description>Modes Round Robin = requests are distributed sequentially. Least Connections = new requests are distributed to the node with currently the least requests. Source/IP Hash = the IP source of the request is used to determine the destination node. </description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/markdown/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/markdown/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/markdown/index.html</guid>
       <description>How to make footnotes Use
 Text to be linked[^1] and then at the bottom of the file:
 [^1]: text or link </description>
     </item>
     <item>
       <title>MongoDB</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/mongodb/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/mongodb/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/mongodb/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/mongodb/index.html</guid>
       <description>Basic CLI commands CRUD commands Importing csv files Basic CLI commands show dbs = list all databases db = show current database use dbname = select database dbname CRUD commands db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike.</description>
     </item>
     <item>
       <title>Networks</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/networks/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/networks/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/networks/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/networks/index.html</guid>
       <description>* [HTTP Status Codes](#http-status-codes) * [OSI Model](#osi-model) * [TCP connection states](#tcp-connection-states) Firewalls VLANs DNS Basic concepts Resource Records DNS Query DNS Fields VPN IP Addressing HTTP Status Codes OSI Model TCP connection states CLOSED: No connection LISTEN: The local end-point is waiting for a connection request from a remote end-point ESTABLISHED: The third step of the 3-way connection handshake was performed. The connection is open FIN-WAIT-1: The first step of a 4-way active clsoe was performed.</description>
     </item>
     <item>
       <title>Plain Text Accounting</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/plain_text_accounting/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/plain_text_accounting/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/plain_text_accounting/index.html</guid>
       <description>Beancount Reporting bean-report file.ledger balances = basic balance report command. bean-report file.ledger balances -e AccountName = same as above but only showing account names matching AccountName. bean-report file.ledger balances | treeify = piping the basic balance command to treeify, provided by beancount, to have a tree-like visualization. bean-report file.ledger balsheet &amp;gt; balance.html = output the balance report to an html file. bean-report file.ledger income &amp;gt; income.html = output the income report to an html file.</description>
     </item>
     <item>
       <title>Samba and Nfs</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/samba_and_nfs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/samba_and_nfs/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/samba_and_nfs/index.html</guid>
       <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
 //pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
     </item>
     <item>
       <title>SEO</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/seo/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/seo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/seo/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/seo/index.html</guid>
       <description>SEO audit checklist Useful Wordpress plugins Pages for local businesses SEO Evaluations How to report on SEO Common metrics Engagement metrics Google Analytics ChatGPT SEO audit checklist Roughly copied from Chase Reiner&amp;rsquo;s
 Primary Core SEO Issues – The most common SEO issues or mistakes include focusing on content quantity instead of quality, incomplete on-page SEO optimization, overlooking the importance of well-constructed URLs, and focusing on too many keywords. Site Redirects To Preferred Version – You can check the documentation of your hosting provider to figure out how to set up 301 redirects to send your website visitors from the non-preferred URLs to the preferred version.</description>
     </item>
     <item>
       <title>SQLite</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/sqlite/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/sqlite/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/sqlite/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/sqlite/index.html</guid>
       <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
     </item>
     <item>
       <title>Tiddlywiki</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/tiddlywiki/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/tiddlywiki/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/tiddlywiki/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/tiddlywiki/index.html</guid>
       <description>Tweaks and features of Tiddlywiki To use the file browser to insert a file into the wiki To show a text file with an iframe To insert an image To directly install a plugin Export tiddlers as pdf/ps Show Tiddlywiki version number Tweaks and features of Tiddlywiki Tiddlywiki markup list
 To use the file browser to insert a file into the wiki This:
 &amp;lt;html&amp;gt;&amp;lt;div align=&amp;#34;left&amp;#34;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;#34;whatFile()&amp;#34; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt; or this:</description>
     </item>
     <item>
       <title>Useful info</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/useful_info/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/useful_info/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/useful_info/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/useful_info/index.html</guid>
       <description>Driving license Traveling Electronics Law and taxes Poland A miscellaneous collection of links that are not immediately useful but may be, eventually. Nothing that would match the other pages only.
 Driving license Driving license (patente B) to obtain in Italy:
 First theory exam, of 40 questions. This can be done online. Then, if passed, a &amp;ldquo;foglio rosa&amp;rdquo; is granted which gives the owner the right to take the practical exam Within 6 months from the theory exam, the practical one can be attempted.</description>
     </item>
     <item>
       <title>Zfs</title>
-      <link>https://donearm.github.io/Personal-Wiki/various/zfs/index.html</link>
+      <link>https://donearm.github.io/Scientia/various/zfs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/various/zfs/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/various/zfs/index.html</guid>
       <description>Useful commands arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified ZFS encrypted datasets zfs get -p encryption,keystatus,keylocation,pbkdf2iters $dataset = show details about an encrypted dataset zfs-load-key $dataset = load the key for the specified dataset, enabling access to it zfs-unload-key $dataset = unload a previously loaded key for a data set, preventing it from being accessed later without giving the key again zfs mount $dataset = mount the dataset zfs unmount $dataset = unmount the dataset </description>
     </item>
   </channel>

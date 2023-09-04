@@ -4,27 +4,27 @@ var relearn_search_index = [
     "description": "",
     "tags": null,
     "title": "Categories",
-    "uri": "/Personal-Wiki/categories/index.html"
+    "uri": "/Scientia/categories/index.html"
   },
   {
     "content": "",
     "description": "",
     "tags": null,
     "title": "python",
-    "uri": "/Personal-Wiki/tags/python/index.html"
+    "uri": "/Scientia/tags/python/index.html"
   },
   {
     "content": "",
     "description": "",
     "tags": null,
     "title": "Search",
-    "uri": "/Personal-Wiki/search/index.html"
+    "uri": "/Scientia/search/index.html"
   },
   {
     "content": "",
     "description": "",
     "tags": null,
     "title": "Tags",
-    "uri": "/Personal-Wiki/tags/index.html"
+    "uri": "/Scientia/tags/index.html"
   }
 ]

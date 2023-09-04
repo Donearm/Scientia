@@ -1,8 +1,8 @@
-baseURL = "https://donearm.github.io/Personal-Wiki/"
+baseURL = "https://donearm.github.io/Scientia/"
 
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Gianluca Fiore Personal Wiki"
+title = "Scientia - Gianluca Fiore Knowledge Wiki"
 theme = "hugo-theme-relearn-5.6.5"
 
 hasCJKLanguage = true
@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 [params]
 	author = "Gianluca Fiore"
     description = "My personal knowledge wiki. Mostly I.T. but with a few more recent topics"
-    github_repository = "https://github.com/Donearm/Personal-Wiki/"
+    github_repository = "https://github.com/Donearm/Scientia/"
     version = ""
 	showVisitedLinks = false
 	disableSearch = false
@@ -52,7 +52,7 @@ pygmentsUseClasses = true
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://donearm.github.io/Personal-Wiki/"
+    github_doc_repository = "https://donearm.github.io/Scientia/"
 
     # Analytic section
     google_analytics_id = "" # Your Google Analytics tracking id
@@ -63,7 +63,7 @@ pygmentsUseClasses = true
     # Open Graph settings for each page are set on the front matter.
     # See https://gohugo.io/templates/internal/#open-graph
     # See https://gohugo.io/templates/internal/#twitter-cards
-    title = "Gianluca Fiore Personal Wiki"
+    title = "Scientia - Gianluca Fiore Knowledge Wiki"
     images = ["images/og-image.png"] # Open graph images are placed in `static/images`
 
 	# This controls whether submenus will be expanded (true), or collapsed (false) in the
@@ -98,7 +98,7 @@ pygmentsUseClasses = true
     # Algolia site search section
     # See https://www.algolia.com/doc/
     algolia_search_enable = true
-    algolia_indexName = "Gianluca Fiore Personal Wiki"
+    algolia_indexName = "Scientia - Gianluca Fiore Knowledge Wiki"
     algolia_appId = "DRRGB5NMNG"
 	algolia_apiKey = "b66dcbe0616bd937b0436433b526ee27"
 
@@ -113,7 +113,7 @@ pygmentsUseClasses = true
 	[[menu.shortcuts]]
 		name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 		identifier = "ds"
-		url = "https://github.com/Donearm/Personal-Wiki"
+		url = "https://github.com/Donearm/Scientia/"
 		weight = 20
 
 	[[menu.shortcuts]]

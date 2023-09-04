@@ -2,7 +2,7 @@
 type: docs
 ---
 
-This is my "Knowledge wiki". A collection of my knowledge that I reputed worth keeping and sharing online.
+This is my "Scientia", latin for knowledge. It is my personal knowledge wiki, a collection of my knowledge that I reputed worth keeping over many years. Now it is shared online, free for everybody to consult.
 
 It was born in the early 2000s and it included only subjects within the I.T.: tricks, commands worth remembering, procedures, and what not. 
 

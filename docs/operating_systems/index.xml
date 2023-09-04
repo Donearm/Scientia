@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Operating Systems on Gianluca Fiore Personal Wiki</title>
-    <link>https://donearm.github.io/Personal-Wiki/operating_systems/index.html</link>
-    <description>Recent content in Operating Systems on Gianluca Fiore Personal Wiki</description>
+    <title>Operating Systems on Scientia - Gianluca Fiore Knowledge Wiki</title>
+    <link>https://donearm.github.io/Scientia/operating_systems/index.html</link>
+    <description>Recent content in Operating Systems on Scientia - Gianluca Fiore Knowledge Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://donearm.github.io/Personal-Wiki/operating_systems/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/operating_systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.html</link>
+      <link>https://donearm.github.io/Scientia/operating_systems/linux/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/linux/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/operating_systems/linux/index.html</guid>
       <description>The largest section under Operating Systems by far. I have been using Linux since around 2002 and as my main OS since 2004-2005.
 Most I know about Linux I learned using Slackware, then Gentoo, then Archlinux. But I used to distro-hop a lot in the early years of my Linux learning and have probably tested between 15 and 20 different distro (tested as in installed, not just ran from a live usb pendrive).</description>
     </item>
     <item>
       <title>FreeBSD</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html</link>
+      <link>https://donearm.github.io/Scientia/operating_systems/freebsd/freebsd_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/freebsd/freebsd_commands/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/operating_systems/freebsd/freebsd_commands/index.html</guid>
       <description>Various Commands cvsup = Update ports tree make search key=program = Search for program among the ports tree make index = Generate the ports index pkg_add = Install a package pkg_info = Show info about installed packages pkg_version = Show version number of an installed package pkg_delete = Remove a package /etc/rc.d/rc.daemon rcvar = Check if daemon is enabled or not /etc/rc.d/rc.daemon status = Check the status of daemon kldload = Load a kernel module pw = Modify, remove or add users and groups ipfw -a list = List firewall rules burncd = Command to burn cd gbde = Utility to encrypt/decrypt a disk portupgrade -af = Upgrade all ports freebsd-update = Upgrade the whole system freebsd-update -r version upgrade = Upgrade system to version freebsd-update install = Actually install updates, remove old libraries and object files portsclean -C = Clean out the work directory of past compilations portsclean -D = Clean out all distfiles that are not referenced by any ports in the tree.</description>
     </item>
     <item>
       <title>NixOS</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html</link>
+      <link>https://donearm.github.io/Scientia/operating_systems/nixos/nixos_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/nixos/nixos_commands/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/operating_systems/nixos/nixos_commands/index.html</guid>
       <description>Various Commands nixos-rebuild switch = rebuild the system after having edited the configuration nix-env -qaP package = search for package nix-env -e package = uninstall package nix-channel --update = update the system (according to currently subscribed channel)</description>
     </item>
     <item>
       <title>Windows Commands</title>
-      <link>https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/index.html</link>
+      <link>https://donearm.github.io/Scientia/operating_systems/windows/windows_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Personal-Wiki/operating_systems/windows/windows_commands/index.html</guid>
+      <guid>https://donearm.github.io/Scientia/operating_systems/windows/windows_commands/index.html</guid>
       <description>Windows Registry tweaks * HKEY\_CURRENT\_USER\ControlPanel\Desktop * MenuShowDelay = Delay in ms at the opening of menus. Default is 400 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management * DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 * LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters * EnablePrefetcher = Enable prefetching of data on the hard disk.</description>
     </item>
   </channel>
