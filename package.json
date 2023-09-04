@@ -1,5 +1,5 @@
 {
-  "name": "Personal-Wiki",
+  "name": "Scientia",
   "lockfileVersion": 2,
   "scripts": {
 	  "algolia": "atomic-algolia",
