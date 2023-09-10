@@ -5,7 +5,6 @@ weight: 1350
 
 <!-- vim-markdown-toc GFM -->
 
-* [Random facts](#random-facts)
 * [Apocryphal books](#apocryphal-books)
     * [Book of Jubilees](#book-of-jubilees)
     * [Book of Enoch](#book-of-enoch)
@@ -39,7 +38,9 @@ weight: 1350
     * [Apocalypse of Peter](#apocalypse-of-peter)
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
 * [Theological facts](#theological-facts)
-    * [Origen of Alexandria](#origen-of-alexandria)
+    * [Important figures](#important-figures)
+        * [Origen of Alexandria](#origen-of-alexandria)
+        * [Marcion of Sinope](#marcion-of-sinope)
 * [Non-theological facts](#non-theological-facts)
     * [Antisemitism](#antisemitism)
     * [Other facts](#other-facts)
@@ -47,13 +48,6 @@ weight: 1350
 <!-- vim-markdown-toc -->
 
 -------------
-
-* [Marcion of Sinope](https://en.wikipedia.org/wiki/Marcion_of_Sinope) = founder of Marcionism. First to develop a New Testament canon. Then declared heretic and forced the orthodox Church to develop their own canon.
-* [Therapeautae](https://en.wikipedia.org/wiki/Therapeutae) = a Christian sect in Alexandria from 1st century a.C. Their practices were similar to Theravada Buddhism and their name may have been an adaption to Greek of the pali word Theravada.
-
-## Random facts
-
-* Pope Liberius in 354 a.C. first associated the winter solstice and roman celebration of Brumalia with the date of birth of Jesus
 
 ## Apocryphal books
 
@@ -389,7 +383,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
   then adopted by Greek philosophers and then caught by early Christian 
   theologians.
 
-### Origen of Alexandria
+### Important figures
+
+#### Origen of Alexandria
 
 As an early Church Father (185-253 a.C.), he had later questionable ideas. For 
 him, everything had a soul outside of the Trinity, even the sun and the stars. 
@@ -397,6 +393,20 @@ Souls of men came from elsewhere, already formed since the creation, as with
 Plato. And every soul will be eventually saved, even those of devils.
 
 These theories were later rejected by the Church in the 6th century a.C.
+
+#### Marcion of Sinope
+
+[Marcion](https://en.wikipedia.org/wiki/Marcion_of_Sinope) was the founder of 
+Marcionism. First to develop a New Testament canon, which included his own 
+[Gospel of Marcion](https://en.wikipedia.org/wiki/Gospel_of_Marcion). This text 
+seems to be a revised gospel of Luke, with a lot of Judaism influenced 
+removed.
+
+Marcion preached that the God of Jesus was a new one, alien, separate from the 
+one of the Old Testament.
+
+Marcion was quickly declared heretic, and the Church was forced to create their 
+own biblical canon in answer to Marcion's.
 
 ## Non-theological facts
 
@@ -422,5 +432,11 @@ These theories were later rejected by the Church in the 6th century a.C.
   thinker.
 * The principle of not reciprocating evil present in the Sermon of the Mount, 
   was already stated by Socrates as:
-  ```We ought not to retaliate evile for evil to any one, whatever evil we may 
-  have suffered from him```
+  `We ought not to retaliate evile for evil to any one, whatever evil we may 
+  have suffered from him`
+* The [Therapeautae](https://en.wikipedia.org/wiki/Therapeutae) was a Christian 
+  sect in Alexandria from 1st century a.C. Their practices were similar to 
+  Theravada Buddhism and their name may have been an adaption to Greek of the 
+  pali word Theravada.
+* Pope Liberius in 354 a.C. first associated the winter solstice and roman 
+  celebration of Brumalia with the date of birth of Jesus
