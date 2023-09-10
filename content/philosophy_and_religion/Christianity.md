@@ -7,41 +7,42 @@ weight: 1350
 
 * [Random facts](#random-facts)
 * [Apocryphal books](#apocryphal-books)
-	* [Book of Jubilees](#book-of-jubilees)
-	* [Book of Enoch](#book-of-enoch)
+    * [Book of Jubilees](#book-of-jubilees)
+    * [Book of Enoch](#book-of-enoch)
 * [Apocryphal Gospels](#apocryphal-gospels)
-	* [Gospel of James](#gospel-of-james)
-	* [Infancy Gospel of Thomas](#infancy-gospel-of-thomas)
-	* [Gospel of Pseudo-Matthew](#gospel-of-pseudo-matthew)
-	* [Gospel of the Ebionites](#gospel-of-the-ebionites)
-	* [Gospel of the Hebrews](#gospel-of-the-hebrews)
-	* [Gospel of the Nazarenes](#gospel-of-the-nazarenes)
-	* [Gospel of Marcion](#gospel-of-marcion)
-	* [Gospel of Mani](#gospel-of-mani)
-	* [Gospel of Peter](#gospel-of-peter)
-	* [Gospel of Nicodemus](#gospel-of-nicodemus)
-	* [Questions of Bartholomew](#questions-of-bartholomew)
-	* [Apocryphon of James](#apocryphon-of-james)
-	* [Book of Thomas the Contender](#book-of-thomas-the-contender)
-	* [Dialogue of the Savior](#dialogue-of-the-savior)
-	* [Gospel of Judas](#gospel-of-judas)
-	* [Gospel of Mary](#gospel-of-mary)
-	* [Gospel of Philip](#gospel-of-philip)
-	* [Greek Gospel of the Egyptians](#greek-gospel-of-the-egyptians)
-	* [Gospel of Truth](#gospel-of-truth)
-	* [Pistis Sophia](#pistis-sophia)
-	* [Second Treatise of the Great Seth](#second-treatise-of-the-great-seth)
-	* [Apocryphon of John](#apocryphon-of-john)
-	* [Apocalypse of Paul](#apocalypse-of-paul)
-	* [First Apocalypse of James](#first-apocalypse-of-james)
-	* [Second Apocalypse of James](#second-apocalypse-of-james)
-	* [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
-	* [Apocalypse of Peter](#apocalypse-of-peter)
+    * [Gospel of James](#gospel-of-james)
+    * [Infancy Gospel of Thomas](#infancy-gospel-of-thomas)
+    * [Gospel of Pseudo-Matthew](#gospel-of-pseudo-matthew)
+    * [Gospel of the Ebionites](#gospel-of-the-ebionites)
+    * [Gospel of the Hebrews](#gospel-of-the-hebrews)
+    * [Gospel of the Nazarenes](#gospel-of-the-nazarenes)
+    * [Gospel of Marcion](#gospel-of-marcion)
+    * [Gospel of Mani](#gospel-of-mani)
+    * [Gospel of Peter](#gospel-of-peter)
+    * [Gospel of Nicodemus](#gospel-of-nicodemus)
+    * [Questions of Bartholomew](#questions-of-bartholomew)
+    * [Apocryphon of James](#apocryphon-of-james)
+    * [Book of Thomas the Contender](#book-of-thomas-the-contender)
+    * [Dialogue of the Savior](#dialogue-of-the-savior)
+    * [Gospel of Judas](#gospel-of-judas)
+    * [Gospel of Mary](#gospel-of-mary)
+    * [Gospel of Philip](#gospel-of-philip)
+    * [Greek Gospel of the Egyptians](#greek-gospel-of-the-egyptians)
+    * [Gospel of Truth](#gospel-of-truth)
+    * [Pistis Sophia](#pistis-sophia)
+    * [Second Treatise of the Great Seth](#second-treatise-of-the-great-seth)
+    * [Apocryphon of John](#apocryphon-of-john)
+    * [Apocalypse of Paul](#apocalypse-of-paul)
+    * [First Apocalypse of James](#first-apocalypse-of-james)
+    * [Second Apocalypse of James](#second-apocalypse-of-james)
+    * [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
+    * [Apocalypse of Peter](#apocalypse-of-peter)
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
 * [Theological facts](#theological-facts)
+    * [Origen of Alexandria](#origen-of-alexandria)
 * [Non-theological facts](#non-theological-facts)
-	* [Antisemitism](#antisemitism)
-	* [Other facts](#other-facts)
+    * [Antisemitism](#antisemitism)
+    * [Other facts](#other-facts)
 
 <!-- vim-markdown-toc -->
 
@@ -384,6 +385,18 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 * [Justyn Martyr](https://en.wikipedia.org/wiki/Justin_Martyr), 100-165 a.C., 
   did not consider the Gospels as canon but only as a sort of "memorable facts" 
   about the life of Christ
+* A doctrine of future life was first postulated in the West by the Orphics, 
+  then adopted by Greek philosophers and then caught by early Christian 
+  theologians.
+
+### Origen of Alexandria
+
+As an early Church Father (185-253 a.C.), he had later questionable ideas. For 
+him, everything had a soul outside of the Trinity, even the sun and the stars. 
+Souls of men came from elsewhere, already formed since the creation, as with 
+Plato. And every soul will be eventually saved, even those of devils.
+
+These theories were later rejected by the Church in the 6th century a.C.
 
 ## Non-theological facts
 
@@ -407,3 +420,7 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
   Christians](https://en.wikipedia.org/wiki/Against_the_Christians). No copy of 
   any remain today, only citations from other writers. He was a neoplatonic 
   thinker.
+* The principle of not reciprocating evil present in the Sermon of the Mount, 
+  was already stated by Socrates as:
+  ```We ought not to retaliate evile for evil to any one, whatever evil we may 
+  have suffered from him```
