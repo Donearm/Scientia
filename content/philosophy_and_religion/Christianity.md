@@ -41,6 +41,7 @@ weight: 1350
     * [Important figures](#important-figures)
         * [Origen of Alexandria](#origen-of-alexandria)
         * [Marcion of Sinope](#marcion-of-sinope)
+    * [Saint Augustine](#saint-augustine)
 * [Non-theological facts](#non-theological-facts)
     * [Antisemitism](#antisemitism)
     * [Other facts](#other-facts)
@@ -408,6 +409,23 @@ one of the Old Testament.
 Marcion was quickly declared heretic, and the Church was forced to create their 
 own biblical canon in answer to Marcion's.
 
+### Saint Augustine
+
+While highly influential, he also held some later declared heretical positions. 
+For instance, he held that angels may be both bad or good, while only devils 
+were always bad. He also believed that we were all doomed after Adam's sin, and 
+only God could grant salvation. This was unrelated to how one would act during 
+life, and only God knew why some were saved and others damned. Even infants 
+would automatically go to hell, unless God intervened. Only those who were 
+baptized could be saved, adults or infants.
+
+Regarding sex, he claimed that Adam and Eve before the original sin could have 
+had sex without lust, only with will, but after that sin we all lost that 
+capability, and fell to the sin of lust.
+
+These theories were held as orthodox for centuries, until the 
+Counter-Reformation or later, when were abandoned by the Catholic Church.
+
 ## Non-theological facts
 
 ### Antisemitism
@@ -416,6 +434,11 @@ own biblical canon in answer to Marcion's.
   famously cursed the Jews in a sort of prayer, in mid 4th century a.C.
 * Elvira, in south of Spain, in 306 a.C. prohibited any relationship between 
   its citizens and Jews
+* [Cyril of Alexandria](https://en.wikipedia.org/wiki/Cyril_of_Alexandria), 
+  venerated as Saint Cyril, was the patriarch of Alexandria in the early fifth 
+  century who supported pogroms and later expulsed Jews from the city. He had 
+  also a hand in the murder of the philosopher Hypatia, albeit the historians 
+  are still debating how important was his role.
 
 ### Other facts
 
