@@ -409,6 +409,10 @@ one of the Old Testament.
 Marcion was quickly declared heretic, and the Church was forced to create their 
 own biblical canon in answer to Marcion's.
 
+Some of his ideas resurfaced in Middle Age with the 
+[Paulicians](https://en.wikipedia.org/wiki/Paulicianism), which also were 
+considered heretics.
+
 ### Saint Augustine
 
 While highly influential, he also held some later declared heretical positions. 
@@ -463,3 +467,8 @@ Counter-Reformation or later, when were abandoned by the Catholic Church.
   pali word Theravada.
 * Pope Liberius in 354 a.C. first associated the winter solstice and roman 
   celebration of Brumalia with the date of birth of Jesus
+* The Cathari were dualists, believing in a God and a Demiurge. Like the 
+  Gnostics, they believed the Demiurge to be the God of the Old Testament while 
+  the true, and only good one, God was of the New.
+* The Bogomiles were a fusion of Manichaeans and Paulicians. They rejected 
+  infant baptism, purgatory, the invocation of saints, and the whole Trinity. 
