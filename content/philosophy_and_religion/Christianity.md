@@ -37,6 +37,7 @@ weight: 1350
     * [Apocalypse of Pseudo-Methodius](#apocalypse-of-pseudo-methodius)
     * [Apocalypse of Peter](#apocalypse-of-peter)
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
+* [Late Christianity Chronology](#late-christianity-chronology)
 * [Theological facts](#theological-facts)
     * [Important figures](#important-figures)
         * [Origen of Alexandria](#origen-of-alexandria)
@@ -419,6 +420,9 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 * 787: [Second Council of 
   Nicaea](https://en.wikipedia.org/wiki/Second_Council_of_Nicaea). Restored the 
   veneration of icons, repudiating iconoclasm.
+  
+## Late Christianity Chronology
+
 * 869-870: [Fourth Council of 
   Costantinople](https://en.wikipedia.org/wiki/Fourth_Council_of_Constantinople_(Catholic_Church)). 
   It was called only to depose the current patriarch of Costantinople and 
@@ -433,11 +437,64 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
   Lateran](https://en.wikipedia.org/wiki/Third_Council_of_the_Lateran). 
   Restricted papal election to only the cardinals, prohibited simony, and 
   introduced minimum age for ordination.
-* 1672: Synod of Jerusalem. The Eastern Church agreed on rejecting the 
-  Protestant Reform refuting the Confession of Lucaris, that Christ is present 
-  during the Eucharist, confirmed the canonicity of Old Testament books 
-  (refuting the claim of Protestants that didn't accept them) and that the Holy 
-  Ghost proceeds from God only, not from both Father and Son
+* 1215: [Fourth Council of the 
+  Lateran](https://en.wikipedia.org/wiki/Fourth_Council_of_the_Lateran). 
+  Defined transubstantation, addressed papal primacy and clerical discipline.
+* 1245: [First Council of 
+  Lyon](https://en.wikipedia.org/wiki/First_Council_of_Lyon). Mainly 
+  excommunicated Emperor Frederick II and instituted a levy to support the Holy 
+  Land.
+* 1274: [Second Council of 
+  Lyon](https://en.wikipedia.org/wiki/Second_Council_of_Lyon). Attempted a 
+  reunion with the Eastern churches, defined the teaching of the purgatory, 
+  approved Franciscan and Dominican orders, and procedures of the conclave.
+* 1311-1312: [Council of 
+  Vienna](https://en.wikipedia.org/wiki/Council_of_Vienne). Disbanded the 
+  Knights Templar.
+* 1341-1351: [Fifth Council of 
+  Costantinople](https://en.wikipedia.org/wiki/Fifth_Council_of_Constantinople). 
+  Affirmed the Hesychastic Theology, a contemplative monastic tradition that 
+  attained stillness through uninterrupted Jesus prayers. Only recognized by 
+  Eastern Orthodox churches.
+* 1409: [Council of Pisa](https://en.wikipedia.org/wiki/Council_of_Pisa). 
+  Attempted to solve Western Schism of the Papacy but its outcome was 
+  repudiated at the Council of Constance later.
+* 1414-1418: [Council of 
+  Constance](https://en.wikipedia.org/wiki/Council_of_Constance). Resolved the 
+  Western Schism, condemned John Hus of the Hussites.
+* 1431-1445: [Council of Basel, Ferrara, and 
+  Florence](https://en.wikipedia.org/wiki/Council_of_Florence). Addressed 
+  reforms of the Church, attempted a reunion with Eastern churches.
+* 1512-1517: [Fifth Council of the 
+  Lateran](https://en.wikipedia.org/wiki/Fifth_Council_of_the_Lateran). 
+  Addressed mostly church reforms.
+* 1545-1563: [Council of 
+  Trent](https://en.wikipedia.org/wiki/Council_of_Trent). Condemned 
+  Protestantism, defined the role and canon of Scripture and the seven 
+  sacraments, started the Counter-Reformation.
+* 1642: [Synod of Iasi](https://en.wikipedia.org/wiki/Synod_of_Ia%C8%99i). 
+  Reviewed and amended the Orthodox Confession. Only recognized by the Eastern 
+  Orthodox churches.
+* 1672: [Synod of 
+  Jerusalem](https://en.wikipedia.org/wiki/Synod_of_Jerusalem_(1672)). The 
+  Eastern Church agreed on rejecting the Protestant Reform refuting the 
+  Confession of Lucaris, that Christ is present during the Eucharist, confirmed 
+  the canonicity of Old Testament books (refuting the claim of Protestants that 
+  didn't accept them) and that the Holy Ghost proceeds from God only, not from 
+  both Father and Son. Only recognized by Eastern Orthodox churches.
+* 1869-1870: [First Council of the 
+  Vatican](https://en.wikipedia.org/wiki/First_Vatican_Council). Defined Pope's 
+  primacy in church governance, his infallibility, repudiated modern 
+  philosophies of Rationalism, Materialism, and Atheism, addressed the 
+  revelation, the interpretation of Scripture, and the relationship between 
+  faith and reason.
+* 1872: [Synod of Costantinople](https://en.wikipedia.org/wiki/Phyletism). 
+  Addressed nationalisms in the unity of the Orthodox churches (and was 
+  recognized only by those).
+* 1962-1965: [Second Council of the 
+  Vatican](https://en.wikipedia.org/wiki/Second_Vatican_Council). Addressed 
+  pastoral and disciplinary issues, changing the liturgy, and the attitude 
+  towards Ecumenism.
 
 ## Theological facts
 
