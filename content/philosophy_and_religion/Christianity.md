@@ -364,9 +364,75 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 
 * undated: St.Paul in one of his letters first spoke of the "Old Covenant" 
   compared to the new
-* 330 a.C.: neoplatonism is officially condemned
+* 330 a.C.: Neoplatonism is officially condemned
+* 325 a.C.: [First Council of 
+  Nicaea](https://en.wikipedia.org/wiki/First_Council_of_Nicaea). Arianism is 
+  repudiated, Christ is declared of the same substance of the Father, the 
+  original Nicene Creed is adopted, and established how to calculate the date 
+  of Easter.
 * 336 a.C.: Arius is restored to communion after having been condemned in the 
   previous First Sinod of Tyre (335 a.C.)
+* 381 a.C.: [First Council of 
+  Costantinople](https://en.wikipedia.org/wiki/First_Council_of_Constantinople). 
+  repudiated Arianism, again, and 
+  [Macedonianism/Pneumatochi](https://en.wikipedia.org/wiki/Pneumatomachi), 
+  declared Christ "born of the Father before all time", and revised the Nicene 
+  Creed.
+* 431 a.C.: [Council of 
+  Ephesus](https://en.wikipedia.org/wiki/Council_of_Ephesus). Repudiated 
+  [Nestorianism](https://en.wikipedia.org/wiki/Nestorianism), proclaimed the 
+  Virgin Mary as the Mother of God, repudiated 
+  [Pelagianism](https://en.wikipedia.org/wiki/Pelagianism), and reaffirmed the 
+  Nicene Creed.
+  On the same year, the Church of the East (mostly Syria and Mesopotamia) 
+  declared its independence.
+* 449 a.C.: [Second Council of 
+  Ephesus](https://en.wikipedia.org/wiki/Second_Council_of_Ephesus). Mostly 
+  restored a few figures once considered heretics. It is not recognized as an 
+  official council by Catholics, Eastern Orthodox, and Protestants.
+* 415 a.C.: [Council of 
+  Chalcedon](https://en.wikipedia.org/wiki/Council_of_Chalcedon). Repudiated 
+  [Monophysitism](https://en.wikipedia.org/wiki/Monophysitism), adopted the 
+  Chalcedonian Creed, which includes the hypostatic union of the two natures of 
+  Christ. This Council is the last explicitly recognized by the Anglicans and 
+  it is rejected by Oriental Orthodox churches.
+* 475 a.C.: [Third Council of 
+  Ephesus](https://en.wikipedia.org/wiki/Third_Council_of_Ephesus). Basically 
+  repudiated the previous Council of Chalcedon, especially the [Tome of 
+  Leo](https://en.wikipedia.org/wiki/Leo%27s_Tome). It is only recognized by 
+  Oriental Orthodox churches.
+* 553 a.C.: [Second Council of 
+  Costantinople](https://en.wikipedia.org/wiki/Second_Council_of_Constantinople). 
+  Repudiated the [Three 
+  Chapters](https://en.wikipedia.org/wiki/Three-Chapter_Controversy), and 
+  [Origenism](https://en.wikipedia.org/wiki/Origenism). It introduced the 
+  [Theopaschite 
+  Formula](https://en.wikipedia.org/wiki/Scythian_monks#Theopaschite_doctrine) 
+  to solve the debate on the double nature of Christ.
+* 680-681 a.C.: [Third Council of 
+  Costantinople](https://en.wikipedia.org/wiki/Third_Council_of_Constantinople). 
+  Repudiated Monothelitism, the doctrine of one will of Christ, and 
+  Monoenergism, the doctrine of one energy of Christ.
+* 692 a.C.: [Council of 
+  Trullo](https://en.wikipedia.org/wiki/Quinisext_Council). It mostly debated 
+  on matters of discipline but was repudiated by most Western Churches.
+* 787: [Second Council of 
+  Nicaea](https://en.wikipedia.org/wiki/Second_Council_of_Nicaea). Restored the 
+  veneration of icons, repudiating iconoclasm.
+* 869-870: [Fourth Council of 
+  Costantinople](https://en.wikipedia.org/wiki/Fourth_Council_of_Constantinople_(Catholic_Church)). 
+  It was called only to depose the current patriarch of Costantinople and 
+  restore the previous one. It is only recognized by Catholics.
+* 1123: [First Council of the 
+  Lateran](https://en.wikipedia.org/wiki/First_Council_of_the_Lateran). 
+  Addressed the investment of bishops and the role of the Emperor in them.
+* 1139: [Second Council of the 
+  Lateran](https://en.wikipedia.org/wiki/Second_Council_of_the_Lateran). 
+  Reaffirmed the first of the Lateran, and prohibited clerical marriages.
+* 1179: [Third Council of the 
+  Lateran](https://en.wikipedia.org/wiki/Third_Council_of_the_Lateran). 
+  Restricted papal election to only the cardinals, prohibited simony, and 
+  introduced minimum age for ordination.
 * 1672: Synod of Jerusalem. The Eastern Church agreed on rejecting the 
   Protestant Reform refuting the Confession of Lucaris, that Christ is present 
   during the Eucharist, confirmed the canonicity of Old Testament books 
