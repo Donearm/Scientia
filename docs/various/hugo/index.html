@@ -11,19 +11,19 @@
     <title>Hugo - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Scientia/css/fontawesome-all.min.css?1694883300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1694883300" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/featherlight.min.css?1694883300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1694883300" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/auto-complete.css?1694883300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1694883300" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/perfect-scrollbar.min.css?1694883300" rel="stylesheet">
-    <link href="/Scientia/css/nucleus.css?1694883300" rel="stylesheet">
-    <link href="/Scientia/css/fonts.css?1694883300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1694883300" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/theme.css?1694883300" rel="stylesheet">
-    <link href="/Scientia/css/theme-fpc.css?1694883300" rel="stylesheet" id="variant-style">
-    <link href="/Scientia/css/ie.css?1694883300" rel="stylesheet">
-    <link href="/Scientia/css/variant.css?1694883300" rel="stylesheet">
-    <link href="/Scientia/css/print.css?1694883300" rel="stylesheet" media="print">
-    <script src="/Scientia/js/url.js?1694883300"></script>
-    <script src="/Scientia/js/variant.js?1694883300"></script>
+    <link href="/Scientia/css/fontawesome-all.min.css?1695138846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1695138846" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1695138846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1695138846" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1695138846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1695138846" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1695138846" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1695138846" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1695138846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1695138846" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1695138846" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1695138846" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1695138846" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1695138846" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1695138846" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1695138846"></script>
+    <script src="/Scientia/js/variant.js?1695138846"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Scientia/js/jquery.min.js?1694883300" defer></script>
+    <script src="/Scientia/js/jquery.min.js?1695138846" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Scientia/various/hugo/index.html">
     <div id="body" class="default-animation">
@@ -71,6 +71,7 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#syntax-highlighting">Syntax Highlighting</a></li>
+    <li><a href="#multiline-in-frontmatter">Multiline in frontmatter</a></li>
   </ul>
 </nav>
             </div>
@@ -87,7 +88,14 @@
 <h2 id="syntax-highlighting">Syntax Highlighting</h2>
 <p>Hugo makes use of <a href="https://github.com/alecthomas/chroma">Chroma</a> as its syntax highlighter. It is possible to select the style from these <a href="https://xyproto.github.io/splash/docs/all.html">here</a> by adding in Hugo config:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">pygmentsStyle</span> <span class="p">=</span> <span class="s2">&#34;dracula&#34;</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="multiline-in-frontmatter">Multiline in frontmatter</h2>
+<p>It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, <code>|2-</code>. It may be used so:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">|2-</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Some content on line 1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">other content on line 2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Further content on line 3</span><span class="w">
+</span></span></span></code></pre></div><p>The spacing should be kept as inserted.</p>
+
             <footer class="footline">
             </footer>
           </article>
@@ -109,12 +117,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Scientia/js/auto-complete.js?1694883300" defer></script>
-        <script src="/Scientia/js/lunr.min.js?1694883300" defer></script>
-        <script src="/Scientia/js/lunr.stemmer.support.min.js?1694883300" defer></script>
-        <script src="/Scientia/js/lunr.multi.min.js?1694883300" defer></script>
-        <script src="/Scientia/js/lunr.en.min.js?1694883300" defer></script>
-        <script src="/Scientia/js/search.js?1694883300" defer></script>
+        <script src="/Scientia/js/auto-complete.js?1695138847" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1695138847" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1695138847" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1695138847" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1695138847" defer></script>
+        <script src="/Scientia/js/search.js?1695138847" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -286,9 +294,9 @@
         </div>
       </div>
     </aside>
-    <script src="/Scientia/js/clipboard.min.js?1694883300" defer></script>
-    <script src="/Scientia/js/perfect-scrollbar.min.js?1694883300" defer></script>
-    <script src="/Scientia/js/featherlight.min.js?1694883300" defer></script>
-    <script src="/Scientia/js/theme.js?1694883300" defer></script>
+    <script src="/Scientia/js/clipboard.min.js?1695138847" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1695138847" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1695138847" defer></script>
+    <script src="/Scientia/js/theme.js?1695138847" defer></script>
   </body>
 </html>

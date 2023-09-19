@@ -45,7 +45,8 @@ Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/various/hugo/index.html</guid>
       <description>Syntax Highlighting Hugo makes use of Chroma as its syntax highlighter. It is possible to select the style from these here by adding in Hugo config:
-pygmentsStyle = &amp;#34;dracula&amp;#34; </description>
+pygmentsStyle = &amp;#34;dracula&amp;#34; Multiline in frontmatter It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, |2-. It may be used so:
+key: |2- Some content on line 1 other content on line 2 Further content on line 3 The spacing should be kept as inserted.</description>
     </item>
     <item>
       <title>i3</title>

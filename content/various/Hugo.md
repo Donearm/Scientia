@@ -11,3 +11,16 @@ Hugo makes use of [Chroma](https://github.com/alecthomas/chroma) as its syntax h
 ```toml
 pygmentsStyle = "dracula"
 ```
+
+## Multiline in frontmatter
+
+It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, `|2-`. It may be used so:
+
+```yaml
+key: |2-
+  Some content on line 1
+  other content on line 2
+  Further content on line 3
+```
+
+The spacing should be kept as inserted.
