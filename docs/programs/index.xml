@@ -90,6 +90,14 @@ git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_
 Change the start button run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path. Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file</description>
     </item>
     <item>
+      <title>Gnupg</title>
+      <link>https://donearm.github.io/Scientia/programs/gnupg/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/programs/gnupg/index.html</guid>
+      <description>Backup your keys gpg --export --armor your@id.here &amp;gt; your@id.here.pub.asc gpg --export-secret-keys --armor your@id.here &amp;gt; your@id.here.priv.asc gpg --export-secret-subkeys --armor your@id.here &amp;gt; your@id.here.sub_priv.asc gpg --export-ownertrust &amp;gt; ownertrust.txt By omitting the --armor option you obtain an encrypted output with the full key (commonly saved with a .gpg extension).
+It is also advisable to generate and save a revoke certificate for each key in case they get compromised. Use this command for each key:</description>
+    </item>
+    <item>
       <title>Grub</title>
       <link>https://donearm.github.io/Scientia/programs/grub/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

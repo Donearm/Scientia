@@ -1,7 +1,7 @@
 ---
 title: Imagemagick Convert
 bookCollapseSection: true
-weight: 623
+weight: 624
 ---
 <!-- vim-markdown-toc GFM -->
 

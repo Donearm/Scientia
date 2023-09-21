@@ -1,7 +1,7 @@
 ---
 title: Grub
 bookCollapseSection: true
-weight: 621
+weight: 622
 ---
 
 ### Various Commands

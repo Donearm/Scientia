@@ -1,15 +1,15 @@
 ---
 title: Mutt
 bookCollapseSection: true
-weight: 626
+weight: 627
 ---
 <!-- vim-markdown-toc GFM -->
 
 * [General Commands](#general-commands)
 * [Keybindings](#keybindings)
-	* [The Message Index  (browsing through mailbox)](#the-message-index--browsing-through-mailbox)
-	* [The Pager (reading an email)](#the-pager-reading-an-email)
-	* [Composer (setting the send options for an email)](#composer-setting-the-send-options-for-an-email)
+    * [The Message Index  (browsing through mailbox)](#the-message-index--browsing-through-mailbox)
+    * [The Pager (reading an email)](#the-pager-reading-an-email)
+    * [Composer (setting the send options for an email)](#composer-setting-the-send-options-for-an-email)
 * [Arguments](#arguments)
 * [Highlight according to a pattern](#highlight-according-to-a-pattern)
 

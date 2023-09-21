@@ -1,7 +1,7 @@
 ---
 title: ViM
 bookCollapseSection: true
-weight: 633
+weight: 634
 ---
 <!-- vim-markdown-toc GFM -->
 
@@ -19,10 +19,10 @@ weight: 633
 * [Various Commands](#various-commands)
 * [Macros](#macros)
 * [Tips](#tips)
-	* [Change statusline colours](#change-statusline-colours)
-	* [Regexp](#regexp)
-	* [Identify corresponding opening/closing HTML tag](#identify-corresponding-openingclosing-html-tag)
-	* [Plugins](#plugins)
+    * [Change statusline colours](#change-statusline-colours)
+    * [Regexp](#regexp)
+    * [Identify corresponding opening/closing HTML tag](#identify-corresponding-openingclosing-html-tag)
+    * [Plugins](#plugins)
 
 <!-- vim-markdown-toc -->
 
