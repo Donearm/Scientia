@@ -145,6 +145,6 @@ A variegated collection of useful Linux commands, in no particular order
 * `dig $domain +noall +answer` = Display the IP address of `$domain` with a TTL of how long the data is kept in local DNS cache
 * `file -i $filename` = Show the mimetype and locale of `$filename`
 * `ddjvu --format=pdf file.djvu file.pdf` = Convert a djvu file to a pdf
-* `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOUtputFile=file.pdf file_to_optimize.pdf` = Compress and optimize a pdf. `/ebook` means a medium quality, 150dpi. Alternatives are `/prepress`, which produces a 300dpi pdf, and `/screen`, for a 72dpi, good for screen reading only, pdf
+* `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dCompressFonts=true -dDetectDuplicateImages -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOUtputFile=file.pdf file_to_optimize.pdf` = Compress and optimize a pdf. `/ebook` means a medium quality, 150dpi. Alternatives are `/prepress`, which produces a 300dpi pdf, and `/screen`, for a 72dpi, good for screen reading only, pdf. The resolution can also be forced with the option `-r72` (for 72dpi).
 * `pactl list | grep codec` = Check what bluetooth codec is being used (need bluez and pavucontrol installed)
 * `yt-dlp -S "res:720" video` = Download `video` but only up to 720p resolution, or lower if not available
