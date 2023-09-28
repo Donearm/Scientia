@@ -183,3 +183,5 @@ The notes are separated by the book they are in, and ordered by page count.
   disappeared. It was chosen to start the Diaspora to avoid the Malazans to 
   ever corner the Crimson Guard all together in a single place, risking 
   extermination.
+* `pg 412`: One of the top twenty Seguleh, Oru, claims that the Seguleh are 
+  searching for something that was stolen from them a long time ago.
