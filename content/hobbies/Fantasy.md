@@ -4,7 +4,9 @@ bookCollapseSection: true
 weight: 1120
 ---
 
-[Malazan notes](../malazan).
+I have always been an avid fantasy reader. I started as a young kid in the late 1980s and ended up reading most of what I believe are the most important works within the genre. As a strong believers that you need to know the past to appreciate the right things in the present, I have developed a canon of the important works of fantasy that everybody should read to be well-versed in it.
+
+In a separate page I keep my [Malazan notes](../malazan), which include the perhaps definitive chronology of the series.
 
 ## Chronology of fantasy of importance
 
