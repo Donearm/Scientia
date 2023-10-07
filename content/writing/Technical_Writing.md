@@ -6,55 +6,56 @@ weight: 1410
 <!-- vim-markdown-toc GFM -->
 
 * [Types of Technical Documentation](#types-of-technical-documentation)
-	* [Product documentation](#product-documentation)
-		* [API documentation](#api-documentation)
-		* [SDK documentation](#sdk-documentation)
-		* [Release Notes](#release-notes)
-	* [Process documentation / SOP](#process-documentation--sop)
-		* [Project plans](#project-plans)
-		* [Business standards](#business-standards)
-	* [Marketing and Sales documentation](#marketing-and-sales-documentation)
-		* [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
-		* [Request For Proposals (RFP)](#request-for-proposals-rfp)
-	* [Scientific papers](#scientific-papers)
+    * [Product documentation](#product-documentation)
+        * [API documentation](#api-documentation)
+        * [SDK documentation](#sdk-documentation)
+        * [Release Notes](#release-notes)
+    * [Process documentation / SOP](#process-documentation--sop)
+        * [Project plans](#project-plans)
+        * [Business standards](#business-standards)
+    * [Marketing and Sales documentation](#marketing-and-sales-documentation)
+        * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
+        * [Request For Proposals (RFP)](#request-for-proposals-rfp)
+    * [Scientific papers](#scientific-papers)
 * [Books](#books)
-	* [Writing and Technical Writing books](#writing-and-technical-writing-books)
-	* [Styling and Designing Content books](#styling-and-designing-content-books)
+    * [Writing and Technical Writing books](#writing-and-technical-writing-books)
+    * [Styling and Designing Content books](#styling-and-designing-content-books)
 * [Online documentation and courses](#online-documentation-and-courses)
 * [Tools](#tools)
-	* [Confluence](#confluence)
-		* [Useful Macros/Plugins](#useful-macrosplugins)
-		* [Content reusing in Confluence](#content-reusing-in-confluence)
-		* [Tips](#tips)
-	* [Help & Manual](#help--manual)
-	* [MadCap Flare](#madcap-flare)
-	* [Oxygen](#oxygen)
-	* [SDL Triton](#sdl-triton)
-	* [RoboHelp](#robohelp)
-	* [Scribus](#scribus)
-	* [Framemaker](#framemaker)
-		* [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
-		* [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
-	* [Paligo](#paligo)
-	* [Booktype](#booktype)
-	* [Clickhelp](#clickhelp)
-	* [HelpNDoc](#helpndoc)
-	* [Markdoc](#markdoc)
-	* [Author-it](#author-it)
-	* [Astoria](#astoria)
-	* [Ovitas](#ovitas)
-	* [Document360](#document360)
-	* [Doc-To-Help](#doc-to-help)
-	* [HelpStudio](#helpstudio)
-	* [OfficeHelp](#officehelp)
-	* [Slate](#slate)
-	* [Google Drawing](#google-drawing)
-	* [draw.io](#drawio)
-	* [Lucidchart](#lucidchart)
-		* [Other tools](#other-tools)
+    * [Confluence](#confluence)
+        * [Useful Macros/Plugins](#useful-macrosplugins)
+        * [Content reusing in Confluence](#content-reusing-in-confluence)
+        * [Tips](#tips)
+    * [Help & Manual](#help--manual)
+    * [MadCap Flare](#madcap-flare)
+    * [Oxygen](#oxygen)
+    * [SDL Triton](#sdl-triton)
+    * [RoboHelp](#robohelp)
+    * [Scribus](#scribus)
+    * [Framemaker](#framemaker)
+        * [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
+        * [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
+    * [Paligo](#paligo)
+    * [Booktype](#booktype)
+    * [Clickhelp](#clickhelp)
+    * [HelpNDoc](#helpndoc)
+    * [Markdoc](#markdoc)
+    * [Author-it](#author-it)
+    * [Astoria](#astoria)
+    * [Ovitas](#ovitas)
+    * [Document360](#document360)
+    * [Doc-To-Help](#doc-to-help)
+    * [HelpStudio](#helpstudio)
+    * [OfficeHelp](#officehelp)
+    * [Slate](#slate)
+    * [Google Drawing](#google-drawing)
+    * [draw.io](#drawio)
+    * [Lucidchart](#lucidchart)
+        * [Other tools](#other-tools)
 * [Good practices and procedures](#good-practices-and-procedures)
-	* [Developing a Doc Plan](#developing-a-doc-plan)
-	* [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
+    * [Developing a Doc Plan](#developing-a-doc-plan)
+    * [Outline for good API documentation](#outline-for-good-api-documentation)
+    * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
 
@@ -362,6 +363,21 @@ Optionally, and especially when working for external clients, these points can b
 * **Cost**: a breakdown of the costs for each deliverable
 * **Disclaimer**: add one that states that the ultimate responsibility for the accuracy of the content is of the client and/or developers
 * **Terms**: payment schedule, cancellation policy and other legal terms
+
+### Outline for good API documentation
+
+* **Overview**: API name, audience, purpose, usage examples, requirements for 
+  use, concepts, architecture, and architectural diagram
+* **Quick Start**: the basics of setting up the API and use it for simple tasks
+* **Getting Started**: a, possibly separated, section dedicated to setting up 
+  the environment to use the API. This may include the sandbox or testing 
+  environments, if offered
+* **Tutorials**: a few step-by-step tutorials about how to achieve the most 
+  common tasks with the API
+* **Reference**: all methods, path parameters, query parameters, endpoints, 
+  headers, sample requests, responses, sample responses, status, and error 
+  codes for REST API. For a platform API, every class, method, function, 
+  variable and so on
 
 ### Tackling a new technical writing project
 
