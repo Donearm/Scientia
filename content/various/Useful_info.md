@@ -9,6 +9,7 @@ weight: 858
 * [Driving license](#driving-license)
 * [Traveling](#traveling)
 * [Electronics](#electronics)
+* [Banks and Financing](#banks-and-financing)
 * [Law and taxes](#law-and-taxes)
     * [Poland](#poland)
 
@@ -40,6 +41,14 @@ on your own.
 ## Electronics
 
 * [Sennheiser Momentum 3 manual](https://cdn.sennheiser-cloud.com/help/products/m3/en/manual/index.html)
+
+## Banks and Financing
+
+A few banks that might give mortgage to non-residents in their country
+
+* [Santander - Spain](https://www.bancosantander.es/en/particulares/hipotecas/no-residentes)
+* [Eurobank - Greece](https://www.eurobank.gr/en/international-customers/what-we-offer/mortgage-loan-for-non-residents)
+* [Caixabank - Spain](https://www.caixabank.es/aplnr/holabank/simulador/index_en.html)
 
 ## Law and taxes
 
