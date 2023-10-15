@@ -15,6 +15,8 @@ Here I collect a few links and tips about games I enjoy(ed).
     * [Add 100 millions to a career](#add-100-millions-to-a-career)
     * [Personal records](#personal-records)
 * [Europa Universalis IV](#europa-universalis-iv)
+* [The Elder Scrolls Online](#the-elder-scrolls-online)
+    * [Install manually Addons on Linux](#install-manually-addons-on-linux)
 * [Amiga games](#amiga-games)
 
 <!-- vim-markdown-toc -->
@@ -401,6 +403,15 @@ Source: https://eu4cheats.com/
 {{% /expand %}}
 
 [EUIV Country Tag list](https://eu4cheats.com/country-tags)
+
+## The Elder Scrolls Online
+
+### Install manually Addons on Linux
+
+Addons should work equally well under Windows and Linux, unless there is some external dependency that is Windows-only.
+To install them, manually, put them into the following directory:
+
+`.local/share/Steam/steamapps/compatdata/306130/pfx/drive_c/users/steamuser/My Documents/Elder Scrolls Online/live/AddOns`
 
 ## Amiga games
 
