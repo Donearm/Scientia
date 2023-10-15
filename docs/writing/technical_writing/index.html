@@ -11,19 +11,19 @@
     <title>Technical Writing - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Scientia/css/fontawesome-all.min.css?1696764262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1696764262" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/featherlight.min.css?1696764262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1696764262" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/auto-complete.css?1696764262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1696764262" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/perfect-scrollbar.min.css?1696764262" rel="stylesheet">
-    <link href="/Scientia/css/nucleus.css?1696764262" rel="stylesheet">
-    <link href="/Scientia/css/fonts.css?1696764262" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1696764262" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/theme.css?1696764262" rel="stylesheet">
-    <link href="/Scientia/css/theme-fpc.css?1696764262" rel="stylesheet" id="variant-style">
-    <link href="/Scientia/css/ie.css?1696764262" rel="stylesheet">
-    <link href="/Scientia/css/variant.css?1696764262" rel="stylesheet">
-    <link href="/Scientia/css/print.css?1696764262" rel="stylesheet" media="print">
-    <script src="/Scientia/js/url.js?1696764262"></script>
-    <script src="/Scientia/js/variant.js?1696764262"></script>
+    <link href="/Scientia/css/fontawesome-all.min.css?1697381641" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1697381641" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1697381641" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1697381641" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1697381641" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1697381641" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1697381641" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1697381641" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1697381641" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1697381641" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1697381641" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1697381641" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1697381641" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1697381641" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1697381641" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1697381641"></script>
+    <script src="/Scientia/js/variant.js?1697381641"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Scientia/js/jquery.min.js?1696764262" defer></script>
+    <script src="/Scientia/js/jquery.min.js?1697381641" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Scientia/writing/technical_writing/index.html">
     <div id="body" class="default-animation">
@@ -235,7 +235,11 @@
 <li><a href="#drawio">draw.io</a></li>
 <li><a href="#lucidchart">Lucidchart</a>
 <ul>
-<li><a href="#other-tools">Other tools</a></li>
+<li><a href="#other-tools">Other tools</a>
+<ul>
+<li><a href="#scalar">Scalar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -450,6 +454,12 @@ for diagramming and illustrating software infrastructures especially.</p>
 for a limited usage only.</p>
 <h4 id="other-tools">Other tools</h4>
 <p>A great list of further tools in the technical writing field is found <a href="https://www.indoition.com/online-help-authoring-tools-survey.htm#scroll-nav__1">here</a>.</p>
+<h5 id="scalar">Scalar</h5>
+<p>Not exactly a tool as the others, but it is an handy tool to get quickly
+started with creating an API documentation site with an already existing
+Swagger/OpenAPI file. Open source, <a href="https://github.com/scalar/scalar">scalar</a>
+can be used with a skeleton html file, which will load your spec file, and use
+CDNs to load everything else, setting up an API documentation very quickly.</p>
 <h2 id="good-practices-and-procedures">Good practices and procedures</h2>
 <h3 id="developing-a-doc-plan">Developing a Doc Plan</h3>
 <p>At the beginning of a project of any size, writing down a Doc Plan to help starting it out and following a fixed schedule. The plan will consists of:</p>
@@ -499,7 +509,8 @@ beginning when nothing is known about it.</p>
 <li>How do I install the product? What are the basic configuration options?</li>
 <li>What does a simple, start to finish, operation look like?
 <ul>
-<li>Any operation will do but it should take users from nothing to something, convince readers that they learned something valuable</li>
+<li>Any operation will do but it should take users from nothing to something,
+convince readers that they learned something valuable</li>
 </ul>
 </li>
 </ul>
@@ -525,12 +536,12 @@ beginning when nothing is known about it.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Scientia/js/auto-complete.js?1696764263" defer></script>
-        <script src="/Scientia/js/lunr.min.js?1696764263" defer></script>
-        <script src="/Scientia/js/lunr.stemmer.support.min.js?1696764263" defer></script>
-        <script src="/Scientia/js/lunr.multi.min.js?1696764263" defer></script>
-        <script src="/Scientia/js/lunr.en.min.js?1696764263" defer></script>
-        <script src="/Scientia/js/search.js?1696764263" defer></script>
+        <script src="/Scientia/js/auto-complete.js?1697381641" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1697381641" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1697381641" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1697381641" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1697381641" defer></script>
+        <script src="/Scientia/js/search.js?1697381641" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -703,9 +714,9 @@ beginning when nothing is known about it.</p>
         </div>
       </div>
     </aside>
-    <script src="/Scientia/js/clipboard.min.js?1696764263" defer></script>
-    <script src="/Scientia/js/perfect-scrollbar.min.js?1696764263" defer></script>
-    <script src="/Scientia/js/featherlight.min.js?1696764263" defer></script>
-    <script src="/Scientia/js/theme.js?1696764263" defer></script>
+    <script src="/Scientia/js/clipboard.min.js?1697381641" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1697381641" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1697381641" defer></script>
+    <script src="/Scientia/js/theme.js?1697381641" defer></script>
   </body>
 </html>

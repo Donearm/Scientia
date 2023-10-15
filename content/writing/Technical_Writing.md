@@ -52,6 +52,7 @@ weight: 1410
     * [draw.io](#drawio)
     * [Lucidchart](#lucidchart)
         * [Other tools](#other-tools)
+            * [Scalar](#scalar)
 * [Good practices and procedures](#good-practices-and-procedures)
     * [Developing a Doc Plan](#developing-a-doc-plan)
     * [Outline for good API documentation](#outline-for-good-api-documentation)
@@ -342,6 +343,14 @@ for a limited usage only.
 
 A great list of further tools in the technical writing field is found [here](https://www.indoition.com/online-help-authoring-tools-survey.htm#scroll-nav__1).
 
+##### Scalar
+
+Not exactly a tool as the others, but it is an handy tool to get quickly 
+started with creating an API documentation site with an already existing 
+Swagger/OpenAPI file. Open source, [scalar](https://github.com/scalar/scalar) 
+can be used with a skeleton html file, which will load your spec file, and use 
+CDNs to load everything else, setting up an API documentation very quickly.
+
 ## Good practices and procedures
 
 ### Developing a Doc Plan
@@ -385,9 +394,10 @@ A series of questions to help starting out with a new project, from the very
 beginning when nothing is known about it.
 
 * What is this product? Why would anyone want it?
-	* Answer should come from asking SMEs and researching, not from a marketing standpoint
+    * Answer should come from asking SMEs and researching, not from a marketing standpoint
 * How does the product fit in the ecosystem, if at all? Does it have any dependencies?
 * Where can I acquire this product, and what versions exist?
 * How do I install the product? What are the basic configuration options?
 * What does a simple, start to finish, operation look like?
-	* Any operation will do but it should take users from nothing to something, convince readers that they learned something valuable
+    * Any operation will do but it should take users from nothing to something, 
+      convince readers that they learned something valuable
