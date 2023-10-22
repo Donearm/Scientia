@@ -42,6 +42,8 @@ weight: 1410
         * [Clickhelp](#clickhelp)
         * [HelpNDoc](#helpndoc)
         * [Markdoc](#markdoc)
+        * [MkDocs-Material](#mkdocs-material)
+        * [Redocly](#redocly)
         * [Author-it](#author-it)
         * [Astoria](#astoria)
         * [Ovitas](#ovitas)
@@ -302,6 +304,17 @@ use](https://www.helpndoc.com/), but only for Windows.
 
 A content authoring [tool](https://markdoc.io) based off pure markdown files. 
 It powers the praised Stripe documentation.
+
+### MkDocs-Material
+
+A documentation template based off pure markdown files, 
+[MkDocs-Material](https://squidfunk.github.io/mkdocs-material/) is an extension 
+of MkDocs static site generator.
+
+### Redocly
+
+A docs-as-code solution for API documentation, [Redocly](https://redocly.com/) 
+promits to generate full documentation from API reference files in seconds.
 
 ### Author-it
 
