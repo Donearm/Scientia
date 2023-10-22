@@ -11,19 +11,19 @@
     <title>Technical Writing - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Scientia/css/fontawesome-all.min.css?1697382907" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1697382907" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/featherlight.min.css?1697382907" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1697382907" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/auto-complete.css?1697382907" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1697382907" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/perfect-scrollbar.min.css?1697382907" rel="stylesheet">
-    <link href="/Scientia/css/nucleus.css?1697382907" rel="stylesheet">
-    <link href="/Scientia/css/fonts.css?1697382907" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1697382907" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/theme.css?1697382907" rel="stylesheet">
-    <link href="/Scientia/css/theme-fpc.css?1697382907" rel="stylesheet" id="variant-style">
-    <link href="/Scientia/css/ie.css?1697382907" rel="stylesheet">
-    <link href="/Scientia/css/variant.css?1697382907" rel="stylesheet">
-    <link href="/Scientia/css/print.css?1697382907" rel="stylesheet" media="print">
-    <script src="/Scientia/js/url.js?1697382907"></script>
-    <script src="/Scientia/js/variant.js?1697382907"></script>
+    <link href="/Scientia/css/fontawesome-all.min.css?1697991733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1697991733" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1697991733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1697991733" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1697991733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1697991733" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1697991733" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1697991733" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1697991733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1697991733" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1697991733" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1697991733" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1697991733" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1697991733" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1697991733" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1697991733"></script>
+    <script src="/Scientia/js/variant.js?1697991733"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Scientia/js/jquery.min.js?1697382907" defer></script>
+    <script src="/Scientia/js/jquery.min.js?1697991733" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Scientia/writing/technical_writing/index.html">
     <div id="body" class="default-animation">
@@ -77,8 +77,16 @@
             <li><a href="#api-documentation">API documentation</a></li>
             <li><a href="#sdk-documentation">SDK documentation</a></li>
             <li><a href="#release-notes">Release Notes</a></li>
+            <li><a href="#engineering-resources">Engineering resources</a></li>
           </ul>
         </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
         <li><a href="#process-documentation--sop">Process documentation / SOP</a>
           <ul>
             <li><a href="#project-plans">Project plans</a></li>
@@ -165,31 +173,23 @@
 <h1 id="technical-writing">Technical Writing</h1>
 
 <!-- vim-markdown-toc GFM -->
+<pre><code>* [Types of Technical Documentation](#types-of-technical-documentation)
+    * [Product documentation](#product-documentation)
+        * [API documentation](#api-documentation)
+        * [SDK documentation](#sdk-documentation)
+        * [Release Notes](#release-notes)
+        * [Engineering resources](#engineering-resources)
+</code></pre>
 <ul>
-<li><a href="#types-of-technical-documentation">Types of Technical Documentation</a>
+<li><a href="#kitty">kitty</a>
+* <a href="#process-documentation--sop">Process documentation / SOP</a>
+* <a href="#project-plans">Project plans</a>
+* <a href="#business-standards">Business standards</a>
+* <a href="#marketing-and-sales-documentation">Marketing and Sales documentation</a>
+* <a href="#market-requirements-documents-mrd">Market Requirements Documents (MRD)</a>
+* <a href="#request-for-proposals-rfp">Request For Proposals (RFP)</a>
+* <a href="#scientific-papers">Scientific papers</a>
 <ul>
-<li><a href="#product-documentation">Product documentation</a>
-<ul>
-<li><a href="#api-documentation">API documentation</a></li>
-<li><a href="#sdk-documentation">SDK documentation</a></li>
-<li><a href="#release-notes">Release Notes</a></li>
-</ul>
-</li>
-<li><a href="#process-documentation--sop">Process documentation / SOP</a>
-<ul>
-<li><a href="#project-plans">Project plans</a></li>
-<li><a href="#business-standards">Business standards</a></li>
-</ul>
-</li>
-<li><a href="#marketing-and-sales-documentation">Marketing and Sales documentation</a>
-<ul>
-<li><a href="#market-requirements-documents-mrd">Market Requirements Documents (MRD)</a></li>
-<li><a href="#request-for-proposals-rfp">Request For Proposals (RFP)</a></li>
-</ul>
-</li>
-<li><a href="#scientific-papers">Scientific papers</a></li>
-</ul>
-</li>
 <li><a href="#books">Books</a>
 <ul>
 <li><a href="#writing-and-technical-writing-books">Writing and Technical Writing books</a></li>
@@ -252,6 +252,8 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <!-- vim-markdown-toc -->
 <hr>
 <h2 id="types-of-technical-documentation">Types of Technical Documentation</h2>
@@ -275,6 +277,19 @@ improvements, and fixes that have been the focus of the last version of a
 product (often a software). They can be all the way from purely technical to
 nearly marketing documents, with just links to the actual commits and bugs
 interested by the update.</p>
+<h4 id="engineering-resources">Engineering resources</h4>
+<p>A category aside is for resources that are written for engineers and
+technicians. These includes, and are not limited to:</p>
+<ul>
+<li>BOMs (Bills of Materials) - a list of materials, components, and instructions
+needed to construct, or manufacture, or repair a product or service</li>
+<li>Parts prints</li>
+<li>Schematics - both of circuits and products</li>
+</ul>
+<p>Specific tools are <a href="https://www.ptc.com/en/products/arbortext">Arbortext</a>,
+<a href="https://plm.sw.siemens.com/en-US/teamcenter/">Teamcenter</a>.</p>
+<h1 id="kitty">kitty</h1>
+<p>windowrule = workspace 2, kitty</p>
 <h3 id="process-documentation--sop">Process documentation / SOP</h3>
 <p>These are documents that show internal teams how to execute a task, use an
 internal tool, or follow a procedure. This is often accomplished with an
@@ -536,12 +551,12 @@ convince readers that they learned something valuable</li>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Scientia/js/auto-complete.js?1697382908" defer></script>
-        <script src="/Scientia/js/lunr.min.js?1697382908" defer></script>
-        <script src="/Scientia/js/lunr.stemmer.support.min.js?1697382908" defer></script>
-        <script src="/Scientia/js/lunr.multi.min.js?1697382908" defer></script>
-        <script src="/Scientia/js/lunr.en.min.js?1697382908" defer></script>
-        <script src="/Scientia/js/search.js?1697382908" defer></script>
+        <script src="/Scientia/js/auto-complete.js?1697991733" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1697991733" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1697991733" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1697991733" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1697991733" defer></script>
+        <script src="/Scientia/js/search.js?1697991733" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -714,9 +729,9 @@ convince readers that they learned something valuable</li>
         </div>
       </div>
     </aside>
-    <script src="/Scientia/js/clipboard.min.js?1697382908" defer></script>
-    <script src="/Scientia/js/perfect-scrollbar.min.js?1697382908" defer></script>
-    <script src="/Scientia/js/featherlight.min.js?1697382908" defer></script>
-    <script src="/Scientia/js/theme.js?1697382908" defer></script>
+    <script src="/Scientia/js/clipboard.min.js?1697991733" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1697991733" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1697991733" defer></script>
+    <script src="/Scientia/js/theme.js?1697991733" defer></script>
   </body>
 </html>

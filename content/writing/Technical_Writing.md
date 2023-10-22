@@ -5,58 +5,60 @@ weight: 1410
 
 <!-- vim-markdown-toc GFM -->
 
-* [Types of Technical Documentation](#types-of-technical-documentation)
-    * [Product documentation](#product-documentation)
-        * [API documentation](#api-documentation)
-        * [SDK documentation](#sdk-documentation)
-        * [Release Notes](#release-notes)
-    * [Process documentation / SOP](#process-documentation--sop)
-        * [Project plans](#project-plans)
-        * [Business standards](#business-standards)
-    * [Marketing and Sales documentation](#marketing-and-sales-documentation)
-        * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
-        * [Request For Proposals (RFP)](#request-for-proposals-rfp)
-    * [Scientific papers](#scientific-papers)
-* [Books](#books)
-    * [Writing and Technical Writing books](#writing-and-technical-writing-books)
-    * [Styling and Designing Content books](#styling-and-designing-content-books)
-* [Online documentation and courses](#online-documentation-and-courses)
-* [Tools](#tools)
-    * [Confluence](#confluence)
-        * [Useful Macros/Plugins](#useful-macrosplugins)
-        * [Content reusing in Confluence](#content-reusing-in-confluence)
-        * [Tips](#tips)
-    * [Help & Manual](#help--manual)
-    * [MadCap Flare](#madcap-flare)
-    * [Oxygen](#oxygen)
-    * [SDL Triton](#sdl-triton)
-    * [RoboHelp](#robohelp)
-    * [Scribus](#scribus)
-    * [Framemaker](#framemaker)
-        * [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
-        * [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
-    * [Paligo](#paligo)
-    * [Booktype](#booktype)
-    * [Clickhelp](#clickhelp)
-    * [HelpNDoc](#helpndoc)
-    * [Markdoc](#markdoc)
-    * [Author-it](#author-it)
-    * [Astoria](#astoria)
-    * [Ovitas](#ovitas)
-    * [Document360](#document360)
-    * [Doc-To-Help](#doc-to-help)
-    * [HelpStudio](#helpstudio)
-    * [OfficeHelp](#officehelp)
-    * [Slate](#slate)
-    * [Google Drawing](#google-drawing)
-    * [draw.io](#drawio)
-    * [Lucidchart](#lucidchart)
-        * [Other tools](#other-tools)
-            * [Scalar](#scalar)
-* [Good practices and procedures](#good-practices-and-procedures)
-    * [Developing a Doc Plan](#developing-a-doc-plan)
-    * [Outline for good API documentation](#outline-for-good-api-documentation)
-    * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
+    * [Types of Technical Documentation](#types-of-technical-documentation)
+        * [Product documentation](#product-documentation)
+            * [API documentation](#api-documentation)
+            * [SDK documentation](#sdk-documentation)
+            * [Release Notes](#release-notes)
+            * [Engineering resources](#engineering-resources)
+* [kitty](#kitty)
+        * [Process documentation / SOP](#process-documentation--sop)
+            * [Project plans](#project-plans)
+            * [Business standards](#business-standards)
+        * [Marketing and Sales documentation](#marketing-and-sales-documentation)
+            * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
+            * [Request For Proposals (RFP)](#request-for-proposals-rfp)
+        * [Scientific papers](#scientific-papers)
+    * [Books](#books)
+        * [Writing and Technical Writing books](#writing-and-technical-writing-books)
+        * [Styling and Designing Content books](#styling-and-designing-content-books)
+    * [Online documentation and courses](#online-documentation-and-courses)
+    * [Tools](#tools)
+        * [Confluence](#confluence)
+            * [Useful Macros/Plugins](#useful-macrosplugins)
+            * [Content reusing in Confluence](#content-reusing-in-confluence)
+            * [Tips](#tips)
+        * [Help & Manual](#help--manual)
+        * [MadCap Flare](#madcap-flare)
+        * [Oxygen](#oxygen)
+        * [SDL Triton](#sdl-triton)
+        * [RoboHelp](#robohelp)
+        * [Scribus](#scribus)
+        * [Framemaker](#framemaker)
+            * [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
+            * [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
+        * [Paligo](#paligo)
+        * [Booktype](#booktype)
+        * [Clickhelp](#clickhelp)
+        * [HelpNDoc](#helpndoc)
+        * [Markdoc](#markdoc)
+        * [Author-it](#author-it)
+        * [Astoria](#astoria)
+        * [Ovitas](#ovitas)
+        * [Document360](#document360)
+        * [Doc-To-Help](#doc-to-help)
+        * [HelpStudio](#helpstudio)
+        * [OfficeHelp](#officehelp)
+        * [Slate](#slate)
+        * [Google Drawing](#google-drawing)
+        * [draw.io](#drawio)
+        * [Lucidchart](#lucidchart)
+            * [Other tools](#other-tools)
+                * [Scalar](#scalar)
+    * [Good practices and procedures](#good-practices-and-procedures)
+        * [Developing a Doc Plan](#developing-a-doc-plan)
+        * [Outline for good API documentation](#outline-for-good-api-documentation)
+        * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
 
@@ -92,6 +94,21 @@ product (often a software). They can be all the way from purely technical to
 nearly marketing documents, with just links to the actual commits and bugs 
 interested by the update.
 
+#### Engineering resources
+
+A category aside is for resources that are written for engineers and 
+technicians. These includes, and are not limited to:
+
+* BOMs (Bills of Materials) - a list of materials, components, and instructions 
+  needed to construct, or manufacture, or repair a product or service
+* Parts prints
+* Schematics - both of circuits and products
+
+Specific tools are [Arbortext](https://www.ptc.com/en/products/arbortext), 
+[Teamcenter](https://plm.sw.siemens.com/en-US/teamcenter/).
+
+# kitty
+windowrule = workspace 2, kitty
 ### Process documentation / SOP
 
 These are documents that show internal teams how to execute a task, use an 
