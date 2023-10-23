@@ -418,6 +418,8 @@ Optionally, and especially when working for external clients, these points can b
   codes for REST API. For a platform API, every class, method, function, 
   variable and so on
 
+An useful AsciiDoc template is available on [arc42 Github](https://github.com/arc42/arc42-template/tree/master).
+
 ### Tackling a new technical writing project
 
 A series of questions to help starting out with a new project, from the very 
