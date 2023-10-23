@@ -5,62 +5,62 @@ weight: 1410
 
 <!-- vim-markdown-toc GFM -->
 
-    * [Types of Technical Documentation](#types-of-technical-documentation)
-        * [Product documentation](#product-documentation)
-            * [API documentation](#api-documentation)
-            * [SDK documentation](#sdk-documentation)
-            * [Release Notes](#release-notes)
-            * [Engineering resources](#engineering-resources)
-* [kitty](#kitty)
-        * [Process documentation / SOP](#process-documentation--sop)
-            * [Project plans](#project-plans)
-            * [Business standards](#business-standards)
-        * [Marketing and Sales documentation](#marketing-and-sales-documentation)
-            * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
-            * [Request For Proposals (RFP)](#request-for-proposals-rfp)
-        * [Scientific papers](#scientific-papers)
-    * [Books](#books)
-        * [Writing and Technical Writing books](#writing-and-technical-writing-books)
-        * [Styling and Designing Content books](#styling-and-designing-content-books)
-    * [Online documentation and courses](#online-documentation-and-courses)
-    * [Tools](#tools)
-        * [Confluence](#confluence)
-            * [Useful Macros/Plugins](#useful-macrosplugins)
-            * [Content reusing in Confluence](#content-reusing-in-confluence)
-            * [Tips](#tips)
-        * [Help & Manual](#help--manual)
-        * [MadCap Flare](#madcap-flare)
-        * [Oxygen](#oxygen)
-        * [SDL Triton](#sdl-triton)
-        * [RoboHelp](#robohelp)
-        * [Scribus](#scribus)
-        * [Framemaker](#framemaker)
-            * [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
-            * [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
-        * [Paligo](#paligo)
-        * [Booktype](#booktype)
-        * [Clickhelp](#clickhelp)
-        * [HelpNDoc](#helpndoc)
-        * [Markdoc](#markdoc)
-        * [MkDocs-Material](#mkdocs-material)
-        * [Redocly](#redocly)
-        * [Author-it](#author-it)
-        * [Astoria](#astoria)
-        * [Ovitas](#ovitas)
-        * [Document360](#document360)
-        * [Doc-To-Help](#doc-to-help)
-        * [HelpStudio](#helpstudio)
-        * [OfficeHelp](#officehelp)
-        * [Slate](#slate)
-        * [Google Drawing](#google-drawing)
-        * [draw.io](#drawio)
-        * [Lucidchart](#lucidchart)
-            * [Other tools](#other-tools)
-                * [Scalar](#scalar)
-    * [Good practices and procedures](#good-practices-and-procedures)
-        * [Developing a Doc Plan](#developing-a-doc-plan)
-        * [Outline for good API documentation](#outline-for-good-api-documentation)
-        * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
+* [Types of Technical Documentation](#types-of-technical-documentation)
+    * [Product documentation](#product-documentation)
+        * [API documentation](#api-documentation)
+        * [SDK documentation](#sdk-documentation)
+        * [Release Notes](#release-notes)
+        * [Engineering resources](#engineering-resources)
+    * [Process documentation / SOP](#process-documentation--sop)
+        * [Project plans](#project-plans)
+        * [Business standards](#business-standards)
+    * [Marketing and Sales documentation](#marketing-and-sales-documentation)
+        * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
+        * [Request For Proposals (RFP)](#request-for-proposals-rfp)
+    * [Scientific papers](#scientific-papers)
+* [Books](#books)
+    * [Writing and Technical Writing books](#writing-and-technical-writing-books)
+    * [Styling and Designing Content books](#styling-and-designing-content-books)
+* [Style guides](#style-guides)
+* [Online documentation and courses](#online-documentation-and-courses)
+* [Tools](#tools)
+    * [Confluence](#confluence)
+        * [Useful Macros/Plugins](#useful-macrosplugins)
+        * [Content reusing in Confluence](#content-reusing-in-confluence)
+        * [Tips](#tips)
+    * [Help & Manual](#help--manual)
+    * [MadCap Flare](#madcap-flare)
+    * [Oxygen](#oxygen)
+    * [SDL Triton](#sdl-triton)
+    * [RoboHelp](#robohelp)
+    * [Scribus](#scribus)
+    * [Framemaker](#framemaker)
+        * [Default DITA xml elements available in Framemaker](#default-dita-xml-elements-available-in-framemaker)
+        * [How to change background colour of a paragraph](#how-to-change-background-colour-of-a-paragraph)
+    * [Paligo](#paligo)
+    * [Booktype](#booktype)
+    * [Clickhelp](#clickhelp)
+    * [HelpNDoc](#helpndoc)
+    * [Markdoc](#markdoc)
+    * [MkDocs-Material](#mkdocs-material)
+    * [Redocly](#redocly)
+    * [Author-it](#author-it)
+    * [Astoria](#astoria)
+    * [Ovitas](#ovitas)
+    * [Document360](#document360)
+    * [Doc-To-Help](#doc-to-help)
+    * [HelpStudio](#helpstudio)
+    * [OfficeHelp](#officehelp)
+    * [Slate](#slate)
+    * [Google Drawing](#google-drawing)
+    * [draw.io](#drawio)
+    * [Lucidchart](#lucidchart)
+        * [Other tools](#other-tools)
+            * [Scalar](#scalar)
+* [Good practices and procedures](#good-practices-and-procedures)
+    * [Developing a Doc Plan](#developing-a-doc-plan)
+    * [Outline for good API documentation](#outline-for-good-api-documentation)
+    * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
 
@@ -109,8 +109,6 @@ technicians. These includes, and are not limited to:
 Specific tools are [Arbortext](https://www.ptc.com/en/products/arbortext), 
 [Teamcenter](https://plm.sw.siemens.com/en-US/teamcenter/).
 
-# kitty
-windowrule = workspace 2, kitty
 ### Process documentation / SOP
 
 These are documents that show internal teams how to execute a task, use an 
@@ -183,6 +181,20 @@ problem or use case. These are thorough, accurate, highly technical documents.
 * **Don't Make Me Think: A Common Sense Approach to Web Usability** by Steve Krug
 * **The Design of Everyday Things** by Donald Norman
 * **The Elements of Style** by William Strunk Jr.
+
+## Style guides
+
+While not universally implemented, often a style guide is chosen to be followed 
+when composing technical content. A list of remarkable style guides you can get 
+inspiration from are:
+
+  * [Microsoft](https://docs.microsoft.com/en-us/style-guide/welcome/).
+  * [Google](https://developers.google.com/style) provides editorial guidelines for writing clear and consistent Google-related developer documentation.
+  * [Diátaxis](https://diataxis.fr/) - A systematic framework for technical documentation authoring.
+  * [Gitlab Style Guide](https://docs.gitlab.com/ee/development/documentation/styleguide/).
+  * [Alistapart Style Guide](https://alistapart.com/about/style-guide/).
+  * [Gatsby StyleGuides](https://www.gatsbyjs.com/contributing/gatsby-style-guide/).
+  * The [FreeCodeCamp](https://www.freecodecamp.org/news/developer-news-style-guide/) Publication Style Guide.
 
 ## Online documentation and courses
 
