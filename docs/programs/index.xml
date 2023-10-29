@@ -192,6 +192,13 @@ tmux attach -t $sessionname -c /new/base/dir Various commands :set -g status off
       <description>Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins Basic commands J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!</description>
     </item>
     <item>
+      <title>Wine</title>
+      <link>https://donearm.github.io/Scientia/programs/wine/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/programs/wine/index.html</guid>
+      <description>Useful commands wine dxdiag /t dxdiag.txt = runs dxdiag, wherever it is, and saves its output to the dxdiag.txt file </description>
+    </item>
+    <item>
       <title>Wireshark</title>
       <link>https://donearm.github.io/Scientia/programs/wireshark/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
