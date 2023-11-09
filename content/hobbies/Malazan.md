@@ -15,6 +15,7 @@ weight: 1127
     * [Midnight Tides](#midnight-tides)
     * [The Bonehunters](#the-bonehunters)
     * [The Return of the Crimson Guard](#the-return-of-the-crimson-guard)
+    * [Reaper's Gale](#reapers-gale)
 
 <!-- vim-markdown-toc -->
 
@@ -185,3 +186,10 @@ The notes are separated by the book they are in, and ordered by page count.
   extermination.
 * `pg 412`: One of the top twenty Seguleh, Oru, claims that the Seguleh are 
   searching for something that was stolen from them a long time ago.
+
+### Reaper's Gale
+
+* `pg 7`: Gothos mocks Kilmandaros that their children have lost their ways, at 
+  which Kilmandaros does not seem surprised but rather indifferent. Their 
+  "children" may either be the Tiste Edur or, more probably, the Forkrul 
+  Assail.
