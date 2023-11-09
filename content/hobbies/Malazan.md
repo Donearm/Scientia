@@ -189,7 +189,7 @@ The notes are separated by the book they are in, and ordered by page count.
 
 ### Reaper's Gale
 
-* `pg 7`: Gothos mocks Kilmandaros that their children have lost their ways, at 
+* `pg 4`: Gothos mocks Kilmandaros that their children have lost their ways, at 
   which Kilmandaros does not seem surprised but rather indifferent. Their 
   "children" may either be the Tiste Edur or, more probably, the Forkrul 
   Assail.
