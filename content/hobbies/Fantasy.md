@@ -8,6 +8,8 @@ I have always been an avid fantasy reader. I started as a young kid in the late 
 
 In a separate page I keep my [Malazan notes](../malazan), which include the perhaps definitive chronology of the series.
 
+Also worth noting a project of a friend blogger that keeps the count of the wordcount of popular fantasy series [here](https://loopingworld.com/2009/03/06/wordcount/).
+
 ## Chronology of fantasy of importance
 
 * **1865**: Alice's Adventures in Wonderland is first published.
