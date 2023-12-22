@@ -193,3 +193,14 @@ The notes are separated by the book they are in, and ordered by page count.
   which Kilmandaros does not seem surprised but rather indifferent. Their 
   "children" may either be the Tiste Edur or, more probably, the Forkrul 
   Assail.
+* `pg 40`: The K'Chain Che'Malle initially built keeps open towards the 
+  outside, only later building those close like Moon's Spawn.
+* `pg 41`: Wither and Silchas Ruin continue observing a destroyed K'Chain 
+  Che'Malle keep. They come to the conclusion that pure blood Eleint, a dozen, 
+  destroyed this particular keep because the K'Chain Che'Malle wanted to end 
+  all life in spite, because they were bound to extinction themselves and did 
+  not want any other to survive them.
+* `pg 330-331`: Udinaas sees in a dream an old temple, with many bodies of 
+  Forkrul Assail killed in front of it. From the temple emerge the Errant, 
+  covered in blood. It is not clearly stated that he killed all those Forkrul 
+  Assail but it is implied that he did it.
