@@ -34,11 +34,12 @@ windowsmgr.max_events_per_sec=150 help scrolling responsiveness</description>
       <description>I was never good at frontend. I am more of a backend guy. But inevitably frontend stuff is necessary to know these days and thus I learned a few. Mostly back in the days of frontend being just HTML+CSS.</description>
     </item>
     <item>
-      <title>Languages</title>
-      <link>https://donearm.github.io/Scientia/languages/index.html</link>
+      <title>Programming Languages</title>
+      <link>https://donearm.github.io/Scientia/programming_languages/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/languages/index.html</guid>
-      <description>Languages here stands for &amp;ldquo;programming languages&amp;rdquo;. There are more that I played with when I was actively doing programming but here I saved only the bits I actually used and found useful to save for later re-use.</description>
+      <guid>https://donearm.github.io/Scientia/programming_languages/index.html</guid>
+      <description>I used to be a language freak, trying to learn any new cool language. Then I stopped, as following them all was an excessively time-consuming, and pointless, task.
+Therefore, there are more that I played with when I was actively doing programming but here I saved only the bits I actually used and found useful to save for later re-use.</description>
     </item>
     <item>
       <title>Operating Systems</title>

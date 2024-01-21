@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.2">
+    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
+    <meta name="author" content="Gianluca Fiore">
+    <title>Bash - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Scientia/css/fontawesome-all.min.css?1705836135" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1705836135" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1705836135" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1705836135" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1705836135" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1705836135" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1705836135" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1705836135" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1705836135" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1705836135" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1705836135" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1705836135" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1705836135" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1705836135" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1705836135" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1705836135"></script>
+    <script src="/Scientia/js/variant.js?1705836135"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/Scientia/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
+      window.variants && variants.init( [ 'fpc' ] );
+    </script>
+    <script src="/Scientia/js/jquery.min.js?1705836135" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/Scientia/programming_languages/bash/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/Scientia/programming_languages/c/index.html" title="C (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/Scientia/programming_languages/awk/index.html" title="Awk (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/index.html"><span itemprop="name">Scientia - Gianluca Fiore Knowledge Wiki</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programming_languages/index.html"><span itemprop="name">Programming Languages</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Bash</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#commands">Commands</a>
+      <ul>
+        <li><a href="#ctrl-key-bound">CTRL Key Bound</a></li>
+        <li><a href="#alt-key-bound">ALT Key Bound</a></li>
+        <li><a href="#meta-key-bound">Meta Key Bound</a></li>
+        <li><a href="#more-special-keybindings">More Special Keybindings</a></li>
+      </ul>
+    </li>
+    <li><a href="#scripts">Scripts</a>
+      <ul>
+        <li><a href="#remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</a></li>
+        <li><a href="#rot13-encryption">Rot13 Encryption</a></li>
+        <li><a href="#rename-multiple-files">Rename multiple files</a></li>
+      </ul>
+    </li>
+    <li><a href="#syntax">Syntax</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#various-bash-syntax-rules">Various Bash syntax rules</a></li>
+            <li><a href="#bash-history">Bash History</a></li>
+            <li><a href="#bash-redirection">Bash Redirection</a></li>
+          </ul>
+        </li>
+        <li><a href="#terminal-line-wrapping">Terminal Line Wrapping</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="bash">Bash</h1>
+
+<ul>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#syntax">Syntax</a></li>
+</ul>
+<hr>
+<h2 id="functions">Functions</h2>
+<p>namename prints the basename without extension<br>
+ext prints extension of a file, including &ldquo;.&rdquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	<span class="k">function</span> namename<span class="o">()</span>
+</span></span><span class="line"><span class="cl">	<span class="o">{</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">local</span> <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">##*/</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">local</span> <span class="nv">name0</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">name</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">name0</span><span class="k">:-</span><span class="nv">$name</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">function</span> ext<span class="o">()</span>
+</span></span><span class="line"><span class="cl">	<span class="o">{</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">local</span> <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">##*/</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">local</span> <span class="nv">name0</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">name</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">local</span> <span class="nv">ext</span><span class="o">=</span><span class="si">${</span><span class="nv">name0</span><span class="p">:+</span><span class="si">${</span><span class="nv">name</span><span class="p">#</span><span class="nv">$name0</span><span class="si">}}</span>
+</span></span><span class="line"><span class="cl">	  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ext</span><span class="k">:-</span><span class="p">.</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span></code></pre></div><h2 id="commands">Commands</h2>
+<h3 id="ctrl-key-bound">CTRL Key Bound</h3>
+<ul>
+<li><code>Ctrl + _</code> =  undo</li>
+<li><code>Ctrl + @</code> = set mark</li>
+<li><code>Ctrl + a</code> = Jump to the start of the line</li>
+<li><code>Ctrl + b</code> = Move back a char</li>
+<li><code>Ctrl + c</code> = Terminate the command</li>
+<li><code>Ctrl + d</code> = Delete character under the cursor</li>
+<li><code>Ctrl + e</code> = Jump to the end of the line</li>
+<li><code>Ctrl + f</code> = Move forward a char</li>
+<li><code>Ctrl + k</code> = Delete from cursor to EOL</li>
+<li><code>Ctrl + l</code> = Clear the screen</li>
+<li><code>Ctrl + n</code> = select the next command in history</li>
+<li><code>Ctrl + p</code> = select the previous command in history</li>
+<li><code>Ctrl + r</code> = Search the history backwards</li>
+<li><code>Ctrl + R</code> = Search the history backwards with multi occurrence</li>
+<li><code>Ctrl + t</code> = drag character before cursor over the one under the cursor</li>
+<li><code>Ctrl + u</code> = Delete backward from cursor</li>
+<li><code>Ctrl + v</code> = Insert next character verbatim</li>
+<li><code>Ctrl + w</code> = kill word before cursor</li>
+<li><code>Ctrl + x</code> = kill backward to the beginning of line</li>
+<li><code>Ctrl + xx</code> = Move between EOL and current cursor position</li>
+<li><code>Ctrl + x @</code> = Show possible hostname completions</li>
+<li><code>Ctrl + y</code> = paste the text at top of the kill#ring</li>
+<li><code>Ctrl + z</code> = Suspend/ Stop the command</li>
+</ul>
+<h3 id="alt-key-bound">ALT Key Bound</h3>
+<ul>
+<li><code>Alt + ''&lt;''</code> = Move to the first line in the history</li>
+<li><code>Alt + ''&gt;''</code> = Move to the last line in the history</li>
+<li><code>Alt + ?</code> = Show current completion list</li>
+<li><code>Alt + *</code> = Insert all possible completions</li>
+<li><code>Alt + /</code> = Attempt to complete filename</li>
+<li><code>Alt + .</code> = Yank last argument to previous command</li>
+<li><code>Alt + b</code> = Move backward</li>
+<li><code>Alt + c</code> = Capitalize the word</li>
+<li><code>Alt + d</code> = Delete word</li>
+<li><code>Alt + f</code> = Move forward</li>
+<li><code>Alt + l</code> = Make word lowercase</li>
+<li><code>Alt + n</code> = Search the history forwards non=incremental</li>
+<li><code>Alt + p</code> = Search the history backwards non=incremental</li>
+<li><code>Alt + r</code> = Recall command</li>
+<li><code>Alt + t</code> = Move words around</li>
+<li><code>Alt + u</code> = Make word uppercase</li>
+<li><code>Alt + backspace</code> = Delete backward from cursor</li>
+</ul>
+<h3 id="meta-key-bound">Meta Key Bound</h3>
+<p>Meta usually corresponds to the <code>Esc</code> key</p>
+<ul>
+<li><code>M + f</code> = move forward to the end of next word</li>
+<li><code>M + b</code> = move backward to the start of current or previous word</li>
+<li><code>M + c</code> = capitalize current word</li>
+<li><code>M + d</code> = kill current word</li>
+<li><code>M + l</code> = downcase current word</li>
+<li><code>M + t</code> = drag the word before cursor over the one under the cursor</li>
+<li><code>M + u</code> = uppercase current word</li>
+<li><code>M + y</code> = rotate the kill=ring</li>
+</ul>
+<h3 id="more-special-keybindings">More Special Keybindings</h3>
+<p>Here &ldquo;2T&rdquo; means Press <code>TAB</code> twice</p>
+<ul>
+<li><code>$ 2T</code> = All available commands(common)</li>
+<li><code>$ (string)2T</code> = All available commands starting with (string)</li>
+<li><code>$ /2T</code> = Entire directory structure including Hidden one</li>
+<li><code>$ 2T</code> = Only Sub Dirs inside including Hidden one</li>
+<li><code>$ *2T</code> = Only Sub Dirs inside without Hidden one</li>
+<li><code>$ ~2T</code> = All Present Users on system from &ldquo;/etc/passwd&rdquo;</li>
+<li><code>$ $2T</code> = All Sys variables</li>
+<li><code>$ @2T</code> = Entries from &ldquo;/etc/hosts&rdquo;</li>
+<li><code>$ =2T</code> = Output like ls or dir</li>
+<li><code>Ctrl + v Ctrl + m</code> = Insert a newline control character</li>
+</ul>
+<h2 id="scripts">Scripts</h2>
+<h3 id="remove-the-extensions-from-multiple-files">Remove the extensions from multiple files</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find -type f -name <span class="s2">&#34;name.ext&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span> <span class="k">do</span> mv <span class="nv">$i</span> <span class="nv">$i</span>%.ext<span class="p">;</span> <span class="k">done</span>
+</span></span></code></pre></div><h3 id="rot13-encryption">Rot13 Encryption</h3>
+<p>In a file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> <span class="p">|</span> tr <span class="s1">&#39;a-zA-Z&#39;</span> <span class="s1">&#39;n-za-mN-Z-A-M&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span> <span class="m">0</span>
+</span></span></code></pre></div><h3 id="rename-multiple-files">Rename multiple files</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> files in <span class="k">$(</span>ls .<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">	  <span class="nv">newname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$files</span> <span class="p">|</span> sed <span class="s1">&#39;s/oldtext/newtext/g&#39;</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	  mv <span class="nv">$files</span> <span class="nv">$newname</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><h2 id="syntax">Syntax</h2>
+<h4 id="various-bash-syntax-rules">Various Bash syntax rules</h4>
+<ul>
+<li><code>${#variable}</code> = Variable string length</li>
+<li><code>variable=$(&lt;file)</code> = Save in variable the content of a file</li>
+<li><code>: &gt; file</code> = Delete the content of file (like <code>cat /dev/null</code>). If it didn&rsquo;t exist, creates a new, empty one</li>
+<li><code>ls -l {b*, aa*, cc*}</code> = Multiple selection. Select all files matching the <code>b*</code>, <code>aa*</code> and <code>cc*</code> patterns in a single <code>ls</code> run</li>
+<li>mkdir -p <code>{aaa,bbb/ccc,def,parent{subdir1,subdir2,subdir3},ppp}</code> = Make whole tree of directories with the same multiple selection syntax as above</li>
+<li><code>cmd1 (&lt;cmd2) (&lt;cmd3) (&lt;cmd4)</code> = Send the stdout of the various commands to the preceding one, from right to left. For example: <code>sort (&lt;ls /bin) (&lt;ls /usr/bin) (&lt;ls /opt)</code>, which will send the list of files in those 3 directories to sort</li>
+<li><code>variable=${1:-123} </code> = Gives <code>variable</code> the value of the first parameter (<code>$1</code>). If this is empty, assign to it <code>123</code></li>
+<li><code>${variable##*.</code>} = Corresponds to everything there is in the variable after the period. Generally used with filenames to obtain just the extension</li>
+<li><code>${variable%%.*</code>} = Corresponds to everything there is in the variable before the period. Great to obtain filenames without the extension</li>
+<li><code>$RANDOM</code> = Gives back a semi-random number between 0 and 32767</li>
+<li><code>[[ string =~ pattern ]]</code> = Returns true if string matches pattern (according to ERE, Extended Regular Expressions). Only for bash &gt;=3.0</li>
+<li><code>&lt;&lt;-END</code> = Usually <code>&lt;&lt;END</code> sends the output as it is. With an added <code>-</code> it strips any tab (but still includes whitespaces)</li>
+<li><code>declare</code> = Declares various variables: with <code>-a</code>, an array, <code>-A</code> an associative array, <code>-i</code> an integer, <code>-l</code> a string with only lowercase characters, <code>-r</code> a read-only variable, <code>-u</code> a string with only uppercase characters</li>
+<li><code>shopt -s extglob</code> = Enables extended globs</li>
+<li><code>^aaa^bbb</code> = Substitutes <code>aaa</code> with <code>bbb</code> in the last executed command on the terminal. Useful to rerun the same command but with different arguments</li>
+<li><code>echo ${PIPESTATUS[@]}</code> = Find out all the exit codes of the previously piped commands</li>
+<li><code>rm * !(&quot;filename&quot;)</code> = Remove all files in current directory but for <code>filename</code>. Wildcards can be used to specify the matching like <code>*.ext</code> or <code>filenames?</code> or <code>[!abcde]</code></li>
+</ul>
+<h4 id="bash-history">Bash History</h4>
+<p>How to use and navigate through Bash&rsquo;s history</p>
+<ul>
+<li><code>!!</code> = Rerun the last executed command</li>
+<li><code>!*</code> = Represent all the arguments of the last executed command</li>
+<li><code>!$</code> = Corresponds to the very last argument of the last executed command</li>
+<li><code>!!:2-3</code> = Corresponds to the list of arguments going from the second to the third of the last executed command. It can also be used like <code>!!:2-$</code> to represent every argument from the second to the last.</li>
+<li><code>!n</code> = Run the command at line <code>n</code> in <code>bash_history</code></li>
+<li><code>!cmd:p</code> = Show the last time <code>cmd</code> was executed, with all its arguments and parameters</li>
+<li><code>!cmd</code> = Rerun, with same arguments and parameters, last execution of <code>cmd</code></li>
+<li><code>!!:gs/oldarguments/newarguments</code> = Rerun last executed command substituting <code>oldarguments</code> with <code>newarguments</code></li>
+</ul>
+<h4 id="bash-redirection">Bash Redirection</h4>
+<p>Partly copied/modified from <a href="https://github.com/pkrumins/bash-redirections-cheat-sheet">bash-redirections-cheat-sheet</a></p>
+<ul>
+<li><code>cmd &gt; file</code> = redirect stdout to file. Also <code>cmd 1&gt; file</code></li>
+<li><code>cmd 2&gt; file</code> = redirect stderr to file</li>
+<li><code>cmd &gt;&gt; file</code> = append stdout to file</li>
+<li><code>cmd &amp;&gt; file</code> = redirect stdout and stderr to file. Also <code>cmd &gt; file 2&gt;&amp;1</code></li>
+<li><code>cmd &lt;&lt;&lt; &quot;string&quot;</code> = redirect a single line of text to the stdin of <code>cmd</code></li>
+<li><code>exec 2&gt; file</code> = redirect stderr of all commands to a file forever</li>
+<li><code>exec 3&lt; file</code> = open a file for reading using a custom file descriptor</li>
+<li><code>exec 3&gt; file</code> = open a file for writing usint a custom file descriptor</li>
+<li><code>exec 3&lt;&gt; file</code> = open a file for reading and writing using a custom file descriptor</li>
+<li><code>exec 3&gt;&amp;-</code> = close a file descriptor</li>
+<li><code>exec 4&gt;&amp;3</code> = make file descriptor 4 to be a copy of 3. With <code>exec 4&gt;&amp;3-</code> also close 3</li>
+<li><code>echo &quot;abc&quot; &gt;&amp;3</code> = write to custom file descriptor 3</li>
+<li><code>cat &lt;&amp;3</code> = read from custom file descriptor 3</li>
+<li><code>(cmd1; cmd2) &gt; file</code> = redirecto stdout from multiple commands to a file (using a sub-shell). Or with <code>{ cmd1; cmd2 } &gt; file</code>, without using a sub-shell</li>
+<li><code>exec 3&lt;&gt; /dev/tcp/host/port</code> = open a tcp connection to host:port. With <code>/dev/udp/host/port</code> opens a udp connection</li>
+<li><code>cmd1 |&amp; cmd2</code> = redirect stdout and stderr of <code>cmd1</code> to stdin of <code>cmd2</code>. This is for bash 4.0+ only, for older versions use <code>cmd1 2&gt;&amp;1 | cmd2</code></li>
+<li><code>exec {filew}&gt; file</code> = open a file for writing using a named file descriptor called {filew}. Bash 4.1+ only</li>
+<li><code>cmd 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3</code> = swap stdout and stderr of cmd</li>
+<li><code>cmd &gt; &gt;(cmd1) 2&gt; &gt;(cmd2)</code> = send stdout of cmd to cmd1 and stderr of cmd to cmd2</li>
+</ul>
+<h3 id="terminal-line-wrapping">Terminal Line Wrapping</h3>
+<p>To prevent commands to overlap on the prompt, add a <code>\</code> before every <code>[</code> and <code>]</code> in your bash prompt (<code>$PS1</code>)</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Personal-Wiki"><img src="/images/fpc-darkbluelogo.png"></a>
+
+        </div>
+        <form action="/Scientia/search.html" method="get"><div class="searchbox default-animation">
+          <button type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Scientia/js/auto-complete.js?1705836136" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1705836136" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1705836136" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1705836136" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1705836136" defer></script>
+        <script src="/Scientia/js/search.js?1705836136" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/Scientia/android/index.html" class="dd-item"><a href="/Scientia/android/index.html">Android</a></li>
+          <li data-nav-id="/Scientia/devops/index.html" class="dd-item"><input type="checkbox" id="section-28776b52da83a599a93e5a3c3f47860b" aria-controls="subsections-28776b52da83a599a93e5a3c3f47860b" class="toggle"><label class="a11y-only toggle" for="section-28776b52da83a599a93e5a3c3f47860b" >Submenu DevOps</label><a href="/Scientia/devops/index.html">DevOps</a><ul id="subsections-28776b52da83a599a93e5a3c3f47860b">
+          <li data-nav-id="/Scientia/devops/aws/index.html" class="dd-item"><a href="/Scientia/devops/aws/index.html">AWS</a></li>
+          <li data-nav-id="/Scientia/devops/docker/index.html" class="dd-item"><a href="/Scientia/devops/docker/index.html">Docker</a></li>
+          <li data-nav-id="/Scientia/devops/kubernetes/index.html" class="dd-item"><a href="/Scientia/devops/kubernetes/index.html">Kubernetes</a></li>
+          <li data-nav-id="/Scientia/devops/system_design/index.html" class="dd-item"><a href="/Scientia/devops/system_design/index.html">System Design</a></li></ul></li>
+          <li data-nav-id="/Scientia/frontend/index.html" class="dd-item"><input type="checkbox" id="section-1f846e8dcef1e4719580d68fa558c953" aria-controls="subsections-1f846e8dcef1e4719580d68fa558c953" class="toggle"><label class="a11y-only toggle" for="section-1f846e8dcef1e4719580d68fa558c953" >Submenu Frontend</label><a href="/Scientia/frontend/index.html">Frontend</a><ul id="subsections-1f846e8dcef1e4719580d68fa558c953">
+          <li data-nav-id="/Scientia/frontend/css/index.html" class="dd-item"><a href="/Scientia/frontend/css/index.html">Css</a></li>
+          <li data-nav-id="/Scientia/frontend/d3/index.html" class="dd-item"><a href="/Scientia/frontend/d3/index.html">D3</a></li>
+          <li data-nav-id="/Scientia/frontend/jquery/index.html" class="dd-item"><a href="/Scientia/frontend/jquery/index.html">jQuery</a></li>
+          <li data-nav-id="/Scientia/frontend/npm/index.html" class="dd-item"><a href="/Scientia/frontend/npm/index.html">Npm</a></li></ul></li>
+          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item parent"><input type="checkbox" id="section-7b5c18dd99757a3b554b76d7f7675de1" aria-controls="subsections-7b5c18dd99757a3b554b76d7f7675de1" class="toggle" checked><label class="a11y-only toggle" for="section-7b5c18dd99757a3b554b76d7f7675de1" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-7b5c18dd99757a3b554b76d7f7675de1">
+          <li data-nav-id="/Scientia/programming_languages/awk/index.html" class="dd-item"><a href="/Scientia/programming_languages/awk/index.html">Awk</a></li>
+          <li data-nav-id="/Scientia/programming_languages/bash/index.html" class="dd-item active"><a href="/Scientia/programming_languages/bash/index.html">Bash</a></li>
+          <li data-nav-id="/Scientia/programming_languages/c/index.html" class="dd-item"><a href="/Scientia/programming_languages/c/index.html">C</a></li>
+          <li data-nav-id="/Scientia/programming_languages/common_lisp/index.html" class="dd-item"><a href="/Scientia/programming_languages/common_lisp/index.html">Common Lisp</a></li>
+          <li data-nav-id="/Scientia/programming_languages/go/index.html" class="dd-item"><a href="/Scientia/programming_languages/go/index.html">Go</a></li>
+          <li data-nav-id="/Scientia/programming_languages/javascript/index.html" class="dd-item"><a href="/Scientia/programming_languages/javascript/index.html">Javascript</a></li>
+          <li data-nav-id="/Scientia/programming_languages/lua/index.html" class="dd-item"><a href="/Scientia/programming_languages/lua/index.html">Lua</a></li>
+          <li data-nav-id="/Scientia/programming_languages/python/index.html" class="dd-item"><a href="/Scientia/programming_languages/python/index.html">Python</a></li>
+          <li data-nav-id="/Scientia/programming_languages/sed/index.html" class="dd-item"><a href="/Scientia/programming_languages/sed/index.html">Sed</a></li>
+          <li data-nav-id="/Scientia/programming_languages/zsh/index.html" class="dd-item"><a href="/Scientia/programming_languages/zsh/index.html">Zsh</a></li></ul></li>
+          <li data-nav-id="/Scientia/operating_systems/index.html" class="dd-item"><input type="checkbox" id="section-52903e8a7527c9f6c3626680ca25dd54" aria-controls="subsections-52903e8a7527c9f6c3626680ca25dd54" class="toggle"><label class="a11y-only toggle" for="section-52903e8a7527c9f6c3626680ca25dd54" >Submenu Operating Systems</label><a href="/Scientia/operating_systems/index.html">Operating Systems</a><ul id="subsections-52903e8a7527c9f6c3626680ca25dd54">
+          <li data-nav-id="/Scientia/operating_systems/freebsd/freebsd_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/freebsd/freebsd_commands/index.html">FreeBSD</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/index.html" class="dd-item"><input type="checkbox" id="section-392eb34fc3afb0ea7edb6b36d7c6de05" aria-controls="subsections-392eb34fc3afb0ea7edb6b36d7c6de05" class="toggle"><label class="a11y-only toggle" for="section-392eb34fc3afb0ea7edb6b36d7c6de05" >Submenu Linux</label><a href="/Scientia/operating_systems/linux/index.html">Linux</a><ul id="subsections-392eb34fc3afb0ea7edb6b36d7c6de05">
+          <li data-nav-id="/Scientia/operating_systems/linux/apparmor/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/apparmor/index.html">AppArmor</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/archlinux/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/archlinux/index.html">Archlinux</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/compose_key/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/compose_key/index.html">Compose Key</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/debian/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/debian/index.html">Debian</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/firewall/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/firewall/index.html">Firewall</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/framebuffer/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/framebuffer/index.html">Framebuffer</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/kernel/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/kernel/index.html">Kernel</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/linux_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/linux_commands/index.html">Linux Commands</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/raspberrypios/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/raspberrypios/index.html">Raspberry Pi OS</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/selinux/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/selinux/index.html">SELinux</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/sysrq_key/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/sysrq_key/index.html">Sysrq Key</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/systemd/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/systemd/index.html">SystemD</a></li>
+          <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
+          <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
+          <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle"><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
+          <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
+          <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
+          <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
+          <li data-nav-id="/Scientia/programs/e-uae/index.html" class="dd-item"><a href="/Scientia/programs/e-uae/index.html">E-Uae</a></li>
+          <li data-nav-id="/Scientia/programs/ffmpeg/index.html" class="dd-item"><a href="/Scientia/programs/ffmpeg/index.html">Ffmpeg</a></li>
+          <li data-nav-id="/Scientia/programs/firefox/index.html" class="dd-item"><a href="/Scientia/programs/firefox/index.html">Firefox</a></li>
+          <li data-nav-id="/Scientia/programs/flash/index.html" class="dd-item"><a href="/Scientia/programs/flash/index.html">Flash</a></li>
+          <li data-nav-id="/Scientia/programs/gimp/index.html" class="dd-item"><a href="/Scientia/programs/gimp/index.html">Gimp</a></li>
+          <li data-nav-id="/Scientia/programs/git/index.html" class="dd-item"><a href="/Scientia/programs/git/index.html">Git</a></li>
+          <li data-nav-id="/Scientia/programs/gmail/index.html" class="dd-item"><a href="/Scientia/programs/gmail/index.html">GMail</a></li>
+          <li data-nav-id="/Scientia/programs/gnome/index.html" class="dd-item"><a href="/Scientia/programs/gnome/index.html">Gnome</a></li>
+          <li data-nav-id="/Scientia/programs/gnupg/index.html" class="dd-item"><a href="/Scientia/programs/gnupg/index.html">Gnupg</a></li>
+          <li data-nav-id="/Scientia/programs/grub/index.html" class="dd-item"><a href="/Scientia/programs/grub/index.html">Grub</a></li>
+          <li data-nav-id="/Scientia/programs/httrack/index.html" class="dd-item"><a href="/Scientia/programs/httrack/index.html">HTTrack</a></li>
+          <li data-nav-id="/Scientia/programs/imagemagick-convert/index.html" class="dd-item"><a href="/Scientia/programs/imagemagick-convert/index.html">Imagemagick Convert</a></li>
+          <li data-nav-id="/Scientia/programs/kitty/index.html" class="dd-item"><a href="/Scientia/programs/kitty/index.html">Kitty</a></li>
+          <li data-nav-id="/Scientia/programs/mplayer/index.html" class="dd-item"><a href="/Scientia/programs/mplayer/index.html">MPlayer</a></li>
+          <li data-nav-id="/Scientia/programs/mutt/index.html" class="dd-item"><a href="/Scientia/programs/mutt/index.html">Mutt</a></li>
+          <li data-nav-id="/Scientia/programs/rtorrent/index.html" class="dd-item"><a href="/Scientia/programs/rtorrent/index.html">Rtorrent</a></li>
+          <li data-nav-id="/Scientia/programs/screen/index.html" class="dd-item"><a href="/Scientia/programs/screen/index.html">Screen</a></li>
+          <li data-nav-id="/Scientia/programs/ssh/index.html" class="dd-item"><a href="/Scientia/programs/ssh/index.html">Ssh</a></li>
+          <li data-nav-id="/Scientia/programs/tcpdump/index.html" class="dd-item"><a href="/Scientia/programs/tcpdump/index.html">Tcpdump</a></li>
+          <li data-nav-id="/Scientia/programs/tmux/index.html" class="dd-item"><a href="/Scientia/programs/tmux/index.html">Tmux</a></li>
+          <li data-nav-id="/Scientia/programs/urxvt/index.html" class="dd-item"><a href="/Scientia/programs/urxvt/index.html">URxvt</a></li>
+          <li data-nav-id="/Scientia/programs/vim/index.html" class="dd-item"><a href="/Scientia/programs/vim/index.html">ViM</a></li>
+          <li data-nav-id="/Scientia/programs/wine/index.html" class="dd-item"><a href="/Scientia/programs/wine/index.html">Wine</a></li>
+          <li data-nav-id="/Scientia/programs/wireshark/index.html" class="dd-item"><a href="/Scientia/programs/wireshark/index.html">Wireshark</a></li></ul></li>
+          <li data-nav-id="/Scientia/theory/index.html" class="dd-item"><input type="checkbox" id="section-fcd5be2517f8bb5ec12b281f24343413" aria-controls="subsections-fcd5be2517f8bb5ec12b281f24343413" class="toggle"><label class="a11y-only toggle" for="section-fcd5be2517f8bb5ec12b281f24343413" >Submenu Computer Science Theory</label><a href="/Scientia/theory/index.html">Computer Science Theory</a><ul id="subsections-fcd5be2517f8bb5ec12b281f24343413">
+          <li data-nav-id="/Scientia/theory/big_oh_notation/index.html" class="dd-item"><a href="/Scientia/theory/big_oh_notation/index.html">Big Oh Notation</a></li>
+          <li data-nav-id="/Scientia/theory/data_structures/index.html" class="dd-item"><a href="/Scientia/theory/data_structures/index.html">Data Structures</a></li>
+          <li data-nav-id="/Scientia/theory/set_theory/index.html" class="dd-item"><a href="/Scientia/theory/set_theory/index.html">Set Theory</a></li></ul></li>
+          <li data-nav-id="/Scientia/travels/index.html" class="dd-item"><input type="checkbox" id="section-a2f35faeb862d8dc5aa16d3645944559" aria-controls="subsections-a2f35faeb862d8dc5aa16d3645944559" class="toggle"><label class="a11y-only toggle" for="section-a2f35faeb862d8dc5aa16d3645944559" >Submenu Travels</label><a href="/Scientia/travels/index.html">Travels</a><ul id="subsections-a2f35faeb862d8dc5aa16d3645944559">
+          <li data-nav-id="/Scientia/travels/bali/index.html" class="dd-item"><a href="/Scientia/travels/bali/index.html">Bali</a></li>
+          <li data-nav-id="/Scientia/travels/caribbeans/index.html" class="dd-item"><a href="/Scientia/travels/caribbeans/index.html">Caribbeans</a></li>
+          <li data-nav-id="/Scientia/travels/ferries/index.html" class="dd-item"><a href="/Scientia/travels/ferries/index.html">Ferries</a></li>
+          <li data-nav-id="/Scientia/travels/french_polynesia/index.html" class="dd-item"><a href="/Scientia/travels/french_polynesia/index.html">French Polynesia</a></li>
+          <li data-nav-id="/Scientia/travels/places_to_visit/index.html" class="dd-item"><a href="/Scientia/travels/places_to_visit/index.html">Places to Visit</a></li>
+          <li data-nav-id="/Scientia/travels/trains/index.html" class="dd-item"><a href="/Scientia/travels/trains/index.html">Trains</a></li></ul></li>
+          <li data-nav-id="/Scientia/history/index.html" class="dd-item"><input type="checkbox" id="section-28afe07b1f43a9e9c0c12d4859c39ee9" aria-controls="subsections-28afe07b1f43a9e9c0c12d4859c39ee9" class="toggle"><label class="a11y-only toggle" for="section-28afe07b1f43a9e9c0c12d4859c39ee9" >Submenu History</label><a href="/Scientia/history/index.html">History</a><ul id="subsections-28afe07b1f43a9e9c0c12d4859c39ee9">
+          <li data-nav-id="/Scientia/history/art_history/index.html" class="dd-item"><a href="/Scientia/history/art_history/index.html">Art History</a></li>
+          <li data-nav-id="/Scientia/history/military_history/index.html" class="dd-item"><a href="/Scientia/history/military_history/index.html">Military History</a></li>
+          <li data-nav-id="/Scientia/history/sumeria/index.html" class="dd-item"><a href="/Scientia/history/sumeria/index.html">Sumeria</a></li></ul></li>
+          <li data-nav-id="/Scientia/hobbies/index.html" class="dd-item"><input type="checkbox" id="section-1fbb774d475b742078ae8ed457b37bc6" aria-controls="subsections-1fbb774d475b742078ae8ed457b37bc6" class="toggle"><label class="a11y-only toggle" for="section-1fbb774d475b742078ae8ed457b37bc6" >Submenu Hobbies</label><a href="/Scientia/hobbies/index.html">Hobbies</a><ul id="subsections-1fbb774d475b742078ae8ed457b37bc6">
+          <li data-nav-id="/Scientia/hobbies/cigars/index.html" class="dd-item"><a href="/Scientia/hobbies/cigars/index.html">Cigars</a></li>
+          <li data-nav-id="/Scientia/hobbies/fantasy/index.html" class="dd-item"><a href="/Scientia/hobbies/fantasy/index.html">Fantasy</a></li>
+          <li data-nav-id="/Scientia/hobbies/games/index.html" class="dd-item"><a href="/Scientia/hobbies/games/index.html">Games</a></li>
+          <li data-nav-id="/Scientia/hobbies/malazan/index.html" class="dd-item"><a href="/Scientia/hobbies/malazan/index.html">Malazan</a></li>
+          <li data-nav-id="/Scientia/hobbies/music/index.html" class="dd-item"><a href="/Scientia/hobbies/music/index.html">Music</a></li>
+          <li data-nav-id="/Scientia/hobbies/sailing/index.html" class="dd-item"><a href="/Scientia/hobbies/sailing/index.html">Sailing</a></li></ul></li>
+          <li data-nav-id="/Scientia/health/index.html" class="dd-item"><input type="checkbox" id="section-133177f9b5c67f09c921f9e65fbb4aa4" aria-controls="subsections-133177f9b5c67f09c921f9e65fbb4aa4" class="toggle"><label class="a11y-only toggle" for="section-133177f9b5c67f09c921f9e65fbb4aa4" >Submenu Health</label><a href="/Scientia/health/index.html">Health</a><ul id="subsections-133177f9b5c67f09c921f9e65fbb4aa4">
+          <li data-nav-id="/Scientia/health/mental_health/index.html" class="dd-item"><input type="checkbox" id="section-c7361894745a14fd0248d8a132da15a6" aria-controls="subsections-c7361894745a14fd0248d8a132da15a6" class="toggle"><label class="a11y-only toggle" for="section-c7361894745a14fd0248d8a132da15a6" >Submenu Mental Health</label><a href="/Scientia/health/mental_health/index.html">Mental Health</a><ul id="subsections-c7361894745a14fd0248d8a132da15a6">
+          <li data-nav-id="/Scientia/health/mental_health/autism/index.html" class="dd-item"><a href="/Scientia/health/mental_health/autism/index.html">Autism</a></li>
+          <li data-nav-id="/Scientia/health/mental_health/depression/index.html" class="dd-item"><a href="/Scientia/health/mental_health/depression/index.html">Depression</a></li></ul></li></ul></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/index.html" class="dd-item"><input type="checkbox" id="section-ced43f18165055f5416a65be3999dfa5" aria-controls="subsections-ced43f18165055f5416a65be3999dfa5" class="toggle"><label class="a11y-only toggle" for="section-ced43f18165055f5416a65be3999dfa5" >Submenu Philosophy and Religion</label><a href="/Scientia/philosophy_and_religion/index.html">Philosophy and Religion</a><ul id="subsections-ced43f18165055f5416a65be3999dfa5">
+          <li data-nav-id="/Scientia/philosophy_and_religion/buddhism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/buddhism/index.html">Buddhism</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/christianity/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/christianity/index.html">Christianity</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/hinduism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/hinduism/index.html">Hinduism</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/philosophy/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/philosophy/index.html">Philosophy</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/paganism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/paganism/index.html">Paganism</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/yoga/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/yoga/index.html">Yoga</a></li>
+          <li data-nav-id="/Scientia/philosophy_and_religion/zealots/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/zealots/index.html">Zealots</a></li></ul></li>
+          <li data-nav-id="/Scientia/writing/index.html" class="dd-item"><input type="checkbox" id="section-a16074696a2e072964041e9ad7cd8fd5" aria-controls="subsections-a16074696a2e072964041e9ad7cd8fd5" class="toggle"><label class="a11y-only toggle" for="section-a16074696a2e072964041e9ad7cd8fd5" >Submenu Writing</label><a href="/Scientia/writing/index.html">Writing</a><ul id="subsections-a16074696a2e072964041e9ad7cd8fd5">
+          <li data-nav-id="/Scientia/writing/fountain_pens/index.html" class="dd-item"><a href="/Scientia/writing/fountain_pens/index.html">Fountain Pens</a></li>
+          <li data-nav-id="/Scientia/writing/technical_writing/index.html" class="dd-item"><a href="/Scientia/writing/technical_writing/index.html">Technical Writing</a></li></ul></li>
+          <li data-nav-id="/Scientia/various/index.html" class="dd-item"><input type="checkbox" id="section-051e7d1442dfc9f3a48ad1ca7b758c17" aria-controls="subsections-051e7d1442dfc9f3a48ad1ca7b758c17" class="toggle"><label class="a11y-only toggle" for="section-051e7d1442dfc9f3a48ad1ca7b758c17" >Submenu Various</label><a href="/Scientia/various/index.html">Various</a><ul id="subsections-051e7d1442dfc9f3a48ad1ca7b758c17">
+          <li data-nav-id="/Scientia/various/advertising_and_marketing/index.html" class="dd-item"><a href="/Scientia/various/advertising_and_marketing/index.html">Advertising and Marketing</a></li>
+          <li data-nav-id="/Scientia/various/cryptocurrencies/index.html" class="dd-item"><a href="/Scientia/various/cryptocurrencies/index.html">Cryptocurrencies</a></li>
+          <li data-nav-id="/Scientia/various/electricity/index.html" class="dd-item"><a href="/Scientia/various/electricity/index.html">Electricity</a></li>
+          <li data-nav-id="/Scientia/various/hardware/index.html" class="dd-item"><a href="/Scientia/various/hardware/index.html">Hardware</a></li>
+          <li data-nav-id="/Scientia/various/hugo/index.html" class="dd-item"><a href="/Scientia/various/hugo/index.html">Hugo</a></li>
+          <li data-nav-id="/Scientia/various/i3/index.html" class="dd-item"><a href="/Scientia/various/i3/index.html">i3</a></li>
+          <li data-nav-id="/Scientia/various/load_balancing/index.html" class="dd-item"><a href="/Scientia/various/load_balancing/index.html">Load Balancing</a></li>
+          <li data-nav-id="/Scientia/various/markdown/index.html" class="dd-item"><a href="/Scientia/various/markdown/index.html">Markdown</a></li>
+          <li data-nav-id="/Scientia/various/mongodb/index.html" class="dd-item"><a href="/Scientia/various/mongodb/index.html">MongoDB</a></li>
+          <li data-nav-id="/Scientia/various/networks/index.html" class="dd-item"><a href="/Scientia/various/networks/index.html">Networks</a></li>
+          <li data-nav-id="/Scientia/various/plain_text_accounting/index.html" class="dd-item"><a href="/Scientia/various/plain_text_accounting/index.html">Plain Text Accounting</a></li>
+          <li data-nav-id="/Scientia/various/samba_and_nfs/index.html" class="dd-item"><a href="/Scientia/various/samba_and_nfs/index.html">Samba and Nfs</a></li>
+          <li data-nav-id="/Scientia/various/seo/index.html" class="dd-item"><a href="/Scientia/various/seo/index.html">SEO</a></li>
+          <li data-nav-id="/Scientia/various/sqlite/index.html" class="dd-item"><a href="/Scientia/various/sqlite/index.html">SQLite</a></li>
+          <li data-nav-id="/Scientia/various/tiddlywiki/index.html" class="dd-item"><a href="/Scientia/various/tiddlywiki/index.html">Tiddlywiki</a></li>
+          <li data-nav-id="/Scientia/various/useful_info/index.html" class="dd-item"><a href="/Scientia/various/useful_info/index.html">Useful info</a></li>
+          <li data-nav-id="/Scientia/various/zfs/index.html" class="dd-item"><a href="/Scientia/various/zfs/index.html">Zfs</a></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
+          <ul>
+            <li><a class="padding" href="https://github.com/Donearm/Scientia/"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="https://www.gianlucafiore.it"><i class='fas fa-fw fa-bookmark'></i> Personal Site</a></li>
+            <li><a class="padding" href="https://www.fountainpencreator.com"><i class='fas fa-solid fa-pen-nib'></i> Fountain Pen Creator</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="fpc" value="fpc" selected>Fpc</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p>© 2000-2023 Gianluca Fiore</p>
+
+        </div>
+      </div>
+    </aside>
+    <script src="/Scientia/js/clipboard.min.js?1705836136" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1705836136" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1705836136" defer></script>
+    <script src="/Scientia/js/theme.js?1705836136" defer></script>
+  </body>
+</html>
