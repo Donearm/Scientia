@@ -1,7 +1,7 @@
 ---
 title: FreeBSD
 bookCollapseSection: true
-weight: 501
+weight: 502
 ---
 
 ### Various Commands

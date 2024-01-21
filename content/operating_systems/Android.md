@@ -2,7 +2,7 @@
 title: Android
 bookCollapseSection: true
 type: docs
-weight: 100
+weight: 501
 ---
 
 * [Performance tweaks](#performance-tweaks)

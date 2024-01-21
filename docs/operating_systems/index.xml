@@ -15,6 +15,19 @@
 Most I know about Linux I learned using Slackware, then Gentoo, then Archlinux. But I used to distro-hop a lot in the early years of my Linux learning and have probably tested between 15 and 20 different distro (tested as in installed, not just ran from a live usb pendrive).</description>
     </item>
     <item>
+      <title>Android</title>
+      <link>https://donearm.github.io/Scientia/operating_systems/android/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/operating_systems/android/index.html</guid>
+      <description>Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app Performance tweaks In /system/build.prop edit:
+ro.~HOME_APP_ADJ=1 to force launcher into memory
+ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
+dalvik.vm.heapsize=48m specifies the VM heapsize
+debug.sf.hw=1 to render UI with the GPU
+ro.telephony.call_ring.delay=0 to decrease dialing out delay
+windowsmgr.max_events_per_sec=150 help scrolling responsiveness</description>
+    </item>
+    <item>
       <title>FreeBSD</title>
       <link>https://donearm.github.io/Scientia/operating_systems/freebsd/freebsd_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

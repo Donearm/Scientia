@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>SQLite - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>Android - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/Scientia/css/fontawesome-all.min.css?1705837096" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1705837096" rel="stylesheet"></noscript>
@@ -43,17 +43,17 @@
     </script>
     <script src="/Scientia/js/jquery.min.js?1705837096" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/Scientia/programs/sqlite/index.html">
+  <body class="mobile-support html" data-url="/Scientia/operating_systems/android/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/Scientia/programs/ssh/index.html" title="Ssh (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/Scientia/operating_systems/freebsd/freebsd_commands/index.html" title="FreeBSD (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/Scientia/programs/screen/index.html" title="Screen (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/Scientia/operating_systems/index.html" title="Operating Systems (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -62,8 +62,8 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/index.html"><span itemprop="name">Scientia - Gianluca Fiore Knowledge Wiki</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">SQLite</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/operating_systems/index.html"><span itemprop="name">Operating Systems</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Android</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -72,9 +72,16 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#exporting-tables-to-csv">Exporting tables to csv</a></li>
+        <li><a href="#save-battery">Save battery</a></li>
+        <li><a href="#increase-overall-touch-responsiveness">Increase overall touch responsiveness</a></li>
+        <li><a href="#raise-photo-and-video-recording-quality">Raise photo and video recording quality</a></li>
+        <li><a href="#3g-signal-tweaks">3G signal tweaks</a></li>
+        <li><a href="#net-tcp-speed-tweaks">Net Tcp speed tweaks</a></li>
+        <li><a href="#disable-blackscreen-issue-after-call">Disable blackscreen issue after call</a></li>
+        <li><a href="#various">Various</a></li>
       </ul>
     </li>
+    <li><a href="#uninstall-system-app">Uninstall system app</a></li>
   </ul>
 </nav>
             </div>
@@ -86,16 +93,82 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="sqlite">SQLite</h1>
+<h1 id="android">Android</h1>
 
-<h3 id="exporting-tables-to-csv">Exporting tables to csv</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="n">sqlite3</span><span class="w"> </span><span class="n">databasefile</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="k">output</span><span class="w"> </span><span class="n">outfile</span><span class="p">.</span><span class="n">csv</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="k">mode</span><span class="w"> </span><span class="n">csv</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="n">header</span><span class="w"> </span><span class="k">on</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&gt;</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="k">table</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="n">quit</span><span class="w">
-</span></span></span></code></pre></div>
+<ul>
+<li><a href="#performance-tweaks">Performance tweaks</a></li>
+<li><a href="#save-battery">Save Battery</a></li>
+<li><a href="#increase-overall-touch-responsiveness">Increase overall touch responsiveness</a></li>
+<li><a href="#raise-photo-and-video-recording-quality">Raise photo and video recording quality</a></li>
+<li><a href="#3g-signal-tweaks">3G signal tweaks</a></li>
+<li><a href="#net-tcp-speed-tweaks">Net Tcp speed tweaks</a></li>
+<li><a href="#disable-blackscreen-issue-after-call">Disable blackscreen issue after call</a></li>
+<li><a href="#various">Various</a></li>
+<li><a href="#uninstall-system-app">Uninstall sytem app</a></li>
+</ul>
+<hr>
+<h1 id="performance-tweaks">Performance tweaks</h1>
+<p>In <code>/system/build.prop</code> edit:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.~HOME_APP_ADJ</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><p>to force launcher into memory</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.media.enc.jpeg.quality</span><span class="o">=</span><span class="s">100</span>
+</span></span></code></pre></div><p>to raise jpeg quality to 100%</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">dalvik.vm.heapsize</span><span class="o">=</span><span class="s">48m</span>
+</span></span></code></pre></div><p>specifies the VM heapsize</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">debug.sf.hw</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><p>to render UI with the GPU</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.telephony.call_ring.delay</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>to decrease dialing out delay</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">windowsmgr.max_events_per_sec</span><span class="o">=</span><span class="s">150  </span>
+</span></span></code></pre></div><p>help scrolling responsiveness</p>
+<h3 id="save-battery">Save battery</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">wifi.supplicant_scan_interval</span><span class="o">=</span><span class="s">180</span>
+</span></span><span class="line"><span class="cl"><span class="na">pm.sleep_mode</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.disable.power.collapse</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>while</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">persist.adb.notify</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>disables debugging notify icon on statusbar</p>
+<h3 id="increase-overall-touch-responsiveness">Increase overall touch responsiveness</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">debug.performance.tuning</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">video.accelerate.hw</span><span class="o">=</span><span class="s">1</span>
+</span></span></code></pre></div><h3 id="raise-photo-and-video-recording-quality">Raise photo and video recording quality</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.media.dec.jpeg.memcap</span><span class="o">=</span><span class="s">8000000</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.media.enc.hprof.vid.bps</span><span class="o">=</span><span class="s">8000000</span>
+</span></span></code></pre></div><h3 id="3g-signal-tweaks">3G signal tweaks</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.ril.hsxpa</span><span class="o">=</span><span class="s">2</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.gprsclass</span><span class="o">=</span><span class="s">10 </span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hep</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.dtm</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hsdpa.category</span><span class="o">=</span><span class="s">10</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.a53</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.enable.3g.prefix</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.htcmaskw1.bitmask</span><span class="o">=</span><span class="s">4294967295</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.htcmaskw1</span><span class="o">=</span><span class="s">14449</span>
+</span></span><span class="line"><span class="cl"><span class="na">ro.ril.hsupa.category</span><span class="o">=</span><span class="s">5</span>
+</span></span></code></pre></div><h3 id="net-tcp-speed-tweaks">Net Tcp speed tweaks</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.default</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.wifi</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.umts</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.gprs</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span><span class="line"><span class="cl"><span class="na">net.tcp.buffersize.edge</span><span class="o">=</span><span class="s">4096,87380,256960,4096,16384,256960</span>
+</span></span></code></pre></div><h3 id="disable-blackscreen-issue-after-call">Disable blackscreen issue after call</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.lge.proximity.delay</span><span class="o">=</span><span class="s">25</span>
+</span></span><span class="line"><span class="cl"><span class="na">mot.proximity.delay</span><span class="o">=</span><span class="s">25</span>
+</span></span></code></pre></div><h3 id="various">Various</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.config.hwfeature_wakeupkey</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>the phone will not wakeup from hitting the volume rocker</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0</span>
+</span></span></code></pre></div><p>force button lights on when the screen is on too</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">ro.mot.buttonlight.timeout</span><span class="o">=</span><span class="s">0  </span>
+</span></span></code></pre></div><p>disable boot animation for faster boot</p>
+<h2 id="uninstall-system-app">Uninstall system app</h2>
+<p>This may not work on all devices as some will just &ldquo;disable&rdquo; those apps, not showing them as an icon but still listing them among the installed apps, occupying disk space. But at least the process won&rsquo;t start and won&rsquo;t occupy memory and use battery time.</p>
+<ul>
+<li>Connect to the device using <code>adb</code></li>
+<li>Check for the name of the package to uninstall with <code>pm list packages -f $packagename</code></li>
+<li>Uninstall it with <code>pm uninstall -k -user 0 $packagename</code>, where <code>$packagename</code> is the output of the previous command</li>
+</ul>
+
             <footer class="footline">
             </footer>
           </article>
@@ -147,8 +220,8 @@
           <li data-nav-id="/Scientia/programming_languages/python/index.html" class="dd-item"><a href="/Scientia/programming_languages/python/index.html">Python</a></li>
           <li data-nav-id="/Scientia/programming_languages/sed/index.html" class="dd-item"><a href="/Scientia/programming_languages/sed/index.html">Sed</a></li>
           <li data-nav-id="/Scientia/programming_languages/zsh/index.html" class="dd-item"><a href="/Scientia/programming_languages/zsh/index.html">Zsh</a></li></ul></li>
-          <li data-nav-id="/Scientia/operating_systems/index.html" class="dd-item"><input type="checkbox" id="section-52903e8a7527c9f6c3626680ca25dd54" aria-controls="subsections-52903e8a7527c9f6c3626680ca25dd54" class="toggle"><label class="a11y-only toggle" for="section-52903e8a7527c9f6c3626680ca25dd54" >Submenu Operating Systems</label><a href="/Scientia/operating_systems/index.html">Operating Systems</a><ul id="subsections-52903e8a7527c9f6c3626680ca25dd54">
-          <li data-nav-id="/Scientia/operating_systems/android/index.html" class="dd-item"><a href="/Scientia/operating_systems/android/index.html">Android</a></li>
+          <li data-nav-id="/Scientia/operating_systems/index.html" class="dd-item parent"><input type="checkbox" id="section-52903e8a7527c9f6c3626680ca25dd54" aria-controls="subsections-52903e8a7527c9f6c3626680ca25dd54" class="toggle" checked><label class="a11y-only toggle" for="section-52903e8a7527c9f6c3626680ca25dd54" >Submenu Operating Systems</label><a href="/Scientia/operating_systems/index.html">Operating Systems</a><ul id="subsections-52903e8a7527c9f6c3626680ca25dd54">
+          <li data-nav-id="/Scientia/operating_systems/android/index.html" class="dd-item active"><a href="/Scientia/operating_systems/android/index.html">Android</a></li>
           <li data-nav-id="/Scientia/operating_systems/freebsd/freebsd_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/freebsd/freebsd_commands/index.html">FreeBSD</a></li>
           <li data-nav-id="/Scientia/operating_systems/linux/index.html" class="dd-item"><input type="checkbox" id="section-392eb34fc3afb0ea7edb6b36d7c6de05" aria-controls="subsections-392eb34fc3afb0ea7edb6b36d7c6de05" class="toggle"><label class="a11y-only toggle" for="section-392eb34fc3afb0ea7edb6b36d7c6de05" >Submenu Linux</label><a href="/Scientia/operating_systems/linux/index.html">Linux</a><ul id="subsections-392eb34fc3afb0ea7edb6b36d7c6de05">
           <li data-nav-id="/Scientia/operating_systems/linux/apparmor/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/apparmor/index.html">AppArmor</a></li>
@@ -166,7 +239,7 @@
           <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Scientia/programs/index.html" class="dd-item parent"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle" checked><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle"><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
           <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
@@ -191,7 +264,7 @@
           <li data-nav-id="/Scientia/programs/rtorrent/index.html" class="dd-item"><a href="/Scientia/programs/rtorrent/index.html">Rtorrent</a></li>
           <li data-nav-id="/Scientia/programs/samba_and_nfs/index.html" class="dd-item"><a href="/Scientia/programs/samba_and_nfs/index.html">Samba and Nfs</a></li>
           <li data-nav-id="/Scientia/programs/screen/index.html" class="dd-item"><a href="/Scientia/programs/screen/index.html">Screen</a></li>
-          <li data-nav-id="/Scientia/programs/sqlite/index.html" class="dd-item active"><a href="/Scientia/programs/sqlite/index.html">SQLite</a></li>
+          <li data-nav-id="/Scientia/programs/sqlite/index.html" class="dd-item"><a href="/Scientia/programs/sqlite/index.html">SQLite</a></li>
           <li data-nav-id="/Scientia/programs/ssh/index.html" class="dd-item"><a href="/Scientia/programs/ssh/index.html">Ssh</a></li>
           <li data-nav-id="/Scientia/programs/tcpdump/index.html" class="dd-item"><a href="/Scientia/programs/tcpdump/index.html">Tcpdump</a></li>
           <li data-nav-id="/Scientia/programs/tiddlywiki/index.html" class="dd-item"><a href="/Scientia/programs/tiddlywiki/index.html">Tiddlywiki</a></li>
