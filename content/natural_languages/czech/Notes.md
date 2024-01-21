@@ -4,9 +4,17 @@ bookCollapseSection: true
 weight: 1402
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Characters used in Czech based on Latin script](#characters-used-in-czech-based-on-latin-script)
+* [Letters and their names](#letters-and-their-names)
+
+<!-- vim-markdown-toc -->
+
 ## Characters used in Czech based on Latin script
 
 ------------------------------------------------------
+
 | Unicode | Upper | Unicode | Lower | Character Name |
 |---------|-------|---------|-------|----------------|
 | 00C1    | Á     | 00E1    | á     | A acute
@@ -24,6 +32,7 @@ weight: 1402
 | 0160    | Š     | 0161    | š     | S caron
 | 0164    | Ť     | 0165    | ť     | T caron
 | 017D    | Ž     | 017E    | ž     | Z caron
+
 ------------------------------------------------------
 
 ## Letters and their names
