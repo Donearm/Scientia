@@ -1,6 +1,6 @@
 ---
 title: Technical Writing
-weight: 1410
+weight: 1510
 ---
 
 <!-- vim-markdown-toc GFM -->

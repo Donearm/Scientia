@@ -1,0 +1,76 @@
+---
+title: Czech-Italian Food Dictionary
+bookCollapseSection: true
+weight: 1401
+---
+
+* Biftek = Bistecca di vitello
+* Borsc = Simile al goulash ma con più salsiccia
+* Bezmasa Jidla = Cibo per vegetariani
+* Bile vino = Vino bianco
+* Brambor = Patate
+* Bramborovy = Zuppa di patate con vegetali e occasionalmente funghi
+* Cervene vino = Vino rosso
+* Chleb = Pane
+* Cibula = Cipolla
+* Cukr = Zucchero
+* Denni Menu = Menu fisso del giorno
+* Detsky Menu = Menu per bambini
+* Drubez = Pollame
+* Gulasovy = Goulash con pezzi di prosciutto, salsiccia, cipolle e peperoni
+* Houskovy = Fette di pane
+* Hovezi = Bue/Manzo
+* Hovezi Gulas = Goulash di bue
+* Hovezi polevku o bujon = Zuppa di carne con possibile aggiunta di spaghetti o polpette di carne
+* Hranolky = Patate fritte
+* Jablecny zavin = Strudel di mele
+* Jablko = Mela
+* Kavu o Kavarna = Caffè
+* Klobasa = Salsiccia
+* Knedliky = gnocchi (accompagnamento di molti piatti, specialmente serviti con sughi forti)
+* Kolac = Torta
+* Kralik = Coniglio
+* Kureci prsa = Petto di pollo
+* Kvetak = Cavolfiore
+* Livanecek = Frittella
+* Maslo = Burro
+* Med = Miele
+* Michane vajicko = Uova strapazzate
+* Mineralka = Acqua minerale
+* Mlieko = Latte
+* Moucniky = Dessert
+* Napoje = Bevande
+* Ocet = Aceto
+* Olej = Olio
+* Palacinka = Frittelle
+* Palacinky = crepes con vari ripieni (marmellata, cioccolato ecc.)
+* Pecena Kachna = Anatra arrosto
+* Piquant or Dabelsky or Palivy = Piccante
+* Polevky = Zuppa
+* Predkrmy = Antipasti (sia caldi sia freddi)
+* Prilohy = Verdure o contorni in generale (anche salse, patate ecc.)
+* Prsa = Petto (di animale)
+* Rajcata = Pomodoro (all'insalata)
+* Rajce = Pomodoro
+* Rohlik = Cornetto
+* Ryby o Ryba = Pesce
+* Ryze = Riso
+* Salaty = Insalata
+* Smazeny kureci rizek = Cotoletta di pollo, con contorni di verdure
+* Smazeny veprove rizek = Cotoletta di maiale
+* Smazeny Syr = formaggio fritto e impanato
+* Snidane = Colazione
+* Spenat = Spinaci
+* Sul = Sale
+* Svickova na smetane = Carne di maiale con sugo o marmellata di frutta e gnocchi di pane
+* Syr = Formaggio
+* Tresne = Ciliegia
+* Ulezely = Stagionato
+* Uzene Maso = prosciutto cotto tagliato grosso
+* Vareny = Bollito/Lesso
+* Vejce = Uovo
+* Veprove = Maiale
+* Veprove Gulas = Goulash di maiale
+* Zelenina = Vegetali e ortaggi
+* Zeli = Crauti
+* Zmrzlina = Gelato

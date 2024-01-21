@@ -1,21 +1,21 @@
 ---
 title: Networks
 bookCollapseSection: true
-weight: 840
+weight: 1640
 ---
 
 <!-- vim-markdown-toc GFM -->
 
-	* [HTTP Status Codes](#http-status-codes)
-	* [OSI Model](#osi-model)
-	* [TCP connection states](#tcp-connection-states)
+    * [HTTP Status Codes](#http-status-codes)
+    * [OSI Model](#osi-model)
+    * [TCP connection states](#tcp-connection-states)
 * [Firewalls](#firewalls)
 * [VLANs](#vlans)
 * [DNS](#dns)
-	* [Basic concepts](#basic-concepts)
-	* [Resource Records](#resource-records)
-	* [DNS Query](#dns-query)
-	* [DNS Fields](#dns-fields)
+    * [Basic concepts](#basic-concepts)
+    * [Resource Records](#resource-records)
+    * [DNS Query](#dns-query)
+    * [DNS Fields](#dns-fields)
 * [VPN](#vpn)
 * [IP Addressing](#ip-addressing)
 

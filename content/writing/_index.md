@@ -1,7 +1,7 @@
 ---
 title: Writing
 bookCollapseSection: true
-weight: 1400
+weight: 1500
 ---
 
 Not a large section yet, as most of my actual writing is elsewhere. But here it 

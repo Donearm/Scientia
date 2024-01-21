@@ -1,7 +1,7 @@
 ---
 title: Various
 bookCollapseSection: true
-weight: 1500
+weight: 1600
 ---
 
 As you may not surprisingly have imagined, here there are piece of my knowledge 

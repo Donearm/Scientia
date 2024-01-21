@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Czech on Scientia - Gianluca Fiore Knowledge Wiki</title>
+    <link>https://donearm.github.io/Scientia/natural_languages/czech/index.html</link>
+    <description>Recent content in Czech on Scientia - Gianluca Fiore Knowledge Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/natural_languages/czech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Czech-Italian Food Dictionary</title>
+      <link>https://donearm.github.io/Scientia/natural_languages/czech/food_dictionary/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/natural_languages/czech/food_dictionary/index.html</guid>
+      <description>Biftek = Bistecca di vitello Borsc = Simile al goulash ma con più salsiccia Bezmasa Jidla = Cibo per vegetariani Bile vino = Vino bianco Brambor = Patate Bramborovy = Zuppa di patate con vegetali e occasionalmente funghi Cervene vino = Vino rosso Chleb = Pane Cibula = Cipolla Cukr = Zucchero Denni Menu = Menu fisso del giorno Detsky Menu = Menu per bambini Drubez = Pollame Gulasovy = Goulash con pezzi di prosciutto, salsiccia, cipolle e peperoni Houskovy = Fette di pane Hovezi = Bue/Manzo Hovezi Gulas = Goulash di bue Hovezi polevku o bujon = Zuppa di carne con possibile aggiunta di spaghetti o polpette di carne Hranolky = Patate fritte Jablecny zavin = Strudel di mele Jablko = Mela Kavu o Kavarna = Caffè Klobasa = Salsiccia Knedliky = gnocchi (accompagnamento di molti piatti, specialmente serviti con sughi forti) Kolac = Torta Kralik = Coniglio Kureci prsa = Petto di pollo Kvetak = Cavolfiore Livanecek = Frittella Maslo = Burro Med = Miele Michane vajicko = Uova strapazzate Mineralka = Acqua minerale Mlieko = Latte Moucniky = Dessert Napoje = Bevande Ocet = Aceto Olej = Olio Palacinka = Frittelle Palacinky = crepes con vari ripieni (marmellata, cioccolato ecc.</description>
+    </item>
+    <item>
+      <title>Notes</title>
+      <link>https://donearm.github.io/Scientia/natural_languages/czech/notes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/natural_languages/czech/notes/index.html</guid>
+      <description>Characters used in Czech based on Latin script Unicode Upper Unicode Lower Character Name 00C1 Á 00E1 á A acute 00C9 É 00E9 é E acute 011A Ě 011B ě E caron 00CD Í 00ED í I acute 00D3 Ó 00F3 ó O acute 00DA Ú 00FA ú U acute 016E Ů 016F ů U ring above 00DD Ý 00FD ý Y acute 010C Č 010D č C caron 010E Ď 010F ď D caron 0147 Ň 0148 ň N caron 0158 Ř 0159 ř R caron 0160 Š 0161 š S caron 0164 Ť 0165 ť T caron 017D Ž 017E ž Z caron Letters and their names A, á Á, dlouhé á B, bé C, cé Č, čé D, dé Ď, dé E, é É, dlouhé é Ě, ije, é s háčkem F, ef G, gé H, há Ch, chá I, í Í, dlouhé í J, jé K, ká L, el M, em N, en Ň, eň O, ó Ó, dlouhé ó P, pé Q, kvé R, er Ř, eř S, es Š, eš T, té Ť, té U, ú Ú, dlouhé ú ů, ů s kroužkem V, vé W, dvojité vé X, iks Y, ypsilon Ý, dlouhé ypsilon Z, zet Ž, žet </description>
+    </item>
+  </channel>
+</rss>

@@ -1,14 +1,14 @@
 ---
 title: SEO
 bookCollapseSection: true
-weight: 847
+weight: 1660
 ---
 
 <!-- vim-markdown-toc GFM -->
 
 * [SEO audit checklist](#seo-audit-checklist)
-	* [Useful Wordpress plugins](#useful-wordpress-plugins)
-	* [Pages for local businesses](#pages-for-local-businesses)
+    * [Useful Wordpress plugins](#useful-wordpress-plugins)
+    * [Pages for local businesses](#pages-for-local-businesses)
 * [SEO Evaluations](#seo-evaluations)
 * [How to report on SEO](#how-to-report-on-seo)
 * [Common metrics](#common-metrics)

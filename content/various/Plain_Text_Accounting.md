@@ -1,7 +1,7 @@
 ---
 title: Plain Text Accounting
 bookCollapseSection: true
-weight: 842
+weight: 1650
 ---
 
 ## Beancount

@@ -1,7 +1,7 @@
 ---
 title: Electricity
 bookCollapseSection: true
-weight: 818
+weight: 1610
 ---
 
 {{% expand title="A good answer on how to calculate power consumption" open="true" %}}

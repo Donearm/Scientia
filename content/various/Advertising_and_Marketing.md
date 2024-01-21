@@ -1,23 +1,23 @@
 ---
 title: Advertising and Marketing
 bookCollapseSection: true
-weight: 810
+weight: 1601
 ---
 
 <!-- vim-markdown-toc GFM -->
 
 * [Google Ads](#google-ads)
-	* [Match types](#match-types)
-	* [Bid Strategies](#bid-strategies)
-	* [Audience Solutions](#audience-solutions)
+    * [Match types](#match-types)
+    * [Bid Strategies](#bid-strategies)
+    * [Audience Solutions](#audience-solutions)
 * [Create a Marketing Plan](#create-a-marketing-plan)
-	* [1. Collect Data](#1-collect-data)
-	* [2. Select the mission statement](#2-select-the-mission-statement)
-	* [3. Write a market analysis](#3-write-a-market-analysis)
-	* [4. Describe a current customer's persona](#4-describe-a-current-customers-persona)
-	* [5. Write a customer buying process map](#5-write-a-customer-buying-process-map)
-	* [6. Write a product/service analysis](#6-write-a-productservice-analysis)
-	* [7. Collect all the data thus gathered in an overall strategy](#7-collect-all-the-data-thus-gathered-in-an-overall-strategy)
+    * [1. Collect Data](#1-collect-data)
+    * [2. Select the mission statement](#2-select-the-mission-statement)
+    * [3. Write a market analysis](#3-write-a-market-analysis)
+    * [4. Describe a current customer's persona](#4-describe-a-current-customers-persona)
+    * [5. Write a customer buying process map](#5-write-a-customer-buying-process-map)
+    * [6. Write a product/service analysis](#6-write-a-productservice-analysis)
+    * [7. Collect all the data thus gathered in an overall strategy](#7-collect-all-the-data-thus-gathered-in-an-overall-strategy)
 
 <!-- vim-markdown-toc -->
 

@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/various/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hardware</title>
+      <link>https://donearm.github.io/Scientia/various/hardware/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/various/hardware/index.html</guid>
+      <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
+Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
+Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
+    </item>
+    <item>
       <title>Advertising and Marketing</title>
       <link>https://donearm.github.io/Scientia/various/advertising_and_marketing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,15 +38,6 @@ Bitcoin/Litecoin API commands getaccountaddress &amp;quot;&amp;quot; = Print BTC
       <description>A good answer on how to calculate power consumption The Amp-hours of a battery gives the number of hours it can deliver 1 amp, or the number of amps it can deliver for one hour.
 Amp-hours = amps x hours.
 So a 50Ah battery can run for 50 hours at one amp, or 50 amps for one hour. Or 2 amps for 25 hours, or 25 amps for 2 hours.</description>
-    </item>
-    <item>
-      <title>Hardware</title>
-      <link>https://donearm.github.io/Scientia/various/hardware/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/hardware/index.html</guid>
-      <description>Ethernet Cable Categories Cat5 Up to 100Mb/s and 100 meters. Cat5e (&amp;ldquo;enhanced&amp;rdquo;) can reach up to 1000Mb/s. RJ45 connector is used.
-Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;rdquo;) can reach up to 10000MB/s (10 Gigabit) and is shielded. RJ45 is used.
-Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
     </item>
     <item>
       <title>Load Balancing</title>

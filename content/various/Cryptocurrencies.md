@@ -1,7 +1,7 @@
 ---
 title: Cryptocurrencies
 bookCollapseSection: true
-weight: 815
+weight: 1605
 ---
 
 [Litecoin API](https://litecoin.info/Litecoin_API)
