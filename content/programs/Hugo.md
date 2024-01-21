@@ -1,7 +1,7 @@
 ---
 title: Hugo 
 bookCollapseSection: true
-weight: 825
+weight: 624
 ---
 
 ## Syntax Highlighting

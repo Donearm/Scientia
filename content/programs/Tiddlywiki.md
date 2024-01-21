@@ -1,18 +1,18 @@
 ---
 title: Tiddlywiki
 bookCollapseSection: true
-weight: 855
+weight: 637
 ---
 
 <!-- vim-markdown-toc GFM -->
 
 * [Tweaks and features of Tiddlywiki](#tweaks-and-features-of-tiddlywiki)
-	* [To use the file browser to insert a file into the wiki](#to-use-the-file-browser-to-insert-a-file-into-the-wiki)
-	* [To show a text file with an iframe](#to-show-a-text-file-with-an-iframe)
-	* [To insert an image](#to-insert-an-image)
-	* [To directly install a plugin](#to-directly-install-a-plugin)
-	* [Export tiddlers as pdf/ps](#export-tiddlers-as-pdfps)
-	* [Show Tiddlywiki version number](#show-tiddlywiki-version-number)
+    * [To use the file browser to insert a file into the wiki](#to-use-the-file-browser-to-insert-a-file-into-the-wiki)
+    * [To show a text file with an iframe](#to-show-a-text-file-with-an-iframe)
+    * [To insert an image](#to-insert-an-image)
+    * [To directly install a plugin](#to-directly-install-a-plugin)
+    * [Export tiddlers as pdf/ps](#export-tiddlers-as-pdfps)
+    * [Show Tiddlywiki version number](#show-tiddlywiki-version-number)
 
 <!-- vim-markdown-toc -->
 

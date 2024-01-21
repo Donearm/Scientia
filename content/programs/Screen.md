@@ -1,7 +1,7 @@
 ---
 title: Screen
 bookCollapseSection: true
-weight: 629
+weight: 633
 ---
 
 * `C-a :` = Go in command mode, where it's possible to insert commands as with Vi

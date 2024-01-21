@@ -40,24 +40,6 @@ Cat6 Up to 1000Mb/s (1 Gigabit) and 100 meters. Cat6a (&amp;ldquo;augmented&amp;
 Cat7 Up to 10000Mb/s (10 Gigabit) and 100 meters. It uses an 8P8C cable and not the classic RJ45. Mostly superseded by the more compatible Cat6a.</description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>https://donearm.github.io/Scientia/various/hugo/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/hugo/index.html</guid>
-      <description>Syntax Highlighting Hugo makes use of Chroma as its syntax highlighter. It is possible to select the style from these here by adding in Hugo config:
-pygmentsStyle = &amp;#34;dracula&amp;#34; Multiline in frontmatter It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, |2-. It may be used so:
-key: |2- Some content on line 1 other content on line 2 Further content on line 3 The spacing should be kept as inserted.</description>
-    </item>
-    <item>
-      <title>i3</title>
-      <link>https://donearm.github.io/Scientia/various/i3/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/i3/index.html</guid>
-      <description>How to save layout and reload at boot First, save the current layout of any workspace with:
-i3-save-tree --workspace 1 &amp;gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
-After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.</description>
-    </item>
-    <item>
       <title>Load Balancing</title>
       <link>https://donearm.github.io/Scientia/various/load_balancing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -74,13 +56,6 @@ Text to be linked[^1] and then at the bottom of the file:
 [^1]: text or link </description>
     </item>
     <item>
-      <title>MongoDB</title>
-      <link>https://donearm.github.io/Scientia/various/mongodb/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/mongodb/index.html</guid>
-      <description>Basic CLI commands CRUD commands Importing csv files Basic CLI commands show dbs = list all databases db = show current database use dbname = select database dbname CRUD commands db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike.</description>
-    </item>
-    <item>
       <title>Networks</title>
       <link>https://donearm.github.io/Scientia/various/networks/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -95,36 +70,12 @@ Text to be linked[^1] and then at the bottom of the file:
       <description>Beancount Reporting bean-report file.ledger balances = basic balance report command. bean-report file.ledger balances -e AccountName = same as above but only showing account names matching AccountName. bean-report file.ledger balances | treeify = piping the basic balance command to treeify, provided by beancount, to have a tree-like visualization. bean-report file.ledger balsheet &amp;gt; balance.html = output the balance report to an html file. bean-report file.ledger income &amp;gt; income.html = output the income report to an html file.</description>
     </item>
     <item>
-      <title>Samba and Nfs</title>
-      <link>https://donearm.github.io/Scientia/various/samba_and_nfs/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/samba_and_nfs/index.html</guid>
-      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
-    </item>
-    <item>
       <title>SEO</title>
       <link>https://donearm.github.io/Scientia/various/seo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/various/seo/index.html</guid>
       <description>SEO audit checklist Useful Wordpress plugins Pages for local businesses SEO Evaluations How to report on SEO Common metrics Engagement metrics Google Analytics ChatGPT SEO audit checklist Roughly copied from Chase Reiner&amp;rsquo;s
 Primary Core SEO Issues – The most common SEO issues or mistakes include focusing on content quantity instead of quality, incomplete on-page SEO optimization, overlooking the importance of well-constructed URLs, and focusing on too many keywords. Site Redirects To Preferred Version – You can check the documentation of your hosting provider to figure out how to set up 301 redirects to send your website visitors from the non-preferred URLs to the preferred version.</description>
-    </item>
-    <item>
-      <title>SQLite</title>
-      <link>https://donearm.github.io/Scientia/various/sqlite/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/sqlite/index.html</guid>
-      <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
-    </item>
-    <item>
-      <title>Tiddlywiki</title>
-      <link>https://donearm.github.io/Scientia/various/tiddlywiki/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/tiddlywiki/index.html</guid>
-      <description>Tweaks and features of Tiddlywiki To use the file browser to insert a file into the wiki To show a text file with an iframe To insert an image To directly install a plugin Export tiddlers as pdf/ps Show Tiddlywiki version number Tweaks and features of Tiddlywiki Tiddlywiki markup list
-To use the file browser to insert a file into the wiki This:
-&amp;lt;html&amp;gt;&amp;lt;div align=&amp;#34;left&amp;#34;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;#34;whatFile()&amp;#34; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt; or this:</description>
     </item>
     <item>
       <title>Useful info</title>
@@ -134,13 +85,6 @@ To use the file browser to insert a file into the wiki This:
       <description>Driving license Traveling Electronics Banks and Financing Law and taxes Poland A miscellaneous collection of links that are not immediately useful but may be, eventually. Nothing that would match the other pages only.
 Driving license Driving license (patente B) to obtain in Italy:
 First theory exam, of 40 questions. This can be done online. Then, if passed, a &amp;ldquo;foglio rosa&amp;rdquo; is granted which gives the owner the right to take the practical exam Within 6 months from the theory exam, the practical one can be attempted.</description>
-    </item>
-    <item>
-      <title>Zfs</title>
-      <link>https://donearm.github.io/Scientia/various/zfs/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donearm.github.io/Scientia/various/zfs/index.html</guid>
-      <description>Useful commands arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified ZFS encrypted datasets zfs get -p encryption,keystatus,keylocation,pbkdf2iters $dataset = show details about an encrypted dataset zfs-load-key $dataset = load the key for the specified dataset, enabling access to it zfs-unload-key $dataset = unload a previously loaded key for a data set, preventing it from being accessed later without giving the key again zfs mount $dataset = mount the dataset zfs unmount $dataset = unmount the dataset </description>
     </item>
   </channel>
 </rss>

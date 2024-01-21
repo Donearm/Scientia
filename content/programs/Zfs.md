@@ -1,7 +1,7 @@
 ---
 title: Zfs
 bookCollapseSection: true
-weight: 860
+weight: 643
 ---
 
 ## Useful commands

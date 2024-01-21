@@ -1,14 +1,14 @@
 ---
 title: MongoDB
 bookCollapseSection: true
-weight: 835
+weight: 628
 ---
 
 <!-- vim-markdown-toc GFM -->
 
 * [Basic CLI commands](#basic-cli-commands)
 * [CRUD commands](#crud-commands)
-	* [Importing csv files](#importing-csv-files)
+    * [Importing csv files](#importing-csv-files)
 
 <!-- vim-markdown-toc -->
 

@@ -1,7 +1,7 @@
 ---
 title: URxvt
 bookCollapseSection: true
-weight: 633
+weight: 639
 ---
 
 ### Change charset on the fly
