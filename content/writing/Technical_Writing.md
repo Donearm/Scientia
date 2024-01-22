@@ -18,6 +18,7 @@ weight: 1510
         * [Market Requirements Documents (MRD)](#market-requirements-documents-mrd)
         * [Request For Proposals (RFP)](#request-for-proposals-rfp)
     * [Scientific papers](#scientific-papers)
+* [Terminology](#terminology)
 * [Books](#books)
     * [Writing and Technical Writing books](#writing-and-technical-writing-books)
     * [Styling and Designing Content books](#styling-and-designing-content-books)
@@ -158,6 +159,33 @@ Unrelated to most of the above are scientific papers. While they can fall into
 the "white paper" umbrella, proper scientific papers are focused on actual data 
 coming from a research, ratehr than starting from the point of view of a 
 problem or use case. These are thorough, accurate, highly technical documents.
+
+## Terminology
+
+_still a work in progress_
+
+* Documentation Guide
+* Functional Writing
+* Procedural Writing
+* Documentation Process
+* Structured Writing
+* Authoring
+* Unstructured Writing
+* Technical Accuracy
+* Complex Audience
+* Cluster Sketch
+* Par Statement
+* Phantom Readers
+* Superstructures
+* Abstract
+* Bottom-Up Processing
+* Echo Words
+* Forecasting Statements
+* Parallelism
+* Top-Down Processing
+* MVP
+* Problem Statement
+* Use Case Diagrams
 
 ## Books
 
