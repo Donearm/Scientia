@@ -12,6 +12,9 @@ weight: 1670
 * [Banks and Financing](#banks-and-financing)
 * [Law and taxes](#law-and-taxes)
     * [Poland](#poland)
+* [House maintenance](#house-maintenance)
+    * [Cleaning](#cleaning)
+        * [Natural Fabric Softener](#natural-fabric-softener)
 
 <!-- vim-markdown-toc -->
 
@@ -65,3 +68,18 @@ A few banks that might give mortgage to non-residents in their country
     * This includes the possibility for a foreign company to register 
       themselves and pay for your the social/health contributions
 * [How to calculate social contributions with the ZUS](https://www.zus.pl/firmy/zgloszenie-platnika/firmy/zgloszenie-podmiotu-pelniacego-role-platnika-zagranicznego)
+
+## House maintenance
+
+### Cleaning
+
+#### Natural Fabric Softener
+
+Instead of purchasing an industrial one, it is possible to use a mixture of:
+
+* 500ml of water
+* 50ml citric acid (lemon juice is also ok)
+* a few drops of essential oils (to improve smell of fabrics)
+
+Mix well and use like you would a normal softener, in the same slot of the 
+washing machine.
