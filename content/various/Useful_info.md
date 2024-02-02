@@ -12,6 +12,7 @@ weight: 1670
 * [Banks and Financing](#banks-and-financing)
 * [Law and taxes](#law-and-taxes)
     * [Poland](#poland)
+        * [KUP (Koszty uzyskania przychodów)](#kup-koszty-uzyskania-przychodów)
 * [House maintenance](#house-maintenance)
     * [Cleaning](#cleaning)
         * [Natural Fabric Softener](#natural-fabric-softener)
@@ -68,6 +69,15 @@ A few banks that might give mortgage to non-residents in their country
     * This includes the possibility for a foreign company to register 
       themselves and pay for your the social/health contributions
 * [How to calculate social contributions with the ZUS](https://www.zus.pl/firmy/zgloszenie-platnika/firmy/zgloszenie-podmiotu-pelniacego-role-platnika-zagranicznego)
+
+#### KUP (Koszty uzyskania przychodów)
+
+A few useful links (updated as of 02/2024)
+
+* [Info](https://www.pitax.pl/wiedza/przepisy-i-wskazniki/koszty-uzyskania-przychodu/)
+* [Info on podatki.gov.pl](https://www.podatki.gov.pl/media/9729/broszura-pit-37-za-2023-r.pdf) [PDF]
+* [Info on lex.pl](https://sip.lex.pl/akty-prawne/dzu-dziennik-ustaw/podatek-dochodowy-od-osob-fizycznych-16794311/art-22)
+* [rozliczenie-z-dochodow-z-praw-autorskich](https://www.podatki.gov.pl/pit/osoba-nieprowadzaca-dzialalnosci-gospodarczej/rozliczenie-osob-26-60/rozliczenie-z-dochodow-z-praw-autorskich/)
 
 ## House maintenance
 
