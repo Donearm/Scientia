@@ -61,6 +61,7 @@ weight: 1510
 * [Good practices and procedures](#good-practices-and-procedures)
     * [Developing a Doc Plan](#developing-a-doc-plan)
     * [Outline for good API documentation](#outline-for-good-api-documentation)
+    * [Writing a good tutorial](#writing-a-good-tutorial)
     * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
@@ -459,6 +460,48 @@ Optionally, and especially when working for external clients, these points can b
   variable and so on
 
 An useful AsciiDoc template is available on [arc42 Github](https://github.com/arc42/arc42-template/tree/master).
+
+### Writing a good tutorial
+
+A tutorial is a lesson. It is not "do A then B", mechanically, but should teach 
+the reader how to do A and B by themselves. A tutorial must be:
+
+* **Meaningful** - readers should get a sense of accomplishment
+* **Successful** - readers should be able to complete the tutorial
+* **Logical** - the path readers follow throough the tutorial needs to make sense
+* **Usefully complete** - readers must encounter all the actions, concepts, and tools they need to become familiar with
+
+Do not tell readers what they will learn. Tell them what **we** we'll do and 
+encounter. Assume they will learn themselves, you are not going to teach them, 
+only showing.
+
+Make sure that every step of the tutorial can produce visible results. Make 
+these results be as early as possible in the tutorial, to give readers a sense 
+of accomplishment.
+
+Prepare users for possible consequences of their actions. Inform them if a 
+command will produce a long output, or if it will take a longer than possibly 
+expected time to run. Also don't ignore lack of consequences, as in a message 
+that should but did not appear, or a status that readers should reach but may 
+not. Constantly inform readers of these possible situations.
+
+Similarly, inform also readers of things that they should notice. A command 
+prompt changes, or a new window opens etc.
+
+Minimize explanations that are not strictly necessary to understand the 
+tutorial. Do not explain choices made in detail, just inform the readers that 
+we will be using program x or go with option y because of 
+convenience/brevity/speed/whatever, and move on. There are other places where a 
+detailed discussion of these choices may be done but they are not in the 
+tutorial.
+
+Similarly, ignore options and alternatives. Your tutorial should remain focused 
+on the minimal steps necessary to reach the conclusion, not in all the possible 
+ones that could lead to it. Take a path, and follow it, and only it.
+
+Most of the above suggestions are extrapolated from 
+[Diataxis](https://diataxis.fr/tutorials/), and adapted by me for my own 
+understanding.
 
 ### Tackling a new technical writing project
 
