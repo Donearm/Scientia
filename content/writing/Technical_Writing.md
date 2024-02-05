@@ -62,6 +62,8 @@ weight: 1510
     * [Developing a Doc Plan](#developing-a-doc-plan)
     * [Outline for good API documentation](#outline-for-good-api-documentation)
     * [Writing a good tutorial](#writing-a-good-tutorial)
+        * [ADDIE Model](#addie-model)
+        * [Breakdown of a tutorial](#breakdown-of-a-tutorial)
     * [Tackling a new technical writing project](#tackling-a-new-technical-writing-project)
 
 <!-- vim-markdown-toc -->
@@ -502,6 +504,27 @@ ones that could lead to it. Take a path, and follow it, and only it.
 Most of the above suggestions are extrapolated from 
 [Diataxis](https://diataxis.fr/tutorials/), and adapted by me for my own 
 understanding.
+
+#### ADDIE Model
+
+An Instructional Design model that stands for Analyze, Design, Develop, 
+Implement, and Evaluate. It is split into 5 phases, [Analysis, Design, 
+Development, Implementation, and Evaluation](https://www.uwb.edu/it/addie).
+
+#### Breakdown of a tutorial
+
+1. Identify your audience
+    * **Developers** (API, data models etc.)
+    * **Admins** (Installation, setup, integration/plugins etc.)
+    * **End Users** (How to use feature x, how to accomplish y)
+2. Determine the contextual layers that should be covered in the tutorial
+    * **Referential** (glossaries, FAQs, API libraries, release notes, patch notes, admin/user guides that focus on the features only)
+    * **Procedural** (how-to, installation guides, integration guides, support instructions)
+    * **Conceptual learning** (planning guides, frameworks, best practices)
+    * **Workflows** (cross-feature use cases for audience x)
+
+Once both are identified, it is easy to create a skeleton of the desired 
+tutorial.
 
 ### Tackling a new technical writing project
 
