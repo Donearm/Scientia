@@ -4,6 +4,13 @@ bookCollapseSection: true
 weight: 1120
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Chronology of fantasy of importance](#chronology-of-fantasy-of-importance)
+* [Warhammer 40k Reading list](#warhammer-40k-reading-list)
+
+<!-- vim-markdown-toc -->
+
 I have always been an avid fantasy reader. I started as a young kid in the late 1980s and ended up reading most of what I believe are the most important works within the genre. As a strong believers that you need to know the past to appreciate the right things in the present, I have developed a canon of the important works of fantasy that everybody should read to be well-versed in it.
 
 In a separate page I keep my [Malazan notes](../malazan), which include the perhaps definitive chronology of the series.
@@ -35,3 +42,18 @@ Also worth noting a project of a friend blogger that keeps the count of the word
 * **2000**: Perdido Street Station is published.
 * **2004-2006**: The first trilogy (The Prince of Nothing) of Scott Bakker's Second Apocalypse series is published.
 * **2009-2017**: The second trilogy (The Aspect-Emperor) of Scott Bakker's Second Apocalypse series is published.
+
+## Warhammer 40k Reading list
+
+Not a fan (yet?) of Warhammer 40k but it has always been suggested to me as something I would love. Eventually I will start reading it. This possible reading list I found on Youtube that is supposedly a gentle introduction to the world and lore, without delving into large books earlier.
+
+1. Heroes of the Space Marines (short stories collection)
+2. Crusade (short stories collection)
+3. There Is Only War (short stories collection)
+4. Novella Series (1 and 2, another short stories collection)
+5. Valdor: Birth of the Imperium
+6. Dark Adeptus
+7. Path of the Warrior
+8. Eisenhorn (trilogy)
+9. The Macharian Crusade (trilogy)
+10. Night Lords (trilogy)
