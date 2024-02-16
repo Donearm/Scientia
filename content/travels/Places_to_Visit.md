@@ -6,41 +6,43 @@ weight: 910
 <!-- vim-markdown-toc GFM -->
 
 * [Europe](#europe)
-	* [Austria](#austria)
-		* [Wien](#wien)
-	* [Cyprus](#cyprus)
-		* [Ayia Napa beaches](#ayia-napa-beaches)
-		* [Protaras beaches](#protaras-beaches)
-	* [Croatia](#croatia)
-		* [Best beaches](#best-beaches)
-		* [Croatian tour agencies](#croatian-tour-agencies)
-	* [Italy](#italy)
-		* [North Italy](#north-italy)
-			* [Venice](#venice)
-	* [Malta](#malta)
-		* [Maltese best beaches](#maltese-best-beaches)
-	* [Portugal](#portugal)
-		* [Portugal beaches](#portugal-beaches)
-	* [Sweden](#sweden)
-		* [Stockholm](#stockholm)
-			* [Various costs (updated as of 2021)](#various-costs-updated-as-of-2021)
+    * [Austria](#austria)
+        * [Wien](#wien)
+    * [Cyprus](#cyprus)
+        * [Ayia Napa beaches](#ayia-napa-beaches)
+        * [Protaras beaches](#protaras-beaches)
+    * [Croatia](#croatia)
+        * [Best beaches](#best-beaches)
+        * [Croatian tour agencies](#croatian-tour-agencies)
+    * [France](#france)
+        * [French Riviera](#french-riviera)
+    * [Italy](#italy)
+        * [North Italy](#north-italy)
+            * [Venice](#venice)
+    * [Malta](#malta)
+        * [Maltese best beaches](#maltese-best-beaches)
+    * [Portugal](#portugal)
+        * [Portugal beaches](#portugal-beaches)
+    * [Sweden](#sweden)
+        * [Stockholm](#stockholm)
+            * [Various costs (updated as of 2021)](#various-costs-updated-as-of-2021)
 * [Africa](#africa)
-	* [Egypt](#egypt)
+    * [Egypt](#egypt)
 * [Americas](#americas)
-	* [Mexico](#mexico)
-		* [Cenotes](#cenotes)
-		* [Best beaches](#best-beaches-1)
-	* [Caribbeans](#caribbeans)
+    * [Mexico](#mexico)
+        * [Cenotes](#cenotes)
+        * [Best beaches](#best-beaches-1)
+    * [Caribbeans](#caribbeans)
 * [Asia](#asia)
-	* [Indonesia](#indonesia)
-		* [Bali](#bali)
-	* [Thailand](#thailand)
-		* [Bangkok](#bangkok)
-		* [Pattaya](#pattaya)
-	* [Turkey](#turkey)
-		* [Istanbul](#istanbul)
+    * [Indonesia](#indonesia)
+        * [Bali](#bali)
+    * [Thailand](#thailand)
+        * [Bangkok](#bangkok)
+        * [Pattaya](#pattaya)
+    * [Turkey](#turkey)
+        * [Istanbul](#istanbul)
 * [Oceania](#oceania)
-	* [French Polynesia](#french-polynesia)
+    * [French Polynesia](#french-polynesia)
 
 <!-- vim-markdown-toc -->
 
@@ -92,6 +94,46 @@ weight: 910
 
 + [Adriatic Explore](http://www.adriatic-explore.com/)
 + [Atlas Croatia](http://www.atlas-croatia.com)
+
+## France
+
+### French Riviera
+
+A good set of suggestions taken from /r/travel:
+
+```
+Wasn’t a big fan of Antibes. Yachts and shopping basically.
+
+In Nice the beaches are pebbles which is interesting. There is a nice forested area and waterfall (man made) and nice boardwalk. Really easy to get around lots of restaurants. Good jumping off point. Stays are well priced when I went.
+
+Cannes has sand beaches with beach clubs along the board walk everywhere. A little pricey. There is public beach as well.
+
+The train along the coast was very picturesque and cheap. Monaco was beautiful go into the casino Monte Carlo in Monaco gamble and have a drink in one of the hidden rooms. I think it’s $27 euros to go in which includes a drink and a couple chips to gamble. The casino is stunning.
+
+Menton was a cute pit stop. A couple well priced restaurants along the board wall.
+
+Eze is a nice view once you get up there. Give yourself some time to get up to the top from the train.
+
+St. Tropez beaches were great. Tahiti beach was the best. It is hard to get around without a car in St Tropez and there are drinking and driving road blocks frequently at night on weekends and for events.
+
+Any and all wineries. They are free in St Tropez. Some you have to buy one bottle.
+
+If you get a chance to go into Provence for the Rosé and chateau tours. Beautiful. Chateau D’esclans (make a reservation).
+
+ChateauNeuf du pape if you like red wine and some actually really good whites as well. Cute town on a hill with wine cave tasting rooms everywhere.
+
+Cassis has amazing boat tours or you can hike into the beautiful beaches with turquoise water. Some swimming caves as well.
+
+Avignon if you want some history.
+
+I really liked the medieval towns. We stayed in Biot and loved it. The town of Biot once inside the medieval walls is very cool, and not many tourists.
+
+St. Paul de Vance, was another medieval town, bigger, but very touristy.
+
+The beaches around Montpellier are beautiful if you end up that far.
+
+Pont du guard was a great half day, cliff jumping in front of an old massive Roman aqueduct.
+```
 
 ## Italy
 
