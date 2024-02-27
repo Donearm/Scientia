@@ -4,6 +4,19 @@ bookCollapseSection: true
 weight: 1610
 ---
 
+## Units of measure
+
+* Voltage(V) = energy needed to bring one unit of positive charge from the point of minor potential to the one of max potential
+* Coulomb(C) = unit of the electrical charge
+* Current(I) = the flow of charged particles moving through a point
+* Ampere(A) = unit of the current
+* Power(P) = rate of transfer of electrical energy within a circuit. Calculated as `P = V x I` 
+* Watt(W) = unit of power
+* Resistence(R) = the measure of the opposition to the flow of electrical current by an object. Calculated as `R = V/I`
+* Ohm(℧) = unit of the resistence
+* Conductance(G) = rate of conductivity of an electrical circuit. Calculated as `G = 1/R`
+* Siemens(S) = also called _mho_, unit of measure of the conductivity of an electrical circuit
+  
 {{% expand title="A good answer on how to calculate power consumption" open="true" %}}
 The Amp-hours of a battery gives the number of hours it can deliver 1 amp, or 
 the number of amps it can deliver for one hour.

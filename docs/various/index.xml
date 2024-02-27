@@ -35,9 +35,7 @@ Bitcoin/Litecoin API commands getaccountaddress &amp;quot;&amp;quot; = Print BTC
       <link>https://donearm.github.io/Scientia/various/electricity/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/various/electricity/index.html</guid>
-      <description>A good answer on how to calculate power consumption The Amp-hours of a battery gives the number of hours it can deliver 1 amp, or the number of amps it can deliver for one hour.
-Amp-hours = amps x hours.
-So a 50Ah battery can run for 50 hours at one amp, or 50 amps for one hour. Or 2 amps for 25 hours, or 25 amps for 2 hours.</description>
+      <description>Units of measure Voltage(V) = energy needed to bring one unit of positive charge from the point of minor potential to the one of max potential Coulomb(C) = unit of the electrical charge Current(I) = the flow of charged particles moving through a point Ampere(A) = unit of the current Power(P) = rate of transfer of electrical energy within a circuit. Calculated as P = V x I Watt(W) = unit of power Resistence(R) = the measure of the opposition to the flow of electrical current by an object.</description>
     </item>
     <item>
       <title>Load Balancing</title>
