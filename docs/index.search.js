@@ -10,7 +10,7 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": null,
-    "title": "python",
+    "title": "Python",
     "uri": "/Scientia/tags/python/index.html"
   },
   {

@@ -15,8 +15,15 @@ Here I collect a few links and tips about games I enjoy(ed).
     * [Add 100 millions to a career](#add-100-millions-to-a-career)
     * [Personal records](#personal-records)
 * [Europa Universalis IV](#europa-universalis-iv)
+* [Max Payne](#max-payne)
+    * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor)
+* [Rune](#rune)
+    * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor-1)
+* [Serious Sam: The Second Encounter](#serious-sam-the-second-encounter)
+    * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor-2)
 * [The Elder Scrolls Online](#the-elder-scrolls-online)
     * [Install manually Addons on Linux](#install-manually-addons-on-linux)
+* [UT2004](#ut2004)
 * [Amiga games](#amiga-games)
 
 <!-- vim-markdown-toc -->
@@ -404,6 +411,59 @@ Source: https://eu4cheats.com/
 
 [EUIV Country Tag list](https://eu4cheats.com/country-tags)
 
+## Max Payne
+
+### Adapt the game to a widescreen monitor
+
+Run Max Payne with the console command "maxpayne.exe -developer". Select
+a widescreen resolution, and launch the game. After a level loads,
+you'll notice it is obviously stretched. Press F12 until the ingame
+console appears. Type this command (case sensitive):
+
+```
+MaxPayne_GameMode->GM_ChangeFOV(1.2,0);
+```
+
+Then press F12 until the screen is clear of dev messages.
+
+Sadly, the proportions will still be way off, but at least you now have
+more horizontal display. Also, you will need to repeat this command
+every time a new level loads. You might also have to repeat it after
+certain cut-scenes, or even normal scripted events within the level.
+Fortunately, you can easily repeat the command just by opening the
+console and pressing the up key.
+
+## Rune
+
+### Adapt the game to a widescreen monitor
+
+Load Rune, and select a widescreen resolution from the menu. When you begin a new game, bring up a console (~ key), and type `fov 100.`
+
+Then quicksave. If you quickload, it will remember your FOV setting. However, it will forget the FOV setting each time you enter a new map.
+
+Therefore, you will need to enter the `fov 100` command and quicksave each time you enter a new map. Also, the command doesn't work in multiplayer.
+
+## Serious Sam: The Second Encounter
+
+### Adapt the game to a widescreen monitor
+
+Go to `<gameDir>\scripts`. Open `PersistentSymbols.ini`. Find these lines:
+
+```
+persistent extern INDEX sam_iScreenSizeI=(INDEX)xxxx;
+persistent extern INDEX sam_iScreenSizeJ=(INDEX)xxxx;
+```
+
+Change them to set your resolution (the first one is your horizontal value, the second is your vertical value).
+
+Now find this line:
+
+```
+persistent extern user FLOAT plr_fFOV=(FLOAT)xxx;
+```
+
+Increase the FOV value according to your preference. The default is 90. 100 is recommended for 16:10 displays, and 105 is recommended for 16:9 displays.
+
 ## The Elder Scrolls Online
 
 ### Install manually Addons on Linux
@@ -412,6 +472,99 @@ Addons should work equally well under Windows and Linux, unless there is some ex
 To install them, manually, put them into the following directory:
 
 `.local/share/Steam/steamapps/compatdata/306130/pfx/drive_c/users/steamuser/My Documents/Elder Scrolls Online/live/AddOns`
+
+## UT2004
+
+{{% expand title="UT2004 cheatcodes" %}}
+
+| Command Name  | Description |
+|---------------|-------------|
+|ALLAMMO|Gives full ammo for all weapons||
+|ALLWEAPONS|Gives you all weapons|
+|FLY|You can fly around|
+|GHOST|Noclip through walls|
+|GOD|God Mode|
+|LOADED|Gives all weapons, ammo, and 100 adrenaline|
+|TELEPORT|Teleport to a random spot in the map|
+|WALK|You stop flying|
+|ADDBOTS [number]|Adds the specified number of bots|
+|BEHINDVIEW 1|Changes to third person view|
+|BEHINDVIEW 0|Changes to first person view|
+|DISCONNECT|Disconnect from current server|
+|EXIT|Quits the game|
+|KILLBOTS|Gets rid of all bots|
+|OPEN [IP address]|Connect to a specific server IP|
+|OPEN [mapname]|Opens specified map|
+|QUIT|Quits the game|
+|RECONNECT|Reconnect to the current server|
+|SWITCHLEVEL [mapname]|Switches to the specified level|
+|SWITCHTEAM|Switch your player's team|
+|SUICIDE|Kills yourself|
+|TEAMSAY [text]|Displays your message in team chat|
+|PLAYERSONLY|Freezes \ pauses the bots|
+|SAY [text]|Displays your message in global chat|
+|SETNAME [playername]|Changes your player name|
+|MEMSTAT|Displays Windows memory usage|
+|STAT ALL|Shows all stats|
+|STAT AUDIO|Shows audio stats|
+|STAT FPS|Displays your frames per second|
+|STAT GAME|Displays game stats|
+|STAT HARDWARE|Shows hardware stats|
+|STAT NET|Shows network game play stats|
+|STAT NONE|Turns off all stats|
+|STAT RENDER|Displays rendering statistics|
+|DEMOPLAY [demoname]|Plays the specified demo|
+|DEMOREC [demoname]|Records a demo using the demoname you type|
+|STOPDEMO|Stop recording a demo|
+|ADMIN SWITCHLEVEL [mapname?game=gametype?mutator=mutator]|Changes the current level to the specified level, game type and mutators|
+|ADMIN [command]|Performs the specified command|
+|ADMINLOGIN [password]|Logs the admininstrator onto the server using the specified password|
+|ADMINLOGOUT|Logs the administrator off the server.|
+|ADMIN SET UWeb.Webserver bEnabled True|Enables the remote admin webserver (after level change)|
+|ADMIN SET UWeb.Webserver bEnabled False|Disables the remote admin webserver (after level change)|
+|KICK [playername]|Kicks the specified player from the server|
+|KICKBAN [playername]|Kicks and bans the specified player from the server using their IP address. To unban the player, edit the server.ini or use the web admin interface|
+|BRIGHTNESS [number]|Changes the brightness level to the specified number|
+|CDTRACK [number]|Plays the specified CD track number|
+|CONFIGHASH|Displays configuration info|
+|CONTRAST [number]|Changes the contrast level to the specified number|
+|DEBUG CRASH|Test crashes the game with an error|
+|DEBUG EATMEM|Tests memory allocation until full|
+|DEBUG GPF|Test crashes the game with a general protection fault error|
+|DEBUG RECURSE|Test crashes the game by infinite recursion|
+|DUMPCACHE|Displays the memory gcache contents|
+|EXEC [filename]|Executes a file in the UT2003 /system/ directory by default|
+|FLUSH|Flushes all caches and relights|
+|FOV [number]|Changes the field of view to the specified number|
+|FIXEDVISIBILITY|For use when testing your own level. Fixes the engine's visibility from your current point of view. You can then walk around and see exactly what is being drawn, check that antiportals are working etc. Enter it again|
+|GAMMA [number]|Changes the gamma level to the specified number|
+|GETCOLORDEPTHS|Displays the maximum color depth supported by your hardware|
+|GETCURRENTCOLORDEPTHS|Displays your current color depth|
+|GETCURRENTRES|Displays your current resolution|
+|GETCURRENTTICKRATE|Displays your current tick rate|
+|GETMAXTICKRATE|Displays the maximum allowed tick rate|
+|MUSICORDER [number]|Change to a certain track in the song (0=ambient, 1=action, 2=suspense)|
+|NETSPEED [number]|Sets the net speed, default is 10000|
+|OBJ CLASSES|Displays a list of object classes|
+|OBJ GARBAGE|Collects and purges objects no longer in use|
+|OBJ HASH|Displays object hashing statistics|
+|OBJ LINKERS|Displays a list of active linkers|
+|PAUSESOUNDS|Pauses all sounds|
+|PREFERENCES|Opens advanced settings|
+|RELAUNCH|Relaunches the engine|
+|RENDEREMULATE [gf1/gf2]|Lets you see how your level will look on different cards (ex. if some of your shaders are too complicated and don't have fallbacks).|
+|REPORT|Copies a report of the current game to clipboard|
+|SET [class variable value]|Sets a specified class and specified variable with the specified value|
+|SETSENSITIVITY [number]|Sets the mouse sensitivity to the specified number|
+|SETRES [WxHxD]|Sets your screen resolution to the specified width, height, and color depth|
+|SLOMO 1|Sets the speed of the game back to normal real time speed|
+|SLOMO 2|Sets speed to double. Increase number to go faster|
+|SLOMO .5|Sets speed to half. Decrease number to go slower|
+|SOCKETS|Displays a list of sockets in use|
+|TOGGLEFULLSCREEN|Toggles fullscreen mode|
+|TYPE [text]|Displays the specified text on the console|
+|UNPAUSESOUNDS|Un-pauses all sounds|
+{{% /expand %}}
 
 ## Amiga games
 

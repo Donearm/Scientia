@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.123.4">
     <meta name="generator" content="Relearn 5.6.5">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
@@ -11,19 +11,19 @@
     <title>Lua - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Scientia/css/fontawesome-all.min.css?1708094857" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1708094857" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/featherlight.min.css?1708094857" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1708094857" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/auto-complete.css?1708094857" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1708094857" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/perfect-scrollbar.min.css?1708094857" rel="stylesheet">
-    <link href="/Scientia/css/nucleus.css?1708094857" rel="stylesheet">
-    <link href="/Scientia/css/fonts.css?1708094857" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1708094857" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/theme.css?1708094857" rel="stylesheet">
-    <link href="/Scientia/css/theme-fpc.css?1708094857" rel="stylesheet" id="variant-style">
-    <link href="/Scientia/css/ie.css?1708094857" rel="stylesheet">
-    <link href="/Scientia/css/variant.css?1708094857" rel="stylesheet">
-    <link href="/Scientia/css/print.css?1708094857" rel="stylesheet" media="print">
-    <script src="/Scientia/js/url.js?1708094857"></script>
-    <script src="/Scientia/js/variant.js?1708094857"></script>
+    <link href="/Scientia/css/fontawesome-all.min.css?1709048153" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1709048153" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1709048153" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1709048153" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1709048153" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1709048153" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1709048153" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1709048153" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1709048153" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1709048153" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1709048153" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1709048153" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1709048153" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1709048153" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1709048153" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1709048153"></script>
+    <script src="/Scientia/js/variant.js?1709048153"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Scientia/js/jquery.min.js?1708094857" defer></script>
+    <script src="/Scientia/js/jquery.min.js?1709048153" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Scientia/programming_languages/lua/index.html">
     <div id="body" class="default-animation">
@@ -113,35 +113,35 @@
 <a id="logo" href="/Personal-Wiki"><img src="/images/fpc-darkbluelogo.png"></a>
 
         </div>
-        <form action="/Scientia/search.html" method="get"><div class="searchbox default-animation">
-          <button type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
           <label class="a11y-only" for="search-by">Search</label>
           <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
           <span data-search-clear=""><i class="fas fa-times"></i></span>
-        </div></form>
+        </div>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Scientia/js/auto-complete.js?1708094859" defer></script>
-        <script src="/Scientia/js/lunr.min.js?1708094859" defer></script>
-        <script src="/Scientia/js/lunr.stemmer.support.min.js?1708094859" defer></script>
-        <script src="/Scientia/js/lunr.multi.min.js?1708094859" defer></script>
-        <script src="/Scientia/js/lunr.en.min.js?1708094859" defer></script>
-        <script src="/Scientia/js/search.js?1708094859" defer></script>
+        <script src="/Scientia/js/auto-complete.js?1709048154" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1709048154" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1709048154" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1709048154" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1709048154" defer></script>
+        <script src="/Scientia/js/search.js?1709048154" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
-          <li data-nav-id="/Scientia/devops/index.html" class="dd-item"><input type="checkbox" id="section-28776b52da83a599a93e5a3c3f47860b" aria-controls="subsections-28776b52da83a599a93e5a3c3f47860b" class="toggle"><label class="a11y-only toggle" for="section-28776b52da83a599a93e5a3c3f47860b" >Submenu DevOps</label><a href="/Scientia/devops/index.html">DevOps</a><ul id="subsections-28776b52da83a599a93e5a3c3f47860b">
+          <li data-nav-id="/Scientia/devops/index.html" class="dd-item"><input type="checkbox" id="section-6ebc05834e11f0032a7f130519e6a8de" aria-controls="subsections-6ebc05834e11f0032a7f130519e6a8de" class="toggle"><label class="a11y-only toggle" for="section-6ebc05834e11f0032a7f130519e6a8de" >Submenu DevOps</label><a href="/Scientia/devops/index.html">DevOps</a><ul id="subsections-6ebc05834e11f0032a7f130519e6a8de">
           <li data-nav-id="/Scientia/devops/aws/index.html" class="dd-item"><a href="/Scientia/devops/aws/index.html">AWS</a></li>
           <li data-nav-id="/Scientia/devops/docker/index.html" class="dd-item"><a href="/Scientia/devops/docker/index.html">Docker</a></li>
           <li data-nav-id="/Scientia/devops/kubernetes/index.html" class="dd-item"><a href="/Scientia/devops/kubernetes/index.html">Kubernetes</a></li>
           <li data-nav-id="/Scientia/devops/system_design/index.html" class="dd-item"><a href="/Scientia/devops/system_design/index.html">System Design</a></li></ul></li>
-          <li data-nav-id="/Scientia/frontend/index.html" class="dd-item"><input type="checkbox" id="section-1f846e8dcef1e4719580d68fa558c953" aria-controls="subsections-1f846e8dcef1e4719580d68fa558c953" class="toggle"><label class="a11y-only toggle" for="section-1f846e8dcef1e4719580d68fa558c953" >Submenu Frontend</label><a href="/Scientia/frontend/index.html">Frontend</a><ul id="subsections-1f846e8dcef1e4719580d68fa558c953">
+          <li data-nav-id="/Scientia/frontend/index.html" class="dd-item"><input type="checkbox" id="section-85aabb9721911d432d0c9c491c5a6ccb" aria-controls="subsections-85aabb9721911d432d0c9c491c5a6ccb" class="toggle"><label class="a11y-only toggle" for="section-85aabb9721911d432d0c9c491c5a6ccb" >Submenu Frontend</label><a href="/Scientia/frontend/index.html">Frontend</a><ul id="subsections-85aabb9721911d432d0c9c491c5a6ccb">
           <li data-nav-id="/Scientia/frontend/css/index.html" class="dd-item"><a href="/Scientia/frontend/css/index.html">Css</a></li>
           <li data-nav-id="/Scientia/frontend/d3/index.html" class="dd-item"><a href="/Scientia/frontend/d3/index.html">D3</a></li>
           <li data-nav-id="/Scientia/frontend/jquery/index.html" class="dd-item"><a href="/Scientia/frontend/jquery/index.html">jQuery</a></li>
           <li data-nav-id="/Scientia/frontend/npm/index.html" class="dd-item"><a href="/Scientia/frontend/npm/index.html">Npm</a></li></ul></li>
-          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item parent"><input type="checkbox" id="section-7b5c18dd99757a3b554b76d7f7675de1" aria-controls="subsections-7b5c18dd99757a3b554b76d7f7675de1" class="toggle" checked><label class="a11y-only toggle" for="section-7b5c18dd99757a3b554b76d7f7675de1" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-7b5c18dd99757a3b554b76d7f7675de1">
+          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item parent"><input type="checkbox" id="section-2730d826a568fe36056ffffe2a578361" aria-controls="subsections-2730d826a568fe36056ffffe2a578361" class="toggle" checked><label class="a11y-only toggle" for="section-2730d826a568fe36056ffffe2a578361" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-2730d826a568fe36056ffffe2a578361">
           <li data-nav-id="/Scientia/programming_languages/awk/index.html" class="dd-item"><a href="/Scientia/programming_languages/awk/index.html">Awk</a></li>
           <li data-nav-id="/Scientia/programming_languages/bash/index.html" class="dd-item"><a href="/Scientia/programming_languages/bash/index.html">Bash</a></li>
           <li data-nav-id="/Scientia/programming_languages/c/index.html" class="dd-item"><a href="/Scientia/programming_languages/c/index.html">C</a></li>
@@ -152,10 +152,10 @@
           <li data-nav-id="/Scientia/programming_languages/python/index.html" class="dd-item"><a href="/Scientia/programming_languages/python/index.html">Python</a></li>
           <li data-nav-id="/Scientia/programming_languages/sed/index.html" class="dd-item"><a href="/Scientia/programming_languages/sed/index.html">Sed</a></li>
           <li data-nav-id="/Scientia/programming_languages/zsh/index.html" class="dd-item"><a href="/Scientia/programming_languages/zsh/index.html">Zsh</a></li></ul></li>
-          <li data-nav-id="/Scientia/operating_systems/index.html" class="dd-item"><input type="checkbox" id="section-52903e8a7527c9f6c3626680ca25dd54" aria-controls="subsections-52903e8a7527c9f6c3626680ca25dd54" class="toggle"><label class="a11y-only toggle" for="section-52903e8a7527c9f6c3626680ca25dd54" >Submenu Operating Systems</label><a href="/Scientia/operating_systems/index.html">Operating Systems</a><ul id="subsections-52903e8a7527c9f6c3626680ca25dd54">
+          <li data-nav-id="/Scientia/operating_systems/index.html" class="dd-item"><input type="checkbox" id="section-ced434932e444aaa8234870130db871a" aria-controls="subsections-ced434932e444aaa8234870130db871a" class="toggle"><label class="a11y-only toggle" for="section-ced434932e444aaa8234870130db871a" >Submenu Operating Systems</label><a href="/Scientia/operating_systems/index.html">Operating Systems</a><ul id="subsections-ced434932e444aaa8234870130db871a">
           <li data-nav-id="/Scientia/operating_systems/android/index.html" class="dd-item"><a href="/Scientia/operating_systems/android/index.html">Android</a></li>
           <li data-nav-id="/Scientia/operating_systems/freebsd/freebsd_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/freebsd/freebsd_commands/index.html">FreeBSD</a></li>
-          <li data-nav-id="/Scientia/operating_systems/linux/index.html" class="dd-item"><input type="checkbox" id="section-392eb34fc3afb0ea7edb6b36d7c6de05" aria-controls="subsections-392eb34fc3afb0ea7edb6b36d7c6de05" class="toggle"><label class="a11y-only toggle" for="section-392eb34fc3afb0ea7edb6b36d7c6de05" >Submenu Linux</label><a href="/Scientia/operating_systems/linux/index.html">Linux</a><ul id="subsections-392eb34fc3afb0ea7edb6b36d7c6de05">
+          <li data-nav-id="/Scientia/operating_systems/linux/index.html" class="dd-item"><input type="checkbox" id="section-6ef162e155d27f09b21e5ffd8dd66a75" aria-controls="subsections-6ef162e155d27f09b21e5ffd8dd66a75" class="toggle"><label class="a11y-only toggle" for="section-6ef162e155d27f09b21e5ffd8dd66a75" >Submenu Linux</label><a href="/Scientia/operating_systems/linux/index.html">Linux</a><ul id="subsections-6ef162e155d27f09b21e5ffd8dd66a75">
           <li data-nav-id="/Scientia/operating_systems/linux/apparmor/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/apparmor/index.html">AppArmor</a></li>
           <li data-nav-id="/Scientia/operating_systems/linux/archlinux/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/archlinux/index.html">Archlinux</a></li>
           <li data-nav-id="/Scientia/operating_systems/linux/compose_key/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/compose_key/index.html">Compose Key</a></li>
@@ -171,7 +171,7 @@
           <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-5e3ad4673f47319cd86a754082834f00" aria-controls="subsections-5e3ad4673f47319cd86a754082834f00" class="toggle"><label class="a11y-only toggle" for="section-5e3ad4673f47319cd86a754082834f00" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-5e3ad4673f47319cd86a754082834f00">
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle"><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
           <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
@@ -206,33 +206,33 @@
           <li data-nav-id="/Scientia/programs/wine/index.html" class="dd-item"><a href="/Scientia/programs/wine/index.html">Wine</a></li>
           <li data-nav-id="/Scientia/programs/wireshark/index.html" class="dd-item"><a href="/Scientia/programs/wireshark/index.html">Wireshark</a></li>
           <li data-nav-id="/Scientia/programs/zfs/index.html" class="dd-item"><a href="/Scientia/programs/zfs/index.html">Zfs</a></li></ul></li>
-          <li data-nav-id="/Scientia/theory/index.html" class="dd-item"><input type="checkbox" id="section-fcd5be2517f8bb5ec12b281f24343413" aria-controls="subsections-fcd5be2517f8bb5ec12b281f24343413" class="toggle"><label class="a11y-only toggle" for="section-fcd5be2517f8bb5ec12b281f24343413" >Submenu Computer Science Theory</label><a href="/Scientia/theory/index.html">Computer Science Theory</a><ul id="subsections-fcd5be2517f8bb5ec12b281f24343413">
+          <li data-nav-id="/Scientia/theory/index.html" class="dd-item"><input type="checkbox" id="section-7fdb56c297017bd0056daee4518a716a" aria-controls="subsections-7fdb56c297017bd0056daee4518a716a" class="toggle"><label class="a11y-only toggle" for="section-7fdb56c297017bd0056daee4518a716a" >Submenu Computer Science Theory</label><a href="/Scientia/theory/index.html">Computer Science Theory</a><ul id="subsections-7fdb56c297017bd0056daee4518a716a">
           <li data-nav-id="/Scientia/theory/big_oh_notation/index.html" class="dd-item"><a href="/Scientia/theory/big_oh_notation/index.html">Big Oh Notation</a></li>
           <li data-nav-id="/Scientia/theory/data_structures/index.html" class="dd-item"><a href="/Scientia/theory/data_structures/index.html">Data Structures</a></li>
           <li data-nav-id="/Scientia/theory/set_theory/index.html" class="dd-item"><a href="/Scientia/theory/set_theory/index.html">Set Theory</a></li></ul></li>
-          <li data-nav-id="/Scientia/travels/index.html" class="dd-item"><input type="checkbox" id="section-a2f35faeb862d8dc5aa16d3645944559" aria-controls="subsections-a2f35faeb862d8dc5aa16d3645944559" class="toggle"><label class="a11y-only toggle" for="section-a2f35faeb862d8dc5aa16d3645944559" >Submenu Travels</label><a href="/Scientia/travels/index.html">Travels</a><ul id="subsections-a2f35faeb862d8dc5aa16d3645944559">
+          <li data-nav-id="/Scientia/travels/index.html" class="dd-item"><input type="checkbox" id="section-c1dfafec9fd7ff32fab5029b27c77801" aria-controls="subsections-c1dfafec9fd7ff32fab5029b27c77801" class="toggle"><label class="a11y-only toggle" for="section-c1dfafec9fd7ff32fab5029b27c77801" >Submenu Travels</label><a href="/Scientia/travels/index.html">Travels</a><ul id="subsections-c1dfafec9fd7ff32fab5029b27c77801">
           <li data-nav-id="/Scientia/travels/bali/index.html" class="dd-item"><a href="/Scientia/travels/bali/index.html">Bali</a></li>
           <li data-nav-id="/Scientia/travels/caribbeans/index.html" class="dd-item"><a href="/Scientia/travels/caribbeans/index.html">Caribbeans</a></li>
           <li data-nav-id="/Scientia/travels/ferries/index.html" class="dd-item"><a href="/Scientia/travels/ferries/index.html">Ferries</a></li>
           <li data-nav-id="/Scientia/travels/french_polynesia/index.html" class="dd-item"><a href="/Scientia/travels/french_polynesia/index.html">French Polynesia</a></li>
           <li data-nav-id="/Scientia/travels/places_to_visit/index.html" class="dd-item"><a href="/Scientia/travels/places_to_visit/index.html">Places to Visit</a></li>
           <li data-nav-id="/Scientia/travels/trains/index.html" class="dd-item"><a href="/Scientia/travels/trains/index.html">Trains</a></li></ul></li>
-          <li data-nav-id="/Scientia/history/index.html" class="dd-item"><input type="checkbox" id="section-28afe07b1f43a9e9c0c12d4859c39ee9" aria-controls="subsections-28afe07b1f43a9e9c0c12d4859c39ee9" class="toggle"><label class="a11y-only toggle" for="section-28afe07b1f43a9e9c0c12d4859c39ee9" >Submenu History</label><a href="/Scientia/history/index.html">History</a><ul id="subsections-28afe07b1f43a9e9c0c12d4859c39ee9">
+          <li data-nav-id="/Scientia/history/index.html" class="dd-item"><input type="checkbox" id="section-19fe07eb86824cd7a37e1a163482ca5d" aria-controls="subsections-19fe07eb86824cd7a37e1a163482ca5d" class="toggle"><label class="a11y-only toggle" for="section-19fe07eb86824cd7a37e1a163482ca5d" >Submenu History</label><a href="/Scientia/history/index.html">History</a><ul id="subsections-19fe07eb86824cd7a37e1a163482ca5d">
           <li data-nav-id="/Scientia/history/art_history/index.html" class="dd-item"><a href="/Scientia/history/art_history/index.html">Art History</a></li>
           <li data-nav-id="/Scientia/history/military_history/index.html" class="dd-item"><a href="/Scientia/history/military_history/index.html">Military History</a></li>
           <li data-nav-id="/Scientia/history/sumeria/index.html" class="dd-item"><a href="/Scientia/history/sumeria/index.html">Sumeria</a></li></ul></li>
-          <li data-nav-id="/Scientia/hobbies/index.html" class="dd-item"><input type="checkbox" id="section-1fbb774d475b742078ae8ed457b37bc6" aria-controls="subsections-1fbb774d475b742078ae8ed457b37bc6" class="toggle"><label class="a11y-only toggle" for="section-1fbb774d475b742078ae8ed457b37bc6" >Submenu Hobbies</label><a href="/Scientia/hobbies/index.html">Hobbies</a><ul id="subsections-1fbb774d475b742078ae8ed457b37bc6">
+          <li data-nav-id="/Scientia/hobbies/index.html" class="dd-item"><input type="checkbox" id="section-700f5129cb3177a1a636e32f131d5df1" aria-controls="subsections-700f5129cb3177a1a636e32f131d5df1" class="toggle"><label class="a11y-only toggle" for="section-700f5129cb3177a1a636e32f131d5df1" >Submenu Hobbies</label><a href="/Scientia/hobbies/index.html">Hobbies</a><ul id="subsections-700f5129cb3177a1a636e32f131d5df1">
           <li data-nav-id="/Scientia/hobbies/cigars/index.html" class="dd-item"><a href="/Scientia/hobbies/cigars/index.html">Cigars</a></li>
           <li data-nav-id="/Scientia/hobbies/fantasy/index.html" class="dd-item"><a href="/Scientia/hobbies/fantasy/index.html">Fantasy</a></li>
           <li data-nav-id="/Scientia/hobbies/games/index.html" class="dd-item"><a href="/Scientia/hobbies/games/index.html">Games</a></li>
           <li data-nav-id="/Scientia/hobbies/malazan/index.html" class="dd-item"><a href="/Scientia/hobbies/malazan/index.html">Malazan</a></li>
           <li data-nav-id="/Scientia/hobbies/music/index.html" class="dd-item"><a href="/Scientia/hobbies/music/index.html">Music</a></li>
           <li data-nav-id="/Scientia/hobbies/sailing/index.html" class="dd-item"><a href="/Scientia/hobbies/sailing/index.html">Sailing</a></li></ul></li>
-          <li data-nav-id="/Scientia/health/index.html" class="dd-item"><input type="checkbox" id="section-133177f9b5c67f09c921f9e65fbb4aa4" aria-controls="subsections-133177f9b5c67f09c921f9e65fbb4aa4" class="toggle"><label class="a11y-only toggle" for="section-133177f9b5c67f09c921f9e65fbb4aa4" >Submenu Health</label><a href="/Scientia/health/index.html">Health</a><ul id="subsections-133177f9b5c67f09c921f9e65fbb4aa4">
-          <li data-nav-id="/Scientia/health/mental_health/index.html" class="dd-item"><input type="checkbox" id="section-c7361894745a14fd0248d8a132da15a6" aria-controls="subsections-c7361894745a14fd0248d8a132da15a6" class="toggle"><label class="a11y-only toggle" for="section-c7361894745a14fd0248d8a132da15a6" >Submenu Mental Health</label><a href="/Scientia/health/mental_health/index.html">Mental Health</a><ul id="subsections-c7361894745a14fd0248d8a132da15a6">
+          <li data-nav-id="/Scientia/health/index.html" class="dd-item"><input type="checkbox" id="section-a87d6fcf7bbe2acc7620b3a7408692ba" aria-controls="subsections-a87d6fcf7bbe2acc7620b3a7408692ba" class="toggle"><label class="a11y-only toggle" for="section-a87d6fcf7bbe2acc7620b3a7408692ba" >Submenu Health</label><a href="/Scientia/health/index.html">Health</a><ul id="subsections-a87d6fcf7bbe2acc7620b3a7408692ba">
+          <li data-nav-id="/Scientia/health/mental_health/index.html" class="dd-item"><input type="checkbox" id="section-279701b7a812baafd808642910792bef" aria-controls="subsections-279701b7a812baafd808642910792bef" class="toggle"><label class="a11y-only toggle" for="section-279701b7a812baafd808642910792bef" >Submenu Mental Health</label><a href="/Scientia/health/mental_health/index.html">Mental Health</a><ul id="subsections-279701b7a812baafd808642910792bef">
           <li data-nav-id="/Scientia/health/mental_health/autism/index.html" class="dd-item"><a href="/Scientia/health/mental_health/autism/index.html">Autism</a></li>
           <li data-nav-id="/Scientia/health/mental_health/depression/index.html" class="dd-item"><a href="/Scientia/health/mental_health/depression/index.html">Depression</a></li></ul></li></ul></li>
-          <li data-nav-id="/Scientia/philosophy_and_religion/index.html" class="dd-item"><input type="checkbox" id="section-ced43f18165055f5416a65be3999dfa5" aria-controls="subsections-ced43f18165055f5416a65be3999dfa5" class="toggle"><label class="a11y-only toggle" for="section-ced43f18165055f5416a65be3999dfa5" >Submenu Philosophy and Religion</label><a href="/Scientia/philosophy_and_religion/index.html">Philosophy and Religion</a><ul id="subsections-ced43f18165055f5416a65be3999dfa5">
+          <li data-nav-id="/Scientia/philosophy_and_religion/index.html" class="dd-item"><input type="checkbox" id="section-93cddbbc9fad7cf2ca0a402709e1df68" aria-controls="subsections-93cddbbc9fad7cf2ca0a402709e1df68" class="toggle"><label class="a11y-only toggle" for="section-93cddbbc9fad7cf2ca0a402709e1df68" >Submenu Philosophy and Religion</label><a href="/Scientia/philosophy_and_religion/index.html">Philosophy and Religion</a><ul id="subsections-93cddbbc9fad7cf2ca0a402709e1df68">
           <li data-nav-id="/Scientia/philosophy_and_religion/buddhism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/buddhism/index.html">Buddhism</a></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/christianity/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/christianity/index.html">Christianity</a></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/hinduism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/hinduism/index.html">Hinduism</a></li>
@@ -240,22 +240,22 @@
           <li data-nav-id="/Scientia/philosophy_and_religion/paganism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/paganism/index.html">Paganism</a></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/yoga/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/yoga/index.html">Yoga</a></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/zealots/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/zealots/index.html">Zealots</a></li></ul></li>
-          <li data-nav-id="/Scientia/natural_languages/index.html" class="dd-item"><input type="checkbox" id="section-fd957844ccda8ec800e7de61b31ad972" aria-controls="subsections-fd957844ccda8ec800e7de61b31ad972" class="toggle"><label class="a11y-only toggle" for="section-fd957844ccda8ec800e7de61b31ad972" >Submenu Natural Languages</label><a href="/Scientia/natural_languages/index.html">Natural Languages</a><ul id="subsections-fd957844ccda8ec800e7de61b31ad972">
-          <li data-nav-id="/Scientia/natural_languages/czech/index.html" class="dd-item"><input type="checkbox" id="section-362302cd4f77b98806db9b0084d8307e" aria-controls="subsections-362302cd4f77b98806db9b0084d8307e" class="toggle"><label class="a11y-only toggle" for="section-362302cd4f77b98806db9b0084d8307e" >Submenu Czech</label><a href="/Scientia/natural_languages/czech/index.html">Czech</a><ul id="subsections-362302cd4f77b98806db9b0084d8307e">
+          <li data-nav-id="/Scientia/natural_languages/index.html" class="dd-item"><input type="checkbox" id="section-ae2e4c0243180a46c691bd29525f1c87" aria-controls="subsections-ae2e4c0243180a46c691bd29525f1c87" class="toggle"><label class="a11y-only toggle" for="section-ae2e4c0243180a46c691bd29525f1c87" >Submenu Natural Languages</label><a href="/Scientia/natural_languages/index.html">Natural Languages</a><ul id="subsections-ae2e4c0243180a46c691bd29525f1c87">
+          <li data-nav-id="/Scientia/natural_languages/czech/index.html" class="dd-item"><input type="checkbox" id="section-a3f0c4053c22aaa2374e543ec4c291e3" aria-controls="subsections-a3f0c4053c22aaa2374e543ec4c291e3" class="toggle"><label class="a11y-only toggle" for="section-a3f0c4053c22aaa2374e543ec4c291e3" >Submenu Czech</label><a href="/Scientia/natural_languages/czech/index.html">Czech</a><ul id="subsections-a3f0c4053c22aaa2374e543ec4c291e3">
           <li data-nav-id="/Scientia/natural_languages/czech/food_dictionary/index.html" class="dd-item"><a href="/Scientia/natural_languages/czech/food_dictionary/index.html">Czech-Italian Food Dictionary</a></li>
           <li data-nav-id="/Scientia/natural_languages/czech/notes/index.html" class="dd-item"><a href="/Scientia/natural_languages/czech/notes/index.html">Notes</a></li></ul></li>
           <li data-nav-id="/Scientia/natural_languages/polish/index.html" class="dd-item"><a href="/Scientia/natural_languages/polish/index.html">Polish</a></li>
-          <li data-nav-id="/Scientia/natural_languages/portuguese/index.html" class="dd-item"><input type="checkbox" id="section-996147591e4828b0c068c0429144f292" aria-controls="subsections-996147591e4828b0c068c0429144f292" class="toggle"><label class="a11y-only toggle" for="section-996147591e4828b0c068c0429144f292" >Submenu Portuguese</label><a href="/Scientia/natural_languages/portuguese/index.html">Portuguese</a><ul id="subsections-996147591e4828b0c068c0429144f292">
+          <li data-nav-id="/Scientia/natural_languages/portuguese/index.html" class="dd-item"><input type="checkbox" id="section-5e684d6b73e77b0823545c3239d84dd8" aria-controls="subsections-5e684d6b73e77b0823545c3239d84dd8" class="toggle"><label class="a11y-only toggle" for="section-5e684d6b73e77b0823545c3239d84dd8" >Submenu Portuguese</label><a href="/Scientia/natural_languages/portuguese/index.html">Portuguese</a><ul id="subsections-5e684d6b73e77b0823545c3239d84dd8">
           <li data-nav-id="/Scientia/natural_languages/portuguese/portuguese_verbs/index.html" class="dd-item"><a href="/Scientia/natural_languages/portuguese/portuguese_verbs/index.html">Portuguese Verbs</a></li></ul></li>
-          <li data-nav-id="/Scientia/natural_languages/spanish/index.html" class="dd-item"><input type="checkbox" id="section-41487fe608ed409ad7e6cd4e649184aa" aria-controls="subsections-41487fe608ed409ad7e6cd4e649184aa" class="toggle"><label class="a11y-only toggle" for="section-41487fe608ed409ad7e6cd4e649184aa" >Submenu Spanish</label><a href="/Scientia/natural_languages/spanish/index.html">Spanish</a><ul id="subsections-41487fe608ed409ad7e6cd4e649184aa">
+          <li data-nav-id="/Scientia/natural_languages/spanish/index.html" class="dd-item"><input type="checkbox" id="section-b3f50bddde8a0b8576ef5d89ab2aed62" aria-controls="subsections-b3f50bddde8a0b8576ef5d89ab2aed62" class="toggle"><label class="a11y-only toggle" for="section-b3f50bddde8a0b8576ef5d89ab2aed62" >Submenu Spanish</label><a href="/Scientia/natural_languages/spanish/index.html">Spanish</a><ul id="subsections-b3f50bddde8a0b8576ef5d89ab2aed62">
           <li data-nav-id="/Scientia/natural_languages/spanish/spanish_imperative/index.html" class="dd-item"><a href="/Scientia/natural_languages/spanish/spanish_imperative/index.html">Spanish Imperative</a></li></ul></li>
           <li data-nav-id="/Scientia/natural_languages/greek_alphabet/index.html" class="dd-item"><a href="/Scientia/natural_languages/greek_alphabet/index.html">Greek Alphabet</a></li></ul></li>
-          <li data-nav-id="/Scientia/writing/index.html" class="dd-item"><input type="checkbox" id="section-a16074696a2e072964041e9ad7cd8fd5" aria-controls="subsections-a16074696a2e072964041e9ad7cd8fd5" class="toggle"><label class="a11y-only toggle" for="section-a16074696a2e072964041e9ad7cd8fd5" >Submenu Writing</label><a href="/Scientia/writing/index.html">Writing</a><ul id="subsections-a16074696a2e072964041e9ad7cd8fd5">
+          <li data-nav-id="/Scientia/writing/index.html" class="dd-item"><input type="checkbox" id="section-e557a922d533a171e9a204b7e50265e2" aria-controls="subsections-e557a922d533a171e9a204b7e50265e2" class="toggle"><label class="a11y-only toggle" for="section-e557a922d533a171e9a204b7e50265e2" >Submenu Writing</label><a href="/Scientia/writing/index.html">Writing</a><ul id="subsections-e557a922d533a171e9a204b7e50265e2">
           <li data-nav-id="/Scientia/writing/calligraphy/index.html" class="dd-item"><a href="/Scientia/writing/calligraphy/index.html">Calligraphy</a></li>
           <li data-nav-id="/Scientia/writing/fountain_pens/index.html" class="dd-item"><a href="/Scientia/writing/fountain_pens/index.html">Fountain Pens</a></li>
           <li data-nav-id="/Scientia/writing/technical_writing/index.html" class="dd-item"><a href="/Scientia/writing/technical_writing/index.html">Technical Writing</a></li>
           <li data-nav-id="/Scientia/writing/ux_writing/index.html" class="dd-item"><a href="/Scientia/writing/ux_writing/index.html">UX Writing</a></li></ul></li>
-          <li data-nav-id="/Scientia/various/index.html" class="dd-item"><input type="checkbox" id="section-051e7d1442dfc9f3a48ad1ca7b758c17" aria-controls="subsections-051e7d1442dfc9f3a48ad1ca7b758c17" class="toggle"><label class="a11y-only toggle" for="section-051e7d1442dfc9f3a48ad1ca7b758c17" >Submenu Various</label><a href="/Scientia/various/index.html">Various</a><ul id="subsections-051e7d1442dfc9f3a48ad1ca7b758c17">
+          <li data-nav-id="/Scientia/various/index.html" class="dd-item"><input type="checkbox" id="section-4bd0f7bb850ffbb52f4b483754b4b642" aria-controls="subsections-4bd0f7bb850ffbb52f4b483754b4b642" class="toggle"><label class="a11y-only toggle" for="section-4bd0f7bb850ffbb52f4b483754b4b642" >Submenu Various</label><a href="/Scientia/various/index.html">Various</a><ul id="subsections-4bd0f7bb850ffbb52f4b483754b4b642">
           <li data-nav-id="/Scientia/various/hardware/index.html" class="dd-item"><a href="/Scientia/various/hardware/index.html">Hardware</a></li>
           <li data-nav-id="/Scientia/various/advertising_and_marketing/index.html" class="dd-item"><a href="/Scientia/various/advertising_and_marketing/index.html">Advertising and Marketing</a></li>
           <li data-nav-id="/Scientia/various/cryptocurrencies/index.html" class="dd-item"><a href="/Scientia/various/cryptocurrencies/index.html">Cryptocurrencies</a></li>
@@ -286,6 +286,7 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/Scientia/programming_languages/lua/index.html" selected></option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -313,9 +314,9 @@
         </div>
       </div>
     </aside>
-    <script src="/Scientia/js/clipboard.min.js?1708094859" defer></script>
-    <script src="/Scientia/js/perfect-scrollbar.min.js?1708094859" defer></script>
-    <script src="/Scientia/js/featherlight.min.js?1708094859" defer></script>
-    <script src="/Scientia/js/theme.js?1708094859" defer></script>
+    <script src="/Scientia/js/clipboard.min.js?1709048154" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1709048154" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1709048154" defer></script>
+    <script src="/Scientia/js/theme.js?1709048154" defer></script>
   </body>
 </html>
