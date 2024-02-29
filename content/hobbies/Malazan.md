@@ -180,7 +180,7 @@ The notes are separated by the book they are in, and ordered by page count.
 * `pg 239`: Stoop tells other Crimson Guard recruits how years ago in Stratem 
   the Malazan Empire sent 40000 troops to exterminate them. The Guard was 
   vastly outnumbered but managed to survive the assault of the Malazans. 
-  Skinned fought Dassem Ultor "to a standstill" and the Duke Davore 
+  Skinner fought Dassem Ultor "to a standstill" and the Duke Davore 
   disappeared. It was chosen to start the Diaspora to avoid the Malazans to 
   ever corner the Crimson Guard all together in a single place, risking 
   extermination.
