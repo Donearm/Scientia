@@ -165,30 +165,68 @@ problem or use case. These are thorough, accurate, highly technical documents.
 
 ## Terminology
 
-_still a work in progress_
-
-* Documentation Guide
-* Functional Writing
-* Procedural Writing
-* Documentation Process
-* Structured Writing
-* Authoring
-* Unstructured Writing
-* Technical Accuracy
-* Complex Audience
-* Cluster Sketch
-* Par Statement
-* Phantom Readers
-* Superstructures
-* Abstract
 * Bottom-Up Processing
+    * Processing a content from its smallest components to its largest ones. In 
+      a complex or not easily understood at first text, it may mean trying to 
+      understand the single words, punctuation symbols, and word order to 
+      comprehend, slowly, the whole content.
+* Complex Audience
+    * An audience composed of people with different backgrounds, experiences, 
+      specialties, and expectations. A variegated audience.
+* Documentation Process
+    * The sum of procedures and actions on how to create documentation.
 * Echo Words
+    * Echo words may refer to a few different things. One is onomatopeic words, 
+      those which imitate the sound associated with them. Another meaning is 
+      words or phrases that contains two identical or very similar parts 
+      ("click and clack"). Lastly, echo words may mean words or phrases that 
+      often recurs in a sentence or paragraph.
 * Forecasting Statements
-* Parallelism
-* Top-Down Processing
+    * A mini outline of the major ideas and their order of appearance in the 
+      content.
+* Future Readers
+    * Readers who will read content in the future, weeks, months or even years.
 * MVP
+    * Minimum Viable Product.
+* Par Statement
+    * Par stands for "Problem-Action-Result". Par statements are precise, 
+      self-conclusive, and easy to understand pieces of content. They define a 
+      problem, the action to solve it, and the result of such action.
+* Parallelism
+    * Also called "parallel structure" or "parallel construction", is the 
+      repetition of the same grammatical form in two or more parts of a 
+      sentence. In practice, it means constructing phrases with the same order 
+      of subject+verb+object, in the same tense, so to result parallel to each 
+      other.
+* Phantom Readers
+    * Real but unnamed readers. Those for which the documentation is not 
+      specifically written for but will read it too. In TW it is important to 
+      accommodate for their needs too, or at least be aware of their existence.
 * Problem Statement
+    * A statement that conteztualize the problem a paper is addressing. It may 
+      include details on where and when the problem arises, who is affected by 
+      it, and what attempts have been made to solve it.
+* Technical Accuracy
+    * The rate at which content is accurate, technically and/or factually.
+* Top-Bottom Processing
+    * The opposite of bottom-up processing. In a complex text it means to 
+      observe its structure, differences in fonts, highlighting, and eventual 
+      symbols or images in order to understand it.
+* Structured Writing
+    * Structured here means working with prefixed templates, often made in a 
+      markup language like XML/SGML/DITA. Structured writing means to structure 
+      the content around these templates.
+* Superstructures
+    * A paragraph that provides an overview or summary of the main points 
+      covered in the body of a longer text.
+* Unstructured Writing
+    * Unstructured writing opposes to structured writing in not using any 
+      template or prefixed content structure. Documentation written with an 
+      unstructured writing approach is freely decided on a case-by-case basis.
 * Use Case Diagrams
+    * A diagram, often made in UML, that represents the expected behaviour from 
+      the user's perspective of a system. It does not show the how, but only 
+      what the end user would like the system to behave.
 
 ## Books
 
