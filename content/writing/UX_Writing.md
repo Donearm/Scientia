@@ -43,6 +43,9 @@ weight: 1515
       are part of error prevention messages.
 * Fidelity
     * In UX, how closely should a prototype match the final product.
+* Information Architecture (IA)
+    * The practice of organizing, structuring, and labeling content in an 
+      effective and sustainable way.
 * Interaction Design (IxD)
     * The practice of designing interactive digital products, environments, 
       systems, and services.
