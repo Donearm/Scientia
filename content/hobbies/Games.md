@@ -582,3 +582,4 @@ As I grew up playing on an Amiga 500, I have fond memories of many games on that
 * Cannon Fodder
 * Golden Axe
 * Last Battle (more the atmosphere than the gameplay)
+* Bubble Bobble
