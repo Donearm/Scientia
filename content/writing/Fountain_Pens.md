@@ -20,4 +20,5 @@ weight: 1505
 * Ferris Wheel Press
 * Iroshizuku: Kon-Peki, Ama-iro, Shin-ryoku, Tsukushi
 * Rohrer & Klingner
+* Sailor Jentle: Rikyu-cha
 * Waterman
