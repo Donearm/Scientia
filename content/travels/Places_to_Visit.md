@@ -33,9 +33,12 @@ weight: 910
         * [Cenotes](#cenotes)
         * [Best beaches](#best-beaches-1)
     * [Caribbeans](#caribbeans)
+    * [Cuba](#cuba)
+    * [Peru](#peru)
 * [Asia](#asia)
     * [Indonesia](#indonesia)
         * [Bali](#bali)
+    * [Iran](#iran)
     * [Thailand](#thailand)
         * [Bangkok](#bangkok)
         * [Pattaya](#pattaya)
@@ -248,6 +251,29 @@ A second trip to mainly visit what I missed in the first and return on the best 
 
 See [Caribbeans' page](../caribbeans).
 
+## Cuba
+
+* Havana
+* Pinar del Rio
+* One or more of the many cayos:
+    * Cayo Santa Maria
+    * Cayo Coco
+    * Cayo Largo
+    * Isla de la Juventud
+
+## Peru
+
+Not to miss (some are in Bolivia but easy to visit in the same trip)
+
+* Machu Picchu
+* Cuzco
+* Lima
+* Nazca
+* Tiahuanaco
+* Salar de Uyuni
+* Potosi
+* Titicaca
+
 # Asia
 
 ## Indonesia
@@ -255,6 +281,17 @@ See [Caribbeans' page](../caribbeans).
 ### Bali
 
 See [Bali's page](../bali).
+
+## Iran
+
+* Teheran
+* Isfahan
+* Susa (Shush)
+* Chogha Zanbil, the ziggurat
+* Persepolis
+* Shiraz
+* Yazd
+* Pasargad (Madarsoleyman), with the tomb of Cyrus the Great
 
 ## Thailand
 
