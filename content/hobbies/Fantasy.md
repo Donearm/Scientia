@@ -24,6 +24,7 @@ Also worth noting a project of a friend blogger that keeps the count of the word
 * **1924**: Lord Dunsany's The King of Elfland's Daughter is published.
 * **1929-1930**: Kull appears on Weird Tales. His character would end up inspiring the more famous Conan. Further stories would be published posthumously in the late 1960s-1970s.
 * **1932-**: Conan the Barbarian appears on Weird Tales in 1932. Main stories would be published throughout the 1930s, with a few posthumously being released during the 1950s and 1960s.
+* **1937**: The Hobbit is first published 
 * **1946-1959**: Mervyn Peake's Ghormenghast series is published.
 * **1954**: Poul Anderson's The Broken Sword is published.
 * **1954-1955**: J.R.R. Tolkien's Lord of the Rings is published.
