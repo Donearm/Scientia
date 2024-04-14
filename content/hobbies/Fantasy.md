@@ -34,6 +34,7 @@ Also worth noting a project of a friend blogger that keeps the count of the word
 * **1970-1978**: the first 5 books of the Chronicles of Amber are published. Further 5 would see the light between 1985 and 1991.
 * **1971**: John Gardner's Grendel (a retelling of the Beowulf from the point of view of the monster) is published.
 * **1973-1985**: stories and novels of Kane by Karl Edward Wagner are published across these years.
+* **1974**: Gary Gygax and Dave Arneson publish the first edition of Dungeons & Dragons ruleset. While technically not a novel, the game's influence on the fantasy genre cannot be overstated, spawning countless books from gaming sessions using one of the various editions of D&D rules.
 * **1976-1979**: the 3 volumes of the Riddle-Master trilogy of Patricia McKillip are published.
 * **1977**: The Silmarillion is posthumously published.
 * **1977-1979**: the first trilogy of The Chronicles of Thomas Covenant, the Unbeliever is published.
