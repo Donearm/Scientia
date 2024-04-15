@@ -23,6 +23,7 @@ Here I collect a few links and tips about games I enjoy(ed).
     * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor-2)
 * [Steam](#steam)
     * [Add anotehr installation path to Steam library](#add-anotehr-installation-path-to-steam-library)
+    * [Move a game to another location in the Steam library](#move-a-game-to-another-location-in-the-steam-library)
 * [The Elder Scrolls Online](#the-elder-scrolls-online)
     * [Install manually Addons on Linux](#install-manually-addons-on-linux)
 * [UT2004](#ut2004)
@@ -474,6 +475,10 @@ Increase the FOV value according to your preference. The default is 90. 100 is r
 2. Click the Console tab that will have appeared now
 3. Run the command `library_folder_add /path_to_your_folder/`
 4. The output should be: `Mounted path /path_to_your_folder/`
+
+### Move a game to another location in the Steam library
+
+Follow the [official instructions](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
 
 ## The Elder Scrolls Online
 
