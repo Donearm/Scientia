@@ -21,6 +21,8 @@ Here I collect a few links and tips about games I enjoy(ed).
     * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor-1)
 * [Serious Sam: The Second Encounter](#serious-sam-the-second-encounter)
     * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor-2)
+* [Steam](#steam)
+    * [Add anotehr installation path to Steam library](#add-anotehr-installation-path-to-steam-library)
 * [The Elder Scrolls Online](#the-elder-scrolls-online)
     * [Install manually Addons on Linux](#install-manually-addons-on-linux)
 * [UT2004](#ut2004)
@@ -463,6 +465,15 @@ persistent extern user FLOAT plr_fFOV=(FLOAT)xxx;
 ```
 
 Increase the FOV value according to your preference. The default is 90. 100 is recommended for 16:10 displays, and 105 is recommended for 16:9 displays.
+
+## Steam
+
+### Add anotehr installation path to Steam library
+
+1. Launch Steam with the -console option on the command line
+2. Click the Console tab that will have appeared now
+3. Run the command `library_folder_add /path_to_your_folder/`
+4. The output should be: `Mounted path /path_to_your_folder/`
 
 ## The Elder Scrolls Online
 
