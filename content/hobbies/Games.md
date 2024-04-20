@@ -14,6 +14,7 @@ Here I collect a few links and tips about games I enjoy(ed).
 * [Sensible World of Soccer 2020](#sensible-world-of-soccer-2020)
     * [Add 100 millions to a career](#add-100-millions-to-a-career)
     * [Personal records](#personal-records)
+* [Baldur's Gate 3](#baldurs-gate-3)
 * [Europa Universalis IV](#europa-universalis-iv)
 * [Max Payne](#max-payne)
     * [Adapt the game to a widescreen monitor](#adapt-the-game-to-a-widescreen-monitor)
@@ -98,6 +99,10 @@ Then, alongside these records, I kept track of my overall palmares, what and how
 * Polish Cup: 3
 * Euro Championship: 2
 * World Cup: 2
+
+## Baldur's Gate 3
+
+[How to install mods](https://bg3.wiki/wiki/Modding:Installing_mods).
 
 ## Europa Universalis IV
 
