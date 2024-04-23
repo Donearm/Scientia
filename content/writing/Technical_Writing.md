@@ -173,6 +173,11 @@ problem or use case. These are thorough, accurate, highly technical documents.
 * Complex Audience
     * An audience composed of people with different backgrounds, experiences, 
       specialties, and expectations. A variegated audience.
+* Data Fluency
+    * The ability to interpret, create, and communicate information in data. It 
+      is like the fluency in a language, which includes not only the 
+      understanding of words and grammar but also the capacity to express 
+      oneself in such a language.
 * Documentation Process
     * The sum of procedures and actions on how to create documentation.
 * Echo Words
