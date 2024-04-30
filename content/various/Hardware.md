@@ -25,3 +25,33 @@ Up to 250000 or 40000Mb/s (25 and 40 Gigabit) and 30 meters. Currently in develo
 ## Keyboard layouts
 
 [A visual comparison of different national layouts on a computer keyboard](http://www.farah.cl/Keyboardery/A-Visual-Comparison-of-Different-National-Layouts/)
+
+## Remapping keyboards with Via/QMK
+
+Under Linux a few things need to be set up correctly. Firstly, at the time of this info (early 2024) only Chromium-based browsers can use [Usevia](https://usevia.app/), the website on which keyboards supporting the protocol can be remapped.
+
+Second, an udev rule is necessary. Edit the file `/etc/udev/rules.d/98-via.rules` adding:
+
+```
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+```
+
+Then reload the rules with:
+
+```
+udevadm control --reload
+```
+
+Then use a browser to access the [Usevia](https://usevia.app) site and remap freely. The keyboard must be connected via usb, not bluetooth. If the browser cannot access the keyboard, with a `Failed to open the device.` error message or similar, check the device logs of Chrome/Chromium by going to `chrome://device-log` and see what path has the keyboard on Linux. It will be one of the various `/dev/hidraw` followed by a number. It is a matter of fixing the permissions with:
+
+```
+sudo chmod a+rw /dev/hidraw3
+```
+
+And retry to map the keys again. Once done, to ensure that the device is not accessible by anyone, revert the permissions with:
+
+```
+sudo chmod 600 /dev/hidraw3
+```
+
+And you are done!
