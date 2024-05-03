@@ -27,3 +27,7 @@ network={
 More info [here](î200~https://www.raspberrypi.org/documentation/configuration/wireless/headless.md).
 
 For a wired connection, it should connect automatically. Just make sure that the router the RaspberryPi is attached to is accepting connections from new devices and not rejecting them by default.
+
+## Set a static IP address
+
+There are more than a couple of methods but probably the easiest is to use the NetworkManager tui interface, `nmtui`. Launch it as root and it will guide you to set up manually both the IP addresses, default gateways, and DNS servers of each connection, both wired and wireless.
