@@ -15,6 +15,12 @@ From a desktop like Gnome or KDE, the choice can be made with the system menu. A
 Option      "XkbOptions"  "compose:rwin"
 ```
 
+Or, perhaps better, this remaps the "Menu" key, usually found between right Windows and right Control keys, to be the Compose key:
+
+```xorg.conf
+Option "XkbOptions" "compose:menu"
+```
+
 A list of compose sequences is in the file `/usr/share/X11/locale/en_US.·UTF-8/Compose`. Unfortunately, this includes many sequences which may not actually work.
 The command `dumpkeys` should show what are the possible combinations under the "compose" voices
 
