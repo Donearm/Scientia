@@ -6,11 +6,28 @@ weight: 560
 
 <!-- vim-markdown-toc GFM -->
 
+* [Multiple keyboard layouts](#multiple-keyboard-layouts)
 * [Keyboard shortcuts using the Multi\_key](#keyboard-shortcuts-using-the-multi_key)
 * [Xinput](#xinput)
 * [Keys combination available to use in X](#keys-combination-available-to-use-in-x)
 
 <!-- vim-markdown-toc -->
+
+### Multiple keyboard layouts
+
+Having multiple keyboard layouts in X is possible by setting up a file under `/etc/X11/xorg.conf.d/` like `00-keyboard.conf` and adding all the layouts you desire as:
+
+```xorg.conf
+Option "XkbLayout" "us,it,pl"
+```
+
+To switch between them, use another option in the same file:
+
+```xorg.conf
+Option "XkbOptions" "grp:rctrl_rshift_toggle"
+```
+
+Which will make pressing Right Ctrl + Right Shift together switch keyboard layout.
 
 ### Keyboard shortcuts using the Multi\_key
 

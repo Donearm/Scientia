@@ -103,7 +103,9 @@ On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt
       <link>https://donearm.github.io/Scientia/operating_systems/linux/x/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/x/index.html</guid>
-      <description>Keyboard shortcuts using the Multi_key Xinput Keys combination available to use in X Keyboard shortcuts using the Multi_key Multi_key is a special key that permit to generate various symbols when pressed along with one or more other keys. If it&amp;rsquo;s not already mapped in the current keymap, use xmodmap -e &amp;quot;keycode xxx = Multi\_key&amp;quot; where xxx is the keycode furnished by xev. Read /usr/share/X11/locale/current_locale/Compose to know which keyboard shortcuts can be used and their results.</description>
+      <description>Multiple keyboard layouts Keyboard shortcuts using the Multi_key Xinput Keys combination available to use in X Multiple keyboard layouts Having multiple keyboard layouts in X is possible by setting up a file under /etc/X11/xorg.conf.d/ like 00-keyboard.conf and adding all the layouts you desire as:
+Option &amp;#34;XkbLayout&amp;#34; &amp;#34;us,it,pl&amp;#34; To switch between them, use another option in the same file:
+Option &amp;#34;XkbOptions&amp;#34; &amp;#34;grp:rctrl_rshift_toggle&amp;#34; Which will make pressing Right Ctrl + Right Shift together switch keyboard layout.</description>
     </item>
   </channel>
 </rss>
