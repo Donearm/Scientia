@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language><atom:link href="https://donearm.github.io/Scientia/programming_languages/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Assembly</title>
+      <link>https://donearm.github.io/Scientia/programming_languages/assembly/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/programming_languages/assembly/index.html</guid>
+      <description>ARM Assembly Registers X64 Assembly General Registers FPU Registers ARM Assembly Registers R0..R15 are 32bit, general registers. R13 doubles as the stack pointer (SP), R14 is the link register (LR), R15 the program counter (PC).
+X64 Assembly General Registers RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.
+R8..R15 are 64bit registers, unique to X64 Assembly.
+RIP is 64bit
+EFLAGS are the same as per X86 Assembly but 32bit longer.</description>
+    </item>
+    <item>
       <title>Awk</title>
       <link>https://donearm.github.io/Scientia/programming_languages/awk/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

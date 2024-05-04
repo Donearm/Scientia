@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>Flash - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>Assembly - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/Scientia/css/fontawesome-all.min.css?1714838413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1714838413" rel="stylesheet"></noscript>
@@ -43,17 +43,17 @@
     </script>
     <script src="/Scientia/js/jquery.min.js?1714838413" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/Scientia/programs/flash/index.html">
+  <body class="mobile-support html" data-url="/Scientia/programming_languages/assembly/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/Scientia/programs/gimp/index.html" title="Gimp (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/Scientia/programming_languages/awk/index.html" title="Awk (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/Scientia/programs/firefox/index.html" title="Firefox (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/Scientia/programming_languages/index.html" title="Programming Languages (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -62,17 +62,23 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/index.html"><span itemprop="name">Scientia - Gianluca Fiore Knowledge Wiki</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Flash</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programming_languages/index.html"><span itemprop="name">Programming Languages</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Assembly</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#arm-assembly">ARM Assembly</a>
       <ul>
-        <li><a href="#enable-hardware-acceleration-with-the-gpu">Enable hardware acceleration with the GPU</a></li>
+        <li><a href="#registers">Registers</a></li>
+      </ul>
+    </li>
+    <li><a href="#x64-assembly">X64 Assembly</a>
+      <ul>
+        <li><a href="#general-registers">General Registers</a></li>
+        <li><a href="#fpu-registers">FPU Registers</a></li>
       </ul>
     </li>
   </ul>
@@ -86,13 +92,37 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="flash">Flash</h1>
+<h1 id="assembly">Assembly</h1>
 
-<h3 id="enable-hardware-acceleration-with-the-gpu">Enable hardware acceleration with the GPU</h3>
-<p>Add:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">EnableLinuxHWVideoDecode</span><span class="o">=</span><span class="s">1</span>
-</span></span><span class="line"><span class="cl"><span class="na">OverrideGPUValidation</span><span class="o">=</span><span class="s">1</span>
-</span></span></code></pre></div><p>in /etc/adobe/mms.cfg</p>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#arm-assembly">ARM Assembly</a>
+<ul>
+<li><a href="#registers">Registers</a></li>
+</ul>
+</li>
+<li><a href="#x64-assembly">X64 Assembly</a>
+<ul>
+<li><a href="#general-registers">General Registers</a></li>
+<li><a href="#fpu-registers">FPU Registers</a></li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="arm-assembly">ARM Assembly</h2>
+<h3 id="registers">Registers</h3>
+<p>R0..R15 are 32bit, general registers. R13 doubles as the stack pointer (SP),
+R14 is the link register (LR), R15 the program counter (PC).</p>
+<h2 id="x64-assembly">X64 Assembly</h2>
+<h3 id="general-registers">General Registers</h3>
+<p>RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.</p>
+<p>R8..R15 are 64bit registers, unique to X64 Assembly.</p>
+<p>RIP is 64bit</p>
+<p>EFLAGS are the same as per X86 Assembly but 32bit longer.</p>
+<h3 id="fpu-registers">FPU Registers</h3>
+<p>FPR0..FPR7 are 64bit and only for arithmetic data of variable length (32, 64 or 80bits).</p>
+<p>MMX0..MMX7 are 64bit.</p>
+<p>XMM is 128bit, parallel operations, matching the SSE instructions set.</p>
 
             <footer class="footline">
             </footer>
@@ -134,8 +164,8 @@
           <li data-nav-id="/Scientia/frontend/d3/index.html" class="dd-item"><a href="/Scientia/frontend/d3/index.html">D3</a></li>
           <li data-nav-id="/Scientia/frontend/jquery/index.html" class="dd-item"><a href="/Scientia/frontend/jquery/index.html">jQuery</a></li>
           <li data-nav-id="/Scientia/frontend/npm/index.html" class="dd-item"><a href="/Scientia/frontend/npm/index.html">Npm</a></li></ul></li>
-          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item"><input type="checkbox" id="section-2730d826a568fe36056ffffe2a578361" aria-controls="subsections-2730d826a568fe36056ffffe2a578361" class="toggle"><label class="a11y-only toggle" for="section-2730d826a568fe36056ffffe2a578361" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-2730d826a568fe36056ffffe2a578361">
-          <li data-nav-id="/Scientia/programming_languages/assembly/index.html" class="dd-item"><a href="/Scientia/programming_languages/assembly/index.html">Assembly</a></li>
+          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item parent"><input type="checkbox" id="section-2730d826a568fe36056ffffe2a578361" aria-controls="subsections-2730d826a568fe36056ffffe2a578361" class="toggle" checked><label class="a11y-only toggle" for="section-2730d826a568fe36056ffffe2a578361" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-2730d826a568fe36056ffffe2a578361">
+          <li data-nav-id="/Scientia/programming_languages/assembly/index.html" class="dd-item active"><a href="/Scientia/programming_languages/assembly/index.html">Assembly</a></li>
           <li data-nav-id="/Scientia/programming_languages/awk/index.html" class="dd-item"><a href="/Scientia/programming_languages/awk/index.html">Awk</a></li>
           <li data-nav-id="/Scientia/programming_languages/bash/index.html" class="dd-item"><a href="/Scientia/programming_languages/bash/index.html">Bash</a></li>
           <li data-nav-id="/Scientia/programming_languages/c/index.html" class="dd-item"><a href="/Scientia/programming_languages/c/index.html">C</a></li>
@@ -165,14 +195,14 @@
           <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Scientia/programs/index.html" class="dd-item parent"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle" checked><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle"><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
           <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
           <li data-nav-id="/Scientia/programs/e-uae/index.html" class="dd-item"><a href="/Scientia/programs/e-uae/index.html">E-Uae</a></li>
           <li data-nav-id="/Scientia/programs/ffmpeg/index.html" class="dd-item"><a href="/Scientia/programs/ffmpeg/index.html">Ffmpeg</a></li>
           <li data-nav-id="/Scientia/programs/firefox/index.html" class="dd-item"><a href="/Scientia/programs/firefox/index.html">Firefox</a></li>
-          <li data-nav-id="/Scientia/programs/flash/index.html" class="dd-item active"><a href="/Scientia/programs/flash/index.html">Flash</a></li>
+          <li data-nav-id="/Scientia/programs/flash/index.html" class="dd-item"><a href="/Scientia/programs/flash/index.html">Flash</a></li>
           <li data-nav-id="/Scientia/programs/gimp/index.html" class="dd-item"><a href="/Scientia/programs/gimp/index.html">Gimp</a></li>
           <li data-nav-id="/Scientia/programs/git/index.html" class="dd-item"><a href="/Scientia/programs/git/index.html">Git</a></li>
           <li data-nav-id="/Scientia/programs/gmail/index.html" class="dd-item"><a href="/Scientia/programs/gmail/index.html">GMail</a></li>
@@ -284,7 +314,7 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/Scientia/programs/flash/index.html" selected></option>
+                    <option lang="en" id="en" value="/Scientia/programming_languages/assembly/index.html" selected></option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
