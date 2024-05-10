@@ -13,6 +13,7 @@ weight: 910
         * [Protaras beaches](#protaras-beaches)
     * [Croatia](#croatia)
         * [Best beaches](#best-beaches)
+        * [Vis](#vis)
         * [Croatian tour agencies](#croatian-tour-agencies)
     * [France](#france)
         * [French Riviera](#french-riviera)
@@ -92,6 +93,40 @@ weight: 910
 * Supetar - on Brac
 * Zlatni Rat - on Brac
 * Plat - south of Dubrovnik, near Brasina
+
+### Vis
+
+A set of suggestions from /r/travel:
+
+```
+Blue caves. Do it once, amazing experience, but once you've seen it you've seen it. The green caves are not as good.
+
+Restaurant Villa Kaliopa - a little more expensive but the best restaurant I have ever been to anywhere. Palm tree setting, fresh fish, cappaccio, just fantastic. Save this for your special treat.
+
+Bistro Frutarija - fantastic little cafe bar on the water. Coffee is cheap and very good, we go here every single morning. Beer is cheap, food is very limited and cocktails are expensive, So I would stick to coffee or beer.
+
+Steniva beach - I'm sure you've seen this one. Bit of a hike from the road but absolutely worth it. Go first thing to avoid crowds, starts to get busy after 11 am. Still worth it if busy though.
+
+Srebna beach, may have spelt it wrong. Silver beach. I maybe prefer this to staniva, the pebbles are white and the water is crystal clear.
+
+You'll need a car or taxi, or scooter for these. I recommend scooter as way to get around if you can.
+
+Accomodation: stay clear of the hotels. Outdated and not great. Get a hostel or Airbnb, the hosts are usually local and can give good information and sometimes rent or offer lifts.
+
+Komiza is lovely and you should definitely visit, I don't know too much, there is sometimes a fisherman's festival on, and some restaurants do local catch of the day for 70 kuna, about 10 quid. I heard boka (?) lobster restaurant is good but never been.
+
+Fort George is very nice, but a little fancy and not as traditional as the rest of vis. It used to be a ruin and has now been converted into an up market bar venue. Definitely go for one drink during the day, but I wouldn't go for a party at night. You might like it but for me, I prefer bejbis bar for drinking late. Lots of locals, gets busy after 11 pm or midnight. Sometimes live music, and the same owner for over 20 years.
+
+Just past fort George are some abandoned tunnels from the military. Walk or cycle. Very cool to check out, and some old lookouts over the water sticking out of the cliff. There are millatry tours of the island but I've never done one. Just hired a bicycle or scooter and toured myself. There are some other tunnels that were used to hide submarines soo, pretty cool.
+
+If you can, go up Mount hum, there is a great lookout over komiza and a tiny little church that is beautiful.
+
+There is stand up paddle boarding in vis, or stand up paddle boarding and windsurfing in milna. I haven't been but heard both are very good from friends. Some places also offer sea kayaking, we wanted to go but the weather was too windy.
+
+Charlys is a cheap and good pizza place.
+
+Vatricia is expensive but very good. If you can only do one expensive meal, do the palm tree restaurant. If you can do two, do Vatricia. I must admit, we decided not to go there this year, but we have been many times in the past and it is very good. Expensive is also relative, 30 or 40 pounds each for lots of good sea food and drinks.
+```
 
 ### Croatian tour agencies
 
