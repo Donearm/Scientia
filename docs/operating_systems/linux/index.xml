@@ -22,6 +22,14 @@
 [Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.</description>
     </item>
     <item>
+      <title>Bluetooth</title>
+      <link>https://donearm.github.io/Scientia/operating_systems/linux/bluetooth/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/operating_systems/linux/bluetooth/index.html</guid>
+      <description>Dual boot pairing There are a few things to consider when using a bluetooth device under Linux along with it being used under Windows as well. The Archlinux Wiki has a good section on dual boot pairing but I experienced issues in following it, and a few steps seemed unnecessary in my case. YMMV, of course.
+I followed instead this answer on Stackexchange, which I will copy here the steps that helped me.</description>
+    </item>
+    <item>
       <title>Compose Key</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/compose_key/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
