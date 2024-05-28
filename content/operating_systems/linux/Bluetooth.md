@@ -4,6 +4,20 @@ bookCollapseSection: true
 weight: 514
 ---
 
+<!-- vim-markdown-toc GFM -->
+
+* [Dual boot pairing](#dual-boot-pairing)
+    * [The issue](#the-issue)
+    * [The solution](#the-solution)
+        * [Devices with multiple keys and specific devices instructions](#devices-with-multiple-keys-and-specific-devices-instructions)
+* [Battery reporting](#battery-reporting)
+* [Specific devices tips](#specific-devices-tips)
+    * [Keychron keyboards](#keychron-keyboards)
+        * [Sleep](#sleep)
+        * [Fast reconnect in Bluetooth mode](#fast-reconnect-in-bluetooth-mode)
+
+<!-- vim-markdown-toc -->
+
 ## Dual boot pairing
 
 There are a few things to consider when using a bluetooth device under Linux along with it being used under Windows as well. The Archlinux Wiki has a good [section on dual boot pairing](https://wiki.archlinux.org/title/Bluetooth#Dual_boot_pairing) but I experienced issues in following it, and a few steps seemed unnecessary in my case. YMMV, of course.
@@ -42,3 +56,27 @@ Basically, when you pair your device, your Bluetooth service generates a unique 
 Bluetooth 5.1 devices may show more than one key under the Windows registry. Depending on the exact device, it will be then necessary to add all the keys into the info file under Linux, and under a specific variable.
 
 This [table](https://wiki.archlinux.org/title/Bluetooth#Preparing_Bluetooth_5.1_Keys) on the Archlinux Wiki is quite complete. Be aware that the last column, "Destination Key File", means not a separate file but a key in the info file named `IdentityResolvingKey` or `SlaveLongTermKey` under which you will have the variable `Key` with the key copied from the Windows registry. I made the mistake of thinking these values would be a separate file and the pairing failed.
+
+## Battery reporting
+
+This should be supported for most devices out-of-the-box. Check it with:
+
+```
+upower --dump
+```
+
+And grep for your device. Gnome and Mate DE should also report it graphically without any intervention.
+
+## Specific devices tips
+
+### Keychron keyboards
+
+#### Sleep
+
+The keyboard goes to Auto Sleep Mode in 10 mins of sitting idle to save battery.
+
+Press fn1 + S + O (for 3 seconds) to disable the Auto Sleep Mode. If you want to go back to the Auto Sleep Mode, press fn + S + O (for 3 seconds) again. Wait for the visual light confirmation.
+
+#### Fast reconnect in Bluetooth mode
+
+For faster reconnect need to set `FastConnectable` to true in /etc/bluetooth/main.conf

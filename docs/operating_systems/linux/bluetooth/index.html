@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Hugo 0.126.1">
     <meta name="generator" content="Relearn 5.6.5">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
@@ -11,19 +11,19 @@
     <title>Bluetooth - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Scientia/css/fontawesome-all.min.css?1716631800" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1716631800" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/featherlight.min.css?1716631800" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1716631800" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/auto-complete.css?1716631800" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1716631800" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/perfect-scrollbar.min.css?1716631800" rel="stylesheet">
-    <link href="/Scientia/css/nucleus.css?1716631800" rel="stylesheet">
-    <link href="/Scientia/css/fonts.css?1716631800" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1716631800" rel="stylesheet"></noscript>
-    <link href="/Scientia/css/theme.css?1716631800" rel="stylesheet">
-    <link href="/Scientia/css/theme-fpc.css?1716631800" rel="stylesheet" id="variant-style">
-    <link href="/Scientia/css/ie.css?1716631800" rel="stylesheet">
-    <link href="/Scientia/css/variant.css?1716631800" rel="stylesheet">
-    <link href="/Scientia/css/print.css?1716631800" rel="stylesheet" media="print">
-    <script src="/Scientia/js/url.js?1716631800"></script>
-    <script src="/Scientia/js/variant.js?1716631800"></script>
+    <link href="/Scientia/css/fontawesome-all.min.css?1716896007" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1716896007" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/featherlight.min.css?1716896007" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/featherlight.min.css?1716896007" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/auto-complete.css?1716896007" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/auto-complete.css?1716896007" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/perfect-scrollbar.min.css?1716896007" rel="stylesheet">
+    <link href="/Scientia/css/nucleus.css?1716896007" rel="stylesheet">
+    <link href="/Scientia/css/fonts.css?1716896007" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fonts.css?1716896007" rel="stylesheet"></noscript>
+    <link href="/Scientia/css/theme.css?1716896007" rel="stylesheet">
+    <link href="/Scientia/css/theme-fpc.css?1716896007" rel="stylesheet" id="variant-style">
+    <link href="/Scientia/css/ie.css?1716896007" rel="stylesheet">
+    <link href="/Scientia/css/variant.css?1716896007" rel="stylesheet">
+    <link href="/Scientia/css/print.css?1716896007" rel="stylesheet" media="print">
+    <script src="/Scientia/js/url.js?1716896007"></script>
+    <script src="/Scientia/js/variant.js?1716896007"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/donearm.github.io\/Scientia/';
       window.variants && variants.init( [ 'fpc' ] );
     </script>
-    <script src="/Scientia/js/jquery.min.js?1716631800" defer></script>
+    <script src="/Scientia/js/jquery.min.js?1716896007" defer></script>
   </head>
   <body class="mobile-support html" data-url="/Scientia/operating_systems/linux/bluetooth/index.html">
     <div id="body" class="default-animation">
@@ -81,6 +81,17 @@
         </li>
       </ul>
     </li>
+    <li><a href="#battery-reporting">Battery reporting</a></li>
+    <li><a href="#specific-devices-tips">Specific devices tips</a>
+      <ul>
+        <li><a href="#keychron-keyboards">Keychron keyboards</a>
+          <ul>
+            <li><a href="#sleep">Sleep</a></li>
+            <li><a href="#fast-reconnect-in-bluetooth-mode">Fast reconnect in Bluetooth mode</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
             </div>
@@ -94,6 +105,31 @@
           <article class="default">
 <h1 id="bluetooth">Bluetooth</h1>
 
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#dual-boot-pairing">Dual boot pairing</a>
+<ul>
+<li><a href="#the-issue">The issue</a></li>
+<li><a href="#the-solution">The solution</a>
+<ul>
+<li><a href="#devices-with-multiple-keys-and-specific-devices-instructions">Devices with multiple keys and specific devices instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#battery-reporting">Battery reporting</a></li>
+<li><a href="#specific-devices-tips">Specific devices tips</a>
+<ul>
+<li><a href="#keychron-keyboards">Keychron keyboards</a>
+<ul>
+<li><a href="#sleep">Sleep</a></li>
+<li><a href="#fast-reconnect-in-bluetooth-mode">Fast reconnect in Bluetooth mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
 <h2 id="dual-boot-pairing">Dual boot pairing</h2>
 <p>There are a few things to consider when using a bluetooth device under Linux along with it being used under Windows as well. The Archlinux Wiki has a good <a href="https://wiki.archlinux.org/title/Bluetooth#Dual_boot_pairing">section on dual boot pairing</a> but I experienced issues in following it, and a few steps seemed unnecessary in my case. YMMV, of course.</p>
 <p>I followed instead <a href="https://unix.stackexchange.com/questions/255509/bluetooth-pairing-on-dual-boot-of-windows-linux-mint-ubuntu-stop-having-to-p/255510#255510">this answer</a> on Stackexchange, which I will copy here the steps that helped me.</p>
@@ -137,6 +173,17 @@ Key=B99999999FFFFFFFFF999999999FFFFF</p>
 <h4 id="devices-with-multiple-keys-and-specific-devices-instructions">Devices with multiple keys and specific devices instructions</h4>
 <p>Bluetooth 5.1 devices may show more than one key under the Windows registry. Depending on the exact device, it will be then necessary to add all the keys into the info file under Linux, and under a specific variable.</p>
 <p>This <a href="https://wiki.archlinux.org/title/Bluetooth#Preparing_Bluetooth_5.1_Keys">table</a> on the Archlinux Wiki is quite complete. Be aware that the last column, &ldquo;Destination Key File&rdquo;, means not a separate file but a key in the info file named <code>IdentityResolvingKey</code> or <code>SlaveLongTermKey</code> under which you will have the variable <code>Key</code> with the key copied from the Windows registry. I made the mistake of thinking these values would be a separate file and the pairing failed.</p>
+<h2 id="battery-reporting">Battery reporting</h2>
+<p>This should be supported for most devices out-of-the-box. Check it with:</p>
+<pre tabindex="0"><code>upower --dump
+</code></pre><p>And grep for your device. Gnome and Mate DE should also report it graphically without any intervention.</p>
+<h2 id="specific-devices-tips">Specific devices tips</h2>
+<h3 id="keychron-keyboards">Keychron keyboards</h3>
+<h4 id="sleep">Sleep</h4>
+<p>The keyboard goes to Auto Sleep Mode in 10 mins of sitting idle to save battery.</p>
+<p>Press fn1 + S + O (for 3 seconds) to disable the Auto Sleep Mode. If you want to go back to the Auto Sleep Mode, press fn + S + O (for 3 seconds) again. Wait for the visual light confirmation.</p>
+<h4 id="fast-reconnect-in-bluetooth-mode">Fast reconnect in Bluetooth mode</h4>
+<p>For faster reconnect need to set <code>FastConnectable</code> to true in /etc/bluetooth/main.conf</p>
 
             <footer class="footline">
             </footer>
@@ -159,12 +206,12 @@ Key=B99999999FFFFFFFFF999999999FFFFF</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Scientia/js/auto-complete.js?1716631800" defer></script>
-        <script src="/Scientia/js/lunr.min.js?1716631800" defer></script>
-        <script src="/Scientia/js/lunr.stemmer.support.min.js?1716631800" defer></script>
-        <script src="/Scientia/js/lunr.multi.min.js?1716631800" defer></script>
-        <script src="/Scientia/js/lunr.en.min.js?1716631800" defer></script>
-        <script src="/Scientia/js/search.js?1716631800" defer></script>
+        <script src="/Scientia/js/auto-complete.js?1716896007" defer></script>
+        <script src="/Scientia/js/lunr.min.js?1716896007" defer></script>
+        <script src="/Scientia/js/lunr.stemmer.support.min.js?1716896007" defer></script>
+        <script src="/Scientia/js/lunr.multi.min.js?1716896007" defer></script>
+        <script src="/Scientia/js/lunr.en.min.js?1716896007" defer></script>
+        <script src="/Scientia/js/search.js?1716896007" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -357,9 +404,9 @@ Key=B99999999FFFFFFFFF999999999FFFFF</p>
         </div>
       </div>
     </aside>
-    <script src="/Scientia/js/clipboard.min.js?1716631800" defer></script>
-    <script src="/Scientia/js/perfect-scrollbar.min.js?1716631800" defer></script>
-    <script src="/Scientia/js/featherlight.min.js?1716631800" defer></script>
-    <script src="/Scientia/js/theme.js?1716631800" defer></script>
+    <script src="/Scientia/js/clipboard.min.js?1716896007" defer></script>
+    <script src="/Scientia/js/perfect-scrollbar.min.js?1716896007" defer></script>
+    <script src="/Scientia/js/featherlight.min.js?1716896007" defer></script>
+    <script src="/Scientia/js/theme.js?1716896007" defer></script>
   </body>
 </html>
