@@ -300,6 +300,9 @@ See [Caribbeans' page](../caribbeans).
 
 Not to miss (some are in Bolivia but easy to visit in the same trip)
 
+* Chavin de Huantar
+* Vinicunca (the Rainbow Mountain)
+* Saqsaywaman
 * Machu Picchu
 * Cuzco
 * Lima
