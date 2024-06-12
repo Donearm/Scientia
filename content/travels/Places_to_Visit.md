@@ -306,6 +306,9 @@ Not to miss (some are in Bolivia but easy to visit in the same trip)
 * Machu Picchu
 * Cuzco
 * Lima
+* Caral
+* Colca Canyon
+* Huacachina (a large oasis in the middle of high sandy dunes, next to Ica)
 * Nazca
 * Tiahuanaco
 * Salar de Uyuni
