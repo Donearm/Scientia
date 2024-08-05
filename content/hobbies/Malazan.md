@@ -16,6 +16,7 @@ weight: 1127
     * [The Bonehunters](#the-bonehunters)
     * [The Return of the Crimson Guard](#the-return-of-the-crimson-guard)
     * [Reaper's Gale](#reapers-gale)
+    * [Toll The Hounds](#toll-the-hounds)
 
 <!-- vim-markdown-toc -->
 
@@ -204,3 +205,8 @@ The notes are separated by the book they are in, and ordered by page count.
   Forkrul Assail killed in front of it. From the temple emerge the Errant, 
   covered in blood. It is not clearly stated that he killed all those Forkrul 
   Assail but it is implied that he did it.
+
+### Toll The Hounds
+
+* `pg 253`: Cotillion and Shadowthrone surmise that Mael wanted to delay 
+  Traveller confrontation with Hood, but not impeding it altogether
