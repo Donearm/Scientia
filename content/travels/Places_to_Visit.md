@@ -37,6 +37,7 @@ weight: 910
     * [Cuba](#cuba)
     * [Peru](#peru)
 * [Asia](#asia)
+    * [China](#china)
     * [Indonesia](#indonesia)
         * [Bali](#bali)
     * [Iran](#iran)
@@ -316,6 +317,18 @@ Not to miss (some are in Bolivia but easy to visit in the same trip)
 * Titicaca
 
 # Asia
+
+## China
+
+Some suggested places collected from /r/travel:
+
+* **Hong Kong**: Victoria Harbour from the TST promenade, the view from the Peak, the Big Buddha, Chi Lin Nunnery and Nan Lian Gardens, Kowloon by night
+* **Beijing**: Forbidden City, Tiananmen Square, National Museum, Summer Palace, Temple of Heaven, Great Wall
+* **Chengdu**: Wuhou Temple, Pandas, Face changers, Du Fu’s Thatched Cottage, Leshan Giant Buddha, Emeishan Golden Summit
+* **Chongqing**: Hongya Caves, river cruise, Liziba Station, Wulong Karst
+* **Xi’An**: city walls, bell and drum towers, Great Mosque, Muslim St., Big Wild Goose Pagoda, Terracotta Army, Huashan Plank Road
+* **Shanghai**: Shanghai Tower, the Bund, Former French Concession, Yu Gardens, Oriental Pearl Towe 
+* **Luoyang**: Longmen Caves
 
 ## Indonesia
 
