@@ -5,6 +5,7 @@ weight: 1350
 
 <!-- vim-markdown-toc GFM -->
 
+* [Origins](#origins)
 * [Apocryphal books](#apocryphal-books)
     * [Book of Jubilees](#book-of-jubilees)
     * [Book of Enoch](#book-of-enoch)
@@ -50,6 +51,32 @@ weight: 1350
 <!-- vim-markdown-toc -->
 
 -------------
+
+## Origins
+
+The first official mentioning of Yahweh is dated to the realm of Amenhotep III 
+(1390-1352 b.C.) and says: "YHWA (in) the Land of the Shasu". The Shasu were 
+nomads of the Negev desert, Sinai, and northern Arabia, first known in the area 
+from the 15th b.C. century. They would resist for a few centuries till being 
+obliterated by the Sea Peoples.
+
+In the Bible there are a few mention of Yahweh being associated with Edom or 
+Sinai desert (Edom being located in the Negev desert). See Book of Judges 
+5:4-5, 20.
+
+It is possible that Yahweh is the same God as Qos, the national God of the 
+Edomites, and associated with Quzah, "the archer", of the north Arabian 
+pantheon.
+
+The cult of Yahweh, however it originated and however it came to the kingdom of 
+Israel and Judah, was accompanied by other deities till the times of prophet 
+Elijah (9th century b.C.). Monolatrism, considering one God the only one worth 
+worshipping but not denying the existence of others, of Yahweh seems well 
+established only around the times of prophet Hosea (8th century b.C.).
+
+Pure monotheism, complete denial of the existence of any God but for Yahweh, is 
+attested only after the Babylonian exile. Yahweh is considered the creator God 
+only in the Book of Isaiah (6th century b.C.).
 
 ## Apocryphal books
 
