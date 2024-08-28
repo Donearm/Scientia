@@ -41,6 +41,8 @@ weight: 910
     * [Indonesia](#indonesia)
         * [Bali](#bali)
     * [Iran](#iran)
+        * [Raja Ampat](#raja-ampat)
+            * [How to get there](#how-to-get-there)
     * [Thailand](#thailand)
         * [Bangkok](#bangkok)
         * [Pattaya](#pattaya)
@@ -346,6 +348,28 @@ See [Bali's page](../bali).
 * Shiraz
 * Yazd
 * Pasargad (Madarsoleyman), with the tomb of Cyrus the Great
+
+### Raja Ampat
+
+#### How to get there
+
+The trip to Raja Ampat is not the easiest one. Sorong, on West Papua, is the 
+main hub for ferries going to the Raja Ampat region. You can reach Sorong by 
+plane (from Jakarta, Makassar, Bali and others within Indonesia) or by ship 
+([Pelni](https://www.pelni.co.id) has a ferry that takes 4 days from Jakarta).
+
+Once in Sorong, it is necessary to take a ferry to Waisai, the main town of the 
+Raja Ampat region. The ferry runs twice daily, at 09:00 and 14:00.
+
+Usually the hotel you are staying in will offer a transfer from Waisai to the 
+dock of the hotel. If not, you can take a local boat, usually bartering 
+exhorbitant prices, or, if staying on Kri, use a semi-regular line of local 
+boats, sharing them with locals. Kri is the most popular island of the region 
+but unless you are staying on it, it makes more sense to arrange a transfer 
+with your hotel from Waisai.
+
+Moving around islands in the region is left to the traveller to arrange. No 
+regular lines exist, as of 2024.
 
 ## Thailand
 
