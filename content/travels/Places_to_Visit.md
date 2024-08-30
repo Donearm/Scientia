@@ -40,9 +40,9 @@ weight: 910
     * [China](#china)
     * [Indonesia](#indonesia)
         * [Bali](#bali)
-    * [Iran](#iran)
         * [Raja Ampat](#raja-ampat)
             * [How to get there](#how-to-get-there)
+    * [Iran](#iran)
     * [Thailand](#thailand)
         * [Bangkok](#bangkok)
         * [Pattaya](#pattaya)
@@ -338,17 +338,6 @@ Some suggested places collected from /r/travel:
 
 See [Bali's page](../bali).
 
-## Iran
-
-* Teheran
-* Isfahan
-* Susa (Shush)
-* Chogha Zanbil, the ziggurat
-* Persepolis
-* Shiraz
-* Yazd
-* Pasargad (Madarsoleyman), with the tomb of Cyrus the Great
-
 ### Raja Ampat
 
 #### How to get there
@@ -370,6 +359,17 @@ with your hotel from Waisai.
 
 Moving around islands in the region is left to the traveller to arrange. No 
 regular lines exist, as of 2024.
+
+## Iran
+
+* Teheran
+* Isfahan
+* Susa (Shush)
+* Chogha Zanbil, the ziggurat
+* Persepolis
+* Shiraz
+* Yazd
+* Pasargad (Madarsoleyman), with the tomb of Cyrus the Great
 
 ## Thailand
 
