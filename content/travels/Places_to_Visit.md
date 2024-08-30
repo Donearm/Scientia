@@ -43,6 +43,7 @@ weight: 910
         * [Raja Ampat](#raja-ampat)
             * [How to get there](#how-to-get-there)
     * [Iran](#iran)
+    * [Japan](#japan)
     * [Thailand](#thailand)
         * [Bangkok](#bangkok)
         * [Pattaya](#pattaya)
@@ -370,6 +371,24 @@ regular lines exist, as of 2024.
 * Shiraz
 * Yazd
 * Pasargad (Madarsoleyman), with the tomb of Cyrus the Great
+
+## Japan
+
+Castles:
+
+* Hirosaki Castle
+* Matsuyama Castle
+
+Gardens:
+
+* Kairakuen
+* Kenrokuen
+* Korakuen
+
+Temples:
+
+* Nanzenji Temple
+* Eiheiji Temple
 
 ## Thailand
 
