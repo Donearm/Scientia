@@ -13,5 +13,6 @@ Mytical seers, 7 in total, from the Rigveda, that cyclically are incarnated to t
 
 ## Philosophical schools within Hinduism
 
+* [Ajivika](https://en.wikipedia.org/wiki/%C4%80j%C4%ABvika) - contemporary to the Buddha's lifetime, it is in strike contrast with his teachings, being fatalist and deterministic. Everything was believed governed by fate, no free will existed, no superior God existed.
 + [Cārvāka](http://en.wikipedia.org/wiki/C%C4%81rv%C4%81ka) - contemporary school to Buddha's lifetime, which has arguably influenced his teachings. Materialistic, skeptic, atheist.
 + [Samkhya](http://en.wikipedia.org/wiki/Samkhya) - one of the most ancient schools, already rejecting the concept of an unitary God (Ishvara).
