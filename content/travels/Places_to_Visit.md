@@ -17,6 +17,7 @@ weight: 910
         * [Croatian tour agencies](#croatian-tour-agencies)
     * [France](#france)
         * [French Riviera](#french-riviera)
+    * [Iceland](#iceland)
     * [Italy](#italy)
         * [North Italy](#north-italy)
             * [Venice](#venice)
@@ -176,6 +177,30 @@ The beaches around Montpellier are beautiful if you end up that far.
 
 Pont du guard was a great half day, cliff jumping in front of an old massive Roman aqueduct.
 ```
+
+## Iceland
+
+Main spots to visits when doing a ring tour all around the island:
+
+* Fjaðrárgljúfur (a canyon)
+* Kirkjufell (mountain peak on the north coast)
+* Hellnar (fishing village on a spectacular coastline)
+* Skogafoss (waterfall)
+* Seljalandsfoss (waterfall)
+* Reynisfjara Black Sand Beach
+* Diamond Beach (beach where chunks of ice drift ashore)
+* Klifbrekku Waterfall
+* Gufu waterfall
+* Stuðlagil (canyon)
+* Dettifoss (waterfall)
+* Goðafoss (waterfall)
+* Búðakirkja (black church on a scenic lava field)
+* Bjarnarfoss (waterfall)
+* Kerid Crater (volcanic crater with a lake)
+* Geysir (geysers)
+* Gullfoss (waterfall)
+* Thingvellir (national park)
+* Blue Lagoon (hot baths)
 
 ## Italy
 
