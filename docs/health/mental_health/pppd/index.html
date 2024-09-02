@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>Flash - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>PPPD (Persistend Postural Perceptual Dizziness) - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/Scientia/css/fontawesome-all.min.css?1725280485" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1725280485" rel="stylesheet"></noscript>
@@ -43,17 +43,17 @@
     </script>
     <script src="/Scientia/js/jquery.min.js?1725280485" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/Scientia/programs/flash/index.html">
+  <body class="mobile-support html" data-url="/Scientia/health/mental_health/pppd/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/Scientia/programs/gimp/index.html" title="Gimp (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/Scientia/philosophy_and_religion/index.html" title="Philosophy and Religion (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/Scientia/programs/firefox/index.html" title="Firefox (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/Scientia/health/mental_health/depression/index.html" title="Depression (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -62,17 +62,32 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/index.html"><span itemprop="name">Scientia - Gianluca Fiore Knowledge Wiki</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Flash</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/health/index.html"><span itemprop="name">Health</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/health/mental_health/index.html"><span itemprop="name">Mental Health</span></a><meta itemprop="position" content="3"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">PPPD (Persistend Postural Perceptual Dizziness)</span><meta itemprop="position" content="4"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#exercises">Exercises</a>
       <ul>
-        <li><a href="#enable-hardware-acceleration-with-the-gpu">Enable hardware acceleration with the GPU</a></li>
+        <li><a href="#gaze-stabilization">Gaze stabilization</a></li>
+        <li><a href="#left-right-movements">Left-right movements</a></li>
+        <li><a href="#throwing-ball">Throwing ball</a></li>
+        <li><a href="#throw-ball-under-knee">Throw ball under knee</a></li>
+        <li><a href="#standing-and-sitting">Standing and sitting</a></li>
+        <li><a href="#left-right-laying">Left-right laying</a></li>
+        <li><a href="#head-rotation">Head rotation</a></li>
+        <li><a href="#head-bending">Head bending</a></li>
+        <li><a href="#sitting-routine">Sitting routine</a></li>
+        <li><a href="#standing-with-one-foot-in-front-of-the-other">Standing with one foot in front of the other</a></li>
+        <li><a href="#stand-with-heels-together">Stand with heels together</a></li>
+        <li><a href="#walking-in-a-straight-line">Walking in a straight line</a></li>
+        <li><a href="#walking-combined-with-head-turning">Walking combined with head turning</a></li>
+        <li><a href="#smooth-pursuit">Smooth pursuit</a></li>
       </ul>
     </li>
   </ul>
@@ -86,13 +101,87 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="flash">Flash</h1>
+<h1 id="pppd-persistend-postural-perceptual-dizziness">PPPD (Persistend Postural Perceptual Dizziness)</h1>
 
-<h3 id="enable-hardware-acceleration-with-the-gpu">Enable hardware acceleration with the GPU</h3>
-<p>Add:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="line"><span class="cl"><span class="na">EnableLinuxHWVideoDecode</span><span class="o">=</span><span class="s">1</span>
-</span></span><span class="line"><span class="cl"><span class="na">OverrideGPUValidation</span><span class="o">=</span><span class="s">1</span>
-</span></span></code></pre></div><p>in /etc/adobe/mms.cfg</p>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#exercises">Exercises</a>
+<ul>
+<li><a href="#gaze-stabilization">Gaze stabilization</a></li>
+<li><a href="#left-right-movements">Left-right movements</a></li>
+<li><a href="#throwing-ball">Throwing ball</a></li>
+<li><a href="#throw-ball-under-knee">Throw ball under knee</a></li>
+<li><a href="#standing-and-sitting">Standing and sitting</a></li>
+<li><a href="#left-right-laying">Left-right laying</a></li>
+<li><a href="#head-rotation">Head rotation</a></li>
+<li><a href="#head-bending">Head bending</a></li>
+<li><a href="#sitting-routine">Sitting routine</a></li>
+<li><a href="#standing-with-one-foot-in-front-of-the-other">Standing with one foot in front of the other</a></li>
+<li><a href="#stand-with-heels-together">Stand with heels together</a></li>
+<li><a href="#walking-in-a-straight-line">Walking in a straight line</a></li>
+<li><a href="#walking-combined-with-head-turning">Walking combined with head turning</a></li>
+<li><a href="#smooth-pursuit">Smooth pursuit</a></li>
+</ul>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="resources">Resources</h2>
+<p><a href="https://my.clevelandclinic.org/health/diseases/persistent-postural-perceptual-dizziness">Definition</a>. A possible related syndrome is <a href="https://my.clevelandclinic.org/health/diseases/24796-mal-de-debarquement-syndrome-mdds">MdDS</a> (Mal de Debarquement Syndrome).</p>
+<p>A good <a href="https://balanceanddizziness.org/wp-content/uploads/2019/11/PPPD_handout.pdf">pdf document</a> on what it is and how to treat it.</p>
+<h2 id="exercises">Exercises</h2>
+<p>A good <a href="https://www.umc.edu/Healthcare/ENT/Patient-Handouts/Adult/Otology/Vestibular_Exercises.html">list of exercises</a>.</p>
+<h3 id="gaze-stabilization">Gaze stabilization</h3>
+<p>Mark a point on the wall while seated a couple of meters away. Keep looking at it while moving the head left and right, or up and down, or even diagonally. Begin with 15 seconds, daily.</p>
+<p>Increase time if it is too easy</p>
+<p>Then increase difficulty by moving in more directions the head.</p>
+<p>Then do the exercise standing</p>
+<p>Then do the exercise on a “busy” wall (one with many colours or hanged stuff on it, not mostly empty)</p>
+<h3 id="left-right-movements">Left-right movements</h3>
+<p>Quickly move the head from left to right and back, with a little pause when looking straight ahead. Do not look at anything, just try to cause some dizziness.</p>
+<p>Increase time as soon as it is too easy</p>
+<h3 id="throwing-ball">Throwing ball</h3>
+<p>Take a ball and throw it towards the ceiling, catching it on the way down. Focus on the ball throughout the exercise.</p>
+<h3 id="throw-ball-under-knee">Throw ball under knee</h3>
+<p>Throw ball from hand to hand under one knee. Focus on the ball throughout the exercise.</p>
+<h3 id="standing-and-sitting">Standing and sitting</h3>
+<p>Stand from a sitting position and sit again, repeatedly, for 15-30 seconds. Focus your stare on a fixed point ahead of you.</p>
+<p>Once it is too easy, try by increasing time and then by having your eyes shut</p>
+<h3 id="left-right-laying">Left-right laying</h3>
+<p>On a bed, alternatively lay on the left and then on the right, progressively faster</p>
+<h3 id="head-rotation">Head rotation</h3>
+<p>While standing, rotate the head from left to right, progressively faster</p>
+<h3 id="head-bending">Head bending</h3>
+<p>In a sitting position, bend your head down to look at the floor then up to look at the ceiling.</p>
+<ol>
+<li>Lead your head with your eyes focusing on the floor and the ceiling.</li>
+<li>Repeat this 10 times. Stop and wait for symptoms to resolve, about 30 seconds.</li>
+<li>Repeat entire process 2 more times.</li>
+</ol>
+<h3 id="sitting-routine">Sitting routine</h3>
+<ol>
+<li>Shrug shoulders – 20 times.</li>
+<li>Turn shoulders to right and then to left – 20 times.</li>
+<li>Rotate head, shoulders and trunk – 20 times each:
+a. Rotate upper body right to left with eyes open, then repeat with eyes closed.
+b. Rotate upper body left to right with eyes open, then repeat with eyes closed.</li>
+<li>Bend forward and touch ground then sit up. Keep eyes focused on wall – 20 times.</li>
+<li>Bend forward and touch ground then sit up. Move eyes to floor and back – 20 times.</li>
+<li>Eye movements (head is still):
+a. Up and down (focusing on finger).
+b. Side to side (focusing on finger).
+c. Finger to tip of nose and out (focusing on finger).</li>
+</ol>
+<h3 id="standing-with-one-foot-in-front-of-the-other">Standing with one foot in front of the other</h3>
+<p>In a corner, practice standing “heel to toe” (one foot in front of the other with the heel of one foot touching the toe of the other foot) with eyes open for 30 seconds. The goal is to stand for the entire 30 seconds without touching the wall. You may make this more challenging by crossing arms across chest. If this is too hard at first, try standing “almost heel to toe” (with feet touching at big toes and ankles). Once you have mastered these with eyes open, practice with eyes closed.</p>
+<h3 id="stand-with-heels-together">Stand with heels together</h3>
+<p>Look straight ahead and hold balance (attempt only with assistance).</p>
+<h3 id="walking-in-a-straight-line">Walking in a straight line</h3>
+<p>In a hallway or next to a wall, practice walking in a straight line for 5 minutes with one foot in front of the other or “heel to toe” (with the heel of one foot touching the toe of the other foot). If this is too hard at first, practice walking “almost heel to toe” and gradually work to heel to toe touching.</p>
+<h3 id="walking-combined-with-head-turning">Walking combined with head turning</h3>
+<p>In a hallway or open space, practice walking in a straight line while turning head and eyes left and right with every other step (i.e. when you step with your left you look left, when you step with your right you look right). Continue for the length of the hallway or about 20 feet. Repeat the process 3 times. Now repeat the entire process 3 more times but this time looking at the ceiling or floor. You will need to rest between repetitions and let symptoms calm.</p>
+<h3 id="smooth-pursuit">Smooth pursuit</h3>
+<p>Holding a single target, keep eyes fixed on the target. Slowly move it side to side for 30 seconds while head stays still. Perform in the sitting position. Progress to the standing position as tolerated. Now repeat moving head up and down. Repeat 20 times in each direction per session. Do 3 sessions per day.</p>
 
             <footer class="footline">
             </footer>
@@ -166,14 +255,14 @@
           <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Scientia/programs/index.html" class="dd-item parent"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle" checked><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle"><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
           <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
           <li data-nav-id="/Scientia/programs/e-uae/index.html" class="dd-item"><a href="/Scientia/programs/e-uae/index.html">E-Uae</a></li>
           <li data-nav-id="/Scientia/programs/ffmpeg/index.html" class="dd-item"><a href="/Scientia/programs/ffmpeg/index.html">Ffmpeg</a></li>
           <li data-nav-id="/Scientia/programs/firefox/index.html" class="dd-item"><a href="/Scientia/programs/firefox/index.html">Firefox</a></li>
-          <li data-nav-id="/Scientia/programs/flash/index.html" class="dd-item active"><a href="/Scientia/programs/flash/index.html">Flash</a></li>
+          <li data-nav-id="/Scientia/programs/flash/index.html" class="dd-item"><a href="/Scientia/programs/flash/index.html">Flash</a></li>
           <li data-nav-id="/Scientia/programs/gimp/index.html" class="dd-item"><a href="/Scientia/programs/gimp/index.html">Gimp</a></li>
           <li data-nav-id="/Scientia/programs/git/index.html" class="dd-item"><a href="/Scientia/programs/git/index.html">Git</a></li>
           <li data-nav-id="/Scientia/programs/gmail/index.html" class="dd-item"><a href="/Scientia/programs/gmail/index.html">GMail</a></li>
@@ -227,11 +316,11 @@
           <li data-nav-id="/Scientia/hobbies/sailing/index.html" class="dd-item"><a href="/Scientia/hobbies/sailing/index.html">Sailing</a></li>
           <li data-nav-id="/Scientia/hobbies/whisky/index.html" class="dd-item"><a href="/Scientia/hobbies/whisky/index.html">Whisky</a></li>
           <li data-nav-id="/Scientia/hobbies/wine/index.html" class="dd-item"><a href="/Scientia/hobbies/wine/index.html">Wine</a></li></ul></li>
-          <li data-nav-id="/Scientia/health/index.html" class="dd-item"><input type="checkbox" id="section-a87d6fcf7bbe2acc7620b3a7408692ba" aria-controls="subsections-a87d6fcf7bbe2acc7620b3a7408692ba" class="toggle"><label class="a11y-only toggle" for="section-a87d6fcf7bbe2acc7620b3a7408692ba" >Submenu Health</label><a href="/Scientia/health/index.html">Health</a><ul id="subsections-a87d6fcf7bbe2acc7620b3a7408692ba">
-          <li data-nav-id="/Scientia/health/mental_health/index.html" class="dd-item"><input type="checkbox" id="section-279701b7a812baafd808642910792bef" aria-controls="subsections-279701b7a812baafd808642910792bef" class="toggle"><label class="a11y-only toggle" for="section-279701b7a812baafd808642910792bef" >Submenu Mental Health</label><a href="/Scientia/health/mental_health/index.html">Mental Health</a><ul id="subsections-279701b7a812baafd808642910792bef">
+          <li data-nav-id="/Scientia/health/index.html" class="dd-item parent"><input type="checkbox" id="section-a87d6fcf7bbe2acc7620b3a7408692ba" aria-controls="subsections-a87d6fcf7bbe2acc7620b3a7408692ba" class="toggle" checked><label class="a11y-only toggle" for="section-a87d6fcf7bbe2acc7620b3a7408692ba" >Submenu Health</label><a href="/Scientia/health/index.html">Health</a><ul id="subsections-a87d6fcf7bbe2acc7620b3a7408692ba">
+          <li data-nav-id="/Scientia/health/mental_health/index.html" class="dd-item parent"><input type="checkbox" id="section-279701b7a812baafd808642910792bef" aria-controls="subsections-279701b7a812baafd808642910792bef" class="toggle" checked><label class="a11y-only toggle" for="section-279701b7a812baafd808642910792bef" >Submenu Mental Health</label><a href="/Scientia/health/mental_health/index.html">Mental Health</a><ul id="subsections-279701b7a812baafd808642910792bef">
           <li data-nav-id="/Scientia/health/mental_health/autism/index.html" class="dd-item"><a href="/Scientia/health/mental_health/autism/index.html">Autism</a></li>
           <li data-nav-id="/Scientia/health/mental_health/depression/index.html" class="dd-item"><a href="/Scientia/health/mental_health/depression/index.html">Depression</a></li>
-          <li data-nav-id="/Scientia/health/mental_health/pppd/index.html" class="dd-item"><a href="/Scientia/health/mental_health/pppd/index.html">PPPD (Persistend Postural Perceptual Dizziness)</a></li></ul></li></ul></li>
+          <li data-nav-id="/Scientia/health/mental_health/pppd/index.html" class="dd-item active"><a href="/Scientia/health/mental_health/pppd/index.html">PPPD (Persistend Postural Perceptual Dizziness)</a></li></ul></li></ul></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/index.html" class="dd-item"><input type="checkbox" id="section-93cddbbc9fad7cf2ca0a402709e1df68" aria-controls="subsections-93cddbbc9fad7cf2ca0a402709e1df68" class="toggle"><label class="a11y-only toggle" for="section-93cddbbc9fad7cf2ca0a402709e1df68" >Submenu Philosophy and Religion</label><a href="/Scientia/philosophy_and_religion/index.html">Philosophy and Religion</a><ul id="subsections-93cddbbc9fad7cf2ca0a402709e1df68">
           <li data-nav-id="/Scientia/philosophy_and_religion/buddhism/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/buddhism/index.html">Buddhism</a></li>
           <li data-nav-id="/Scientia/philosophy_and_religion/christianity/index.html" class="dd-item"><a href="/Scientia/philosophy_and_religion/christianity/index.html">Christianity</a></li>
@@ -286,7 +375,7 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/Scientia/programs/flash/index.html" selected></option>
+                    <option lang="en" id="en" value="/Scientia/health/mental_health/pppd/index.html" selected></option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
