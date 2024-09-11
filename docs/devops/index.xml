@@ -11,31 +11,150 @@
       <link>https://donearm.github.io/Scientia/devops/aws/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/devops/aws/index.html</guid>
-      <description>Products Terminology Products AMI Amazon Machine Images. Images to choose from to launch an instance.
-AWS CLI The command-line interface to AWS services.
-Useful Commands aws configure = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under ~/.aws/credentials and ~/.aws/config CloudFormation The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#products&#34;&gt;Products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#terminology&#34;&gt;Terminology&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;products&#34;&gt;Products&lt;/h1&gt;
+&lt;h2 id=&#34;ami&#34;&gt;AMI&lt;/h2&gt;
+&lt;p&gt;Amazon Machine Images. Images to choose from to launch an instance.&lt;/p&gt;
+&lt;h2 id=&#34;aws-cli&#34;&gt;AWS CLI&lt;/h2&gt;
+&lt;p&gt;The command-line interface to AWS services.&lt;/p&gt;
+&lt;h3 id=&#34;useful-commands&#34;&gt;Useful Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aws configure&lt;/code&gt; = initial command to run in order to configure access ID, secret access key, role name and zone to access AWS resources from the CLI. It stores the configuration under &lt;code&gt;~/.aws/credentials&lt;/code&gt; and &lt;code&gt;~/.aws/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cloudformation&#34;&gt;CloudFormation&lt;/h2&gt;
+&lt;p&gt;The provisioning service of AWS. A JSON/YAML file to create a whole stack of instances, databases and volumes, automatically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker</title>
       <link>https://donearm.github.io/Scientia/devops/docker/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/devops/docker/index.html</guid>
-      <description>Working with images Working with containers Working with networks Working with volumes General commands Docker-compose Docker Swarm Working with images docker image ls = list all images docker image inspect $imageid = show detailed info about $imageid image docker image build -t $imagename:$imagetag . = build an image from a Dockerfile in the current directory, with $imagename as name and $imagetag as tag docker image build -t $imagename:$imagetag $githuburl:$branchname = build an image from a Dockerfile residing on a Github repository at $githuburl, under branch $branchname docker image build -t $imagename:$imagetag - &amp;lt; $tarball = build an image from a tarball containing all the sources and the Dockerfile for the image docker image push $hubname/$imagename:$imagetag = push a local image to Docker Hub docker image save $imagename -o $tarfile.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#working-with-images&#34;&gt;Working with images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#working-with-containers&#34;&gt;Working with containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#working-with-networks&#34;&gt;Working with networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#working-with-volumes&#34;&gt;Working with volumes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#general-commands&#34;&gt;General commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#docker-compose&#34;&gt;Docker-compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#docker-swarm&#34;&gt;Docker Swarm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;working-with-images&#34;&gt;Working with images&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker image ls&lt;/code&gt; = list all images&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image inspect $imageid&lt;/code&gt; = show detailed info about &lt;code&gt;$imageid&lt;/code&gt; image&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image build -t $imagename:$imagetag .&lt;/code&gt; = build an image from a Dockerfile in the current directory, with &lt;code&gt;$imagename&lt;/code&gt; as name and &lt;code&gt;$imagetag&lt;/code&gt; as tag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image build -t $imagename:$imagetag $githuburl:$branchname&lt;/code&gt; = build an image from a Dockerfile residing on a Github repository at &lt;code&gt;$githuburl&lt;/code&gt;, under branch &lt;code&gt;$branchname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image build -t $imagename:$imagetag - &amp;lt; $tarball&lt;/code&gt; = build an image from a tarball containing all the sources and the Dockerfile for the image&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image push $hubname/$imagename:$imagetag&lt;/code&gt; = push a local image to Docker Hub&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image save $imagename -o $tarfile.tar&lt;/code&gt; = save an image to a tar file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image load --input $tarfile.tar&lt;/code&gt; = load an image from a tar file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker image tag $imageid $imagename:$imagetag&lt;/code&gt; = name and tag an already built image of &lt;code&gt;$imageid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker run -it $imageid /bin/bash&lt;/code&gt; = get a shell access (or any other command that should be present in it) to an image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;working-with-containers&#34;&gt;Working with containers&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker container ls&lt;/code&gt; = list running containers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container ls -a&lt;/code&gt; = list all containers, running and stopped ones&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container inspect $containerid&lt;/code&gt; = show detailed info about &lt;code&gt;$containerid&lt;/code&gt; container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container top $containerid&lt;/code&gt; = run &lt;code&gt;top&lt;/code&gt; command on &lt;code&gt;$containerid&lt;/code&gt; container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container attach $containerid&lt;/code&gt; = attach to a specific container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container logs $containerid&lt;/code&gt; = show logs of &lt;code&gt;$containerid&lt;/code&gt; container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container stats&lt;/code&gt; = show used resources of all running containers. With an optional &lt;code&gt;$containerid&lt;/code&gt; given, it shows a live stream of the used resources of that specific container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container exec -it $containerid $command&lt;/code&gt; = run &lt;code&gt;$command&lt;/code&gt; in &lt;code&gt;$containerid&lt;/code&gt; container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container exec -u 0 -it $containerid $command&lt;/code&gt; = as above, run &lt;code&gt;$command&lt;/code&gt; in &lt;code&gt;$containerid&lt;/code&gt; but be sure to be logged as root (user 0)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container pause $containerid&lt;/code&gt; = pause a container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container unpause $containerid&lt;/code&gt; = unpause a container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container prune&lt;/code&gt; = delete all stopped containers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container port $containerid&lt;/code&gt; = show all mapped ports of &lt;code&gt;$containerid&lt;/code&gt; container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container ls -a -f status=exited&lt;/code&gt; = show all local containers that have status as &amp;ldquo;exited&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container run -d --name $containername --cpus=&amp;quot;1&amp;quot; --memory=512M --memory-swap=1G $imagename&lt;/code&gt; = start a container but limiting its resources to 1 CPU, 512Mb of memory and 1Gb of swap&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker commit $containerid $image/$tag&lt;/code&gt; = after making changes to a running container, save them to a new (or existing) image with the &lt;code&gt;$image/$tag&lt;/code&gt; name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;working-with-networks&#34;&gt;Working with networks&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker network ls&lt;/code&gt; = list all networks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network inspect $networkname&lt;/code&gt; = show detailed info about &lt;code&gt;$networkname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network create $networkname&lt;/code&gt; = create a new network&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network rm $networkname&lt;/code&gt; = delete a network&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network prune&lt;/code&gt; = remove all unused networks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network connect $networkname $containername&lt;/code&gt; = connect a specific container to a specific network&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker network disconnect $networkname $containername&lt;/code&gt; = disconnect a container from a network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;working-with-volumes&#34;&gt;Working with volumes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker container run -it -v /some/local/directory/:/some/directory/within/the/container/ --name $containername $containerimage&lt;/code&gt; = run a new container from &lt;code&gt;$containerimage&lt;/code&gt;, creating a volume that will bind a local directory to a directory within the container. If either directories don&amp;rsquo;t exist, it will be created. Files can be used instead of directories. Paths must be absolute&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker container run -d --name $containername --mount type=bind,source=/some/local/directory/,target=/container/target/directory/ $imagename&lt;/code&gt; = run a new container from &lt;code&gt;$imagename&lt;/code&gt;, binding a local directory to a directory within the container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;general-commands&#34;&gt;General commands&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker system events --since &#39;2h&#39;&lt;/code&gt; = show all events related to the local Docker daemon, that happened in the last 2 hours&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker system events --filter type=volume --since &#39;2h&#39;&lt;/code&gt; = as above but filters for events related to volumes only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker cp localfile &amp;lt;containername&amp;gt;:/path/inside/the/container/to/file&lt;/code&gt; = copy a local file to inside an existing container.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;docker-compose&#34;&gt;Docker-compose&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker-compose up -d&lt;/code&gt; = start docker-compose daemon and run all containers, according to the docker-compose.yml. The file can be specified, if not in the current directory, with the &lt;code&gt;-f&lt;/code&gt; flag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-compose ps&lt;/code&gt; = list containers created by docker-compose&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-compose stop&lt;/code&gt; = stop docker-compose daemon, along with all its running containers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-compose down&lt;/code&gt; = as above but also deletes the containers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;docker-swarm&#34;&gt;Docker Swarm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker swarm init --advertise-addr $ip&lt;/code&gt; = initialize a new swarm manager (with &lt;code&gt;$ip&lt;/code&gt; being the address of the node to act as manager)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker swarm join --token $token $managerip:$managerport&lt;/code&gt; = join a node as a worker to the relative manager&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node ls&lt;/code&gt; = show nodes in the swarm (only to be run from a manager)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node inspect $hostname&lt;/code&gt; = show detailed info about a node of the swarm. Also the IP address can be used instead of the hostname&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node promote $hostname&lt;/code&gt; = promote a node worker to manager&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node demote $hostname&lt;/code&gt; = demote a node manager to worker&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node rm $hostname&lt;/code&gt; = remove a worker. A manager has to be demoted first before being able to remove it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker swarm leave&lt;/code&gt; = remove a local worker from the swarm&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker swarm join-token $role&lt;/code&gt; = print the token to join the swarm, from a manager, for a specific role (worker or manager)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker service create -d --name $servicename --replicas 2 $imagename&lt;/code&gt; = create a service with 2 replicas from the image &lt;code&gt;$imagename&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker service scale $servicename=3&lt;/code&gt; = scale the &lt;code&gt;$servicename&lt;/code&gt; to 3 replicas&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker service update --network-add $networkname $servicename&lt;/code&gt; = add service &lt;code&gt;$servicename&lt;/code&gt; to network &lt;code&gt;$networkname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker service update --network-rm $networkname $servicename&lt;/code&gt; = remove service &lt;code&gt;$servicename&lt;/code&gt; from the network &lt;code&gt;$networkname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker stack deploy --compose-file docker-compose.yml $stackname&lt;/code&gt; = deploy a stack with &lt;code&gt;$stackname&lt;/code&gt; from the given docker-compose.yml file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker stack ls&lt;/code&gt; = show stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker stack ps $stackname&lt;/code&gt; = show detailed info about the stack &lt;code&gt;$stackname&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Kubernetes</title>
       <link>https://donearm.github.io/Scientia/devops/kubernetes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/devops/kubernetes/index.html</guid>
-      <description>Basic commands kubectl get nodes = list all nodes in the cluster kubectl get pods = list all pods kubectl get deployments = list all deployments kubectl get svc = list all services kubectl get pods -n kube-system = list all system pods kubeadm init = initialize the master cluster kubectl describe pod $podname = show detailed info about a specific pod kubectl describe node $nodename = show detailed info about a specific node kubectl delete pod $podname = delete a specific pod.</description>
+      <description>&lt;h1 id=&#34;basic-commands&#34;&gt;Basic commands&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kubectl get nodes&lt;/code&gt; = list all nodes in the cluster&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl get pods&lt;/code&gt; = list all pods&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl get deployments&lt;/code&gt; = list all deployments&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl get svc&lt;/code&gt; = list all services&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl get pods -n kube-system&lt;/code&gt; = list all system pods&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubeadm init&lt;/code&gt; = initialize the master cluster&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl describe pod $podname&lt;/code&gt; = show detailed info about a specific pod&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl describe node $nodename&lt;/code&gt; = show detailed info about a specific node&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl delete pod $podname&lt;/code&gt; = delete a specific pod. With &lt;code&gt;node&lt;/code&gt; works with nodes too&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl exec $podname $command&lt;/code&gt; = execute a command from within a specific pod in the cluster&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl edit deployment $deploymentname -n $namespace&lt;/code&gt; = edit on the fly a deployment from a specific namespace&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>System Design</title>
       <link>https://donearm.github.io/Scientia/devops/system_design/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/devops/system_design/index.html</guid>
-      <description>CAP Theorem The theorem asserts that between Consistency, Availability and Partition tolerance only 2 can be had at the same time. The system designer has to make a trade off among CAP
-Consistency: data served is the same across all nodes Availability: every request receives a response, whether it succeeded or failed Partition Tolerance: the system continues to operate despite message loss or failure of part of it </description>
+      <description>&lt;h2 id=&#34;cap-theorem&#34;&gt;CAP Theorem&lt;/h2&gt;
+&lt;p&gt;The theorem asserts that between Consistency, Availability and Partition tolerance only 2 can be had at the same time. The system designer has to make a trade off among CAP&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: data served is the same across all nodes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: every request receives a response, whether it succeeded or failed&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition Tolerance&lt;/strong&gt;: the system continues to operate despite message loss or failure of part of it&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

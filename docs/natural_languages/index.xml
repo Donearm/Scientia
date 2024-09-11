@@ -18,7 +18,16 @@
       <link>https://donearm.github.io/Scientia/natural_languages/polish/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/natural_languages/polish/index.html</guid>
-      <description>Polish declension table Polish cursive letters (how to write them) </description>
+      <description>&lt;h2 id=&#34;polish-declension-table&#34;&gt;Polish declension table&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://donearm.github.io/Scientia/Scientia/natural_languages/polish/Declensions.png&#34; data-featherlight=&#34;image&#34;&gt;
+&lt;img src=&#34;https://donearm.github.io/Scientia/Scientia/natural_languages/polish/Declensions.png&#34; alt=&#34;Polish declensions table&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;polish-cursive-letters-how-to-write-them&#34;&gt;Polish cursive letters (how to write them)&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://donearm.github.io/Scientia/Scientia/natural_languages/polish/Polish_letters_cursive_examples.jpg&#34; data-featherlight=&#34;image&#34;&gt;
+&lt;img src=&#34;https://donearm.github.io/Scientia/Scientia/natural_languages/polish/Polish_letters_cursive_examples.jpg&#34; alt=&#34;Polish letters in cursive&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Portuguese</title>
@@ -39,7 +48,163 @@
       <link>https://donearm.github.io/Scientia/natural_languages/greek_alphabet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/natural_languages/greek_alphabet/index.html</guid>
-      <description>Phonetic sounds Letter Name Ancient Modern Α α alpha [a] [aː] [a] Β β beta [b] [v] Γ γ gamma [ɡ] [ɣ] ~ [ʝ] Δ δ delta [d] [ð] Ε ε epsilon [e] [e] Ζ ζ zeta [zd] [dz] [z] Η η eta [ɛː] [i] Θ θ theta [tʰ] [θ] Ι ι iota [i] [iː] [i] Κ κ kappa [k] [k] ~ [c] Λ λ lambda [l] [l] Μ μ mu [m] [m] Ν ν nu [n] [n] Ξ ξ xi [ks] [ks] Ο ο omicron [o] [o] Π π pi [p] [p] Ρ ρ rho [r] [r] Σ σς sigma [s] [s] Τ τ tau [t] [t] Υ υ upsilon [y] [yː] [i] Φ φ phi [pʰ] [f] Χ χ chi [kʰ] [x] ~ [ç] Ψ ψ psi [ps] [ps] Ω ω omega [ɔː] [o] </description>
+      <description>&lt;h2 id=&#34;phonetic-sounds&#34;&gt;Phonetic sounds&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Letter&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Name&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Ancient&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Modern&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Α α&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;alpha&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[a] [aː]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[a]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Β β&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;beta&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[b]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[v]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Γ γ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;gamma&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ɡ]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ɣ] ~ [ʝ]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Δ δ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;delta&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[d]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ð]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ε ε&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;epsilon&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[e]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[e]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ζ ζ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;zeta&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[zd] [dz]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[z]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Η η&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;eta&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ɛː]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[i]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Θ θ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;theta&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[tʰ]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[θ]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ι ι&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;iota&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[i] [iː]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[i]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Κ κ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;kappa&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[k]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[k] ~ [c]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Λ λ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;lambda&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[l]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[l]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Μ μ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;mu&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[m]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[m]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ν ν&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;nu&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[n]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[n]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ξ ξ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;xi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ks]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ks]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ο ο&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;omicron&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[o]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[o]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Π π&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;pi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[p]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[p]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ρ ρ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;rho&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[r]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[r]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Σ σς&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;sigma&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[s]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[s]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Τ τ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;tau&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[t]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[t]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Υ υ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;upsilon&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[y] [yː]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[i]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Φ φ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;phi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[pʰ]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[f]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Χ χ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;chi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[kʰ]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[x] ~ [ç]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ψ ψ&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;psi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ps]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ps]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ω ω&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;omega&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[ɔː]&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;[o]&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
   </channel>
 </rss>

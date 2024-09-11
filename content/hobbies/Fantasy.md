@@ -59,3 +59,5 @@ Not a fan (yet?) of Warhammer 40k but it has always been suggested to me as some
 8. Eisenhorn (trilogy)
 9. The Macharian Crusade (trilogy)
 10. Night Lords (trilogy)
+11. Ravenor series
+12. Ciaphas Cain series

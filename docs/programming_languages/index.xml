@@ -11,94 +11,213 @@
       <link>https://donearm.github.io/Scientia/programming_languages/assembly/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/assembly/index.html</guid>
-      <description>ARM Assembly Registers X64 Assembly General Registers FPU Registers ARM Assembly Registers R0..R15 are 32bit, general registers. R13 doubles as the stack pointer (SP), R14 is the link register (LR), R15 the program counter (PC).
-X64 Assembly General Registers RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.
-R8..R15 are 64bit registers, unique to X64 Assembly.
-RIP is 64bit
-EFLAGS are the same as per X86 Assembly but 32bit longer.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#arm-assembly&#34;&gt;ARM Assembly&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#registers&#34;&gt;Registers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#x64-assembly&#34;&gt;X64 Assembly&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#general-registers&#34;&gt;General Registers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fpu-registers&#34;&gt;FPU Registers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h2 id=&#34;arm-assembly&#34;&gt;ARM Assembly&lt;/h2&gt;
+&lt;h3 id=&#34;registers&#34;&gt;Registers&lt;/h3&gt;
+&lt;p&gt;R0..R15 are 32bit, general registers. R13 doubles as the stack pointer (SP),
+R14 is the link register (LR), R15 the program counter (PC).&lt;/p&gt;
+&lt;h2 id=&#34;x64-assembly&#34;&gt;X64 Assembly&lt;/h2&gt;
+&lt;h3 id=&#34;general-registers&#34;&gt;General Registers&lt;/h3&gt;
+&lt;p&gt;RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Awk</title>
       <link>https://donearm.github.io/Scientia/programming_languages/awk/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/awk/index.html</guid>
-      <description>Pring longest line value of a file Print only non-empty lines Count lines Awk as Grep Strings substitution Comparison Print only unique lines (like uniq) Regexp matching Variables in Awk Dates in Awk Print only fields after the first 2 Print longest line value of a file expand some_file | awk &amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39; Print only non-empty lines awk &amp;#39;NF &amp;gt; 0&amp;#39; some_file Count lines awk &amp;#39;END {print NR}&amp;#39; some_file Awk as Grep awk &amp;#39;{print $2}&amp;#39; some_file which is a quicker alternative to cat some_file | awk &#39;{print $2}&#39;</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#print-longest-line-value-of-a-file&#34;&gt;Pring longest line value of a file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#print-only-non-empty-lines&#34;&gt;Print only non-empty lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#count-lines&#34;&gt;Count lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#awk-as-grep&#34;&gt;Awk as Grep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#strings-substitution&#34;&gt;Strings substitution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#comparison&#34;&gt;Comparison&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#print-only-unique-lines-like-uniq&#34;&gt;Print only unique lines (like uniq)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#regexp-matching&#34;&gt;Regexp matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#variables-in-awk&#34;&gt;Variables in Awk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dates-in-awk&#34;&gt;Dates in Awk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#print-only-fields-after-the-first-2&#34;&gt;Print only fields after the first 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;print-longest-line-value-of-a-file&#34;&gt;Print longest line value of a file&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-awk&#34; data-lang=&#34;awk&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;expand&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;some_file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;awk&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Bash</title>
       <link>https://donearm.github.io/Scientia/programming_languages/bash/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/bash/index.html</guid>
-      <description>Functions Commands Scripts Syntax Functions namename prints the basename without extension
-ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;
-function namename() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; echo &amp;#34;${name0:-$name}&amp;#34; } function ext() { local name=${1##*/} local name0=&amp;#34;${name%.*}&amp;#34; local ext=${name0:+${name#$name0}} echo &amp;#34;${ext:-.}&amp;#34; } Commands CTRL Key Bound Ctrl + _ = undo Ctrl + @ = set mark Ctrl + a = Jump to the start of the line Ctrl + b = Move back a char Ctrl + c = Terminate the command Ctrl + d = Delete character under the cursor Ctrl + e = Jump to the end of the line Ctrl + f = Move forward a char Ctrl + k = Delete from cursor to EOL Ctrl + l = Clear the screen Ctrl + n = select the next command in history Ctrl + p = select the previous command in history Ctrl + r = Search the history backwards Ctrl + R = Search the history backwards with multi occurrence Ctrl + t = drag character before cursor over the one under the cursor Ctrl + u = Delete backward from cursor Ctrl + v = Insert next character verbatim Ctrl + w = kill word before cursor Ctrl + x = kill backward to the beginning of line Ctrl + xx = Move between EOL and current cursor position Ctrl + x @ = Show possible hostname completions Ctrl + y = paste the text at top of the kill#ring Ctrl + z = Suspend/ Stop the command ALT Key Bound Alt + &#39;&#39;&amp;lt;&#39;&#39; = Move to the first line in the history Alt + &#39;&#39;&amp;gt;&#39;&#39; = Move to the last line in the history Alt + ?</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#functions&#34;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#commands&#34;&gt;Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#scripts&#34;&gt;Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#syntax&#34;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
+&lt;p&gt;namename prints the basename without extension&lt;br&gt;
+ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; namename&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;##*/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;name0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;%.*&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name0&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$name&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; ext&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;##*/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;name0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;%.*&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ext&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:+&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$name0&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ext&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>C</title>
       <link>https://donearm.github.io/Scientia/programming_languages/c/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/c/index.html</guid>
-      <description>Gcc gcc -dM -E - &amp;lt;/dev/null = Print all the default macros </description>
+      <description>&lt;h3 id=&#34;gcc&#34;&gt;Gcc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gcc -dM -E - &amp;lt;/dev/null&lt;/code&gt; = Print all the default macros&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Common Lisp</title>
       <link>https://donearm.github.io/Scientia/programming_languages/common_lisp/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/common_lisp/index.html</guid>
-      <description>Syntax and various functions (format t &amp;#34;hello&amp;#34;) print to stdout (t) the string
-(list :a 1 :b 2 :c 3) make an indexed list (plist)
-getf (list :a 1 :b 2) :a) returns the value of :a
-(defvar var value) define var with given value
-(parse-integer str) converts the string str in an integer (if possible)
-(y-or-n-p string) make a yes/no prompt with string and waits the user input (basically until he press y or n)</description>
+      <description>&lt;h2 id=&#34;syntax-and-various-functions&#34;&gt;Syntax and various functions&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;format&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;print to stdout (t) the string&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:b&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:c&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;make an indexed list (plist)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;getf&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:b&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Go</title>
       <link>https://donearm.github.io/Scientia/programming_languages/go/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/go/index.html</guid>
-      <description>Commands go list all = List all installed packages, standard library&amp;rsquo;s included go list std = List only packages from the standard library go test -bench=. = Run benchmarks after the tests. . stands for current directory, obviously go env = List all Go variables Go Modules go mod init = creates a new module by initializing the go.mod file go list -m all = prints the current module&amp;rsquo;s dependencies go mod tidy = removes unused dependencies Test Coverage go test -cover = prints the percentage of coverage of your unit tests go test -cover -coverprofile=c.</description>
+      <description>&lt;h3 id=&#34;commands&#34;&gt;Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go list all&lt;/code&gt; = List all installed packages, standard library&amp;rsquo;s included&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go list std&lt;/code&gt; = List only packages from the standard library&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go test -bench=.&lt;/code&gt; = Run benchmarks after the tests. &lt;code&gt;.&lt;/code&gt; stands for current directory, obviously&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go env&lt;/code&gt; = List all Go variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;go-modules&#34;&gt;Go Modules&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go mod init&lt;/code&gt; = creates a new module by initializing the &lt;code&gt;go.mod&lt;/code&gt; file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go list -m all&lt;/code&gt; = prints the current module&amp;rsquo;s dependencies&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go mod tidy&lt;/code&gt; = removes unused dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;test-coverage&#34;&gt;Test Coverage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go test -cover&lt;/code&gt; = prints the percentage of coverage of your unit tests&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go test -cover -coverprofile=c.out&lt;/code&gt; = save the coverage results in the &lt;code&gt;c.out&lt;/code&gt; file. With it it&amp;rsquo;s possible to have a html view of the tests&amp;rsquo; coverage with &lt;code&gt;go tool cover -html=c.out -o coverage.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Javascript</title>
       <link>https://donearm.github.io/Scientia/programming_languages/javascript/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/javascript/index.html</guid>
-      <description>Asm.js Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM
-Gwt = compiler from Java to JS Emscripten and Mandreel = compilers from C++ to JS </description>
+      <description>&lt;h3 id=&#34;asmjs&#34;&gt;Asm.js&lt;/h3&gt;
+&lt;p&gt;Asm.js can be defined as a singleton array representing the memory. Similar in concept to a VM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gwt = compiler from Java to JS&lt;/li&gt;
+&lt;li&gt;Emscripten and Mandreel = compilers from C++ to JS&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Lua</title>
       <link>https://donearm.github.io/Scientia/programming_languages/lua/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/lua/index.html</guid>
-      <description>Self in Lua Declaring a function as t:test instead than t.test will automatically set a variable named self that refers to t. If that is a table, it&amp;rsquo;ll be possible to use self.a to refer to the value of object a in table t (like table = {a=1})
-Coroutines coroutine.create(f) = where f is a function coroutine.resume(c, [ares]) = resume a coroutine, optionally passing an argument coroutine.running() = to obtain a reference to the currently running coroutine coroutine.</description>
+      <description>&lt;h3 id=&#34;self-in-lua&#34;&gt;Self in Lua&lt;/h3&gt;
+&lt;p&gt;Declaring a function as &lt;code&gt;t:test&lt;/code&gt; instead than &lt;code&gt;t.test&lt;/code&gt; will automatically set a variable named &lt;code&gt;self&lt;/code&gt; that refers to &lt;code&gt;t&lt;/code&gt;. If that is a table, it&amp;rsquo;ll be possible to use &lt;code&gt;self.a&lt;/code&gt; to refer to the value of object &lt;code&gt;a&lt;/code&gt; in table &lt;code&gt;t&lt;/code&gt; (like &lt;code&gt;table = {a=1}&lt;/code&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;coroutines&#34;&gt;Coroutines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;coroutine.create(f)&lt;/code&gt; = where &lt;code&gt;f&lt;/code&gt; is a function&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coroutine.resume(c, [ares])&lt;/code&gt; = resume a coroutine, optionally passing an argument&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coroutine.running()&lt;/code&gt; = to obtain a reference to the currently running coroutine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coroutine.status(c)&lt;/code&gt; = returns strings &amp;ldquo;running&amp;rdquo;, &amp;ldquo;suspended&amp;rdquo;, &amp;ldquo;normal&amp;rdquo;, &amp;ldquo;dead&amp;rdquo; according to the status of the coroutine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coroutine.yield(...)&lt;/code&gt; = suspends the current coroutine and returns its arguments&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coroutine.wrap(f)&lt;/code&gt; = wrap a normal function so it can be used like &lt;code&gt;coroutine.yield()&lt;/code&gt; on it, like it were a coroutine&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Python</title>
       <link>https://donearm.github.io/Scientia/programming_languages/python/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/python/index.html</guid>
-      <description>Generic features and syntax Decorators Metaclasses Set operations Modules Generic features and syntax class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#generic-features-and-syntax&#34;&gt;Generic features and syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#decorators&#34;&gt;Decorators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#metaclasses&#34;&gt;Metaclasses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#set-operations&#34;&gt;Set operations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modules&#34;&gt;Modules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;generic-features-and-syntax&#34;&gt;Generic features and syntax&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class.__mro__&lt;/code&gt; = Contains all the ancestors of the class, up till &lt;code&gt;object&lt;/code&gt;, the Python base class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_&lt;/code&gt; = At Python prompt, it represents the last value. Mostly like &lt;code&gt;$?&lt;/code&gt; in Bash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__file__&lt;/code&gt; = Contains the name of the file loaded (a module if importing or the filename of the script)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locals()&lt;/code&gt; = Returns a dictionary with the local namespace&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;globals()&lt;/code&gt; = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&amp;rsquo;s being executed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerate()&lt;/code&gt; = Returns a list&amp;rsquo;s elements with numeric indexes. For example, &lt;code&gt;0, abc, 1, def&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[::2]&lt;/code&gt; = Slice of a list, iterating every 2 elements. Works also by selecting a range (&lt;code&gt;[1:10:2]&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[::-1]&lt;/code&gt; = Iterate over a list backward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;print(&amp;quot;The {foo} is a {bar}&amp;quot;.format(foo=&#39;answer&#39;, bar=&#39;42&#39;))&lt;/code&gt; = String substitution in print using an alphanumerical index&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first,*rest,last = (1,2,3,4,5,6,7)&lt;/code&gt; = Assign first element of the tuple to &lt;code&gt;first&lt;/code&gt;, the last to &lt;code&gt;last&lt;/code&gt;, and all those in between to &lt;code&gt;rest&lt;/code&gt;. Python 3 only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first,second,*rest = 1,2,3,4,5,6&lt;/code&gt; = Similarly to above, assign 1 to first, 2 to second and from 3 onward to rest. Rest will result in a list (&lt;code&gt;[3,4,5,6]&lt;/code&gt;). Python 3 only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__qualname__&lt;/code&gt; = Attribute of classes and functions showing the &amp;ldquo;path&amp;rdquo; from the module top-level to their definition. Practically shows all the parents functions/classes of a function/class. Only in Python &amp;gt;=3.3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python -m pydoc -k keyword&lt;/code&gt; = Search Python documentation for &amp;ldquo;keyword&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python -m this&lt;/code&gt; = The Zen of Python ;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a[-3]&lt;/code&gt; = Negative indexing, returns the third to last element of a list&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lastthree = slice(-3, None)&lt;/code&gt; = Saving a slice in a variable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;decorators&#34;&gt;Decorators&lt;/h3&gt;
+&lt;p&gt;Write a function like this:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sed</title>
       <link>https://donearm.github.io/Scientia/programming_languages/sed/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/sed/index.html</guid>
-      <description>Edit a string in multiple files at once for f in $files; do grep $oldstring $f | sed &amp;#39;s/$oldstring/$newstring/g&amp;#39; $f &amp;gt; ${f}.new ; done` this actually outputs every edited files to a new file. To edit in place, use sed with -i and don&amp;rsquo;t redirect the output
-Update copyright date at the change of year sed -i &amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39; Various syntax s/pattern//2g = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first &#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile = Save pattern from inputfile in file.</description>
+      <description>&lt;h3 id=&#34;edit-a-string-in-multiple-files-at-once&#34;&gt;Edit a string in multiple files at once&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; f in &lt;span class=&#34;nv&#34;&gt;$files&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; grep &lt;span class=&#34;nv&#34;&gt;$oldstring&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$f&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/$oldstring/$newstring/g&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$f&lt;/span&gt; &amp;gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.new &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;this actually outputs every edited files to a new file. To edit in place, use sed with &lt;code&gt;-i&lt;/code&gt; and don&amp;rsquo;t redirect the output&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zsh</title>
       <link>https://donearm.github.io/Scientia/programming_languages/zsh/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/zsh/index.html</guid>
-      <description>For loops syntax In Zsh, the for loops syntax differs from Bash. Write a loop either like:
-for x (1 2 3); do echo $x; done or like this:
-for x in 1 2 3; do echo $x; done Parameter expansion An alternative to the POSIX-complaint ${i%.ext}.newext in Zsh is:
-${i:r}.newext The :r tells the shell to automatically strip the extension, period included</description>
+      <description>&lt;h1 id=&#34;for-loops-syntax&#34;&gt;For loops syntax&lt;/h1&gt;
+&lt;p&gt;In Zsh, the for loops syntax differs from Bash. Write a loop either like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; x &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 3&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; x in &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 3&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

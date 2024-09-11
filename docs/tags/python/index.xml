@@ -11,7 +11,35 @@
       <link>https://donearm.github.io/Scientia/programming_languages/python/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programming_languages/python/index.html</guid>
-      <description>Generic features and syntax Decorators Metaclasses Set operations Modules Generic features and syntax class.__mro__ = Contains all the ancestors of the class, up till object, the Python base class _ = At Python prompt, it represents the last value. Mostly like $? in Bash __file__ = Contains the name of the file loaded (a module if importing or the filename of the script) locals() = Returns a dictionary with the local namespace globals() = Returns a dictionary with the global module namespace.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#generic-features-and-syntax&#34;&gt;Generic features and syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#decorators&#34;&gt;Decorators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#metaclasses&#34;&gt;Metaclasses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#set-operations&#34;&gt;Set operations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modules&#34;&gt;Modules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;generic-features-and-syntax&#34;&gt;Generic features and syntax&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class.__mro__&lt;/code&gt; = Contains all the ancestors of the class, up till &lt;code&gt;object&lt;/code&gt;, the Python base class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_&lt;/code&gt; = At Python prompt, it represents the last value. Mostly like &lt;code&gt;$?&lt;/code&gt; in Bash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__file__&lt;/code&gt; = Contains the name of the file loaded (a module if importing or the filename of the script)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locals()&lt;/code&gt; = Returns a dictionary with the local namespace&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;globals()&lt;/code&gt; = Returns a dictionary with the global module namespace. Inside a class or function returns the module where this is declared, not where it&amp;rsquo;s being executed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerate()&lt;/code&gt; = Returns a list&amp;rsquo;s elements with numeric indexes. For example, &lt;code&gt;0, abc, 1, def&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[::2]&lt;/code&gt; = Slice of a list, iterating every 2 elements. Works also by selecting a range (&lt;code&gt;[1:10:2]&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[::-1]&lt;/code&gt; = Iterate over a list backward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;print(&amp;quot;The {foo} is a {bar}&amp;quot;.format(foo=&#39;answer&#39;, bar=&#39;42&#39;))&lt;/code&gt; = String substitution in print using an alphanumerical index&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first,*rest,last = (1,2,3,4,5,6,7)&lt;/code&gt; = Assign first element of the tuple to &lt;code&gt;first&lt;/code&gt;, the last to &lt;code&gt;last&lt;/code&gt;, and all those in between to &lt;code&gt;rest&lt;/code&gt;. Python 3 only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first,second,*rest = 1,2,3,4,5,6&lt;/code&gt; = Similarly to above, assign 1 to first, 2 to second and from 3 onward to rest. Rest will result in a list (&lt;code&gt;[3,4,5,6]&lt;/code&gt;). Python 3 only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__qualname__&lt;/code&gt; = Attribute of classes and functions showing the &amp;ldquo;path&amp;rdquo; from the module top-level to their definition. Practically shows all the parents functions/classes of a function/class. Only in Python &amp;gt;=3.3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python -m pydoc -k keyword&lt;/code&gt; = Search Python documentation for &amp;ldquo;keyword&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python -m this&lt;/code&gt; = The Zen of Python ;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a[-3]&lt;/code&gt; = Negative indexing, returns the third to last element of a list&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lastthree = slice(-3, None)&lt;/code&gt; = Saving a slice in a variable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;decorators&#34;&gt;Decorators&lt;/h3&gt;
+&lt;p&gt;Write a function like this:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

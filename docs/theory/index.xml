@@ -11,22 +11,65 @@
       <link>https://donearm.github.io/Scientia/theory/big_oh_notation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/theory/big_oh_notation/index.html</guid>
-      <description>Basic definitions O(1) = constant: the operation doesn&amp;rsquo;t depend on the size of its input O(n) = linear: the run time complexity is proportionate to the size of n O(log n) = logarithmic: normally associated with algorithms that break the problem into smaller chunks O(n log n) = just n log n: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and then takes the results of the smaller chunks and stitches them back together O(n²) = quadratic O(n³) = cubic </description>
+      <description>&lt;h3 id=&#34;basic-definitions&#34;&gt;Basic definitions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;O(1)&lt;/code&gt; = constant: the operation doesn&amp;rsquo;t depend on the size of its input&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O(n)&lt;/code&gt; = linear: the run time complexity is proportionate to the size of &lt;code&gt;n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O(log n)&lt;/code&gt; = logarithmic: normally associated with algorithms that break the problem into smaller chunks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O(n log n)&lt;/code&gt; = just &lt;code&gt;n&lt;/code&gt; log &lt;code&gt;n&lt;/code&gt;: usually associated with an algorithm that breaks the problem into smaller chunks per each invocation, and  then takes the results of the smaller chunks and stitches them back together&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O(n²)&lt;/code&gt; = quadratic&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O(n³)&lt;/code&gt; = cubic&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Data Structures</title>
       <link>https://donearm.github.io/Scientia/theory/data_structures/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/theory/data_structures/index.html</guid>
-      <description>Linked List History Queues Dynamic Array Skip List Binary Tree BSP Tree Binary Indexed Tree Heap Associative Array Bit Array Trie Record Union Set Linked List A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.
-Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&amp;rsquo;s no need to rearrange the whole structure each time but:</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#linked-list&#34;&gt;Linked List&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#history&#34;&gt;History&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#queues&#34;&gt;Queues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dynamic-array&#34;&gt;Dynamic Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#skip-list&#34;&gt;Skip List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#binary-tree&#34;&gt;Binary Tree&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#bsp-tree&#34;&gt;BSP Tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#binary-indexed-tree&#34;&gt;Binary Indexed Tree&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#heap&#34;&gt;Heap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#associative-array&#34;&gt;Associative Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bit-array&#34;&gt;Bit Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#trie&#34;&gt;Trie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#record&#34;&gt;Record&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#union&#34;&gt;Union&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#set&#34;&gt;Set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;linked-list&#34;&gt;Linked List&lt;/h2&gt;
+&lt;p&gt;A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Set Theory</title>
       <link>https://donearm.github.io/Scientia/theory/set_theory/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/theory/set_theory/index.html</guid>
-      <description>Basics A ⊆ B = A is a subset of B. All the members of A are also found in B A ∪ B = Union. All the elements that are in A, B or both A ∩ B = Intersection. All the elements that are both in A and B A⊂ = Complement or Absolute complement. The set of all elements that are not in A but are in U, which is the universal set, basically a superset of all sets defined A⊂ ∩ B = Relative complement.</description>
+      <description>&lt;h3 id=&#34;basics&#34;&gt;Basics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;A ⊆ B&lt;/code&gt; = &lt;code&gt;A&lt;/code&gt; is a subset of &lt;code&gt;B&lt;/code&gt;. All the members of &lt;code&gt;A&lt;/code&gt; are also found in &lt;code&gt;B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A ∪ B&lt;/code&gt; = Union. All the elements that are in &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;B&lt;/code&gt; or both&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A ∩ B&lt;/code&gt; = Intersection. All the elements that are both in &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A⊂&lt;/code&gt; = Complement or Absolute complement. The set of all elements that are not in &lt;code&gt;A&lt;/code&gt; but are in &lt;code&gt;U&lt;/code&gt;, which is the universal set, basically a superset of all sets defined&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A⊂ ∩ B&lt;/code&gt; = Relative complement. The set of elements that are not in &lt;code&gt;A&lt;/code&gt; nor in &lt;code&gt;A ∩ B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A ∆ B&lt;/code&gt; = Symmetric difference. The set of elements that is in either one of the sets, but not in both&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A x B&lt;/code&gt; = Cartesian product. The set whose elements are all the ordered pairs of &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;. Like &lt;code&gt;A = {1,2,3}&lt;/code&gt; and &lt;code&gt;B = {4,5,6}&lt;/code&gt; will result in a Cartesian product of {% raw %} &lt;code&gt;{{1,4}, {1,5}, {1,6}, {2,4}, {2,5}, {2,6}, {3,4}, {3,5}, {3,6}}&lt;/code&gt;{% endraw %}&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

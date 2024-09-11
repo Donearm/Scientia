@@ -11,77 +11,465 @@
       <link>https://donearm.github.io/Scientia/hobbies/cigars/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/cigars/index.html</guid>
-      <description>Cigars flavours Plants Spices and Herbs Earth and Minerals Fruits Nuts Flowers Other Not-Really-Flavor Flavors Brands I am not an heavy smoker by any statistics. I dislike cigarettes and vaping, never got into weed even. But cigars, I like them. Very rarely I smoke one, more often the small ones, cigarillos, rather than the chunky ones. One every 2-3 weeks, at most.
-I am not a huge fan nor a conneisseur.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#cigars-flavours&#34;&gt;Cigars flavours&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#plants&#34;&gt;Plants&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#spices-and-herbs&#34;&gt;Spices and Herbs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#earth-and-minerals&#34;&gt;Earth and Minerals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fruits&#34;&gt;Fruits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#nuts&#34;&gt;Nuts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#flowers&#34;&gt;Flowers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other&#34;&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#not-really-flavor-flavors&#34;&gt;Not-Really-Flavor Flavors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#brands&#34;&gt;Brands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;p&gt;I am not an heavy smoker by any statistics. I dislike cigarettes and vaping, never got into weed even. But cigars, I like them. Very rarely I smoke one, more often the small ones, cigarillos, rather than the chunky ones. One every 2-3 weeks, at most.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Whisky</title>
       <link>https://donearm.github.io/Scientia/hobbies/whisky/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/whisky/index.html</guid>
-      <description>I am far from a whisky expert but occasionally I try to taste here and there the whiskies that I can put my hands on. I have a preference for Scotch, heavily peated ones, but do not disdain the random Irish whisky or sweet Bourbon.
-Whisky flavours </description>
+      <description>&lt;p&gt;I am far from a whisky expert but occasionally I try to taste here and there
+the whiskies that I can put my hands on. I have a preference for Scotch,
+heavily peated ones, but do not disdain the random Irish whisky or sweet
+Bourbon.&lt;/p&gt;
+&lt;h2 id=&#34;whisky-flavours&#34;&gt;Whisky flavours&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://donearm.github.io/Scientia/Scientia/hobbies/whisky/whisky_flavour_wheel.jpg&#34; data-featherlight=&#34;image&#34;&gt;
+&lt;img src=&#34;https://donearm.github.io/Scientia/Scientia/hobbies/whisky/whisky_flavour_wheel.jpg&#34; alt=&#34;Whisky Flavour Wheel&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cocktails</title>
       <link>https://donearm.github.io/Scientia/hobbies/cocktails/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/cocktails/index.html</guid>
-      <description>Home bar Core spirits Core liqueurs Optional spirits and liqueurs Bitters Tonics and other beverages I have a past experience, brief, as a bartender. Since then I developed a strong interest about cocktails and well-done mix of alcoholic beverages. I collected most of the main cocktail recipes plus many others I found interesting in their own repository.
-Home bar Setting up an home bar is a complex choice, with multiple possible bottles that can be added and, outside of a core of truly necessary ones, potentially infinite.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#home-bar&#34;&gt;Home bar&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#core-spirits&#34;&gt;Core spirits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#core-liqueurs&#34;&gt;Core liqueurs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#optional-spirits-and-liqueurs&#34;&gt;Optional spirits and liqueurs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bitters&#34;&gt;Bitters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tonics-and-other-beverages&#34;&gt;Tonics and other beverages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;p&gt;I have a past experience, brief, as a bartender. Since then I developed a strong interest about cocktails and well-done mix of alcoholic beverages. I collected most of the main cocktail recipes plus many others I found interesting in their own &lt;a href=&#34;https://github.com/Donearm/cocktails&#34;&gt;repository&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coffee</title>
       <link>https://donearm.github.io/Scientia/hobbies/coffee/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/coffee/index.html</guid>
-      <description>Espresso issues (and solutions) Fast extraction/channeling Grind finer. Go as fine as to choke the machine and proceed from there Beans are possibly stale. Get fresher ones. Increase dose Check correct tamping Initially slow extraction, then very fast It may be channelling. Try grinding slightly coarser to avoid the pressure to create channels a few seconds into the shot. This should rebalance the extraction.</description>
+      <description>&lt;h2 id=&#34;espresso-issues-and-solutions&#34;&gt;Espresso issues (and solutions)&lt;/h2&gt;
+&lt;h3 id=&#34;fast-extractionchanneling&#34;&gt;Fast extraction/channeling&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Grind finer. Go as fine as to choke the machine and proceed from there&lt;/li&gt;
+&lt;li&gt;Beans are possibly stale. Get fresher ones.&lt;/li&gt;
+&lt;li&gt;Increase dose&lt;/li&gt;
+&lt;li&gt;Check correct tamping&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;initially-slow-extraction-then-very-fast&#34;&gt;Initially slow extraction, then very fast&lt;/h4&gt;
+&lt;p&gt;It may be channelling. Try grinding slightly coarser to avoid the pressure to create channels a few seconds into the shot. This should rebalance the extraction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fantasy</title>
       <link>https://donearm.github.io/Scientia/hobbies/fantasy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/fantasy/index.html</guid>
-      <description>Chronology of fantasy of importance Warhammer 40k Reading list I have always been an avid fantasy reader. I started as a young kid in the late 1980s and ended up reading most of what I believe are the most important works within the genre. As a strong believers that you need to know the past to appreciate the right things in the present, I have developed a canon of the important works of fantasy that everybody should read to be well-versed in it.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#chronology-of-fantasy-of-importance&#34;&gt;Chronology of fantasy of importance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#warhammer-40k-reading-list&#34;&gt;Warhammer 40k Reading list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;p&gt;I have always been an avid fantasy reader. I started as a young kid in the late 1980s and ended up reading most of what I believe are the most important works within the genre. As a strong believers that you need to know the past to appreciate the right things in the present, I have developed a canon of the important works of fantasy that everybody should read to be well-versed in it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Games</title>
       <link>https://donearm.github.io/Scientia/hobbies/games/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/games/index.html</guid>
-      <description>Occasionally, I also play games. Not as much as in my youth, and rarely more than one game at time. But I do like games, even if I don&amp;rsquo;t consider myself a gamer in the modern sense (and surely neither a pro&amp;hellip;).
-Here I collect a few links and tips about games I enjoy(ed).
-Sensible World of Soccer 2020 Add 100 millions to a career Personal records Baldur&amp;rsquo;s Gate 3 Europa Universalis IV Max Payne Adapt the game to a widescreen monitor Rune Adapt the game to a widescreen monitor Serious Sam: The Second Encounter Adapt the game to a widescreen monitor Steam Add anotehr installation path to Steam library Move a game to another location in the Steam library The Elder Scrolls Online Install manually Addons on Linux UT2004 Amiga games Sensible World of Soccer 2020 Add 100 millions to a career Go to hexed.</description>
+      <description>&lt;p&gt;Occasionally, I also play games. Not as much as in my youth, and rarely more than one game at time. But I do like games, even if I don&amp;rsquo;t consider myself a gamer in the modern sense (and surely neither a pro&amp;hellip;).&lt;/p&gt;
+&lt;p&gt;Here I collect a few links and tips about games I enjoy(ed).&lt;/p&gt;
+&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#sensible-world-of-soccer-2020&#34;&gt;Sensible World of Soccer 2020&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#add-100-millions-to-a-career&#34;&gt;Add 100 millions to a career&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#personal-records&#34;&gt;Personal records&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#baldurs-gate-3&#34;&gt;Baldur&amp;rsquo;s Gate 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#europa-universalis-iv&#34;&gt;Europa Universalis IV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#max-payne&#34;&gt;Max Payne&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#adapt-the-game-to-a-widescreen-monitor&#34;&gt;Adapt the game to a widescreen monitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rune&#34;&gt;Rune&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#adapt-the-game-to-a-widescreen-monitor-1&#34;&gt;Adapt the game to a widescreen monitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#serious-sam-the-second-encounter&#34;&gt;Serious Sam: The Second Encounter&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#adapt-the-game-to-a-widescreen-monitor-2&#34;&gt;Adapt the game to a widescreen monitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#steam&#34;&gt;Steam&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#add-anotehr-installation-path-to-steam-library&#34;&gt;Add anotehr installation path to Steam library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#move-a-game-to-another-location-in-the-steam-library&#34;&gt;Move a game to another location in the Steam library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-elder-scrolls-online&#34;&gt;The Elder Scrolls Online&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#install-manually-addons-on-linux&#34;&gt;Install manually Addons on Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ut2004&#34;&gt;UT2004&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#amiga-games&#34;&gt;Amiga games&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h2 id=&#34;sensible-world-of-soccer-2020&#34;&gt;Sensible World of Soccer 2020&lt;/h2&gt;
+&lt;h3 id=&#34;add-100-millions-to-a-career&#34;&gt;Add 100 millions to a career&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to hexed.it on your browser&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Open file&amp;rdquo; and select your save game&lt;/li&gt;
+&lt;li&gt;Type &amp;ldquo;D5DC&amp;rdquo; in the &amp;ldquo;Go to&amp;rdquo; search field (upper right corner) and hit enter. The correct offset becomes selected&lt;/li&gt;
+&lt;li&gt;Click somewhere in the background so that the cursor is no longer in the &amp;ldquo;Go to&amp;rdquo; field&lt;/li&gt;
+&lt;li&gt;Type value &amp;ldquo;00E1F505&amp;rdquo; and you can see it replaces the original values&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Export&amp;rdquo; to save your edited file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;personal-records&#34;&gt;Personal records&lt;/h3&gt;
+&lt;p&gt;After playing for about 30 years to SWOS, I collected quite a few accomplishments. I usually do not keep track of all the games&amp;rsquo; records I break, and usually these are not many, but for SWOS I made an exception and religiously kept all my best accomplishments throughout this long stretch of playing the game.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Malazan</title>
       <link>https://donearm.github.io/Scientia/hobbies/malazan/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/malazan/index.html</guid>
-      <description>Reading order Notes Gardens of the Moon Deadhouse Gates Memories of Ice House of Chains Midnight Tides The Bonehunters The Return of the Crimson Guard Reaper&amp;rsquo;s Gale Toll The Hounds Reading order Much has been said about the right reading order for the Malazan series. I have no authority on that but I like this one from The Wertzone, modified to include the newest published books and the Bauchelain and Korbal Broach novellas):</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#reading-order&#34;&gt;Reading order&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#notes&#34;&gt;Notes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gardens-of-the-moon&#34;&gt;Gardens of the Moon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#deadhouse-gates&#34;&gt;Deadhouse Gates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#memories-of-ice&#34;&gt;Memories of Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#house-of-chains&#34;&gt;House of Chains&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#midnight-tides&#34;&gt;Midnight Tides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-bonehunters&#34;&gt;The Bonehunters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-return-of-the-crimson-guard&#34;&gt;The Return of the Crimson Guard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#reapers-gale&#34;&gt;Reaper&amp;rsquo;s Gale&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#toll-the-hounds&#34;&gt;Toll The Hounds&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;reading-order&#34;&gt;Reading order&lt;/h2&gt;
+&lt;p&gt;Much has been said about the right reading order for the Malazan series. I have no authority on that but I like this one from &lt;a href=&#34;https://thewertzone.blogspot.com/2017/11/a-better-malazan-reading-order.html&#34;&gt;The Wertzone&lt;/a&gt;, modified to include the newest published books and the Bauchelain and Korbal Broach novellas):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Music</title>
       <link>https://donearm.github.io/Scientia/hobbies/music/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/music/index.html</guid>
-      <description>Noticeable lyrics I rarely pay attention to lyrics. I am more focused on the music, the vibe, the technical skills of the instrumentalists rather than the words (and the singing as well). Occasionally a song catches my attention in an unusual way and then I go to read the lyrics.
-More often than not, the lyrics aren&amp;rsquo;t that great but very, very rarely, they are. I will save here links to lyrics that are worth reading (and the song isn&amp;rsquo;t bad either).</description>
+      <description>&lt;h2 id=&#34;noticeable-lyrics&#34;&gt;Noticeable lyrics&lt;/h2&gt;
+&lt;p&gt;I rarely pay attention to lyrics. I am more focused on the music, the vibe, the
+technical skills of the instrumentalists rather than the words (and the singing
+as well). Occasionally a song catches my attention in an unusual way and then I
+go to read the lyrics.&lt;/p&gt;
+&lt;p&gt;More often than not, the lyrics aren&amp;rsquo;t that great but very, very rarely, they
+are. I will save here links to lyrics that  are worth reading (and the song
+isn&amp;rsquo;t bad either).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sailing</title>
       <link>https://donearm.github.io/Scientia/hobbies/sailing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/sailing/index.html</guid>
-      <description>Things to know before a sailing course (ideally) Sailing schools in the Mediterranean Boats Good boats Cheap new boats Boat refit Boat land transportation Things to know before a sailing course (ideally) Sea terminology = parts of boat, rigging, sails Sail handling = bending on, setting, reefing, handling of sails, use of sheets, halyards and winches Ropework = coiling, stowing and securing to cleats and single/double bollards of ropes. Handling warps Knots = to learn figure-of-eight clove hitch rolling hitch bowline round turn two half hitches single sheet bend double sheet bend reef knot Fire and hazards = awareness and precautions to prevent fire, actions to take in the event of fire Rules for wearing safety harnesses, lifejackets and buoyancy aids Man overboard procedures Emergency equipment = how to operate and when to use distress flares, how to launch and board a life raft Manners and customs = use of burgees and ensigns, prevention of noise or disturbance, responsibilities to protect the environment Rules of passing and precedence Dinghies = loading rules, handling under oars Meteo = forecasting services knowledge, Beaufort scale Knowing and handling seasickness Helmanship = basic principles of sailing, steering and trimming sails on all points of sailing, steer a compass course under sail and power Responsibilities of skipper and crew Vessel checkout = documentation, charts, nautical publications and flags Capsizing, swamping and sinking Buoyage Charts, tides and currents Basic first-aid Anchoring and running aground Sailing schools in the Mediterranean Aegean Sailing School Costa Blanca Sailing Sail Ionian Sunsail Boats Good boats Nautor Swan 43 Oyster Mariner Hallberg Rassy Mistral Hallberg Rassy Monsun Hylas 44 (130-150k€ used) Kirie Feeling 486 (120-150k€ used) Hallberg Rassy 310 (190k€) Catalina 400 MkII (120-150k€) Dufour 36 (80-120k€ used) Dufour 38 Moody 41 DS (way too expensive&amp;hellip;) Sirius 35/40 Dehler 38SQ (170k€+) Cheap new boats Beneteau Oceanis 38.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#things-to-know-before-a-sailing-course-ideally&#34;&gt;Things to know before a sailing course (ideally)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#sailing-schools-in-the-mediterranean&#34;&gt;Sailing schools in the Mediterranean&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#boats&#34;&gt;Boats&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#good-boats&#34;&gt;Good boats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cheap-new-boats&#34;&gt;Cheap new boats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#boat-refit&#34;&gt;Boat refit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#boat-land-transportation&#34;&gt;Boat land transportation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;things-to-know-before-a-sailing-course-ideally&#34;&gt;Things to know before a sailing course (ideally)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sea terminology = parts of boat, rigging, sails&lt;/li&gt;
+&lt;li&gt;Sail handling = bending on, setting, reefing, handling of sails, use of sheets, halyards and winches&lt;/li&gt;
+&lt;li&gt;Ropework = coiling, stowing and securing to cleats and single/double bollards of ropes. Handling warps&lt;/li&gt;
+&lt;li&gt;Knots = to learn
+&lt;ul&gt;
+&lt;li&gt;figure-of-eight&lt;/li&gt;
+&lt;li&gt;clove hitch&lt;/li&gt;
+&lt;li&gt;rolling hitch&lt;/li&gt;
+&lt;li&gt;bowline&lt;/li&gt;
+&lt;li&gt;round turn&lt;/li&gt;
+&lt;li&gt;two half hitches&lt;/li&gt;
+&lt;li&gt;single sheet bend&lt;/li&gt;
+&lt;li&gt;double sheet bend&lt;/li&gt;
+&lt;li&gt;reef knot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fire and hazards = awareness and precautions to prevent fire, actions to take in the event of fire&lt;/li&gt;
+&lt;li&gt;Rules for wearing safety harnesses, lifejackets and buoyancy aids&lt;/li&gt;
+&lt;li&gt;Man overboard procedures&lt;/li&gt;
+&lt;li&gt;Emergency equipment = how to operate and when to use distress flares, how to launch and board a life raft&lt;/li&gt;
+&lt;li&gt;Manners and customs = use of burgees and ensigns, prevention of noise or disturbance, responsibilities to protect the environment&lt;/li&gt;
+&lt;li&gt;Rules of passing and precedence&lt;/li&gt;
+&lt;li&gt;Dinghies = loading rules, handling under oars&lt;/li&gt;
+&lt;li&gt;Meteo = forecasting services knowledge, Beaufort scale&lt;/li&gt;
+&lt;li&gt;Knowing and handling seasickness&lt;/li&gt;
+&lt;li&gt;Helmanship = basic principles of sailing, steering and trimming sails on all points of sailing, steer a compass course under sail and power&lt;/li&gt;
+&lt;li&gt;Responsibilities of skipper and crew&lt;/li&gt;
+&lt;li&gt;Vessel checkout = documentation, charts, nautical publications and flags&lt;/li&gt;
+&lt;li&gt;Capsizing, swamping and sinking&lt;/li&gt;
+&lt;li&gt;Buoyage&lt;/li&gt;
+&lt;li&gt;Charts, tides and currents&lt;/li&gt;
+&lt;li&gt;Basic first-aid&lt;/li&gt;
+&lt;li&gt;Anchoring and running aground&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sailing-schools-in-the-mediterranean&#34;&gt;Sailing schools in the Mediterranean&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aegeansailingschool.com/course/day-skipper/&#34;&gt;Aegean Sailing School&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.costablancasailing.co.uk/rya-courses-in-spain/rya-sailing-courses-in-spain/day-skipper-practical/&#34;&gt;Costa Blanca Sailing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sailionian.com/rya-sailing-courses/practical/rya-day-skipper/&#34;&gt;Sail Ionian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sunsail.co.uk/sailing-schools/intermediate-courses/rya-day-skipper-practical&#34;&gt;Sunsail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;boats&#34;&gt;Boats&lt;/h2&gt;
+&lt;h3 id=&#34;good-boats&#34;&gt;Good boats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nautor Swan 43&lt;/li&gt;
+&lt;li&gt;Oyster Mariner&lt;/li&gt;
+&lt;li&gt;Hallberg Rassy Mistral&lt;/li&gt;
+&lt;li&gt;Hallberg Rassy Monsun&lt;/li&gt;
+&lt;li&gt;Hylas 44 (130-150k€ used)&lt;/li&gt;
+&lt;li&gt;Kirie Feeling 486 (120-150k€ used)&lt;/li&gt;
+&lt;li&gt;Hallberg Rassy 310 (190k€)&lt;/li&gt;
+&lt;li&gt;Catalina 400 MkII (120-150k€)&lt;/li&gt;
+&lt;li&gt;Dufour 36 (80-120k€ used)&lt;/li&gt;
+&lt;li&gt;Dufour 38&lt;/li&gt;
+&lt;li&gt;Moody 41 DS (way too expensive&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;Sirius 35/40&lt;/li&gt;
+&lt;li&gt;Dehler 38SQ (170k€+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cheap-new-boats&#34;&gt;Cheap new boats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Beneteau Oceanis 38.1 (120-150k€)&lt;/li&gt;
+&lt;li&gt;Beneteau Oceanis 41.1&lt;/li&gt;
+&lt;li&gt;Aventura 34 (catamaran)&lt;/li&gt;
+&lt;li&gt;Aventura 37 (catamaran)&lt;/li&gt;
+&lt;li&gt;Hunter 41 (110-150k€)&lt;/li&gt;
+&lt;li&gt;Hanse 348 (100k€)&lt;/li&gt;
+&lt;li&gt;Hanse 388 (150k€)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;boat-refit&#34;&gt;Boat refit&lt;/h2&gt;
+&lt;p&gt;A few costs for an hypotetical refit of a 40-ish boat (2022).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wine</title>
       <link>https://donearm.github.io/Scientia/hobbies/wine/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/hobbies/wine/index.html</guid>
-      <description>I rarely drink wine. I grew up in Italy and wine was largely accessible and common on everyday&amp;rsquo;s table, but I did not indulge in it much. My palate is yet unable to get much of the differences of wine varieties and certainly I cannot distinguish an expensive bottle from a supermarket one. I aim to improve, though.
-Wine varieties and their characteristics Red Grape Variety Common Sensory Descriptors Cabernet Franc tobacco, green bell pepper, raspberry, freshly mown grass Cabernet Sauvignon blackcurrants, eucalyptus, chocolate, tobacco Gamay pomegranate, strawberry Grenache smoky, pepper, raspberry Malbec violet, plums, tart red fruit, earthy minerality Merlot black cherry, plums, tomato Mourvedre thyme, clove, cinnamon, black pepper, violet, blackberry Nebbiolo leather, tar, stewed prunes, chocolate, liquorice, roses, prunes Norton red fruit, elderberries Petite Sirah earthy, black pepper, dark fruits Petite Verdot violets (later), pencil shavings Pinot Noir raspberry, cherry, violets, &amp;ldquo;farmyard&amp;rdquo; (with age), truffles Pinotage bramble fruits Sangiovese herbs, black cherry, leathery, earthy Syrah/Shiraz tobacco, black/white pepper, blackberry, smoke Tempranillo vanilla, strawberry, tobacco Teroldego spices, chocolate, red fruits Zinfandel black cherry, pepper, mixed spices, mint, anise White Grape Variety Common Sensory Descriptor Albariño lemon, minerals, apricot, peach Breidecker apple, pear Chardonnay butter, melon, apple, pineapple, vanilla (if oaked, e.</description>
+      <description>&lt;p&gt;I rarely drink wine. I grew up in Italy and wine was largely accessible and
+common on everyday&amp;rsquo;s table, but I did not indulge in it much. My palate is yet
+unable to get much of the differences of wine varieties and certainly I cannot
+distinguish an expensive bottle from a supermarket one. I aim to improve,
+though.&lt;/p&gt;
+&lt;h2 id=&#34;wine-varieties-and-their-characteristics&#34;&gt;Wine varieties and their characteristics&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Red Grape Variety&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Common Sensory Descriptors&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Cabernet Franc&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;tobacco, green bell pepper, raspberry, freshly mown grass&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Cabernet Sauvignon&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;blackcurrants, eucalyptus, chocolate, tobacco&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Gamay&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;pomegranate, strawberry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Grenache&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;smoky, pepper, raspberry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Malbec&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;violet, plums, tart red fruit, earthy minerality&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Merlot&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;black cherry, plums, tomato&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Mourvedre&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;thyme, clove, cinnamon, black pepper, violet, blackberry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Nebbiolo&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;leather, tar, stewed prunes, chocolate, liquorice, roses, prunes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Norton&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;red fruit, elderberries&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Petite Sirah&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;earthy, black pepper, dark fruits&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Petite Verdot&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;violets (later), pencil shavings&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pinot Noir&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;raspberry, cherry, violets, &amp;ldquo;farmyard&amp;rdquo; (with age), truffles&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pinotage&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;bramble fruits&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Sangiovese&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;herbs, black cherry, leathery, earthy&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Syrah/Shiraz&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;tobacco, black/white pepper, blackberry, smoke&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Tempranillo&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;vanilla, strawberry, tobacco&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Teroldego&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;spices, chocolate, red fruits&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Zinfandel&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;black cherry, pepper, mixed spices, mint, anise&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;White Grape Variety&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Common Sensory Descriptor&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Albariño&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;lemon, minerals, apricot, peach&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Breidecker&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;apple, pear&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Chardonnay&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;butter, melon, apple, pineapple, vanilla (if oaked, e.g. vinified or aged in new oak aging barrels)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Chenin Blanc&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;wet wool, beeswax, honey, apple, almond&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Gewürztraminer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;rose petals, lychee, spice&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Grüner Veltliner&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;green apple, citrus&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Marsanne&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;almond, honeysuckle, marzipan&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Melon de Bourgogne&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;lime, salt, green apple&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Muscato&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;honey, grapes, lime&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Palomino&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;honeydew, citrus, raw nuts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pinot Gris&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;white peach, pear, apricot&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Prosecco&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;apple, honey, musk, citrus&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Riesling&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;citrus fruits, peach, honey, petrol&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Sauvignon Blanc&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;gooseberry, lime, asparagus, cut grass, bell pepper (capsicum), grapefruit, passionfruit, cat pee (tasters&amp;rsquo; term for guava)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Semillon&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;honey, orange, lime&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Trebbiano (Ugni Blanc)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;lime, herbs&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Verdicchio&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;apple, minerals, citrus, lemon, almond&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Vermentino&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;pear, cream, green fruits&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Viognier&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;peach, pear, nutmeg, apricot&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
   </channel>
 </rss>

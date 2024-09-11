@@ -11,42 +11,103 @@
       <link>https://donearm.github.io/Scientia/operating_systems/linux/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/index.html</guid>
-      <description>The largest section under Operating Systems by far. I have been using Linux since around 2002 and as my main OS since 2004-2005.
-Most I know about Linux I learned using Slackware, then Gentoo, then Archlinux. But I used to distro-hop a lot in the early years of my Linux learning and have probably tested between 15 and 20 different distro (tested as in installed, not just ran from a live usb pendrive).</description>
+      <description>&lt;p&gt;The largest section under Operating Systems by far. I have been using Linux
+since around 2002 and as my main OS since 2004-2005.&lt;/p&gt;
+&lt;p&gt;Most I know about Linux I learned using Slackware, then Gentoo, then Archlinux.
+But I used to distro-hop a lot in the early years of my Linux learning and have
+probably tested between 15 and 20 different distro (tested as in installed, not
+just ran from a live usb pendrive).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android</title>
       <link>https://donearm.github.io/Scientia/operating_systems/android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/android/index.html</guid>
-      <description>Performance tweaks Save Battery Increase overall touch responsiveness Raise photo and video recording quality 3G signal tweaks Net Tcp speed tweaks Disable blackscreen issue after call Various Uninstall sytem app Performance tweaks In /system/build.prop edit:
-ro.~HOME_APP_ADJ=1 to force launcher into memory
-ro.media.enc.jpeg.quality=100 to raise jpeg quality to 100%
-dalvik.vm.heapsize=48m specifies the VM heapsize
-debug.sf.hw=1 to render UI with the GPU
-ro.telephony.call_ring.delay=0 to decrease dialing out delay
-windowsmgr.max_events_per_sec=150 help scrolling responsiveness</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#performance-tweaks&#34;&gt;Performance tweaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#save-battery&#34;&gt;Save Battery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#increase-overall-touch-responsiveness&#34;&gt;Increase overall touch responsiveness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#raise-photo-and-video-recording-quality&#34;&gt;Raise photo and video recording quality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3g-signal-tweaks&#34;&gt;3G signal tweaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#net-tcp-speed-tweaks&#34;&gt;Net Tcp speed tweaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#disable-blackscreen-issue-after-call&#34;&gt;Disable blackscreen issue after call&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various&#34;&gt;Various&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#uninstall-system-app&#34;&gt;Uninstall sytem app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;performance-tweaks&#34;&gt;Performance tweaks&lt;/h1&gt;
+&lt;p&gt;In &lt;code&gt;/system/build.prop&lt;/code&gt; edit:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ro.~HOME_APP_ADJ&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to force launcher into memory&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ro.media.enc.jpeg.quality&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>FreeBSD</title>
       <link>https://donearm.github.io/Scientia/operating_systems/freebsd/freebsd_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/freebsd/freebsd_commands/index.html</guid>
-      <description>Various Commands cvsup = Update ports tree make search key=program = Search for program among the ports tree make index = Generate the ports index pkg_add = Install a package pkg_info = Show info about installed packages pkg_version = Show version number of an installed package pkg_delete = Remove a package /etc/rc.d/rc.daemon rcvar = Check if daemon is enabled or not /etc/rc.d/rc.daemon status = Check the status of daemon kldload = Load a kernel module pw = Modify, remove or add users and groups ipfw -a list = List firewall rules burncd = Command to burn cd gbde = Utility to encrypt/decrypt a disk portupgrade -af = Upgrade all ports freebsd-update = Upgrade the whole system freebsd-update -r version upgrade = Upgrade system to version freebsd-update install = Actually install updates, remove old libraries and object files portsclean -C = Clean out the work directory of past compilations portsclean -D = Clean out all distfiles that are not referenced by any ports in the tree.</description>
+      <description>&lt;h3 id=&#34;various-commands&#34;&gt;Various Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cvsup&lt;/code&gt; = Update ports tree&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make search key=program&lt;/code&gt; = Search for &lt;code&gt;program&lt;/code&gt; among the ports tree&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make index&lt;/code&gt; = Generate the ports index&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg_add&lt;/code&gt; = Install a package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg_info&lt;/code&gt; = Show info about installed packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg_version&lt;/code&gt; = Show version number of an installed package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg_delete&lt;/code&gt; = Remove a package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/rc.d/rc.daemon rcvar&lt;/code&gt; = Check if &lt;code&gt;daemon&lt;/code&gt; is enabled or not&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/rc.d/rc.daemon status&lt;/code&gt; = Check the status of &lt;code&gt;daemon&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kldload&lt;/code&gt; = Load a kernel module&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pw&lt;/code&gt; = Modify, remove or add users and groups&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipfw -a list&lt;/code&gt; = List firewall rules&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;burncd&lt;/code&gt; = Command to burn cd&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gbde&lt;/code&gt; = Utility to encrypt/decrypt a disk&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;portupgrade -af&lt;/code&gt; = Upgrade all ports&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;freebsd-update&lt;/code&gt; = Upgrade the whole system&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;freebsd-update -r version upgrade&lt;/code&gt; = Upgrade system to &lt;code&gt;version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;freebsd-update install&lt;/code&gt; = Actually install updates, remove old libraries and object files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;portsclean -C&lt;/code&gt; = Clean out the &lt;code&gt;work&lt;/code&gt; directory of past compilations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;portsclean -D&lt;/code&gt; = Clean out all distfiles that are not referenced by any ports in the tree. With &lt;code&gt;-DD&lt;/code&gt;, cleans out all distfiles that are not referenced by any currently installed port&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make mantainer&lt;/code&gt; = Print the email of the port&amp;rsquo;s mantainer (to be launched from the port&amp;rsquo;s directory)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;portsnap fetch&lt;/code&gt; = Download the ports database (in &lt;code&gt;/var/db/portsnap&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;portsnap extract&lt;/code&gt; = Extract the ports database in &lt;code&gt;/usr/ports&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipfstat&lt;/code&gt; = General statistics of the firewall (ipfilter)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;useful-files&#34;&gt;Useful Files&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/usr/src/sys/arch/conf/lint&lt;/code&gt; = Contains kernel configuration options&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/defaults/make.conf&lt;/code&gt; = Options for make&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/var/db/pkg&lt;/code&gt; = Database of the installed packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/boot/device.hints&lt;/code&gt; = Contains the variables read by kernel at boot time&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/dev/sndstat&lt;/code&gt; = Info about the soundcard&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>NixOS</title>
       <link>https://donearm.github.io/Scientia/operating_systems/nixos/nixos_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/nixos/nixos_commands/index.html</guid>
-      <description>Various Commands nixos-rebuild switch = rebuild the system after having edited the configuration nix-env -qaP package = search for package nix-env -e package = uninstall package nix-channel --update = update the system (according to currently subscribed channel)</description>
+      <description>&lt;h3 id=&#34;various-commands&#34;&gt;Various Commands&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;nixos-rebuild switch&lt;/code&gt; = rebuild the system after having edited the configuration
+&lt;code&gt;nix-env -qaP package&lt;/code&gt; = search for &lt;code&gt;package&lt;/code&gt;
+&lt;code&gt;nix-env -e package&lt;/code&gt;   = uninstall &lt;code&gt;package&lt;/code&gt;
+&lt;code&gt;nix-channel --update&lt;/code&gt; = update the system (according to currently subscribed channel)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows Commands</title>
       <link>https://donearm.github.io/Scientia/operating_systems/windows/windows_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/windows/windows_commands/index.html</guid>
-      <description>Windows Registry tweaks * HKEY\_CURRENT\_USER\ControlPanel\Desktop * MenuShowDelay = Delay in ms at the opening of menus. Default is 400 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management * DisablePagingExecutive = With 1, disable paging, forcing Windows to load everything into ram. Default is 0 * LargeSystemCache = With 1, load at boot also the kernel into ram. Default is 0 * HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters * EnablePrefetcher = Enable prefetching of data on the hard disk.</description>
+      <description>&lt;h2 id=&#34;windows-registry-tweaks&#34;&gt;Windows Registry tweaks&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-registry&#34; data-lang=&#34;registry&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;HKEY\_CURRENT\_USER\ControlPanel\Desktop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;* MenuShowDelay&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;Delay in ms at the opening of menus. Default is 400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Manager\Memory&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Management&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;* DisablePagingExecutive&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;With 1, disable paging, forcing Windows to load everything into ram. Default is 0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;* LargeSystemCache&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;With 1, load at boot also the kernel into ram. Default is 0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Control\Session&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Manager\Memory&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Management\PrefetchParameters&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;* EnablePrefetcher&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;Enable prefetching of data on the hard disk. With 2, the default, only for Windows, with 3, for every applications&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

@@ -11,255 +11,1089 @@
       <link>https://donearm.github.io/Scientia/programs/chromium/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/chromium/index.html</guid>
-      <description>Useful URIs chrome:extension = Opens the window to manage the installed extensions chrome:flags = Opens the experimental features and settings page chrome://gpu = View the status of GPU related features and about the drivers being used </description>
+      <description>&lt;h3 id=&#34;useful-uris&#34;&gt;Useful URIs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chrome:extension&lt;/code&gt; = Opens the window to manage the installed extensions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chrome:flags&lt;/code&gt; = Opens the experimental features and settings page&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chrome://gpu&lt;/code&gt; = View the status of GPU related features and about the drivers being used&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Curl</title>
       <link>https://donearm.github.io/Scientia/programs/curl/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/curl/index.html</guid>
-      <description>Various curl -C - -O url = resume an interrupted download of url xargs -n 1 curl -O &amp;lt; listofurls.txt = download a file list from a file, one by one curl -I www.url.com = get HTTP headers returning from a server curl --data &amp;quot;abc=123&amp;amp;def=456&amp;quot; http://url.com/info.php = make a POST request by sending the abc and def parameters with 123 and 456 values to the server curl --user-agent &amp;quot;User Agent string&amp;quot; = specify an User Agent string curl --cookie-jar cookies.</description>
+      <description>&lt;h2 id=&#34;various&#34;&gt;Various&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;curl -C - -O url&lt;/code&gt; = resume an interrupted download of &lt;code&gt;url&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xargs -n 1 curl -O &amp;lt; listofurls.txt&lt;/code&gt; = download a file list from a file, one by one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl -I www.url.com&lt;/code&gt; = get HTTP headers returning from a server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --data &amp;quot;abc=123&amp;amp;def=456&amp;quot; http://url.com/info.php&lt;/code&gt; = make a POST request by sending the &lt;code&gt;abc&lt;/code&gt; and &lt;code&gt;def&lt;/code&gt; parameters with &lt;code&gt;123&lt;/code&gt; and &lt;code&gt;456&lt;/code&gt; values to the server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --user-agent &amp;quot;User Agent string&amp;quot;&lt;/code&gt; = specify an User Agent string&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --cookie-jar cookies.txt http://www.url.com&lt;/code&gt; = save cookies received from url in &lt;code&gt;cookies.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --cookie cookies.txt http://www.url.com&lt;/code&gt; = send stored cookies in &lt;code&gt;cookies.txt&lt;/code&gt; to url&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --resolve www.url.com:80:8.8.8.8 http://www.url.com&lt;/code&gt; = use a different DNS server, in this example 8.8.8.8 on port 80, to resolve url&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Emacs</title>
       <link>https://donearm.github.io/Scientia/programs/emacs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/emacs/index.html</guid>
-      <description>Movements Basic commands Windows/Buffers Editing Files Dired Shell Various Movements C-v = Move forward of a screenful M-v = Move backwards of a screenful C-l = Center the screen on the cursor C-f = Move 1 character forward C-b = Move 1 character backward M-f = Go to next word M-b = Go to previous word C-M-f = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#movements&#34;&gt;Movements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-commands&#34;&gt;Basic commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#windowsbuffers&#34;&gt;Windows/Buffers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#editing&#34;&gt;Editing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#files&#34;&gt;Files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dired&#34;&gt;Dired&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#shell&#34;&gt;Shell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various&#34;&gt;Various&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;movements&#34;&gt;Movements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-v&lt;/code&gt; = Move forward of a screenful&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-v&lt;/code&gt; = Move backwards of a screenful&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-l&lt;/code&gt; = Center the screen on the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-f&lt;/code&gt; = Move 1 character forward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-b&lt;/code&gt; = Move 1 character backward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-f&lt;/code&gt; = Go to next word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-b&lt;/code&gt; = Go to previous word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-M-f&lt;/code&gt; = Go to next s-expression (usually this means parentheses, quotes, colon, periods etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-M-b&lt;/code&gt; = Go to the previous s-expression&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-n&lt;/code&gt; = Go to next line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-p&lt;/code&gt; = Go to previous line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a&lt;/code&gt; = Go to the beginning of current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-e&lt;/code&gt; = Go to the end of current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-a&lt;/code&gt; = Go to the beginning of phrase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-e&lt;/code&gt; = Go to the end of phrase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-&amp;lt;&lt;/code&gt; = Go back to the beginning of current file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-&amp;gt;&lt;/code&gt; = Move forward till the end of current file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-g g&lt;/code&gt; = Go to a specific line number (to be inserted)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x r j a&lt;/code&gt; = Go to the position saved in register &amp;ldquo;a&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-r&lt;/code&gt; = Alternatively jump between the top, the bottom and the middle of the current screen&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-M-a&lt;/code&gt; = Go at the beginning of current or previous function&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-M-e&lt;/code&gt; = Go at the end of current or previous function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basic-commands&#34;&gt;Basic commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-g&lt;/code&gt; = Cancel the currently active command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x u&lt;/code&gt; = Undo last command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-c&lt;/code&gt; = Exit from Emacs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-h&lt;/code&gt; = Open the help for a command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-s&lt;/code&gt; = Find text forward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-r&lt;/code&gt; = Find text backward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-s C-w&lt;/code&gt; = Find forward the word where the cursor is&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-r C-w&lt;/code&gt; = Find backward the word where the cursor is&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x r a&lt;/code&gt; = Save current position in a register &amp;ldquo;a&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x z&lt;/code&gt; = Repeat last executed command. Pressing &lt;code&gt;z&lt;/code&gt; repeats it again&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-h m&lt;/code&gt; = Show info about current buffer&amp;rsquo;s mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-h b&lt;/code&gt; = Get all currently available key bindings grouped by modes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-e&lt;/code&gt; = Execute the code where the cursor is at (it needs to be ELisp)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;windowsbuffers&#34;&gt;Windows/Buffers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-x 1&lt;/code&gt; = Close all open windows but for the current&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x o&lt;/code&gt; = Jump between windows&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-u M-x shell&lt;/code&gt; = Go to the buffer called &lt;em&gt;shell&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-b&lt;/code&gt; = Show buffer list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;editing&#34;&gt;Editing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-d&lt;/code&gt; = Delete character after to the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-&amp;lt;Delete&amp;gt;&lt;/code&gt; = Delete word before the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-d&lt;/code&gt; = Delete word after the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-k&lt;/code&gt; = Delete everything from the cursor till the end of line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-k&lt;/code&gt; = Delete the phrase from the cursor onward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-&amp;lt;Space&amp;gt;&lt;/code&gt; = Set a mark. The text between the mark and the cursor will be highlighted and can be then copied or cut&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-x&lt;/code&gt; = Switch position between the cursor and the previously set mark&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-y&lt;/code&gt; = Paste from the clipboard&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-y&lt;/code&gt; = Paste last deleted text. This, unlike the above, permits to paste also previously deleted text up until 4 deletions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-w&lt;/code&gt; = Cut text currently highlighted and copy it to the clipboard&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-w&lt;/code&gt; = Paste highlighted text, without cutting it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x h&lt;/code&gt; = Select the whole buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x auto-fill-mode&lt;/code&gt; = Enable automatic text formatting&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-u 20 C-x f&lt;/code&gt; = Set text margin to 20 rows&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x f&lt;/code&gt; = Restore text margin to the default value (70 rows)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-q	&lt;/code&gt;	= Format the current paragraph&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x &amp;lt;Return&amp;gt; f&lt;/code&gt; = Select the encoding for the current buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x re-builder&lt;/code&gt; = Open the re-builder that allows to search with a regexp and see where it matches while typing&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x tabify&lt;/code&gt; = Convert whitespaces in tabs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x untabify&lt;/code&gt; = Convert tabs in whitespaces&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x 8&lt;/code&gt; = Open the Unicode insertion mode. The hexadecimal code is needed. Press &amp;lt;Tab&amp;gt; twice to see a full list. Alternatively, it&amp;rsquo;s possible to directly insert with a combination of keys, like &lt;code&gt;C-x 8 &#39; e&lt;/code&gt; for the é&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x flush-lines&lt;/code&gt; = Open the mode permitting to delete lines that matche a regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-t&lt;/code&gt; = Switch position between the character under and the one before the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-t&lt;/code&gt; = Switch position between the word under and the one before the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-t&lt;/code&gt; = Switch position between the current and previous line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-c&lt;/code&gt; = Capitalize the first character of next word or the one under the cursor (if it&amp;rsquo;s in the middle of a word)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x replace-string&lt;/code&gt; = Open the replace string mode, to replace a string with another&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x replace-regexp&lt;/code&gt; = As above but allows the use of regexps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;files&#34;&gt;Files&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-x C-f&lt;/code&gt; = Open a file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-s&lt;/code&gt; = Save a file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x i&lt;/code&gt;	= Insert the content of a file at the current position&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dired&#34;&gt;Dired&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M-x dired&lt;/code&gt; = Open dired, the Emacs file manager&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x C-q&lt;/code&gt;	 = Enable the edit mode in dired, whereas editing file names can be made permanent with &lt;code&gt;C-x C-s&lt;/code&gt; like it was a normal text buffer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;when in dired mode these keys are available:&lt;/p&gt;</description>
     </item>
     <item>
       <title>E-Uae</title>
       <link>https://donearm.github.io/Scientia/programs/e-uae/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/e-uae/index.html</guid>
-      <description>Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations
-F12 + Numpad 0	# Quick save emulator state. F12 + Right Shift + Numpad 0	# Quick load emulator state. F12 + Numpad 1	# Quick save emulator state to slot 1. F12 + Right Shift + Numpad 1	# Quick load emulator state from slot 1. F12 + Numpad &#39;n&#39;	# Quick save emulator state to slot &amp;rsquo;n&#39;.</description>
+      <description>&lt;p&gt;Keyboard shortcuts to save game state. It could be necessary to use F11 instead of F12 in some configurations&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F12 + Numpad 0&lt;/code&gt;					# Quick save emulator state.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12 + Right Shift + Numpad 0&lt;/code&gt;	# Quick load emulator state.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12 + Numpad 1&lt;/code&gt;					# Quick save emulator state to slot 1.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12 + Right Shift + Numpad 1&lt;/code&gt;	# Quick load emulator state from slot 1.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12 + Numpad &#39;n&#39;&lt;/code&gt;				# Quick save emulator state to slot &amp;rsquo;n&#39;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12 + Right Shift + Numpad &#39;n&#39;&lt;/code&gt;	# Quick load emulator state from slot &amp;rsquo;n&#39;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;make-an-empty-floppy-a-file-adf&#34;&gt;Make an empty floppy (a file .adf)&lt;/h3&gt;
+&lt;p&gt;To make a floppy DD image:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ffmpeg</title>
       <link>https://donearm.github.io/Scientia/programs/ffmpeg/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/ffmpeg/index.html</guid>
-      <description>Commands Conversions H264 VP8 VP9 Gif to VP8 Commands ffmpeg -i file = Show info about file ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3 = Extract only audio from file and encode it at 320kb/s as mp3 ffmpeg -i file -acodec pcm_s16le file.wav = Extract only audio from file and encode it as wav ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0+x,y file = Capture what&amp;rsquo;s on screen on a video of size WidthxHeight, at given fps and using the X server :0.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#commands&#34;&gt;Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conversions&#34;&gt;Conversions&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#h264&#34;&gt;H264&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#vp8&#34;&gt;VP8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#vp9&#34;&gt;VP9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#gif-to-vp8&#34;&gt;Gif to VP8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;commands&#34;&gt;Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -i file&lt;/code&gt; = Show info about file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -i file -acodec libmp3lame -ab 320k file.mp3&lt;/code&gt; = Extract only audio from file and encode it at 320kb/s as mp3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -i file -acodec pcm_s16le file.wav&lt;/code&gt; = Extract only audio from file and encode it as wav&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -f x11grab -qscale n -s WidthxHeight -r fps -i :0.0+x,y file&lt;/code&gt; = Capture what&amp;rsquo;s on screen on a video of size &lt;code&gt;WidthxHeight&lt;/code&gt;, at given fps and using the X server &lt;code&gt;:0.0&lt;/code&gt;, starting from pixel x and y (counting from the top left corner of the screen). Set quality with &lt;code&gt;-qscale&lt;/code&gt;, where n=1 is best and n=31 is worst quality&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg  -v 2 -y -i file.ts  -b 1200k -bt 4000k -vcodec mpeg4 -pass 1 -an file_output&lt;/code&gt; e &lt;code&gt;ffmpeg -v 2 -y -i file.ts -b 18000k -bt 18000k -vcodec mpeg4 -pass 2 -acodec libmp3lame -ac 2 -ar 48000 -ab 128k file_output&lt;/code&gt; = 2 pass conversion from ts to avi (mpeg4). Increase values of &lt;code&gt;-b&lt;/code&gt; and &lt;code&gt;-bt&lt;/code&gt; to increase output quality&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-ss hh:mm:ss&lt;/code&gt; = Start at the given time&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t hh:mm:ss&lt;/code&gt; o &lt;code&gt;-t number&lt;/code&gt; = Stop processing at given time or after &lt;code&gt;number&lt;/code&gt; of minutes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -acodec copy -vcodec copy -ss hh:mm:ss -t hh:mm:ss -i file file_output&lt;/code&gt; = Extract, without encoding, from file between the two time given&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -acodec flac -ab 192k -i input_file output_file&lt;/code&gt; = Reencodes corrupted or out of sync flac files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conversions&#34;&gt;Conversions&lt;/h3&gt;
+&lt;h4 id=&#34;h264&#34;&gt;H264&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Firefox</title>
       <link>https://donearm.github.io/Scientia/programs/firefox/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/firefox/index.html</guid>
-      <description>Useful URIs Pipelining Various tweaks Tweak mouse wheel speed AwesomeBar tweaks Disable compatibility check for extensions Keyboard shortcuts For most of these info, thanks to the very complete Mozillazine
-Useful URIs about:buildconfig = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented about:cache?device=memory or disk = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object about:support = Technical information for debugging Firefox, other than various links to other internal URIs Pipelining Enabling of HTTP/1.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#useful-uris&#34;&gt;Useful URIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#pipelining&#34;&gt;Pipelining&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various-tweaks&#34;&gt;Various tweaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tweak-mouse-wheel-speed&#34;&gt;Tweak mouse wheel speed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#awesomebar-tweaks&#34;&gt;AwesomeBar tweaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#disable-compatibility-check-for-extensions&#34;&gt;Disable compatibility check for extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#keyboard-shortcuts&#34;&gt;Keyboard shortcuts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;p&gt;For most of these info, thanks to the very complete &lt;a href=&#34;http://kb.mozillazine.org/Category:Preferences&#34;&gt;Mozillazine&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;useful-uris&#34;&gt;Useful URIs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;about:buildconfig&lt;/code&gt; = Shows info about the arguments used to compile this Firefox build and the various optimizations implemented&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;about:cache?device=memory&lt;/code&gt; or &lt;code&gt;disk&lt;/code&gt; = Show the list of all cache objects, on disk or in memory. From here it&amp;rsquo;s possible to show or save every object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;about:support&lt;/code&gt; = Technical information for debugging Firefox, other than various links to other internal URIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;pipelining&#34;&gt;Pipelining&lt;/h3&gt;
+&lt;p&gt;Enabling of HTTP/1.1 pipelining&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flash</title>
       <link>https://donearm.github.io/Scientia/programs/flash/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/flash/index.html</guid>
-      <description>Enable hardware acceleration with the GPU Add:
-EnableLinuxHWVideoDecode=1 OverrideGPUValidation=1 in /etc/adobe/mms.cfg</description>
+      <description>&lt;h3 id=&#34;enable-hardware-acceleration-with-the-gpu&#34;&gt;Enable hardware acceleration with the GPU&lt;/h3&gt;
+&lt;p&gt;Add:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;EnableLinuxHWVideoDecode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;OverrideGPUValidation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;in /etc/adobe/mms.cfg&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gimp</title>
       <link>https://donearm.github.io/Scientia/programs/gimp/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/gimp/index.html</guid>
-      <description>Retouch scanned images Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened
-Scale a selection of an image Make a normal selection. If the selection is meant to be pasted into another image or file, do respect the ratio of the final shape the selection will be pasted in.</description>
+      <description>&lt;h3 id=&#34;retouch-scanned-images&#34;&gt;Retouch scanned images&lt;/h3&gt;
+&lt;p&gt;Order of operations: first crop all not needed elements (borders etc.). Then resample to desired size and dpi. Then use blur to remove moiré and paper marks. Then it&amp;rsquo;s the turn of modifying colours, transparency, brightness etc. and finally the image can be sharpened&lt;/p&gt;
+&lt;h3 id=&#34;scale-a-selection-of-an-image&#34;&gt;Scale a selection of an image&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Make a normal selection. If the selection is meant to be pasted into another image or file, do respect the ratio of the final shape the selection will be pasted in.&lt;/li&gt;
+&lt;li&gt;In the &amp;ldquo;Select&amp;rdquo; menu, choose &amp;ldquo;float&amp;rdquo;. This will create a floating layer.&lt;/li&gt;
+&lt;li&gt;Right click on this new layer and select &amp;ldquo;Scale Layer&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Choose the desired size.&lt;/li&gt;
+&lt;li&gt;The selection is scaled and ready to be copied and pasted elsewhere.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;various-plugins-to-try&#34;&gt;Various plugins to try&lt;/h3&gt;
+&lt;h4 id=&#34;filters-defocus&#34;&gt;Filters-&amp;gt;Defocus&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Gaussian&lt;/li&gt;
+&lt;li&gt;Selective Gaussian = 6-255 (no moirè); 3-200 (little moiré without getting too out of focus)&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Git</title>
       <link>https://donearm.github.io/Scientia/programs/git/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/git/index.html</guid>
-      <description>Various useful commands Cherry picking a range of commits Github Various useful commands A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )
-git mv oldfile newfile = Move a file, or simply rename it git reset --hard SHA1_HASH = Revert to the commit with SHA1_HASH and delete all subsequent commits git revert SHA1_HASH = Like above but write a new commit that restore the repository as it was on SHA1_HASH commit.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#various-useful-commands&#34;&gt;Various useful commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cherry-picking-a-range-of-commits&#34;&gt;Cherry picking a range of commits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#github&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;various-useful-commands&#34;&gt;Various useful commands&lt;/h3&gt;
+&lt;p&gt;A brief Git cheatsheet. Only the commands I found more useful (or that I repeatedly forget the syntax :) )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git mv oldfile newfile&lt;/code&gt; = Move a file, or simply rename it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reset --hard SHA1_HASH&lt;/code&gt; = Revert to the commit with &lt;code&gt;SHA1_HASH&lt;/code&gt; and delete all subsequent commits&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git revert SHA1_HASH&lt;/code&gt; = Like above but write a new commit that restore the repository as it was on &lt;code&gt;SHA1_HASH&lt;/code&gt; commit. All the subsequent commits, that with &lt;code&gt;--hard&lt;/code&gt; would have been lost, are still in the log and can be quickly reverted back to&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log &amp;gt; Changelog&lt;/code&gt; = Save the log as a simple changelog&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log file&lt;/code&gt; = Show all commits that modified &lt;code&gt;file&lt;/code&gt;. Usually &lt;code&gt;file&lt;/code&gt; is a full path but it is also possible to use wildcards, like &lt;code&gt;**/*.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log -Sstring -p&lt;/code&gt; = Show all commits that match &lt;code&gt;string&lt;/code&gt; and show also their changes (&lt;code&gt;-p&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log -p --grep &amp;quot;perl_regexp&amp;quot;&lt;/code&gt; = Show all commits whose message matches &lt;code&gt;perl_regexp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge somebranch&lt;/code&gt; = Merge &lt;code&gt;somebranch&lt;/code&gt; with current branch&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b somebranch&lt;/code&gt; = Create a new branch &lt;code&gt;somebranch&lt;/code&gt; and copy the content of master in it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout .&lt;/code&gt; = Cancel all changes not yet committed (but keep new files). Basically return the repository state to the last commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry-pick SHA1_HASH&lt;/code&gt; = Apply the changes in the commit corresponding to &lt;code&gt;SHA1_HASH&lt;/code&gt;. Commit can be on another branch (and usually it is). For multiple commits, it&amp;rsquo;s simpler to merge and then rebase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry-pick -X theirs SHA1_HASH&lt;/code&gt; = Apply the changes in the commit corresponding to &lt;code&gt;SHA1_HASH&lt;/code&gt;. In case of conflicts, prefer the commit&amp;rsquo;s version to the current branch one. The reverse can be preferred with &lt;code&gt;-X ours&lt;/code&gt; instead&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash&lt;/code&gt; = Save changes in the stash and return the repository to a clean state. Later they can be recovered and applied with &lt;code&gt;git stash apply&lt;/code&gt; and shown with &lt;code&gt;git stash show&lt;/code&gt;. To have a list of all changes in the stash use &lt;code&gt;git stash list&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash -p&lt;/code&gt; = Interactively select which changes and files to stash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit --amend&lt;/code&gt; = Modify the last commit message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit --amend -a&lt;/code&gt; = Modify the last commit message and add also all new changes yet to be committed in it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rebase -i HEAD~3&lt;/code&gt; = Permit to modify, delete or merge all the last 3 commits from the HEAD&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git blame file&lt;/code&gt; = Show all the editing done in file and who did it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git bundle create somefile HEAD&lt;/code&gt; = Save the whole repository in &lt;code&gt;somefile&lt;/code&gt;. To then import it back, use &lt;code&gt;git pull somefile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git bundle create somefile HEAD ^COMMON_SHA1&lt;/code&gt; = As above but only from &lt;code&gt;COMMON_SHA1&lt;/code&gt; onward. This is useful when there&amp;rsquo;s an older version of repository, offline, that needs to be just updated with the latest commits&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git format-patch START_COMMIT&lt;/code&gt; = Create a patch that includes all changes from &lt;code&gt;START_COMMIT&lt;/code&gt; till the HEAD. An email header is also generated, for quicker sending&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git format-patch START_COMMIT..END_COMMIT&lt;/code&gt; = As above but consider only the commits between &lt;code&gt;START_COMMIT&lt;/code&gt; and &lt;code&gt;END_COMMIT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff START_COMMIT..END_COMMIT&lt;/code&gt; = Create a patch of commits between &lt;code&gt;START_COMMIT&lt;/code&gt; and &lt;code&gt;END_COMMIT&lt;/code&gt;. Unlike &lt;code&gt;format-patch&lt;/code&gt;, it&amp;rsquo;s a plain patch ready to be used with &lt;code&gt;patch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff --unified=10&lt;/code&gt; = Show 10 lines before and after a change instead of the default 3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git am &amp;lt; patch&lt;/code&gt;  = Apply patch to the repository&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git archive --format=tar --prefix=project-1.2.3/ -o outputfile HEAD&lt;/code&gt; = Save a tarball (or a zip if format is &lt;code&gt;zip&lt;/code&gt;) of the whole repository in &lt;code&gt;outputfile&lt;/code&gt;, with the given prefix, in the current directory, as is in HEAD&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add -p&lt;/code&gt; = Allow to select which changes to include in the next commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git clean -x&lt;/code&gt; = Remove untracked and explicitly ignored files. With also &lt;code&gt;n&lt;/code&gt; does a dry run, without actually removing anything&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reflog&lt;/code&gt; = Show an extended log, including various operations like merges and checkouts, along with commits&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git filter-branch --index-filter &#39;git update-index --remove file&#39; master&lt;/code&gt; = Completely remove &lt;code&gt;file&lt;/code&gt; from the history, from the branch master, in every commit it appears. It&amp;rsquo;s like it never existed. To repeat for every branch in which the file was present&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull --rebase&lt;/code&gt; = Pull from a remote branch but don&amp;rsquo;t generate a commit message for the merge&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git show :/regexp&lt;/code&gt; = Show last commit message matching &lt;code&gt;regexp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git show &amp;lt;commitid&amp;gt;:filename&lt;/code&gt; = show the status of &lt;code&gt;filename&lt;/code&gt; at &lt;code&gt;commitid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remote rename aaa bbb&lt;/code&gt; = Rename remote branch &lt;code&gt;aaa&lt;/code&gt; to &lt;code&gt;bbb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull origin branch_remote:branch_local&lt;/code&gt; = Pull a remote branch in the local one, creating the latter if it didn&amp;rsquo;t already exist&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge --edit&lt;/code&gt; = Edit the commit message when doing a merge&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge --squash branch&lt;/code&gt; = Merge from branch in the current one, squashing all commits messages from when it diverged. After this, use &lt;code&gt;git commit&lt;/code&gt; to record a single commit of changes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff --word-diff&lt;/code&gt; = Highlights word changes, inline, instead of whole lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git status -sb&lt;/code&gt; = A more concise output for status&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout -t origin/feature&lt;/code&gt; = Creates and checks out the local &amp;ldquo;feature&amp;rdquo; branch that tracks the remote &amp;ldquo;origin/feature&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git name-rev --name-only COMMIT_SHA1&lt;/code&gt; = Prints where the &lt;code&gt;COMMIT_SHA1&lt;/code&gt; is in the history, relative to a tag. It can output things like &lt;code&gt;master~2&lt;/code&gt; (commit is 2 commits before latest in master branch) or &lt;code&gt;tags/v2.3~6&lt;/code&gt; (commit is 6 tags before the one with tag 2.3)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch -a --contains COMMIT_SHA1&lt;/code&gt; = Shows all branches, and also remotes with &lt;code&gt;-a&lt;/code&gt;, that have the given commit in their histories&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git show :/fix&lt;/code&gt; = Shows the last commit that contains the word &amp;ldquo;fix&amp;rdquo;. Also supports regexp, like &lt;code&gt;:/^Test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log --diff-filter=D --summary&lt;/code&gt; = Show files, with the corresponding commits, that have been deleted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git show commit:file&lt;/code&gt; = Show the full file as it was at commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log -p --author=name&lt;/code&gt; = Show all commits whose author matches &lt;code&gt;name&lt;/code&gt; (it may be a partial name or a regexp)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log -p master ^origin/master&lt;/code&gt; = Show a diff of what is new in &lt;code&gt;master&lt;/code&gt; compared to &lt;code&gt;origin/master&lt;/code&gt;. It is also possible to use multiple arguments, like &lt;code&gt;git log -p master ^origin/master ^upstream/master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git update-index --assume-unchanged file&lt;/code&gt; = Assume &lt;code&gt;file&lt;/code&gt; is unchanged even if it&amp;rsquo;s not, excluding it from being committed. Re-enable the modifications then with &lt;code&gt;git update-index --no-assume-unchanged file&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git ls-files&lt;/code&gt; = List all files tracked in the repo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin --delete branchname&lt;/code&gt; = Delete the remote &lt;code&gt;branchname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry -v --abbrev testing master&lt;/code&gt; = Show a list of commits present in master but not in testing&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git clone --depth 1&lt;/code&gt; = Clone only 1 revision in a repo&amp;rsquo;s history. To save space, mostly, or to send a quick patch or if you are only interested in the latest state of the project. A repository thus created can&amp;rsquo;t be cloned, fetched or pushed from or into it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git show branch-name:filename.js&lt;/code&gt; = Show &lt;code&gt;filename.js&lt;/code&gt; as it currently is in &lt;code&gt;branch-name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry-pick SHA1_HASH..SHA1_HASH&lt;/code&gt; = Apply changes in after the first hash till, including, the second one. To also include changes from first hash use &lt;code&gt;SHA1_HASH^..SHA1_HASH&lt;/code&gt; format&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remote set-url branch-name url&lt;/code&gt; = Set url of remote &lt;code&gt;branch-name&lt;/code&gt; to &lt;code&gt;url&lt;/code&gt;. Adding &lt;code&gt;--push&lt;/code&gt; also changes the remote url to push to for specified branch&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --list --show-origin&lt;/code&gt; = list all configuration settings for Git, both global and local, and where each is set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cherry-picking-a-range-of-commits&#34;&gt;Cherry picking a range of commits&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new branch from the branch where are the commits you want to apply by specifying the last wanted commit: &lt;code&gt;git checkout -b newbranch SHA1_HASH_OF_COMMIT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Then rebase from the older wanted commit into master: &lt;code&gt;git rebase --onto master SHA1_HASH^&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;github&#34;&gt;Github&lt;/h3&gt;
+&lt;p&gt;Sync with origin (the remote repository) after a local fork:&lt;/p&gt;</description>
     </item>
     <item>
       <title>GMail</title>
       <link>https://donearm.github.io/Scientia/programs/gmail/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/gmail/index.html</guid>
-      <description>Useful filters before:2007/09/01 = select all mails before 01/09/2007 label:$label = select mails matching $label </description>
+      <description>&lt;h3 id=&#34;useful-filters&#34;&gt;Useful filters&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;before:2007/09/01&lt;/code&gt; = select all mails before 01/09/2007&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;label:$label&lt;/code&gt; = select mails matching &lt;code&gt;$label&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Gnome</title>
       <link>https://donearm.github.io/Scientia/programs/gnome/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/gnome/index.html</guid>
-      <description>Disable desktop icons Change the start button Select a specific pixmap Change gtk theme (2.0) Disable desktop icons With gconf-editor, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon
-Change the start button run gconf-editor navigate to /app/panel/objects find a object_x with the object_type=menu-object tick up use_custom_icon 4 change custom_icon value to the image path. Select a specific pixmap Edit .gtkrc or .gtkrc-2.0 and insert pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot; at the beginning of the file</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#disable-desktop-icons&#34;&gt;Disable desktop icons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#change-the-start-button&#34;&gt;Change the start button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#select-a-specific-pixmap&#34;&gt;Select a specific pixmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#change-gtk-theme-20&#34;&gt;Change gtk theme (2.0)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;disable-desktop-icons&#34;&gt;Disable desktop icons&lt;/h3&gt;
+&lt;p&gt;With &lt;code&gt;gconf-editor&lt;/code&gt;, go under apps-&amp;gt;nautilus-&amp;gt;desktop and uncheck every unwanted icon&lt;/p&gt;
+&lt;h3 id=&#34;change-the-start-button&#34;&gt;Change the start button&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;run gconf-editor&lt;/li&gt;
+&lt;li&gt;navigate to /app/panel/objects&lt;/li&gt;
+&lt;li&gt;find a object_x with the &lt;code&gt;object_type=menu-object&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;tick up &lt;code&gt;use_custom_icon 4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;change &lt;code&gt;custom_icon&lt;/code&gt; value to the image path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;select-a-specific-pixmap&#34;&gt;Select a specific pixmap&lt;/h3&gt;
+&lt;p&gt;Edit &lt;code&gt;.gtkrc&lt;/code&gt; or &lt;code&gt;.gtkrc-2.0&lt;/code&gt; and insert &lt;code&gt;pixmap_path = &amp;quot;/path/to/the/pixmap/directory/&amp;quot;&lt;/code&gt; at the beginning of the file&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gnupg</title>
       <link>https://donearm.github.io/Scientia/programs/gnupg/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/gnupg/index.html</guid>
-      <description>Backup your keys gpg --export --armor your@id.here &amp;gt; your@id.here.pub.asc gpg --export-secret-keys --armor your@id.here &amp;gt; your@id.here.priv.asc gpg --export-secret-subkeys --armor your@id.here &amp;gt; your@id.here.sub_priv.asc gpg --export-ownertrust &amp;gt; ownertrust.txt By omitting the --armor option you obtain an encrypted output with the full key (commonly saved with a .gpg extension).
-It is also advisable to generate and save a revoke certificate for each key in case they get compromised. Use this command for each key:</description>
+      <description>&lt;h2 id=&#34;backup-your-keys&#34;&gt;Backup your keys&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpg --export --armor your@id.here &amp;gt; your@id.here.pub.asc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpg --export-secret-keys --armor your@id.here &amp;gt; your@id.here.priv.asc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpg --export-secret-subkeys --armor your@id.here &amp;gt; your@id.here.sub_priv.asc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpg --export-ownertrust &amp;gt; ownertrust.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By omitting the &lt;code&gt;--armor&lt;/code&gt; option you obtain an encrypted output with the full
+key (commonly saved with a .gpg extension).&lt;/p&gt;
+&lt;p&gt;It is also advisable to generate and save a revoke certificate for each key in
+case they get compromised. Use this command for each key:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grub</title>
       <link>https://donearm.github.io/Scientia/programs/grub/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/grub/index.html</guid>
-      <description>Various Commands convert -geometry 640×480 -colors 14 img img.xpm = Convert an image in the format grub (legacy) accepts grub-set-default num = Tells grub which os to boot next time elevator=scheduler = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq) Generate a standalone Grub bootloader for UEFI systems First, have or generate a grub.cfg. grub-mkconfig is the command. Then create the path for it by mkdir -p boot/grub/ and putting it there.</description>
+      <description>&lt;h3 id=&#34;various-commands&#34;&gt;Various Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;convert -geometry 640×480 -colors 14 img img.xpm&lt;/code&gt; = Convert an image in the format grub (legacy) accepts&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grub-set-default num&lt;/code&gt; = Tells grub which os to boot next time&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;elevator=scheduler&lt;/code&gt; = Set the cpu scheduler to use (one between anticipatory, noop, deadline and cfq)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;generate-a-standalone-grub-bootloader-for-uefi-systems&#34;&gt;Generate a standalone Grub bootloader for UEFI systems&lt;/h3&gt;
+&lt;p&gt;First, have or generate a &lt;code&gt;grub.cfg&lt;/code&gt;. &lt;code&gt;grub-mkconfig&lt;/code&gt; is the command. Then
+create the path for it by &lt;code&gt;mkdir -p boot/grub/&lt;/code&gt; and putting it there. Once done,
+generate the Grub2 standalone, with all the drivers embedded, with&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTrack</title>
       <link>https://donearm.github.io/Scientia/programs/httrack/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/httrack/index.html</guid>
-      <description>Mirroring a site but keeping only files matching a pattern httrack website -W -O &amp;#34;/path/to/save/the/website&amp;#34; -%v +*.pdf +*.html +*.htm This mirrors website but actually saves only html and pdf documents</description>
+      <description>&lt;h2 id=&#34;mirroring-a-site-but-keeping-only-files-matching-a-pattern&#34;&gt;Mirroring a site but keeping only files matching a pattern&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;httrack website -W -O &lt;span class=&#34;s2&#34;&gt;&amp;#34;/path/to/save/the/website&amp;#34;&lt;/span&gt; -%v +*.pdf +*.html +*.htm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This mirrors &lt;code&gt;website&lt;/code&gt; but actually saves only html and pdf documents&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo</title>
       <link>https://donearm.github.io/Scientia/programs/hugo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/hugo/index.html</guid>
-      <description>Syntax Highlighting Hugo makes use of Chroma as its syntax highlighter. It is possible to select the style from these here by adding in Hugo config:
-pygmentsStyle = &amp;#34;dracula&amp;#34; Multiline in frontmatter It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, |2-. It may be used so:
-key: |2- Some content on line 1 other content on line 2 Further content on line 3 The spacing should be kept as inserted.</description>
+      <description>&lt;h2 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h2&gt;
+&lt;p&gt;Hugo makes use of &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; as its syntax highlighter. It is possible to select the style from these &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;&gt;here&lt;/a&gt; by adding in Hugo config:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;pygmentsStyle&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;dracula&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;multiline-in-frontmatter&#34;&gt;Multiline in frontmatter&lt;/h2&gt;
+&lt;p&gt;It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, &lt;code&gt;|2-&lt;/code&gt;. It may be used so:&lt;/p&gt;</description>
     </item>
     <item>
       <title>i3</title>
       <link>https://donearm.github.io/Scientia/programs/i3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/i3/index.html</guid>
-      <description>How to save layout and reload at boot First, save the current layout of any workspace with:
-i3-save-tree --workspace 1 &amp;gt; ~/.config/i3/i3-workspace-1.json Where 1 refers to the workspace number. Make sure that all the clients you want to be run on that workspace are open and visible before running the command.
-After that, the workspace json file will be created but all the classes and proprieties of the clients caught will be commented.</description>
+      <description>&lt;h3 id=&#34;how-to-save-layout-and-reload-at-boot&#34;&gt;How to save layout and reload at boot&lt;/h3&gt;
+&lt;p&gt;First, save the current layout of any workspace with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;i3-save-tree --workspace &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &amp;gt; ~/.config/i3/i3-workspace-1.json
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Where &lt;code&gt;1&lt;/code&gt; refers to the workspace number. Make sure that all the clients you
+want to be run on that workspace are open and visible before running the
+command.&lt;/p&gt;
+&lt;p&gt;After that, the workspace json file will be created but all the classes and
+proprieties of the clients caught will be commented. Uncomment the minimum you
+need to recognize all the clients before using the file.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Imagemagick Convert</title>
       <link>https://donearm.github.io/Scientia/programs/imagemagick-convert/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/imagemagick-convert/index.html</guid>
-      <description>Create an animated gif Tweak brightness and contrast Change main colour of an icon Various Create an animated gif A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with convert thus: L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#create-an-animated-gif&#34;&gt;Create an animated gif&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tweak-brightness-and-contrast&#34;&gt;Tweak brightness and contrast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#change-main-colour-of-an-icon&#34;&gt;Change main colour of an icon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various&#34;&gt;Various&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;create-an-animated-gif&#34;&gt;Create an animated gif&lt;/h3&gt;
+&lt;p&gt;A directory already containing the image files that will compose the animated gif is needed. If the images have an incorrect aspect ratio or there&amp;rsquo;s part of the image that isn&amp;rsquo;t desired to end up in the gif, crop with &lt;code&gt;convert&lt;/code&gt; thus:
+L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra dell&amp;rsquo;immagine. Per selezionare da dove partire con il taglio impostare così: &lt;code&gt;wwwXhhhx+nnn+nnn&lt;/code&gt; dove nnn sta per l&amp;rsquo;altezza e la larghezza da cui partire con il taglio e www e hhh per le dimensioni del taglio stesso&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kitty</title>
       <link>https://donearm.github.io/Scientia/programs/kitty/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/kitty/index.html</guid>
-      <description> Various keybindings Various keybindings Ctrl+Shift+u = opens a terminal that allow to search by name or hexcode any Unicode character </description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#various-keybindings&#34;&gt;Various keybindings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h2 id=&#34;various-keybindings&#34;&gt;Various keybindings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+u&lt;/code&gt; = opens a terminal that allow to search by name or hexcode any Unicode character&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>MongoDB</title>
       <link>https://donearm.github.io/Scientia/programs/mongodb/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/mongodb/index.html</guid>
-      <description>Basic CLI commands CRUD commands Importing csv files Basic CLI commands show dbs = list all databases db = show current database use dbname = select database dbname CRUD commands db.users.save({ name: &#39;Joe&#39; }); = save the document name into the users collection. Multiple entries can be entered with a single command with an array. db.users.find(); = show everything in users. db.users.find({ name: &#39;Mike&#39; }); = find in users an user with name Mike.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-cli-commands&#34;&gt;Basic CLI commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#crud-commands&#34;&gt;CRUD commands&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#importing-csv-files&#34;&gt;Importing csv files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;basic-cli-commands&#34;&gt;Basic CLI commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;show dbs&lt;/code&gt; = list all databases&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;db&lt;/code&gt; = show current database&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;use dbname&lt;/code&gt; = select database &lt;code&gt;dbname&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;crud-commands&#34;&gt;CRUD commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;db.users.save({ name: &#39;Joe&#39; });&lt;/code&gt; = save the document &lt;code&gt;name&lt;/code&gt; into the &lt;code&gt;users&lt;/code&gt; collection. Multiple entries can be entered with a single command with an array.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;db.users.find();&lt;/code&gt; = show everything in &lt;code&gt;users&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;db.users.find({ name: &#39;Mike&#39; });&lt;/code&gt; = find in &lt;code&gt;users&lt;/code&gt; an user with name Mike.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;db.users.update({ name: &#39;Mike&#39; }, { name: &#39;Viktor&#39; });&lt;/code&gt; = update user Mike with Viktor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;db.users.remove();&lt;/code&gt; = delete all entries in &lt;code&gt;users&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;importing-csv-files&#34;&gt;Importing csv files&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mongoimport --collection nameofcollection --type csv --headerline --db nameofdatabase file.csv&lt;/code&gt; = import a csv file as a collection in MongoDB. If csv file has no headers, omit &lt;code&gt;--headerline&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>MPlayer</title>
       <link>https://donearm.github.io/Scientia/programs/mplayer/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/mplayer/index.html</guid>
-      <description>Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.
--afm dmo = Sometimes useful to reproduce files with out of sync audio -ss HH:MM:SS = Start playing at HH:MM:SS -frames n = Stop playing after n frames -vc null -vo null -ao pcm:fast:waveheader:file=$file = Convert an audio file to a wav mplayer video -vf cropdetect = Try to detect the areas of video to crop mplayer video -vo jpeg:outdir=dir/ -nosound = Write every frame of video as a jpeg image in outdir mplayer video -vo gif89a:output=filedioutput.</description>
+      <description>&lt;p&gt;Quick cheatsheet for MPlayer. Most of the options are identical in MPV too, which is the program I currently use.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-afm dmo&lt;/code&gt; = Sometimes useful to reproduce files with out of sync audio&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-ss HH:MM:SS&lt;/code&gt; = Start playing at HH:MM:SS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-frames n&lt;/code&gt; = Stop playing after &lt;code&gt;n&lt;/code&gt; frames&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-vc null -vo null -ao pcm:fast:waveheader:file=$file&lt;/code&gt; = Convert an audio file to a wav&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mplayer video -vf cropdetect&lt;/code&gt; = Try to detect the areas of video to crop&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mplayer video -vo jpeg:outdir=dir/ -nosound&lt;/code&gt; = Write every frame of video as a jpeg image in outdir&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mplayer video -vo gif89a:output=filedioutput.gif:fps=5 -nosound&lt;/code&gt; = Make an animated gif from a video (usually in very low quality)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mplayer video -vo xvmc:bobdint:queue -vc ffmpeg12mc&lt;/code&gt; = To make use of the hardware acceleration of the XvMC protocol&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sub subtitles&lt;/code&gt; = Load subtitles (generally it&amp;rsquo;s a &lt;code&gt;.srt&lt;/code&gt; file)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-loop n&lt;/code&gt; = Loop a video &lt;code&gt;n&lt;/code&gt; times (use 0 to loop forever)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-nosound -vo x11 -zoom -rootwin -loop 0 video&lt;/code&gt; = Options needed to use a video as desktop background. Other video outputs can work too as long as they support zooming&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-vf delogo=x:y:w:h:-1&lt;/code&gt; = Remove a logo from a video. &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; are coordinates from the top left corner of the video, &lt;code&gt;w&lt;/code&gt; and &lt;code&gt;h&lt;/code&gt; are width and height of the logo to be removed and &lt;code&gt;-1&lt;/code&gt; highlights the border of the are so to find where the filter is working more easily (clearly to be removed in the final output)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/.mplayer/subfont.ttf&lt;/code&gt; = Symbolic link to a TrueType font to use for subtitles&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-vf screenshot&lt;/code&gt; = Enable taking screenshots. With &lt;code&gt;s&lt;/code&gt; save current frame, with &lt;code&gt;Shift+s&lt;/code&gt; starts saving every frame to a file until &lt;code&gt;Shift+s&lt;/code&gt; is pressed again&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-af volume=30:1:0&lt;/code&gt; = Increases or lowers the volume beyond the sound card limits. Here 30 means 30dB more than the limit. 1 enables soft clipping to reduce distorsions. Volume ranges from -200 to 60 (dB), where 0 is clearly the default&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-dumpfile file -dumpstream url&lt;/code&gt; = Save url to file&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Mutt</title>
       <link>https://donearm.github.io/Scientia/programs/mutt/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/mutt/index.html</guid>
-      <description>General Commands Keybindings The Message Index (browsing through mailbox) The Pager (reading an email) Composer (setting the send options for an email) Arguments Highlight according to a pattern General Commands q(x)	= exit the current menu (abort without saving) ^g	= cancel current action ?	= list all keybindings for the current menu Keybindings The Message Index (browsing through mailbox) m	= compose a new message d(D)	= delete the current message (matching a pattern) u(U)	= undelete-message (matching a pattern) C(ALT C) = copy the current message to another mailbox (decode first) s(ALT s) = save-message (decode first) r(g) (L) = reply to sender (all recipients) (reply to mailing list) f(b)	= forward message (bounce) /(ALT /) = search (search-reverse) c	= change to a different mailbox/folder F(N)	= mark as important (new) l	= show messages matching a pattern o(O)	= change the current sort method (reverse sort) t(ALT t) = toggle the tag on a message (entire message thread) T(^t)	= tag messages matching a pattern (untag) v	= view-attachments &amp;lt;Return&amp;gt; = display-message &amp;lt;Tab&amp;gt;	= jump to the next new message @	= show the author&amp;rsquo;s full e-mail address $	= save changes to mailbox ^l	= clear and redraw the screen ALT k	= mail a PGP public key to someone The Pager (reading an email) &amp;lt;Return&amp;gt; = go down one line &amp;lt;Space&amp;gt;(-) = display the next page/message (previous) ^($)	= jump to the top (bottom) of the message /(ALT /) (n) = search for a regular expression (search backwards) (next match) \	= toggle search pattern coloring S(T)	= skip beyond quoted text (toggle display of quoted text) Composer (setting the send options for an email) y(P)(w) = send the message (postpone) (write to folder) i	= check spelling, if available a(A)(D) = attach a file (attach message) (detach) d	= edit description on attachment t(ALT f) = edit the To field (From field) c(b)	= edit the Cc field (Bcc field) s	= edit the Subject r	= edit the Reply-To field p	= select PGP options ALT k = attach a PGP public key ^f = wipe PGP passphrase from memory f	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#general-commands&#34;&gt;General Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#keybindings&#34;&gt;Keybindings&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-message-index--browsing-through-mailbox&#34;&gt;The Message Index  (browsing through mailbox)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-pager-reading-an-email&#34;&gt;The Pager (reading an email)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#composer-setting-the-send-options-for-an-email&#34;&gt;Composer (setting the send options for an email)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#arguments&#34;&gt;Arguments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#highlight-according-to-a-pattern&#34;&gt;Highlight according to a pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;general-commands&#34;&gt;General Commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;q(x)&lt;/code&gt;	= exit the current menu (abort without saving)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^g&lt;/code&gt;		= cancel current action&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;?&lt;/code&gt;		= list all keybindings for the current menu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;keybindings&#34;&gt;Keybindings&lt;/h2&gt;
+&lt;h3 id=&#34;the-message-index--browsing-through-mailbox&#34;&gt;The Message Index  (browsing through mailbox)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;m&lt;/code&gt;		= compose a new message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d(D)&lt;/code&gt;	= delete the current message (matching a pattern)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;u(U)&lt;/code&gt;	= undelete-message (matching a pattern)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C(ALT C)&lt;/code&gt; = copy the current message to another mailbox (decode first)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s(ALT s)&lt;/code&gt; = save-message (decode first)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r(g)  (L)&lt;/code&gt; = reply to sender (all recipients) (reply to mailing list)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f(b)&lt;/code&gt;	= forward message (bounce)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/(ALT /)&lt;/code&gt; = search  (search-reverse)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c&lt;/code&gt;		= change to a different mailbox/folder&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F(N)&lt;/code&gt;	= mark as important (new)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;l&lt;/code&gt;		= show messages matching a pattern&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;o(O)&lt;/code&gt;	= change the current sort method (reverse sort)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t(ALT t)&lt;/code&gt; = toggle the tag on a message (entire message thread)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;T(^t)&lt;/code&gt;	= tag messages matching a pattern (untag)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;v&lt;/code&gt;		= view-attachments&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Return&amp;gt;&lt;/code&gt; = display-message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Tab&amp;gt;&lt;/code&gt;	= jump to the next new message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@&lt;/code&gt;		= show the author&amp;rsquo;s full e-mail address&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt;		= save changes to mailbox&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^l&lt;/code&gt;		= clear and redraw the screen&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ALT k&lt;/code&gt;	= mail a PGP public key to someone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-pager-reading-an-email&#34;&gt;The Pager (reading an email)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Return&amp;gt;&lt;/code&gt;  = go down one line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Space&amp;gt;(-)&lt;/code&gt; = display the next page/message (previous)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^($)&lt;/code&gt;	= jump to the top (bottom) of the message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/(ALT /) (n)&lt;/code&gt; = search for a regular expression (search backwards) (next match)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\&lt;/code&gt;		= toggle search pattern coloring&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;S(T)&lt;/code&gt;	= skip beyond quoted text (toggle display of quoted text)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;composer-setting-the-send-options-for-an-email&#34;&gt;Composer (setting the send options for an email)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;y(P)(w)&lt;/code&gt; = send the message  (postpone)  (write to folder)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt;		= check spelling, if available&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a(A)(D)&lt;/code&gt; = attach a file  (attach message)  (detach)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d&lt;/code&gt;	= edit description on attachment&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t(ALT f)&lt;/code&gt; = edit the To field (From field)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c(b)&lt;/code&gt;	= edit the Cc field (Bcc field)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;	= edit the Subject&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r&lt;/code&gt;	= edit the Reply-To field&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;	= select PGP options&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ALT k&lt;/code&gt; = attach a PGP public key&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^f&lt;/code&gt; = wipe PGP passphrase from memory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f&lt;/code&gt;	= specify an &amp;lsquo;Fcc&amp;rsquo; mailbox i.e. sent folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;^g&lt;/code&gt; means CTRL and the g key. &lt;code&gt;ALT f&lt;/code&gt; means ALT and the f key.							
+If you do not have an ALT key then use ESC then key. Do not type the brackets.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rtorrent</title>
       <link>https://donearm.github.io/Scientia/programs/rtorrent/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/rtorrent/index.html</guid>
-      <description>Add trackers to a torrent Select the torrent. Press Ctrl+x and insert this command:
-d.tracker.insert=&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34; where 3 is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and url_of_tracker is obviously the url of the new tracker. Might be necessary to do a tracker update request with T (or just wait a bit and rtorrent will do it by itself)</description>
+      <description>&lt;h3 id=&#34;add-trackers-to-a-torrent&#34;&gt;Add trackers to a torrent&lt;/h3&gt;
+&lt;p&gt;Select the torrent. Press &lt;code&gt;Ctrl+x&lt;/code&gt; and insert this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;d.tracker.insert&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;3&amp;#34;,&amp;#34;url_of_tracker&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where &lt;code&gt;3&lt;/code&gt; is the next slot in the tracker list (usually 1 is occupied by the site the torrent was downloaded from and 2 by dht) and &lt;code&gt;url_of_tracker&lt;/code&gt; is obviously the url of the new tracker. Might be necessary to do a tracker update request with &lt;code&gt;T&lt;/code&gt; (or just wait a bit and rtorrent will do it by itself)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Samba and Nfs</title>
       <link>https://donearm.github.io/Scientia/programs/samba_and_nfs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/samba_and_nfs/index.html</guid>
-      <description>Mount Samba shares on Linux mount -t smbfs -o username=david,password=test //pc_con_smbd/david /mnt/local_directory and add to fstab:
-//pc_con_smbd/david /mnt/local_directory smbfs rw,username=david,password=test,noauto Configure network printer in Cups with lpinfo -v can be listed all network protocols, with URIs, available on the local computer</description>
+      <description>&lt;h3 id=&#34;mount-samba-shares-on-linux&#34;&gt;Mount Samba shares on Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount -t smbfs -o &lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;david,password&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; //pc_con_smbd/david /mnt/local_directory
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and add to fstab:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-posh&#34; data-lang=&#34;posh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pc_con_smbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;david&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;local_directory&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;smbfs&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rw&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;david&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;noauto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;configure-network-printer-in-cups&#34;&gt;Configure network printer in Cups&lt;/h3&gt;
+&lt;p&gt;with &lt;code&gt;lpinfo -v&lt;/code&gt; can be listed all network protocols, with URIs, available on the local computer&lt;/p&gt;</description>
     </item>
     <item>
       <title>Screen</title>
       <link>https://donearm.github.io/Scientia/programs/screen/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/screen/index.html</guid>
-      <description>C-a : = Go in command mode, where it&amp;rsquo;s possible to insert commands as with Vi C-a n &amp;amp; C-a p = Go to the next or previous window C-a S = Open a new region in the current window C-a Tab = Switches between regions C-a X = Kill the current region C-a s = Freeze the current window C-a q = Reactivate the current window C-a Esc = Start copying mode.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-a :&lt;/code&gt; = Go in command mode, where it&amp;rsquo;s possible to insert commands as with Vi&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a n&lt;/code&gt; &amp;amp; &lt;code&gt;C-a p&lt;/code&gt; = Go to the next or previous window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a S&lt;/code&gt; = Open a new region in the current window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a Tab&lt;/code&gt; = Switches between regions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a X&lt;/code&gt; = Kill the current region&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a s&lt;/code&gt; = Freeze the current window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a q&lt;/code&gt; = Reactivate the current window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a Esc&lt;/code&gt; = Start copying mode. To start copying, press &amp;lt;Space&amp;gt; to mark the beginning point of the selection area, move with the &lt;code&gt;hjkl&lt;/code&gt; keys and press &amp;lt;Space&amp;gt; again to end the selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-a ]&lt;/code&gt; = Paste last selection in the paste buffer&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>SQLite</title>
       <link>https://donearm.github.io/Scientia/programs/sqlite/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/sqlite/index.html</guid>
-      <description>Exporting tables to csv sqlite3 databasefile &amp;gt; .output outfile.csv &amp;gt; .mode csv &amp;gt; .header on &amp;gt; select * from table; &amp;gt; .quit </description>
+      <description>&lt;h3 id=&#34;exporting-tables-to-csv&#34;&gt;Exporting tables to csv&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;sqlite3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;databasefile&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;outfile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;csv&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;csv&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quit&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Ssh</title>
       <link>https://donearm.github.io/Scientia/programs/ssh/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/ssh/index.html</guid>
-      <description>General commands ssh-copy-id user@host = Copy own public key to user@host ssh -N -L8878:localhost:80 host = Bind host:80 on localhost:8878 with a tunnel ssh -t host1 ssh host2 = Connect to host2 via host1 ssh -fX user@host cmd = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK) ssh -t remote_host screen -r = Attach a screen session on the remote host on the local one cat ~/.</description>
+      <description>&lt;h3 id=&#34;general-commands&#34;&gt;General commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ssh-copy-id user@host&lt;/code&gt; = Copy own public key to user@host&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh -N -L8878:localhost:80 host&lt;/code&gt; = Bind host:80 on localhost:8878 with a tunnel&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh -t host1 ssh host2&lt;/code&gt; = Connect to host2 via host1&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh -fX user@host cmd&lt;/code&gt; = Launch cmd, a graphic one, using X11 forwarding (which needs to be enabled in xorg.conf, AFAIK)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh -t remote_host screen -r&lt;/code&gt; = Attach a screen session on the remote host on the local one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub | ssh user@host &amp;quot;mkdir ~/.ssh; cat &amp;gt;&amp;gt;  ~/.ssh/authorized_keys&amp;quot;&lt;/code&gt; = Copy own public key to user@host when &lt;code&gt;ssh-copy-id&lt;/code&gt; isn&amp;rsquo;t available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;public-key-authentication&#34;&gt;Public Key authentication&lt;/h3&gt;
+&lt;p&gt;Dsa keys are the most recent format, Rsa ones are older&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tcpdump</title>
       <link>https://donearm.github.io/Scientia/programs/tcpdump/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/tcpdump/index.html</guid>
-      <description>Various commands tcpdump &#39;tcp[13] &amp;amp; 2 != 0&#39; = Catch all SYN packets tcpdump &#39;tcp[13] &amp;amp; 4 != 0&#39; = Catch all RST packets tcpdump &#39;tcp[13] &amp;amp; 16 != 0&#39; = Catch all ACK packets The 2, 4 and 16 above correspond to the 13th byte in the TCP header and only grab packets that have a not zero 2nd bit there, matching thus different type of TCP packets.</description>
+      <description>&lt;h3 id=&#34;various-commands&#34;&gt;Various commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tcpdump &#39;tcp[13] &amp;amp; 2 != 0&#39;&lt;/code&gt; = Catch all SYN packets&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tcpdump &#39;tcp[13] &amp;amp; 4 != 0&#39;&lt;/code&gt; = Catch all RST packets&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tcpdump &#39;tcp[13] &amp;amp; 16 != 0&#39;&lt;/code&gt; = Catch all ACK packets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;16&lt;/code&gt; above correspond to the 13th byte in the TCP header and only grab packets that have a not zero 2nd bit there, matching thus different type of TCP packets.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tiddlywiki</title>
       <link>https://donearm.github.io/Scientia/programs/tiddlywiki/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/tiddlywiki/index.html</guid>
-      <description>Tweaks and features of Tiddlywiki To use the file browser to insert a file into the wiki To show a text file with an iframe To insert an image To directly install a plugin Export tiddlers as pdf/ps Show Tiddlywiki version number Tweaks and features of Tiddlywiki Tiddlywiki markup list
-To use the file browser to insert a file into the wiki This:
-&amp;lt;html&amp;gt;&amp;lt;div align=&amp;#34;left&amp;#34;&amp;gt;&amp;lt;FORM name=form1&amp;gt;&amp;lt;INPUT type=file name=cmuds&amp;gt; &amp;lt;INPUT onclick=&amp;#34;whatFile()&amp;#34; type=button value=OpenFile name=button&amp;gt;&amp;lt;/FORM&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/html&amp;gt; or this:</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tweaks-and-features-of-tiddlywiki&#34;&gt;Tweaks and features of Tiddlywiki&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-use-the-file-browser-to-insert-a-file-into-the-wiki&#34;&gt;To use the file browser to insert a file into the wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-show-a-text-file-with-an-iframe&#34;&gt;To show a text file with an iframe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-insert-an-image&#34;&gt;To insert an image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-directly-install-a-plugin&#34;&gt;To directly install a plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#export-tiddlers-as-pdfps&#34;&gt;Export tiddlers as pdf/ps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#show-tiddlywiki-version-number&#34;&gt;Show Tiddlywiki version number&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tweaks-and-features-of-tiddlywiki&#34;&gt;Tweaks and features of Tiddlywiki&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://tiddlywiki.org/bags/tiddlywiki_public/tiddlers/TiddlyWiki%20Markup.html&#34;&gt;Tiddlywiki markup list&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tmux</title>
       <link>https://donearm.github.io/Scientia/programs/tmux/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/tmux/index.html</guid>
-      <description>Change base directory of an existing session First detach from the session. Then reattach with:
-tmux attach -t $sessionname -c /new/base/dir Various commands :set -g status off = hide the statusbar. Can be re-enabled with on, surprisingly &amp;lt;prefix&amp;gt;( and &amp;lt;prefix&amp;gt;) = jump between active sessions prefix&amp;gt;:kill-session = kill the current session (from within itself) tmux list-keys = list all keybindings. Can be run from within a session with &amp;lt;prefix:list-keys or &amp;lt;prefix&amp;gt;?</description>
+      <description>&lt;h3 id=&#34;change-base-directory-of-an-existing-session&#34;&gt;Change base directory of an existing session&lt;/h3&gt;
+&lt;p&gt;First detach from the session. Then reattach with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux attach -t &lt;span class=&#34;nv&#34;&gt;$sessionname&lt;/span&gt; -c /new/base/dir
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;various-commands&#34;&gt;Various commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:set -g status off&lt;/code&gt; = hide the statusbar. Can be re-enabled with &lt;code&gt;on&lt;/code&gt;, surprisingly&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;prefix&amp;gt;(&lt;/code&gt; and &lt;code&gt;&amp;lt;prefix&amp;gt;)&lt;/code&gt; = jump between active sessions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prefix&amp;gt;:kill-session&lt;/code&gt; = kill the current session (from within itself)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux list-keys&lt;/code&gt; = list all keybindings. Can be run from within a session with &lt;code&gt;&amp;lt;prefix:list-keys&lt;/code&gt; or &lt;code&gt;&amp;lt;prefix&amp;gt;?&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>URxvt</title>
       <link>https://donearm.github.io/Scientia/programs/urxvt/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/urxvt/index.html</guid>
-      <description>Change charset on the fly printf &amp;#39;\33]701;%s\007&amp;#39; it_IT.~UTF-8 Change font on the flye printf &amp;#39;\33]50;%s\007&amp;#39; 9x15,xft:Kochi&amp;#34; Mincho&amp;#34; Insert an Unicode characters with its hexadecimal code press together &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &amp;lt;Ctrl&amp;gt; and &amp;lt;Shift&amp;gt; pressed</description>
+      <description>&lt;h3 id=&#34;change-charset-on-the-fly&#34;&gt;Change charset on the fly&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;\33]701;%s\007&amp;#39;&lt;/span&gt; it_IT.~UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;change-font-on-the-flye&#34;&gt;Change font on the flye&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;\33]50;%s\007&amp;#39;&lt;/span&gt; 9x15,xft:Kochi&lt;span class=&#34;s2&#34;&gt;&amp;#34; Mincho&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;insert-an-unicode-characters-with-its-hexadecimal-code&#34;&gt;Insert an Unicode characters with its hexadecimal code&lt;/h3&gt;
+&lt;p&gt;press together &lt;code&gt;&amp;lt;Ctrl&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;Shift&amp;gt;&lt;/code&gt; and insert the code, then release both. To insert more than one character at once, use a space between a code and another while still keeping &lt;code&gt;&amp;lt;Ctrl&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;Shift&amp;gt;&lt;/code&gt; pressed&lt;/p&gt;</description>
     </item>
     <item>
       <title>ViM</title>
       <link>https://donearm.github.io/Scientia/programs/vim/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/vim/index.html</guid>
-      <description>Basic commands Movements Removal and Substitution Text formatting Windows Folding Searches Spell Checking Buffers Registers Ctags Various Commands Macros Tips Change statusline colours Regexp Identify corresponding opening/closing HTML tag Plugins Basic commands J = Join next to current line :%j = Join all lines (make the file all on a single line in practice) u = Undo Ctrl+r = Repeat last command (Redo) . = Repeat last command (escluding Undo, Redo and command of the :command type) :w filename = Save current file, or the selection, to filename i = Enter insert mode at the cursor position a = Enter insert mode after the cursor position o = Add an empty line below the current one O = Add an empty line above the current one :q!</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-commands&#34;&gt;Basic commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#movements&#34;&gt;Movements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#removal-and-substitution&#34;&gt;Removal and Substitution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#text-formatting&#34;&gt;Text formatting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#windows&#34;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#folding&#34;&gt;Folding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#searches&#34;&gt;Searches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#spell-checking&#34;&gt;Spell Checking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#buffers&#34;&gt;Buffers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#registers&#34;&gt;Registers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ctags&#34;&gt;Ctags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various-commands&#34;&gt;Various Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#macros&#34;&gt;Macros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tips&#34;&gt;Tips&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#change-statusline-colours&#34;&gt;Change statusline colours&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#regexp&#34;&gt;Regexp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#identify-corresponding-openingclosing-html-tag&#34;&gt;Identify corresponding opening/closing HTML tag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#plugins&#34;&gt;Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;basic-commands&#34;&gt;Basic commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt; = Join next to current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:%j&lt;/code&gt; = Join all lines (make the file all on a single line in practice)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;u&lt;/code&gt; = Undo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+r&lt;/code&gt; = Repeat last command (Redo)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt; = Repeat last command (escluding Undo, Redo and command of the &lt;code&gt;:command&lt;/code&gt; type)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:w filename&lt;/code&gt; = Save current file, or the selection, to &lt;code&gt;filename&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; = Enter insert mode at the cursor position&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;/code&gt; = Enter insert mode after the cursor position&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;o&lt;/code&gt; = Add an empty line below the current one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O&lt;/code&gt; = Add an empty line above the current one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q!&lt;/code&gt; = Quit Vi without saving changes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;V&lt;/code&gt; = Start visual mode, selecting by lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+V&lt;/code&gt; = Start visual mode, selecting by rows&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt; = Paste&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;y&lt;/code&gt; = Copy&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;“*P&lt;/code&gt; = Paste clipboard&amp;rsquo;s contents&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;“*y&lt;/code&gt; = Copy selection to clipboard&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;”+y&lt;/code&gt; = Copy selection to x11-selection (different from clipboard!)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;”+p&lt;/code&gt; = Paste x11-selection contents&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;%p&lt;/code&gt; = Paste the current file name&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:put *&lt;/code&gt; = Paste clipboard&amp;rsquo;s contents&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;”&amp;lt;buffer&amp;gt;y&lt;/code&gt; = Paste selection to &amp;lt;buffer&amp;gt; (usually a single character for brevity reasons)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;m&amp;lt;a&amp;gt;&lt;/code&gt; = Mark current position as &amp;lt;a&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:1,4up &amp;lt;newfile&amp;gt;&lt;/code&gt; = Save file contents from line 1 through 4 into &amp;lt;newfile&amp;gt;. Can be applied also to selections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;movements&#34;&gt;Movements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; = Move back a word, going to the end of the previous one or at the beginning of the current one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt; = Jump at the beginning of the next word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e&lt;/code&gt; = Jump at the end of the next word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:n&lt;/code&gt; = Go to &lt;code&gt;n&lt;/code&gt; line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+AltGr+]&lt;/code&gt; = Follow a url like &lt;code&gt;|url|&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+T&lt;/code&gt; = Go back to where was before following a link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10w&lt;/code&gt; = Go forward 10 words&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10b&lt;/code&gt; = Go back 10 words&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; = Go back to the beginning of the previous line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; = Go to the beginning of the next line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt; = Go at the beginning of the current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt; = Go at the end of the current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;End&lt;/code&gt; = Move to the end of the current line. It accepts a number to jump multiple lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fj&lt;/code&gt; = Go to the next occurrence of &lt;code&gt;j&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Fj&lt;/code&gt; = Go to the previous occurrence of &lt;code&gt;j&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;12G&lt;/code&gt; = Go to the specified line. In the example, go to the 12th line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;G&lt;/code&gt; = Go to the end of the current buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10%&lt;/code&gt; = Move to the 10% of the current buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+W&lt;/code&gt; = Jump to the next Vi window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;.&lt;/code&gt; = Go to the last modified line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\&lt;/code&gt;.` = Go to the exact point where last edit happened&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\&lt;/code&gt;`` = Go back to the point before the last search was made&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; = Go to the next tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gT&lt;/code&gt; = Go to the previous tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gi&lt;/code&gt; = Go to the exact point where last edit happened, like &lt;code&gt;\&lt;/code&gt;.`, but also enter insert mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;m&lt;/code&gt; = Go to the mark &lt;code&gt;m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;H&lt;/code&gt; = Go to the first line of the screen (which is not the first line of the file!)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M&lt;/code&gt; = Go to the middle of the screen&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;L&lt;/code&gt; = Go to the bottom of the screen&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+U&lt;/code&gt; = Scroll a page up&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+D&lt;/code&gt; = Scroll a page down&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; = Go to the next occurrence of a search term&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;N&lt;/code&gt; = Go to the previous occurrence of a search term&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g*&lt;/code&gt; = Go to the next occurrence of the word under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g#&lt;/code&gt; = Go to the previous occurrence of the word under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt;  = Go to the end of the current block (which can be a if/then/else block, a comment, a text between parentheses etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[[&lt;/code&gt; = Go back to the beginning of the current function&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gd&lt;/code&gt; = Go to the first occurrence of the variable under the cursor, following the scope (thus first local then global variables)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gD&lt;/code&gt; = Go to the first occurrence of the variable under the cursor, starting from the beginning of the file (thus ignoring scope; generally it&amp;rsquo;s then the definition of the variable)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(&lt;/code&gt; = Go to the beginning of the previous phrase (often it&amp;rsquo;s the first character after a period or a newline)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;)&lt;/code&gt; = Go to the beginning of the next phrase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;/code&gt; = Go to the beginning of the previous or current paragraph or code block&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;}&lt;/code&gt; = Go to the end of the next or current paragraph or code block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;removal-and-substitution&#34;&gt;Removal and Substitution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; = Delete the character under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;X&lt;/code&gt; = Delete the character before the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dd&lt;/code&gt; = Delete the current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d11w&lt;/code&gt; = Delete multiple words, in the example, 11&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;daw&lt;/code&gt; = Delete the word under the cursor. This works also if not at the beginning of word, differently from &lt;code&gt;dw&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d^&lt;/code&gt; = Delete everything from the cursor to the beginning of the line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d$&lt;/code&gt; = Delete everything from the cursor to the end of the line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dG&lt;/code&gt; = Delete everything from the cursor to the end of the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c11wAAA&lt;/code&gt; = Substitutes with &lt;code&gt;AAA&lt;/code&gt; multiple words, in the example, 11&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C&lt;/code&gt; = Delete next line and enter insert mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;11rAAA&lt;/code&gt; = Substitutes multiple times, here 11, the text &lt;code&gt;AAA&lt;/code&gt; with what&amp;rsquo;s after the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:%s/stringtosubstitute/stringtoinsert/g&lt;/code&gt; = Substitutes &lt;code&gt;stringtosubstitute&lt;/code&gt; with &lt;code&gt;stringtoinser&lt;/code&gt; in the file, all occurrences (g). Without the &lt;code&gt;%&lt;/code&gt;, substitutes only in the current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g?&lt;/code&gt; = ROT13 encrypt the current line, or the selected ones&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+a&lt;/code&gt; = Add 1 to the number below the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+x&lt;/code&gt; = Subtract 1 to the number below the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xp&lt;/code&gt; = Switch character under the cursor with the following one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ddp&lt;/code&gt; = Switch the current line with the following one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Istring&amp;lt;ESC&amp;gt;&lt;/code&gt; = Add string at the beginning of every line previously selected with &lt;code&gt;Ctrl+v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Astring&amp;lt;ESC&amp;gt;&lt;/code&gt; = Add string at the end of every line previously selected with &lt;code&gt;Ctrl+v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+W&lt;/code&gt; = When in insert mode, delete the word before the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rstring&lt;/code&gt; = Overwrites the text from the cursor with string&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rcharacter&lt;/code&gt; = Insert character right under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:sort u&lt;/code&gt; = Remove all double lines and sort them alphabetically&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:v/regexp/d&lt;/code&gt; = Remove all lines that &lt;strong&gt;do not&lt;/strong&gt; match regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:g/regexp/d&lt;/code&gt; = Remove all lines that &lt;strong&gt;do&lt;/strong&gt; match regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:g/regexp/m$&lt;/code&gt; = Move all lines matching regexp at the end of the file ($)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{d}&lt;/code&gt; = Go to the end of the current paragraph, or the previous if the cursor is on an empty line, and delete it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d/regexp&lt;/code&gt; = Delete everything between the cursor and the first occurrence of regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cas&lt;/code&gt; = Substitute a sentence (delete all its contents and go in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cap&lt;/code&gt; = As above but on a whole paragraph&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dap&lt;/code&gt; = Remove the current paragraph&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ci&amp;quot;&lt;/code&gt; = Remove everything between the previous &lt;code&gt;&amp;quot;&lt;/code&gt; and the next &lt;code&gt;&amp;quot;&lt;/code&gt; and go in insert mode. It&amp;rsquo;s not necessary to actually have the cursor between 2 &lt;code&gt;&amp;quot;&lt;/code&gt;, it&amp;rsquo;ll automatically move to the next occurrence&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;di&amp;quot;&lt;/code&gt; = As above but it only delete the text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;text-formatting&#34;&gt;Text formatting&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gUw&lt;/code&gt; = Make a word all uppercase (starting from the cursor)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;guw&lt;/code&gt; = Like above but lowercase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;guu&lt;/code&gt; or &lt;code&gt;gUU&lt;/code&gt; = Make lowercase or uppercase a whole line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g~~&lt;/code&gt; = Switch every character in the whole line, from uppercase to lowercase and viceversa&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; = Switch the character under the cursor (uppercase/lowercase)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; = Increase indentation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; = Remove a level of indentation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+t&lt;/code&gt; = Increase indentation (in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+d&lt;/code&gt; = Remove a level of indentation (in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set textwidth=number&lt;/code&gt; = Set line margin to &lt;code&gt;number&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gq&lt;/code&gt; = Justify the current line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gq}&lt;/code&gt; = Justify the curren paragraph&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gggqG&lt;/code&gt; = Justify all the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:center&lt;/code&gt; = Center the selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:right&lt;/code&gt; = Right align the selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:left&lt;/code&gt; = Left align the selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set autoindent&lt;/code&gt; = Respect indentation when starting to edit a new line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set linebreak&lt;/code&gt; = Set linebreak of a word if it doesn&amp;rsquo;t fit in the line, preventing it to be split across two lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set fileformat=(unix|dos)&lt;/code&gt; = Set newline format to unix or dos&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:retab&lt;/code&gt; = Transform tabs in whitespaces and viceversa in the whole file, respecting current settings (like &lt;code&gt;expandtab&lt;/code&gt;, &lt;code&gt;shiftwidth&lt;/code&gt; and &lt;code&gt;tabstop&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:1,$j&lt;/code&gt; = Join all lines from the first (1) to the last ($) in a single line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:1G!Gsort&lt;/code&gt; = Go to the first line (1G) and then sort the whole file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:split file&lt;/code&gt; = Open file in a new split window. Also &lt;code&gt;:new&lt;/code&gt; to simply open an empty file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:vsplit file&lt;/code&gt; = As above but the split window will be vertical&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:res -n&lt;/code&gt; = Shrink window of &lt;code&gt;n&lt;/code&gt; lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:res +n&lt;/code&gt; = Enlarge window of &lt;code&gt;n&lt;/code&gt; lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z10&lt;/code&gt; = Shrink window of 10 lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:qwall&lt;/code&gt; = Quit, closing and saving all changes in all windows&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:qall!&lt;/code&gt; = As above but don&amp;rsquo;t save changes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:windo&lt;/code&gt; = Execute a command in all windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;folding&#34;&gt;Folding&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zf3j&lt;/code&gt; = Fold 3 lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfa(&lt;/code&gt; = Fold from the parentheses &amp;ldquo;(&amp;rdquo; to the matching closing parentheses. Any symbol can be used. Cursor needs to be on the opening symbol&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:20,25 fold&lt;/code&gt; = Fold from line 20 through line 25&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zo&lt;/code&gt; = Open the fold under cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zc&lt;/code&gt; = Close, fold again, the last opened fold&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zr&lt;/code&gt; = Open all the first level folds (those that aren&amp;rsquo;t inside another fold)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zR&lt;/code&gt; = Open all the folds&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zm&lt;/code&gt; = Close all first level folds&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zM&lt;/code&gt; = Close all folds&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zd&lt;/code&gt; = Delete the fold under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set nofoldenable&lt;/code&gt; = Delete all folds in current file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;searches&#34;&gt;Searches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/string&lt;/code&gt; = Search string. Use &lt;code&gt;n&lt;/code&gt; to jump between results&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:g/regexp/&lt;/code&gt; = Show all lines matching regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:g/regexp/#&lt;/code&gt; = As above but also show the line number next to the matching lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q/&lt;/code&gt; = Show last searches&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; = Search word under the cursor forward in the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt; = Search word under the cursor backward in the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:%s/pattern//gn&lt;/code&gt; = Count the occurrences of &lt;code&gt;pattern&lt;/code&gt; in current buffer, without modifying anything&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spell-checking&#34;&gt;Spell Checking&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:set spell&lt;/code&gt; = Enable spell checking. &lt;code&gt;:set nospell&lt;/code&gt; to disable it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set spelllang=xx&lt;/code&gt; = Set spell checking language to xx. Dictionary files have to be in /usr/share/vim/spell or ~/.vim/spell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;]s&lt;/code&gt; = Go to the next wrong word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[s&lt;/code&gt; = Go to the previous wrong word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zg&lt;/code&gt; = Add word under the cursor to the main dictionary&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zG&lt;/code&gt; = Add word under the cursor to a supplementary dictionary, separated from the main one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zw&lt;/code&gt; = Add word under the cursor to the dictionary of wrong words&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zW&lt;/code&gt; = Add word under the cursor to a supplementary dictionary of wrong words, separated from the main one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z=&lt;/code&gt; = Show possible correction for the word under cursor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;buffers&#34;&gt;Buffers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:badd file&lt;/code&gt; = Add file to the buffer list but don&amp;rsquo;t open it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:buffers&lt;/code&gt; = Show all buffers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ls&lt;/code&gt; = Show all buffers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bdelete&lt;/code&gt; = Delete a buffer. Needs its name or its number. This doesn&amp;rsquo;t dump the information about it so it&amp;rsquo;s quicker to reopen it if needed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bwipeout&lt;/code&gt; = As above but delete also its information&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:1,3bdelete&lt;/code&gt; = Delete buffers from 1 to the 3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:buffer&lt;/code&gt; = Show a buffer.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bfirst&lt;/code&gt; = Go to the first buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bn&lt;/code&gt; = Go to the next buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bp&lt;/code&gt; = Go to the previous buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:blast&lt;/code&gt; = Go to the last buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ball&lt;/code&gt; = Open all buffer in as many split windows as needed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bmodified&lt;/code&gt; = Go to the last modified buffer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bufdo&lt;/code&gt; = Execute a command in all opened buffers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;registers&#34;&gt;Registers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:registers&lt;/code&gt; = Show the contents of all registers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;0&lt;/code&gt; = The register containing the most recent yanked text but never deleted text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;1-9&lt;/code&gt; = Registers 1 through 9 contain the most recent deleted text, from the most recent (1) to the oldest (9)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;%&lt;/code&gt; = The register containing the name of current buffer&amp;rsquo;s file. It&amp;rsquo;s a read-only register&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;:&lt;/code&gt; = The register containing the most recent executed command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; = The &amp;ldquo;unnamed&amp;rdquo; register. Every operation gets written into it, no matter what it is or if it&amp;rsquo;s specifically saved to another register&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;_&lt;/code&gt; = A &amp;ldquo;discard&amp;rdquo; register. Everything written into it is lost&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;-&lt;/code&gt; = The register that saves any delete operations that is smaller than 1 line length. If the operation is explicitly saved to another register, it won&amp;rsquo;t be saved here too&lt;/li&gt;
+&lt;li&gt;`&amp;quot;/&amp;quot; = The register containing the most recent search pattern&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;=expression&amp;lt;Enter&amp;gt;p&amp;quot; = The &lt;/code&gt;=&lt;code&gt;register evaluates the&lt;/code&gt;expression&lt;code&gt;and&lt;/code&gt;p&lt;code&gt;paste it at the current cursor position. For instance,&lt;/code&gt;&amp;quot;=5*5&lt;Enter&gt;p` will paste output 25&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:22put r&lt;/code&gt; = Insert contents of register &lt;code&gt;r&lt;/code&gt; at line 22. Without a number, defaults to the current line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ctags&#34;&gt;Ctags&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+]&lt;/code&gt; = Jump to the first occurrence Vim finds of the class/method/function/variable/whatever the cursor is at&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+t&lt;/code&gt; = Get back to where you were before jumping with &lt;code&gt;Ctrl+]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tnext&lt;/code&gt; = Go to the next tag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tprev&lt;/code&gt; = Go to the previous tag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ltag&lt;/code&gt; = Load the tags in the location list window, that can be shown with &lt;code&gt;:lopen&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+x Ctrl+]&lt;/code&gt; = Insert the first tag that starts with the characters before the cursor among tags and insert it in front of the cursor (in insert mode)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;various-commands&#34;&gt;Various Commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:h holy-grail&lt;/code&gt; = Show a general list of commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set all&lt;/code&gt; = Show the options&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set list&lt;/code&gt; = Show non-printable characters&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set paste&lt;/code&gt; = Enable paste mode, useful to paste text without formatting it, exactly as it is. Disable it with &lt;code&gt;:set nopaste&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set patchmode=.ext&lt;/code&gt; = Make a copy of the current file with an extension ext&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set key=&lt;/code&gt; = Remove the password set to open the file, making it plain text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set number&lt;/code&gt; = Show line numbers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ab abb string&lt;/code&gt; = Create an abbreviation, substituting string each time abb is typed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:una abb&lt;/code&gt; = Cancel the previously created abbreviation abb&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ascii&lt;/code&gt; = Show the decimal, hexadecimal and octal numbers of the characters under the cursor in the ASCII table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:digraph&lt;/code&gt; = Show all special symbols that can be inserted and how&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:noh&lt;/code&gt; = Clean the screen from all highlightings&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:e directory&lt;/code&gt; = Open directory in Vi&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:r!cmd&lt;/code&gt; = Insert in Vi the output of shell command cmd&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:r file&lt;/code&gt; = Insert the contents of file under the cursor. Also &lt;code&gt;:2r&lt;/code&gt; to insert at line 2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gf&lt;/code&gt; = Open the filename or whole path under the cursor. To show the path Vi look for files, use &lt;code&gt;:echo &amp;amp;path&lt;/code&gt;. Should work also with http or ftp urls&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q:&lt;/code&gt; = Show last executed commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tabe file&lt;/code&gt; = Open file in a new tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tabc&lt;/code&gt; = Close current tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tabn&lt;/code&gt; = Go to next tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:tabc&lt;/code&gt; = Go to previous tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!!date&lt;/code&gt; = Insert date and time&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+L&lt;/code&gt; = Clear screen from all messages and warnings&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+k&lt;/code&gt; = Activate the insertion of special symbol and characters (those shown by &lt;code&gt;:digraphs&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g&amp;lt;Ctrl+g&amp;gt;&lt;/code&gt; = Show some statistics about current file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gv&lt;/code&gt; = Select again last visual selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+n&lt;/code&gt; = Show a list of possible completions for the word under cursor (based on the opened file)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+x&lt;/code&gt; and &lt;code&gt;Ctrl+l&lt;/code&gt; = Show a list of possible completions for the whole line (in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+x&lt;/code&gt; and &lt;code&gt;Ctrl+f&lt;/code&gt; = Show a list of possible completions for the whole line with an existing path (in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+y&lt;/code&gt; = Insert the character directly above the cursor. Useful to quickly copy the above line with very few edits (in insert mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+v character&lt;/code&gt; = Insert a literal character (as &amp;lt;Esc&amp;gt; or an ASCII code or an Unicode character like &lt;code&gt;u&amp;lt;unicode_number&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+o&lt;/code&gt; = In insert mode, execute a command as if it was in normal mode and then return to insert&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:echom message&lt;/code&gt; = Print message to the command line. Unlike &lt;code&gt;:echo&lt;/code&gt;, the message stays visible until another substitutes it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:mksession file&lt;/code&gt; = Save all open buffers in file (defaults to Session.vim) in the current directory. With &lt;code&gt;vi -S file&lt;/code&gt; then the session can be quickly restored&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:scriptnames&lt;/code&gt; = List all plugins and files loaded at start, in the order they were loaded&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vi +q  --startuptime startup.txt file&lt;/code&gt; = Save debug info in &lt;code&gt;startup.txt&lt;/code&gt;. Useful to see load times, what plugins and files are loaded etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:args&lt;/code&gt; = Modify the arguments list. By default it corresponds to the opened files but with, for example, &lt;code&gt;:args *.c&lt;/code&gt; it becomes all .c files in the current directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:argdo cmd&lt;/code&gt; = Execute cmd for every file in the arguments list&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:diffupdate&lt;/code&gt; = Recalculate the diff (in vimdiff or &lt;code&gt;vi -d&lt;/code&gt; mode)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set noscrollbind&lt;/code&gt; = Disable simultaneous scrolling of the diff buffers. Reenable it then with &lt;code&gt;:set scrollbind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ga&lt;/code&gt; = Show the decimal, octal and hexadecimal index of the character under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:au&lt;/code&gt; = Show all the autocommands in effect&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:silent cmd&lt;/code&gt; = adding &lt;code&gt;silent&lt;/code&gt; before any command suppresses messages it may produce. Useful to not have to press &lt;Enter&gt; at startup to confirm enabling a plugin or a command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:$!xxd&lt;/code&gt; = enters hex edit mode, to edit an hexadecimal file. Return to normal mode with &lt;code&gt;:%!xxd -r&lt;/code&gt; before saving and quitting ViM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;macros&#34;&gt;Macros&lt;/h2&gt;
+&lt;p&gt;Some macros I find useful&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wine</title>
       <link>https://donearm.github.io/Scientia/programs/wine/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/wine/index.html</guid>
-      <description>Useful commands wine dxdiag /t dxdiag.txt = runs dxdiag, wherever it is, and saves its output to the dxdiag.txt file </description>
+      <description>&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wine dxdiag /t dxdiag.txt&lt;/code&gt; = runs dxdiag, wherever it is, and saves its output to the &lt;code&gt;dxdiag.txt&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Wireshark</title>
       <link>https://donearm.github.io/Scientia/programs/wireshark/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/wireshark/index.html</guid>
-      <description>Sniff lan traffic Install dsniff o any package that furnishes arpspoof Enable IP forwarding with echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward Start the Arp spoofing with arpspoof -i eth0 -t 192.168.0.3 192.168.0.1 where -t is the target ip and the following is the ip of the gateway. This way the target computer will think our computer is the gateway and will route all packets through it. The local pc will then forward all the packets to the real gateway Use Wireshark on the local network interface (eth0, in the above case) to sniff the traffic </description>
+      <description>&lt;h3 id=&#34;sniff-lan-traffic&#34;&gt;Sniff lan traffic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;code&gt;dsniff&lt;/code&gt; o any package that furnishes &lt;code&gt;arpspoof&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enable IP forwarding with &lt;code&gt;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start the Arp spoofing with &lt;code&gt;arpspoof -i eth0 -t 192.168.0.3 192.168.0.1&lt;/code&gt; where &lt;code&gt;-t&lt;/code&gt; is the target ip and the following is the ip of the gateway. This way the target computer will think our computer is the gateway and will route all packets through it. The local pc will then forward all the packets to the real gateway&lt;/li&gt;
+&lt;li&gt;Use Wireshark on the local network interface (eth0, in the above case) to sniff the traffic&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Zfs</title>
       <link>https://donearm.github.io/Scientia/programs/zfs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/programs/zfs/index.html</guid>
-      <description>Useful commands arc_summary = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS zfs set mountpoint=$path $pool = change the mountpoint of $pool in $path zfs rename $datastore $datastorenew = rename a data store zfs get compressratio $pool = get the compression rate of $pool (may be a pool or a data store) zfs list -r -t snapshot = get all the snapshot, in general or of a specific pool/data store if specified ZFS encrypted datasets zfs get -p encryption,keystatus,keylocation,pbkdf2iters $dataset = show details about an encrypted dataset zfs-load-key $dataset = load the key for the specified dataset, enabling access to it zfs-unload-key $dataset = unload a previously loaded key for a data set, preventing it from being accessed later without giving the key again zfs mount $dataset = mount the dataset zfs unmount $dataset = unmount the dataset </description>
+      <description>&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;arc_summary&lt;/code&gt; = show the status of the ARC, Adaptive Replacement Cache, the RAM-based disk cache of ZFS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs set mountpoint=$path $pool&lt;/code&gt; = change the mountpoint of &lt;code&gt;$pool&lt;/code&gt; in &lt;code&gt;$path&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs rename $datastore $datastorenew&lt;/code&gt; = rename a data store&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs get compressratio $pool&lt;/code&gt; = get the compression rate of &lt;code&gt;$pool&lt;/code&gt; (may be a pool or a data store)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs list -r -t snapshot&lt;/code&gt; = get all the snapshot, in general or of a specific pool/data store if specified&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;zfs-encrypted-datasets&#34;&gt;ZFS encrypted datasets&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zfs get -p encryption,keystatus,keylocation,pbkdf2iters $dataset&lt;/code&gt; = show details about an encrypted dataset&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs-load-key $dataset&lt;/code&gt; = load the key for the specified dataset, enabling access to it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs-unload-key $dataset&lt;/code&gt; = unload a previously loaded key for a data set, preventing it from being accessed later without giving the key again&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs mount $dataset&lt;/code&gt; = mount the dataset&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zfs unmount $dataset&lt;/code&gt; = unmount the dataset&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

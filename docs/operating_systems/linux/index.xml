@@ -11,108 +11,408 @@
       <link>https://donearm.github.io/Scientia/operating_systems/linux/apparmor/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/apparmor/index.html</guid>
-      <description>Basic commands apparmor_status = show the AppArmor status aa-unconfined = show processes running as &amp;ldquo;unconfined&amp;rdquo; aa-complain $profile_path = change $profile_path to run in complain mode. Same syntax can be used for aa-enforce and aa-disable to respectively set a profile to enforce or disable mode aa-genprof $command = generate a profile for $command </description>
+      <description>&lt;h2 id=&#34;basic-commands&#34;&gt;Basic commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;apparmor_status&lt;/code&gt; = show the AppArmor status&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;aa-unconfined&lt;/code&gt; = show processes running as &amp;ldquo;unconfined&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;aa-complain $profile_path&lt;/code&gt; = change &lt;code&gt;$profile_path&lt;/code&gt; to run in complain mode. Same syntax can be used for &lt;code&gt;aa-enforce&lt;/code&gt; and &lt;code&gt;aa-disable&lt;/code&gt; to respectively set a profile to enforce or disable mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;aa-genprof $command&lt;/code&gt; = generate a profile for &lt;code&gt;$command&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Archlinux</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/archlinux/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/archlinux/index.html</guid>
-      <description>Set up a wireless connection Using iwd as a network manager, it is possible to use the cli iwctl to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory iwd looks for them, /var/lib/iwd/. Under this directory, create a file named after your SSID like name-of-ssid.psk with this content:
-[Security] Passphrase=yourpassphrase At the first connection, iwd will append a pre-shared key entry to this file.</description>
+      <description>&lt;h1 id=&#34;set-up-a-wireless-connection&#34;&gt;Set up a wireless connection&lt;/h1&gt;
+&lt;p&gt;Using &lt;a href=&#34;https://wiki.archlinux.org/title/Iwd&#34;&gt;iwd&lt;/a&gt; as a network manager, it is possible to use the cli &lt;code&gt;iwctl&lt;/code&gt; to interactively connect and set up the connection&amp;rsquo;s parameters or write them directly in the directory &lt;code&gt;iwd&lt;/code&gt; looks for them, &lt;code&gt;/var/lib/iwd/&lt;/code&gt;. Under this directory, create a file named after your SSID like &lt;code&gt;name-of-ssid.psk&lt;/code&gt; with this content:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[Security]
+Passphrase=yourpassphrase
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;At the first connection, &lt;code&gt;iwd&lt;/code&gt; will append a pre-shared key entry to this file. More info at &lt;a href=&#34;https://wiki.archlinux.org/title/Iwd#WPA-PSK&#34;&gt;iwd#WPA-PSK&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/bluetooth/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/bluetooth/index.html</guid>
-      <description>Dual boot pairing The issue The solution Devices with multiple keys and specific devices instructions Battery reporting Specific devices tips Keychron keyboards Sleep Fast reconnect in Bluetooth mode Dual boot pairing There are a few things to consider when using a bluetooth device under Linux along with it being used under Windows as well. The Archlinux Wiki has a good section on dual boot pairing but I experienced issues in following it, and a few steps seemed unnecessary in my case.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#dual-boot-pairing&#34;&gt;Dual boot pairing&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-issue&#34;&gt;The issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-solution&#34;&gt;The solution&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#devices-with-multiple-keys-and-specific-devices-instructions&#34;&gt;Devices with multiple keys and specific devices instructions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#battery-reporting&#34;&gt;Battery reporting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#specific-devices-tips&#34;&gt;Specific devices tips&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#keychron-keyboards&#34;&gt;Keychron keyboards&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#sleep&#34;&gt;Sleep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fast-reconnect-in-bluetooth-mode&#34;&gt;Fast reconnect in Bluetooth mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h2 id=&#34;dual-boot-pairing&#34;&gt;Dual boot pairing&lt;/h2&gt;
+&lt;p&gt;There are a few things to consider when using a bluetooth device under Linux along with it being used under Windows as well. The Archlinux Wiki has a good &lt;a href=&#34;https://wiki.archlinux.org/title/Bluetooth#Dual_boot_pairing&#34;&gt;section on dual boot pairing&lt;/a&gt; but I experienced issues in following it, and a few steps seemed unnecessary in my case. YMMV, of course.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compose Key</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/compose_key/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/compose_key/index.html</guid>
-      <description>This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.
-Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.</description>
+      <description>&lt;p&gt;This is not a Shift key, but is used to signal the operating system that the next two key strokes are to be taken as a code for something else. Thus the sequence Compose + a + e will produce æ.&lt;/p&gt;
+&lt;p&gt;Some computers (e.g. those from Sun) have a Compose key on their keyboard, but for a PC you must nominate a spare key: one of the Windows keys is the natural choice.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debian</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/debian/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/debian/index.html</guid>
-      <description>Commands update-rc.d script defaults = Add the script to all runlevels. It must be present in /etc/init.d/ dpkg -P package = Removes all files left by package, after having removed it with apt-get remove. Also with apt-get purge dpkg-query -L package = List all files installed by package apt-mark hold package = Prevent automatic updating of package </description>
+      <description>&lt;h3 id=&#34;commands&#34;&gt;Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;update-rc.d script defaults&lt;/code&gt; = Add the script to all runlevels. It must be present in &lt;code&gt;/etc/init.d/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dpkg -P package&lt;/code&gt; = Removes all files left by package, after having removed it with &lt;code&gt;apt-get remove&lt;/code&gt;. Also with &lt;code&gt;apt-get purge&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dpkg-query -L package&lt;/code&gt; = List all files installed by package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;apt-mark hold package&lt;/code&gt; = Prevent automatic updating of &lt;code&gt;package&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Firewall</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/firewall/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/firewall/index.html</guid>
-      <description>Netfilter chains NF_IP_PRE_ROUTING = called PREROUTING in iptables, this is all incoming traffic entering the network before any routing decisions happen. NF_IP_LOCAL_IN = called INPUT in iptables, it is triggered when incoming packets are routed if the destination is internal. NF_IP_FORWARD = called FORWARD in iptables, it is triggered when incoming packets are routed to an external destination. NF_IP_LOCAL_OUT = called OUTPUT in iptables, it is local outbound traffic that enters the network stack, before routing.</description>
+      <description>&lt;h2 id=&#34;netfilter-chains&#34;&gt;Netfilter chains&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NF_IP_PRE_ROUTING&lt;/strong&gt; = called &lt;strong&gt;PREROUTING&lt;/strong&gt; in &lt;code&gt;iptables&lt;/code&gt;, this is all incoming traffic entering the network before any routing decisions happen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NF_IP_LOCAL_IN&lt;/strong&gt; = called &lt;strong&gt;INPUT&lt;/strong&gt; in &lt;code&gt;iptables&lt;/code&gt;, it is triggered when incoming packets are routed if the destination is internal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NF_IP_FORWARD&lt;/strong&gt; = called &lt;strong&gt;FORWARD&lt;/strong&gt; in &lt;code&gt;iptables&lt;/code&gt;, it is triggered when incoming packets are routed to an external destination.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NF_IP_LOCAL_OUT&lt;/strong&gt; = called &lt;strong&gt;OUTPUT&lt;/strong&gt; in &lt;code&gt;iptables&lt;/code&gt;, it is local outbound traffic that enters the network stack, before routing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NF_IP_POST_ROUTING&lt;/strong&gt; = called &lt;strong&gt;POSTROUTING&lt;/strong&gt; in &lt;code&gt;iptables&lt;/code&gt;, it is triggered by outbound packets after being routed but before being actually transmitted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;firewalld&#34;&gt;Firewalld&lt;/h2&gt;
+&lt;h4 id=&#34;zones&#34;&gt;Zones&lt;/h4&gt;
+&lt;p&gt;Each network interface can belong to a zone. Firewalld comes by default with 9 zones:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Framebuffer</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/framebuffer/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/framebuffer/index.html</guid>
-      <description>Options to enable in the kernel Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE) Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD) Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB) Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16) Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE) Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH) </description>
+      <description>&lt;h3 id=&#34;options-to-enable-in-the-kernel&#34;&gt;Options to enable in the kernel&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Block devices -&amp;gt; Loopback Device Support (BLK_DEV_LOOP)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Default RAM disk size (kbytes) = 4096 (BLK_DEV_RAM_SIZE)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Block devices -&amp;gt; RAM disk support -&amp;gt; Initial RAM disk (initrd) support (BLK_DEV_INITRD)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; Support for frame buffer devices (FB)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Kernel</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/kernel/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/kernel/index.html</guid>
-      <description>Various kernel options Systemd net.ifnames=0 turns off predictable name logic for network cards. Revert to the old eth0, eth1 etc.
-Acpi/Apic options no8259A - nolapic - noIapic - noapictimer - acpi=noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override Plus:
-acpi_os_name= that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.</description>
+      <description>&lt;h2 id=&#34;various-kernel-options&#34;&gt;Various kernel options&lt;/h2&gt;
+&lt;h3 id=&#34;systemd&#34;&gt;Systemd&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;net.ifnames&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;turns off predictable name logic for network cards. Revert to the old &lt;code&gt;eth0&lt;/code&gt;, &lt;code&gt;eth1&lt;/code&gt; etc.&lt;/p&gt;
+&lt;h3 id=&#34;acpiapic-options&#34;&gt;Acpi/Apic options&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;no8259A - nolapic - noIapic - noapictimer - acpi&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Linux Commands</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/linux_commands/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/linux_commands/index.html</guid>
-      <description>A variegated collection of useful Linux commands, in no particular order
-testparm smb.conf = Check the syntax of the Samba configuration file cat /proc/interrupts = Show the IRQs cat /proc/dma = Show the DMA channels alignmargins = Align margins of a printer (it actually prints a test page with the margins) import img = Take a screenshot of the desktop in img xwd -out img = Take a screenshot of a window (to be selected with the mouse) and saves it in img in a format readable by xwud tput reset = Reset (clean) the terminal display &#39;vid:*.</description>
+      <description>&lt;p&gt;A variegated collection of useful Linux commands, in no particular order&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;testparm smb.conf&lt;/code&gt; = Check the syntax of the Samba configuration file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/interrupts&lt;/code&gt; = Show the IRQs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/dma&lt;/code&gt; = Show the DMA channels&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;alignmargins&lt;/code&gt; = Align margins of a printer (it actually prints a test page with the margins)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;import img&lt;/code&gt; = Take a screenshot of the desktop in &lt;code&gt;img&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xwd -out img&lt;/code&gt; = Take a screenshot of a window (to be selected with the mouse) and saves it in &lt;code&gt;img&lt;/code&gt; in a format readable by &lt;code&gt;xwud&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tput reset&lt;/code&gt; = Reset (clean) the terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display &#39;vid:*.jpg&#39;&lt;/code&gt; = Make a thumbnails gallery of all the images in the current directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;montage $images outputimg&lt;/code&gt; = Make a single image of all &lt;code&gt;$images&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zip -J file.zip /directory/files&lt;/code&gt; = Make a zip file of files stripping the directories tree (basically, put every file at the same level in the zip file)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof -V -P&lt;/code&gt; = Show all opened ports and the relative processes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof (file|device)&lt;/code&gt; = Show the processes using file|device&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof -i TCP:4000&lt;/code&gt; = Check if a specific port is in use&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cdrecord dev=scsihost blank=fast&lt;/code&gt; = Blank a CDRW in fast mode. Use &amp;ldquo;all&amp;rdquo; for the complete mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ss -s&lt;/code&gt; = Print statistics about the network packets&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tcpdump -q&lt;/code&gt; = Show packets that are being transferred over the network&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xwininfo&lt;/code&gt; = Show many informations about the selected window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uuencode file name | mail user&lt;/code&gt; = Encrypt the binary file as &amp;ldquo;name&amp;rdquo; and send it via e-mail to &amp;ldquo;user&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uudecode file&lt;/code&gt; = Decrypt a file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmap -P -O url&lt;/code&gt; = Inquiry about open ports and the OS running on url&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;perl -MCPAN -e &#39;install module&#39;&lt;/code&gt; = Install a Perl module
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;perl -Mmodulename -e 1&lt;/code&gt; = Check if &amp;ldquo;modulename&amp;rdquo; is already installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;useradd -d home -g group -G group1,group2 name&lt;/code&gt; = Add an user with &amp;ldquo;name&amp;rdquo;, with home directory as &amp;ldquo;home&amp;rdquo;, that belongs to group &amp;ldquo;group&amp;rdquo; and also to &amp;ldquo;group1&amp;rdquo; and &amp;ldquo;group2&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkisofs -v -r -l --allow-leading-dots -R -J -T -o img.iso files&lt;/code&gt; = Make an iso file (RockRidge + Joliet)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;split -B size file outputfile&lt;/code&gt; = Split file in as many pieces of outputfile as given size (in bytes)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rar a -v1000000k archive.rar file&lt;/code&gt; = Make a rar archive of at most 1000000 kilobytes from file(s)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xrdb -load .Xdefaults&lt;/code&gt; = Load configuration in &lt;code&gt;.Xdefaults&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;perl -e shell -mcpan&lt;/code&gt; = Open a shell to manage Perl modules
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i /module/&lt;/code&gt; = Search a module&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;install module&lt;/code&gt; = Download and install a module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;formail -s procmail &amp;lt; mbox&lt;/code&gt; = Scan a mbox with the current Procmail rules&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setkeycodes code n&lt;/code&gt; = Map an unrecognized key to n so it can be bind to an atcion with &lt;code&gt;xbindkeys&lt;/code&gt; (see logs to discover the code)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xev&lt;/code&gt; = Show info about the pressed key&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bogoutil -p wordlist.db word&lt;/code&gt; = Show if word is classified as ham or spam by bogoutil&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sox file.wav -v n output.wav&lt;/code&gt; = Raise or lower volum of a wav according to the value of n (the higher it is, the higher it&amp;rsquo;ll be the volume too)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;screen -xRR&lt;/code&gt; = Launch screen at login. To be inserted in the shell configuration file (bashrc, zshrc etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;growisofs -Z /dev/hdd=image.iso&lt;/code&gt; = Burn the iso file in the specified device&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cupsdoprint -H localhost:631 -P printername -J jobname -U login_name file.ps&lt;/code&gt; = Print the file.ps with the selected printer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dvdauthor -T directory&lt;/code&gt; = Create the TOC (the file VIDEO_TS.IFO) of a dvd in directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dvdauthor -t dvdvideos -v videooptions -a audiooptions directory&lt;/code&gt; = Make the vob files from videos using the parameters for video and audio given&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gtf hhhh wwww refresh_rate&lt;/code&gt; = Print the Modeline for &lt;code&gt;xorg.conf&lt;/code&gt; of the given resolution (height and width) and refresh rate (in Hz)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/fb0/modes&lt;/code&gt; = Show supported resolution by the current framebuffer device (fb0)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pacman -Qqe | grep -vx &amp;quot;$(pacman -Qqm)&amp;quot;&lt;/code&gt; = Print the list of installed packages in Archlinux (does not include those in AUR)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zcat initrd_image.img | cpio –list&lt;/code&gt; = Show contents of a cpio boot image&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pdfimages -j file.pdf directory&lt;/code&gt; = Extract in ppm (Gimp can open it) all the images in file.pdf to directory. Pdfimages is in poppler package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl -o /dev/null -s -w %{time_connect}:%{time_starttransfer}:%{time_total} url&lt;/code&gt; = Returns, respectively, the time needed to connect to url, the time the server took to reply and the total time taken to satisfy the request&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wget -E -H -k -K -p -x webpage&lt;/code&gt; = Download webpage, followin images and css links and converting them to local to make browsing offline easier&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wget -e robots=off --wait 1 -x -m -k url&lt;/code&gt; = Download url, convert link to local, wait 1 second between requests to not overload the server and ignore the robots file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;udevinfo -a -p &lt;/code&gt;udevinfo -q path -n device&lt;code&gt; &lt;/code&gt; = Get info on a device useful to then write an udev rule about it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -i video audio&lt;/code&gt; = Extract audio from a video. To know in what format it is, use &lt;code&gt;ffmpeg -i video&lt;/code&gt; and look for the line that says &amp;ldquo;Stream&amp;hellip;..Audio&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -i youtube.flv -ar 48000 -ac 2 -b 800000 youtube.avi&lt;/code&gt; = Convert in an avi a flv file, fixing audio out of sync issues. &lt;code&gt;-b&lt;/code&gt; is the bitrate, increase it to make the final result look better (and bigger)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt; = Show info about the users logged and what processes they have launched&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stat file|directory&lt;/code&gt; = Show complete info about a file or a directory (inode number, size, occupied clusters, modification/access time etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trap &#39;echo message&#39; EXIT&lt;/code&gt; = Execute the command, in this case echoing &amp;ldquo;message&amp;rdquo;, when the script/shell receives the signal to exit (EXIT)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/cmdline&lt;/code&gt; = Show kernel parameters sent at boot&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmap -sV host&lt;/code&gt; = Scan all open ports on host, trying to identify also the services using them&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;netstat -antulp host&lt;/code&gt; = Scan open ports and active connections on host, returning also information on the processes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cdrdao copy --on-the-fly --speed 4 --read-raw --fast-toc --device 0,1,0 --driver generic-mmc-raw --source-device 0,0,0 --source-driver generic-mmc-raw&lt;/code&gt; = On the fly copy of a cd (check the device numbers, of course)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cdrdao read-cd --device 6,0,0 --driver generic-mmc-raw -v 2 --datafile CD.bin --read-raw CD.toc&lt;/code&gt; = On the fly copy of a cd containing multisession tracks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kill -9 $(ps -o pid= -u user)&lt;/code&gt; = Kill all processes started by a given user, basically stopping his use of the computer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find / -xdev -type d \( -perm -0002 -a ! -perm -1000 \) -print&lt;/code&gt; = Find all directories that haven&amp;rsquo;t the sticky bit set and are writable by everybody (a known security hole)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find / -xdev -type f \( -perm -4000 -o -perm -2000 \) -print&lt;/code&gt; = Find all files with suid/sgid set&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find / -xdev -type f -perm -0002 -print&lt;/code&gt; = Find all files that are editable by everybody&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find / -xdev \( -nouser -o -nogroup \) -print&lt;/code&gt; = Find all files that haven&amp;rsquo;t a group or a user or have and invalid one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/net/nf_conntrack&lt;/code&gt; = List all recent connections, with ports, addresses and protocols. Needs Ip Conntrack support in the kernel&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;modinfo module&lt;/code&gt; = Show detailed info about a kernel module&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -d */&lt;/code&gt; = Show only subdirectories of the current directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof +p pid&lt;/code&gt; = Show opened files by the process with that pid&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg -f x11grab -r 25 -s 800x600 -i :0.0 /tmp/outputFile.mpg&lt;/code&gt; = Record a screencast of the desktop at 25fps with a 800x600 resolution&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep ^[^#] config_file&lt;/code&gt; = Strip and print a file of comments (#) and empty lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep -v &#39;#&#39; config_file&lt;/code&gt; = As above but keep empty lines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;identify -format %[exif:*] img&lt;/code&gt; = Show Exif data of img&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl -v url&lt;/code&gt; = Connect to url and show request and response http headers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pacman -Qm&lt;/code&gt; = Show installed packages that aren&amp;rsquo;t present in the pacman database. Usually they are local and aur packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;diff -rupN original_dir/ new_dir/ &amp;gt; file.patch&lt;/code&gt; = Make a patch containing the differences in all files between &lt;code&gt;original_dir&lt;/code&gt; and &lt;code&gt;new_dir&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;netstat -c host&lt;/code&gt; = Show info about connection of host in a continuosly updated way (needs to be killed then)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl --head -s url -D -&lt;/code&gt; = Connect to url with a HEAD request, outputting only the response headers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cuebreakpoints file.cue | shnsplit -o flac -t &amp;quot;%p-%a-%n-%t&amp;quot; file.flac&lt;/code&gt; = Split a flac file containg a full album into tracks according to the cue file. See also &lt;a href=&#34;https://wiki.archlinux.org/title/CUE_Splitting&#34;&gt;Archwiki entry&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cuetag.sh file.cue split-track*.flac&lt;/code&gt; = Add tags to the various tracks from the cue file. Usually it is to be after &lt;code&gt;cuebreakpoints&lt;/code&gt;. See also &lt;a href=&#34;https://wiki.archlinux.org/title/CUE_Splitting&#34;&gt;Archwiki entry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sp-sc link 3908 8908 &amp;gt; /dev/null &amp;amp;&lt;/code&gt; = Connect to the Sopcast link at port 3908 and open to listen on localhost on port 8908&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mplayer http://localhost:8908/tv.asf&lt;/code&gt; = Play the Sopcast video from above&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pgrep cmd&lt;/code&gt; = Return the pid of cm. Like &lt;code&gt;ps | grep cmd&lt;/code&gt; but doesn&amp;rsquo;t print also the grep pid&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;csplit file model&lt;/code&gt; = Split file in various copies named like xx00, xx01 etc. Model can be a line number or a regular expression&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;env -i cmd&lt;/code&gt; = Ignore any environment variable for the execution of cmd&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls | grep -x &amp;quot;.\{6\}&amp;quot;&lt;/code&gt; = Return only file or directory names whose name is long exactly 6 characters&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find path -size +1000k&lt;/code&gt; = Find only files bigger than 1Mb in path. Using instead &lt;code&gt;-1000k&lt;/code&gt; looks for files smaller than 1Mb and without both &lt;code&gt;-&lt;/code&gt; and &lt;code&gt;+&lt;/code&gt; looks for files of exactly 1Mb&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fc&lt;/code&gt; = Open with &lt;code&gt;$EDITOR&lt;/code&gt; the last executed command and thus enable modifying it, reexecuting it at the end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -t&lt;/code&gt; = List files ordered by modification date, the most recent first&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -X&lt;/code&gt; = List files ordered by extension&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -S&lt;/code&gt; = List files ordered by size, the bigger ones first&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find | xargs file&lt;/code&gt; = List files in current directory as it was used the command &lt;code&gt;file&lt;/code&gt; on them all&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat &amp;gt; file&lt;/code&gt; = Write text to a file without any need of a real editor. Start typing after this command and terminate input with Ctrl+d&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bind -P&lt;/code&gt; = Show all available Bash functions and their keybindings&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;objdump -D prog&lt;/code&gt; = Disassemble &lt;code&gt;prog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep -H regexp files&lt;/code&gt; = Print filename of every files matching the regexp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;openssl x509 -noout -fingerprint -in cert.pem&lt;/code&gt; = Print the SHA1 checksum of the certificate cert.pem&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;openssl s_client -connect server -showcerts&lt;/code&gt; = Show SSL info and certificates of server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;openssl s_client -host server -port portnumber -verify 1 -debug&lt;/code&gt; = debug a secure connection with &lt;code&gt;server&lt;/code&gt; on &lt;code&gt;portnumber&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nm -D cmd&lt;/code&gt; = Show all names, variables and functions, used by cmd&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat /proc/pid/smaps&lt;/code&gt; = Show loaded memory segments by the process with such &lt;code&gt;pid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;genisoimage -r -J -o file.iso directory&lt;/code&gt; = Make an iso, readable both on Windows and Linux, of the files in directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wodim -v dev=/dev/sr0 file.iso&lt;/code&gt; = Burn on the empty medium in /dev/sr0 the iso&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;top -pnnn -pnnn&lt;/code&gt; = Start top telling it to monitor only processes whose pid is &lt;code&gt;nnn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;loginctl  list-seats&lt;/code&gt; = Lists seats&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;loginctl seat-status seat0&lt;/code&gt; = Shows list of hardware assigned to &lt;code&gt;seat0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep -Ri --include=&amp;quot;*.py&amp;quot; abc directory/&lt;/code&gt; = Search for &amp;ldquo;abc&amp;rdquo; in directory but only considering &lt;code&gt;.py&lt;/code&gt; files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lspci -k&lt;/code&gt; = Print a list of active hardware devices with the corresponding kernel module they need to work&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;modprobe -c&lt;/code&gt; = Display a complete module configuration, including defaults and directives in /etc/modules.conf (or /etc/modules-load.d/, depending on the Linux distribution)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip route show&lt;/code&gt; = Display routing table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip route show table 255&lt;/code&gt; = Display local addresses route table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip route add prohibit 1.1.1.1&lt;/code&gt; = Prohibit all access to the specified IP address&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip addr show&lt;/code&gt; = Display IP and MAC addresses of every network interface&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arp&lt;/code&gt; = Display the ARP cache&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;msgcat --color=test&lt;/code&gt; = Output various tests to check the appearance of colours on your terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gcc -E file.c&lt;/code&gt; = See all the declarations from file.c and from all the headers included by it&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date -d &amp;quot;string&amp;quot;&lt;/code&gt; = Emits current date and time modified by string. For example, &lt;code&gt;2 days&lt;/code&gt; will add 2 days to current date, &lt;code&gt;1 hour ago&lt;/code&gt; will subtract 1 hour, &lt;code&gt;last year&lt;/code&gt; will emit the date exactly 1 year ago etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date -r file&lt;/code&gt; = Returns when the file was last modified&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;who -b&lt;/code&gt; = Print time and date of the last system boot&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;watch -n 10 kill -USR1 4834&lt;/code&gt; = Print every second (0.1sec * 10) the status of the process having pid 4834&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;diff -rq dir1/ dir2/&lt;/code&gt; = Print a summary of the differences between  &lt;code&gt;dir1&lt;/code&gt; and &lt;code&gt;dir2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat -s file&lt;/code&gt; = Output only non-repeated lines from file. Like &lt;code&gt;uniq&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat -a file&lt;/code&gt; = Output file showing tabs, non printing characters and a &lt;code&gt;$&lt;/code&gt; for each newline character. It&amp;rsquo;s the same as using &lt;code&gt;cat -vET&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stapler sel input.pdf 23-25 33 40-60 output.pdf&lt;/code&gt; = Create a new pdf (&lt;code&gt;output.pdf&lt;/code&gt;) from &lt;code&gt;input.pdf&lt;/code&gt; only including a specific range of pages (in the example, 23 through 25, the page 33 and from page 40 through 60)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bsdtar xf zipfile&lt;/code&gt; = Extract from a zip archive. It may work also with incomplete/corrupt ones or in general where &lt;code&gt;unzip&lt;/code&gt; won&amp;rsquo;t.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find . -name &amp;quot;pattern&amp;quot; -ls | awk &#39;{total += $7} END {print total}&#39;&lt;/code&gt; = Print the total size of files matching &lt;code&gt;pattern&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;curl -X POST -d &amp;quot;fname=Mark&amp;amp;lname=Babe&amp;quot; url&lt;/code&gt; = Send a POST request to &lt;code&gt;url&lt;/code&gt; with given parameters. It&amp;rsquo;s also possible to send a JSON file containing the parameters using &lt;code&gt;-d @parameters.json&lt;/code&gt; syntax&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du -s directory/&lt;/code&gt; = Show only the total sum of occupied space on disk of &lt;code&gt;directory&lt;/code&gt;, and not every single file also&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find Maildir/ -type f | grep -vE &#39;,[^,]*S[^,]*$&#39;&lt;/code&gt; = Find all unread emails in the maildir (Maildir format)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nl $file&lt;/code&gt; = Print the file with the lines&amp;rsquo; numbers next to each line. By default it skips empty lines, to include them add &lt;code&gt;-b a&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip -s link show&lt;/code&gt; = Print all the network interfaces present on the system with additional statistics about them&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip neighbour show&lt;/code&gt; = Show the ARP table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;route add -host $ip reject&lt;/code&gt; = Reject all traffic to host with IP address of &lt;code&gt;$ip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -Z&lt;/code&gt; = Display SELinux context for the files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;last&lt;/code&gt; = Display a chronological list of users&amp;rsquo; accesses&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lastb&lt;/code&gt; = Display a chronological list of failed users&amp;rsquo; accesses (&amp;ldquo;bad logins&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lastlog&lt;/code&gt; = Display the last accesses of each daemons and users&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dig $domain +noall +answer&lt;/code&gt; = Display the IP address of &lt;code&gt;$domain&lt;/code&gt; with a TTL of how long the data is kept in local DNS cache&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file -i $filename&lt;/code&gt; = Show the mimetype and locale of &lt;code&gt;$filename&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ddjvu --format=pdf file.djvu file.pdf&lt;/code&gt; = Convert a djvu file to a pdf&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dCompressFonts=true -dDetectDuplicateImages -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -sOUtputFile=file.pdf file_to_optimize.pdf&lt;/code&gt; = Compress and optimize a pdf. &lt;code&gt;/ebook&lt;/code&gt; means a medium quality, 150dpi. Alternatives are &lt;code&gt;/prepress&lt;/code&gt;, which produces a 300dpi pdf, and &lt;code&gt;/screen&lt;/code&gt;, for a 72dpi, good for screen reading only, pdf. The resolution can also be forced with the option &lt;code&gt;-r72&lt;/code&gt; (for 72dpi).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pactl list | grep codec&lt;/code&gt; = Check what bluetooth codec is being used (need bluez and pavucontrol installed)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yt-dlp -S &amp;quot;res:720&amp;quot; video&lt;/code&gt; = Download &lt;code&gt;video&lt;/code&gt; but only up to 720p resolution, or lower if not available&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;asciidoc -b docbook file.adoc&lt;/code&gt; = Convert an asciidoc file to a docbook XML. This is useful to then convert it later to markdown or else
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pandoc -f docbook file.xml -o file.md&lt;/code&gt; = Take the docbook XML file generated above and convert it to markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi OS</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/raspberrypios/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/raspberrypios/index.html</guid>
-      <description>Useful links Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd Nightlies repository for the 64bit version Configure Wireless and Wired connections Create a wpa_supplicant.conf file in /boot, which will be later copied on the root partition at /etc/wpa_supplicant/wpa_supplicant.conf, with these contents:
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } More info here.</description>
+      <description>&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pragmaticlinux.com/2020/08/move-the-raspberry-pi-root-file-system-to-a-usb-drive/&#34;&gt;Guide on how to move the Raspberry Pi OS installation from the SD card to an USB hdd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://downloads.raspberrypi.org/nightlies/&#34;&gt;Nightlies repository for the 64bit version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;configure-wireless-and-wired-connections&#34;&gt;Configure Wireless and Wired connections&lt;/h2&gt;
+&lt;p&gt;Create a &lt;code&gt;wpa_supplicant.conf&lt;/code&gt; file in /boot, which will be later copied on the root partition at &lt;code&gt;/etc/wpa_supplicant/wpa_supplicant.conf&lt;/code&gt;, with these contents:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ctrl_interface&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;DIR=/var/run/wpa_supplicant GROUP=netdev&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;update_config&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;country&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;network&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;	ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;	psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>SELinux</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/selinux/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/selinux/index.html</guid>
-      <description>General commands semanage login -l = view the mappings of SELinux users to Linux users semanage $user -l = view a specific SELinux user details sestatus = show current status of SELinux getenforce = get the current mode of SELinux setenforce &#39;enforcing&#39; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo; getsebool -a = show all the boolean settings that can be modified. A longer visualization can be had with semanage boolean -l setsebool -P httpd_enable_homedirs=1 = enable the httpd_enable_homedirs boolean.</description>
+      <description>&lt;h2 id=&#34;general-commands&#34;&gt;General commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;semanage login -l&lt;/code&gt; = view the mappings of SELinux users to Linux users&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;semanage $user -l&lt;/code&gt; = view a specific SELinux user details&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sestatus&lt;/code&gt; = show current status of SELinux&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getenforce&lt;/code&gt; = get the current mode of SELinux&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setenforce &#39;enforcing&#39;&lt;/code&gt; = set the mode of SELinux as &amp;ldquo;enforcing&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getsebool -a&lt;/code&gt; = show all the boolean settings that can be modified. A longer visualization can be had with &lt;code&gt;semanage boolean -l&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setsebool -P httpd_enable_homedirs=1&lt;/code&gt; = enable the &lt;code&gt;httpd_enable_homedirs&lt;/code&gt; boolean. 1 is &amp;ldquo;on&amp;rdquo;, whereas 0 would be &amp;ldquo;off&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ps axZ&lt;/code&gt; = get all running processes with added showing the SELinux contexts they&amp;rsquo;re running under&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chcon $context $file&lt;/code&gt; = change the context of a file to &lt;code&gt;$context&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;restorecon $file&lt;/code&gt; = restore the SELinux context for &lt;code&gt;$file&lt;/code&gt; according to default policies&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Sysrq Key</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/sysrq_key/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/sysrq_key/index.html</guid>
-      <description>How do I use the magic SysRq key? to enable it
-echo &amp;#34;1&amp;#34; &amp;gt; /proc/sys/kernel/sysrq or edit /etc/sysctl.conf and add kernel.sysrq = 1
-On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;. Note - Some keyboards may not have a key labeled SysRq. The SysRq key is also known as the Print Screen key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.</description>
+      <description>&lt;h3 id=&#34;how-do-i-use-the-magic-sysrq-key&#34;&gt;How do I use the magic SysRq key?&lt;/h3&gt;
+&lt;p&gt;to enable it&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &amp;gt; /proc/sys/kernel/sysrq
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or edit &lt;code&gt;/etc/sysctl.conf&lt;/code&gt; and add &lt;code&gt;kernel.sysrq = 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;On x86 - You press the key combo &amp;ldquo;ALT-SysRq-&amp;lt;command key&amp;gt;&amp;rdquo;.
+Note - Some keyboards may not have a key labeled &lt;em&gt;SysRq&lt;/em&gt;. The &lt;em&gt;SysRq&lt;/em&gt; key is also known as the &lt;em&gt;Print Screen&lt;/em&gt; key. Also some keyboards cannot handle so many keys being pressed at the same time, so you might have better luck with &amp;ldquo;press Alt&amp;rdquo;, &amp;ldquo;press SysRq&amp;rdquo;, &amp;ldquo;release Alt&amp;rdquo;, &amp;ldquo;press &amp;lt;command key&amp;gt;&amp;rdquo;, release everything.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SystemD</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/systemd/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/systemd/index.html</guid>
-      <description>Systemd/Systemctl Journal Various Timers Systemd/Systemctl systemd-cgls = show full hierarchy of control groups systemd-cgtop = the same of systemd-cgls but ordered by CPU, memory and disk I/O load systemctl kill apache = kill all processes associated with apache server systemctl daemon-reload = reload a service configuration systemctl list-unit-files = show a full list of installed unit along with their state systemctl --failed = show failed units systemctl isolate runlevel3.target = switch to run level 3.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#systemdsystemctl&#34;&gt;Systemd/Systemctl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#journal&#34;&gt;Journal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#various&#34;&gt;Various&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#timers&#34;&gt;Timers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;systemdsystemctl&#34;&gt;Systemd/Systemctl&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemd-cgls&lt;/code&gt; = show full hierarchy of control groups&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemd-cgtop&lt;/code&gt; = the same of &lt;code&gt;systemd-cgls&lt;/code&gt; but ordered by CPU, memory and disk I/O load&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl kill apache&lt;/code&gt; = kill all processes associated with apache server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl daemon-reload&lt;/code&gt; = reload a service configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl list-unit-files&lt;/code&gt; = show a full list of installed unit along with their state&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl --failed&lt;/code&gt; = show failed units&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl isolate runlevel3.target&lt;/code&gt; = switch to run level 3. Run level 5 is named &lt;code&gt;graphical.target&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl show --property=UnitPath&lt;/code&gt; = show all paths SystemD checks for unit files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl list-unit-files -t target&lt;/code&gt; = list all unit files for the available target&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl get-default&lt;/code&gt; = show the current default system target&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl set-default target&lt;/code&gt; = set the default system target&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl rescue&lt;/code&gt; = start single-user rescue mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl reload service&lt;/code&gt; = reload the configuration files of &lt;code&gt;service&lt;/code&gt;, without restarting the service itself&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl mask service&lt;/code&gt; = link the service unit file to /dev/null, practically disabling it, even if specifically started with &lt;code&gt;systemctl start&lt;/code&gt;. It can be re-enabled with &lt;code&gt;systemctl unmask service&lt;/code&gt; later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;journal&#34;&gt;Journal&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;journalctl -o verbose&lt;/code&gt; = Enable verbose output for systemd&amp;rsquo;s journal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;journalctl -e&lt;/code&gt; = Jumps directly at the end of the log (in conjuction with less)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;various&#34;&gt;Various&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hostnamectl&lt;/code&gt; = get server hostname&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hostnamectl set-hostname abc&lt;/code&gt; = set hostname to &lt;code&gt;abc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;localectl&lt;/code&gt; = get current locale, both on virtual console and X11&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timedatctl&lt;/code&gt; = get info about time and timezone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;timers&#34;&gt;Timers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl list-timers --all&lt;/code&gt; = show a full list of timers, enabled or not&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemd-analyze calendar &amp;quot;Mon,Tue *-*-01..04 12:00:00&amp;quot;&lt;/code&gt; = check that the time specified in a timer unit is correct and when it will trigger the relative service&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Xorg</title>
       <link>https://donearm.github.io/Scientia/operating_systems/linux/x/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donearm.github.io/Scientia/operating_systems/linux/x/index.html</guid>
-      <description>Multiple keyboard layouts Keyboard shortcuts using the Multi_key Xinput Keys combination available to use in X Multiple keyboard layouts Having multiple keyboard layouts in X is possible by setting up a file under /etc/X11/xorg.conf.d/ like 00-keyboard.conf and adding all the layouts you desire as:
-Option &amp;#34;XkbLayout&amp;#34; &amp;#34;us,it,pl&amp;#34; To switch between them, use another option in the same file:
-Option &amp;#34;XkbOptions&amp;#34; &amp;#34;grp:rctrl_rshift_toggle&amp;#34; Which will make pressing Right Ctrl + Right Shift together switch keyboard layout.</description>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#multiple-keyboard-layouts&#34;&gt;Multiple keyboard layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#keyboard-shortcuts-using-the-multi_key&#34;&gt;Keyboard shortcuts using the Multi_key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#xinput&#34;&gt;Xinput&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#keys-combination-available-to-use-in-x&#34;&gt;Keys combination available to use in X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h3 id=&#34;multiple-keyboard-layouts&#34;&gt;Multiple keyboard layouts&lt;/h3&gt;
+&lt;p&gt;Having multiple keyboard layouts in X is possible by setting up a file under &lt;code&gt;/etc/X11/xorg.conf.d/&lt;/code&gt; like &lt;code&gt;00-keyboard.conf&lt;/code&gt; and adding all the layouts you desire as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xorg.conf&#34; data-lang=&#34;xorg.conf&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Option&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;XkbLayout&amp;#34; &amp;#34;us,it,pl&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>
