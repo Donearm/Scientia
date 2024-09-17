@@ -32,7 +32,9 @@
 R14 is the link register (LR), R15 the program counter (PC).&lt;/p&gt;
 &lt;h2 id=&#34;x64-assembly&#34;&gt;X64 Assembly&lt;/h2&gt;
 &lt;h3 id=&#34;general-registers&#34;&gt;General Registers&lt;/h3&gt;
-&lt;p&gt;RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.&lt;/p&gt;</description>
+&lt;p&gt;RAX, RBX, RCX, RDX, RBP, RSI, RDI, RSP are identical to those of X86 Assembly.&lt;/p&gt;
+&lt;p&gt;R8..R15 are 64bit registers, unique to X64 Assembly.&lt;/p&gt;
+&lt;p&gt;RIP is 64bit&lt;/p&gt;</description>
     </item>
     <item>
       <title>Awk</title>
@@ -55,7 +57,13 @@ R14 is the link register (LR), R15 the program counter (PC).&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;print-longest-line-value-of-a-file&#34;&gt;Print longest line value of a file&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-awk&#34; data-lang=&#34;awk&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;expand&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;some_file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;awk&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{if (x &amp;lt; length()) x = length() } END { print “Longest row is ” x }&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;print-only-non-empty-lines&#34;&gt;Print only non-empty lines&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-awk&#34; data-lang=&#34;awk&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;awk&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;NF &amp;gt; 0&amp;#39;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;some_file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;count-lines&#34;&gt;Count lines&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-awk&#34; data-lang=&#34;awk&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;awk&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;END {print NR}&amp;#39;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;some_file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;awk-as-grep&#34;&gt;Awk as Grep&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-awk&#34; data-lang=&#34;awk&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;awk&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;some_file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;which is a quicker alternative to &lt;code&gt;cat some_file | awk &#39;{print $2}&#39;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bash</title>
@@ -85,7 +93,55 @@ ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ext&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:+&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$name0&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	  &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ext&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;commands&#34;&gt;Commands&lt;/h2&gt;
+&lt;h3 id=&#34;ctrl-key-bound&#34;&gt;CTRL Key Bound&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + _&lt;/code&gt; =  undo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + @&lt;/code&gt; = set mark&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + a&lt;/code&gt; = Jump to the start of the line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + b&lt;/code&gt; = Move back a char&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + c&lt;/code&gt; = Terminate the command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + d&lt;/code&gt; = Delete character under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + e&lt;/code&gt; = Jump to the end of the line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + f&lt;/code&gt; = Move forward a char&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + k&lt;/code&gt; = Delete from cursor to EOL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + l&lt;/code&gt; = Clear the screen&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + n&lt;/code&gt; = select the next command in history&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + p&lt;/code&gt; = select the previous command in history&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + r&lt;/code&gt; = Search the history backwards&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + R&lt;/code&gt; = Search the history backwards with multi occurrence&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + t&lt;/code&gt; = drag character before cursor over the one under the cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + u&lt;/code&gt; = Delete backward from cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + v&lt;/code&gt; = Insert next character verbatim&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + w&lt;/code&gt; = kill word before cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + x&lt;/code&gt; = kill backward to the beginning of line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + xx&lt;/code&gt; = Move between EOL and current cursor position&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + x @&lt;/code&gt; = Show possible hostname completions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + y&lt;/code&gt; = paste the text at top of the kill#ring&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + z&lt;/code&gt; = Suspend/ Stop the command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;alt-key-bound&#34;&gt;ALT Key Bound&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Alt + &#39;&#39;&amp;lt;&#39;&#39;&lt;/code&gt; = Move to the first line in the history&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + &#39;&#39;&amp;gt;&#39;&#39;&lt;/code&gt; = Move to the last line in the history&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + ?&lt;/code&gt; = Show current completion list&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + *&lt;/code&gt; = Insert all possible completions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + /&lt;/code&gt; = Attempt to complete filename&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + .&lt;/code&gt; = Yank last argument to previous command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + b&lt;/code&gt; = Move backward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + c&lt;/code&gt; = Capitalize the word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + d&lt;/code&gt; = Delete word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + f&lt;/code&gt; = Move forward&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + l&lt;/code&gt; = Make word lowercase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + n&lt;/code&gt; = Search the history forwards non=incremental&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + p&lt;/code&gt; = Search the history backwards non=incremental&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + r&lt;/code&gt; = Recall command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + t&lt;/code&gt; = Move words around&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + u&lt;/code&gt; = Make word uppercase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + backspace&lt;/code&gt; = Delete backward from cursor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;meta-key-bound&#34;&gt;Meta Key Bound&lt;/h3&gt;
+&lt;p&gt;Meta usually corresponds to the &lt;code&gt;Esc&lt;/code&gt; key&lt;/p&gt;</description>
     </item>
     <item>
       <title>C</title>
@@ -108,7 +164,17 @@ ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:b&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:c&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;make an indexed list (plist)&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;getf&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:b&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;returns the value of &lt;code&gt;:a&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;defvar&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;define var with given value&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;parse-integer&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;converts the string str in an integer (if possible)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;y-or-n-p&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;make a yes/no prompt with &lt;code&gt;string&lt;/code&gt; and waits the user input (basically until he press y or n)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;with-open-file&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;out&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;open filename and loads its contents in the variable &lt;code&gt;out&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;read&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;read, and eventually evaluates in lisp, the string &lt;code&gt;in&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go</title>
@@ -205,7 +271,28 @@ ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;&lt;/p&gt;
       <guid>https://donearm.github.io/Scientia/programming_languages/sed/index.html</guid>
       <description>&lt;h3 id=&#34;edit-a-string-in-multiple-files-at-once&#34;&gt;Edit a string in multiple files at once&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; f in &lt;span class=&#34;nv&#34;&gt;$files&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; grep &lt;span class=&#34;nv&#34;&gt;$oldstring&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$f&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/$oldstring/$newstring/g&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$f&lt;/span&gt; &amp;gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.new &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;this actually outputs every edited files to a new file. To edit in place, use sed with &lt;code&gt;-i&lt;/code&gt; and don&amp;rsquo;t redirect the output&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;this actually outputs every edited files to a new file. To edit in place, use sed with &lt;code&gt;-i&lt;/code&gt; and don&amp;rsquo;t redirect the output&lt;/p&gt;
+&lt;h3 id=&#34;update-copyright-date-at-the-change-of-year&#34;&gt;Update copyright date at the change of year&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/2011\([, ] \)/2012\1/g&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;various-syntax&#34;&gt;Various syntax&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s/pattern//2g&lt;/code&gt; = Remove pattern from the second (2) to the last (g) occurrence of it, thus excluding the first&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;s/pattern/&amp;amp;/w file&#39; &amp;lt; inputfile&lt;/code&gt; = Save pattern from inputfile in file. Here &lt;code&gt;w&lt;/code&gt; stands for write and the &lt;code&gt;&amp;amp;&lt;/code&gt; represents the pattern itself&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;/^#/ s/pattern//g&#39;&lt;/code&gt; = Remove pattern in all occurrences (g) that are in lines starting with &lt;code&gt;#&lt;/code&gt; (^#). It&amp;rsquo;s possible to use &lt;code&gt;&#39;5 s/...//&#39;&lt;/code&gt; to remove only at the fifth line or &lt;code&gt;5,70&lt;/code&gt; to remove only between the fifth and seventh line. Also with &lt;code&gt;/pattern1/,/pattern2/&lt;/code&gt; to operate only on the text between pattern1 and pattern2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/pattern/ a\insertion&lt;/code&gt; = Add insertion after pattern&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/pattern/ i\insertion&lt;/code&gt; = Add insertion before pattern&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/pattern/ c\newwholeline&lt;/code&gt; = Substitute pattern with newwholeline&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;[^&amp;gt;]*&amp;gt;//g&lt;/code&gt; = Remove all html tags&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;1i Title, Name&#39; file&lt;/code&gt; = add an header of &amp;ldquo;Title, Name&amp;rdquo; at the first line in file (&lt;code&gt;1&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;1a string&#39; file&lt;/code&gt; = like above but add the string &lt;strong&gt;after&lt;/strong&gt; the first line (&lt;code&gt;a&lt;/code&gt; instead of &lt;code&gt;i&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;$a string&#39; file&lt;/code&gt; = add string after the last line of file (&lt;code&gt;$&lt;/code&gt; means the end of the file here)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;s/^/String: /&#39; file&lt;/code&gt; = prepend String: to the beginning of every line (&lt;code&gt;^&lt;/code&gt;). Similarly, using &lt;code&gt;$&lt;/code&gt; instead append String: at the end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;/string/p&#39; file&lt;/code&gt; = sed as grep&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;/string/d&#39; file&lt;/code&gt; = print only lines not containing the string. As &lt;code&gt;grep -v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;/pattern/q&#39; file&lt;/code&gt; = print file only up until sed encounters &lt;code&gt;pattern&lt;/code&gt;. &lt;code&gt;q&lt;/code&gt; here means to quit when the action succeeds&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;s/^../XX/&#39; file&lt;/code&gt; = replace first (&lt;code&gt;^&lt;/code&gt;) 2 characters (&lt;code&gt;..&lt;/code&gt;) of every line in file with XX. The &lt;code&gt;^&lt;/code&gt; can be omitted, sed starts by default at the beginning of line. With &lt;code&gt;$&lt;/code&gt; the same can be done for the end of line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;s/.*/&amp;quot;&amp;amp;&amp;quot;/&#39; file&lt;/code&gt; = add a character (&lt;code&gt;&amp;quot;&lt;/code&gt;) before and after a string. &lt;code&gt;&amp;amp;&lt;/code&gt; denotes the pattern matched, &lt;code&gt;.*&lt;/code&gt; being the whole line/string&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Zsh</title>
@@ -217,7 +304,10 @@ ext prints extension of a file, including &amp;ldquo;.&amp;rdquo;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; x &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 3&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; x in &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 3&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;parameter-expansion&#34;&gt;Parameter expansion&lt;/h1&gt;
+&lt;p&gt;An alternative to the POSIX-complaint &lt;code&gt;${i%.ext}.newext&lt;/code&gt; in Zsh is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.newext
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;:r&lt;/code&gt; tells the shell to automatically strip the extension, period included&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

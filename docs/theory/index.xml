@@ -53,7 +53,8 @@
 &lt;!-- vim-markdown-toc --&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;linked-list&#34;&gt;Linked List&lt;/h2&gt;
-&lt;p&gt;A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.&lt;/p&gt;</description>
+&lt;p&gt;A linked list is a collection of elements whose order is not given by the physical placement in memory but each element points to the next.&lt;/p&gt;
+&lt;p&gt;Each element, or node, contains both data and a reference to the next node in the sequence. Inserting and removing elements is quicker than with arrays: there&amp;rsquo;s no need to rearrange the whole structure each time but:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Set Theory</title>

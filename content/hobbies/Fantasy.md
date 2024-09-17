@@ -19,14 +19,17 @@ Also worth noting a project of a friend blogger that keeps the count of the word
 
 ## Chronology of fantasy of importance
 
+* **1858**: George McDonald's Phantastes is published. Often considered the first fantasy book for adults.
 * **1865**: Alice's Adventures in Wonderland is first published.
 * **1922**: E.R. Eddison's The Worm Ouroboros is published.
 * **1924**: Lord Dunsany's The King of Elfland's Daughter is published.
 * **1929-1930**: Kull appears on Weird Tales. His character would end up inspiring the more famous Conan. Further stories would be published posthumously in the late 1960s-1970s.
 * **1932-**: Conan the Barbarian appears on Weird Tales in 1932. Main stories would be published throughout the 1930s, with a few posthumously being released during the 1950s and 1960s.
-* **1937**: The Hobbit is first published 
+* **1937**: The Hobbit is first published.
+* **1939**: the first short story featuring Fafhrd and the Gray Mouser, by Fritz Leiber, is published. Many would follow and, later, full books, till the last one in 1988.
 * **1946-1959**: Mervyn Peake's Ghormenghast series is published.
-* **1954**: Poul Anderson's The Broken Sword is published.
+* **1950**: Jack Vance's the Dying Earth is published.
+* **1954**: Poul Anderson's The Broken Sword is published. It is considered by some the forerunner of the **grimdark** subgenre.
 * **1954-1955**: J.R.R. Tolkien's Lord of the Rings is published.
 * **1961-**: Moorcock's stories about Elric of Melniboné were published starting from 1961. The first novella is from 1971.
 * **1963**: the first volume of the Dune's series is published. The rest would be in 1969, 1976, 1981, 1984 and 1985. While not technically fantasy, the opera had a great influence on this genre as well, not only sci-fi.
@@ -39,9 +42,10 @@ Also worth noting a project of a friend blogger that keeps the count of the word
 * **1977**: The Silmarillion is posthumously published.
 * **1977-1979**: the first trilogy of The Chronicles of Thomas Covenant, the Unbeliever is published.
 * **1984-2000**: the first novel of the Black Company series is published in 1984. The first trilogy ends in 1985, the second duology in 1990 and finally the last tetralogy in 2000.
+* **1984**: Dragons of Autumn Twilight, the first book of the Dragonlance Chronicles by Margaret Weis and Tracy Hickman, is published. It was for many years the biggest-selling epic fantasy series, heavily influenced by D&D and Tolkien's works.
 * **1986**: the first story of The Witcher series is published in polish. The short stories would be collected and published between 1992 and 1993, still in polish, while the main series would be published between 1994 and 2013.
-* **1999**: Gardens of the Moon, first book of the Malazan Book of the Fallen, is published. It had already been completed around 1991-1992 though. The complete decalogy would be all published by 2011.
-* **2000**: Perdido Street Station is published.
+* **1999**: Gardens of the Moon, first book of the Malazan Book of the Fallen, is published. It had already been completed around 1991-1992 though. The complete decalogy would be all published by 2011. The co-author of the world, Ian Esslemont, had already drafted his first two novels, Night of Knives and Return of the Crimson Guard, a few years earlier than Erikson.
+* **2000**: China Mieville's Perdido Street Station is published.
 * **2004-2006**: The first trilogy (The Prince of Nothing) of Scott Bakker's Second Apocalypse series is published.
 * **2009-2017**: The second trilogy (The Aspect-Emperor) of Scott Bakker's Second Apocalypse series is published.
 

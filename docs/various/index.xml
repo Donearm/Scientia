@@ -154,6 +154,22 @@ the number of amps it can deliver for one hour.&lt;/p&gt;</description>
 &lt;p&gt;
 &lt;a href=&#34;https://donearm.github.io/Scientia/Scientia/various/networks/various/networks/osi-model.png&#34; data-featherlight=&#34;image&#34;&gt;
 &lt;img src=&#34;https://donearm.github.io/Scientia/Scientia/various/networks/various/networks/osi-model.png&#34; alt=&#34;OSI Model&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tcp-connection-states&#34;&gt;TCP connection states&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CLOSED&lt;/strong&gt;: No connection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LISTEN&lt;/strong&gt;: The local end-point is waiting for a connection request from a remote end-point&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ESTABLISHED&lt;/strong&gt;: The third step of the 3-way connection handshake was performed. The connection is open&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FIN-WAIT-1&lt;/strong&gt;: The first step of a 4-way active clsoe was performed. Local end-point has sent a connection termination request to the remote end-point&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CLOSE-WAIT&lt;/strong&gt;: The local end-point has received a connection termination request and acknowledged it&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FIN-WAIT-2&lt;/strong&gt;: The remote end-point has sent an acknowledgement for the previously sent connection termination request. The local end-point waits for an active connection termination request from the remote end-point&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LAST-ACK&lt;/strong&gt;: The local end-point has performed a passive close and initiated an active close by sending a connection termination request to the remote end-point&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CLOSING&lt;/strong&gt;: The local end-point is waiting for an acknowledgement for a connection termination request before going to the &lt;code&gt;TIME-WAIT&lt;/code&gt; state&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TIME-WAIT&lt;/strong&gt;: The local end-point waits for twice the maximum segment lifetime (MSL) to pass before going to &lt;code&gt;CLOSED&lt;/code&gt; state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://donearm.github.io/Scientia/Scientia/various/networks/various/networks/tcp-connection-states.png&#34; data-featherlight=&#34;image&#34;&gt;
+&lt;img src=&#34;https://donearm.github.io/Scientia/Scientia/various/networks/various/networks/tcp-connection-states.png&#34; alt=&#34;TCP connection states&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;
 &lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -348,7 +364,19 @@ directives per account, sorted by the most to the least numerous.&lt;/li&gt;
 &lt;!-- vim-markdown-toc --&gt;
 &lt;hr&gt;
 &lt;p&gt;A miscellaneous collection of links that are not immediately useful but may be,
-eventually. Nothing that would match the other pages only.&lt;/p&gt;</description>
+eventually. Nothing that would match the other pages only.&lt;/p&gt;
+&lt;h2 id=&#34;driving-license&#34;&gt;Driving license&lt;/h2&gt;
+&lt;p&gt;Driving license (patente B) to obtain in Italy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First theory exam, of 40 questions. This can be done online.&lt;/li&gt;
+&lt;li&gt;Then, if passed, a &amp;ldquo;foglio rosa&amp;rdquo; is granted which gives the owner the right
+to take the practical exam&lt;/li&gt;
+&lt;li&gt;Within 6 months from the theory exam, the practical one can be attempted. Two
+tries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usually some practice is assumed before the practical exam, and driving schools
+offer it along with the actual exam. It is optional too, practice can be done
+on your own.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

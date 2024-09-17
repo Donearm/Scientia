@@ -196,7 +196,13 @@
 &lt;h3 id=&#34;conversions&#34;&gt;Conversions&lt;/h3&gt;
 &lt;h4 id=&#34;h264&#34;&gt;H264&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile -vcodec h264 -acodec aac -strict -2 outputfile.mp4
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;vp8&#34;&gt;VP8&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile -vcodec libvpx -qmin &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; -qmax &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; -crf &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt; -b:v 1M -acodec libvorbis outputfile.webm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;vp9&#34;&gt;VP9&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis outputfile.webm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;gif-to-vp8&#34;&gt;Gif to VP8&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -y -i input.gif -r &lt;span class=&#34;m&#34;&gt;16&lt;/span&gt; -c:v libvpx -quality good -cpu-used &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; -b:v 2M -crf &lt;span class=&#34;m&#34;&gt;12&lt;/span&gt; -pix_fmt yuv420p -movflags faststart outputfile.webm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Firefox</title>
@@ -426,7 +432,12 @@ generate the Grub2 standalone, with all the drivers embedded, with&lt;/p&gt;</de
 &lt;p&gt;Hugo makes use of &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; as its syntax highlighter. It is possible to select the style from these &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;&gt;here&lt;/a&gt; by adding in Hugo config:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;pygmentsStyle&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;dracula&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;multiline-in-frontmatter&#34;&gt;Multiline in frontmatter&lt;/h2&gt;
-&lt;p&gt;It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, &lt;code&gt;|2-&lt;/code&gt;. It may be used so:&lt;/p&gt;</description>
+&lt;p&gt;It may be necessary to have content going over a single line in an Hugo frontmatter, in YAML. To have one, an escape character is needed, &lt;code&gt;|2-&lt;/code&gt;. It may be used so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;|2-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Some content on line 1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;other content on line 2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Further content on line 3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The spacing should be kept as inserted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>i3</title>
@@ -665,7 +676,7 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.&l
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quit&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Ssh</title>
@@ -718,7 +729,9 @@ If you do not have an ALT key then use ESC then key. Do not type the brackets.&l
 &lt;!-- vim-markdown-toc --&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;tweaks-and-features-of-tiddlywiki&#34;&gt;Tweaks and features of Tiddlywiki&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://tiddlywiki.org/bags/tiddlywiki_public/tiddlers/TiddlyWiki%20Markup.html&#34;&gt;Tiddlywiki markup list&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;http://tiddlywiki.org/bags/tiddlywiki_public/tiddlers/TiddlyWiki%20Markup.html&#34;&gt;Tiddlywiki markup list&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;to-use-the-file-browser-to-insert-a-file-into-the-wiki&#34;&gt;To use the file browser to insert a file into the wiki&lt;/h3&gt;
+&lt;p&gt;This:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tmux</title>

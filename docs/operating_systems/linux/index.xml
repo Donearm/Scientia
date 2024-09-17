@@ -115,7 +115,7 @@ Passphrase=yourpassphrase
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; VGA 16-color graphics support (CONFIG_FB_VGA16)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; Framebuffer Console support (FRAMEBUFFER_CONSOLE)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Device Drivers -&amp;gt; Graphics support -&amp;gt; Bootsplash Configuration -&amp;gt; Bootup splash screen (BOOTSPLASH)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Kernel</title>
@@ -128,7 +128,9 @@ Passphrase=yourpassphrase
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;turns off predictable name logic for network cards. Revert to the old &lt;code&gt;eth0&lt;/code&gt;, &lt;code&gt;eth1&lt;/code&gt; etc.&lt;/p&gt;
 &lt;h3 id=&#34;acpiapic-options&#34;&gt;Acpi/Apic options&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;no8259A - nolapic - noIapic - noapictimer - acpi&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;noirq irqpoll - no_timer_check - pci=biosirq - pic=irqroute - clock=pmtmr - notsc - acpi_use_timer_override&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Plus:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cfg&#34; data-lang=&#34;cfg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;acpi_os_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;that needs a parameter, among &amp;ldquo;Microsoft Windows XP&amp;rdquo;, &amp;ldquo;Microsoft Windows&amp;rdquo;, &amp;ldquo;Microsoft Windows NT&amp;rdquo; or &amp;ldquo;Windows 2001&amp;rdquo;. It&amp;rsquo;s mostly useful to trick the BIOS into believing that it&amp;rsquo;s dealing with Windows instead of Linux, which can help solve some Acpi issues.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Commands</title>
@@ -312,7 +314,7 @@ Passphrase=yourpassphrase
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;	ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;	psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;More info &lt;a href=&#34;%C3%AE200~https://www.raspberrypi.org/documentation/configuration/wireless/headless.md&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELinux</title>
@@ -412,7 +414,9 @@ Note - Some keyboards may not have a key labeled &lt;em&gt;SysRq&lt;/em&gt;. The
 &lt;h3 id=&#34;multiple-keyboard-layouts&#34;&gt;Multiple keyboard layouts&lt;/h3&gt;
 &lt;p&gt;Having multiple keyboard layouts in X is possible by setting up a file under &lt;code&gt;/etc/X11/xorg.conf.d/&lt;/code&gt; like &lt;code&gt;00-keyboard.conf&lt;/code&gt; and adding all the layouts you desire as:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xorg.conf&#34; data-lang=&#34;xorg.conf&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Option&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;XkbLayout&amp;#34; &amp;#34;us,it,pl&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To switch between them, use another option in the same file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xorg.conf&#34; data-lang=&#34;xorg.conf&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Option&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;XkbOptions&amp;#34; &amp;#34;grp:rctrl_rshift_toggle&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which will make pressing Right Ctrl + Right Shift together switch keyboard layout.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
