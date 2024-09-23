@@ -39,8 +39,8 @@ weight: 1350
     * [Apocalypse of Peter](#apocalypse-of-peter)
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
 * [Late Christianity Chronology](#late-christianity-chronology)
-* [Theological facts](#theological-facts)
 * [Christology and Christ's person differences](#christology-and-christs-person-differences)
+* [Theological facts](#theological-facts)
     * [Important figures](#important-figures)
         * [Origen of Alexandria](#origen-of-alexandria)
         * [Marcion of Sinope](#marcion-of-sinope)
@@ -524,17 +524,6 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
   pastoral and disciplinary issues, changing the liturgy, and the attitude 
   towards Ecumenism.
 
-## Theological facts
-
-* Only John's Apocalypse is supposed to be dictated by God directly. None of 
-  the other biblical texts claim so.
-* [Justyn Martyr](https://en.wikipedia.org/wiki/Justin_Martyr), 100-165 a.C., 
-  did not consider the Gospels as canon but only as a sort of "memorable facts" 
-  about the life of Christ
-* A doctrine of future life was first postulated in the West by the Orphics, 
-  then adopted by Greek philosophers and then caught by early Christian 
-  theologians.
-
 ## Christology and Christ's person differences
 
 Once assumed that the person of Christ is both human and divine, there were 
@@ -576,6 +565,17 @@ on this were:
   and divine nature but one single will among them. Initially sponsored by the 
   Byzantine Empire, it was later considered heresy by the Third Council of 
   Constantinople in 680-681
+
+## Theological facts
+
+* Only John's Apocalypse is supposed to be dictated by God directly. None of 
+  the other biblical texts claim so.
+* [Justyn Martyr](https://en.wikipedia.org/wiki/Justin_Martyr), 100-165 a.C., 
+  did not consider the Gospels as canon but only as a sort of "memorable facts" 
+  about the life of Christ
+* A doctrine of future life was first postulated in the West by the Orphics, 
+  then adopted by Greek philosophers and then caught by early Christian 
+  theologians.
 
 ### Important figures
 
