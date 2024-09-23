@@ -40,6 +40,7 @@ weight: 1350
 * [Early Christianity Chrolonogy](#early-christianity-chrolonogy)
 * [Late Christianity Chronology](#late-christianity-chronology)
 * [Theological facts](#theological-facts)
+* [Christology and Christ's person differences](#christology-and-christs-person-differences)
     * [Important figures](#important-figures)
         * [Origen of Alexandria](#origen-of-alexandria)
         * [Marcion of Sinope](#marcion-of-sinope)
@@ -533,6 +534,48 @@ Only around 190 a.C. the word "New Testament" is first used, distinct from the O
 * A doctrine of future life was first postulated in the West by the Orphics, 
   then adopted by Greek philosophers and then caught by early Christian 
   theologians.
+
+## Christology and Christ's person differences
+
+Once assumed that the person of Christ is both human and divine, there were 
+stark differences in approach in the early Christianity. Some of the doctrines 
+on this were:
+
+* Monophysitism (3rd-8th century): they believed that after incarnation, the 
+  human and divine nature of Christ were united in a single nature. Condemned 
+  by the Council of Chalcedon of 451
+* Miaphysitism: what Oriental Orthodox churces believe today, the person of 
+  Christ had divine and human nature united in a compound nature (physis)
+* Dyophysitism: Christ maintained two distinct natures, human and divine, after 
+  the incarnation. Articulated in the Council of Chalcedon, it is what believe 
+  in Eastern Orthodox, Catholic, Lutheran, Anglican and Reformed Churches 
+  adherents
+* Monarchianism (2nd-3rd century a.C.): considered God as one, not separate 
+  nature as in the Trinity. Condemned as heresy by First Council of 
+  Costantinople in 381, there are still some adherents to this belief today
+* Docetism (3rd-4th century a.C.): believed that the human nature and form of 
+  Christ were semblance of reality, an illusion, and that only his divine 
+  nature was real. Rejected by the First Council of Nicea in 32
+* Monarchianism (2nd-3rd century a.C.): considered God as one, not separate 
+  nature as in the Trinity. Condemned as heresy by First Council of 
+  Costantinople in 381, there are still some adherents to this belief today
+* Docetism (3rd-4th century a.C.): believed that the human nature and form of 
+  Christ were semblance of reality, an illusion, and that only his divine 
+  nature was real. Rejected by the First Council of Nicea in 325. Widely 
+  considered heretics by most of today's Churches, docetism had similarities 
+  with Marcionism
+* Arianism (4th century a.C.): viewed Christ's divine nature as inferior to 
+  God's, as having a beginning in time and different in substance, having been 
+  begotten and not ever-existing as the Father. Condemned by the First Council 
+  of Nicea in 325
+* Nestorianism (5th century a.C.): asserted that the human and divine natures 
+  of Christ were completely distinct. Condemned by the Council of Ephesus (431) 
+  it is still held as canon by the Church of the East (once in Persia and up to 
+  China, nowadays mostly the Assyrian Church)
+* Monothelitism (7th century a.C.): considered Christ to have distinct human 
+  and divine nature but one single will among them. Initially sponsored by the 
+  Byzantine Empire, it was later considered heresy by the Third Council of 
+  Constantinople in 680-681
 
 ### Important figures
 
