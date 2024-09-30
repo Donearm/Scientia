@@ -1,7 +1,7 @@
 ---
 title: Samba and Nfs
 bookCollapseSection: true
-weight: 632
+weight: 633
 ---
 
 ### Mount Samba shares on Linux

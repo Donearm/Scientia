@@ -1,7 +1,7 @@
 ---
 title: SQLite
 bookCollapseSection: true
-weight: 634
+weight: 635
 ---
 
 ### Exporting tables to csv

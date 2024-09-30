@@ -1,7 +1,7 @@
 ---
 title: Tmux
 bookCollapseSection: true
-weight: 638
+weight: 639
 ---
 
 ### Change base directory of an existing session

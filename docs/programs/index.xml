@@ -626,6 +626,24 @@ L&amp;rsquo;area prescelta si calcola a partire dal vertice in alto a sinistra d
 If you do not have an ALT key then use ESC then key. Do not type the brackets.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Obsidian</title>
+      <link>https://donearm.github.io/Scientia/programs/obsidian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donearm.github.io/Scientia/programs/obsidian/index.html</guid>
+      <description>&lt;!-- vim-markdown-toc GFM --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#plugins&#34;&gt;Plugins&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#leaflet&#34;&gt;Leaflet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- vim-markdown-toc --&gt;
+&lt;h2 id=&#34;plugins&#34;&gt;Plugins&lt;/h2&gt;
+&lt;h3 id=&#34;leaflet&#34;&gt;Leaflet&lt;/h3&gt;
+&lt;p&gt;To add maps in form of images and navigate, pin, annotate them in Obsidian. &lt;a href=&#34;&#34;&gt;Link to tutorial and examples&lt;/a&gt;&lt;a href=&#34;https://obsidianttrpgtutorials.com/Obsidian+TTRPG+Tutorials/Plugin+Tutorials/Obsidian+Leaflet&#34;&gt;https://obsidianttrpgtutorials.com/Obsidian+TTRPG+Tutorials/Plugin+Tutorials/Obsidian+Leaflet&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Rtorrent</title>
       <link>https://donearm.github.io/Scientia/programs/rtorrent/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

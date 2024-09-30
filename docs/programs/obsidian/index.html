@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="My personal knowledge wiki. Mostly I.T. but with a few more recent topics">
     <meta name="author" content="Gianluca Fiore">
-    <title>Awk - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
+    <title>Obsidian - Scientia - Gianluca Fiore Knowledge Wiki</title><link rel="icon" href="/images/fpc-favicon.png" type="image/png">
 
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/Scientia/css/fontawesome-all.min.css?1727715581" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Scientia/css/fontawesome-all.min.css?1727715581" rel="stylesheet"></noscript>
@@ -43,17 +43,17 @@
     </script>
     <script src="/Scientia/js/jquery.min.js?1727715581" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/Scientia/programming_languages/awk/index.html">
+  <body class="mobile-support html" data-url="/Scientia/programs/obsidian/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/Scientia/programming_languages/bash/index.html" title="Bash (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/Scientia/programs/rtorrent/index.html" title="Rtorrent (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/Scientia/programming_languages/assembly/index.html" title="Assembly (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/Scientia/programs/mutt/index.html" title="Mutt (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -62,27 +62,17 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/index.html"><span itemprop="name">Scientia - Gianluca Fiore Knowledge Wiki</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programming_languages/index.html"><span itemprop="name">Programming Languages</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Awk</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Scientia/programs/index.html"><span itemprop="name">Programs</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Obsidian</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#plugins">Plugins</a>
       <ul>
-        <li><a href="#print-longest-line-value-of-a-file">Print longest line value of a file</a></li>
-        <li><a href="#print-only-non-empty-lines">Print only non-empty lines</a></li>
-        <li><a href="#count-lines">Count lines</a></li>
-        <li><a href="#awk-as-grep">Awk as Grep</a></li>
-        <li><a href="#strings-substitution">Strings substitution</a></li>
-        <li><a href="#comparison">Comparison</a></li>
-        <li><a href="#print-only-unique-lines-like-uniq">Print only unique lines (like uniq)</a></li>
-        <li><a href="#regexp-matching">Regexp matching</a></li>
-        <li><a href="#variables-in-awk">Variables in Awk</a></li>
-        <li><a href="#dates-in-awk">Dates in Awk</a></li>
-        <li><a href="#print-only-fields-after-the-first-2">Print only fields after the first 2</a></li>
+        <li><a href="#leaflet">Leaflet</a></li>
       </ul>
     </li>
   </ul>
@@ -96,59 +86,21 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="awk">Awk</h1>
+<h1 id="obsidian">Obsidian</h1>
 
+<!-- vim-markdown-toc GFM -->
 <ul>
-<li><a href="#print-longest-line-value-of-a-file">Pring longest line value of a file</a></li>
-<li><a href="#print-only-non-empty-lines">Print only non-empty lines</a></li>
-<li><a href="#count-lines">Count lines</a></li>
-<li><a href="#awk-as-grep">Awk as Grep</a></li>
-<li><a href="#strings-substitution">Strings substitution</a></li>
-<li><a href="#comparison">Comparison</a></li>
-<li><a href="#print-only-unique-lines-like-uniq">Print only unique lines (like uniq)</a></li>
-<li><a href="#regexp-matching">Regexp matching</a></li>
-<li><a href="#variables-in-awk">Variables in Awk</a></li>
-<li><a href="#dates-in-awk">Dates in Awk</a></li>
-<li><a href="#print-only-fields-after-the-first-2">Print only fields after the first 2</a></li>
+<li><a href="#plugins">Plugins</a>
+<ul>
+<li><a href="#leaflet">Leaflet</a></li>
 </ul>
-<hr>
-<h3 id="print-longest-line-value-of-a-file">Print longest line value of a file</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">expand</span> <span class="nx">some_file</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">&#39;{if (x &lt; length()) x = length() } END { print “Longest row is ” x }&#39;</span>
-</span></span></code></pre></div><h3 id="print-only-non-empty-lines">Print only non-empty lines</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;NF &gt; 0&#39;</span> <span class="nx">some_file</span>
-</span></span></code></pre></div><h3 id="count-lines">Count lines</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;END {print NR}&#39;</span> <span class="nx">some_file</span>
-</span></span></code></pre></div><h3 id="awk-as-grep">Awk as Grep</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;{print $2}&#39;</span> <span class="nx">some_file</span>
-</span></span></code></pre></div><p>which is a quicker alternative to <code>cat some_file | awk '{print $2}'</code></p>
-<p>To negate a pattern (print only lines that don&rsquo;t match), use <code>awk '$1 !~ /regexp/' some_file</code></p>
-<h3 id="strings-substitution">Strings substitution</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;{sub(&#34;from&#34;, &#34;to&#34;); print}&#39;</span>
-</span></span></code></pre></div><p>substitutes &ldquo;from&rdquo; to &ldquo;to&rdquo;. With <code>{gsub(&quot;from&quot;, &quot;to&quot;); print}</code> it substitutes all occurrences and not just the first. Both can be used with regexps, like <code>/regexp/', 'new_string'</code></p>
-<h3 id="comparison">Comparison</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;$2 &gt; 1&#39;</span>
-</span></span></code></pre></div><p>print only lines where $2 is bigger than 1</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;$1 &gt; 1 &amp;&amp; &lt; 10&#39;</span>
-</span></span></code></pre></div><p>multiple comparisons (bigger than 1 and smaller than 10)</p>
-<p><code>==</code></p>
-<p>equality</p>
-<p><code>~</code></p>
-<p>matching (even a regexp)</p>
-<h3 id="print-only-unique-lines-like-uniq">Print only unique lines (like uniq)</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;!a[$0]++&#39;</span> <span class="nx">file</span>
-</span></span></code></pre></div><h3 id="regexp-matching">Regexp matching</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;$0 ~ &#34;[A-Za-z0-9]+&#34; {print $1}&#39;</span>
-</span></span></code></pre></div><p>print $1 only if $0 matches the regexp</p>
-<h3 id="variables-in-awk">Variables in Awk</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var</span><span class="o">=</span><span class="s2">&#34;bang&#34;</span> <span class="s1">&#39;{sub(var,&#34;boom&#34;);print}&#39;</span>
-</span></span></code></pre></div><p>it also accepts shell variables with <code>-v var=$shell_variable</code></p>
-<p>Environment variables can also be accessed with <code>awk '{print, $0,ENVIRON[&quot;x&quot;]}' some_file</code></p>
-<h3 id="dates-in-awk">Dates in Awk</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;{print strftime(&#34;%d-%m-%y %H-%M-%S&#34;, systime());}&#39;</span>
-</span></span></code></pre></div><p><code>strftime</code> converts the output of <code>systime</code> from the Unix epoch to a more human-readable format. Pattern is the same as <code>date</code> command. <code>systime</code> can be omitted (it defaults to current time). Only in GNU awk.</p>
-<h3 id="print-only-fields-after-the-first-2">Print only fields after the first 2</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="nx">awk</span> <span class="s1">&#39;{$1=$2=&#34;&#34;; print $0}&#39;</span>
-</span></span></code></pre></div>
+</li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="plugins">Plugins</h2>
+<h3 id="leaflet">Leaflet</h3>
+<p>To add maps in form of images and navigate, pin, annotate them in Obsidian. <a href="">Link to tutorial and examples</a><a href="https://obsidianttrpgtutorials.com/Obsidian+TTRPG+Tutorials/Plugin+Tutorials/Obsidian+Leaflet">https://obsidianttrpgtutorials.com/Obsidian+TTRPG+Tutorials/Plugin+Tutorials/Obsidian+Leaflet</a>)</p>
+
             <footer class="footline">
             </footer>
           </article>
@@ -189,9 +141,9 @@
           <li data-nav-id="/Scientia/frontend/d3/index.html" class="dd-item"><a href="/Scientia/frontend/d3/index.html">D3</a></li>
           <li data-nav-id="/Scientia/frontend/jquery/index.html" class="dd-item"><a href="/Scientia/frontend/jquery/index.html">jQuery</a></li>
           <li data-nav-id="/Scientia/frontend/npm/index.html" class="dd-item"><a href="/Scientia/frontend/npm/index.html">Npm</a></li></ul></li>
-          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item parent"><input type="checkbox" id="section-2730d826a568fe36056ffffe2a578361" aria-controls="subsections-2730d826a568fe36056ffffe2a578361" class="toggle" checked><label class="a11y-only toggle" for="section-2730d826a568fe36056ffffe2a578361" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-2730d826a568fe36056ffffe2a578361">
+          <li data-nav-id="/Scientia/programming_languages/index.html" class="dd-item"><input type="checkbox" id="section-2730d826a568fe36056ffffe2a578361" aria-controls="subsections-2730d826a568fe36056ffffe2a578361" class="toggle"><label class="a11y-only toggle" for="section-2730d826a568fe36056ffffe2a578361" >Submenu Programming Languages</label><a href="/Scientia/programming_languages/index.html">Programming Languages</a><ul id="subsections-2730d826a568fe36056ffffe2a578361">
           <li data-nav-id="/Scientia/programming_languages/assembly/index.html" class="dd-item"><a href="/Scientia/programming_languages/assembly/index.html">Assembly</a></li>
-          <li data-nav-id="/Scientia/programming_languages/awk/index.html" class="dd-item active"><a href="/Scientia/programming_languages/awk/index.html">Awk</a></li>
+          <li data-nav-id="/Scientia/programming_languages/awk/index.html" class="dd-item"><a href="/Scientia/programming_languages/awk/index.html">Awk</a></li>
           <li data-nav-id="/Scientia/programming_languages/bash/index.html" class="dd-item"><a href="/Scientia/programming_languages/bash/index.html">Bash</a></li>
           <li data-nav-id="/Scientia/programming_languages/c/index.html" class="dd-item"><a href="/Scientia/programming_languages/c/index.html">C</a></li>
           <li data-nav-id="/Scientia/programming_languages/common_lisp/index.html" class="dd-item"><a href="/Scientia/programming_languages/common_lisp/index.html">Common Lisp</a></li>
@@ -221,7 +173,7 @@
           <li data-nav-id="/Scientia/operating_systems/linux/x/index.html" class="dd-item"><a href="/Scientia/operating_systems/linux/x/index.html">Xorg</a></li></ul></li>
           <li data-nav-id="/Scientia/operating_systems/nixos/nixos_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/nixos/nixos_commands/index.html">NixOS</a></li>
           <li data-nav-id="/Scientia/operating_systems/windows/windows_commands/index.html" class="dd-item"><a href="/Scientia/operating_systems/windows/windows_commands/index.html">Windows Commands</a></li></ul></li>
-          <li data-nav-id="/Scientia/programs/index.html" class="dd-item"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle"><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
+          <li data-nav-id="/Scientia/programs/index.html" class="dd-item parent"><input type="checkbox" id="section-320ea1960d5848f94274f6c66f31c75b" aria-controls="subsections-320ea1960d5848f94274f6c66f31c75b" class="toggle" checked><label class="a11y-only toggle" for="section-320ea1960d5848f94274f6c66f31c75b" >Submenu Programs</label><a href="/Scientia/programs/index.html">Programs</a><ul id="subsections-320ea1960d5848f94274f6c66f31c75b">
           <li data-nav-id="/Scientia/programs/chromium/index.html" class="dd-item"><a href="/Scientia/programs/chromium/index.html">Chromium</a></li>
           <li data-nav-id="/Scientia/programs/curl/index.html" class="dd-item"><a href="/Scientia/programs/curl/index.html">Curl</a></li>
           <li data-nav-id="/Scientia/programs/emacs/index.html" class="dd-item"><a href="/Scientia/programs/emacs/index.html">Emacs</a></li>
@@ -243,7 +195,7 @@
           <li data-nav-id="/Scientia/programs/mongodb/index.html" class="dd-item"><a href="/Scientia/programs/mongodb/index.html">MongoDB</a></li>
           <li data-nav-id="/Scientia/programs/mplayer/index.html" class="dd-item"><a href="/Scientia/programs/mplayer/index.html">MPlayer</a></li>
           <li data-nav-id="/Scientia/programs/mutt/index.html" class="dd-item"><a href="/Scientia/programs/mutt/index.html">Mutt</a></li>
-          <li data-nav-id="/Scientia/programs/obsidian/index.html" class="dd-item"><a href="/Scientia/programs/obsidian/index.html">Obsidian</a></li>
+          <li data-nav-id="/Scientia/programs/obsidian/index.html" class="dd-item active"><a href="/Scientia/programs/obsidian/index.html">Obsidian</a></li>
           <li data-nav-id="/Scientia/programs/rtorrent/index.html" class="dd-item"><a href="/Scientia/programs/rtorrent/index.html">Rtorrent</a></li>
           <li data-nav-id="/Scientia/programs/samba_and_nfs/index.html" class="dd-item"><a href="/Scientia/programs/samba_and_nfs/index.html">Samba and Nfs</a></li>
           <li data-nav-id="/Scientia/programs/screen/index.html" class="dd-item"><a href="/Scientia/programs/screen/index.html">Screen</a></li>
@@ -342,7 +294,7 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/Scientia/programming_languages/awk/index.html" selected></option>
+                    <option lang="en" id="en" value="/Scientia/programs/obsidian/index.html" selected></option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
